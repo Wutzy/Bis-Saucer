@@ -448,7 +448,7 @@ function specRoleOf(className, specSlug) {
 // Nombre de bijoux retenus par categorie de cibles. Sert au panneau de la vue
 // Liste BiS comme au calcul des besoins dans la vue Butin par boss : les deux
 // doivent dire la meme chose.
-const SIM_TRINKET_COUNT = 3;
+const SIM_TRINKET_COUNT = 5;
 
 /**
  * Bijoux retenus pour une spec DPS simulee : le haut du classement de chaque
