@@ -127,7 +127,7 @@ nombre de slots en cache). Dans la vue Butin par boss, cette même barre liste l
   affiché sans repli.
   Le tri se fait **d'abord sur les BiS généraux**, puis sur le total : une pièce BiS toutes
   sources confondues restera équipée une fois le raid farmé, alors qu'un BiS propre à la liste
-  Mythique+ n'est qu'un palier. Ces derniers portent le tag `liste M+`.
+  Les BiS généraux sont **encadrés en vert** dans la liste, les autres portent le tag `liste M+`.
 - **Roster** — les 20 membres groupés par classe, avec le choix de spec de chacun.
 
 ## Pièces de set et Catalyseur

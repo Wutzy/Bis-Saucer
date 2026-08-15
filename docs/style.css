@@ -741,11 +741,20 @@ a.pd-catalyst:hover {
   padding: 0.5rem 0.75rem 0.6rem;
 }
 
+/* Bordure transparente par defaut : les objets encadres et les autres gardent
+   ainsi exactement le meme gabarit, sans decalage dans la grille. */
 .mplus-item {
   display: flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.25rem 0;
+  padding: 0.3rem 0.4rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.mplus-item--overall {
+  border-color: color-mix(in srgb, var(--green) 45%, transparent);
+  background: color-mix(in srgb, var(--green) 8%, transparent);
 }
 
 .mplus-icon {

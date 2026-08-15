@@ -1105,8 +1105,13 @@ function renderMplus() {
     list.className = 'mplus-items';
 
     for (const { item, lists } of dungeon.items) {
+      // Un BiS toutes sources confondues restera équipé une fois le raid farmé :
+      // on l'encadre pour le distinguer d'un BiS propre au Mythique+.
+      const overall = Array.from(lists).some((l) => /overall/i.test(l));
+
       const row = document.createElement('div');
-      row.className = 'mplus-item';
+      row.className = `mplus-item${overall ? ' mplus-item--overall' : ''}`;
+      if (overall) row.title = 'BiS toutes sources confondues';
 
       row.appendChild(iconEl(item.icon, 'mplus-icon', ''));
 
@@ -1120,8 +1125,7 @@ function renderMplus() {
 
       // Un objet BiS uniquement dans la liste Mythic+ n'a pas le meme poids qu'un
       // BiS toutes sources confondues : on le precise.
-      const onlyMplus = !Array.from(lists).some((l) => /overall/i.test(l));
-      if (onlyMplus) {
+      if (!overall) {
         const tag = document.createElement('span');
         tag.className = 'mplus-tag';
         tag.textContent = 'liste M+';
