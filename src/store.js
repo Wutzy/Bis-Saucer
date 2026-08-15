@@ -1,0 +1,82 @@
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+const DATA_DIR = path.join(__dirname, '..', 'data');
+const STORE_PATH = path.join(DATA_DIR, 'bis.json');
+const TRINKETS_PATH = path.join(DATA_DIR, 'trinkets.json');
+
+const EMPTY_STORE = { version: 1, specs: {} };
+
+function readStore() {
+  try {
+    const raw = fs.readFileSync(STORE_PATH, 'utf8');
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== 'object' || typeof parsed.specs !== 'object') {
+      return { ...EMPTY_STORE, specs: {} };
+    }
+    return parsed;
+  } catch (err) {
+    // Fichier absent au premier lancement, ou JSON corrompu : on repart d'un cache vide
+    // plutot que de faire tomber le serveur.
+    if (err.code !== 'ENOENT') {
+      console.warn(`[store] data/bis.json illisible (${err.message}), cache reinitialise en memoire.`);
+    }
+    return { ...EMPTY_STORE, specs: {} };
+  }
+}
+
+/** Ecriture atomique : on ecrit un .tmp puis on renomme, pour ne jamais laisser un JSON tronque. */
+function writeStore(store) {
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  const tmpPath = `${STORE_PATH}.tmp`;
+  fs.writeFileSync(tmpPath, JSON.stringify(store, null, 2), 'utf8');
+  fs.renameSync(tmpPath, STORE_PATH);
+}
+
+function saveSpecEntry(key, entry) {
+  const store = readStore();
+  store.specs[key] = entry;
+  store.updatedAt = new Date().toISOString();
+  writeStore(store);
+  return store;
+}
+
+/* ------------------------------------------------------------------ */
+/* Classements de bijoux (Bloodmallet), meme mecanique, fichier separe  */
+/* ------------------------------------------------------------------ */
+
+function readTrinkets() {
+  try {
+    const parsed = JSON.parse(fs.readFileSync(TRINKETS_PATH, 'utf8'));
+    if (parsed && typeof parsed.specs === 'object') return parsed;
+  } catch (err) {
+    if (err.code !== 'ENOENT') {
+      console.warn(`[store] data/trinkets.json illisible (${err.message}), cache ignoré.`);
+    }
+  }
+  return { version: 1, specs: {} };
+}
+
+function saveTrinketEntry(key, entry) {
+  const store = readTrinkets();
+  store.specs[key] = entry;
+  store.updatedAt = new Date().toISOString();
+
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  const tmpPath = `${TRINKETS_PATH}.tmp`;
+  fs.writeFileSync(tmpPath, JSON.stringify(store, null, 2), 'utf8');
+  fs.renameSync(tmpPath, TRINKETS_PATH);
+  return store;
+}
+
+module.exports = {
+  readStore,
+  writeStore,
+  saveSpecEntry,
+  readTrinkets,
+  saveTrinketEntry,
+  STORE_PATH,
+  TRINKETS_PATH,
+};

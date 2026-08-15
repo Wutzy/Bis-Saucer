@@ -1,0 +1,8 @@
+node_modules/
+*.log
+
+# Captures brutes servant au détourage. Les PNG détourés, eux, sont versionnés.
+/*.png
+
+# Les caches data/*.json sont volontairement versionnés : sans eux l'app est vide
+# après un clone, et c'est aussi la source de la version publiée dans docs/.

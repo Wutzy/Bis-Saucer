@@ -1,0 +1,1307 @@
+:root {
+  --bg: #0d0f13;
+  --panel: #14171d;
+  --panel-2: #191d24;
+  --row: #161a21;
+  --border: #232830;
+  --border-soft: #1d222a;
+  --text: #e8eaee;
+  --muted: #8d97a6;
+  --muted-2: #626c7a;
+  --accent: #d9a441;
+  --green: #4ea36a;
+  --green-bg: #16301f;
+  --amber: #c9913c;
+  --amber-bg: #302514;
+  --error: #e06c6c;
+  --spec: var(--accent); /* surchargee par la couleur de classe */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.5 system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 100%;
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ---------------- Barre du haut : marque + selecteur ---------------- */
+
+/* Trois colonnes dont les deux laterales font la meme largeur : la colonne du
+   milieu est ainsi centree sur la barre, pas sur la place restante a droite du titre. */
+.topbar {
+  display: grid;
+  /* minmax identique a gauche et a droite : sans plancher, la colonne de droite
+     tombe a 0 alors que le titre ne peut pas se reduire autant, et le centre derive. */
+  grid-template-columns: minmax(110px, 1fr) auto minmax(110px, 1fr);
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.7rem 1rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.topbar-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.lang-switch {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.lang-switch button {
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  background: transparent;
+  color: var(--muted-2);
+  cursor: pointer;
+}
+
+.lang-switch button:hover {
+  color: var(--text);
+}
+
+.lang-switch button.is-active {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  color: var(--accent);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  flex: none;
+}
+
+.brand strong {
+  font-size: 1rem;
+}
+
+.brand span {
+  color: var(--muted-2);
+  font-size: 0.72rem;
+}
+
+.selector-bar {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.spec-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+/* Une icone par spec : le libelle complet est dans l'entete du panneau. */
+.spec-chip {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  cursor: pointer;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  filter: grayscale(0.55);
+  opacity: 0.75;
+  transition: filter 0.12s, opacity 0.12s, border-color 0.12s;
+}
+
+.spec-chip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.spec-chip:hover {
+  filter: none;
+  opacity: 1;
+  border-color: color-mix(in srgb, var(--spec) 55%, transparent);
+}
+
+.spec-chip.is-active {
+  filter: none;
+  opacity: 1;
+  border-color: var(--spec);
+  box-shadow: 0 0 0 1px var(--spec), 0 0 10px -2px var(--spec);
+}
+
+.selector-hint {
+  margin: 0;
+  color: var(--muted-2);
+  font-size: 0.82rem;
+}
+
+/* Illustrations Footzy.
+   Repli sur ecran etroit : seule celle de droite reste, logee dans la barre
+   (marges negatives pour qu'elle depasse sans pousser la mise en page). */
+.footzy {
+  flex: none;
+  align-self: flex-start;
+  height: 76px;
+  width: auto;
+  margin: -0.7rem -0.3rem -1.7rem 0.4rem;
+  pointer-events: none;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
+}
+
+.footzy--left {
+  display: none;
+}
+
+/* Des que les marges autour du conteneur sont assez larges, les deux passent
+   dedans, calees sur les bords du conteneur (700px = la moitie de son max-width)
+   pour rester a la meme distance quelle que soit la largeur de l'ecran. */
+@media (min-width: 1780px) {
+  .footzy {
+    position: fixed;
+    top: 1rem;
+    margin: 0;
+    z-index: 5;
+  }
+
+  .footzy--right {
+    left: calc(50% + 700px + 10px);
+    height: 186px;
+  }
+
+  .footzy--left {
+    display: block;
+    right: calc(50% + 700px + 10px);
+    height: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footzy {
+    display: none;
+  }
+}
+
+.avatar {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--spec) 70%, transparent);
+  background: var(--panel-2);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatar.lg {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+}
+
+/* ---------------- Panel ---------------- */
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.1rem 1.3rem 0.9rem;
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.panel-title h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--spec);
+}
+
+.panel-sub {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.panel-sub a {
+  color: var(--muted);
+}
+
+.refresh {
+  font: inherit;
+  padding: 0.55rem 0.95rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--spec) 50%, transparent);
+  background: var(--panel-2);
+  color: var(--spec);
+  cursor: pointer;
+}
+
+.refresh:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--spec) 12%, var(--panel-2));
+}
+
+.refresh:disabled {
+  opacity: 0.5;
+  cursor: progress;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0 1.3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--text);
+}
+
+.tab.is-active {
+  color: var(--spec);
+  border-bottom-color: var(--spec);
+}
+
+.content {
+  flex: 1;
+  padding: 1rem 1.3rem 1.3rem;
+  overflow-x: auto;
+}
+
+.message {
+  margin: 1rem 1.3rem 0;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  font-size: 0.87rem;
+  color: var(--muted);
+}
+
+.message.error {
+  border-color: color-mix(in srgb, var(--error) 45%, transparent);
+  color: var(--error);
+}
+
+.message.info {
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  color: var(--accent);
+}
+
+/* ---------------- Tables ---------------- */
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  text-align: left;
+  padding: 0.5rem 0.7rem;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  color: var(--muted-2);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid var(--border-soft);
+  vertical-align: middle;
+}
+
+tbody tr:hover td {
+  background: var(--row);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.group-row td {
+  background: var(--panel-2);
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--border);
+}
+
+.item-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 240px;
+}
+
+.item-icon {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  object-fit: cover;
+}
+
+.item-link {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.item-link:hover {
+  text-decoration: underline;
+}
+
+.item-slot {
+  display: block;
+  color: var(--muted-2);
+  font-size: 0.76rem;
+}
+
+/* Vue butin : rappel de la pièce réellement lootée sur le boss. */
+.drop-note {
+  margin-top: 0.15rem;
+  color: var(--amber);
+  font-size: 0.74rem;
+}
+
+.drop-note .item-link {
+  font-size: 0.74rem;
+}
+
+.col-muted {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.col-center {
+  text-align: center;
+}
+
+/* Couleurs de qualite WoW, en repli si le script Wowhead ne se charge pas. */
+.q1 { color: #ffffff; }
+.q2 { color: #1eff00; }
+.q3 { color: #0070dd; }
+.q4 { color: #a335ee; }
+.q5 { color: #ff8000; }
+
+/* ---------------- Badges ---------------- */
+
+.badge {
+  display: inline-block;
+  min-width: 34px;
+  padding: 0.15rem 0.45rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 0.74rem;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+
+.badge.bis {
+  background: var(--green-bg);
+  border-color: color-mix(in srgb, var(--green) 45%, transparent);
+  color: var(--green);
+}
+
+.badge.bis-multi {
+  background: var(--amber-bg);
+  border-color: color-mix(in srgb, var(--amber) 45%, transparent);
+  color: var(--amber);
+}
+
+.badge.players {
+  background: #10222f;
+  border-color: color-mix(in srgb, #4a90c4 45%, transparent);
+  color: #7ab5dd;
+}
+
+.badge.none {
+  background: transparent;
+  border-color: transparent;
+  color: var(--muted-2);
+}
+
+/* ---------------- Feuille de personnage (vue Liste BiS) ---------------- */
+
+.paperdoll {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.pd-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+/* Les armes sont a part dans le guide : rangee centree sous les deux colonnes. */
+.pd-weapons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  width: min(100%, 70%);
+  margin: 0 auto;
+}
+
+.pd-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-2);
+  min-height: 74px;
+}
+
+.pd-item--right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.pd-item--empty {
+  border-style: dashed;
+  background: transparent;
+}
+
+.pd-item--catalyst {
+  border-color: color-mix(in srgb, var(--amber) 35%, var(--border));
+}
+
+/* Pièce de set à récupérer en donjon : bordure plus épaisse et plus marquée.
+   Le padding compense l'épaisseur pour que la carte garde la même taille. */
+.pd-item--dungeon-set {
+  border-width: 2px;
+  border-color: var(--amber);
+  padding: calc(0.6rem - 1px) calc(0.75rem - 1px);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--amber) 18%, transparent);
+}
+
+.pd-icon {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.pd-item--empty .pd-icon {
+  opacity: 0.35;
+}
+
+.pd-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pd-name .item-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.pd-slot {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.pd-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.15rem;
+  font-size: 0.78rem;
+}
+
+.pd-item--right .pd-footer {
+  flex-direction: row-reverse;
+}
+
+.pd-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--muted);
+}
+
+.pd-catalyst {
+  display: inline-block;
+  color: var(--amber);
+  border: 1px solid color-mix(in srgb, var(--amber) 40%, transparent);
+  border-radius: 4px;
+  padding: 0 0.3rem;
+  font-size: 0.72rem;
+  cursor: help;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Quand le badge est un lien, il mene a la piece d'origine a ramasser. */
+a.pd-catalyst {
+  cursor: pointer;
+}
+
+a.pd-catalyst:hover {
+  background: color-mix(in srgb, var(--amber) 15%, transparent);
+}
+
+/* ---------------- Vue M+ opti ---------------- */
+
+.mplus {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.mplus-intro {
+  margin: 0 0 0.2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.mplus-block {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-2);
+  overflow: hidden;
+}
+
+.mplus-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--panel);
+}
+
+.mplus-rank {
+  color: var(--muted-2);
+  font-size: 0.78rem;
+  font-weight: 700;
+  min-width: 1.8rem;
+}
+
+.mplus-name {
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.mplus-count {
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.mplus-count--overall {
+  color: var(--green);
+  border-color: color-mix(in srgb, var(--green) 45%, transparent);
+  cursor: help;
+}
+
+/* Copains à emmener : qui d'autre a du BiS dans ce donjon. */
+.mplus-companions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid var(--border-soft);
+  background: color-mix(in srgb, var(--panel) 60%, transparent);
+}
+
+.mplus-companions-label {
+  color: var(--muted-2);
+  font-size: 0.72rem;
+  margin-right: 0.15rem;
+}
+
+/* Pastille compacte : icône de spec + nombre de BiS, le nom est en infobulle. */
+.companion {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.1rem 0.35rem 0.1rem 0.1rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--spec) 45%, transparent);
+  background: color-mix(in srgb, var(--spec) 10%, var(--panel-2));
+  cursor: help;
+}
+
+.companion--star {
+  border-color: var(--star);
+  background: color-mix(in srgb, var(--star) 16%, var(--panel-2));
+  box-shadow: 0 0 6px -2px var(--star);
+}
+
+.companion-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: block;
+}
+
+.companion-count {
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 600;
+  min-width: 0.7rem;
+  text-align: center;
+}
+
+.mplus-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.15rem 0.8rem;
+  padding: 0.5rem 0.75rem 0.6rem;
+}
+
+.mplus-item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.25rem 0;
+}
+
+.mplus-icon {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.mplus-body {
+  min-width: 0;
+  flex: 1;
+}
+
+.mplus-body .item-link {
+  font-size: 0.85rem;
+}
+
+.mplus-meta {
+  color: var(--muted-2);
+  font-size: 0.72rem;
+}
+
+.mplus-tag {
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0 0.25rem;
+  font-size: 0.66rem;
+  cursor: help;
+}
+
+/* ---------------- Panneau des bijoux (simulation) ---------------- */
+
+.trinket-panel {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-2);
+  padding: 0.6rem 0.75rem 0.75rem;
+}
+
+/* Repli sur les conseils du guide : bordure ambre, pour ne pas le confondre
+   avec le panneau chiffré de la simulation. */
+.trinket-panel--advice {
+  border-color: color-mix(in srgb, var(--amber) 35%, var(--border));
+}
+
+.tp-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-bottom: 0.5rem;
+}
+
+.tp-source {
+  color: var(--muted-2);
+  font-size: 0.72rem;
+}
+
+.tp-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.tp-col {
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  padding: 0.45rem 0.5rem;
+  background: var(--panel);
+}
+
+.tp-title {
+  color: var(--muted-2);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.tp-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.tp-item + .tp-item {
+  border-top: 1px solid var(--border-soft);
+}
+
+.tp-item--bis .tp-icon {
+  border-color: var(--green);
+}
+
+.tp-icon {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.tp-body {
+  min-width: 0;
+  flex: 1;
+}
+
+.tp-body .item-link {
+  font-size: 0.82rem;
+}
+
+.tp-meta {
+  color: var(--muted-2);
+  font-size: 0.7rem;
+}
+
+.tp-flag {
+  flex: none;
+  color: var(--green);
+  border: 1px solid color-mix(in srgb, var(--green) 45%, transparent);
+  border-radius: 4px;
+  padding: 0 0.25rem;
+  font-size: 0.66rem;
+  cursor: help;
+}
+
+.tp-empty {
+  color: var(--muted-2);
+  font-size: 0.78rem;
+  padding: 0.4rem 0;
+}
+
+@media (max-width: 900px) {
+  .tp-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Rang du bijou dans la simulation Bloodmallet. */
+.sim-rank {
+  display: inline-block;
+  padding: 0 0.3rem;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+  font-size: 0.72rem;
+  cursor: help;
+  white-space: nowrap;
+}
+
+.sim-rank--good {
+  color: var(--green);
+}
+
+.sim-rank--mid {
+  color: var(--amber);
+}
+
+.sim-rank--bad {
+  color: var(--error);
+}
+
+.sim-rank--unknown {
+  color: var(--muted-2);
+}
+
+.pd-enchant {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--green);
+}
+
+.pd-mini-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  display: block;
+}
+
+.pd-gems {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.6rem;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.pd-item--right .pd-gems {
+  right: auto;
+  left: 0.6rem;
+}
+
+@media (max-width: 720px) {
+  .pd-grid,
+  .pd-weapons {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .pd-item--right {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .pd-item--right .pd-footer {
+    flex-direction: row;
+  }
+
+  .pd-item--right .pd-gems {
+    left: auto;
+    right: 0.6rem;
+  }
+}
+
+/* Pastilles "qui veut cet objet" dans la vue butin par boss. */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  min-width: 260px;
+}
+
+.player-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.5rem 0.15rem 0.2rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--spec) 40%, transparent);
+  background: color-mix(in srgb, var(--spec) 10%, var(--panel-2));
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.chip-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: block;
+}
+
+/* ---------------- Mascotte de la guilde ---------------- */
+
+:root {
+  --star: #ffcf4d;
+}
+
+/* Illustration de la mascotte, dans la marge basse — en pendant des Footzy en haut.
+   Masquée par défaut : le script ne l'affiche que si un membre étoilé a un portrait. */
+.mascotte {
+  display: none;
+}
+
+@media (min-width: 1780px) {
+  .mascotte[hidden] {
+    display: none;
+  }
+
+  .mascotte {
+    display: block;
+    position: fixed;
+    bottom: 1rem;
+    right: calc(50% + 700px + 10px);
+    width: 170px;
+    height: auto;
+    z-index: 5;
+    pointer-events: none;
+    filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.6));
+  }
+}
+
+/* Adossé au bord droit de la fenêtre, à mi-hauteur : il s'appuie contre l'écran.
+   Même seuil que les autres illustrations, sinon il chevaucherait le panneau. */
+.ewe {
+  display: none;
+}
+
+@media (min-width: 1780px) {
+  .ewe {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 300px;
+    width: auto;
+    z-index: 5;
+    pointer-events: none;
+    filter: drop-shadow(-6px 6px 12px rgba(0, 0, 0, 0.55));
+  }
+}
+
+.roster-portrait {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--star);
+  background: color-mix(in srgb, var(--star) 12%, var(--panel-2));
+  vertical-align: -0.75em;
+  margin-right: 0.45rem;
+}
+
+.player-chip--star {
+  border-color: var(--star);
+  background: color-mix(in srgb, var(--star) 14%, var(--panel-2));
+  box-shadow: 0 0 8px -2px var(--star);
+}
+
+.chip-star {
+  color: var(--star);
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.spec-chip--star {
+  border-color: color-mix(in srgb, var(--star) 65%, transparent);
+}
+
+.spec-chip--star.is-active {
+  box-shadow: 0 0 0 1px var(--star), 0 0 12px -2px var(--star);
+}
+
+.roster-star td {
+  background: color-mix(in srgb, var(--star) 7%, transparent);
+}
+
+.roster-star-badge {
+  margin-left: 0.5rem;
+  padding: 0 0.35rem;
+  border: 1px solid color-mix(in srgb, var(--star) 55%, transparent);
+  border-radius: 999px;
+  color: var(--star);
+  font-size: 0.68rem;
+  white-space: nowrap;
+  cursor: help;
+}
+
+/* Joueur qui ne prend pas l'objet tel quel mais le transforme au Catalyseur. */
+.player-chip--catalyst {
+  border-style: dashed;
+}
+
+.chip-catalyst {
+  color: var(--amber);
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+/* Petite icone collee a un libelle (nom de membre, entete de classe). */
+.row-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  vertical-align: -0.3em;
+  margin-right: 0.45rem;
+}
+
+.spec-select {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.45rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--text);
+  min-width: 170px;
+}
+
+.spec-select:focus {
+  outline: none;
+  border-color: var(--spec);
+}
+
+/* Libelle au-dessus, choix en dessous : sinon le libelle decale les boutons
+   vers la droite et ils ne sont plus centres sur le panneau. */
+.list-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 1rem 1.3rem 0;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid color-mix(in srgb, var(--amber) 35%, transparent);
+  border-radius: 8px;
+  background: var(--panel-2);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.list-choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.list-choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.list-choice:hover {
+  color: var(--text);
+}
+
+.list-choice.is-active {
+  border-color: var(--amber);
+  background: color-mix(in srgb, var(--amber) 14%, var(--panel));
+  color: var(--amber);
+}
+
+.list-choice-count {
+  color: var(--muted-2);
+  font-size: 0.72rem;
+}
+
+.list-choice.is-active .list-choice-count {
+  color: color-mix(in srgb, var(--amber) 75%, var(--text));
+}
+
+.roster-note {
+  margin: 1rem 0 0;
+  color: var(--muted-2);
+  font-size: 0.8rem;
+  max-width: 70ch;
+}
+
+.boss-filters {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.boss-filter {
+  font: inherit;
+  font-size: 0.72rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted-2);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Sources : pastilles nommees, il n'existe pas d'icone de boss. */
+.boss-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.boss-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.boss-chip:hover {
+  color: var(--text);
+}
+
+.boss-chip.is-active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, var(--panel-2));
+}
+
+.boss-chip-count {
+  min-width: 18px;
+  padding: 0 0.25rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--text) 12%, transparent);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.boss-filter:hover {
+  color: var(--text);
+}
+
+.boss-filter.is-active {
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent);
+}
+
+/* ---------------- Divers ---------------- */
+
+.empty {
+  padding: 2.5rem 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+.empty strong {
+  display: block;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 0.75rem 1.3rem;
+  border-top: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--muted-2);
+  font-size: 0.76rem;
+}
+
+.legend .badge,
+.legend .pd-catalyst {
+  margin-right: 0.35rem;
+}
+
+.legend-meta {
+  margin-left: auto;
+}
+
+@media (max-width: 860px) {
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .legend-meta {
+    margin-left: 0;
+  }
+}

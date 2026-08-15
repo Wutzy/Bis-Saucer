@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BiS Saucer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <header class="topbar">
+        <img class="footzy footzy--left" src="img/footzy1.png" alt="" title="Footzy" />
+        <img
+          id="mascotte"
+          class="mascotte"
+          src="img/bolderiz.png"
+          alt=""
+          title="Bolderiz — mascotte de la guilde"
+          hidden
+        />
+        <img class="ewe" src="img/ewe.png" alt="" title="Ewe" />
+        <div class="brand">
+          <strong>BiS Saucer</strong>
+        </div>
+        <div id="selector-bar" class="selector-bar"></div>
+        <div class="topbar-end">
+          <div class="lang-switch" id="lang-switch">
+            <button type="button" data-lang="fr">FR</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+          <img class="footzy footzy--right" src="img/footzy.png" alt="" title="Footzy" />
+        </div>
+      </header>
+
+      <main class="panel">
+        <header class="panel-head">
+          <div class="panel-title">
+            <div id="spec-avatar" class="avatar"></div>
+            <div>
+              <h2 id="spec-name">—</h2>
+              <p id="spec-sub" class="panel-sub"></p>
+            </div>
+          </div>
+          <button id="refresh-btn" type="button" class="refresh">
+            Rafraîchir depuis Icy Veins
+          </button>
+        </header>
+
+        <nav class="tabs">
+          <button class="tab is-active" data-view="list" type="button">Liste BiS</button>
+          <button class="tab" data-view="boss" type="button">Butin par boss</button>
+          <button class="tab" data-view="mplus" type="button">M+ opti</button>
+          <button class="tab" data-view="roster" type="button">Roster</button>
+        </nav>
+
+        <div id="list-picker" class="list-picker" hidden></div>
+        <div id="message" class="message" hidden></div>
+
+        <section id="content" class="content"></section>
+
+        <footer class="legend">
+          <span id="store-status"></span>
+          <span id="legend-meta" class="legend-meta"></span>
+        </footer>
+      </main>
+    </div>
+
+    <!-- Tooltips officiels Wowhead (embed supporté et prévu pour cet usage).
+         En français, `renameLinks` laisse Wowhead réécrire le texte des liens avec le
+         nom localisé de l'objet : c'est le mécanisme officiel, aucun scrape en plus.
+         La configuration est lue au chargement, d'où le rechargement au changement. -->
+    <script>
+      window.BIS_LANG = localStorage.getItem('bis-lang') === 'en' ? 'en' : 'fr';
+      // renameLinks est actif dans les deux langues : en français il localise les noms,
+      // et dans les deux cas il nomme les pièces d'origine à catalyser, dont on ne
+      // connaît que l'identifiant.
+      const whTooltips = { colorLinks: true, iconizeLinks: false, renameLinks: true };
+    </script>
+    <script src="https://wow.zamimg.com/widgets/power.js"></script>
+    <script>window.BIS_STATIC = true;</script>
+    <script src="app.js"></script>
+  </body>
+</html>

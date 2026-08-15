@@ -1,0 +1,22 @@
+{
+  "name": "goldsaucer-bis",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Listes Best in Slot WoW Retail pour la guilde, scrapees a la demande depuis Wowhead.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build:static": "node tools/build-static.js",
+    "check": "node tools/check-bis.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "pngjs": "^7.0.0"
+  }
+}
