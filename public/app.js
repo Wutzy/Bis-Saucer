@@ -422,16 +422,48 @@ function sourceLine(item) {
   return wrap;
 }
 
-/** Icone d'un objet retrouvee ailleurs dans le cache BiS, a partir de son identifiant. */
-function iconForItemId(itemId) {
+/** Ce que le cache BiS sait d'un objet, a partir de son seul identifiant. */
+function itemInfoById(itemId) {
   for (const entry of Object.values(store.specs || {})) {
     for (const list of listsOf(entry)) {
       for (const item of list.items) {
-        if (!item.empty && item.itemId === itemId && item.icon) return item.icon;
+        if (!item.empty && item.itemId === itemId) return item;
       }
     }
   }
   return null;
+}
+
+function iconForItemId(itemId) {
+  const found = itemInfoById(itemId);
+  return (found && found.icon) || null;
+}
+
+/** Role d'une spec (dps / healing / tank), depuis le referentiel servi par l'API. */
+function specRoleOf(className, specSlug) {
+  const spec = (classInfo(className).specs || []).find((s) => s.slug === specSlug);
+  return (spec && spec.role) || null;
+}
+
+/**
+ * Bijoux retenus pour une spec DPS simulee : le duo de tete de chaque categorie de
+ * cibles chez Bloodmallet. Pour ces specs, la simulation prime sur le choix du guide.
+ */
+function simulatedTrinkets(specKey) {
+  const sim = trinketStore.specs[specKey];
+  if (!sim || !sim.available) return [];
+
+  const byId = new Map();
+  for (const targets of [1, 3, 5]) {
+    const data = sim.targets && sim.targets[String(targets)];
+    if (!data || !data.available) continue;
+    for (const trinket of data.trinkets.slice(0, 2)) {
+      const id = String(trinket.itemId);
+      if (!byId.has(id)) byId.set(id, { trinket, targets: [] });
+      byId.get(id).targets.push(targets);
+    }
+  }
+  return Array.from(byId.values());
 }
 
 /**
@@ -1225,7 +1257,14 @@ function buildSources() {
 
   for (const spec of usedSpecs) {
     const members = played.get(spec.key) || [];
+
+    // Sur une spec DPS simulee, c'est Bloodmallet qui fait foi pour les bijoux :
+    // on ignore ceux du guide et on injecte les siens plus bas.
+    const simRules =
+      specRoleOf(spec.class, spec.spec) === 'dps' && simulatedTrinkets(spec.key).length > 0;
+
     for (const { item, listLabel } of allBisEntries(entryFor(spec.key))) {
+      if (simRules && slotFrOf(item) === 'Bijou') continue;
       const raw = item.source || 'Source inconnue';
       const source = sourceIndex.get(raw) || raw;
       if (!sources.has(source)) sources.set(source, new Map());
@@ -1261,6 +1300,50 @@ function buildSources() {
         if (viaCatalyst) row.catalystBy.set(member.id, item);
         if (!row.listsBy.has(member.id)) row.listsBy.set(member.id, new Set());
         row.listsBy.get(member.id).add(listLabel);
+      }
+    }
+
+    if (!simRules) continue;
+
+    // Bijoux issus de la simulation. Bloodmallet ne donne qu'une categorie
+    // ("Raid", "Dungeon", "Profession") : la provenance precise est retrouvee dans
+    // les listes Icy Veins, ou a defaut ramenee au craft / a l'inconnu.
+    for (const { trinket, targets } of simulatedTrinkets(spec.key)) {
+      const known = itemInfoById(trinket.itemId);
+      let raw = known && known.source;
+      if (!raw) raw = /profession|craft/i.test(trinket.source || '') ? 'Craft' : 'Source inconnue';
+      const source = sourceIndex.get(raw) || cleanSourceLabel(raw);
+
+      if (!sources.has(source)) sources.set(source, new Map());
+      const byItem = sources.get(source);
+      const id = String(trinket.itemId);
+
+      if (!byItem.has(id)) {
+        byItem.set(id, {
+          dropId: id,
+          direct: {
+            itemId: trinket.itemId,
+            name: (LANG === 'fr' && trinket.nameFr) || trinket.name,
+            icon: (known && known.icon) || null,
+            quality: known ? known.quality : null,
+            slot: 'Trinket',
+            slotFr: 'Bijou',
+            source: raw,
+            wowheadParams: known ? known.wowheadParams : null,
+          },
+          viaItems: [],
+          members: [],
+          catalystBy: new Map(),
+          listsBy: new Map(),
+        });
+      }
+      const row = byItem.get(id);
+
+      const label = `Bloodmallet ${targets.map((t) => `${t}c`).join('/')}`;
+      for (const member of members) {
+        if (!row.members.some((m) => m.id === member.id)) row.members.push(member);
+        if (!row.listsBy.has(member.id)) row.listsBy.set(member.id, new Set());
+        row.listsBy.get(member.id).add(label);
       }
     }
   }
@@ -1345,7 +1428,12 @@ function playerChip(member, viaItem, lists) {
   // La liste d'origine compte : un objet BiS seulement dans la liste "Raid" n'a pas
   // le meme poids qu'un BiS toutes sources confondues.
   const parts = [specLabelOf(member)];
-  if (lists && lists.size) parts.push(`liste ${Array.from(lists).join(', ')}`);
+  if (lists && lists.size) {
+    const labels = Array.from(lists);
+    // Les bijoux d'une spec DPS simulee viennent de Bloodmallet, pas d'une liste du guide.
+    const fromSim = labels.every((l) => /^Bloodmallet/.test(l));
+    parts.push(`${fromSim ? 'via' : 'liste'} ${labels.join(', ')}`);
+  }
   if (viaItem) parts.push(`à catalyser en « ${viaItem.name} »`);
   chip.title = parts.join(' — ');
   return chip;

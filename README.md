@@ -75,6 +75,13 @@ changement d'objet sur un emplacement, changement de source, passage en « à ca
 ajoutée ou retirée, et réédition du guide sans changement de BiS. C'est plus fiable que de
 rafraîchir 18 specs à la main et de comparer de mémoire.
 
+On peut ne vérifier qu'une partie du roster en passant un filtre — pratique pour tester une
+seule spec sans attendre les 18 :
+
+```bash
+npm run check -- mage
+```
+
 Ensuite, si des changements sont à garder :
 
 ```bash
@@ -224,6 +231,22 @@ Deux pièges vérifiés sur cette API :
 - **toutes les specs ne sont pas simulées.** Sur le roster : 10 sur 18. Aucun soin n'est simulé,
   **toute la classe Moine est absente** (les trois specs, tous les types de données, tous les
   styles de combat — vérifié un par un), et quelques DPS manquent selon les patchs.
+
+### Qui fait foi pour les bijoux
+
+Dans la vue **Butin par boss**, pour une spec **DPS effectivement simulée**, ce sont les bijoux de
+Bloodmallet qui comptent comme BiS, pas ceux du guide : le duo de tête de chaque catégorie de
+cibles (1, 3, 5). Les autres cas gardent la liste Icy Veins — **soins et tanks** (Bloodmallet ne
+tranche que le DPS) et **DPS non simulés** (le Moine, par exemple).
+
+Une difficulté à connaître : Bloodmallet ne donne qu'une catégorie de provenance (`Raid`,
+`Dungeon`, `Profession`), jamais le boss. La provenance précise est donc retrouvée dans les listes
+Icy Veins — **22 des 27 bijoux concernés** s'y résolvent. Sur les 5 restants, 4 sont des bijoux de
+métier (rangés dans `Craft`, ce ne sont pas des drops de boss) et 1 est un bijou de raid qu'aucune
+liste ne mentionne : il apparaît sous `Source inconnue`.
+
+L'infobulle d'une pastille distingue les deux origines : *« via Bloodmallet 1c/3c »* contre
+*« liste Overall, Raid »*.
 
 ### Repli : les recommandations du guide
 

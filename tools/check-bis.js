@@ -3,8 +3,10 @@
 /**
  * Compare les listes BiS en ligne avec celles du cache, et dit ce qui a bougé.
  *
- *   npm run check            # rapport seul, n'écrit rien
- *   npm run check -- --write # applique les changements au cache
+ *   npm run check                  # rapport seul, n'écrit rien
+ *   npm run check -- --write       # applique les changements au cache
+ *   npm run check -- mage          # ne vérifie que les specs dont la clé contient "mage"
+ *   npm run check -- --write mage  # les deux à la fois
  *
  * Sert avant une republication : on voit d'un coup d'œil si un guide a été mis à
  * jour, quelle spec est touchée et sur quel emplacement — au lieu de rafraîchir
@@ -21,6 +23,8 @@ const { scrapeGuide } = require(path.join(ROOT, 'src/icyveins'));
 const { fetchTrinkets } = require(path.join(ROOT, 'src/bloodmallet'));
 
 const WRITE = process.argv.includes('--write');
+// Tout argument qui n'est pas une option filtre les specs : « mage », « paladin »...
+const FILTER = process.argv.slice(2).filter((a) => !a.startsWith('--'))[0] || null;
 const DELAY_MS = 3000; // même politesse que le bouton de l'interface
 
 /** Empreinte lisible d'une liste : un objet par emplacement. */
@@ -81,11 +85,20 @@ function compareLists(before, after) {
   for (const member of readRoster()) {
     if (!member.spec) continue;
     const entry = findSpec(member.class, member.spec);
-    if (entry) keys.set(specKey(entry.class, entry.spec), entry);
+    if (!entry) continue;
+    const key = specKey(entry.class, entry.spec);
+    if (FILTER && !key.includes(FILTER.toLowerCase())) continue;
+    keys.set(key, entry);
+  }
+
+  if (!keys.size) {
+    console.log(`Aucune spec du roster ne correspond à « ${FILTER} ».`);
+    return;
   }
 
   console.log(
-    `${keys.size} spec(s) à vérifier — ${WRITE ? 'le cache sera mis à jour' : 'lecture seule'}\n`
+    `${keys.size} spec(s) à vérifier${FILTER ? ` (filtre « ${FILTER} »)` : ''} — ` +
+      `${WRITE ? 'le cache sera mis à jour' : 'lecture seule'}\n`
   );
 
   let changed = 0;
