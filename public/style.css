@@ -753,8 +753,24 @@ a.pd-catalyst:hover {
 }
 
 .mplus-item--overall {
+  position: relative;
   border-color: color-mix(in srgb, var(--green) 45%, transparent);
   background: color-mix(in srgb, var(--green) 8%, transparent);
+  margin-top: 0.35rem;
+}
+
+/* Étiquette posée sur la bordure, façon légende de fieldset. Le fond opaque
+   du bloc masque le trait derrière le texte. */
+.mplus-item--overall::before {
+  content: 'BiS overall';
+  position: absolute;
+  top: -0.55rem;
+  left: 0.55rem;
+  padding: 0 0.3rem;
+  background: var(--panel-2);
+  color: var(--green);
+  font-size: 0.62rem;
+  letter-spacing: 0.03em;
 }
 
 .mplus-icon {
@@ -787,6 +803,12 @@ a.pd-catalyst:hover {
   padding: 0 0.25rem;
   font-size: 0.66rem;
   cursor: help;
+  white-space: nowrap;
+}
+
+.mplus-tag--sim {
+  color: #7ab5dd;
+  border-color: color-mix(in srgb, #4a90c4 45%, transparent);
 }
 
 /* ---------------- Panneau des bijoux (simulation) ---------------- */

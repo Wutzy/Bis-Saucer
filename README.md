@@ -127,7 +127,10 @@ nombre de slots en cache). Dans la vue Butin par boss, cette même barre liste l
   affiché sans repli.
   Le tri se fait **d'abord sur les BiS généraux**, puis sur le total : une pièce BiS toutes
   sources confondues restera équipée une fois le raid farmé, alors qu'un BiS propre à la liste
-  Les BiS généraux sont **encadrés en vert** dans la liste, les autres portent le tag `liste M+`.
+  Les BiS généraux sont **encadrés en vert** avec l'étiquette « BiS overall », les autres portent
+  le tag `liste M+`.
+  Les bijoux du haut de classement Bloodmallet qui tombent en donjon y sont ajoutés même quand le
+  guide ne les retient pas, avec leur rang par nombre de cibles (`1c #2 · 3c #1 · 5c #2`).
 - **Roster** — les 20 membres groupés par classe, avec le choix de spec de chacun.
 
 ## Pièces de set et Catalyseur

@@ -465,8 +465,11 @@ function simulatedTrinkets(specKey) {
     if (!data || !data.available) continue;
     for (const trinket of data.trinkets.slice(0, SIM_TRINKET_COUNT)) {
       const id = String(trinket.itemId);
-      if (!byId.has(id)) byId.set(id, { trinket, targets: [] });
-      byId.get(id).targets.push(targets);
+      // Le rang change d'une categorie a l'autre : on les garde tous.
+      if (!byId.has(id)) byId.set(id, { trinket, targets: [], ranks: {} });
+      const entry = byId.get(id);
+      entry.targets.push(targets);
+      entry.ranks[targets] = trinket.rank;
     }
   }
   return Array.from(byId.values());
@@ -947,9 +950,42 @@ function buildDungeonIndex() {
       if (!byDungeon.has(source)) byDungeon.set(source, new Map());
       const items = byDungeon.get(source);
       const id = String(item.itemId);
-      if (!items.has(id)) items.set(id, { item, lists: new Set() });
+      if (!items.has(id)) items.set(id, { item, lists: new Set(), sim: null });
       items.get(id).lists.add(listLabel);
     }
+
+    // Bijoux du haut de classement Bloodmallet qui tombent en donjon : ils
+    // comptent aussi pour le farm, avec leur rang par nombre de cibles.
+    if (specRoleOf(spec.class, spec.spec) === 'dps') {
+      for (const { trinket, ranks } of simulatedTrinkets(spec.key)) {
+        const known = itemInfoById(trinket.itemId);
+        const raw = (known && known.source) || ITEM_SOURCES[trinket.itemId];
+        if (!raw) continue;
+        const source = sourceIndex.get(raw) || cleanSourceLabel(raw);
+        if (kinds.get(source) !== 'dungeon') continue;
+
+        if (!byDungeon.has(source)) byDungeon.set(source, new Map());
+        const items = byDungeon.get(source);
+        const id = String(trinket.itemId);
+
+        if (!items.has(id)) {
+          items.set(id, {
+            item: known || {
+              itemId: trinket.itemId,
+              name: (LANG === 'fr' && trinket.nameFr) || trinket.name,
+              icon: null,
+              slot: 'Trinket',
+              slotFr: 'Bijou',
+              source: raw,
+            },
+            lists: new Set(),
+            sim: null,
+          });
+        }
+        items.get(id).sim = ranks;
+      }
+    }
+
     bySpec.set(spec.key, byDungeon);
   }
 
@@ -1104,7 +1140,7 @@ function renderMplus() {
     const list = document.createElement('div');
     list.className = 'mplus-items';
 
-    for (const { item, lists } of dungeon.items) {
+    for (const { item, lists, sim } of dungeon.items) {
       // Un BiS toutes sources confondues restera équipé une fois le raid farmé :
       // on l'encadre pour le distinguer d'un BiS propre au Mythique+.
       const overall = Array.from(lists).some((l) => /overall/i.test(l));
@@ -1124,12 +1160,26 @@ function renderMplus() {
       meta.textContent = slotName(item);
 
       // Un objet BiS uniquement dans la liste Mythic+ n'a pas le meme poids qu'un
-      // BiS toutes sources confondues : on le precise.
-      if (!overall) {
+      // BiS toutes sources confondues : on le precise. Sans liste du tout, l'objet
+      // vient uniquement de la simulation, et le tag n'aurait pas de sens.
+      if (!overall && lists.size) {
         const tag = document.createElement('span');
         tag.className = 'mplus-tag';
         tag.textContent = 'liste M+';
         tag.title = `BiS dans la liste ${Array.from(lists).join(', ')} uniquement`;
+        meta.appendChild(document.createTextNode(' · '));
+        meta.appendChild(tag);
+      }
+
+      // Rang Bloodmallet par nombre de cibles : « 1c #2 · 3c #1 ».
+      if (sim) {
+        const tag = document.createElement('span');
+        tag.className = 'mplus-tag mplus-tag--sim';
+        tag.textContent = [1, 3, 5]
+          .filter((t) => sim[t])
+          .map((t) => `${t}c #${sim[t]}`)
+          .join(' · ');
+        tag.title = 'Classement Bloodmallet, par nombre de cibles simulées';
         meta.appendChild(document.createTextNode(' · '));
         meta.appendChild(tag);
       }
