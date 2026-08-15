@@ -1244,6 +1244,19 @@ function allBisEntries(entry) {
   );
 }
 
+// Bijoux que Bloodmallet situe seulement par categorie, sans boss precis.
+const RAID_UNKNOWN = 'Raid — boss non précisé';
+const DUNGEON_UNKNOWN = 'Donjon — non précisé';
+
+/**
+ * Provenances renseignees a la main, pour les objets qu'aucune liste Icy Veins ne
+ * mentionne : Bloodmallet ne donne alors que la categorie ("Raid"), jamais le boss.
+ * Une ligne par objet, la clef est son identifiant Wowhead.
+ */
+const ITEM_SOURCES = {
+  270169: 'Coiled Altar', // Idole funeste du seigneur des maléfices
+};
+
 function buildSources() {
   const { played, specs: usedSpecs } = scoredSpecs();
   const sources = new Map();
@@ -1310,8 +1323,17 @@ function buildSources() {
     // les listes Icy Veins, ou a defaut ramenee au craft / a l'inconnu.
     for (const { trinket, targets } of simulatedTrinkets(spec.key)) {
       const known = itemInfoById(trinket.itemId);
-      let raw = known && known.source;
-      if (!raw) raw = /profession|craft/i.test(trinket.source || '') ? 'Craft' : 'Source inconnue';
+      let raw = (known && known.source) || ITEM_SOURCES[trinket.itemId];
+      if (!raw) {
+        // Aucune liste Icy Veins ne mentionne cet objet : on se rabat sur la
+        // categorie donnee par Bloodmallet, qui suffit a le ranger du bon cote du
+        // filtre. Sans ca il finissait en "Source inconnue", donc invisible en
+        // vue Raid alors que c'est bien un bijou de raid.
+        if (/profession|craft/i.test(trinket.source || '')) raw = 'Craft';
+        else if (/raid/i.test(trinket.source || '')) raw = RAID_UNKNOWN;
+        else if (/dungeon|mythic/i.test(trinket.source || '')) raw = DUNGEON_UNKNOWN;
+        else raw = 'Source inconnue';
+      }
       const source = sourceIndex.get(raw) || cleanSourceLabel(raw);
 
       if (!sources.has(source)) sources.set(source, new Map());
@@ -1356,6 +1378,10 @@ function buildSources() {
     const canonical = sourceIndex.get(raw) || raw;
     if (kind === 'raid' || !kinds.has(canonical)) kinds.set(canonical, kind);
   }
+
+  // Ces deux libelles ne viennent d'aucun guide : leur nature est connue d'avance.
+  kinds.set(RAID_UNKNOWN, 'raid');
+  kinds.set(DUNGEON_UNKNOWN, 'dungeon');
 
   return Array.from(sources.entries())
     .map(([name, byItem]) => {

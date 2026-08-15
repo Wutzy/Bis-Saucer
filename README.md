@@ -241,9 +241,13 @@ tranche que le DPS) et **DPS non simulés** (le Moine, par exemple).
 
 Une difficulté à connaître : Bloodmallet ne donne qu'une catégorie de provenance (`Raid`,
 `Dungeon`, `Profession`), jamais le boss. La provenance précise est donc retrouvée dans les listes
-Icy Veins — **22 des 27 bijoux concernés** s'y résolvent. Sur les 5 restants, 4 sont des bijoux de
-métier (rangés dans `Craft`, ce ne sont pas des drops de boss) et 1 est un bijou de raid qu'aucune
-liste ne mentionne : il apparaît sous `Source inconnue`.
+Icy Veins — **22 des 27 bijoux concernés** s'y résolvent. Pour les autres, dans l'ordre :
+
+1. la table `ITEM_SOURCES` (`public/app.js`), à remplir à la main quand on connaît le boss —
+   une ligne par identifiant Wowhead ;
+2. à défaut, la catégorie Bloodmallet : les bijoux de métier vont dans `Craft`, et les autres
+   dans `Raid — boss non précisé` ou `Donjon — non précisé`, ce qui les garde visibles sous le
+   bon filtre au lieu de les enterrer dans `Source inconnue`.
 
 L'infobulle d'une pastille distingue les deux origines : *« via Bloodmallet 1c/3c »* contre
 *« liste Overall, Raid »*.
