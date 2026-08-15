@@ -445,9 +445,15 @@ function specRoleOf(className, specSlug) {
   return (spec && spec.role) || null;
 }
 
+// Nombre de bijoux retenus par categorie de cibles. Sert au panneau de la vue
+// Liste BiS comme au calcul des besoins dans la vue Butin par boss : les deux
+// doivent dire la meme chose.
+const SIM_TRINKET_COUNT = 3;
+
 /**
- * Bijoux retenus pour une spec DPS simulee : le duo de tete de chaque categorie de
- * cibles chez Bloodmallet. Pour ces specs, la simulation prime sur le choix du guide.
+ * Bijoux retenus pour une spec DPS simulee : le haut du classement de chaque
+ * categorie de cibles chez Bloodmallet. Pour ces specs, la simulation prime sur
+ * le choix du guide.
  */
 function simulatedTrinkets(specKey) {
   const sim = trinketStore.specs[specKey];
@@ -457,7 +463,7 @@ function simulatedTrinkets(specKey) {
   for (const targets of [1, 3, 5]) {
     const data = sim.targets && sim.targets[String(targets)];
     if (!data || !data.available) continue;
-    for (const trinket of data.trinkets.slice(0, 2)) {
+    for (const trinket of data.trinkets.slice(0, SIM_TRINKET_COUNT)) {
       const id = String(trinket.itemId);
       if (!byId.has(id)) byId.set(id, { trinket, targets: [] });
       byId.get(id).targets.push(targets);
@@ -581,7 +587,7 @@ function renderTrinketPanel(sim, guideTrinkets) {
     }
 
     const best = data.trinkets[0];
-    for (const trinket of data.trinkets.slice(0, 2)) {
+    for (const trinket of data.trinkets.slice(0, SIM_TRINKET_COUNT)) {
       const row = document.createElement('div');
       row.className = `tp-item${guideIds.has(trinket.itemId) ? ' tp-item--bis' : ''}`;
 

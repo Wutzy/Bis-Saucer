@@ -203,7 +203,7 @@ le mot n'est pas répété en gris à côté du badge ambre : seul le badge s'af
 ## Vérification des bijoux (Bloodmallet)
 
 Les bijoux ne se classent pas pareil selon le nombre de cibles, donc la vue Liste BiS leur
-consacre un panneau en trois colonnes — **1 cible, 3 cibles, 5 cibles** — avec les **deux
+consacre un panneau en trois colonnes — **1 cible, 3 cibles, 5 cibles** — avec les **trois
 meilleurs de chaque catégorie** d'après [Bloodmallet](https://bloodmallet.com). Chaque entrée
 donne le rang, l'écart de DPS avec le premier et la source ; un fanion `BiS` marque les bijoux
 que le guide Icy Veins retient aussi. Quand la spec n'est pas simulée, les bijoux restent des
@@ -235,8 +235,9 @@ Deux pièges vérifiés sur cette API :
 ### Qui fait foi pour les bijoux
 
 Dans la vue **Butin par boss**, pour une spec **DPS effectivement simulée**, ce sont les bijoux de
-Bloodmallet qui comptent comme BiS, pas ceux du guide : le duo de tête de chaque catégorie de
-cibles (1, 3, 5). Les autres cas gardent la liste Icy Veins — **soins et tanks** (Bloodmallet ne
+Bloodmallet qui comptent comme BiS, pas ceux du guide : le trio de tête de chaque catégorie de
+cibles (1, 3, 5). Le nombre est réglé par `SIM_TRINKET_COUNT` dans `public/app.js`, partagé entre
+le panneau et le calcul des besoins pour qu'ils ne divergent jamais. Les autres cas gardent la liste Icy Veins — **soins et tanks** (Bloodmallet ne
 tranche que le DPS) et **DPS non simulés** (le Moine, par exemple).
 
 Une difficulté à connaître : Bloodmallet ne donne qu'une catégorie de provenance (`Raid`,
