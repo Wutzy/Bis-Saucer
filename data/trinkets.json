@@ -14490,7 +14490,32 @@
         }
       },
       "fetchedAt": "2026-08-15T13:33:57.761Z"
+    },
+    "druid-feral": {
+      "key": "druid-feral",
+      "available": false,
+      "targets": {
+        "1": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk/druid/feral",
+          "available": false,
+          "reason": "No standard chart with these values found.",
+          "trinkets": []
+        },
+        "3": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk3/druid/feral",
+          "available": false,
+          "reason": "No standard chart with these values found.",
+          "trinkets": []
+        },
+        "5": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk5/druid/feral",
+          "available": false,
+          "reason": "No standard chart with these values found.",
+          "trinkets": []
+        }
+      },
+      "fetchedAt": "2026-08-16T16:40:17.414Z"
     }
   },
-  "updatedAt": "2026-08-15T19:55:55.607Z"
+  "updatedAt": "2026-08-16T16:40:17.416Z"
 }

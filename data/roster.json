@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-16T08:30:19.990Z",
+  "updatedAt": "2026-08-16T16:40:01.998Z",
   "members": [
     {
       "n": 1,
@@ -163,6 +163,14 @@
       "spec": "subtlety",
       "id": "reinox93",
       "raid": true
+    },
+    {
+      "n": 21,
+      "name": "Dansenuit",
+      "class": "druid",
+      "spec": "feral",
+      "raid": true,
+      "id": "dansenuit"
     }
   ]
 }
