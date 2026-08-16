@@ -217,6 +217,34 @@ let vueAvantGuilde = 'list';
  * valeur = fichier dans public/img/. Sans entree, la carte affiche un cadre neutre :
  * une source sans image reste affichable, elle n'a simplement pas d'illustration.
  */
+/**
+ * Specs DPS qui tapent a distance. Le referentiel de `src/classes.js` ne connait que
+ * tank / dps / healing — la distinction distance / corps a corps n'y sert a rien, elle
+ * n'entre pas dans les URLs Icy Veins. Elle ne sert qu'a ranger le roster, d'ou sa
+ * place ici, avec le reste du vocabulaire d'affichage.
+ *
+ * Tout ce qui est DPS sans etre dans cette liste est du corps a corps.
+ */
+const DPS_DISTANCE = new Set([
+  'druid-balance',
+  'evoker-augmentation',
+  'evoker-devastation',
+  'hunter-beast-mastery',
+  'hunter-marksmanship',
+  'mage-arcane',
+  'mage-fire',
+  'mage-frost',
+  'priest-shadow',
+  'shaman-elemental',
+  'warlock-affliction',
+  'warlock-demonology',
+  'warlock-destruction',
+]);
+
+// Section "hors roster mythique" depliee ou non. Repliee par defaut : la vue montre
+// la composition mythique, ces membres-la n'en font pas partie.
+let rosterHorsVisible = false;
+
 // Donjon mis en avant dans la vue M+ opti : les autres blocs sont estompes, pour
 // lire un donjon a la fois. null = tout est lisible.
 let mplusFocus = null;
@@ -1653,6 +1681,7 @@ function playerChip(member, viaItem, lists) {
     'player-chip',
     viaItem ? 'player-chip--catalyst' : '',
     member.star ? 'player-chip--star' : '',
+    member.trial ? 'player-chip--trial' : '',
   ]
     .filter(Boolean)
     .join(' ');
@@ -1683,6 +1712,7 @@ function playerChip(member, viaItem, lists) {
   // La liste d'origine compte : un objet BiS seulement dans la liste "Raid" n'a pas
   // le meme poids qu'un BiS toutes sources confondues.
   const parts = [specLabelOf(member)];
+  if (member.trial) parts.push('à l’essai');
   if (lists && lists.size) {
     const labels = Array.from(lists);
     // Les bijoux d'une spec DPS simulee viennent de Bloodmallet, pas d'une liste du guide.
@@ -2149,6 +2179,25 @@ async function updateMemberRaid(member, raid) {
   render();
 }
 
+/** Marque un membre a l'essai. Purement indicatif : ne filtre aucun butin. */
+async function updateMemberTrial(member, trial) {
+  const data = await ecrireRoster(
+    urlMembre(member),
+    { method: 'PUT', ...corpsJson({ trial }) },
+    'Impossible d’enregistrer le statut d’essai.'
+  );
+  if (!data) return render();
+
+  member.trial = data.member.trial;
+  showMessage(
+    trial
+      ? `${member.name} passe en test : signalé partout, mais compté comme les autres.`
+      : `${member.name} n’est plus en test.`,
+    'info'
+  );
+  render();
+}
+
 async function ajouterMembre(nom, className, spec) {
   const data = await ecrireRoster(
     '/api/roster',
@@ -2183,175 +2232,296 @@ async function retirerMembre(member) {
   render();
 }
 
-function renderRoster() {
-  const wrap = document.createElement('div');
-  // Le roster est une des trois entrees de guilde : on garde la barre pour passer
-  // aux deux autres sans repasser par l'ecran d'accueil.
-  wrap.appendChild(randNav());
+/** Role d'affichage d'un membre : c'est ainsi que le roster est range. */
+function roleDe(member) {
+  if (!member.spec) return 'sans-spec';
+  const role = specRoleOf(member.class, member.spec);
+  if (role === 'tank') return 'tank';
+  if (role === 'healing') return 'heal';
+  return DPS_DISTANCE.has(`${member.class}-${member.spec}`) ? 'dps-distance' : 'dps-melee';
+}
 
-  const byClass = new Map();
-  for (const member of roster) {
-    if (!byClass.has(member.class)) byClass.set(member.class, []);
-    byClass.get(member.class).push(member);
+/**
+ * Range les membres par role, DPS scinde en distance / corps a corps. Une composition
+ * de raid se lit comme ca, pas classe par classe : ce qui compte est de voir d'un coup
+ * si les tanks et les soigneurs sont la.
+ */
+function grouperParRole(membres) {
+  const par = { tank: [], heal: [], 'dps-distance': [], 'dps-melee': [], 'sans-spec': [] };
+  for (const m of membres) par[roleDe(m)].push(m);
+
+  // A l'interieur d'un groupe : par classe, puis par numero d'arrivee.
+  for (const liste of Object.values(par)) {
+    liste.sort(
+      (a, b) =>
+        classInfo(a.class).label.localeCompare(classInfo(b.class).label, 'fr') ||
+        (Number(a.n) || 0) - (Number(b.n) || 0)
+    );
   }
 
+  const groupes = [
+    { label: 'Tank', membres: par.tank },
+    { label: 'Soigneur', membres: par.heal },
+    {
+      label: 'DPS',
+      sous: [
+        { label: 'Distance', membres: par['dps-distance'] },
+        { label: 'Corps à corps', membres: par['dps-melee'] },
+      ],
+    },
+    { label: 'Spec à renseigner', membres: par['sans-spec'] },
+  ];
+
+  // Un groupe vide n'a rien a dire ; DPS disparait si ses deux sous-groupes le sont.
+  return groupes.filter((g) =>
+    g.sous ? g.sous.some((s) => s.membres.length) : g.membres.length
+  );
+}
+
+/** Nombre de colonnes du tableau, selon que les actions sont rendues ou non. */
+function colonnesRoster() {
+  return STATIC ? 6 : 7;
+}
+
+/** Ligne d'en-tete d'un groupe, ou d'un sous-groupe en retrait. */
+function ligneGroupe(label, total, sous) {
+  const tr = document.createElement('tr');
+  tr.className = `group-row${sous ? ' group-row--sous' : ''}`;
+  const td = document.createElement('td');
+  td.colSpan = colonnesRoster();
+  const texte = document.createElement('span');
+  texte.textContent = `${label} · ${total}`;
+  td.appendChild(texte);
+  tr.appendChild(td);
+  return tr;
+}
+
+/** Cellule a case a cocher du roster, verrouillee en version consultable. */
+function caseRoster(coche, auChangement, infobulle) {
+  const td = document.createElement('td');
+  td.className = 'col-center';
+  const label = document.createElement('label');
+  label.className = 'roster-raid';
+  const box = document.createElement('input');
+  box.type = 'checkbox';
+  box.checked = coche;
+  box.disabled = STATIC;
+  label.title = STATIC ? MSG_STATIC : infobulle;
+  box.addEventListener('change', () => auChangement(box.checked));
+  label.appendChild(box);
+  td.appendChild(label);
+  return td;
+}
+
+/** Une ligne de membre, identique dans le roster mythique et dans le repli. */
+function ligneMembre(member) {
+  const info = classInfo(member.class);
+  const tr = document.createElement('tr');
+  if (member.star) tr.className = 'roster-star';
+
+  const nTd = document.createElement('td');
+  nTd.className = 'col-muted';
+  nTd.textContent = member.n;
+
+  // Icone de spec collee au nom, comme dans la liste d'origine de la guilde.
+  const nameTd = document.createElement('td');
+  const memberIcon = iconEl(
+    member.spec ? specIcon(member.class, member.spec) : info.icon,
+    'row-icon',
+    member.spec || info.label
+  );
+  const memberName = document.createElement('span');
+  memberName.textContent = member.name;
+  memberName.style.color = info.color;
+  nameTd.append(memberIcon, memberName);
+
+  if (member.star) {
+    const star = document.createElement('span');
+    star.className = 'roster-star-badge';
+    star.textContent = '★ Mascotte';
+    star.title = 'Star de la guilde';
+    nameTd.appendChild(star);
+  }
+
+  if (member.trial) {
+    const essai = document.createElement('span');
+    essai.className = 'roster-trial-badge';
+    essai.textContent = 'en test';
+    essai.title = 'À l’essai — compté comme les autres, mais signalé';
+    nameTd.appendChild(essai);
+  }
+
+  // Portrait détouré, en tête de ligne, pour les membres qui en ont un.
+  if (member.portrait) {
+    const portrait = document.createElement('img');
+    portrait.className = 'roster-portrait';
+    portrait.src = `img/${member.portrait}`;
+    portrait.alt = '';
+    portrait.title = member.name;
+    portrait.loading = 'lazy';
+    nameTd.insertBefore(portrait, nameTd.firstChild);
+  }
+
+  const specTd = document.createElement('td');
+  const select = document.createElement('select');
+  select.className = 'spec-select';
+  if (STATIC) {
+    select.disabled = true;
+    select.title = 'Version consultable : modification possible sur l’instance locale.';
+  }
+  const empty = document.createElement('option');
+  empty.value = '';
+  empty.textContent = '— à renseigner —';
+  select.appendChild(empty);
+  for (const spec of info.specs) {
+    const option = document.createElement('option');
+    option.value = spec.slug;
+    option.textContent = spec.label;
+    if (member.spec === spec.slug) option.selected = true;
+    select.appendChild(option);
+  }
+  select.addEventListener('change', () => updateMemberSpec(member, select.value));
+  specTd.appendChild(select);
+
+  const raidTd = caseRoster(
+    member.raid !== false,
+    (coche) => updateMemberRaid(member, coche),
+    member.raid !== false
+      ? `${member.name} est dans le roster mythique : il compte pour le butin de raid.`
+      : `${member.name} est hors roster mythique : ignoré en raid, compté en Mythique+.`
+  );
+
+  // En test : contrairement au roster mythique, ce statut ne filtre rien. Il ne fait
+  // que signaler la personne, ici et sur les pastilles des tableaux de butin.
+  const trialTd = caseRoster(
+    member.trial === true,
+    (coche) => updateMemberTrial(member, coche),
+    member.trial
+      ? `${member.name} est à l’essai : signalé partout, compté comme les autres.`
+      : `${member.name} n’est pas à l’essai.`
+  );
+
+  const dataTd = document.createElement('td');
+  if (!member.spec) {
+    dataTd.appendChild(badge('none', '-'));
+  } else {
+    const entry = entryFor(`${member.class}-${member.spec}`);
+    dataTd.appendChild(
+      entry ? badge('bis', `${entry.items.length} slots`) : badge('bis-multi', 'à scraper')
+    );
+  }
+
+  tr.append(nTd, nameTd, specTd, raidTd, trialTd, dataTd);
+
+  if (!STATIC) {
+    const actionTd = document.createElement('td');
+    actionTd.className = 'col-center';
+    const retirer = document.createElement('button');
+    retirer.type = 'button';
+    retirer.className = 'roster-retirer';
+    retirer.textContent = '✕';
+    retirer.title = `Retirer ${member.name} du roster`;
+    retirer.addEventListener('click', () => retirerMembre(member));
+    actionTd.appendChild(retirer);
+    tr.appendChild(actionTd);
+  }
+
+  return tr;
+}
+
+/** Tableau du roster, groupes en tete de section. */
+function tableauRoster(groupes) {
   const table = document.createElement('table');
   const thead = document.createElement('thead');
   // Composer et retirer des membres se fait sur l'instance locale, jamais sur la
   // version publiee : la-bas les controles ne sont pas grises, ils n'existent pas.
   const colonnes =
     '<th>#</th><th>Membre</th><th>Spec</th><th class="col-center">Roster mythique</th>' +
-    '<th>Données BiS</th>';
+    '<th class="col-center">En test</th><th>Données BiS</th>';
   thead.innerHTML = `<tr>${colonnes}${STATIC ? '' : '<th></th>'}</tr>`;
   table.appendChild(thead);
 
   const tbody = document.createElement('tbody');
-  const sortedClasses = Array.from(byClass.entries()).sort((a, b) =>
-    classInfo(a[0]).label.localeCompare(classInfo(b[0]).label, 'fr')
-  );
-
-  for (const [className, members] of sortedClasses) {
-    const info = classInfo(className);
-
-    const groupTr = document.createElement('tr');
-    groupTr.className = 'group-row';
-    const groupTd = document.createElement('td');
-    groupTd.colSpan = STATIC ? 5 : 6;
-    const classIcon = iconEl(info.icon, 'row-icon', info.label);
-    const label = document.createElement('span');
-    label.textContent = `${info.label} · ${members.length}`;
-    groupTd.append(classIcon, label);
-    groupTr.appendChild(groupTd);
-    tbody.appendChild(groupTr);
-
-    for (const member of members.sort((a, b) => a.n - b.n)) {
-      const tr = document.createElement('tr');
-      if (member.star) tr.className = 'roster-star';
-
-      const nTd = document.createElement('td');
-      nTd.className = 'col-muted';
-      nTd.textContent = member.n;
-
-      // Icone de spec collee au nom, comme dans la liste d'origine de la guilde.
-      const nameTd = document.createElement('td');
-      const memberIcon = iconEl(
-        member.spec ? specIcon(member.class, member.spec) : info.icon,
-        'row-icon',
-        member.spec || info.label
-      );
-      const memberName = document.createElement('span');
-      memberName.textContent = member.name;
-      memberName.style.color = info.color;
-      nameTd.append(memberIcon, memberName);
-
-      if (member.star) {
-        const star = document.createElement('span');
-        star.className = 'roster-star-badge';
-        star.textContent = '★ Mascotte';
-        star.title = 'Star de la guilde';
-        nameTd.appendChild(star);
-      }
-
-      // Portrait détouré, en tête de ligne, pour les membres qui en ont un.
-      if (member.portrait) {
-        const portrait = document.createElement('img');
-        portrait.className = 'roster-portrait';
-        portrait.src = `img/${member.portrait}`;
-        portrait.alt = '';
-        portrait.title = member.name;
-        portrait.loading = 'lazy';
-        nameTd.insertBefore(portrait, nameTd.firstChild);
-      }
-
-      const specTd = document.createElement('td');
-      const select = document.createElement('select');
-      select.className = 'spec-select';
-      if (STATIC) {
-        select.disabled = true;
-        select.title = 'Version consultable : modification possible sur l’instance locale.';
-      }
-      const empty = document.createElement('option');
-      empty.value = '';
-      empty.textContent = '— à renseigner —';
-      select.appendChild(empty);
-      for (const spec of info.specs) {
-        const option = document.createElement('option');
-        option.value = spec.slug;
-        option.textContent = spec.label;
-        if (member.spec === spec.slug) option.selected = true;
-        select.appendChild(option);
-      }
-      select.addEventListener('change', () => updateMemberSpec(member, select.value));
-      specTd.appendChild(select);
-
-      // Roster mythique : la case ne pilote que le butin de RAID. Decochee, le membre
-      // reste compte partout ailleurs, Mythique+ compris.
-      const raidTd = document.createElement('td');
-      raidTd.className = 'col-center';
-      const raidLabel = document.createElement('label');
-      raidLabel.className = 'roster-raid';
-      const raidBox = document.createElement('input');
-      raidBox.type = 'checkbox';
-      raidBox.checked = member.raid !== false;
-      raidBox.disabled = STATIC;
-      raidLabel.title = STATIC
-        ? MSG_STATIC
-        : raidBox.checked
-          ? `${member.name} est dans le roster mythique : il compte pour le butin de raid.`
-          : `${member.name} est hors roster mythique : ignoré en raid, compté en Mythique+.`;
-      raidBox.addEventListener('change', () => updateMemberRaid(member, raidBox.checked));
-      raidLabel.appendChild(raidBox);
-      raidTd.appendChild(raidLabel);
-      if (!raidBox.checked) tr.classList.add('roster-hors-raid');
-
-      const dataTd = document.createElement('td');
-      if (!member.spec) {
-        dataTd.appendChild(badge('none', '-'));
-      } else {
-        const entry = entryFor(`${member.class}-${member.spec}`);
-        dataTd.appendChild(
-          entry
-            ? badge('bis', `${entry.items.length} slots`)
-            : badge('bis-multi', 'à scraper')
-        );
-      }
-
-      tr.append(nTd, nameTd, specTd, raidTd, dataTd);
-
-      if (!STATIC) {
-        const actionTd = document.createElement('td');
-        actionTd.className = 'col-center';
-        const retirer = document.createElement('button');
-        retirer.type = 'button';
-        retirer.className = 'roster-retirer';
-        retirer.textContent = '✕';
-        retirer.title = `Retirer ${member.name} du roster`;
-        retirer.addEventListener('click', () => retirerMembre(member));
-        actionTd.appendChild(retirer);
-        tr.appendChild(actionTd);
-      }
-
-      tbody.appendChild(tr);
+  for (const groupe of groupes) {
+    if (!groupe.sous) {
+      tbody.appendChild(ligneGroupe(groupe.label, groupe.membres.length));
+      for (const member of groupe.membres) tbody.appendChild(ligneMembre(member));
+      continue;
+    }
+    const total = groupe.sous.reduce((somme, s) => somme + s.membres.length, 0);
+    tbody.appendChild(ligneGroupe(groupe.label, total));
+    for (const sous of groupe.sous) {
+      if (!sous.membres.length) continue;
+      tbody.appendChild(ligneGroupe(sous.label, sous.membres.length, true));
+      for (const member of sous.membres) tbody.appendChild(ligneMembre(member));
     }
   }
-
   table.appendChild(tbody);
-  wrap.appendChild(table);
+  return table;
+}
+
+/**
+ * Vue Roster Mythique : elle montre la composition, donc uniquement les membres qui en
+ * font partie. Les autres restent atteignables dans un repli en bas — sans quoi
+ * decocher quelqu'un le ferait disparaitre pour de bon, sans moyen de le remettre.
+ */
+function renderRoster() {
+  const wrap = document.createElement('div');
+  // Le roster est une des trois entrees de guilde : on garde la barre pour passer
+  // aux deux autres sans repasser par l'ecran d'accueil.
+  wrap.appendChild(randNav());
+
+  const mythique = roster.filter((m) => m.raid !== false);
+  const horsRoster = roster.filter((m) => m.raid === false);
+
+  wrap.appendChild(
+    mythique.length
+      ? tableauRoster(grouperParRole(mythique))
+      : emptyState(
+          'Roster mythique vide',
+          'Personne n’est coché « Roster mythique ». Déplie la section ci-dessous pour en réintégrer.'
+        )
+  );
+
+  if (horsRoster.length) {
+    const repli = document.createElement('section');
+    repli.className = 'roster-repli';
+
+    const bouton = document.createElement('button');
+    bouton.type = 'button';
+    bouton.className = `roster-repli-titre${rosterHorsVisible ? ' is-open' : ''}`;
+    bouton.textContent = `${
+      rosterHorsVisible ? '▾' : '▸'
+    } Hors roster mythique · ${horsRoster.length}`;
+    bouton.title = 'Ces membres comptent en Mythique+, mais pas sur le butin de raid';
+    bouton.addEventListener('click', () => {
+      rosterHorsVisible = !rosterHorsVisible;
+      render();
+    });
+    repli.appendChild(bouton);
+
+    if (rosterHorsVisible) repli.appendChild(tableauRoster(grouperParRole(horsRoster)));
+    wrap.appendChild(repli);
+  }
 
   if (!STATIC) wrap.appendChild(formulaireAjout());
 
   const missing = roster.filter((m) => !m.spec).length;
-  const horsRaid = roster.filter((m) => m.raid === false).length;
+  const essais = roster.filter((m) => m.trial).length;
   const note = document.createElement('p');
   note.className = 'roster-note';
   const phrases = [
+    `${mythique.length} membre(s) dans le roster mythique.`,
+    horsRoster.length
+      ? `${horsRoster.length} hors roster mythique : masqué(s) ci-dessus et ignoré(s) sur tout le butin de raid, mais comptés normalement en Mythique+.`
+      : 'Tout le roster en fait partie.',
+    essais
+      ? `${essais} membre(s) en test : signalé(s) sur les tableaux de butin, mais comptés comme les autres.`
+      : '',
     missing
-      ? `${missing} membre(s) sans spec renseignée. Les icônes de spec du roster d'origine étaient trop petites pour être lues de façon fiable : choisis la spec ici, elle est enregistrée dans data/roster.json.`
-      : 'Toutes les specs sont renseignées.',
-    horsRaid
-      ? `${horsRaid} membre(s) hors roster mythique : ignoré(s) sur tout le butin de raid, comptés normalement en Mythique+.`
-      : 'Tout le roster fait partie du roster mythique.',
-  ];
+      ? `${missing} membre(s) sans spec renseignée : choisis-la ici, elle est enregistrée dans data/roster.json.`
+      : '',
+  ].filter(Boolean);
   note.textContent = phrases.join(' ');
   wrap.appendChild(note);
 

@@ -164,9 +164,13 @@ haut, elle, reste affichée partout : c'est par elle qu'on en sort, de deux faç
   boss par boss et donjon par donjon. En Mythique+, chaque carte de donjon porte **une pastille par spec
   concernée, avec son nombre d'objets à récupérer là** : de quoi voir d'un coup d'œil qui a
   intérêt à monter le groupe.
-- **Roster Mythique (prévisionnel)** — les membres groupés par classe, avec le choix de spec de
-  chacun : c'est la source de toutes les autres vues. On y **ajoute et retire des membres**
-  (pseudo + classe + spec), et on y coche qui fait partie du **roster mythique** (voir plus bas).
+- **Roster Mythique (prévisionnel)** — la composition, **groupée par rôle** : Tank, Soigneur,
+  puis DPS scindé en *Distance* et *Corps à corps*. C'est ainsi qu'on lit une compo de raid, pas
+  classe par classe : on voit d'un coup si les tanks et les soigneurs sont là. À l'intérieur d'un
+  groupe, tri par classe puis par ordre d'arrivée.
+  La vue ne montre **que les membres du roster mythique** ; les autres sont dans un repli
+  « Hors roster mythique » en bas, d'où on peut les réintégrer. C'est aussi ici qu'on **ajoute et
+  retire des membres** (pseudo + classe + spec) et qu'on coche les deux statuts (voir plus bas).
 
 ## Roster mythique : deux périmètres, pas deux rosters
 
@@ -188,6 +192,31 @@ Côté données, c'est le champ `raid` de chaque membre dans [`data/roster.json`
 **Absent vaut `true`** : un roster écrit avant l'ajout du champ garde exactement son sens. Le
 filtrage se fait dans `buildSources()` ([`public/app.js`](public/app.js)), qui classe chaque
 source avant de regrouper le butin, précisément pour savoir quel périmètre appliquer.
+
+### Membres à l'essai
+
+Décocher **Roster mythique** retire aussi la personne de l'affichage principal du Roster : elle
+bascule dans le repli du bas. Sans ce repli, décocher quelqu'un le ferait disparaître sans aucun
+moyen de le remettre.
+
+La répartition Distance / Corps à corps n'existe pas dans [`src/classes.js`](src/classes.js), qui
+ne connaît que tank / dps / healing — la distinction n'entre pas dans les URLs Icy Veins. Elle vit
+donc dans `DPS_DISTANCE` ([`public/app.js`](public/app.js)), avec le reste du vocabulaire
+d'affichage : tout ce qui est DPS sans y figurer est du corps à corps.
+
+### Membres à l'essai
+
+Une seconde case, **En test**, marque les joueurs à l'essai (champ `trial`, absent vaut `false`).
+Elle ne se comporte **pas** comme la précédente : elle ne filtre rien du tout. Un joueur à l'essai
+raid et roule comme les autres — c'est bien l'intérêt d'un essai. Il est seulement **signalé**,
+là où ça sert au moment d'arbitrer :
+
+- un badge `en test` tireté à côté de son pseudo dans le Roster ;
+- sa pastille passe en **contour tireté** dans tous les tableaux de butin, sa couleur de classe
+  inchangée, et l'infobulle ajoute « à l'essai ».
+
+Les deux cases sont indépendantes : on peut être à l'essai *dans* le roster mythique, à l'essai
+en dehors, ou ni l'un ni l'autre.
 
 ## Pièces de set et Catalyseur
 
@@ -391,7 +420,7 @@ gauche. Rien n'est codé en dur : si l'étoile change de membre, les images suiv
 | --- | --- | --- |
 | `GET` | `/api/specs` | Classes/specs supportées (liste blanche serveur, 39 entrées) |
 | `GET` | `/api/roster` | Membres de la guilde + référentiel classes/specs |
-| `PUT` | `/api/roster/:id` | Body `{ "spec": "fury" }`, `{ "spec": null }` et/ou `{ "raid": false }` |
+| `PUT` | `/api/roster/:id` | Body `{ "spec": "fury" }`, `{ "spec": null }`, `{ "raid": false }` et/ou `{ "trial": true }` |
 | `POST` | `/api/roster` | Body `{ "name": "Toto", "class": "mage", "spec": "fire" }` — ajoute un membre |
 | `DELETE` | `/api/roster/:id` | Retire un membre |
 | `GET` | `/api/bis` | Contenu du cache `data/bis.json` |

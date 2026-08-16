@@ -1,0 +1,31 @@
+#!/bin/sh
+#
+# Regenere docs/ avant chaque commit.
+#
+# docs/ est un export fige : l'application ecrit dans data/, jamais dans docs/.
+# Sans ce hook, une modification faite dans l'interface (ajout d'un membre, case
+# Roster mythique, rafraichissement d'une spec) partait dans data/ sans jamais
+# atteindre la copie que GitHub Pages sert, et la version en ligne restait en
+# retard sans que rien ne le signale.
+#
+# Actif via `git config core.hooksPath .githooks` (a refaire apres un clone).
+
+set -e
+
+if ! command -v npm >/dev/null 2>&1; then
+  echo "pre-commit : npm introuvable, docs/ ne peut pas etre regenere." >&2
+  echo "             Commite depuis un terminal ou npm est disponible." >&2
+  exit 1
+fi
+
+if ! npm run --silent build:static >/dev/null; then
+  echo "pre-commit : le build de docs/ a echoue, commit interrompu." >&2
+  echo "             Relance 'npm run build:static' pour voir l'erreur." >&2
+  exit 1
+fi
+
+# docs/ est integralement genere a partir de public/ et data/ : on peut l'ajouter
+# en bloc, il n'y a jamais de modification manuelle a y preserver.
+git add docs
+
+exit 0

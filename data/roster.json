@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-16T16:40:01.998Z",
+  "updatedAt": "2026-08-16T20:40:13.655Z",
   "members": [
     {
       "n": 1,
@@ -8,7 +8,8 @@
       "class": "mage",
       "spec": "fire",
       "id": "wutz",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 2,
@@ -16,7 +17,8 @@
       "class": "death-knight",
       "spec": "frost",
       "id": "ryims",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 3,
@@ -26,7 +28,8 @@
       "star": true,
       "portrait": "bolderiz.png",
       "id": "bolderiz-franky",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 4,
@@ -34,7 +37,8 @@
       "class": "paladin",
       "spec": "retribution",
       "id": "lafrustre-elzoska",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 5,
@@ -42,7 +46,8 @@
       "class": "warlock",
       "spec": "affliction",
       "id": "kronox",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 6,
@@ -50,7 +55,8 @@
       "class": "warrior",
       "spec": "arms",
       "id": "elgior",
-      "raid": false
+      "raid": false,
+      "trial": false
     },
     {
       "n": 7,
@@ -58,7 +64,8 @@
       "class": "paladin",
       "spec": "protection",
       "id": "solhan",
-      "raid": true
+      "raid": true,
+      "trial": true
     },
     {
       "n": 8,
@@ -66,7 +73,8 @@
       "class": "priest",
       "spec": "shadow",
       "id": "kiyohara",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 9,
@@ -74,7 +82,8 @@
       "class": "shaman",
       "spec": "elemental",
       "id": "sam",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 10,
@@ -82,7 +91,8 @@
       "class": "warrior",
       "spec": "arms",
       "id": "maowar-leberger",
-      "raid": true
+      "raid": true,
+      "trial": true
     },
     {
       "n": 11,
@@ -90,7 +100,8 @@
       "class": "death-knight",
       "spec": "blood",
       "id": "kao",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 12,
@@ -98,7 +109,8 @@
       "class": "shaman",
       "spec": "restoration",
       "id": "xaly",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 13,
@@ -106,7 +118,8 @@
       "class": "priest",
       "spec": "discipline",
       "id": "projectbabytattoo",
-      "raid": true
+      "raid": true,
+      "trial": true
     },
     {
       "n": 14,
@@ -114,7 +127,8 @@
       "class": "demon-hunter",
       "spec": "havoc",
       "id": "ragelolz",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 15,
@@ -122,7 +136,8 @@
       "class": "paladin",
       "spec": "holy",
       "id": "folkvangr",
-      "raid": true
+      "raid": true,
+      "trial": true
     },
     {
       "n": 16,
@@ -130,7 +145,8 @@
       "class": "druid",
       "spec": "restoration",
       "id": "ganai",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 17,
@@ -138,7 +154,8 @@
       "class": "druid",
       "spec": "balance",
       "id": "ezra",
-      "raid": false
+      "raid": false,
+      "trial": false
     },
     {
       "n": 18,
@@ -146,7 +163,8 @@
       "class": "paladin",
       "spec": "holy",
       "id": "echodoll",
-      "raid": true
+      "raid": true,
+      "trial": true
     },
     {
       "n": 19,
@@ -154,7 +172,8 @@
       "class": "hunter",
       "spec": "beast-mastery",
       "id": "ganova",
-      "raid": true
+      "raid": true,
+      "trial": false
     },
     {
       "n": 20,
@@ -162,7 +181,8 @@
       "class": "rogue",
       "spec": "subtlety",
       "id": "reinox93",
-      "raid": true
+      "raid": true,
+      "trial": true
     },
     {
       "n": 21,
@@ -170,7 +190,17 @@
       "class": "druid",
       "spec": "feral",
       "raid": true,
-      "id": "dansenuit"
+      "id": "dansenuit",
+      "trial": true
+    },
+    {
+      "n": 22,
+      "name": "Sashoot",
+      "class": "hunter",
+      "spec": "marksmanship",
+      "raid": true,
+      "trial": true,
+      "id": "sashoot"
     }
   ]
 }

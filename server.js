@@ -48,7 +48,8 @@ app.get('/api/roster', (req, res) => {
 
 /**
  * Met a jour un membre. Body : { "spec": "fury" } ou { "spec": null } pour la spec,
- * { "raid": false } pour le sortir du roster mythique. Les deux peuvent etre combines.
+ * { "raid": false } pour le sortir du roster mythique, { "trial": true } pour le
+ * marquer a l'essai. Les champs peuvent etre combines.
  */
 app.put('/api/roster/:id', (req, res) => {
   const body = req.body || {};
@@ -60,14 +61,17 @@ app.put('/api/roster/:id', (req, res) => {
     }
     patch.spec = body.spec;
   }
-  if ('raid' in body) {
-    if (typeof body.raid !== 'boolean') {
-      return res.status(400).json({ error: 'Champ "raid" attendu (booléen).' });
+  for (const champ of ['raid', 'trial']) {
+    if (!(champ in body)) continue;
+    if (typeof body[champ] !== 'boolean') {
+      return res.status(400).json({ error: `Champ "${champ}" attendu (booléen).` });
     }
-    patch.raid = body.raid;
+    patch[champ] = body[champ];
   }
   if (!Object.keys(patch).length) {
-    return res.status(400).json({ error: 'Rien à modifier : "spec" ou "raid" attendu.' });
+    return res
+      .status(400)
+      .json({ error: 'Rien à modifier : "spec", "raid" ou "trial" attendu.' });
   }
 
   const member = updateMember(req.params.id, patch);
@@ -87,6 +91,7 @@ app.post('/api/roster', (req, res) => {
     class: body.class,
     spec: body.spec,
     raid: body.raid,
+    trial: body.trial,
   });
   if (error) return res.status(400).json({ error });
   res.status(201).json({ member });

@@ -65,12 +65,18 @@ function slugify(name) {
  * raid. Un membre a `false` reste un membre a part entiere — il compte pour tout le
  * Mythique+ — mais il est ignore partout ou l'on parle de butin de raid.
  * Absent = `true` : les rosters ecrits avant l'ajout du champ gardent leur sens.
+ *
+ * `trial` dit qu'il est EN TEST. Contrairement a `raid`, ce statut ne filtre rien : un
+ * joueur en test raid et roule comme les autres, c'est bien l'interet d'un essai. Il est
+ * seulement signale, pour qu'on sache a qui on a affaire au moment d'arbitrer.
+ * Absent = `false` : un membre sans mention n'est pas a l'essai.
  */
 function withIds(members) {
   return members.map((m) => ({
     ...m,
     id: m.id || slugify(m.name),
     raid: m.raid !== false,
+    trial: m.trial === true,
   }));
 }
 
@@ -105,7 +111,8 @@ function writeRoster(members) {
 
 /**
  * Met a jour un membre. `spec` peut valoir null pour remettre a "non renseignee",
- * `raid` dit s'il est dans le roster mythique. Les champs absents ne sont pas touches.
+ * `raid` dit s'il est dans le roster mythique, `trial` s'il est a l'essai. Les champs
+ * absents ne sont pas touches.
  * Renvoie le membre mis a jour, ou null si l'id est inconnu / la spec invalide pour la classe.
  */
 function updateMember(id, patch) {
@@ -118,6 +125,7 @@ function updateMember(id, patch) {
     member.spec = patch.spec;
   }
   if ('raid' in patch) member.raid = Boolean(patch.raid);
+  if ('trial' in patch) member.trial = Boolean(patch.trial);
 
   writeRoster(members);
   return member;
@@ -132,7 +140,7 @@ function setMemberSpec(id, spec) {
  * Ajoute un membre. Renvoie { member } ou { error } : le nom doit etre non vide et
  * inedit, la classe connue, et la spec valide pour cette classe (ou absente).
  */
-function addMember({ name, class: className, spec, raid }) {
+function addMember({ name, class: className, spec, raid, trial }) {
   const nom = typeof name === 'string' ? name.trim() : '';
   if (!nom) return { error: 'Un pseudo est nécessaire.' };
   if (nom.length > 40) return { error: 'Pseudo trop long (40 caractères maximum).' };
@@ -156,6 +164,7 @@ function addMember({ name, class: className, spec, raid }) {
     class: className,
     spec: specSlug,
     raid: raid !== false,
+    trial: trial === true,
     id: uniqueId(slugify(nom), members),
   };
 

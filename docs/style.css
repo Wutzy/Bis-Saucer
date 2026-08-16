@@ -715,6 +715,44 @@ tbody tr:last-child td {
   border-bottom: 1px solid var(--border);
 }
 
+/* Sous-groupe (Distance / Corps à corps) : en retrait et plus discret, pour qu'on
+   voie tout de suite qu'il dépend du groupe DPS au-dessus. */
+.group-row--sous td {
+  background: transparent;
+  color: var(--muted-2);
+  font-size: 0.7rem;
+  padding-left: 2rem;
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
+/* Membres hors roster mythique : repliés, parce que la vue montre la composition.
+   Ils restent là pour pouvoir les y remettre. */
+.roster-repli {
+  margin-top: 1rem;
+}
+
+.roster-repli-titre {
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  border: 1px dashed var(--border);
+  background: transparent;
+  color: var(--muted-2);
+  cursor: pointer;
+}
+
+.roster-repli-titre:hover {
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+}
+
+.roster-repli-titre.is-open {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
 .item-cell {
   display: flex;
   align-items: center;
@@ -1409,6 +1447,12 @@ a.pd-catalyst:hover {
   box-shadow: 0 0 8px -2px var(--star);
 }
 
+/* Joueur à l'essai : contour tireté, sans changer sa couleur de classe — il roule
+   comme les autres, on veut juste savoir qui c'est en arbitrant. */
+.player-chip--trial {
+  border-style: dashed;
+}
+
 .chip-star {
   color: var(--star);
   font-size: 0.72rem;
@@ -1433,6 +1477,19 @@ a.pd-catalyst:hover {
   border: 1px solid color-mix(in srgb, var(--star) 55%, transparent);
   border-radius: 999px;
   color: var(--star);
+  font-size: 0.68rem;
+  white-space: nowrap;
+  cursor: help;
+}
+
+/* À l'essai. Volontairement plus discret que la mascotte : c'est une mention de
+   statut, pas une mise en avant. Le tireté le distingue au premier coup d'œil. */
+.roster-trial-badge {
+  margin-left: 0.5rem;
+  padding: 0 0.35rem;
+  border: 1px dashed var(--muted-2);
+  border-radius: 999px;
+  color: var(--muted-2);
   font-size: 0.68rem;
   white-space: nowrap;
   cursor: help;
