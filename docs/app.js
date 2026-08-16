@@ -38,28 +38,42 @@ const WOWHEAD_DOMAIN = LANG === 'fr' ? 'fr' : '';
  * Les clefs ci-dessous sont toutes les sources presentes dans le cache actuel.
  */
 const SOURCES_FR = {
-  // Raid — The Venomous Abyss
-  "Ula'tek": '',
-  'The Coiled Altar': '',
-  "Nek'zali the Soulcoiler": '',
-  'Vashnik the Malignant': '',
-  Sszorak: '',
-  'The Twin Fangs': '',
-  'Entombed Sentinels': '',
-  'The Lost Explorers': '',
+  // Raid — l'abime Venimeux (noms officiels des annonces Blizzard FR)
+  "Ula'tek": "Ula'tek",
+  'The Coiled Altar': 'L’Autel annelé',
+  "Nek'zali the Soulcoiler": 'Nek’zali l’Entortillâme',
+  "Nek'zali": 'Nek’zali l’Entortillâme',
+  'Vashnik the Malignant': 'Vashnik le Malveillant',
+  Vashnik: 'Vashnik le Malveillant',
+  Sszorak: 'Sszorak',
+  'The Twin Fangs': 'Les crochets jumeaux',
+  'Entombed Sentinels': 'Sentinelles inhumées',
+  'The Lost Explorers': 'L’expédition perdue',
+  // Repaire (boss hors instance) : pas encore de nom FR publie, on garde l'anglais.
   'Nymrissa Wavecaller': '',
   'Tidebound Grotto': '',
-  // Donjons Mythique+
-  'Murder Row': '',
-  "King's Rest": '',
-  'Temple of Sethraliss': '',
-  'Voidscar Arena': '',
-  'Altar of Fangs': '',
-  'Den of Nalorakk': '',
-  'The Blinding Vale': '',
-  'Ruby Life Pools': '',
+  // Donjons Mythique+ (rotation saison 2)
+  'Murder Row': 'Allée du meurtre',
+  "King's Rest": 'Repos des rois',
+  'Temple of Sethraliss': 'Temple de Sephraliss',
+  'Voidscar Arena': 'Arène de la Cicatrice du Vide',
+  'Altar of Fangs': 'Autel des crochets',
+  'Den of Nalorakk': 'Antre de Nalorakk',
+  'The Blinding Vale': 'Le val Aveuglant',
+  'Ruby Life Pools': 'Bassins de l’Essence rubis',
+  // Raid precedent, encore cite par quelques guides
+  'Nexus King Salhadaar': 'Roi-nexus Salhadaar',
   // Divers
-  'BoE Trash Drop': '',
+  'BoE Trash Drop': 'Trash — objet LQE',
+  'Trash Drop': 'Trash',
+  Craft: 'Artisanat',
+  'Craft (Blacksmithing)': 'Artisanat (Forge)',
+  'Craft (Inscription)': 'Artisanat (Calligraphie)',
+  'Craft (Jewelcrafting)': 'Artisanat (Joaillerie)',
+  'Craft (Leatherworking)': 'Artisanat (Travail du cuir)',
+  'Craft (Tailoring)': 'Artisanat (Couture)',
+  Leatherworking: 'Travail du cuir',
+  Tailoring: 'Couture',
   Catalyseur: 'Catalyseur',
 };
 
@@ -67,7 +81,11 @@ const SOURCES_FR = {
 function translateSource(source) {
   if (!source) return source;
   if (LANG !== 'fr') return source;
-  return SOURCES_FR[source] || source;
+  if (SOURCES_FR[source]) return SOURCES_FR[source];
+  // Les guides ecrivent le meme nom avec ou sans article ("Coiled Altar" et
+  // "The Coiled Altar") : une seule entree dans la table couvre les deux formes.
+  const sansArticle = source.replace(/^Thes+/i, '');
+  return SOURCES_FR[sansArticle] || SOURCES_FR[`The ${sansArticle}`] || source;
 }
 
 /**
@@ -166,6 +184,8 @@ const els = {
   legendMeta: document.getElementById('legend-meta'),
   listPicker: document.getElementById('list-picker'),
   tabs: Array.from(document.querySelectorAll('.tab')),
+  tabsNav: document.querySelector('.tabs'),
+  panelHead: document.querySelector('.panel-head'),
 };
 
 let specs = [];
@@ -175,9 +195,54 @@ let roster = [];
 let classes = {};
 let activeKey = null;
 let activeBoss = null;
-let activeView = 'list';
-// Vue butin : 'raid' (par defaut), 'dungeon' ou 'all'.
-let bossFilter = 'raid';
+// L'application ouvre sur la partie guilde : elle concerne tout le monde, alors que la
+// premiere spec de la liste n'est que la premiere par ordre alphabetique.
+let activeView = 'rand';
+// Vue /rand : null (ecran de choix), 'raid' ou 'mplus'.
+let randMode = null;
+// Portee de la vue /rand : 'guild' (blason, tout le roster) ou 'spec' (onglet du
+// groupe Spec, seulement ce que la spec affichee doit rand).
+let randScope = 'guild';
+// Le roster sert a preparer la composition mythique : son libelle le dit, et il est
+// le meme partout (carte d'entree, barre de guilde, titre du panneau).
+const ROSTER_LABEL = 'Roster Mythique (prévisionnel)';
+
+// Vue a rouvrir en quittant une vue de guilde (/rand ou Roster) : leurs onglets etant
+// masques, ce sont les carres de la barre du haut qui servent de porte de sortie, et
+// ils doivent ramener la ou on etait.
+let vueAvantGuilde = 'list';
+
+/**
+ * Visuel par donjon. Clef = nom canonique de la source (celui des guides, en anglais),
+ * valeur = fichier dans public/img/. Sans entree, la carte affiche un cadre neutre :
+ * une source sans image reste affichable, elle n'a simplement pas d'illustration.
+ */
+// Donjon mis en avant dans la vue M+ opti : les autres blocs sont estompes, pour
+// lire un donjon a la fois. null = tout est lisible.
+let mplusFocus = null;
+
+const DUNGEON_IMAGES = {
+  'Altar of Fangs': 'AlterOfFangs.jpg',
+  'Den of Nalorakk': 'DenOfNalorakk.jpg',
+  "King's Rest": 'KingRestjpg.jpg',
+  'Murder Row': 'MurderRow.jpg',
+  'Ruby Life Pools': 'RubyLifePools.jpg',
+  'Temple of Sethraliss': 'SephralisTemple.jpg',
+  'The Blinding Vale': 'TheBlindingVal.jpg',
+  'Voidscar Arena': 'VoidScareArena.jpg',
+};
+
+/**
+ * Image d'une source. Meme tolerance a l'article que `translateSource` : les guides
+ * ecrivent aussi bien "Blinding Vale" que "The Blinding Vale", et le nom canonique
+ * retenu peut basculer de l'un a l'autre selon ce qui a ete scrape.
+ */
+function dungeonImage(name) {
+  if (!name) return null;
+  if (DUNGEON_IMAGES[name]) return DUNGEON_IMAGES[name];
+  const sansArticle = name.replace(/^Thes+/i, '');
+  return DUNGEON_IMAGES[sansArticle] || DUNGEON_IMAGES[`The ${sansArticle}`] || null;
+}
 // Index de la liste BiS affichee, par spec : certains guides en publient plusieurs
 // (une par talent de heros). Cle de spec -> index dans entry.lists.
 const selectedList = {};
@@ -446,7 +511,7 @@ function specRoleOf(className, specSlug) {
 }
 
 // Nombre de bijoux retenus par categorie de cibles. Sert au panneau de la vue
-// Liste BiS comme au calcul des besoins dans la vue Butin par boss : les deux
+// Liste BiS comme au calcul des besoins dans la vue Qui roll ? : les deux
 // doivent dire la meme chose.
 const SIM_TRINKET_COUNT = 5;
 
@@ -1016,6 +1081,25 @@ function dungeonCompanions(index, dungeon, exceptKey) {
 }
 
 /**
+ * Pastille "icone de spec + nombre de BiS ici", le pseudo restant dans l'infobulle.
+ * Sert aussi bien dans les cartes de donjon que sous l'en-tete d'un bloc M+ opti.
+ */
+function companionChip(member, total) {
+  const chip = document.createElement('span');
+  chip.className = `companion${member.star ? ' companion--star' : ''}`;
+  chip.style.setProperty('--spec', classColor(member.class));
+  chip.appendChild(iconEl(specIcon(member.class, member.spec), 'companion-icon', ''));
+
+  const compte = document.createElement('span');
+  compte.className = 'companion-count';
+  compte.textContent = total;
+  chip.appendChild(compte);
+
+  chip.title = `${member.name} — ${specLabelOf(member)} — ${total} pièce(s) BiS ici`;
+  return chip;
+}
+
+/**
  * Classement des donjons pour une spec : dans lequel y a-t-il le plus de BiS a aller
  * chercher ? On balaie toutes les listes du guide (Overall, Mythic+, talents de heros),
  * on ne garde que les sources classees "donjon", et on dedoublonne par objet.
@@ -1042,6 +1126,70 @@ function dungeonRanking(specKey, index) {
         b.items.length - a.items.length ||
         a.name.localeCompare(b.name, 'fr')
     );
+}
+
+/**
+ * Carte d'un donjon en tete de M+ opti : visuel, rang, nombre de BiS pour la spec
+ * affichee, et les camarades qui ont interet a le farmer aussi. Un clic amene au bloc
+ * detaille plus bas et estompe les autres ; un second clic remet tout a plat.
+ */
+function mplusCard(dungeon, position, index, specKey) {
+  const cible = mplusFocus === dungeon.name;
+  const card = document.createElement('button');
+  card.type = 'button';
+  card.className = [
+    'dungeon-card',
+    cible ? 'dungeon-card--cible' : '',
+    mplusFocus && !cible ? 'dungeon-card--estompe' : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  const visuel = document.createElement('div');
+  visuel.className = 'dungeon-visuel';
+  const img = dungeonImage(dungeon.name);
+  if (img) {
+    const el = document.createElement('img');
+    el.src = `img/${img}`;
+    el.alt = '';
+    el.loading = 'lazy';
+    visuel.appendChild(el);
+  } else {
+    visuel.classList.add('dungeon-visuel--vide');
+  }
+
+  const nom = document.createElement('div');
+  nom.className = 'dungeon-nom';
+  nom.textContent = `#${position + 1} · ${translateSource(dungeon.name)}`;
+
+  const compte = document.createElement('span');
+  compte.className = 'dungeon-compte';
+  compte.textContent = dungeon.overall
+    ? `${dungeon.items.length} BiS · dont ${dungeon.overall} général`
+    : `${dungeon.items.length} BiS`;
+
+  const specs = document.createElement('div');
+  specs.className = 'dungeon-specs';
+  for (const { member, count } of dungeonCompanions(index, dungeon.name, specKey)) {
+    specs.appendChild(companionChip(member, count));
+  }
+
+  card.title = cible ? 'Revenir à la liste complète' : 'Aller à ce donjon';
+  card.append(visuel, nom, compte, specs);
+  card.addEventListener('click', () => {
+    mplusFocus = cible ? null : dungeon.name;
+    render();
+    if (!mplusFocus) return;
+    // Le rendu vient de recreer les blocs : on cherche la cible dans le DOM neuf.
+    // Comparaison sur le dataset plutot qu'un selecteur : les noms de donjons
+    // contiennent des apostrophes ("King's Rest").
+    const bloc = Array.from(els.content.querySelectorAll('.mplus-block')).find(
+      (b) => b.dataset.donjon === mplusFocus
+    );
+    if (bloc) bloc.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  return card;
 }
 
 function renderMplus() {
@@ -1075,10 +1223,25 @@ function renderMplus() {
     'Classement par nombre de BiS généraux, puis par total.';
   wrap.appendChild(intro);
 
+  // Le donjon mis en avant peut avoir disparu (changement de spec, nouveau scrape).
+  if (mplusFocus && !ranking.some((d) => d.name === mplusFocus)) mplusFocus = null;
+
+  // Index visuel en tete : de quels donjons faut-il faire tomber du stuff.
+  const grille = document.createElement('div');
+  grille.className = 'dungeon-grid mplus-grid';
+  ranking.forEach((dungeon, position) =>
+    grille.appendChild(mplusCard(dungeon, position, index, spec.key))
+  );
+  wrap.appendChild(grille);
+
   // `position` et non `index` : le second masquerait l'index des donjons ci-dessus.
   ranking.forEach((dungeon, position) => {
     const block = document.createElement('section');
-    block.className = 'mplus-block';
+    const cible = mplusFocus === dungeon.name;
+    block.className = `mplus-block${mplusFocus && !cible ? ' mplus-block--estompe' : ''}${
+      cible ? ' mplus-block--cible' : ''
+    }`;
+    block.dataset.donjon = dungeon.name;
 
     const head = document.createElement('div');
     head.className = 'mplus-head';
@@ -1119,20 +1282,7 @@ function renderMplus() {
 
       // Icone de spec + nombre de BiS, sans le pseudo : le nom reste dans
       // l'infobulle, et tout le roster concerne tient sur une ligne ou deux.
-      for (const { member, count: n } of companions) {
-        const chip = document.createElement('span');
-        chip.className = `companion${member.star ? ' companion--star' : ''}`;
-        chip.style.setProperty('--spec', classColor(member.class));
-        chip.appendChild(iconEl(specIcon(member.class, member.spec), 'companion-icon', ''));
-
-        const badge = document.createElement('span');
-        badge.className = 'companion-count';
-        badge.textContent = n;
-        chip.appendChild(badge);
-
-        chip.title = `${member.name} — ${specLabelOf(member)} — ${n} pièce(s) BiS ici`;
-        row.appendChild(chip);
-      }
+      for (const { member, count } of companions) row.appendChild(companionChip(member, count));
 
       block.appendChild(row);
     }
@@ -1312,9 +1462,15 @@ const DUNGEON_UNKNOWN = 'Donjon — non précisé';
  * Provenances renseignees a la main, pour les objets qu'aucune liste Icy Veins ne
  * mentionne : Bloodmallet ne donne alors que la categorie ("Raid"), jamais le boss.
  * Une ligne par objet, la clef est son identifiant Wowhead.
+ *
+ * La provenance se lit sur la fiche Wowhead de l'objet, section « Dropped by » : elle
+ * nomme le PNJ et son donjon. On note ici le donjon ou le boss, tel qu'ecrit par les
+ * guides, pas le PNJ — c'est ce libelle qui regroupe l'objet avec les autres drops.
  */
 const ITEM_SOURCES = {
   270169: 'Coiled Altar', // Idole funeste du seigneur des maléfices
+  // Bannière de guerre amani en lambeaux : lâchée par Zul'jan, à l'Autel des crochets.
+  273797: 'Altar of Fangs',
 };
 
 function buildSources() {
@@ -1328,8 +1484,24 @@ function buildSources() {
   );
   const sourceIndex = buildSourceIndex(rawLabels);
 
+  // La nature de chaque source doit etre connue des le regroupement : le butin de raid
+  // ne concerne que le roster mythique, alors que les donjons concernent tout le monde.
+  // La classification se fait sur le libelle brut, on la reporte sur le canonique (le
+  // regroupement a pu fusionner "Vashnik" et "Vashnik the Malignant").
+  const kinds = new Map();
+  for (const [raw, kind] of classifySources()) {
+    const canonical = sourceIndex.get(raw) || raw;
+    if (kind === 'raid' || !kinds.has(canonical)) kinds.set(canonical, kind);
+  }
+  // Ces deux libelles ne viennent d'aucun guide : leur nature est connue d'avance.
+  kinds.set(RAID_UNKNOWN, 'raid');
+  kinds.set(DUNGEON_UNKNOWN, 'dungeon');
+
   for (const spec of usedSpecs) {
     const members = played.get(spec.key) || [];
+    // Ceux de la spec qui vont effectivement en raid. Un membre hors roster mythique
+    // reste compte partout ailleurs : il fait toujours son Mythique+.
+    const enRaid = members.filter((m) => m.raid !== false);
 
     // Sur une spec DPS simulee, c'est Bloodmallet qui fait foi pour les bijoux :
     // on ignore ceux du guide et on injecte les siens plus bas.
@@ -1340,6 +1512,10 @@ function buildSources() {
       if (simRules && slotFrOf(item) === 'Bijou') continue;
       const raw = item.source || 'Source inconnue';
       const source = sourceIndex.get(raw) || raw;
+      // Devant un boss de raid, seul le roster mythique roule : si personne de la spec
+      // n'y va, l'objet ne concerne pas cette spec ici.
+      const concernes = kinds.get(source) === 'raid' ? enRaid : members;
+      if (!concernes.length) continue;
       if (!sources.has(source)) sources.set(source, new Map());
       const byItem = sources.get(source);
 
@@ -1358,9 +1534,11 @@ function buildSources() {
           members: [],
           catalystBy: new Map(), // id de membre -> piece de set visee
           listsBy: new Map(), // id de membre -> listes BiS concernees
+          specKeys: new Set(), // specs pour qui cette ligne est BiS
         });
       }
       const row = byItem.get(dropId);
+      row.specKeys.add(spec.key);
 
       if (viaCatalyst) {
         if (!row.viaItems.some((i) => i.itemId === item.itemId)) row.viaItems.push(item);
@@ -1368,7 +1546,7 @@ function buildSources() {
         row.direct = item;
       }
 
-      for (const member of members) {
+      for (const member of concernes) {
         if (!row.members.some((m) => m.id === member.id)) row.members.push(member);
         if (viaCatalyst) row.catalystBy.set(member.id, item);
         if (!row.listsBy.has(member.id)) row.listsBy.set(member.id, new Set());
@@ -1395,6 +1573,8 @@ function buildSources() {
         else raw = 'Source inconnue';
       }
       const source = sourceIndex.get(raw) || cleanSourceLabel(raw);
+      const concernes = kinds.get(source) === 'raid' ? enRaid : members;
+      if (!concernes.length) continue;
 
       if (!sources.has(source)) sources.set(source, new Map());
       const byItem = sources.get(source);
@@ -1417,31 +1597,20 @@ function buildSources() {
           members: [],
           catalystBy: new Map(),
           listsBy: new Map(),
+          specKeys: new Set(),
         });
       }
       const row = byItem.get(id);
+      row.specKeys.add(spec.key);
 
       const label = `Bloodmallet ${targets.map((t) => `${t}c`).join('/')}`;
-      for (const member of members) {
+      for (const member of concernes) {
         if (!row.members.some((m) => m.id === member.id)) row.members.push(member);
         if (!row.listsBy.has(member.id)) row.listsBy.set(member.id, new Set());
         row.listsBy.get(member.id).add(label);
       }
     }
   }
-
-  // La classification se fait sur le libelle brut : on la reporte sur le libelle
-  // canonique (le regroupement a pu fusionner "Vashnik" et "Vashnik the Malignant").
-  const rawKinds = classifySources();
-  const kinds = new Map();
-  for (const [raw, kind] of rawKinds) {
-    const canonical = sourceIndex.get(raw) || raw;
-    if (kind === 'raid' || !kinds.has(canonical)) kinds.set(canonical, kind);
-  }
-
-  // Ces deux libelles ne viennent d'aucun guide : leur nature est connue d'avance.
-  kinds.set(RAID_UNKNOWN, 'raid');
-  kinds.set(DUNGEON_UNKNOWN, 'dungeon');
 
   return Array.from(sources.entries())
     .map(([name, byItem]) => {
@@ -1531,19 +1700,8 @@ function specLabelOf(member) {
   return spec ? `${info.label} — ${spec.label}` : info.label;
 }
 
-function renderBoss() {
-  const sources = buildSources().filter(
-    (s) => bossFilter === 'all' || s.kind === bossFilter
-  );
-  if (!sources.length) {
-    return emptyState(
-      'Aucune donnée en cache',
-      'Rafraîchis au moins une spec pour voir le butin par boss.'
-    );
-  }
-
-  const source = sources.find((s) => s.name === activeBoss) || sources[0];
-
+/** Tableau « qui roll » d'une source donnee. */
+function renderLootTable(source) {
   const table = document.createElement('table');
   const thead = document.createElement('thead');
   thead.innerHTML =
@@ -1628,28 +1786,340 @@ function renderBoss() {
   return table;
 }
 
+/* ---------------- vue /rand ---------------- */
+
+/**
+ * Vue de guilde, atteinte par le blason en haut de page. Elle a sa propre
+ * navigation — Raid ou Mythique+ — pour ne plus emprunter le selecteur de spec,
+ * qui laissait croire qu'elle dependait de la spec affichee.
+ */
+function randChoice() {
+  const wrap = document.createElement('div');
+  wrap.className = 'rand-choice';
+
+  for (const [mode, titre, soustitre] of [
+    ['raid', 'Raid', 'Rand par boss de raid'],
+    ['mplus', 'Mythique+', 'Les BiS des membres de la guilde, triés par donjon'],
+    ['roster', ROSTER_LABEL, 'La spec prévue de chaque membre du roster'],
+  ]) {
+    const card = document.createElement('button');
+    card.type = 'button';
+    card.className = 'rand-card';
+
+    const t = document.createElement('span');
+    t.className = 'rand-card-title';
+    t.textContent = titre;
+
+    const s = document.createElement('span');
+    s.className = 'rand-card-sub';
+    s.textContent = soustitre;
+
+    card.append(t, s);
+    card.addEventListener('click', () => {
+      if (mode === 'roster') {
+        selectView('roster');
+      } else {
+        randMode = mode;
+        activeBoss = null;
+      }
+      render();
+    });
+    wrap.appendChild(card);
+  }
+
+  return wrap;
+}
+
+/**
+ * Sources affichees par la vue /rand.
+ *
+ * En portee 'spec', on ne garde que les lignes dont la spec affichee est preneuse,
+ * mais on laisse la ligne entiere : les autres joueurs sont justement ceux contre
+ * qui il faudra rand. Une source qui ne concerne plus la spec disparait.
+ */
+function randSources(kind) {
+  const sources = buildSources().filter((s) => s.kind === kind);
+  if (randScope !== 'spec' || !activeKey) return sources;
+
+  return sources
+    .map((source) => {
+      const items = source.items.filter((row) => row.specKeys.has(activeKey));
+      if (!items.length) return null;
+      const players = new Set();
+      for (const row of items) for (const m of row.members) players.add(m.id);
+      return { ...source, items, playerCount: players.size };
+    })
+    .filter(Boolean);
+}
+
+/**
+ * Bascule entre les destinations de la vue courante. En portee guilde elle liste les
+ * trois entrees de l'ecran d'accueil, roster compris ; en portee spec elle se limite
+ * a Raid / Mythique+, le roster ne dependant d'aucune spec.
+ */
+function randNav() {
+  const portee = activeView === 'roster' ? 'guild' : randScope;
+  const nav = document.createElement('div');
+  nav.className = 'rand-nav';
+
+  for (const [mode, label] of [
+    ['raid', 'Raid'],
+    ['mplus', 'Mythique+'],
+  ]) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    const actif = activeView === 'rand' && randMode === mode;
+    btn.className = `rand-tab${actif ? ' is-active' : ''}`;
+    btn.textContent = label;
+    btn.addEventListener('click', () => {
+      selectView('rand', portee);
+      randMode = mode;
+      activeBoss = null;
+      render();
+    });
+    nav.appendChild(btn);
+  }
+
+  if (portee === 'guild') {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = `rand-tab${activeView === 'roster' ? ' is-active' : ''}`;
+    btn.textContent = ROSTER_LABEL;
+    btn.addEventListener('click', () => {
+      selectView('roster');
+      render();
+    });
+    nav.appendChild(btn);
+  }
+
+  return nav;
+}
+
+/** Carte d'un donjon : visuel, nom, specs concernees, nombre de BiS. */
+function dungeonCard(source) {
+  const card = document.createElement('button');
+  card.type = 'button';
+  card.className = 'dungeon-card';
+
+  const visuel = document.createElement('div');
+  visuel.className = 'dungeon-visuel';
+  const img = dungeonImage(source.name);
+  if (img) {
+    const el = document.createElement('img');
+    el.src = `img/${img}`;
+    el.alt = '';
+    el.loading = 'lazy';
+    visuel.appendChild(el);
+  } else {
+    visuel.classList.add('dungeon-visuel--vide');
+  }
+
+  const nom = document.createElement('div');
+  nom.className = 'dungeon-nom';
+  nom.textContent = translateSource(source.name);
+
+  const compte = document.createElement('span');
+  compte.className = 'dungeon-compte';
+  compte.textContent = `${source.items.length} BiS · ${source.playerCount} joueur(s)`;
+
+  // Une pastille par spec concernee, avec SON nombre d'objets ici : une icone seule
+  // disait juste « quelqu'un y a un BiS », sans dire si le donjon vaut le detour.
+  const parSpec = new Map();
+  for (const row of source.items) {
+    for (const key of row.specKeys) parSpec.set(key, (parSpec.get(key) || 0) + 1);
+  }
+
+  const joueurs = membersBySpec();
+  const specs = document.createElement('div');
+  specs.className = 'dungeon-specs';
+
+  const classement = Array.from(parSpec.entries())
+    .map(([key, total]) => ({ spec: specByKey(key), total }))
+    .filter((x) => x.spec)
+    .sort((a, b) => b.total - a.total || a.spec.label.localeCompare(b.spec.label, 'fr'));
+
+  for (const { spec, total } of classement) {
+    const membres = joueurs.get(spec.key) || [];
+    const pastille = document.createElement('span');
+    pastille.className = `companion${membres.some((m) => m.star) ? ' companion--star' : ''}`;
+    pastille.style.setProperty('--spec', classColor(spec.class));
+    pastille.appendChild(iconEl(specIcon(spec.class, spec.spec), 'companion-icon', ''));
+
+    const badge = document.createElement('span');
+    badge.className = 'companion-count';
+    badge.textContent = total;
+    pastille.appendChild(badge);
+
+    pastille.title = [
+      spec.label,
+      membres.length ? membres.map((m) => m.name).join(', ') : 'personne',
+      `${total} objet(s) BiS ici`,
+    ].join(' — ');
+    specs.appendChild(pastille);
+  }
+
+  card.append(visuel, nom, compte, specs);
+  card.addEventListener('click', () => {
+    activeBoss = source.name;
+    render();
+  });
+  return card;
+}
+
+// Point unique de changement de vue : l'onglet actif doit toujours refleter
+// activeView, y compris quand le changement vient d'ailleurs que d'un clic d'onglet.
+function selectView(view, scope) {
+  // La mise en avant d'un donjon n'a de sens que dans M+ opti, et pour la spec qui
+  // l'a demandee : elle ne survit pas a un changement de vue.
+  if (view !== 'mplus') mplusFocus = null;
+  activeView = view;
+  if (view === 'rand') randScope = scope || 'spec';
+  for (const tab of els.tabs) {
+    // L'onglet /rand est dans le groupe Spec : il ne s'allume pas quand la vue vient
+    // du blason de guilde, qui ne depend d'aucune spec.
+    const actif = tab.dataset.view === view && (view !== 'rand' || randScope === 'spec');
+    tab.classList.toggle('is-active', actif);
+  }
+}
+
+/**
+ * Ouvre le /rand de la spec affichee.
+ *
+ * On ne rand qu'en raid : en Mythique+ le butin est cible, personne ne roule dessus.
+ * Cette vue n'a donc ni ecran de choix ni bascule, elle va droit aux boss.
+ */
+function ouvrirRandSpec() {
+  randMode = 'raid';
+  selectView('rand', 'spec');
+}
+
+// En raid, la table est toujours affichee : on fixe le boss courant avant le rendu
+// pour que l'en-tete nomme bien ce qu'on regarde. Changer de spec ou de portee peut
+// faire disparaitre la source affichee : on repart alors du premier boss (raid) ou
+// de la grille de donjons (Mythique+).
+function normaliserRand() {
+  if (activeView !== 'rand' || !randMode) return;
+  const sources = randSources(randMode === 'raid' ? 'raid' : 'dungeon');
+  if (sources.some((s) => s.name === activeBoss)) return;
+  activeBoss = randMode === 'raid' && sources.length ? sources[0].name : null;
+}
+
+function renderRand() {
+  const wrap = document.createElement('div');
+  wrap.className = 'rand';
+
+  if (!randMode) {
+    wrap.appendChild(randChoice());
+    return wrap;
+  }
+
+  // La bascule n'existe que cote guilde : le /rand d'une spec n'a qu'une destination.
+  if (randScope === 'guild') wrap.appendChild(randNav());
+
+  const kind = randMode === 'raid' ? 'raid' : 'dungeon';
+  const sources = randSources(kind);
+  if (!sources.length) {
+    const spec = activeSpec();
+    // En raid, la raison la plus probable n'est pas l'absence de BiS mais l'absence
+    // de la spec dans le roster mythique : on le dit, sinon la vue semble cassee.
+    const raison =
+      kind === 'raid'
+        ? `Aucun objet de raid convoité par ${spec && spec.label} : soit personne de cette spec n'est dans le roster mythique, soit elle n'est pas jouée dans le roster.`
+        : `Aucun objet de donjon convoité par ${spec && spec.label} — soit la spec n'est pas jouée dans le roster, soit son BiS vient d'ailleurs.`;
+    wrap.appendChild(
+      randScope === 'spec' && spec
+        ? emptyState('Rien à rand ici', raison)
+        : emptyState(
+            'Aucune donnée en cache',
+            'Rafraîchis au moins une spec pour remplir cette vue.'
+          )
+    );
+    return wrap;
+  }
+
+  // En Mythique+, on entre par une grille de donjons ; en raid, par la liste des boss.
+  if (randMode === 'mplus' && !activeBoss) {
+    const grid = document.createElement('div');
+    grid.className = 'dungeon-grid';
+    for (const source of sources) grid.appendChild(dungeonCard(source));
+    wrap.appendChild(grid);
+    return wrap;
+  }
+
+  const chips = document.createElement('div');
+  chips.className = 'boss-chips rand-chips';
+  for (const source of sources) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = `boss-chip${source.name === activeBoss ? ' is-active' : ''}`;
+    btn.title = `${source.items.length} objet(s) · ${source.playerCount} joueur(s)`;
+    const nom = document.createElement('span');
+    nom.textContent = translateSource(source.name);
+    const compte = document.createElement('span');
+    compte.className = 'boss-chip-count';
+    compte.textContent = source.playerCount;
+    btn.append(nom, compte);
+    btn.addEventListener('click', () => {
+      activeBoss = source.name;
+      render();
+    });
+    chips.appendChild(btn);
+  }
+  wrap.appendChild(chips);
+
+  const source = sources.find((s) => s.name === activeBoss) || sources[0];
+  wrap.appendChild(renderLootTable(source));
+  return wrap;
+}
 
 /* ---------------- vue roster ---------------- */
 
-async function updateMemberSpec(member, spec) {
-  if (STATIC) {
-    showMessage(
-      'Version consultable : la modification du roster se fait sur l’instance locale.',
-      'info'
-    );
-    return;
-  }
+const MSG_STATIC = 'Version consultable : la modification du roster se fait sur l’instance locale.';
 
-  const res = await fetch(`/api/roster/${encodeURIComponent(member.id)}`, {
-    method: 'PUT',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ spec: spec || null }),
-  });
-  const data = await res.json();
-  if (!res.ok) {
-    showMessage(data.error || 'Impossible d’enregistrer la spec.', 'error');
-    return;
+/**
+ * Ecriture sur le roster. Renvoie la reponse, ou null si l'appel n'a pas abouti.
+ * En version publiee il n'y a pas de serveur : le garde-fou repond a la place, pour
+ * les deux champs dont les controles restent affiches (spec et roster mythique).
+ */
+async function ecrireRoster(url, options, erreurParDefaut) {
+  if (STATIC) {
+    showMessage(MSG_STATIC, 'info');
+    return null;
   }
+  let data = null;
+  try {
+    const res = await fetch(url, options);
+    data = await res.json();
+    if (!res.ok) {
+      showMessage((data && data.error) || erreurParDefaut, 'error');
+      return null;
+    }
+  } catch (err) {
+    showMessage(`${erreurParDefaut} (${err.message})`, 'error');
+    return null;
+  }
+  return data;
+}
+
+function urlMembre(member) {
+  return `/api/roster/${encodeURIComponent(member.id)}`;
+}
+
+function corpsJson(body) {
+  return {
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  };
+}
+
+async function updateMemberSpec(member, spec) {
+  const data = await ecrireRoster(
+    urlMembre(member),
+    { method: 'PUT', ...corpsJson({ spec: spec || null }) },
+    'Impossible d’enregistrer la spec.'
+  );
+  if (!data) return render();
+
   member.spec = data.member.spec;
   showMessage(
     spec
@@ -1660,8 +2130,64 @@ async function updateMemberSpec(member, spec) {
   render();
 }
 
+/** Entree / sortie du roster mythique : ne change que le butin de raid. */
+async function updateMemberRaid(member, raid) {
+  const data = await ecrireRoster(
+    urlMembre(member),
+    { method: 'PUT', ...corpsJson({ raid }) },
+    'Impossible d’enregistrer le roster mythique.'
+  );
+  if (!data) return render();
+
+  member.raid = data.member.raid;
+  showMessage(
+    raid
+      ? `${member.name} entre dans le roster mythique : il compte de nouveau pour le butin de raid.`
+      : `${member.name} sort du roster mythique : il reste compté en Mythique+, mais plus en raid.`,
+    'info'
+  );
+  render();
+}
+
+async function ajouterMembre(nom, className, spec) {
+  const data = await ecrireRoster(
+    '/api/roster',
+    { method: 'POST', ...corpsJson({ name: nom, class: className, spec: spec || null }) },
+    'Impossible d’ajouter ce membre.'
+  );
+  if (!data) return;
+
+  await loadRoster();
+  showMessage(
+    spec
+      ? `${data.member.name} ajouté au roster. Pense à rafraîchir sa spec depuis Icy Veins.`
+      : `${data.member.name} ajouté au roster, spec à renseigner.`,
+    'info'
+  );
+  render();
+}
+
+async function retirerMembre(member) {
+  // Une suppression ne se rattrape pas depuis l'interface : on demande confirmation.
+  if (!window.confirm(`Retirer ${member.name} du roster ?`)) return;
+
+  const data = await ecrireRoster(
+    urlMembre(member),
+    { method: 'DELETE' },
+    'Impossible de retirer ce membre.'
+  );
+  if (!data) return;
+
+  await loadRoster();
+  showMessage(`${member.name} retiré du roster.`, 'info');
+  render();
+}
+
 function renderRoster() {
   const wrap = document.createElement('div');
+  // Le roster est une des trois entrees de guilde : on garde la barre pour passer
+  // aux deux autres sans repasser par l'ecran d'accueil.
+  wrap.appendChild(randNav());
 
   const byClass = new Map();
   for (const member of roster) {
@@ -1671,7 +2197,12 @@ function renderRoster() {
 
   const table = document.createElement('table');
   const thead = document.createElement('thead');
-  thead.innerHTML = '<tr><th>#</th><th>Membre</th><th>Spec</th><th>Données BiS</th></tr>';
+  // Composer et retirer des membres se fait sur l'instance locale, jamais sur la
+  // version publiee : la-bas les controles ne sont pas grises, ils n'existent pas.
+  const colonnes =
+    '<th>#</th><th>Membre</th><th>Spec</th><th class="col-center">Roster mythique</th>' +
+    '<th>Données BiS</th>';
+  thead.innerHTML = `<tr>${colonnes}${STATIC ? '' : '<th></th>'}</tr>`;
   table.appendChild(thead);
 
   const tbody = document.createElement('tbody');
@@ -1685,7 +2216,7 @@ function renderRoster() {
     const groupTr = document.createElement('tr');
     groupTr.className = 'group-row';
     const groupTd = document.createElement('td');
-    groupTd.colSpan = 4;
+    groupTd.colSpan = STATIC ? 5 : 6;
     const classIcon = iconEl(info.icon, 'row-icon', info.label);
     const label = document.createElement('span');
     label.textContent = `${info.label} · ${members.length}`;
@@ -1753,6 +2284,26 @@ function renderRoster() {
       select.addEventListener('change', () => updateMemberSpec(member, select.value));
       specTd.appendChild(select);
 
+      // Roster mythique : la case ne pilote que le butin de RAID. Decochee, le membre
+      // reste compte partout ailleurs, Mythique+ compris.
+      const raidTd = document.createElement('td');
+      raidTd.className = 'col-center';
+      const raidLabel = document.createElement('label');
+      raidLabel.className = 'roster-raid';
+      const raidBox = document.createElement('input');
+      raidBox.type = 'checkbox';
+      raidBox.checked = member.raid !== false;
+      raidBox.disabled = STATIC;
+      raidLabel.title = STATIC
+        ? MSG_STATIC
+        : raidBox.checked
+          ? `${member.name} est dans le roster mythique : il compte pour le butin de raid.`
+          : `${member.name} est hors roster mythique : ignoré en raid, compté en Mythique+.`;
+      raidBox.addEventListener('change', () => updateMemberRaid(member, raidBox.checked));
+      raidLabel.appendChild(raidBox);
+      raidTd.appendChild(raidLabel);
+      if (!raidBox.checked) tr.classList.add('roster-hors-raid');
+
       const dataTd = document.createElement('td');
       if (!member.spec) {
         dataTd.appendChild(badge('none', '-'));
@@ -1765,7 +2316,21 @@ function renderRoster() {
         );
       }
 
-      tr.append(nTd, nameTd, specTd, dataTd);
+      tr.append(nTd, nameTd, specTd, raidTd, dataTd);
+
+      if (!STATIC) {
+        const actionTd = document.createElement('td');
+        actionTd.className = 'col-center';
+        const retirer = document.createElement('button');
+        retirer.type = 'button';
+        retirer.className = 'roster-retirer';
+        retirer.textContent = '✕';
+        retirer.title = `Retirer ${member.name} du roster`;
+        retirer.addEventListener('click', () => retirerMembre(member));
+        actionTd.appendChild(retirer);
+        tr.appendChild(actionTd);
+      }
+
       tbody.appendChild(tr);
     }
   }
@@ -1773,83 +2338,103 @@ function renderRoster() {
   table.appendChild(tbody);
   wrap.appendChild(table);
 
+  if (!STATIC) wrap.appendChild(formulaireAjout());
+
   const missing = roster.filter((m) => !m.spec).length;
+  const horsRaid = roster.filter((m) => m.raid === false).length;
   const note = document.createElement('p');
   note.className = 'roster-note';
-  note.textContent = missing
-    ? `${missing} membre(s) sans spec renseignée. Les icônes de spec du roster d'origine étaient trop petites pour être lues de façon fiable : choisis la spec ici, elle est enregistrée dans data/roster.json.`
-    : 'Toutes les specs sont renseignées.';
+  const phrases = [
+    missing
+      ? `${missing} membre(s) sans spec renseignée. Les icônes de spec du roster d'origine étaient trop petites pour être lues de façon fiable : choisis la spec ici, elle est enregistrée dans data/roster.json.`
+      : 'Toutes les specs sont renseignées.',
+    horsRaid
+      ? `${horsRaid} membre(s) hors roster mythique : ignoré(s) sur tout le butin de raid, comptés normalement en Mythique+.`
+      : 'Tout le roster fait partie du roster mythique.',
+  ];
+  note.textContent = phrases.join(' ');
   wrap.appendChild(note);
 
   return wrap;
 }
 
+/**
+ * Ajout d'un membre : pseudo, classe, spec. La liste de specs suit la classe choisie,
+ * puisqu'elle n'a de sens que pour elle.
+ */
+function formulaireAjout() {
+  const form = document.createElement('form');
+  form.className = 'roster-ajout';
+
+  const titre = document.createElement('span');
+  titre.className = 'roster-ajout-titre';
+  titre.textContent = 'Ajouter un membre';
+
+  const nom = document.createElement('input');
+  nom.type = 'text';
+  nom.className = 'roster-champ';
+  nom.placeholder = 'Pseudo';
+  nom.maxLength = 40;
+  nom.required = true;
+
+  const classeSelect = document.createElement('select');
+  classeSelect.className = 'spec-select';
+  const classeVide = document.createElement('option');
+  classeVide.value = '';
+  classeVide.textContent = '— classe —';
+  classeSelect.appendChild(classeVide);
+  for (const [slug, info] of Object.entries(classes).sort((a, b) =>
+    a[1].label.localeCompare(b[1].label, 'fr')
+  )) {
+    const option = document.createElement('option');
+    option.value = slug;
+    option.textContent = info.label;
+    classeSelect.appendChild(option);
+  }
+
+  const specSelect = document.createElement('select');
+  specSelect.className = 'spec-select';
+
+  // La spec depend de la classe : tant qu'aucune classe n'est choisie, il n'y a rien
+  // a proposer, et changer de classe remet la liste a jour.
+  function remplirSpecs() {
+    specSelect.innerHTML = '';
+    const vide = document.createElement('option');
+    vide.value = '';
+    vide.textContent = classeSelect.value ? '— spec (facultatif) —' : '— classe d’abord —';
+    specSelect.appendChild(vide);
+    specSelect.disabled = !classeSelect.value;
+    if (!classeSelect.value) return;
+    for (const spec of classInfo(classeSelect.value).specs || []) {
+      const option = document.createElement('option');
+      option.value = spec.slug;
+      option.textContent = spec.label;
+      specSelect.appendChild(option);
+    }
+  }
+  classeSelect.addEventListener('change', remplirSpecs);
+  remplirSpecs();
+
+  const valider = document.createElement('button');
+  valider.type = 'submit';
+  valider.className = 'roster-valider';
+  valider.textContent = 'Ajouter';
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!classeSelect.value) {
+      showMessage('Choisis une classe pour ce membre.', 'error');
+      return;
+    }
+    ajouterMembre(nom.value, classeSelect.value, specSelect.value);
+  });
+
+  form.append(titre, nom, classeSelect, specSelect, valider);
+  return form;
+}
+
 /* ---------------- rendu global ---------------- */
 
-/** En vue "butin par boss", la barre du haut liste les sources au lieu des specs. */
-function renderBossSelector() {
-  const all = buildSources();
-  const sources = all.filter((s) => bossFilter === 'all' || s.kind === bossFilter);
-
-  if (!sources.some((s) => s.name === activeBoss)) {
-    activeBoss = sources.length ? sources[0].name : null;
-  }
-
-  // Filtre raid / donjons / tout : par defaut on ne montre que le raid.
-  const filters = document.createElement('div');
-  filters.className = 'boss-filters';
-  for (const [value, label] of [
-    ['raid', 'Raid'],
-    ['dungeon', 'Donjons'],
-    ['all', 'Tout'],
-  ]) {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = `boss-filter${bossFilter === value ? ' is-active' : ''}`;
-    btn.textContent = `${label} (${
-      value === 'all' ? all.length : all.filter((s) => s.kind === value).length
-    })`;
-    btn.addEventListener('click', () => {
-      bossFilter = value;
-      activeBoss = null;
-      render();
-    });
-    filters.appendChild(btn);
-  }
-  els.selector.appendChild(filters);
-
-  if (!sources.length) {
-    const hint = document.createElement('p');
-    hint.className = 'selector-hint';
-    hint.textContent = 'Aucune source : rafraîchis au moins une spec.';
-    els.selector.appendChild(hint);
-    return;
-  }
-
-  const chips = document.createElement('div');
-  chips.className = 'boss-chips';
-  for (const source of sources) {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = `boss-chip${source.name === activeBoss ? ' is-active' : ''}`;
-    btn.title = `${source.items.length} objet(s) · ${source.playerCount} joueur(s)`;
-
-    const name = document.createElement('span');
-    name.textContent = source.name;
-    const count = document.createElement('span');
-    count.className = 'boss-chip-count';
-    count.textContent = source.playerCount;
-    btn.append(name, count);
-
-    btn.addEventListener('click', () => {
-      activeBoss = source.name;
-      showMessage(null);
-      render();
-    });
-    chips.appendChild(btn);
-  }
-  els.selector.appendChild(chips);
-}
 
 /**
  * Barre de selection en haut de page : une icone par spec suivie.
@@ -1857,14 +2442,9 @@ function renderBossSelector() {
  */
 function renderSelector() {
   els.selector.innerHTML = '';
-
-  if (activeView === 'roster') {
-    els.selector.hidden = true;
-    return;
-  }
+  // Affiche partout, Roster compris : les vues de guilde n'ont plus d'onglets, on en
+  // sort par une icone de spec ou par le carre correspondant.
   els.selector.hidden = false;
-
-  if (activeView === 'boss') return renderBossSelector();
 
   const visible = visibleSpecs();
   const played = membersBySpec();
@@ -1873,17 +2453,47 @@ function renderSelector() {
     activeKey = visible.length ? visible[0].key : null;
   }
 
+  const row = document.createElement('div');
+  row.className = 'spec-chips';
+
+  // La partie guilde ouvre la barre : c'est la porte d'entree de l'outil, et l'ecran
+  // sur lequel on arrive. Le trait la separe des specs qui la suivent.
+  const groupe = document.createElement('div');
+  groupe.className = 'guild-group';
+
+  const dansGuilde = estVueGuilde();
+  const guilde = document.createElement('button');
+  guilde.type = 'button';
+  guilde.className = `guild-chip${dansGuilde ? ' is-active' : ''}`;
+  guilde.title = dansGuilde
+    ? 'Revenir aux vues de spec'
+    : 'Guilde — /rand raid, /rand Mythique+ et roster';
+  const blason = document.createElement('img');
+  blason.src = 'img/guild.png';
+  blason.alt = 'Guilde';
+  guilde.appendChild(blason);
+  guilde.addEventListener('click', () => {
+    // Blason actif : on est dans la partie guilde, ce clic en ressort.
+    if (dansGuilde) return quitterVueGuilde();
+    ouvrirVueGuilde(() => {
+      selectView('rand', 'guild');
+      randMode = null;
+      activeBoss = null;
+    });
+  });
+
+  groupe.appendChild(guilde);
+  row.appendChild(groupe);
+
   if (!visible.length) {
     const hint = document.createElement('p');
     hint.className = 'selector-hint';
     hint.textContent =
-      'Aucune spec suivie. Renseigne les specs du roster dans l’onglet Roster.';
-    els.selector.appendChild(hint);
+      'Aucune spec suivie. Renseigne les specs du roster dans la vue Roster.';
+    row.appendChild(hint);
+    els.selector.appendChild(row);
     return;
   }
-
-  const row = document.createElement('div');
-  row.className = 'spec-chips';
 
   for (const spec of visible) {
     const entry = entryFor(spec.key);
@@ -1905,6 +2515,12 @@ function renderSelector() {
     btn.appendChild(iconEl(specIcon(spec.class, spec.spec), null, spec.label));
     btn.addEventListener('click', () => {
       activeKey = spec.key;
+      mplusFocus = null;
+      // Choisir une spec depuis le roster fait sortir de cette vue de guilde : sinon
+      // on cliquait sans effet visible. En /rand, on reste sur place mais on passe au
+      // butin de la spec choisie, ce qui est justement l'interet de l'onglet.
+      if (activeView === 'roster') selectView('list');
+      else if (activeView === 'rand') ouvrirRandSpec();
       showMessage(null);
       render();
     });
@@ -1914,37 +2530,83 @@ function renderSelector() {
   els.selector.appendChild(row);
 }
 
+/** Vrai dans les vues qui concernent tout le roster, pas la spec affichee. */
+function estVueGuilde() {
+  return activeView === 'roster' || (activeView === 'rand' && randScope === 'guild');
+}
+
+/** Entre dans une vue de guilde en retenant d'ou l'on vient. */
+function ouvrirVueGuilde(basculer) {
+  if (!estVueGuilde()) vueAvantGuilde = activeView;
+  basculer();
+  showMessage(null);
+  render();
+}
+
+/** Deuxieme clic sur le carre actif : on ressort par ou on est entre. */
+function quitterVueGuilde() {
+  selectView(vueAvantGuilde);
+  showMessage(null);
+  render();
+}
+
 function renderHeader() {
   const spec = activeSpec();
   const entry = spec ? entryFor(spec.key) : null;
   const color = spec ? classColor(spec.class) : '#d9a441';
 
+  // Ecran d'accueil de la guilde : les trois cartes se presentent toutes seules, un
+  // titre « /rand » au-dessus ne dirait rien de plus.
+  els.panelHead.hidden = activeView === 'rand' && randScope === 'guild' && !randMode;
+
   document.querySelector('.panel').style.setProperty('--spec', color);
   els.avatar.className = 'avatar lg';
   els.avatar.innerHTML = '';
-  els.avatar.hidden = activeView === 'boss' || activeView === 'roster';
+  // Le /rand d'une spec reste une vue de spec : son icone garde son sens. Celui de
+  // la guilde ne depend d'aucune spec, l'icone n'y a rien a dire.
+  els.avatar.hidden =
+    activeView === 'roster' || (activeView === 'rand' && randScope === 'guild');
   if (spec && !els.avatar.hidden) {
     els.avatar.title = spec.label;
     els.avatar.appendChild(iconEl(specIcon(spec.class, spec.spec), null, spec.label));
   }
 
-  if (activeView === 'roster') els.name.textContent = 'Roster';
-  else if (activeView === 'boss') els.name.textContent = activeBoss || 'Butin par boss';
-  else els.name.textContent = spec ? spec.label : '—';
+  if (activeView === 'roster') els.name.textContent = ROSTER_LABEL;
+  else if (activeView === 'rand') {
+    els.name.textContent = activeBoss ? translateSource(activeBoss) : '/rand';
+  } else els.name.textContent = spec ? spec.label : '—';
+
+  // Les onglets ne pilotent que des vues de spec : dans les vues de guilde ils n'ont
+  // rien à piloter. On en sort par les carrés du haut ou par une icône de spec.
+  els.tabsNav.hidden = estVueGuilde();
 
   // Le bouton agit sur une spec : il n'a pas de sens dans les vues roster / boss,
   // ni en hebergement statique ou aucun scrape n'est possible.
-  els.refresh.hidden = STATIC || activeView === 'roster' || activeView === 'boss';
+  els.refresh.hidden = STATIC || activeView === 'roster' || activeView === 'rand';
   els.refresh.disabled = !spec;
 
   els.sub.innerHTML = '';
   if (activeView === 'roster') {
     els.sub.textContent = `${roster.length} membres · specs enregistrées dans data/roster.json`;
-  } else if (activeView === 'boss') {
-    const source = buildSources().find((s) => s.name === activeBoss);
-    els.sub.textContent = source
-      ? `${source.items.length} objet(s) convoité(s) par ${source.playerCount} membre(s) du roster`
-      : 'Sélectionne une source dans la colonne de gauche';
+  } else if (activeView === 'rand') {
+    const pourSpec = randScope === 'spec' && spec;
+    const source =
+      activeBoss && randMode
+        ? randSources(randMode === 'raid' ? 'raid' : 'dungeon').find((s) => s.name === activeBoss)
+        : null;
+    // Devant un boss, "le roster" veut dire le roster mythique : les autres n'y sont pas.
+    const quiRoule = source && source.kind === 'raid' ? 'du roster mythique' : 'du roster';
+    if (source && pourSpec) {
+      els.sub.textContent = `${source.items.length} objet(s) à rand pour ${spec.label} · ${source.playerCount} membre(s) ${quiRoule} sur ces objets`;
+    } else if (source) {
+      els.sub.textContent = `${source.items.length} objet(s) convoité(s) par ${source.playerCount} membre(s) ${quiRoule}`;
+    } else if (pourSpec) {
+      els.sub.textContent = `Sur quoi ${spec.label} doit rand · choisis une source ci-dessous`;
+    } else {
+      els.sub.textContent = randMode
+        ? 'Choisis une source ci-dessous'
+        : 'Sur quoi votre guilde doit rand — choisis raid ou Mythique+';
+    }
   } else if (activeView === 'mplus' && spec) {
     const played = membersBySpec().get(spec.key) || [];
     els.sub.textContent = played.length
@@ -1972,7 +2634,7 @@ function renderHeader() {
     `${cachedCount}/${visible.length} spec(s) en cache · ${withSpec}/${roster.length} membres renseignés` +
     (STATIC ? ' · version consultable' : '');
 
-  if (activeView === 'boss' || activeView === 'roster') {
+  if (activeView === 'rand' || activeView === 'roster') {
     els.legendMeta.textContent = '';
   } else {
     els.legendMeta.textContent = entry
@@ -2029,7 +2691,7 @@ function renderContent() {
   els.content.innerHTML = '';
   renderListPicker();
   if (activeView === 'roster') els.content.appendChild(renderRoster());
-  else if (activeView === 'boss') els.content.appendChild(renderBoss());
+  else if (activeView === 'rand') els.content.appendChild(renderRand());
   else if (activeView === 'mplus') els.content.appendChild(renderMplus());
   else els.content.appendChild(renderList(spec ? entryFor(spec.key) : null, spec && spec.key));
   refreshTooltips();
@@ -2051,6 +2713,7 @@ function renderMascotte() {
 }
 
 function render() {
+  normaliserRand();
   renderMascotte();
   renderSelector();
   renderHeader();
@@ -2131,8 +2794,8 @@ async function refresh() {
 
 for (const tab of els.tabs) {
   tab.addEventListener('click', () => {
-    activeView = tab.dataset.view;
-    for (const other of els.tabs) other.classList.toggle('is-active', other === tab);
+    if (tab.dataset.view === 'rand') ouvrirRandSpec();
+    else selectView(tab.dataset.view);
     // La colonne de gauche change de contenu selon la vue (specs ou boss).
     render();
   });
@@ -2154,6 +2817,8 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
 (async function init() {
   try {
     await Promise.all([loadSpecs(), loadRoster(), loadStore(), loadTrinkets()]);
+    // Etat de depart : l'ecran d'accueil de la guilde, onglets masques.
+    selectView('rand', 'guild');
     render();
   } catch (err) {
     showMessage(`Erreur au chargement : ${err.message}`, 'error');

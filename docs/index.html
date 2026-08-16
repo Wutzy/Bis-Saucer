@@ -46,11 +46,13 @@
           </button>
         </header>
 
+        <!-- Uniquement les vues de la spec affichée : ce qui concerne tout le roster
+             (/rand de guilde, Roster) vit dans les carrés de la barre du haut. Le
+             « /rand » ci-dessous est celui de la spec, limité à ses objets. -->
         <nav class="tabs">
           <button class="tab is-active" data-view="list" type="button">Liste BiS</button>
-          <button class="tab" data-view="boss" type="button">Butin par boss</button>
           <button class="tab" data-view="mplus" type="button">M+ opti</button>
-          <button class="tab" data-view="roster" type="button">Roster</button>
+          <button class="tab" data-view="rand" type="button">/rand</button>
         </nav>
 
         <div id="list-picker" class="list-picker" hidden></div>

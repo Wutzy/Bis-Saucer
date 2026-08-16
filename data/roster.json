@@ -1,20 +1,22 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-15T13:24:34.849Z",
+  "updatedAt": "2026-08-16T06:50:22.266Z",
   "members": [
     {
       "n": 1,
       "name": "Wutz",
       "class": "mage",
       "spec": "fire",
-      "id": "wutz"
+      "id": "wutz",
+      "raid": true
     },
     {
       "n": 2,
       "name": "Ryïms",
       "class": "death-knight",
       "spec": "frost",
-      "id": "ryims"
+      "id": "ryims",
+      "raid": true
     },
     {
       "n": 3,
@@ -23,126 +25,144 @@
       "spec": "windwalker",
       "star": true,
       "portrait": "bolderiz.png",
-      "id": "bolderiz-franky"
+      "id": "bolderiz-franky",
+      "raid": true
     },
     {
       "n": 4,
       "name": "lafrustré / elzoska",
       "class": "paladin",
       "spec": "retribution",
-      "id": "lafrustre-elzoska"
+      "id": "lafrustre-elzoska",
+      "raid": true
     },
     {
       "n": 5,
       "name": "Kronox",
       "class": "warlock",
       "spec": "affliction",
-      "id": "kronox"
+      "id": "kronox",
+      "raid": true
     },
     {
       "n": 6,
       "name": "Elgior",
       "class": "warrior",
       "spec": "arms",
-      "id": "elgior"
+      "id": "elgior",
+      "raid": true
     },
     {
       "n": 7,
       "name": "Solhan",
       "class": "paladin",
       "spec": "protection",
-      "id": "solhan"
+      "id": "solhan",
+      "raid": true
     },
     {
       "n": 8,
       "name": "Kiyohara",
       "class": "priest",
       "spec": "shadow",
-      "id": "kiyohara"
+      "id": "kiyohara",
+      "raid": true
     },
     {
       "n": 9,
       "name": "Sam",
       "class": "shaman",
       "spec": "elemental",
-      "id": "sam"
+      "id": "sam",
+      "raid": true
     },
     {
       "n": 10,
       "name": "Maowar / Leberger",
       "class": "warrior",
       "spec": "arms",
-      "id": "maowar-leberger"
+      "id": "maowar-leberger",
+      "raid": true
     },
     {
       "n": 11,
       "name": "Kao",
       "class": "death-knight",
       "spec": "blood",
-      "id": "kao"
+      "id": "kao",
+      "raid": true
     },
     {
       "n": 12,
       "name": "Xaly",
       "class": "shaman",
       "spec": "restoration",
-      "id": "xaly"
+      "id": "xaly",
+      "raid": true
     },
     {
       "n": 13,
       "name": "projectbabytattoo",
       "class": "priest",
       "spec": "discipline",
-      "id": "projectbabytattoo"
+      "id": "projectbabytattoo",
+      "raid": true
     },
     {
       "n": 14,
       "name": "Ragelolz",
       "class": "demon-hunter",
       "spec": "havoc",
-      "id": "ragelolz"
+      "id": "ragelolz",
+      "raid": true
     },
     {
       "n": 15,
       "name": "Fólkvangr",
       "class": "paladin",
       "spec": "holy",
-      "id": "folkvangr"
+      "id": "folkvangr",
+      "raid": true
     },
     {
       "n": 16,
       "name": "Ganaï",
       "class": "druid",
       "spec": "restoration",
-      "id": "ganai"
+      "id": "ganai",
+      "raid": true
     },
     {
       "n": 17,
       "name": "Ezra",
       "class": "druid",
       "spec": "balance",
-      "id": "ezra"
+      "id": "ezra",
+      "raid": false
     },
     {
       "n": 18,
       "name": "Echodoll",
       "class": "paladin",
       "spec": "holy",
-      "id": "echodoll"
+      "id": "echodoll",
+      "raid": true
     },
     {
       "n": 19,
       "name": "Ganôva",
       "class": "hunter",
       "spec": "beast-mastery",
-      "id": "ganova"
+      "id": "ganova",
+      "raid": true
     },
     {
       "n": 20,
       "name": "Reinox93",
       "class": "rogue",
       "spec": "subtlety",
-      "id": "reinox93"
+      "id": "reinox93",
+      "raid": true
     }
   ]
 }

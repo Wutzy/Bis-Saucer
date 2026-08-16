@@ -101,11 +101,35 @@ y seraient perdus à chaque redémarrage — l'export statique reste le plus rob
 
 ## Navigation
 
-La sélection se fait dans la barre en haut de page : **une icône par spec suivie** (la spec
-active est en couleur, les autres désaturées ; le survol donne le libellé, qui la joue et le
-nombre de slots en cache). Dans la vue Butin par boss, cette même barre liste les sources.
+La portée sépare les deux niveaux de navigation, et rien ne les mélange :
 
-## Les quatre vues
+- **La barre du haut** : le **blason** en tête — l'entrée unique de tout ce qui concerne la
+  guilde, et l'écran sur lequel l'application ouvre — puis, après un trait, **une icône par spec
+  suivie** (la spec active est en couleur, les autres désaturées ; le survol donne le libellé, qui
+  la joue et le nombre de slots en cache).
+- **Le bandeau d'onglets** ne porte que les vues de la spec affichée : **Liste BiS**, **M+ opti**,
+  **/rand**.
+
+Le blason ouvre un **écran d'accueil à trois cartes** — /rand Raid, /rand Mythique+, et le
+**Roster Mythique (prévisionnel)** — puis une barre reprend ces trois destinations en haut de
+chacune, pour passer de l'une à l'autre sans repasser par l'accueil. Cet écran d'accueil se passe
+d'en-tête : les cartes se présentent toutes seules. **C'est là que l'application démarre.**
+
+**Le /rand existe des deux côtés**, avec les mêmes tableaux, mais pas avec la même portée :
+l'onglet de spec montre **le raid seulement** — ce que cette spec doit rand — alors que le blason
+donne accès au raid *et* au Mythique+ de toute la guilde.
+
+Les vues de guilde **masquent le bandeau d'onglets**, qui n'aurait rien à y piloter. La barre du
+haut, elle, reste affichée partout : c'est par elle qu'on en sort, de deux façons :
+
+- **le blason**, actif dans toute la partie guilde, qui fonctionne en bascule et ramène
+  exactement à la vue d'où l'on venait ;
+- **une icône de spec**, qui rouvre les vues de cette spec — les onglets réapparaissent. Depuis le
+  /rand de guilde, elle bascule sur le /rand de cette spec, sans quitter la vue.
+
+## Les cinq vues
+
+### Portée « spec »
 
 - **Liste BiS** — présentation « feuille de personnage » reprise du guide : deux colonnes
   d'emplacements, armes en bas, emplacements vides (chemise, tabard) inclus. Chaque carte porte
@@ -114,24 +138,56 @@ nombre de slots en cache). Dans la vue Butin par boss, cette même barre liste l
   obtenir, puisqu'il faut farmer le donjon puis catalyser.
   Quand le guide publie plusieurs listes (Overall / Mythic+ / Raid, et une déclinaison par talent
   de héros chez certaines specs), un sélecteur apparaît au-dessus.
-- **Butin par boss** — on choisit une source en haut et on voit son butin avec **le nom des
-  joueurs** pour qui chaque objet est BiS. C'est la vue à ouvrir pendant un raid. Par défaut
-  seuls les **boss de raid** sont proposés ; un filtre donne accès aux donjons et au reste.
-  Sur une pièce catalysée, la ligne précise **la pièce qu'on ramasse réellement sur ce boss**
-  (voir plus bas), car ce n'est pas l'objet de set affiché qui y tombe.
-- **M+ opti** — pour la spec sélectionnée, le classement des donjons par nombre de pièces BiS à
-  y récupérer, avec la liste des objets (emplacement, mention Catalyseur quand il faut
-  transformer la pièce). Chaque donjon indique aussi **quels camarades ont intérêt à le farmer** :
-  une pastille par joueur, réduite à son icône de spec et à son nombre de BiS, le pseudo étant
-  dans l'infobulle. Assez compact pour tenir sur une ligne, donc tout le roster concerné est
-  affiché sans repli.
+- **M+ opti** — le classement des donjons par nombre de pièces BiS à y récupérer, avec la liste
+  des objets (emplacement, mention Catalyseur quand il faut transformer la pièce). Chaque donjon
+  indique aussi **quels camarades ont intérêt à le farmer** : une pastille par joueur, réduite à
+  son icône de spec et à son nombre de BiS, le pseudo étant dans l'infobulle.
   Le tri se fait **d'abord sur les BiS généraux**, puis sur le total : une pièce BiS toutes
   sources confondues restera équipée une fois le raid farmé, alors qu'un BiS propre à la liste
-  Les BiS généraux sont **encadrés en vert** avec l'étiquette « BiS overall », les autres portent
-  le tag `liste M+`.
+  Mythique+ n'est qu'un palier. Les premiers sont **encadrés en vert** avec l'étiquette
+  « BiS overall », les seconds portent le tag `liste M+`.
   Les bijoux du haut de classement Bloodmallet qui tombent en donjon y sont ajoutés même quand le
   guide ne les retient pas, avec leur rang par nombre de cibles (`1c #2 · 3c #1 · 5c #2`).
-- **Roster** — les 20 membres groupés par classe, avec le choix de spec de chacun.
+  La vue s'ouvre sur une **grille de donjons illustrée** — de quoi voir d'un coup d'œil où aller
+  farmer. Cliquer une carte **descend jusqu'au donjon et estompe les autres**, pour en lire un à
+  la fois ; un second clic remet tout à plat.
+- **/rand** — la vue à ouvrir pendant un raid : boss par boss, **uniquement les objets sur
+  lesquels la spec affichée doit rand**, avec, sur chaque ligne, **tous les autres joueurs du
+  roster qui les convoitent** — ceux contre qui il faudra rand. Un boss qui ne concerne pas la
+  spec disparaît de la liste. **Uniquement du raid, et pas de bascule** : en Mythique+ le butin
+  est ciblé, personne ne roule dessus. Sur une pièce catalysée, la ligne précise **la pièce qu'on
+  ramasse réellement sur ce boss**, car ce n'est pas l'objet de set affiché qui y tombe.
+
+### Portée « guilde »
+
+- **/rand (guilde)** — le même écran, sans filtre de spec : tout ce que le roster convoite,
+  boss par boss et donjon par donjon. En Mythique+, chaque carte de donjon porte **une pastille par spec
+  concernée, avec son nombre d'objets à récupérer là** : de quoi voir d'un coup d'œil qui a
+  intérêt à monter le groupe.
+- **Roster Mythique (prévisionnel)** — les membres groupés par classe, avec le choix de spec de
+  chacun : c'est la source de toutes les autres vues. On y **ajoute et retire des membres**
+  (pseudo + classe + spec), et on y coche qui fait partie du **roster mythique** (voir plus bas).
+
+## Roster mythique : deux périmètres, pas deux rosters
+
+Tout le monde fait du Mythique+, mais **tout le monde ne va pas en raid**. Une case
+**Roster mythique** par membre tranche, et c'est la seule chose qu'elle change :
+
+| Contenu | Qui est compté |
+| --- | --- |
+| Sources de **raid** (boss, « Raid — boss non précisé ») | uniquement les membres cochés |
+| Sources de **donjon** (Mythique+) | **tout** le roster |
+| Craft, Catalyseur, trash | **tout** le roster |
+
+Un membre décoché n'est pas à moitié dans l'outil : il garde sa spec, sa liste BiS, sa place dans
+« M+ opti » et dans le /rand Mythique+. Il disparaît seulement des tableaux de butin de raid — et
+si **personne** de sa spec n'est dans le roster mythique, la spec entière disparaît des sources de
+raid, ce qui est bien le résultat voulu : personne ne roule dessus ce soir-là.
+
+Côté données, c'est le champ `raid` de chaque membre dans [`data/roster.json`](data/roster.json).
+**Absent vaut `true`** : un roster écrit avant l'ajout du champ garde exactement son sens. Le
+filtrage se fait dans `buildSources()` ([`public/app.js`](public/app.js)), qui classe chaque
+source avant de regrouper le butin, précisément pour savoir quel périmètre appliquer.
 
 ## Pièces de set et Catalyseur
 
@@ -169,7 +225,7 @@ vers elle, avec son tooltip. C'est l'objet à ramasser avant de passer au Cataly
 Ombre est `Cosmic Penitent's Truesight`, mais ce qui tombe sur Ula'tek est
 `Venomkeeper's Horrific Cowl` — on ramasse celle-ci, puis on la transforme.
 
-La vue **Butin par boss regroupe donc sur l'objet qui tombe**, pas sur celui qui est affiché dans
+La vue **Qui roll ? regroupe donc sur l'objet qui tombe**, pas sur celui qui est affiché dans
 la liste BiS. Concrètement, sur Ula'tek :
 
 | Ligne | Joueurs |
@@ -237,7 +293,7 @@ Deux pièges vérifiés sur cette API :
 
 ### Qui fait foi pour les bijoux
 
-Dans la vue **Butin par boss**, pour une spec **DPS effectivement simulée**, ce sont les bijoux de
+Dans la vue **Qui roll ?**, pour une spec **DPS effectivement simulée**, ce sont les bijoux de
 Bloodmallet qui comptent comme BiS, pas ceux du guide : les cinq premiers de chaque catégorie de
 cibles (1, 3, 5). Le nombre est réglé par `SIM_TRINKET_COUNT` dans `public/app.js`, partagé entre
 le panneau et le calcul des besoins pour qu'ils ne divergent jamais. Les autres cas gardent la liste Icy Veins — **soins et tanks** (Bloodmallet ne
@@ -303,17 +359,28 @@ Wowhead).
 
 Le roster de départ est dans [`src/roster.js`](src/roster.js) (numéro, pseudo, classe, spec). Il
 est copié dans `data/roster.json` dès la première modification, et c'est ce fichier qui fait foi
-ensuite — modifiable à la main ou via l'onglet Roster.
+ensuite — modifiable à la main ou via la vue Roster.
 
 Les slugs valides par classe sont dans [`src/classes.js`](src/classes.js).
 
-**Changer de classe se fait dans le fichier**, pas dans l'interface : le menu de l'onglet Roster
-ne propose que les specs de la classe du membre, et `PUT /api/roster/:id` refuse une spec qui
-n'appartient pas à sa classe. Pour un reroll, éditer `src/roster.js` puis regénérer
-`data/roster.json` (ou éditer ce dernier directement).
+**Ajouter et retirer** des membres se fait dans la vue Roster, **sur l'instance locale
+uniquement** : le formulaire du bas demande pseudo, classe et spec (la liste de specs suit la
+classe choisie), le `✕` de fin de ligne retire un membre après confirmation. Le serveur revalide
+tout — pseudo non vide et inédit, classe connue, spec valide pour cette classe — et attribue un
+identifiant unique, y compris pour deux pseudos qui donnent le même slug.
+
+Dans l'export statique, ces deux contrôles **ne sont pas grisés, ils ne sont pas rendus** : ni
+colonne d'action, ni formulaire. Composer le roster est une décision d'officier, pas quelque
+chose qu'on propose à qui consulte la page. La case **Roster mythique** et le menu de spec, eux,
+restent affichés et désactivés comme le reste : leur état est une information utile à lire.
+
+**Changer de classe** reste une opération de fichier : le menu de la vue Roster ne propose que les
+specs de la classe du membre, et `PUT /api/roster/:id` refuse une spec qui n'appartient pas à sa
+classe. Pour un reroll, éditer `data/roster.json` directement — ou retirer puis rajouter le
+membre.
 
 Un membre peut porter `star: true` : il est alors mis en avant partout — pastille dorée avec ★
-dans la vue Butin par boss, ligne surlignée et badge « Mascotte » dans le Roster, et liseré doré
+dans la vue Qui roll ?, ligne surlignée et badge « Mascotte » dans le Roster, et liseré doré
 sur sa spec dans le sélecteur du haut. Avec `portrait: 'fichier.png'` (dans `public/img/`), il
 gagne en plus un portrait rond dans le Roster et son illustration détourée dans la marge basse
 gauche. Rien n'est codé en dur : si l'étoile change de membre, les images suivent.
@@ -324,7 +391,9 @@ gauche. Rien n'est codé en dur : si l'étoile change de membre, les images suiv
 | --- | --- | --- |
 | `GET` | `/api/specs` | Classes/specs supportées (liste blanche serveur, 39 entrées) |
 | `GET` | `/api/roster` | Membres de la guilde + référentiel classes/specs |
-| `PUT` | `/api/roster/:id` | Body `{ "spec": "fury" }` ou `{ "spec": null }` |
+| `PUT` | `/api/roster/:id` | Body `{ "spec": "fury" }`, `{ "spec": null }` et/ou `{ "raid": false }` |
+| `POST` | `/api/roster` | Body `{ "name": "Toto", "class": "mage", "spec": "fire" }` — ajoute un membre |
+| `DELETE` | `/api/roster/:id` | Retire un membre |
 | `GET` | `/api/bis` | Contenu du cache `data/bis.json` |
 | `POST` | `/api/scrape` | Body `{ "class": "warrior", "spec": "arms" }` — scrape et met à jour le cache |
 
@@ -495,7 +564,7 @@ facilement l'icône d'une classe à une autre.
   extension précédente** cité uniquement dans une liste Mythique+ reste classé en donjon, faute
   d'apparaître dans une liste Raid (`Nexus King Salhadaar` chez le Moine Marche-vent). À traiter
   au cas par cas si ça devient gênant.
-- La vue **Butin par boss** balaie **toutes** les listes d'une spec (Overall, Mythic+, Raid, et
+- La vue **Qui roll ?** balaie **toutes** les listes d'une spec (Overall, Mythic+, Raid, et
   chaque talent de héros), pas seulement la principale : un objet BiS uniquement dans la liste
   Raid concerne quand même le joueur devant le boss. L'infobulle d'une pastille indique la ou les
   listes concernées, pour distinguer un BiS général d'un BiS propre au Mythique+.

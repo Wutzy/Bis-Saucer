@@ -5,7 +5,7 @@ const express = require('express');
 
 const { SPECS, specKey, findSpec, guideUrl } = require('./src/specs');
 const { CLASSES } = require('./src/classes');
-const { readRoster, setMemberSpec } = require('./src/roster');
+const { readRoster, updateMember, addMember, removeMember } = require('./src/roster');
 const { readStore, saveSpecEntry, readTrinkets, saveTrinketEntry } = require('./src/store');
 const { scrapeGuide, ScrapeError } = require('./src/icyveins');
 const { fetchTrinkets } = require('./src/bloodmallet');
@@ -46,19 +46,56 @@ app.get('/api/roster', (req, res) => {
   res.json({ members: readRoster(), classes: CLASSES });
 });
 
-/** Renseigne (ou efface) la spec d'un membre. Body : { "spec": "fury" } ou { "spec": null }. */
+/**
+ * Met a jour un membre. Body : { "spec": "fury" } ou { "spec": null } pour la spec,
+ * { "raid": false } pour le sortir du roster mythique. Les deux peuvent etre combines.
+ */
 app.put('/api/roster/:id', (req, res) => {
-  const spec = req.body && 'spec' in req.body ? req.body.spec : undefined;
-  if (spec !== null && typeof spec !== 'string') {
-    return res.status(400).json({ error: 'Champ "spec" attendu (slug ou null).' });
+  const body = req.body || {};
+  const patch = {};
+
+  if ('spec' in body) {
+    if (body.spec !== null && typeof body.spec !== 'string') {
+      return res.status(400).json({ error: 'Champ "spec" attendu (slug ou null).' });
+    }
+    patch.spec = body.spec;
+  }
+  if ('raid' in body) {
+    if (typeof body.raid !== 'boolean') {
+      return res.status(400).json({ error: 'Champ "raid" attendu (booléen).' });
+    }
+    patch.raid = body.raid;
+  }
+  if (!Object.keys(patch).length) {
+    return res.status(400).json({ error: 'Rien à modifier : "spec" ou "raid" attendu.' });
   }
 
-  const member = setMemberSpec(req.params.id, spec);
+  const member = updateMember(req.params.id, patch);
   if (!member) {
     return res.status(404).json({
       error: 'Membre inconnu, ou spec invalide pour sa classe.',
     });
   }
+  res.json({ member });
+});
+
+/** Ajoute un membre. Body : { "name": "Toto", "class": "mage", "spec": "fire" }. */
+app.post('/api/roster', (req, res) => {
+  const body = req.body || {};
+  const { member, error } = addMember({
+    name: body.name,
+    class: body.class,
+    spec: body.spec,
+    raid: body.raid,
+  });
+  if (error) return res.status(400).json({ error });
+  res.status(201).json({ member });
+});
+
+/** Retire un membre du roster. */
+app.delete('/api/roster/:id', (req, res) => {
+  const member = removeMember(req.params.id);
+  if (!member) return res.status(404).json({ error: 'Membre inconnu.' });
   res.json({ member });
 });
 
@@ -141,11 +178,12 @@ app.post('/api/scrape', async (req, res) => {
       const sim = await fetchTrinkets(entry.class, entry.spec);
       trinkets = { key, ...sim, fetchedAt: new Date().toISOString() };
       saveTrinketEntry(key, trinkets);
-      console.log(
-        `[bloodmallet] ${key} : ${
-          sim.available ? `${sim.trinkets.length} bijoux classés` : 'non simulé'
-        }`
-      );
+      // fetchTrinkets renvoie un classement par nombre de cibles, pas une liste plate.
+      const compte = Object.entries(sim.targets)
+        .filter(([, data]) => data.available)
+        .map(([cibles, data]) => `${data.trinkets.length} à ${cibles} cible(s)`)
+        .join(', ');
+      console.log(`[bloodmallet] ${key} : ${sim.available ? compte : 'non simulé'}`);
     } catch (err) {
       console.warn(`[bloodmallet] ${key} indisponible : ${err.message}`);
     }

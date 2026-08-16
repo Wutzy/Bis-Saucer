@@ -163,6 +163,225 @@ body {
   box-shadow: 0 0 0 1px var(--spec), 0 0 10px -2px var(--spec);
 }
 
+/* ---------------- Blason de guilde et vue /rand ---------------- */
+
+/* Vues de guilde : en tête de barre, le trait les sépare des specs qui suivent. */
+.guild-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-right: 0.9rem;
+  padding-right: 0.9rem;
+  border-right: 1px solid var(--border);
+}
+
+.guild-chip {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  filter: grayscale(0.5);
+  opacity: 0.8;
+}
+
+.guild-chip img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+  display: block;
+}
+
+.guild-chip:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.guild-chip.is-active {
+  filter: none;
+  opacity: 1;
+}
+
+.guild-chip.is-active img {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 0 12px -2px var(--accent);
+}
+
+
+.rand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Écran d'entrée : raid ou Mythique+. */
+.rand-choice {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.8rem;
+  padding: 1rem 0;
+}
+
+.rand-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.6rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--panel-2);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.rand-card:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, var(--panel-2));
+}
+
+.rand-card-title {
+  font-size: 1.15rem;
+  color: var(--accent);
+}
+
+.rand-card-sub {
+  color: var(--muted-2);
+  font-size: 0.82rem;
+}
+
+.rand-nav {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.rand-tab {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.rand-tab:hover {
+  color: var(--text);
+}
+
+.rand-tab.is-active {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: var(--accent);
+}
+
+/* Grille de donjons : visuel, nom, specs concernées. */
+.dungeon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 0.8rem;
+}
+
+.dungeon-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-2);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dungeon-card:hover {
+  border-color: var(--accent);
+}
+
+/* Index de la vue M+ opti : les cartes ouvrent le bloc détaillé plus bas. */
+.mplus-grid {
+  margin-bottom: 0.4rem;
+}
+
+/* Un donjon mis en avant : les autres s'effacent sans disparaître, pour qu'on garde
+   le classement sous les yeux tout en lisant un donjon à la fois. */
+.dungeon-card--cible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.dungeon-card--estompe,
+.mplus-block--estompe {
+  opacity: 0.32;
+}
+
+.dungeon-card--estompe:hover {
+  opacity: 0.75;
+}
+
+.mplus-block--cible {
+  border-color: var(--accent);
+}
+
+/* Le défilement amène le bloc en haut : on lui laisse de l'air sous l'en-tête. */
+.mplus-block {
+  scroll-margin-top: 0.8rem;
+}
+
+/* Les visuels de donjon sont des bandeaux 1141x372 : on cale le cadre sur leur
+   ratio plutot que sur une hauteur fixe, pour ne rien rogner quelle que soit la
+   largeur de la carte. `cover` reste le filet si une image arrive a un autre format. */
+.dungeon-visuel {
+  aspect-ratio: 1141 / 372;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--panel);
+}
+
+.dungeon-visuel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Sans image fournie : un aplat discret plutôt qu'un trou. */
+.dungeon-visuel--vide {
+  border: 1px dashed var(--border);
+  background: repeating-linear-gradient(
+    135deg,
+    transparent,
+    transparent 8px,
+    color-mix(in srgb, var(--text) 4%, transparent) 8px,
+    color-mix(in srgb, var(--text) 4%, transparent) 16px
+  );
+}
+
+.dungeon-nom {
+  font-size: 1.02rem;
+  color: var(--text);
+}
+
+.dungeon-compte {
+  color: var(--muted-2);
+  font-size: 0.75rem;
+}
+
+/* Pastilles « icône de spec + nombre d'objets ici », même gabarit qu'en M+ opti. */
+.dungeon-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.28rem;
+  margin-top: 0.15rem;
+}
+
 .selector-hint {
   margin: 0;
   color: var(--muted-2);
@@ -213,6 +432,12 @@ body {
   .footzy {
     display: none;
   }
+}
+
+/* `hidden` doit gagner : sans ça, un `display` posé sur la classe laissait des
+   cadres vides à l'écran (l'icône de spec et le sélecteur de liste en vue /rand). */
+[hidden] {
+  display: none !important;
 }
 
 .avatar {
@@ -303,6 +528,7 @@ body {
 
 .tabs {
   display: flex;
+  align-items: center;
   gap: 0.25rem;
   padding: 0 1.3rem;
   border-bottom: 1px solid var(--border);
@@ -352,6 +578,95 @@ body {
 .message.info {
   border-color: color-mix(in srgb, var(--accent) 40%, transparent);
   color: var(--accent);
+}
+
+/* ---------------- Roster ---------------- */
+
+/* Hors roster mythique : la ligne reste lisible, mais visiblement en retrait. */
+.roster-hors-raid td {
+  opacity: 0.62;
+}
+
+.roster-raid {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.roster-raid input {
+  accent-color: var(--accent);
+  width: 15px;
+  height: 15px;
+  cursor: inherit;
+}
+
+.roster-raid input:disabled {
+  cursor: not-allowed;
+}
+
+.roster-retirer {
+  font: inherit;
+  line-height: 1;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted-2);
+  cursor: pointer;
+}
+
+.roster-retirer:hover {
+  border-color: color-mix(in srgb, var(--error) 55%, transparent);
+  color: var(--error);
+}
+
+.roster-ajout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel-2);
+}
+
+.roster-ajout-titre {
+  color: var(--muted-2);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: 0.3rem;
+}
+
+.roster-champ {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+}
+
+.roster-champ:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.roster-valider {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.32rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.roster-valider:hover {
+  background: color-mix(in srgb, var(--accent) 24%, transparent);
 }
 
 /* ---------------- Tables ---------------- */
