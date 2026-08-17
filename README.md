@@ -110,10 +110,25 @@ La portée sépare les deux niveaux de navigation, et rien ne les mélange :
 - **Le bandeau d'onglets** ne porte que les vues de la spec affichée : **Liste BiS**, **M+ opti**,
   **Consommables**, **/rand**.
 
-Le blason ouvre un **écran d'accueil à trois cartes** — /rand Raid, /rand Mythique+, et le
-**Roster Mythique (prévisionnel)** — puis une barre reprend ces trois destinations en haut de
-chacune, pour passer de l'une à l'autre sans repasser par l'accueil. Cet écran d'accueil se passe
-d'en-tête : les cartes se présentent toutes seules. **C'est là que l'application démarre.**
+Le blason ouvre un **écran d'accueil à deux cartes** — /rand Raid et /rand Mythique+ — puis une
+barre reprend ces deux destinations en haut de chacune, pour passer de l'une à l'autre sans
+repasser par l'accueil. Cet écran d'accueil se passe d'en-tête : les cartes se présentent toutes
+seules. **C'est là que l'application démarre.**
+
+### Le roster est une vue cachée
+
+Aucun bouton n'y mène. On l'ouvre par **cinq clics sur la mascotte**, l'illustration de Bolderiz
+dans la marge basse gauche. Rien ne le signale : le curseur reste une flèche, l'infobulle ne parle
+que de la mascotte. Composer le roster n'a pas à être sous les yeux de tous ceux qui consultent la
+page.
+
+Le compteur retombe à zéro après **deux secondes sans clic** — sans ce délai, cinq clics
+éparpillés au fil d'une soirée finiraient par ouvrir la vue par accident. On en sort comme des
+autres vues de guilde : le blason, ou une icône de spec.
+
+> **La mascotte ne s'affiche qu'au-delà de 1780 px de large** (`.mascotte` dans
+> [`public/style.css`](public/style.css)) : en dessous, il n'y a pas de porte d'entrée. Si le
+> roster doit rester joignable sur un écran plus étroit, c'est ce seuil qu'il faut baisser.
 
 **Le /rand existe des deux côtés**, avec les mêmes tableaux, mais pas avec la même portée :
 l'onglet de spec montre **le raid seulement** — ce que cette spec doit rand — alors que le blason

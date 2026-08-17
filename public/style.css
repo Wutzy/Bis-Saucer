@@ -1449,7 +1449,12 @@ a.pd-catalyst:hover {
     display: none;
   }
 
+  /* Cinq clics dessus ouvrent le roster, mais rien ne doit le laisser deviner :
+     le curseur reste une flèche. `pointer-events` est explicitement rétabli — une
+     illustration décorative ne reçoit pas les clics, celle-ci doit les recevoir.
+     Elle vit dans la marge, hors du panneau : elle n'intercepte rien d'utile. */
   .mascotte {
+    cursor: default;
     display: block;
     position: fixed;
     bottom: 1rem;
@@ -1457,7 +1462,7 @@ a.pd-catalyst:hover {
     width: 170px;
     height: auto;
     z-index: 5;
-    pointer-events: none;
+    pointer-events: auto;
     filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.6));
   }
 }

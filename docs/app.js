@@ -2202,10 +2202,11 @@ function randChoice() {
   const wrap = document.createElement('div');
   wrap.className = 'rand-choice';
 
+  // Le roster n'est pas propose ici : il s'ouvre par cinq clics sur la mascotte
+  // (voir `armerAccesRoster`). C'est volontairement introuvable sans le savoir.
   for (const [mode, titre, soustitre] of [
     ['raid', 'Raid', 'Rand par boss de raid'],
     ['mplus', 'Mythique+', 'Les BiS des membres de la guilde, triés par donjon'],
-    ['roster', ROSTER_LABEL, 'La spec prévue de chaque membre du roster'],
   ]) {
     const card = document.createElement('button');
     card.type = 'button';
@@ -2221,12 +2222,8 @@ function randChoice() {
 
     card.append(t, s);
     card.addEventListener('click', () => {
-      if (mode === 'roster') {
-        selectView('roster');
-      } else {
-        randMode = mode;
-        activeBoss = null;
-      }
+      randMode = mode;
+      activeBoss = null;
       render();
     });
     wrap.appendChild(card);
@@ -2258,9 +2255,8 @@ function randSources(kind) {
 }
 
 /**
- * Bascule entre les destinations de la vue courante. En portee guilde elle liste les
- * trois entrees de l'ecran d'accueil, roster compris ; en portee spec elle se limite
- * a Raid / Mythique+, le roster ne dependant d'aucune spec.
+ * Bascule Raid / Mythique+ des vues de guilde. Le roster n'y figure pas : c'est une
+ * vue cachee, l'annoncer dans une barre la rendrait trouvable.
  */
 function randNav() {
   const portee = activeView === 'roster' ? 'guild' : randScope;
@@ -2280,18 +2276,6 @@ function randNav() {
       selectView('rand', portee);
       randMode = mode;
       activeBoss = null;
-      render();
-    });
-    nav.appendChild(btn);
-  }
-
-  if (portee === 'guild') {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = `rand-tab${activeView === 'roster' ? ' is-active' : ''}`;
-    btn.textContent = ROSTER_LABEL;
-    btn.addEventListener('click', () => {
-      selectView('roster');
       render();
     });
     nav.appendChild(btn);
@@ -3404,6 +3388,34 @@ function renderMascotte() {
   }
 }
 
+/**
+ * Acces cache au roster : cinq clics sur la mascotte.
+ *
+ * Rien ne le signale — pas de curseur main, pas d'infobulle qui vende la meche :
+ * c'est justement le but, cette vue n'a pas a etre sous les yeux de tout le monde.
+ *
+ * Le compteur se remet a zero apres deux secondes sans clic. Sans ce delai, cinq
+ * clics eparpilles au fil d'une soiree finiraient par ouvrir la vue par accident.
+ */
+const CLICS_ROSTER = 5;
+let clicsMascotte = 0;
+let dernierClicMascotte = 0;
+
+function armerAccesRoster() {
+  const el = document.getElementById('mascotte');
+  if (!el) return;
+
+  el.addEventListener('click', () => {
+    const maintenant = Date.now();
+    clicsMascotte = maintenant - dernierClicMascotte > 2000 ? 1 : clicsMascotte + 1;
+    dernierClicMascotte = maintenant;
+    if (clicsMascotte < CLICS_ROSTER) return;
+
+    clicsMascotte = 0;
+    ouvrirVueGuilde(() => selectView('roster'));
+  });
+}
+
 function render() {
   normaliserRand();
   renderMascotte();
@@ -3548,6 +3560,8 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
     // Etat de depart : l'ecran d'accueil de la guilde, onglets masques.
     selectView('rand', 'guild');
     render();
+    // Une seule fois : `renderMascotte` passe a chaque rendu, l'ecouteur non.
+    armerAccesRoster();
   } catch (err) {
     showMessage(`Erreur au chargement : ${err.message}`, 'error');
   }
