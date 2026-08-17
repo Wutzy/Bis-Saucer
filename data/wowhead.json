@@ -3,7 +3,7 @@
   "specs": {
     "death-knight-blood": {
       "key": "death-knight-blood",
-      "fetchedAt": "2026-08-16T22:37:27.934Z",
+      "fetchedAt": "2026-08-17T01:08:41.455Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear",
         "available": true,
@@ -287,7 +287,7 @@
     },
     "death-knight-frost": {
       "key": "death-knight-frost",
-      "fetchedAt": "2026-08-16T22:37:28.456Z",
+      "fetchedAt": "2026-08-17T01:08:45.948Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/frost/bis-gear",
         "available": true,
@@ -538,7 +538,7 @@
     },
     "demon-hunter-havoc": {
       "key": "demon-hunter-havoc",
-      "fetchedAt": "2026-08-16T22:37:28.919Z",
+      "fetchedAt": "2026-08-17T01:08:49.258Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/bis-gear",
         "available": true,
@@ -5573,7 +5573,7 @@
     },
     "hunter-marksmanship": {
       "key": "hunter-marksmanship",
-      "fetchedAt": "2026-08-17T00:35:47.595Z",
+      "fetchedAt": "2026-08-17T00:48:32.335Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear",
         "available": true,
@@ -5824,5 +5824,5 @@
       }
     }
   },
-  "updatedAt": "2026-08-17T00:38:58.998Z"
+  "updatedAt": "2026-08-17T01:08:49.328Z"
 }

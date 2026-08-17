@@ -3130,7 +3130,7 @@
           "simulatedAt": "2026-08-15 07:37"
         }
       },
-      "fetchedAt": "2026-08-15T11:53:39.376Z"
+      "fetchedAt": "2026-08-17T01:08:41.449Z"
     },
     "priest-discipline": {
       "key": "priest-discipline",
@@ -4842,7 +4842,7 @@
           "simulatedAt": "2026-08-15 07:37"
         }
       },
-      "fetchedAt": "2026-08-15T11:53:43.858Z"
+      "fetchedAt": "2026-08-17T01:08:45.942Z"
     },
     "demon-hunter-havoc": {
       "key": "demon-hunter-havoc",
@@ -4867,7 +4867,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-08-15T13:34:14.429Z"
+      "fetchedAt": "2026-08-17T01:08:49.254Z"
     },
     "druid-balance": {
       "key": "druid-balance",
@@ -16228,8 +16228,8 @@
           "simulatedAt": "2026-08-15 07:45"
         }
       },
-      "fetchedAt": "2026-08-17T00:35:47.590Z"
+      "fetchedAt": "2026-08-17T00:48:32.330Z"
     }
   },
-  "updatedAt": "2026-08-17T00:38:58.871Z"
+  "updatedAt": "2026-08-17T01:08:49.256Z"
 }

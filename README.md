@@ -488,6 +488,38 @@ sur sa spec dans le sélecteur du haut. Avec `portrait: 'fichier.png'` (dans `pu
 gagne en plus un portrait rond dans le Roster et son illustration détourée dans la marge basse
 gauche. Rien n'est codé en dur : si l'étoile change de membre, les images suivent.
 
+## Mise à jour automatique
+
+[`.github/workflows/maj-donnees.yml`](.github/workflows/maj-donnees.yml) rescrape les specs
+suivies **une fois par jour** (04h30 UTC), régénère `docs/` et pousse. Le site en ligne reste à
+jour sans que personne n'y touche, PC éteint.
+
+**Ce qui est automatisé, et ce qui ne l'est pas.** Les guides changent tout seuls chez leurs
+auteurs : c'est ce que l'action va rechercher. Le **roster**, lui, se modifie dans l'application,
+donc en local — ces changements demandent toujours un commit de ta part. L'action ne les invente
+pas, et ne les écrase pas non plus : elle ne commite que `data/` et `docs/`.
+
+Le travail est fait par [`tools/refresh-all.js`](tools/refresh-all.js), utilisable aussi à la
+main :
+
+```bash
+npm run refresh:all
+```
+
+Il traite les specs **jouées dans le roster ou déjà en cache** — pas les 39 —, avec 1,5 s entre
+chaque : ces sites nous rendent service, on ne les martèle pas. Trois garde-fous :
+
+- **un échec n'écrase rien** : une source muette laisse en place ce qui était en cache, une
+  donnée d'hier valant mieux qu'un trou ;
+- **une spec cassée ne bloque pas les autres** : le script ne sort en erreur que si *toutes*
+  échouent, ce qui signalerait un vrai problème (site en panne, parseur à revoir) ;
+- **pas de commit vide** : les jours où aucun guide n'a bougé, l'action ne commite rien.
+
+Le déclenchement manuel est possible depuis l'onglet **Actions** du dépôt (« Run workflow »).
+
+> Après une exécution de l'action, ton dépôt local est en retard d'un commit : pense au
+> `git pull` avant de committer tes propres modifications.
+
 ## API
 
 | Méthode | Route | Description |

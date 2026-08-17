@@ -1,0 +1,66 @@
+name: Mise à jour des données
+
+# Rescrape les specs suivies, régénère docs/ et publie, une fois par jour.
+#
+# Ce qui est automatisé, et ce qui ne l'est pas :
+#   - les GUIDES (Icy Veins, Wowhead, Bloodmallet) changent tout seuls chez leurs
+#     auteurs : c'est ce que cette action va rechercher ;
+#   - le ROSTER se modifie dans l'application, donc en local : ces changements-là
+#     demandent toujours un commit de ta part. L'action ne les invente pas.
+
+on:
+  schedule:
+    # 04h30 UTC = 06h30 à Paris l'été, 05h30 l'hiver. Choisi hors des heures de jeu
+    # et hors du pic de GitHub Actions (les cron à pile sont les plus encombrés).
+    - cron: '30 4 * * *'
+  workflow_dispatch: # bouton « Run workflow » dans l'onglet Actions
+
+permissions:
+  contents: write # nécessaire pour pousser le commit
+
+# Deux exécutions simultanées se marcheraient dessus sur le même fichier de cache.
+concurrency:
+  group: maj-donnees
+  cancel-in-progress: false
+
+jobs:
+  maj:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # le rebase de fin a besoin de l'historique
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      # 1,5 s entre chaque spec : ces sites nous rendent service, on ne les martèle
+      # pas. Le script ne sort en erreur que si TOUTES les specs échouent — une seule
+      # spec cassée ne doit pas empêcher la publication des autres.
+      - name: Rescraper les specs suivies
+        run: node tools/refresh-all.js --delay=1500
+
+      - name: Régénérer docs/
+        run: npm run build:static
+
+      # Sans changement, pas de commit : l'historique ne se remplit pas de commits
+      # vides les jours où aucun guide n'a bougé.
+      - name: Publier si quelque chose a changé
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data docs
+          if git diff --cached --quiet; then
+            echo 'Aucun changement : rien à publier.'
+            exit 0
+          fi
+          git commit -m 'MAJ auto des données (Icy Veins, Wowhead, Bloodmallet)'
+          # Quelqu'un a pu pousser entre le checkout et maintenant.
+          git pull --rebase origin main
+          git push
