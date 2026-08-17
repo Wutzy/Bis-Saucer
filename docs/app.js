@@ -189,6 +189,7 @@ const els = {
   message: document.getElementById('message'),
   content: document.getElementById('content'),
   legendMeta: document.getElementById('legend-meta'),
+  majDonnees: document.getElementById('maj-donnees'),
   listPicker: document.getElementById('list-picker'),
   tabs: Array.from(document.querySelectorAll('.tab')),
   tabsNav: document.querySelector('.tabs'),
@@ -3288,10 +3289,19 @@ function renderHeader() {
   const visible = visibleSpecs();
   const cachedCount = visible.filter((s) => entryFor(s.key)).length;
   const withSpec = roster.filter((m) => m.spec).length;
+  // Version publiee : la fraicheur monte en haut a droite, personne ne pouvant y
+  // declencher de mise a jour. En local elle reste en pied de page, ou le bouton
+  // « Mettre a jour » est juste a cote.
   const maj = derniereMaj();
+  els.majDonnees.hidden = !STATIC || !maj;
+  if (STATIC && maj) {
+    els.majDonnees.textContent = `Données ${ilYA(maj)}`;
+    els.majDonnees.title = `Dernière mise à jour : ${formatDate(maj)}`;
+  }
+
   els.storeStatus.textContent =
     `${cachedCount}/${visible.length} spec(s) en cache · ${withSpec}/${roster.length} membres renseignés` +
-    (maj ? ` · données ${ilYA(maj)}` : '') +
+    (maj && !STATIC ? ` · données ${ilYA(maj)}` : '') +
     (STATIC ? ' · version consultable' : '');
   els.storeStatus.title = maj
     ? `Dernière mise à jour des données : ${formatDate(maj)}`

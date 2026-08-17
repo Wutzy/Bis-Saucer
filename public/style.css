@@ -68,6 +68,20 @@ body {
   min-width: 0;
 }
 
+/* Fraîcheur des données, version publiée. Aligné sur le sélecteur de langue, en
+   retrait de ton : c'est une indication, pas une commande. */
+.maj {
+  align-self: center;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--panel-2);
+  color: var(--muted-2);
+  font-size: 0.72rem;
+  white-space: nowrap;
+  cursor: help;
+}
+
 .lang-switch {
   display: flex;
   border: 1px solid var(--border);

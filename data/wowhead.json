@@ -1849,7 +1849,7 @@
     },
     "mage-fire": {
       "key": "mage-fire",
-      "fetchedAt": "2026-08-16T22:37:30.648Z",
+      "fetchedAt": "2026-08-17T01:18:02.458Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear",
         "available": true,
@@ -5824,5 +5824,5 @@
       }
     }
   },
-  "updatedAt": "2026-08-17T01:08:49.328Z"
+  "updatedAt": "2026-08-17T01:18:02.900Z"
 }
