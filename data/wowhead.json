@@ -4799,7 +4799,7 @@
     },
     "warrior-arms": {
       "key": "warrior-arms",
-      "fetchedAt": "2026-08-16T22:37:36.315Z",
+      "fetchedAt": "2026-08-17T00:38:58.874Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warrior/arms/bis-gear",
         "available": true,
@@ -5570,7 +5570,259 @@
           }
         ]
       }
+    },
+    "hunter-marksmanship": {
+      "key": "hunter-marksmanship",
+      "fetchedAt": "2026-08-17T00:35:47.595Z",
+      "trinkets": {
+        "url": "https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear",
+        "available": true,
+        "tiers": [
+          {
+            "rank": "S",
+            "items": [
+              {
+                "itemId": 270164,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270175,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270173,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "A",
+            "items": [
+              {
+                "itemId": 270165,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 250214,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 159617,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270168,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "B",
+            "items": [
+              {
+                "itemId": 273796,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250225,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250228,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 193757,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270166,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "C",
+            "items": [
+              {
+                "itemId": 158374,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250259,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250215,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "D",
+            "items": [
+              {
+                "itemId": 273797,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "consumables": {
+        "url": "https://www.wowhead.com/guide/classes/hunter/marksmanship/enchants-gems-pve-dps",
+        "available": true,
+        "rows": [
+          {
+            "type": "Flask",
+            "items": [
+              {
+                "itemId": 241326,
+                "name": "Flask of the Shattered Sun",
+                "icon": "inv_12_profession_alchemy_flask_sindoreipotion_red--",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Combat Potion",
+            "items": [
+              {
+                "itemId": 241288,
+                "name": "Potion of Recklessness",
+                "icon": "inv_12_profession_alchemy_voidpotion_red",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Health Potion",
+            "items": [
+              {
+                "itemId": 271884,
+                "name": "Concentrated Silvermoon Health Potion",
+                "icon": "inv_12_profession_alchemy_lightpotion_purple",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Weapon Buff",
+            "items": [
+              {
+                "itemId": 243734,
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_12_profession_enchanting_manaoil_red",
+                "quality": 2
+              }
+            ]
+          },
+          {
+            "type": "Augment Rune",
+            "items": [
+              {
+                "itemId": 259085,
+                "name": "Void-Touched Augment Rune",
+                "icon": "inv_10_enchanting_crystal_color2",
+                "quality": 3
+              }
+            ]
+          },
+          {
+            "type": "Food - Feast",
+            "items": [
+              {
+                "itemId": 255846,
+                "name": "Harandar Celebration",
+                "icon": "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+                "quality": 3
+              },
+              {
+                "itemId": 255845,
+                "name": "Silvermoon Parade",
+                "icon": "inv_tradeskill_cooking_feastofblood",
+                "quality": 3
+              }
+            ]
+          },
+          {
+            "type": "Food - Personal",
+            "items": [
+              {
+                "itemId": 242747,
+                "name": "Hearty Royal Roast",
+                "icon": "inv_cooking_100_roastduck",
+                "quality": 3
+              }
+            ]
+          }
+        ]
+      }
     }
   },
-  "updatedAt": "2026-08-16T22:37:38.456Z"
+  "updatedAt": "2026-08-17T00:38:58.998Z"
 }

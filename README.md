@@ -124,8 +124,9 @@ haut, elle, reste affichée partout : c'est par elle qu'on en sort, de deux faç
 
 - **le blason**, actif dans toute la partie guilde, qui fonctionne en bascule et ramène
   exactement à la vue d'où l'on venait ;
-- **une icône de spec**, qui rouvre les vues de cette spec — les onglets réapparaissent. Depuis le
-  /rand de guilde, elle bascule sur le /rand de cette spec, sans quitter la vue.
+- **une icône de spec**, qui ouvre la **Liste BiS** de cette spec — les onglets réapparaissent.
+  C'est vrai partout : choisir une spec, c'est demander à la voir, et on commence par son
+  équipement, jamais sur l'onglet qui se trouvait ouvert.
 
 ## Les six vues
 

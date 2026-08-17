@@ -1140,7 +1140,7 @@ function renderList(entry, key) {
   if (!entry) {
     return emptyState(
       'Aucune donnée en cache',
-      'Clique sur « Rafraîchir depuis Icy Veins » pour remplir cette spec.'
+      'Clique sur « Mettre à jour » pour remplir cette spec.'
     );
   }
 
@@ -1564,7 +1564,7 @@ function renderMplus() {
       'Aucun donjon à optimiser',
       entryFor(spec.key)
         ? 'Aucune pièce BiS de cette spec ne vient d’un donjon.'
-        : 'Rafraîchis cette spec pour remplir ses listes BiS.'
+        : 'Mets cette spec à jour pour remplir ses listes BiS.'
     );
   }
 
@@ -2392,7 +2392,7 @@ function renderRand() {
         ? emptyState('Rien à rand ici', raison)
         : emptyState(
             'Aucune donnée en cache',
-            'Rafraîchis au moins une spec pour remplir cette vue.'
+            'Mets au moins une spec à jour pour remplir cette vue.'
           )
     );
     return wrap;
@@ -2476,7 +2476,7 @@ function renderConsumables() {
       'Aucun consommable en cache',
       STATIC
         ? 'Cette spec n’a pas encore été rafraîchie depuis l’ajout des consommables.'
-        : 'Clique « Rafraîchir depuis Icy Veins » : les consommables du guide Wowhead sont récupérés dans la foulée.'
+        : 'Clique « Mettre à jour » : les consommables du guide Wowhead sont récupérés dans la foulée.'
     );
   }
 
@@ -2605,7 +2605,7 @@ async function updateMemberSpec(member, spec) {
   member.spec = data.member.spec;
   showMessage(
     spec
-      ? `${member.name} : spec enregistrée. Pense à rafraîchir cette spec depuis Icy Veins.`
+      ? `${member.name} : spec enregistrée. Pense à la mettre à jour depuis la barre du haut.`
       : `${member.name} : spec effacée.`,
     'info'
   );
@@ -2661,7 +2661,7 @@ async function ajouterMembre(nom, className, spec) {
   await loadRoster();
   showMessage(
     spec
-      ? `${data.member.name} ajouté au roster. Pense à rafraîchir sa spec depuis Icy Veins.`
+      ? `${data.member.name} ajouté au roster. Pense à mettre à jour sa spec.`
       : `${data.member.name} ajouté au roster, spec à renseigner.`,
     'info'
   );
@@ -3138,11 +3138,10 @@ function renderSelector() {
     btn.addEventListener('click', () => {
       activeKey = spec.key;
       mplusFocus = null;
-      // Choisir une spec depuis le roster fait sortir de cette vue de guilde : sinon
-      // on cliquait sans effet visible. En /rand, on reste sur place mais on passe au
-      // butin de la spec choisie, ce qui est justement l'interet de l'onglet.
-      if (activeView === 'roster') selectView('list');
-      else if (activeView === 'rand') ouvrirRandSpec();
+      // Choisir une spec, c'est demander a la voir : on ouvre sa liste BiS, quelle que
+      // soit la vue d'ou l'on vient. Rester sur l'onglet courant faisait atterrir sur
+      // un /rand ou un M+ opti alors qu'on voulait d'abord regarder l'equipement.
+      selectView('list');
       showMessage(null);
       render();
     });
@@ -3399,8 +3398,11 @@ async function refresh() {
 
   els.refresh.disabled = true;
   const label = els.refresh.textContent;
-  els.refresh.textContent = 'Scraping en cours…';
-  showMessage(`Récupération du guide ${spec.label} sur Icy Veins…`, 'info');
+  els.refresh.textContent = 'Mise à jour…';
+  showMessage(
+    `${spec.label} : récupération depuis Icy Veins, Wowhead et Bloodmallet…`,
+    'info'
+  );
 
   try {
     const res = await fetch('/api/scrape', {
@@ -3413,11 +3415,27 @@ async function refresh() {
       store.specs[spec.key] = data.entry;
       refreshSlotConsensus();
     }
-    // Le scrape rapatrie aussi le classement Bloodmallet quand il existe.
+    // Le meme appel rapatrie Bloodmallet et les guides Wowhead. Chacun peut manquer
+    // sans empecher les autres : on n'ecrase que ce qui est effectivement revenu.
     if (data.trinkets) trinketStore.specs[spec.key] = data.trinkets;
+    if (data.wowhead) {
+      wowheadStore.specs[spec.key] = data.wowhead;
+      // La provenance des bijoux de cette spec vient d'etre remplacee.
+      categoriesParSpec.delete(spec.key);
+    }
 
     if (res.ok) {
-      showMessage(`${data.entry.items.length} slots mis à jour.`, 'info');
+      // On nomme ce qui est revenu : une source muette est un cas normal (Bloodmallet
+      // ne simule pas tout), mais il faut pouvoir le constater.
+      const sources = [`${data.entry.items.length} slots`];
+      if (data.trinkets && data.trinkets.available) sources.push('bijoux simulés');
+      if (data.wowhead && data.wowhead.trinkets && data.wowhead.trinkets.available) {
+        sources.push('tier list');
+      }
+      if (data.wowhead && data.wowhead.consumables && data.wowhead.consumables.available) {
+        sources.push('consommables');
+      }
+      showMessage(`${spec.label} à jour : ${sources.join(', ')}.`, 'info');
     } else if (data.code === 'RATE_LIMITED') {
       const minutes = Math.ceil((data.retryAfterSeconds || 0) / 60);
       showMessage(

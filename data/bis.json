@@ -26606,7 +26606,7 @@
               "empty": false,
               "itemId": 271456,
               "originalItemId": null,
-              "wowheadParams": "item=271456&domain=ptr&bonus=12854",
+              "wowheadParams": "item=271456&bonus=12854",
               "name": "Tempered Horns of the Jade Warlord",
               "quality": 4,
               "icon": "inv_helm_plate_raidwarriorulatek_d_01",
@@ -26636,7 +26636,7 @@
               "empty": false,
               "itemId": 271457,
               "originalItemId": null,
-              "wowheadParams": "item=271457&domain=ptr&bonus=12854",
+              "wowheadParams": "item=271457&bonus=12854",
               "name": "Jeweled Gauntlets of the Jade Warlord",
               "quality": 4,
               "icon": "inv_glove_plate_raidwarriorulatek_d_01",
@@ -26654,7 +26654,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&domain=ptr&bonus=13848",
+              "wowheadParams": "item=268265&bonus=13848",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -26685,7 +26685,7 @@
               "empty": false,
               "itemId": 268259,
               "originalItemId": null,
-              "wowheadParams": "item=268259&domain=ptr&bonus=13848",
+              "wowheadParams": "item=268259&bonus=13848",
               "name": "Girdle of Toxic Regret",
               "quality": 4,
               "icon": "inv_belt_plate_raidpaladinulatek_d_01",
@@ -26710,7 +26710,7 @@
               "empty": false,
               "itemId": 271444,
               "originalItemId": null,
-              "wowheadParams": "item=271444&domain=ptr&bonus=12854",
+              "wowheadParams": "item=271444&bonus=12854",
               "name": "Pauldrons of the Forgotten Sacrifice",
               "quality": 4,
               "icon": "inv_shoulder_plate_raiddeathknightulatek_d_01",
@@ -26733,7 +26733,7 @@
               "empty": false,
               "itemId": 271455,
               "originalItemId": 271878,
-              "wowheadParams": "item=271455&domain=ptr&bonus=13848&original-item=271878",
+              "wowheadParams": "item=271455&bonus=13848&original-item=271878",
               "name": "Greaves of the Jade Warlord",
               "quality": 4,
               "icon": "inv_pant_plate_raidwarriorulatek_d_01",
@@ -26756,7 +26756,7 @@
               "empty": false,
               "itemId": 268253,
               "originalItemId": null,
-              "wowheadParams": "item=268253&domain=ptr&bonus=13848",
+              "wowheadParams": "item=268253&bonus=13848",
               "name": "Silken Voodoo Drape",
               "quality": 4,
               "icon": "inv_cape_leather_raidrogueulatek_d_01",
@@ -26787,7 +26787,7 @@
                 {
                   "name": "Adorned Fang",
                   "itemId": 273068,
-                  "wowheadParams": "item=273068&domain=ptr",
+                  "wowheadParams": "item=273068",
                   "icon": "inv_knife_1h_ulatek_d_01"
                 }
               ]
@@ -26799,7 +26799,7 @@
               "empty": false,
               "itemId": 271459,
               "originalItemId": 268222,
-              "wowheadParams": "item=271459&domain=ptr&bonus=13848&original-item=268222",
+              "wowheadParams": "item=271459&bonus=13848&original-item=268222",
               "name": "Cuirass of the Jade Warlord",
               "quality": 4,
               "icon": "inv_chest_plate_raidwarriorulatek_d_01",
@@ -26822,7 +26822,7 @@
               "empty": false,
               "itemId": 252258,
               "originalItemId": null,
-              "wowheadParams": "item=252258&domain=ptr&bonus=12854",
+              "wowheadParams": "item=252258&bonus=12854",
               "name": "Sickening Signet of Atroxus",
               "quality": 3,
               "icon": "inv_12_jewelry_devouringhost_ring_bronze2",
@@ -26858,7 +26858,7 @@
               "empty": false,
               "itemId": 273792,
               "originalItemId": null,
-              "wowheadParams": "item=273792&domain=ptr&bonus=12854",
+              "wowheadParams": "item=273792&bonus=12854",
               "name": "Band of the Amani Warlord",
               "quality": 4,
               "icon": "inv_121_jewelry_ring02_green",
@@ -26894,7 +26894,7 @@
               "empty": false,
               "itemId": 270173,
               "originalItemId": null,
-              "wowheadParams": "item=270173&domain=ptr&bonus=13848",
+              "wowheadParams": "item=270173&bonus=13848",
               "name": "Zul'jin's Guillotine Technique",
               "quality": 4,
               "icon": "inv_121_trinket_raid_ulatek_trolltablet",
@@ -26925,7 +26925,7 @@
                 {
                   "name": "Adorned Fang",
                   "itemId": 273068,
-                  "wowheadParams": "item=273068&domain=ptr",
+                  "wowheadParams": "item=273068",
                   "icon": "inv_knife_1h_ulatek_d_01"
                 },
                 {
@@ -26943,7 +26943,7 @@
               "empty": false,
               "itemId": 270175,
               "originalItemId": null,
-              "wowheadParams": "item=270175&domain=ptr&bonus=13848",
+              "wowheadParams": "item=270175&bonus=13848",
               "name": "Voracious Heart of Ula'tek",
               "quality": 4,
               "icon": "inv_121_trinket_raid_ulatek_heart",
@@ -26961,7 +26961,7 @@
               "empty": false,
               "itemId": 268213,
               "originalItemId": null,
-              "wowheadParams": "item=268213&domain=ptr&bonus=13848",
+              "wowheadParams": "item=268213&bonus=13848",
               "name": "Maze-roa, Warlord's Fury",
               "quality": 4,
               "icon": "inv_axe_2h_ulatek_d_01",
@@ -26995,7 +26995,7 @@
               "empty": false,
               "itemId": 271456,
               "originalItemId": 251229,
-              "wowheadParams": "item=271456&domain=ptr&bonus=12854&original-item=251229",
+              "wowheadParams": "item=271456&bonus=12854&original-item=251229",
               "name": "Tempered Horns of the Jade Warlord",
               "quality": 4,
               "icon": "inv_helm_plate_raidwarriorulatek_d_01",
@@ -27025,7 +27025,7 @@
               "empty": false,
               "itemId": 271457,
               "originalItemId": 251214,
-              "wowheadParams": "item=271457&domain=ptr&bonus=12854&original-item=251214",
+              "wowheadParams": "item=271457&bonus=12854&original-item=251214",
               "name": "Jeweled Gauntlets of the Jade Warlord",
               "quality": 4,
               "icon": "inv_glove_plate_raidwarriorulatek_d_01",
@@ -27043,7 +27043,7 @@
               "empty": false,
               "itemId": 273781,
               "originalItemId": null,
-              "wowheadParams": "item=273781&domain=ptr&bonus=12854",
+              "wowheadParams": "item=273781&bonus=12854",
               "name": "Strand of Warding Fangs",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_teal",
@@ -27093,7 +27093,7 @@
               "empty": false,
               "itemId": 271454,
               "originalItemId": 239037,
-              "wowheadParams": "item=271454&domain=ptr&bonus=12854&original-item=239037",
+              "wowheadParams": "item=271454&bonus=12854&original-item=239037",
               "name": "Raging Pauldrons of the Jade Warlord",
               "quality": 4,
               "icon": "inv_shoulder_plate_raidwarriorulatek_d_01",
@@ -27116,7 +27116,7 @@
               "empty": false,
               "itemId": 271455,
               "originalItemId": 273776,
-              "wowheadParams": "item=271455&domain=ptr&bonus=12854&original-item=273776",
+              "wowheadParams": "item=271455&bonus=12854&original-item=273776",
               "name": "Greaves of the Jade Warlord",
               "quality": 4,
               "icon": "inv_pant_plate_raidwarriorulatek_d_01",
@@ -27175,7 +27175,7 @@
                 {
                   "name": "Adorned Fang",
                   "itemId": 273068,
-                  "wowheadParams": "item=273068&domain=ptr",
+                  "wowheadParams": "item=273068",
                   "icon": "inv_knife_1h_ulatek_d_01"
                 }
               ]
@@ -27187,7 +27187,7 @@
               "empty": false,
               "itemId": 271459,
               "originalItemId": 251151,
-              "wowheadParams": "item=271459&domain=ptr&bonus=12854&original-item=251151",
+              "wowheadParams": "item=271459&bonus=12854&original-item=251151",
               "name": "Cuirass of the Jade Warlord",
               "quality": 4,
               "icon": "inv_chest_plate_raidwarriorulatek_d_01",
@@ -27246,7 +27246,7 @@
               "empty": false,
               "itemId": 273792,
               "originalItemId": null,
-              "wowheadParams": "item=273792&domain=ptr&bonus=12854",
+              "wowheadParams": "item=273792&bonus=12854",
               "name": "Band of the Amani Warlord",
               "quality": 4,
               "icon": "inv_121_jewelry_ring02_green",
@@ -27282,7 +27282,7 @@
               "empty": false,
               "itemId": 273796,
               "originalItemId": null,
-              "wowheadParams": "item=273796&domain=ptr&bonus=12854",
+              "wowheadParams": "item=273796&bonus=12854",
               "name": "Vile Vial of Volatile Venom",
               "quality": 4,
               "icon": "inv_121_trinket_dungeon_ulatek_vile",
@@ -27313,7 +27313,7 @@
                 {
                   "name": "Adorned Fang",
                   "itemId": 273068,
-                  "wowheadParams": "item=273068&domain=ptr",
+                  "wowheadParams": "item=273068",
                   "icon": "inv_knife_1h_ulatek_d_01"
                 },
                 {
@@ -27331,7 +27331,7 @@
               "empty": false,
               "itemId": 250229,
               "originalItemId": null,
-              "wowheadParams": "item=250229&domain=ptr&bonus=12854",
+              "wowheadParams": "item=250229&bonus=12854",
               "name": "Idol of the War Loa",
               "quality": 4,
               "icon": "inv12_jewelrytrinkets_dungeon_idolofthewargod",
@@ -27349,7 +27349,7 @@
               "empty": false,
               "itemId": 273782,
               "originalItemId": null,
-              "wowheadParams": "item=273782&domain=ptr&bonus=12854",
+              "wowheadParams": "item=273782&bonus=12854",
               "name": "Vile Writhefang Glaive",
               "quality": 4,
               "icon": "inv_polearm_2h_outdooramaniloa_c_01",
@@ -27383,7 +27383,7 @@
               "empty": false,
               "itemId": 271456,
               "originalItemId": null,
-              "wowheadParams": "item=271456&domain=ptr&bonus=12854",
+              "wowheadParams": "item=271456&bonus=12854",
               "name": "Tempered Horns of the Jade Warlord",
               "quality": 4,
               "icon": "inv_helm_plate_raidwarriorulatek_d_01",
@@ -27413,7 +27413,7 @@
               "empty": false,
               "itemId": 271457,
               "originalItemId": null,
-              "wowheadParams": "item=271457&domain=ptr&bonus=12854",
+              "wowheadParams": "item=271457&bonus=12854",
               "name": "Jeweled Gauntlets of the Jade Warlord",
               "quality": 4,
               "icon": "inv_glove_plate_raidwarriorulatek_d_01",
@@ -27431,7 +27431,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&domain=ptr&bonus=13848",
+              "wowheadParams": "item=268265&bonus=13848",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -27462,7 +27462,7 @@
               "empty": false,
               "itemId": 268259,
               "originalItemId": null,
-              "wowheadParams": "item=268259&domain=ptr&bonus=13848",
+              "wowheadParams": "item=268259&bonus=13848",
               "name": "Girdle of Toxic Regret",
               "quality": 4,
               "icon": "inv_belt_plate_raidpaladinulatek_d_01",
@@ -27487,7 +27487,7 @@
               "empty": false,
               "itemId": 271444,
               "originalItemId": null,
-              "wowheadParams": "item=271444&domain=ptr&bonus=12854",
+              "wowheadParams": "item=271444&bonus=12854",
               "name": "Pauldrons of the Forgotten Sacrifice",
               "quality": 4,
               "icon": "inv_shoulder_plate_raiddeathknightulatek_d_01",
@@ -27510,7 +27510,7 @@
               "empty": false,
               "itemId": 271455,
               "originalItemId": 271878,
-              "wowheadParams": "item=271455&domain=ptr&bonus=13848&original-item=271878",
+              "wowheadParams": "item=271455&bonus=13848&original-item=271878",
               "name": "Greaves of the Jade Warlord",
               "quality": 4,
               "icon": "inv_pant_plate_raidwarriorulatek_d_01",
@@ -27533,7 +27533,7 @@
               "empty": false,
               "itemId": 268253,
               "originalItemId": null,
-              "wowheadParams": "item=268253&domain=ptr&bonus=13848",
+              "wowheadParams": "item=268253&bonus=13848",
               "name": "Silken Voodoo Drape",
               "quality": 4,
               "icon": "inv_cape_leather_raidrogueulatek_d_01",
@@ -27564,7 +27564,7 @@
                 {
                   "name": "Adorned Fang",
                   "itemId": 273068,
-                  "wowheadParams": "item=273068&domain=ptr",
+                  "wowheadParams": "item=273068",
                   "icon": "inv_knife_1h_ulatek_d_01"
                 }
               ]
@@ -27576,7 +27576,7 @@
               "empty": false,
               "itemId": 271459,
               "originalItemId": 268222,
-              "wowheadParams": "item=271459&domain=ptr&bonus=13848&original-item=268222",
+              "wowheadParams": "item=271459&bonus=13848&original-item=268222",
               "name": "Cuirass of the Jade Warlord",
               "quality": 4,
               "icon": "inv_chest_plate_raidwarriorulatek_d_01",
@@ -27599,7 +27599,7 @@
               "empty": false,
               "itemId": 268249,
               "originalItemId": null,
-              "wowheadParams": "item=268249&domain=ptr&bonus=12854",
+              "wowheadParams": "item=268249&bonus=12854",
               "name": "Vile Alchemist's Band",
               "quality": 4,
               "icon": "inv_121_jewelry_ring01_purple",
@@ -27635,7 +27635,7 @@
               "empty": false,
               "itemId": 268252,
               "originalItemId": null,
-              "wowheadParams": "item=268252&domain=ptr&bonus=12854",
+              "wowheadParams": "item=268252&bonus=12854",
               "name": "Apex Brute's Claw Ring",
               "quality": 4,
               "icon": "inv_121_jewelry_ring03_red",
@@ -27671,7 +27671,7 @@
               "empty": false,
               "itemId": 270173,
               "originalItemId": null,
-              "wowheadParams": "item=270173&domain=ptr&bonus=13848",
+              "wowheadParams": "item=270173&bonus=13848",
               "name": "Zul'jin's Guillotine Technique",
               "quality": 4,
               "icon": "inv_121_trinket_raid_ulatek_trolltablet",
@@ -27702,7 +27702,7 @@
                 {
                   "name": "Adorned Fang",
                   "itemId": 273068,
-                  "wowheadParams": "item=273068&domain=ptr",
+                  "wowheadParams": "item=273068",
                   "icon": "inv_knife_1h_ulatek_d_01"
                 },
                 {
@@ -27720,7 +27720,7 @@
               "empty": false,
               "itemId": 270175,
               "originalItemId": null,
-              "wowheadParams": "item=270175&domain=ptr&bonus=13848",
+              "wowheadParams": "item=270175&bonus=13848",
               "name": "Voracious Heart of Ula'tek",
               "quality": 4,
               "icon": "inv_121_trinket_raid_ulatek_heart",
@@ -27738,7 +27738,7 @@
               "empty": false,
               "itemId": 268213,
               "originalItemId": null,
-              "wowheadParams": "item=268213&domain=ptr&bonus=13848",
+              "wowheadParams": "item=268213&bonus=13848",
               "name": "Maze-roa, Warlord's Fury",
               "quality": 4,
               "icon": "inv_axe_2h_ulatek_d_01",
@@ -27769,21 +27769,21 @@
           "items": [
             {
               "itemId": 270173,
-              "wowheadParams": "item=270173&domain=ptr",
+              "wowheadParams": "item=270173",
               "name": "Zul'jin's Guillotine Technique",
               "quality": 4,
               "icon": "inv_121_trinket_raid_ulatek_trolltablet"
             },
             {
               "itemId": 270175,
-              "wowheadParams": "item=270175&domain=ptr",
+              "wowheadParams": "item=270175",
               "name": "Voracious Heart of Ula'tek",
               "quality": 4,
               "icon": "inv_121_trinket_raid_ulatek_heart"
             },
             {
               "itemId": 270164,
-              "wowheadParams": "item=270164&domain=ptr",
+              "wowheadParams": "item=270164",
               "name": "Gebbo's Bottomless Bag",
               "quality": 4,
               "icon": "inv_10_tailoring_bag1_color2"
@@ -27795,28 +27795,28 @@
           "items": [
             {
               "itemId": 273796,
-              "wowheadParams": "item=273796&domain=ptr",
+              "wowheadParams": "item=273796",
               "name": "Vile Vial of Volatile Venom",
               "quality": 4,
               "icon": "inv_121_trinket_dungeon_ulatek_vile"
             },
             {
               "itemId": 250229,
-              "wowheadParams": "item=250229&domain=ptr",
+              "wowheadParams": "item=250229",
               "name": "Idol of the War Loa",
               "quality": 4,
               "icon": "inv12_jewelrytrinkets_dungeon_idolofthewargod"
             },
             {
               "itemId": 270165,
-              "wowheadParams": "item=270165&domain=ptr",
+              "wowheadParams": "item=270165",
               "name": "Keeper's Seething Core",
               "quality": 4,
               "icon": "inv_121_trinket_raid_ulatek_golemhearts_green"
             },
             {
               "itemId": 250238,
-              "wowheadParams": "item=250238&domain=ptr",
+              "wowheadParams": "item=250238",
               "name": "Seed of the Devouring Wild",
               "quality": 4,
               "icon": "inv12_jewelrytrinkets_dungeon_seedofthedevouringwild"
@@ -27856,7 +27856,7 @@
             },
             {
               "itemId": 270168,
-              "wowheadParams": "item=270168&domain=ptr",
+              "wowheadParams": "item=270168",
               "name": "Font of Venomous Rage",
               "quality": 4,
               "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green"
@@ -27868,21 +27868,21 @@
           "items": [
             {
               "itemId": 273797,
-              "wowheadParams": "item=273797&domain=ptr",
+              "wowheadParams": "item=273797",
               "name": "Tattered Amani War Banner",
               "quality": 4,
               "icon": "inv_121_trinket_dungeon_ulatek_banner"
             },
             {
               "itemId": 270163,
-              "wowheadParams": "item=270163&domain=ptr",
+              "wowheadParams": "item=270163",
               "name": "Sszorak's Ferocity",
               "quality": 4,
               "icon": "inv_121_trinket_raid_ulatek_ulatekclaw"
             },
             {
               "itemId": 273795,
-              "wowheadParams": "item=273795&domain=ptr",
+              "wowheadParams": "item=273795",
               "name": "Coiled Fangstone",
               "quality": 4,
               "icon": "inv_121_trinket_dungeon_ulatek_fangstone"
@@ -27898,7 +27898,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-15T13:34:01.088Z",
+      "scrapedAt": "2026-08-17T00:38:56.571Z",
       "items": [
         {
           "slot": "Helm",
@@ -27907,7 +27907,7 @@
           "empty": false,
           "itemId": 271456,
           "originalItemId": null,
-          "wowheadParams": "item=271456&domain=ptr&bonus=12854",
+          "wowheadParams": "item=271456&bonus=12854",
           "name": "Tempered Horns of the Jade Warlord",
           "quality": 4,
           "icon": "inv_helm_plate_raidwarriorulatek_d_01",
@@ -27937,7 +27937,7 @@
           "empty": false,
           "itemId": 271457,
           "originalItemId": null,
-          "wowheadParams": "item=271457&domain=ptr&bonus=12854",
+          "wowheadParams": "item=271457&bonus=12854",
           "name": "Jeweled Gauntlets of the Jade Warlord",
           "quality": 4,
           "icon": "inv_glove_plate_raidwarriorulatek_d_01",
@@ -27955,7 +27955,7 @@
           "empty": false,
           "itemId": 268265,
           "originalItemId": null,
-          "wowheadParams": "item=268265&domain=ptr&bonus=13848",
+          "wowheadParams": "item=268265&bonus=13848",
           "name": "Aqirbane Reliquary",
           "quality": 4,
           "icon": "inv_121_jewelry_neck03_green",
@@ -27986,7 +27986,7 @@
           "empty": false,
           "itemId": 268259,
           "originalItemId": null,
-          "wowheadParams": "item=268259&domain=ptr&bonus=13848",
+          "wowheadParams": "item=268259&bonus=13848",
           "name": "Girdle of Toxic Regret",
           "quality": 4,
           "icon": "inv_belt_plate_raidpaladinulatek_d_01",
@@ -28011,7 +28011,7 @@
           "empty": false,
           "itemId": 271444,
           "originalItemId": null,
-          "wowheadParams": "item=271444&domain=ptr&bonus=12854",
+          "wowheadParams": "item=271444&bonus=12854",
           "name": "Pauldrons of the Forgotten Sacrifice",
           "quality": 4,
           "icon": "inv_shoulder_plate_raiddeathknightulatek_d_01",
@@ -28034,7 +28034,7 @@
           "empty": false,
           "itemId": 271455,
           "originalItemId": 271878,
-          "wowheadParams": "item=271455&domain=ptr&bonus=13848&original-item=271878",
+          "wowheadParams": "item=271455&bonus=13848&original-item=271878",
           "name": "Greaves of the Jade Warlord",
           "quality": 4,
           "icon": "inv_pant_plate_raidwarriorulatek_d_01",
@@ -28057,7 +28057,7 @@
           "empty": false,
           "itemId": 268253,
           "originalItemId": null,
-          "wowheadParams": "item=268253&domain=ptr&bonus=13848",
+          "wowheadParams": "item=268253&bonus=13848",
           "name": "Silken Voodoo Drape",
           "quality": 4,
           "icon": "inv_cape_leather_raidrogueulatek_d_01",
@@ -28088,7 +28088,7 @@
             {
               "name": "Adorned Fang",
               "itemId": 273068,
-              "wowheadParams": "item=273068&domain=ptr",
+              "wowheadParams": "item=273068",
               "icon": "inv_knife_1h_ulatek_d_01"
             }
           ]
@@ -28100,7 +28100,7 @@
           "empty": false,
           "itemId": 271459,
           "originalItemId": 268222,
-          "wowheadParams": "item=271459&domain=ptr&bonus=13848&original-item=268222",
+          "wowheadParams": "item=271459&bonus=13848&original-item=268222",
           "name": "Cuirass of the Jade Warlord",
           "quality": 4,
           "icon": "inv_chest_plate_raidwarriorulatek_d_01",
@@ -28123,7 +28123,7 @@
           "empty": false,
           "itemId": 252258,
           "originalItemId": null,
-          "wowheadParams": "item=252258&domain=ptr&bonus=12854",
+          "wowheadParams": "item=252258&bonus=12854",
           "name": "Sickening Signet of Atroxus",
           "quality": 3,
           "icon": "inv_12_jewelry_devouringhost_ring_bronze2",
@@ -28159,7 +28159,7 @@
           "empty": false,
           "itemId": 273792,
           "originalItemId": null,
-          "wowheadParams": "item=273792&domain=ptr&bonus=12854",
+          "wowheadParams": "item=273792&bonus=12854",
           "name": "Band of the Amani Warlord",
           "quality": 4,
           "icon": "inv_121_jewelry_ring02_green",
@@ -28195,7 +28195,7 @@
           "empty": false,
           "itemId": 270173,
           "originalItemId": null,
-          "wowheadParams": "item=270173&domain=ptr&bonus=13848",
+          "wowheadParams": "item=270173&bonus=13848",
           "name": "Zul'jin's Guillotine Technique",
           "quality": 4,
           "icon": "inv_121_trinket_raid_ulatek_trolltablet",
@@ -28226,7 +28226,7 @@
             {
               "name": "Adorned Fang",
               "itemId": 273068,
-              "wowheadParams": "item=273068&domain=ptr",
+              "wowheadParams": "item=273068",
               "icon": "inv_knife_1h_ulatek_d_01"
             },
             {
@@ -28244,7 +28244,7 @@
           "empty": false,
           "itemId": 270175,
           "originalItemId": null,
-          "wowheadParams": "item=270175&domain=ptr&bonus=13848",
+          "wowheadParams": "item=270175&bonus=13848",
           "name": "Voracious Heart of Ula'tek",
           "quality": 4,
           "icon": "inv_121_trinket_raid_ulatek_heart",
@@ -28262,7 +28262,7 @@
           "empty": false,
           "itemId": 268213,
           "originalItemId": null,
-          "wowheadParams": "item=268213&domain=ptr&bonus=13848",
+          "wowheadParams": "item=268213&bonus=13848",
           "name": "Maze-roa, Warlord's Fury",
           "quality": 4,
           "icon": "inv_axe_2h_ulatek_d_01",
@@ -31477,7 +31477,1625 @@
           "empty": true
         }
       ]
+    },
+    "hunter-marksmanship": {
+      "key": "hunter-marksmanship",
+      "class": "hunter",
+      "spec": "marksmanship",
+      "label": "Chasseur — Précision",
+      "url": "https://www.icy-veins.com/wow/marksmanship-hunter-pve-dps-gear-best-in-slot",
+      "guideTitle": "Marksmanship Hunter DPS Gear and Best in Slot — 12.1",
+      "guideAuthor": null,
+      "guideUpdated": null,
+      "tableLabel": "Overall",
+      "lists": [
+        {
+          "label": "Overall",
+          "items": [
+            {
+              "slot": "Helm",
+              "slotFr": "Tête",
+              "align": "left",
+              "empty": false,
+              "itemId": 271492,
+              "originalItemId": 268230,
+              "wowheadParams": "item=271492&bonus=12854&original-item=268230",
+              "name": "Skulking Viper's Weeping Fangs",
+              "quality": 4,
+              "icon": "inv_helm_mail_raidhunterulatek_d_01",
+              "source": "Nek'zali",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Empowered Hex of Leeching",
+                "itemId": 243950,
+                "wowheadParams": "item=243950",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Powerful Eversong Diamond",
+                  "itemId": 240967,
+                  "wowheadParams": "item=240967",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange"
+                }
+              ]
+            },
+            {
+              "slot": "Hands",
+              "slotFr": "Mains",
+              "align": "right",
+              "empty": false,
+              "itemId": 271493,
+              "originalItemId": 193752,
+              "wowheadParams": "item=271493&bonus=12854&original-item=193752",
+              "name": "Skulking Viper's Hidepiercers",
+              "quality": 4,
+              "icon": "inv_glove_mail_raidhunterulatek_d_01",
+              "source": "Ruby Life Pools",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Neck",
+              "slotFr": "Cou",
+              "align": "left",
+              "empty": false,
+              "itemId": 268265,
+              "originalItemId": null,
+              "wowheadParams": "item=268265&bonus=13848:13708",
+              "name": "Aqirbane Reliquary",
+              "quality": 4,
+              "icon": "inv_121_jewelry_neck03_green",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Lapis",
+                  "itemId": 240914,
+                  "wowheadParams": "item=240914",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue"
+                },
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Waist",
+              "slotFr": "Taille",
+              "align": "right",
+              "empty": false,
+              "itemId": 244581,
+              "originalItemId": null,
+              "wowheadParams": "item=244581&bonus=13751:12497:13836:12384:8791:8960:1808",
+              "name": "Farstrider's Trophy Belt",
+              "quality": 4,
+              "icon": "inv_belt_mail_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Masterful Garnet",
+                  "itemId": 240908,
+                  "wowheadParams": "item=240908",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+                },
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Shoulders",
+              "slotFr": "Épaules",
+              "align": "left",
+              "empty": false,
+              "itemId": 271490,
+              "originalItemId": 268231,
+              "wowheadParams": "item=271490&bonus=13848&original-item=268231",
+              "name": "Jaws of the Skulking Viper",
+              "quality": 4,
+              "icon": "inv_shoulder_mail_raidhunterulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Silvermoon's Mending",
+                "itemId": 244021,
+                "wowheadParams": "item=244021",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Legs",
+              "slotFr": "Jambes",
+              "align": "right",
+              "empty": false,
+              "itemId": 271491,
+              "originalItemId": 268237,
+              "wowheadParams": "item=271491&bonus=13848&original-item=268237",
+              "name": "Skulking Viper's Coiled Legwraps",
+              "quality": 4,
+              "icon": "inv_pant_mail_raidhunterulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Forest Hunter's",
+                "itemId": 244640,
+                "wowheadParams": "item=244640",
+                "icon": "inv_12_profession_leatherworking_amani_armor_kit"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Cloak",
+              "slotFr": "Cape",
+              "align": "left",
+              "empty": false,
+              "itemId": 268253,
+              "originalItemId": null,
+              "wowheadParams": "item=268253&bonus=13848",
+              "name": "Silken Voodoo Drape",
+              "quality": 4,
+              "icon": "inv_cape_leather_raidrogueulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Feet",
+              "slotFr": "Pieds",
+              "align": "right",
+              "empty": false,
+              "itemId": 268233,
+              "originalItemId": null,
+              "wowheadParams": "item=268233&bonus=12854",
+              "name": "Ferocious Scaleboots",
+              "quality": 4,
+              "icon": "inv_boot_mail_raidhunterulatek_d_01",
+              "source": "Sszorak",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Shaladrassil's Roots",
+                "itemId": 243983,
+                "wowheadParams": "item=243983",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Chest",
+              "slotFr": "Torse",
+              "align": "left",
+              "empty": false,
+              "itemId": 271495,
+              "originalItemId": 271876,
+              "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+              "name": "Skulking Viper's Scuteplate",
+              "quality": 4,
+              "icon": "inv_chest_mail_raidhunterulatek_d_01",
+              "source": "Ula'tek",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Mark of the Worldsoul",
+                "itemId": 243977,
+                "wowheadParams": "item=243977",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 251136,
+              "originalItemId": null,
+              "wowheadParams": "item=251136&bonus=12854",
+              "name": "Signet of Snarling Servitude",
+              "quality": 3,
+              "icon": "inv_12_jewelry_voidelf_ring_teal",
+              "source": "Murder Row",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Masterful Garnet",
+                  "itemId": 240908,
+                  "wowheadParams": "item=240908",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+                }
+              ]
+            },
+            {
+              "slot": "Shirt",
+              "slotFr": "Chemise",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 268249,
+              "originalItemId": null,
+              "wowheadParams": "item=268249&bonus=12854",
+              "name": "Vile Alchemist's Band",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring01_purple",
+              "source": "Vashnik",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Masterful Garnet",
+                  "itemId": 240908,
+                  "wowheadParams": "item=240908",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+                }
+              ]
+            },
+            {
+              "slot": "Tabard",
+              "slotFr": "Tabard",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270175,
+              "originalItemId": null,
+              "wowheadParams": "item=270175&bonus=13848",
+              "name": "Voracious Heart of Ula'tek",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_heart",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Bracers",
+              "slotFr": "Poignets",
+              "align": "left",
+              "empty": false,
+              "itemId": 244584,
+              "originalItemId": null,
+              "wowheadParams": "item=244584&bonus=13751:12497:13836:12384:8791:8960:1808",
+              "name": "Farstrider's Plated Bracers",
+              "quality": 4,
+              "icon": "inv_bracer_mail_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Peridot",
+                  "itemId": 240890,
+                  "wowheadParams": "item=240890",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green"
+                },
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270173,
+              "originalItemId": null,
+              "wowheadParams": "item=270173&bonus=13848",
+              "name": "Zul'jin's Guillotine Technique",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_trolltablet",
+              "source": "Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Main Hand",
+              "slotFr": "Main droite",
+              "align": "right",
+              "empty": false,
+              "itemId": 268207,
+              "originalItemId": null,
+              "wowheadParams": "item=268207&bonus=13848:13708",
+              "name": "Caustic Repose Greatbow",
+              "quality": 4,
+              "icon": "inv_bow_1h_ulatek_d_01",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Jan'alai's Precision",
+                "itemId": 243970,
+                "wowheadParams": "item=243970",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Off Hand",
+              "slotFr": "Main gauche",
+              "align": "left",
+              "empty": true
+            }
+          ]
+        },
+        {
+          "label": "Mythic+",
+          "items": [
+            {
+              "slot": "Helm",
+              "slotFr": "Tête",
+              "align": "left",
+              "empty": false,
+              "itemId": 271492,
+              "originalItemId": 239035,
+              "wowheadParams": "item=271492&bonus=12854&original-item=239035",
+              "name": "Skulking Viper's Weeping Fangs",
+              "quality": 4,
+              "icon": "inv_helm_mail_raidhunterulatek_d_01",
+              "source": "Temple of Sethraliss",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Empowered Hex of Leeching",
+                "itemId": 243950,
+                "wowheadParams": "item=243950",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Powerful Eversong Diamond",
+                  "itemId": 240967,
+                  "wowheadParams": "item=240967",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange"
+                }
+              ]
+            },
+            {
+              "slot": "Hands",
+              "slotFr": "Mains",
+              "align": "right",
+              "empty": false,
+              "itemId": 271493,
+              "originalItemId": 193752,
+              "wowheadParams": "item=271493&bonus=12854&original-item=193752",
+              "name": "Skulking Viper's Hidepiercers",
+              "quality": 4,
+              "icon": "inv_glove_mail_raidhunterulatek_d_01",
+              "source": "Ruby Life Pools",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Neck",
+              "slotFr": "Cou",
+              "align": "left",
+              "empty": false,
+              "itemId": 251234,
+              "originalItemId": null,
+              "wowheadParams": "item=251234&bonus=12854",
+              "name": "Graft of the Domanaar",
+              "quality": 3,
+              "icon": "inv_12_jewelry_devouringhost_necklace_silver2",
+              "source": "Voidscar Arena",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Lapis",
+                  "itemId": 240914,
+                  "wowheadParams": "item=240914",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue"
+                }
+              ]
+            },
+            {
+              "slot": "Waist",
+              "slotFr": "Taille",
+              "align": "right",
+              "empty": false,
+              "itemId": 244581,
+              "originalItemId": null,
+              "wowheadParams": "item=244581&bonus=13751:12497:13836:12384:8791:8960:1808",
+              "name": "Farstrider's Trophy Belt",
+              "quality": 4,
+              "icon": "inv_belt_mail_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Peridot",
+                  "itemId": 240890,
+                  "wowheadParams": "item=240890",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green"
+                },
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Shoulders",
+              "slotFr": "Épaules",
+              "align": "left",
+              "empty": false,
+              "itemId": 271490,
+              "originalItemId": 251131,
+              "wowheadParams": "item=271490&bonus=12854&original-item=251131",
+              "name": "Jaws of the Skulking Viper",
+              "quality": 4,
+              "icon": "inv_shoulder_mail_raidhunterulatek_d_01",
+              "source": "Murder Row",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Silvermoon's Mending",
+                "itemId": 244021,
+                "wowheadParams": "item=244021",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Legs",
+              "slotFr": "Jambes",
+              "align": "right",
+              "empty": false,
+              "itemId": 271491,
+              "originalItemId": 159375,
+              "wowheadParams": "item=271491&bonus=12854&original-item=159375",
+              "name": "Skulking Viper's Coiled Legwraps",
+              "quality": 4,
+              "icon": "inv_pant_mail_raidhunterulatek_d_01",
+              "source": "Temple of Sethraliss",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Forest Hunter's",
+                "itemId": 244640,
+                "wowheadParams": "item=244640",
+                "icon": "inv_12_profession_leatherworking_amani_armor_kit"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Cloak",
+              "slotFr": "Cape",
+              "align": "left",
+              "empty": false,
+              "itemId": 251132,
+              "originalItemId": null,
+              "wowheadParams": "item=251132&bonus=12854",
+              "name": "Speakeasy Shroud",
+              "quality": 3,
+              "icon": "inv_cape_leather_dungeonharronir_c_01",
+              "source": "Murder Row",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Feet",
+              "slotFr": "Pieds",
+              "align": "right",
+              "empty": false,
+              "itemId": 159388,
+              "originalItemId": null,
+              "wowheadParams": "item=159388&bonus=12854",
+              "name": "Sabatons of Coruscating Energy",
+              "quality": 3,
+              "icon": "inv_boot_mail_zandalardungeon_c_01",
+              "source": "Temple of Sethraliss",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Shaladrassil's Roots",
+                "itemId": 243983,
+                "wowheadParams": "item=243983",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Chest",
+              "slotFr": "Torse",
+              "align": "left",
+              "empty": false,
+              "itemId": 271495,
+              "originalItemId": 239046,
+              "wowheadParams": "item=271495&bonus=12854&original-item=239046",
+              "name": "Skulking Viper's Scuteplate",
+              "quality": 4,
+              "icon": "inv_chest_mail_raidhunterulatek_d_01",
+              "source": "King's Rest",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Mark of the Worldsoul",
+                "itemId": 243977,
+                "wowheadParams": "item=243977",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 158366,
+              "originalItemId": null,
+              "wowheadParams": "item=158366&bonus=12854",
+              "name": "Charged Sandstone Band",
+              "quality": 3,
+              "icon": "inv_ring_80_03d",
+              "source": "Temple of Sethraliss",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Masterful Garnet",
+                  "itemId": 240908,
+                  "wowheadParams": "item=240908",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+                }
+              ]
+            },
+            {
+              "slot": "Shirt",
+              "slotFr": "Chemise",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 251136,
+              "originalItemId": null,
+              "wowheadParams": "item=251136&bonus=12854",
+              "name": "Signet of Snarling Servitude",
+              "quality": 3,
+              "icon": "inv_12_jewelry_voidelf_ring_teal",
+              "source": "Murder Row",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Masterful Garnet",
+                  "itemId": 240908,
+                  "wowheadParams": "item=240908",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+                }
+              ]
+            },
+            {
+              "slot": "Tabard",
+              "slotFr": "Tabard",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 250214,
+              "originalItemId": null,
+              "wowheadParams": "item=250214&bonus=12854",
+              "name": "Lightspire Core",
+              "quality": 3,
+              "icon": "inv_enchant_essenceastrallarge",
+              "source": "The Blinding Vale",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Bracers",
+              "slotFr": "Poignets",
+              "align": "left",
+              "empty": false,
+              "itemId": 244584,
+              "originalItemId": null,
+              "wowheadParams": "item=244584&bonus=13751:12497:13836:12384:8791:8960:1808",
+              "name": "Farstrider's Plated Bracers",
+              "quality": 4,
+              "icon": "inv_bracer_mail_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                },
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 159617,
+              "originalItemId": null,
+              "wowheadParams": "item=159617&bonus=12854",
+              "name": "Lustrous Golden Plumage",
+              "quality": 3,
+              "icon": "inv_icon_feather06a",
+              "source": "King's Rest",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Main Hand",
+              "slotFr": "Main droite",
+              "align": "right",
+              "empty": false,
+              "itemId": 271680,
+              "originalItemId": null,
+              "wowheadParams": "item=271680&bonus=12854",
+              "name": "Sinseared Repeater",
+              "quality": 4,
+              "icon": "inv_firearm_2h_undergroundquest_b_01",
+              "source": "Murder Row",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Jan'alai's Precision",
+                "itemId": 243970,
+                "wowheadParams": "item=243970",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Off Hand",
+              "slotFr": "Main gauche",
+              "align": "left",
+              "empty": true
+            }
+          ]
+        },
+        {
+          "label": "Raid",
+          "items": [
+            {
+              "slot": "Helm",
+              "slotFr": "Tête",
+              "align": "left",
+              "empty": false,
+              "itemId": 271492,
+              "originalItemId": 268230,
+              "wowheadParams": "item=271492&bonus=12854&original-item=268230",
+              "name": "Skulking Viper's Weeping Fangs",
+              "quality": 4,
+              "icon": "inv_helm_mail_raidhunterulatek_d_01",
+              "source": "Nek'zali",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Empowered Hex of Leeching",
+                "itemId": 243950,
+                "wowheadParams": "item=243950",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Powerful Eversong Diamond",
+                  "itemId": 240967,
+                  "wowheadParams": "item=240967",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange"
+                }
+              ]
+            },
+            {
+              "slot": "Hands",
+              "slotFr": "Mains",
+              "align": "right",
+              "empty": false,
+              "itemId": 271493,
+              "originalItemId": 268238,
+              "wowheadParams": "item=271493&bonus=12854&original-item=268238",
+              "name": "Skulking Viper's Hidepiercers",
+              "quality": 4,
+              "icon": "inv_glove_mail_raidhunterulatek_d_01",
+              "source": "Nymrissa Wavecaller",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Neck",
+              "slotFr": "Cou",
+              "align": "left",
+              "empty": false,
+              "itemId": 268265,
+              "originalItemId": null,
+              "wowheadParams": "item=268265&bonus=13848:13708",
+              "name": "Aqirbane Reliquary",
+              "quality": 4,
+              "icon": "inv_121_jewelry_neck03_green",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Lapis",
+                  "itemId": 240914,
+                  "wowheadParams": "item=240914",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue"
+                },
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Waist",
+              "slotFr": "Taille",
+              "align": "right",
+              "empty": false,
+              "itemId": 244581,
+              "originalItemId": null,
+              "wowheadParams": "item=244581&bonus=13751:12497:13836:12384:8791:8960:1808",
+              "name": "Farstrider's Trophy Belt",
+              "quality": 4,
+              "icon": "inv_belt_mail_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Masterful Garnet",
+                  "itemId": 240908,
+                  "wowheadParams": "item=240908",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+                },
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Shoulders",
+              "slotFr": "Épaules",
+              "align": "left",
+              "empty": false,
+              "itemId": 271490,
+              "originalItemId": 268231,
+              "wowheadParams": "item=271490&bonus=13848&original-item=268231",
+              "name": "Jaws of the Skulking Viper",
+              "quality": 4,
+              "icon": "inv_shoulder_mail_raidhunterulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Silvermoon's Mending",
+                "itemId": 244021,
+                "wowheadParams": "item=244021",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Legs",
+              "slotFr": "Jambes",
+              "align": "right",
+              "empty": false,
+              "itemId": 271491,
+              "originalItemId": 268237,
+              "wowheadParams": "item=271491&bonus=13848&original-item=268237",
+              "name": "Skulking Viper's Coiled Legwraps",
+              "quality": 4,
+              "icon": "inv_pant_mail_raidhunterulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Forest Hunter's",
+                "itemId": 244640,
+                "wowheadParams": "item=244640",
+                "icon": "inv_12_profession_leatherworking_amani_armor_kit"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Cloak",
+              "slotFr": "Cape",
+              "align": "left",
+              "empty": false,
+              "itemId": 268253,
+              "originalItemId": null,
+              "wowheadParams": "item=268253&bonus=13848",
+              "name": "Silken Voodoo Drape",
+              "quality": 4,
+              "icon": "inv_cape_leather_raidrogueulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Feet",
+              "slotFr": "Pieds",
+              "align": "right",
+              "empty": false,
+              "itemId": 268233,
+              "originalItemId": null,
+              "wowheadParams": "item=268233&bonus=12854",
+              "name": "Ferocious Scaleboots",
+              "quality": 4,
+              "icon": "inv_boot_mail_raidhunterulatek_d_01",
+              "source": "Sszorak",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Shaladrassil's Roots",
+                "itemId": 243983,
+                "wowheadParams": "item=243983",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Chest",
+              "slotFr": "Torse",
+              "align": "left",
+              "empty": false,
+              "itemId": 271495,
+              "originalItemId": 271876,
+              "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+              "name": "Skulking Viper's Scuteplate",
+              "quality": 4,
+              "icon": "inv_chest_mail_raidhunterulatek_d_01",
+              "source": "Ula'tek",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Mark of the Worldsoul",
+                "itemId": 243977,
+                "wowheadParams": "item=243977",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 268252,
+              "originalItemId": null,
+              "wowheadParams": "item=268252&bonus=12854",
+              "name": "Apex Brute's Claw Ring",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring03_red",
+              "source": "Sszorak",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Masterful Garnet",
+                  "itemId": 240908,
+                  "wowheadParams": "item=240908",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+                }
+              ]
+            },
+            {
+              "slot": "Shirt",
+              "slotFr": "Chemise",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 268249,
+              "originalItemId": null,
+              "wowheadParams": "item=268249&bonus=12854",
+              "name": "Vile Alchemist's Band",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring01_purple",
+              "source": "Vashnik",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Masterful Garnet",
+                  "itemId": 240908,
+                  "wowheadParams": "item=240908",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+                }
+              ]
+            },
+            {
+              "slot": "Tabard",
+              "slotFr": "Tabard",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270175,
+              "originalItemId": null,
+              "wowheadParams": "item=270175&bonus=13848",
+              "name": "Voracious Heart of Ula'tek",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_heart",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Bracers",
+              "slotFr": "Poignets",
+              "align": "left",
+              "empty": false,
+              "itemId": 244584,
+              "originalItemId": null,
+              "wowheadParams": "item=244584&bonus=13751:12497:13836:12384:8791:8960:1808",
+              "name": "Farstrider's Plated Bracers",
+              "quality": 4,
+              "icon": "inv_bracer_mail_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Peridot",
+                  "itemId": 240890,
+                  "wowheadParams": "item=240890",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green"
+                },
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270173,
+              "originalItemId": null,
+              "wowheadParams": "item=270173&bonus=13848",
+              "name": "Zul'jin's Guillotine Technique",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_trolltablet",
+              "source": "Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Main Hand",
+              "slotFr": "Main droite",
+              "align": "right",
+              "empty": false,
+              "itemId": 268207,
+              "originalItemId": null,
+              "wowheadParams": "item=268207&bonus=13848:13708",
+              "name": "Caustic Repose Greatbow",
+              "quality": 4,
+              "icon": "inv_bow_1h_ulatek_d_01",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Jan'alai's Precision",
+                "itemId": 243970,
+                "wowheadParams": "item=243970",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Off Hand",
+              "slotFr": "Main gauche",
+              "align": "left",
+              "empty": true
+            }
+          ]
+        }
+      ],
+      "trinketAdvice": [
+        {
+          "category": "On-Use",
+          "items": [
+            {
+              "itemId": 270175,
+              "wowheadParams": "item=270175",
+              "name": "Voracious Heart of Ula'tek",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_heart"
+            },
+            {
+              "itemId": 159617,
+              "wowheadParams": "item=159617",
+              "name": "Lustrous Golden Plumage",
+              "quality": 3,
+              "icon": "inv_icon_feather06a"
+            }
+          ]
+        },
+        {
+          "category": "Passive",
+          "items": [
+            {
+              "itemId": 270173,
+              "wowheadParams": "item=270173",
+              "name": "Zul'jin's Guillotine Technique",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_trolltablet"
+            },
+            {
+              "itemId": 270164,
+              "wowheadParams": "item=270164",
+              "name": "Gebbo's Bottomless Bag",
+              "quality": 4,
+              "icon": "inv_10_tailoring_bag1_color2"
+            }
+          ]
+        }
+      ],
+      "provider": "icy-veins",
+      "scrapedAt": "2026-08-17T00:35:44.776Z",
+      "items": [
+        {
+          "slot": "Helm",
+          "slotFr": "Tête",
+          "align": "left",
+          "empty": false,
+          "itemId": 271492,
+          "originalItemId": 268230,
+          "wowheadParams": "item=271492&bonus=12854&original-item=268230",
+          "name": "Skulking Viper's Weeping Fangs",
+          "quality": 4,
+          "icon": "inv_helm_mail_raidhunterulatek_d_01",
+          "source": "Nek'zali",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Empowered Hex of Leeching",
+            "itemId": 243950,
+            "wowheadParams": "item=243950",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": [
+            {
+              "name": "Powerful Eversong Diamond",
+              "itemId": 240967,
+              "wowheadParams": "item=240967",
+              "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "slotFr": "Mains",
+          "align": "right",
+          "empty": false,
+          "itemId": 271493,
+          "originalItemId": 193752,
+          "wowheadParams": "item=271493&bonus=12854&original-item=193752",
+          "name": "Skulking Viper's Hidepiercers",
+          "quality": 4,
+          "icon": "inv_glove_mail_raidhunterulatek_d_01",
+          "source": "Ruby Life Pools",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Neck",
+          "slotFr": "Cou",
+          "align": "left",
+          "empty": false,
+          "itemId": 268265,
+          "originalItemId": null,
+          "wowheadParams": "item=268265&bonus=13848:13708",
+          "name": "Aqirbane Reliquary",
+          "quality": 4,
+          "icon": "inv_121_jewelry_neck03_green",
+          "source": "Ula'tek",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": [
+            {
+              "name": "Flawless Deadly Lapis",
+              "itemId": 240914,
+              "wowheadParams": "item=240914",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue"
+            },
+            {
+              "name": "Flawless Deadly Amethyst",
+              "itemId": 240898,
+              "wowheadParams": "item=240898",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+            }
+          ]
+        },
+        {
+          "slot": "Waist",
+          "slotFr": "Taille",
+          "align": "right",
+          "empty": false,
+          "itemId": 244581,
+          "originalItemId": null,
+          "wowheadParams": "item=244581&bonus=13751:12497:13836:12384:8791:8960:1808",
+          "name": "Farstrider's Trophy Belt",
+          "quality": 4,
+          "icon": "inv_belt_mail_questbloodelf_b_01",
+          "source": "Craft (Leatherworking)",
+          "catalyst": false,
+          "crafted": true,
+          "profession": "Leatherworking",
+          "enchant": null,
+          "gems": [
+            {
+              "name": "Flawless Masterful Garnet",
+              "itemId": 240908,
+              "wowheadParams": "item=240908",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+            },
+            {
+              "name": "Arcanoweave Lining",
+              "itemId": 240167,
+              "wowheadParams": "item=240167",
+              "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "slotFr": "Épaules",
+          "align": "left",
+          "empty": false,
+          "itemId": 271490,
+          "originalItemId": 268231,
+          "wowheadParams": "item=271490&bonus=13848&original-item=268231",
+          "name": "Jaws of the Skulking Viper",
+          "quality": 4,
+          "icon": "inv_shoulder_mail_raidhunterulatek_d_01",
+          "source": "Coiled Altar",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Silvermoon's Mending",
+            "itemId": 244021,
+            "wowheadParams": "item=244021",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Legs",
+          "slotFr": "Jambes",
+          "align": "right",
+          "empty": false,
+          "itemId": 271491,
+          "originalItemId": 268237,
+          "wowheadParams": "item=271491&bonus=13848&original-item=268237",
+          "name": "Skulking Viper's Coiled Legwraps",
+          "quality": 4,
+          "icon": "inv_pant_mail_raidhunterulatek_d_01",
+          "source": "Coiled Altar",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Forest Hunter's",
+            "itemId": 244640,
+            "wowheadParams": "item=244640",
+            "icon": "inv_12_profession_leatherworking_amani_armor_kit"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Cloak",
+          "slotFr": "Cape",
+          "align": "left",
+          "empty": false,
+          "itemId": 268253,
+          "originalItemId": null,
+          "wowheadParams": "item=268253&bonus=13848",
+          "name": "Silken Voodoo Drape",
+          "quality": 4,
+          "icon": "inv_cape_leather_raidrogueulatek_d_01",
+          "source": "Coiled Altar",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Feet",
+          "slotFr": "Pieds",
+          "align": "right",
+          "empty": false,
+          "itemId": 268233,
+          "originalItemId": null,
+          "wowheadParams": "item=268233&bonus=12854",
+          "name": "Ferocious Scaleboots",
+          "quality": 4,
+          "icon": "inv_boot_mail_raidhunterulatek_d_01",
+          "source": "Sszorak",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Shaladrassil's Roots",
+            "itemId": 243983,
+            "wowheadParams": "item=243983",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Chest",
+          "slotFr": "Torse",
+          "align": "left",
+          "empty": false,
+          "itemId": 271495,
+          "originalItemId": 271876,
+          "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+          "name": "Skulking Viper's Scuteplate",
+          "quality": 4,
+          "icon": "inv_chest_mail_raidhunterulatek_d_01",
+          "source": "Ula'tek",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Mark of the Worldsoul",
+            "itemId": 243977,
+            "wowheadParams": "item=243977",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Ring",
+          "slotFr": "Anneau",
+          "align": "right",
+          "empty": false,
+          "itemId": 251136,
+          "originalItemId": null,
+          "wowheadParams": "item=251136&bonus=12854",
+          "name": "Signet of Snarling Servitude",
+          "quality": 3,
+          "icon": "inv_12_jewelry_voidelf_ring_teal",
+          "source": "Murder Row",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Eyes of the Eagle",
+            "itemId": 243956,
+            "wowheadParams": "item=243956",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": [
+            {
+              "name": "Flawless Masterful Garnet",
+              "itemId": 240908,
+              "wowheadParams": "item=240908",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+            }
+          ]
+        },
+        {
+          "slot": "Shirt",
+          "slotFr": "Chemise",
+          "align": "left",
+          "empty": true
+        },
+        {
+          "slot": "Ring",
+          "slotFr": "Anneau",
+          "align": "right",
+          "empty": false,
+          "itemId": 268249,
+          "originalItemId": null,
+          "wowheadParams": "item=268249&bonus=12854",
+          "name": "Vile Alchemist's Band",
+          "quality": 4,
+          "icon": "inv_121_jewelry_ring01_purple",
+          "source": "Vashnik",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Eyes of the Eagle",
+            "itemId": 243956,
+            "wowheadParams": "item=243956",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": [
+            {
+              "name": "Flawless Masterful Garnet",
+              "itemId": 240908,
+              "wowheadParams": "item=240908",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
+            }
+          ]
+        },
+        {
+          "slot": "Tabard",
+          "slotFr": "Tabard",
+          "align": "left",
+          "empty": true
+        },
+        {
+          "slot": "Trinket",
+          "slotFr": "Bijou",
+          "align": "right",
+          "empty": false,
+          "itemId": 270175,
+          "originalItemId": null,
+          "wowheadParams": "item=270175&bonus=13848",
+          "name": "Voracious Heart of Ula'tek",
+          "quality": 4,
+          "icon": "inv_121_trinket_raid_ulatek_heart",
+          "source": "Ula'tek",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Bracers",
+          "slotFr": "Poignets",
+          "align": "left",
+          "empty": false,
+          "itemId": 244584,
+          "originalItemId": null,
+          "wowheadParams": "item=244584&bonus=13751:12497:13836:12384:8791:8960:1808",
+          "name": "Farstrider's Plated Bracers",
+          "quality": 4,
+          "icon": "inv_bracer_mail_questbloodelf_b_01",
+          "source": "Craft (Leatherworking)",
+          "catalyst": false,
+          "crafted": true,
+          "profession": "Leatherworking",
+          "enchant": null,
+          "gems": [
+            {
+              "name": "Flawless Deadly Peridot",
+              "itemId": 240890,
+              "wowheadParams": "item=240890",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green"
+            },
+            {
+              "name": "Arcanoweave Lining",
+              "itemId": 240167,
+              "wowheadParams": "item=240167",
+              "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+            }
+          ]
+        },
+        {
+          "slot": "Trinket",
+          "slotFr": "Bijou",
+          "align": "right",
+          "empty": false,
+          "itemId": 270173,
+          "originalItemId": null,
+          "wowheadParams": "item=270173&bonus=13848",
+          "name": "Zul'jin's Guillotine Technique",
+          "quality": 4,
+          "icon": "inv_121_trinket_raid_ulatek_trolltablet",
+          "source": "Coiled Altar",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Main Hand",
+          "slotFr": "Main droite",
+          "align": "right",
+          "empty": false,
+          "itemId": 268207,
+          "originalItemId": null,
+          "wowheadParams": "item=268207&bonus=13848:13708",
+          "name": "Caustic Repose Greatbow",
+          "quality": 4,
+          "icon": "inv_bow_1h_ulatek_d_01",
+          "source": "Ula'tek",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Jan'alai's Precision",
+            "itemId": 243970,
+            "wowheadParams": "item=243970",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Off Hand",
+          "slotFr": "Main gauche",
+          "align": "left",
+          "empty": true
+        }
+      ]
     }
   },
-  "updatedAt": "2026-08-16T16:40:15.108Z"
+  "updatedAt": "2026-08-17T00:38:56.577Z"
 }
