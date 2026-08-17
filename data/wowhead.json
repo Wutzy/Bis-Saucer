@@ -5817,7 +5817,346 @@
           }
         ]
       }
+    },
+    "shaman-enhancement": {
+      "key": "shaman-enhancement",
+      "fetchedAt": "2026-08-17T12:40:17.262Z",
+      "trinkets": {
+        "url": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear",
+        "available": true,
+        "tiers": [
+          {
+            "rank": "S",
+            "items": [
+              {
+                "itemId": 270175,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270173,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270164,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "A",
+            "items": [
+              {
+                "itemId": 273796,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270165,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 250215,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250228,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "B",
+            "items": [
+              {
+                "itemId": 250214,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250259,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 159617,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250225,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 248583,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251792,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "delves"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "C",
+            "items": [
+              {
+                "itemId": 270166,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 265657,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274493,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 270168,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 158374,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 273797,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "D",
+            "items": [
+              {
+                "itemId": 251785,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274496,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274497,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 246304,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "crafting"
+                ]
+              },
+              {
+                "itemId": 241340,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "crafting"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "F",
+            "items": [
+              {
+                "itemId": 251784,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251783,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 246306,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "crafting"
+                ]
+              },
+              {
+                "itemId": 246307,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "crafting"
+                ]
+              },
+              {
+                "itemId": 246305,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "crafting"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "consumables": {
+        "url": "https://www.wowhead.com/guide/classes/shaman/enhancement/enchants-gems-pve-dps",
+        "available": true,
+        "rows": [
+          {
+            "type": "Flask",
+            "items": [
+              {
+                "itemId": 241324,
+                "name": "Flask of the Blood Knights",
+                "icon": "inv_12_profession_alchemy_flask_sindoreipotion_white-",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Combat Potion",
+            "items": [
+              {
+                "itemId": 241288,
+                "name": "Potion of Recklessness",
+                "icon": "inv_12_profession_alchemy_voidpotion_red",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Health Potion",
+            "items": [
+              {
+                "itemId": 271884,
+                "name": "Concentrated Silvermoon Health Potion",
+                "icon": "inv_12_profession_alchemy_lightpotion_purple",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Augment Rune",
+            "items": [
+              {
+                "itemId": 259085,
+                "name": "Void-Touched Augment Rune",
+                "icon": "inv_10_enchanting_crystal_color2",
+                "quality": 3
+              }
+            ]
+          },
+          {
+            "type": "Food",
+            "items": [
+              {
+                "itemId": 255845,
+                "name": "Silvermoon Parade",
+                "icon": "inv_tradeskill_cooking_feastofblood",
+                "quality": 3
+              },
+              {
+                "itemId": 242275,
+                "name": "Royal Roast",
+                "icon": "inv_cooking_100_roastduck",
+                "quality": 3
+              }
+            ]
+          }
+        ]
+      }
     }
   },
-  "updatedAt": "2026-08-17T05:05:26.320Z"
+  "updatedAt": "2026-08-17T12:40:17.361Z"
 }
