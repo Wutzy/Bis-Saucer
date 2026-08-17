@@ -336,6 +336,37 @@ function itemUrl(id) {
   return `${base}/item=${id}`;
 }
 
+/**
+ * Date de la derniere mise a jour des donnees, toutes sources confondues.
+ *
+ * Les trois caches sont ecrits separement et portent chacun leur `updatedAt` : ce qui
+ * interesse le lecteur est la plus recente des trois — « ces donnees datent de quand ? »
+ * Repli sur le scrape le plus recent pour un cache ecrit avant l'ajout du champ.
+ */
+function derniereMaj() {
+  const dates = [store.updatedAt, trinketStore.updatedAt, wowheadStore.updatedAt];
+  for (const entry of Object.values(store.specs || {})) dates.push(entry.scrapedAt);
+
+  const valides = dates
+    .filter(Boolean)
+    .map((d) => new Date(d))
+    .filter((d) => !Number.isNaN(d.getTime()));
+  if (!valides.length) return null;
+
+  return new Date(Math.max(...valides.map((d) => d.getTime()))).toISOString();
+}
+
+/** Ecart lisible avec maintenant : « aujourd'hui », « il y a 3 jours ». */
+function ilYA(iso) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return null;
+
+  const jours = Math.floor((Date.now() - date.getTime()) / 86400000);
+  if (jours <= 0) return 'aujourd’hui';
+  if (jours === 1) return 'hier';
+  return `il y a ${jours} jours`;
+}
+
 function formatDate(iso) {
   if (!iso) return null;
   const d = new Date(iso);
@@ -3257,9 +3288,14 @@ function renderHeader() {
   const visible = visibleSpecs();
   const cachedCount = visible.filter((s) => entryFor(s.key)).length;
   const withSpec = roster.filter((m) => m.spec).length;
+  const maj = derniereMaj();
   els.storeStatus.textContent =
     `${cachedCount}/${visible.length} spec(s) en cache · ${withSpec}/${roster.length} membres renseignés` +
+    (maj ? ` · données ${ilYA(maj)}` : '') +
     (STATIC ? ' · version consultable' : '');
+  els.storeStatus.title = maj
+    ? `Dernière mise à jour des données : ${formatDate(maj)}`
+    : 'Aucune donnée en cache';
 
   if (activeView === 'rand' || activeView === 'roster') {
     els.legendMeta.textContent = '';

@@ -517,6 +517,13 @@ chaque : ces sites nous rendent service, on ne les martèle pas. Trois garde-fou
 
 Le déclenchement manuel est possible depuis l'onglet **Actions** du dépôt (« Run workflow »).
 
+**Savoir si ça tourne** : le pied de page affiche la fraîcheur des données — « données aujourd'hui »,
+« hier », « il y a 3 jours » — avec la date exacte au survol. C'est la plus récente des trois
+sources, visible dans toutes les vues. Un « il y a 3 jours » alors que l'action est censée tourner
+quotidiennement est le signe qu'elle échoue : va voir l'onglet Actions. La ligne de droite, elle,
+reste propre à la spec affichée (« Cache mis à jour le … ») : une spec peut très bien dater d'avant
+si son guide n'a pas bougé.
+
 > Après une exécution de l'action, ton dépôt local est en retard d'un commit : pense au
 > `git pull` avant de committer tes propres modifications.
 
