@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T14:01:54.691Z",
+  "updatedAt": "2026-08-17T23:12:09.113Z",
   "members": [
     {
       "n": 1,
@@ -104,15 +104,6 @@
       "trial": false
     },
     {
-      "n": 12,
-      "name": "Xaly",
-      "class": "shaman",
-      "spec": "restoration",
-      "id": "xaly",
-      "raid": true,
-      "trial": false
-    },
-    {
       "n": 13,
       "name": "projectbabytattoo",
       "class": "priest",
@@ -201,6 +192,15 @@
       "raid": true,
       "trial": true,
       "id": "sashoot"
+    },
+    {
+      "n": 23,
+      "name": "Xaly",
+      "class": "demon-hunter",
+      "spec": "devourer",
+      "raid": true,
+      "trial": false,
+      "id": "xaly"
     }
   ]
 }

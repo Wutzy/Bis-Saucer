@@ -35174,7 +35174,1697 @@
           ]
         }
       ]
+    },
+    "demon-hunter-devourer": {
+      "key": "demon-hunter-devourer",
+      "class": "demon-hunter",
+      "spec": "devourer",
+      "label": "Chasseur de démons — Dévoration",
+      "url": "https://www.icy-veins.com/wow/devourer-demon-hunter-pve-dps-gear-best-in-slot",
+      "guideTitle": "Devourer Demon Hunter DPS Gear and Best in Slot — 12.1",
+      "guideAuthor": null,
+      "guideUpdated": null,
+      "tableLabel": "Overall",
+      "lists": [
+        {
+          "label": "Overall",
+          "items": [
+            {
+              "slot": "Helm",
+              "slotFr": "Tête",
+              "align": "left",
+              "empty": false,
+              "itemId": 271537,
+              "originalItemId": 271875,
+              "wowheadParams": "item=271537&bonus=13848:13847&original-item=271875",
+              "name": "Abyssal Doomhound's Relentless Stare",
+              "quality": 4,
+              "icon": "inv_helm_leather_raiddemonhunterulatek_d_01",
+              "source": "Ula'tek",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Empowered Rune of Avoidance",
+                "itemId": 244007,
+                "wowheadParams": "item=244007",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Indecipherable Eversong Diamond",
+                  "itemId": 240983,
+                  "wowheadParams": "item=240983",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green"
+                }
+              ]
+            },
+            {
+              "slot": "Hands",
+              "slotFr": "Mains",
+              "align": "right",
+              "empty": false,
+              "itemId": 271538,
+              "originalItemId": null,
+              "wowheadParams": "item=271538&bonus=12854",
+              "name": "Abyssal Doomhound's Studded Gauntlets",
+              "quality": 4,
+              "icon": "inv_glove_leather_raiddemonhunterulatek_d_01",
+              "source": "Entombed Sentinels",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Neck",
+              "slotFr": "Cou",
+              "align": "left",
+              "empty": false,
+              "itemId": 268265,
+              "originalItemId": null,
+              "wowheadParams": "item=268265&bonus=13848:13708",
+              "name": "Aqirbane Reliquary",
+              "quality": 4,
+              "icon": "inv_121_jewelry_neck03_green",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                },
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Waist",
+              "slotFr": "Taille",
+              "align": "right",
+              "empty": false,
+              "itemId": 268256,
+              "originalItemId": null,
+              "wowheadParams": "item=268256&bonus=13848",
+              "name": "Sash of the Forlorn Vessel",
+              "quality": 4,
+              "icon": "inv_belt_leather_raiddruidulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Shoulders",
+              "slotFr": "Épaules",
+              "align": "left",
+              "empty": false,
+              "itemId": 271535,
+              "originalItemId": 251223,
+              "wowheadParams": "item=271535&bonus=12854&original-item=251223",
+              "name": "Abyssal Doomhound's Jaws",
+              "quality": 4,
+              "icon": "inv_shoulder_leather_raiddemonhunterulatek_d_01",
+              "source": "Voidscar Arena",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Amirdrassil's Grace",
+                "itemId": 243990,
+                "wowheadParams": "item=243990",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Legs",
+              "slotFr": "Jambes",
+              "align": "right",
+              "empty": false,
+              "itemId": 271536,
+              "originalItemId": 268225,
+              "wowheadParams": "item=271536&bonus=13848&original-item=268225",
+              "name": "Abyssal Doomhound's Legwraps",
+              "quality": 4,
+              "icon": "inv_pant_leather_raiddemonhunterulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Sunfire Silk Spellthread",
+                "itemId": 240133,
+                "wowheadParams": "item=240133",
+                "icon": "inv_tailoring_spellthread_orange_spellthread"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Cloak",
+              "slotFr": "Cape",
+              "align": "left",
+              "empty": false,
+              "itemId": 268253,
+              "originalItemId": null,
+              "wowheadParams": "item=268253&bonus=13848",
+              "name": "Silken Voodoo Drape",
+              "quality": 4,
+              "icon": "inv_cape_leather_raidrogueulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Feet",
+              "slotFr": "Pieds",
+              "align": "right",
+              "empty": false,
+              "itemId": 244569,
+              "originalItemId": null,
+              "wowheadParams": "item=244569&bonus=13751:12497:13836:12384:8791",
+              "name": "Silvermoon Agent's Sneakers",
+              "quality": 4,
+              "icon": "inv_boot_leather_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": {
+                "name": "Lynx's Dexterity",
+                "itemId": 243952,
+                "wowheadParams": "item=243952",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Chest",
+              "slotFr": "Torse",
+              "align": "left",
+              "empty": false,
+              "itemId": 271540,
+              "originalItemId": 251159,
+              "wowheadParams": "item=271540&bonus=12854&original-item=251159",
+              "name": "Abyssal Doomhound's Coreguard",
+              "quality": 4,
+              "icon": "inv_chest_leather_raiddemonhunterulatek_d_01",
+              "source": "Den of Nalorakk",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Mark of the Worldsoul",
+                "itemId": 243977,
+                "wowheadParams": "item=243977",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 268249,
+              "originalItemId": null,
+              "wowheadParams": "item=268249&bonus=12854",
+              "name": "Vile Alchemist's Band",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring01_purple",
+              "source": "Vashnik",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Shirt",
+              "slotFr": "Chemise",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 158366,
+              "originalItemId": null,
+              "wowheadParams": "item=158366&bonus=12854",
+              "name": "Charged Sandstone Band",
+              "quality": 3,
+              "icon": "inv_ring_80_03d",
+              "source": "Temple of Sethraliss",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Tabard",
+              "slotFr": "Tabard",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270167,
+              "originalItemId": null,
+              "wowheadParams": "item=270167&bonus=12854",
+              "name": "Wavecaller's Seastone",
+              "quality": 4,
+              "icon": "inv_tradeskillitem_sorcererswater",
+              "source": "The Lost Explorers",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Bracers",
+              "slotFr": "Poignets",
+              "align": "left",
+              "empty": false,
+              "itemId": 244576,
+              "originalItemId": null,
+              "wowheadParams": "item=244576&bonus=13751:12497:13836:12384:8791",
+              "name": "Silvermoon Agent's Deflectors",
+              "quality": 4,
+              "icon": "inv_bracer_leather_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                },
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 250215,
+              "originalItemId": null,
+              "wowheadParams": "item=250215&bonus=12854",
+              "name": "Freightrunner's Flask",
+              "quality": 3,
+              "icon": "inv_alchemy_90_flask_red",
+              "source": "Murder Row",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Main Hand",
+              "slotFr": "Main droite",
+              "align": "right",
+              "empty": false,
+              "itemId": 271092,
+              "originalItemId": null,
+              "wowheadParams": "item=271092&bonus=13848",
+              "name": "Jan'thrazet, the Soul Fang",
+              "quality": 4,
+              "icon": "inv_knife_1h_ulatekfang_d_01_spirit",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Arcane Mastery",
+                "itemId": 244031,
+                "wowheadParams": "item=244031",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Off Hand",
+              "slotFr": "Main gauche",
+              "align": "left",
+              "empty": false,
+              "itemId": 268211,
+              "originalItemId": null,
+              "wowheadParams": "item=268211&bonus=13848",
+              "name": "Baleful Hexblade",
+              "quality": 4,
+              "icon": "inv_sword_1h_ulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Arcane Mastery",
+                "itemId": 244031,
+                "wowheadParams": "item=244031",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            }
+          ]
+        },
+        {
+          "label": "Mythic+",
+          "items": [
+            {
+              "slot": "Helm",
+              "slotFr": "Tête",
+              "align": "left",
+              "empty": false,
+              "itemId": 271537,
+              "originalItemId": 239033,
+              "wowheadParams": "item=271537&bonus=12854&original-item=239033",
+              "name": "Abyssal Doomhound's Relentless Stare",
+              "quality": 4,
+              "icon": "inv_helm_leather_raiddemonhunterulatek_d_01",
+              "source": "Temple of Sethraliss",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Empowered Rune of Avoidance",
+                "itemId": 244007,
+                "wowheadParams": "item=244007",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Indecipherable Eversong Diamond",
+                  "itemId": 240983,
+                  "wowheadParams": "item=240983",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green"
+                }
+              ]
+            },
+            {
+              "slot": "Hands",
+              "slotFr": "Mains",
+              "align": "right",
+              "empty": false,
+              "itemId": 271538,
+              "originalItemId": 159312,
+              "wowheadParams": "item=271538&bonus=12854&original-item=159312",
+              "name": "Abyssal Doomhound's Studded Gauntlets",
+              "quality": 4,
+              "icon": "inv_glove_leather_raiddemonhunterulatek_d_01",
+              "source": "King's Rest",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Neck",
+              "slotFr": "Cou",
+              "align": "left",
+              "empty": false,
+              "itemId": 251234,
+              "originalItemId": null,
+              "wowheadParams": "item=251234&bonus=12854",
+              "name": "Graft of the Domanaar",
+              "quality": 3,
+              "icon": "inv_12_jewelry_devouringhost_necklace_silver2",
+              "source": "Voidscar Arena",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Waist",
+              "slotFr": "Taille",
+              "align": "right",
+              "empty": false,
+              "itemId": 159301,
+              "originalItemId": null,
+              "wowheadParams": "item=159301&bonus=12854",
+              "name": "Primal Dinomancer's Belt",
+              "quality": 4,
+              "icon": "inv_belt_leather_zandalardungeon_c_01",
+              "source": "King's Rest",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Shoulders",
+              "slotFr": "Épaules",
+              "align": "left",
+              "empty": false,
+              "itemId": 271535,
+              "originalItemId": 251223,
+              "wowheadParams": "item=271535&bonus=12854&original-item=251223",
+              "name": "Abyssal Doomhound's Jaws",
+              "quality": 4,
+              "icon": "inv_shoulder_leather_raiddemonhunterulatek_d_01",
+              "source": "Voidscar Arena",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Amirdrassil's Grace",
+                "itemId": 243990,
+                "wowheadParams": "item=243990",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Legs",
+              "slotFr": "Jambes",
+              "align": "right",
+              "empty": false,
+              "itemId": 271536,
+              "originalItemId": 251130,
+              "wowheadParams": "item=271536&bonus=12854&original-item=251130",
+              "name": "Abyssal Doomhound's Legwraps",
+              "quality": 4,
+              "icon": "inv_pant_leather_raiddemonhunterulatek_d_01",
+              "source": "Murder Row",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Sunfire Silk Spellthread",
+                "itemId": 240133,
+                "wowheadParams": "item=240133",
+                "icon": "inv_tailoring_spellthread_orange_spellthread"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Cloak",
+              "slotFr": "Cape",
+              "align": "left",
+              "empty": false,
+              "itemId": 251132,
+              "originalItemId": null,
+              "wowheadParams": "item=251132&bonus=12854",
+              "name": "Speakeasy Shroud",
+              "quality": 3,
+              "icon": "inv_cape_leather_dungeonharronir_c_01",
+              "source": "Murder Row",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Feet",
+              "slotFr": "Pieds",
+              "align": "right",
+              "empty": false,
+              "itemId": 244569,
+              "originalItemId": null,
+              "wowheadParams": "item=244569&bonus=13751:12497:13836:12384:8791",
+              "name": "Silvermoon Agent's Sneakers",
+              "quality": 4,
+              "icon": "inv_boot_leather_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": {
+                "name": "Lynx's Dexterity",
+                "itemId": 243952,
+                "wowheadParams": "item=243952",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Chest",
+              "slotFr": "Torse",
+              "align": "left",
+              "empty": false,
+              "itemId": 271540,
+              "originalItemId": 251159,
+              "wowheadParams": "item=271540&bonus=12854&original-item=251159",
+              "name": "Abyssal Doomhound's Coreguard",
+              "quality": 4,
+              "icon": "inv_chest_leather_raiddemonhunterulatek_d_01",
+              "source": "Den of Nalorakk",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Mark of the Worldsoul",
+                "itemId": 243977,
+                "wowheadParams": "item=243977",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 158366,
+              "originalItemId": null,
+              "wowheadParams": "item=158366&bonus=12854",
+              "name": "Charged Sandstone Band",
+              "quality": 3,
+              "icon": "inv_ring_80_03d",
+              "source": "Temple of Sethraliss",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Shirt",
+              "slotFr": "Chemise",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 251136,
+              "originalItemId": null,
+              "wowheadParams": "item=251136&bonus=12854",
+              "name": "Signet of Snarling Servitude",
+              "quality": 3,
+              "icon": "inv_12_jewelry_voidelf_ring_teal",
+              "source": "Murder Row",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Tabard",
+              "slotFr": "Tabard",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 250215,
+              "originalItemId": null,
+              "wowheadParams": "item=250215&bonus=12854",
+              "name": "Freightrunner's Flask",
+              "quality": 3,
+              "icon": "inv_alchemy_90_flask_red",
+              "source": "Murder Row",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Bracers",
+              "slotFr": "Poignets",
+              "align": "left",
+              "empty": false,
+              "itemId": 244576,
+              "originalItemId": null,
+              "wowheadParams": "item=244576&bonus=13751:12497:13836:12384:8791",
+              "name": "Silvermoon Agent's Deflectors",
+              "quality": 4,
+              "icon": "inv_bracer_leather_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                },
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 193757,
+              "originalItemId": null,
+              "wowheadParams": "item=193757&bonus=:12854",
+              "name": "Ruby Whelp Shell",
+              "quality": 4,
+              "icon": "inv_item_dragonegg_redbroken01",
+              "source": "Ruby Life Pools",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Main Hand",
+              "slotFr": "Main droite",
+              "align": "right",
+              "empty": false,
+              "itemId": 273778,
+              "originalItemId": null,
+              "wowheadParams": "item=273778&bonus=12854",
+              "name": "Polished Lightwood Channeler",
+              "quality": 4,
+              "icon": "inv_knife_1h_zuljin_d_01",
+              "source": "Altar of Fangs",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Arcane Mastery",
+                "itemId": 244031,
+                "wowheadParams": "item=244031",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Off Hand",
+              "slotFr": "Main gauche",
+              "align": "left",
+              "empty": false,
+              "itemId": 273778,
+              "originalItemId": null,
+              "wowheadParams": "item=273778&bonus=12854",
+              "name": "Polished Lightwood Channeler",
+              "quality": 4,
+              "icon": "inv_knife_1h_zuljin_d_01",
+              "source": "Altar of Fangs",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Arcane Mastery",
+                "itemId": 244031,
+                "wowheadParams": "item=244031",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            }
+          ]
+        },
+        {
+          "label": "Raid",
+          "items": [
+            {
+              "slot": "Helm",
+              "slotFr": "Tête",
+              "align": "left",
+              "empty": false,
+              "itemId": 271537,
+              "originalItemId": 271875,
+              "wowheadParams": "item=271537&bonus=13848:13847&original-item=271875",
+              "name": "Abyssal Doomhound's Relentless Stare",
+              "quality": 4,
+              "icon": "inv_helm_leather_raiddemonhunterulatek_d_01",
+              "source": "Ula'tek",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Empowered Rune of Avoidance",
+                "itemId": 244007,
+                "wowheadParams": "item=244007",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Hands",
+              "slotFr": "Mains",
+              "align": "right",
+              "empty": false,
+              "itemId": 271538,
+              "originalItemId": null,
+              "wowheadParams": "item=271538&bonus=12854",
+              "name": "Abyssal Doomhound's Studded Gauntlets",
+              "quality": 4,
+              "icon": "inv_glove_leather_raiddemonhunterulatek_d_01",
+              "source": "Entombed Sentinels",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Neck",
+              "slotFr": "Cou",
+              "align": "left",
+              "empty": false,
+              "itemId": 268265,
+              "originalItemId": null,
+              "wowheadParams": "item=268265&bonus=13848:13708",
+              "name": "Aqirbane Reliquary",
+              "quality": 4,
+              "icon": "inv_121_jewelry_neck03_green",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Indecipherable Eversong Diamond",
+                  "itemId": 240983,
+                  "wowheadParams": "item=240983",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green"
+                },
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Waist",
+              "slotFr": "Taille",
+              "align": "right",
+              "empty": false,
+              "itemId": 268256,
+              "originalItemId": null,
+              "wowheadParams": "item=268256&bonus=13848",
+              "name": "Sash of the Forlorn Vessel",
+              "quality": 4,
+              "icon": "inv_belt_leather_raiddruidulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Shoulders",
+              "slotFr": "Épaules",
+              "align": "left",
+              "empty": false,
+              "itemId": 271535,
+              "originalItemId": 268246,
+              "wowheadParams": "item=271535&bonus=12854&original-item=268246",
+              "name": "Abyssal Doomhound's Jaws",
+              "quality": 4,
+              "icon": "inv_shoulder_leather_raiddemonhunterulatek_d_01",
+              "source": "Vashnik",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Amirdrassil's Grace",
+                "itemId": 243990,
+                "wowheadParams": "item=243990",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Legs",
+              "slotFr": "Jambes",
+              "align": "right",
+              "empty": false,
+              "itemId": 271536,
+              "originalItemId": 268225,
+              "wowheadParams": "item=271536&bonus=13848&original-item=268225",
+              "name": "Abyssal Doomhound's Legwraps",
+              "quality": 4,
+              "icon": "inv_pant_leather_raiddemonhunterulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Sunfire Silk Spellthread",
+                "itemId": 240133,
+                "wowheadParams": "item=240133",
+                "icon": "inv_tailoring_spellthread_orange_spellthread"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Cloak",
+              "slotFr": "Cape",
+              "align": "left",
+              "empty": false,
+              "itemId": 268253,
+              "originalItemId": null,
+              "wowheadParams": "item=268253&bonus=13848",
+              "name": "Silken Voodoo Drape",
+              "quality": 4,
+              "icon": "inv_cape_leather_raidrogueulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Feet",
+              "slotFr": "Pieds",
+              "align": "right",
+              "empty": false,
+              "itemId": 244569,
+              "originalItemId": null,
+              "wowheadParams": "item=244569&bonus=13751:12497:13836:12384:8791",
+              "name": "Silvermoon Agent's Sneakers",
+              "quality": 4,
+              "icon": "inv_boot_leather_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": {
+                "name": "Lynx's Dexterity",
+                "itemId": 243952,
+                "wowheadParams": "item=243952",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Chest",
+              "slotFr": "Torse",
+              "align": "left",
+              "empty": false,
+              "itemId": 271540,
+              "originalItemId": 268235,
+              "wowheadParams": "item=271540&bonus=12854&original-item=268235",
+              "name": "Abyssal Doomhound's Coreguard",
+              "quality": 4,
+              "icon": "inv_chest_leather_raiddemonhunterulatek_d_01",
+              "source": "Nek'zali",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Mark of the Worldsoul",
+                "itemId": 243977,
+                "wowheadParams": "item=243977",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 268249,
+              "originalItemId": null,
+              "wowheadParams": "item=268249&bonus=12854",
+              "name": "Vile Alchemist's Band",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring01_purple",
+              "source": "Vashnik",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Shirt",
+              "slotFr": "Chemise",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 268252,
+              "originalItemId": null,
+              "wowheadParams": "item=268252&bonus=12854",
+              "name": "Apex Brute's Claw Ring",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring03_red",
+              "source": "Sszorak",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Tabard",
+              "slotFr": "Tabard",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270164,
+              "originalItemId": null,
+              "wowheadParams": "item=270164&bonus=12854",
+              "name": "Gebbo's Bottomless Bag",
+              "quality": 4,
+              "icon": "inv_10_tailoring_bag1_color2",
+              "source": "The Lost Explorers",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Bracers",
+              "slotFr": "Poignets",
+              "align": "left",
+              "empty": false,
+              "itemId": 244576,
+              "originalItemId": null,
+              "wowheadParams": "item=244576&bonus=13751:12497:13836:12384:8791",
+              "name": "Silvermoon Agent's Deflectors",
+              "quality": 4,
+              "icon": "inv_bracer_leather_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                },
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+                }
+              ]
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270161,
+              "originalItemId": null,
+              "wowheadParams": "item=270161&bonus=12854",
+              "name": "Fang of Umbral Malignance",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_fang_purple",
+              "source": "Vashnik",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Main Hand",
+              "slotFr": "Main droite",
+              "align": "right",
+              "empty": false,
+              "itemId": 271092,
+              "originalItemId": null,
+              "wowheadParams": "item=271092&bonus=13848",
+              "name": "Jan'thrazet, the Soul Fang",
+              "quality": 4,
+              "icon": "inv_knife_1h_ulatekfang_d_01_spirit",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Arcane Mastery",
+                "itemId": 244031,
+                "wowheadParams": "item=244031",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Off Hand",
+              "slotFr": "Main gauche",
+              "align": "left",
+              "empty": false,
+              "itemId": 268211,
+              "originalItemId": null,
+              "wowheadParams": "item=268211&bonus=13848",
+              "name": "Baleful Hexblade",
+              "quality": 4,
+              "icon": "inv_sword_1h_ulatek_d_01",
+              "source": "Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Arcane Mastery",
+                "itemId": 244031,
+                "wowheadParams": "item=244031",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            }
+          ]
+        }
+      ],
+      "trinketAdvice": [
+        {
+          "category": "On-Use",
+          "items": [
+            {
+              "itemId": 250215,
+              "wowheadParams": "item=250215&bonus=12854",
+              "name": "Freightrunner's Flask",
+              "quality": 3,
+              "icon": "inv_alchemy_90_flask_red"
+            },
+            {
+              "itemId": 273796,
+              "wowheadParams": "item=273796&bonus=12854",
+              "name": "Vile Vial of Volatile Venom",
+              "quality": 4,
+              "icon": "inv_121_trinket_dungeon_ulatek_vile"
+            }
+          ]
+        },
+        {
+          "category": "Passive",
+          "items": [
+            {
+              "itemId": 270164,
+              "wowheadParams": "item=270164&bonus=12854",
+              "name": "Gebbo's Bottomless Bag",
+              "quality": 4,
+              "icon": "inv_10_tailoring_bag1_color2"
+            },
+            {
+              "itemId": 270167,
+              "wowheadParams": "item=270167&bonus=12854",
+              "name": "Wavecaller's Seastone",
+              "quality": 4,
+              "icon": "inv_tradeskillitem_sorcererswater"
+            }
+          ]
+        }
+      ],
+      "provider": "icy-veins",
+      "scrapedAt": "2026-08-17T23:12:48.988Z",
+      "items": [
+        {
+          "slot": "Helm",
+          "slotFr": "Tête",
+          "align": "left",
+          "empty": false,
+          "itemId": 271537,
+          "originalItemId": 271875,
+          "wowheadParams": "item=271537&bonus=13848:13847&original-item=271875",
+          "name": "Abyssal Doomhound's Relentless Stare",
+          "quality": 4,
+          "icon": "inv_helm_leather_raiddemonhunterulatek_d_01",
+          "source": "Ula'tek",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Empowered Rune of Avoidance",
+            "itemId": 244007,
+            "wowheadParams": "item=244007",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": [
+            {
+              "name": "Indecipherable Eversong Diamond",
+              "itemId": 240983,
+              "wowheadParams": "item=240983",
+              "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "slotFr": "Mains",
+          "align": "right",
+          "empty": false,
+          "itemId": 271538,
+          "originalItemId": null,
+          "wowheadParams": "item=271538&bonus=12854",
+          "name": "Abyssal Doomhound's Studded Gauntlets",
+          "quality": 4,
+          "icon": "inv_glove_leather_raiddemonhunterulatek_d_01",
+          "source": "Entombed Sentinels",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Neck",
+          "slotFr": "Cou",
+          "align": "left",
+          "empty": false,
+          "itemId": 268265,
+          "originalItemId": null,
+          "wowheadParams": "item=268265&bonus=13848:13708",
+          "name": "Aqirbane Reliquary",
+          "quality": 4,
+          "icon": "inv_121_jewelry_neck03_green",
+          "source": "Ula'tek",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": [
+            {
+              "name": "Flawless Deadly Amethyst",
+              "itemId": 240898,
+              "wowheadParams": "item=240898",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+            },
+            {
+              "name": "Flawless Deadly Amethyst",
+              "itemId": 240898,
+              "wowheadParams": "item=240898",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+            }
+          ]
+        },
+        {
+          "slot": "Waist",
+          "slotFr": "Taille",
+          "align": "right",
+          "empty": false,
+          "itemId": 268256,
+          "originalItemId": null,
+          "wowheadParams": "item=268256&bonus=13848",
+          "name": "Sash of the Forlorn Vessel",
+          "quality": 4,
+          "icon": "inv_belt_leather_raiddruidulatek_d_01",
+          "source": "Coiled Altar",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": [
+            {
+              "name": "Flawless Deadly Amethyst",
+              "itemId": 240898,
+              "wowheadParams": "item=240898",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "slotFr": "Épaules",
+          "align": "left",
+          "empty": false,
+          "itemId": 271535,
+          "originalItemId": 251223,
+          "wowheadParams": "item=271535&bonus=12854&original-item=251223",
+          "name": "Abyssal Doomhound's Jaws",
+          "quality": 4,
+          "icon": "inv_shoulder_leather_raiddemonhunterulatek_d_01",
+          "source": "Voidscar Arena",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Amirdrassil's Grace",
+            "itemId": 243990,
+            "wowheadParams": "item=243990",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Legs",
+          "slotFr": "Jambes",
+          "align": "right",
+          "empty": false,
+          "itemId": 271536,
+          "originalItemId": 268225,
+          "wowheadParams": "item=271536&bonus=13848&original-item=268225",
+          "name": "Abyssal Doomhound's Legwraps",
+          "quality": 4,
+          "icon": "inv_pant_leather_raiddemonhunterulatek_d_01",
+          "source": "Coiled Altar",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Sunfire Silk Spellthread",
+            "itemId": 240133,
+            "wowheadParams": "item=240133",
+            "icon": "inv_tailoring_spellthread_orange_spellthread"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Cloak",
+          "slotFr": "Cape",
+          "align": "left",
+          "empty": false,
+          "itemId": 268253,
+          "originalItemId": null,
+          "wowheadParams": "item=268253&bonus=13848",
+          "name": "Silken Voodoo Drape",
+          "quality": 4,
+          "icon": "inv_cape_leather_raidrogueulatek_d_01",
+          "source": "Coiled Altar",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Feet",
+          "slotFr": "Pieds",
+          "align": "right",
+          "empty": false,
+          "itemId": 244569,
+          "originalItemId": null,
+          "wowheadParams": "item=244569&bonus=13751:12497:13836:12384:8791",
+          "name": "Silvermoon Agent's Sneakers",
+          "quality": 4,
+          "icon": "inv_boot_leather_questbloodelf_b_01",
+          "source": "Craft (Leatherworking)",
+          "catalyst": false,
+          "crafted": true,
+          "profession": "Leatherworking",
+          "enchant": {
+            "name": "Lynx's Dexterity",
+            "itemId": 243952,
+            "wowheadParams": "item=243952",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": [
+            {
+              "name": "Arcanoweave Lining",
+              "itemId": 240167,
+              "wowheadParams": "item=240167",
+              "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "slotFr": "Torse",
+          "align": "left",
+          "empty": false,
+          "itemId": 271540,
+          "originalItemId": 251159,
+          "wowheadParams": "item=271540&bonus=12854&original-item=251159",
+          "name": "Abyssal Doomhound's Coreguard",
+          "quality": 4,
+          "icon": "inv_chest_leather_raiddemonhunterulatek_d_01",
+          "source": "Den of Nalorakk",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Mark of the Worldsoul",
+            "itemId": 243977,
+            "wowheadParams": "item=243977",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Ring",
+          "slotFr": "Anneau",
+          "align": "right",
+          "empty": false,
+          "itemId": 268249,
+          "originalItemId": null,
+          "wowheadParams": "item=268249&bonus=12854",
+          "name": "Vile Alchemist's Band",
+          "quality": 4,
+          "icon": "inv_121_jewelry_ring01_purple",
+          "source": "Vashnik",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Eyes of the Eagle",
+            "itemId": 243956,
+            "wowheadParams": "item=243956",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": [
+            {
+              "name": "Flawless Deadly Amethyst",
+              "itemId": 240898,
+              "wowheadParams": "item=240898",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+            }
+          ]
+        },
+        {
+          "slot": "Shirt",
+          "slotFr": "Chemise",
+          "align": "left",
+          "empty": true
+        },
+        {
+          "slot": "Ring",
+          "slotFr": "Anneau",
+          "align": "right",
+          "empty": false,
+          "itemId": 158366,
+          "originalItemId": null,
+          "wowheadParams": "item=158366&bonus=12854",
+          "name": "Charged Sandstone Band",
+          "quality": 3,
+          "icon": "inv_ring_80_03d",
+          "source": "Temple of Sethraliss",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Eyes of the Eagle",
+            "itemId": 243956,
+            "wowheadParams": "item=243956",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": [
+            {
+              "name": "Flawless Deadly Amethyst",
+              "itemId": 240898,
+              "wowheadParams": "item=240898",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+            }
+          ]
+        },
+        {
+          "slot": "Tabard",
+          "slotFr": "Tabard",
+          "align": "left",
+          "empty": true
+        },
+        {
+          "slot": "Trinket",
+          "slotFr": "Bijou",
+          "align": "right",
+          "empty": false,
+          "itemId": 270167,
+          "originalItemId": null,
+          "wowheadParams": "item=270167&bonus=12854",
+          "name": "Wavecaller's Seastone",
+          "quality": 4,
+          "icon": "inv_tradeskillitem_sorcererswater",
+          "source": "The Lost Explorers",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Bracers",
+          "slotFr": "Poignets",
+          "align": "left",
+          "empty": false,
+          "itemId": 244576,
+          "originalItemId": null,
+          "wowheadParams": "item=244576&bonus=13751:12497:13836:12384:8791",
+          "name": "Silvermoon Agent's Deflectors",
+          "quality": 4,
+          "icon": "inv_bracer_leather_questbloodelf_b_01",
+          "source": "Craft (Leatherworking)",
+          "catalyst": false,
+          "crafted": true,
+          "profession": "Leatherworking",
+          "enchant": null,
+          "gems": [
+            {
+              "name": "Flawless Deadly Amethyst",
+              "itemId": 240898,
+              "wowheadParams": "item=240898",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+            },
+            {
+              "name": "Arcanoweave Lining",
+              "itemId": 240167,
+              "wowheadParams": "item=240167",
+              "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
+            }
+          ]
+        },
+        {
+          "slot": "Trinket",
+          "slotFr": "Bijou",
+          "align": "right",
+          "empty": false,
+          "itemId": 250215,
+          "originalItemId": null,
+          "wowheadParams": "item=250215&bonus=12854",
+          "name": "Freightrunner's Flask",
+          "quality": 3,
+          "icon": "inv_alchemy_90_flask_red",
+          "source": "Murder Row",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Main Hand",
+          "slotFr": "Main droite",
+          "align": "right",
+          "empty": false,
+          "itemId": 271092,
+          "originalItemId": null,
+          "wowheadParams": "item=271092&bonus=13848",
+          "name": "Jan'thrazet, the Soul Fang",
+          "quality": 4,
+          "icon": "inv_knife_1h_ulatekfang_d_01_spirit",
+          "source": "Ula'tek",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Arcane Mastery",
+            "itemId": 244031,
+            "wowheadParams": "item=244031",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Off Hand",
+          "slotFr": "Main gauche",
+          "align": "left",
+          "empty": false,
+          "itemId": 268211,
+          "originalItemId": null,
+          "wowheadParams": "item=268211&bonus=13848",
+          "name": "Baleful Hexblade",
+          "quality": 4,
+          "icon": "inv_sword_1h_ulatek_d_01",
+          "source": "Coiled Altar",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Arcane Mastery",
+            "itemId": 244031,
+            "wowheadParams": "item=244031",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+          },
+          "gems": []
+        }
+      ]
     }
   },
-  "updatedAt": "2026-08-17T13:56:44.618Z"
+  "updatedAt": "2026-08-17T23:12:48.992Z"
 }

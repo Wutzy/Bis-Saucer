@@ -6156,7 +6156,396 @@
           }
         ]
       }
+    },
+    "demon-hunter-devourer": {
+      "key": "demon-hunter-devourer",
+      "fetchedAt": "2026-08-17T23:12:51.357Z",
+      "trinkets": {
+        "url": "https://www.wowhead.com/guide/classes/demon-hunter/devourer/bis-gear",
+        "available": true,
+        "tiers": [
+          {
+            "rank": "S",
+            "items": [
+              {
+                "itemId": 250215,
+                "name": "Freightrunner's Flask",
+                "icon": "inv_alchemy_90_flask_red",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270164,
+                "name": "Gebbo's Bottomless Bag",
+                "icon": "inv_10_tailoring_bag1_color2",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270167,
+                "name": "Wavecaller's Seastone",
+                "icon": "inv_tradeskillitem_sorcererswater",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "A",
+            "items": [
+              {
+                "itemId": 273796,
+                "name": "Vile Vial of Volatile Venom",
+                "icon": "inv_121_trinket_dungeon_ulatek_vile",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270161,
+                "name": "Fang of Umbral Malignance",
+                "icon": "inv_121_trinket_raid_ulatek_fang_purple",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 193757,
+                "name": "Ruby Whelp Shell",
+                "icon": "inv_item_dragonegg_redbroken01",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250224,
+                "name": "Mindpiercer's Sigil",
+                "icon": "inv_icon_shadowcouncilorb_purple",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270169,
+                "name": "Hex Lord's Dooming Idol",
+                "icon": "inv_archaeology_orcclans_crackedidol",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "B",
+            "items": [
+              {
+                "itemId": 251792,
+                "name": "Glorious Crusader's Keepsake",
+                "icon": "inv_12_trinket_gloriuscrusaderskeepsake",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 250259,
+                "name": "Sapling of the Dawnroot",
+                "icon": "inv_misc_herb_nightmarevine",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 273649,
+                "name": "Stormbound Emblem of Dazar",
+                "icon": "inv_7_0raid_necklace_14a",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270170,
+                "name": "Vexhul's Everflowing Gland",
+                "icon": "inv_11_0_misc_organmass_color3",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270168,
+                "name": "Font of Venomous Rage",
+                "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "C",
+            "items": [
+              {
+                "itemId": 251785,
+                "name": "Void-Reaper's Libram",
+                "icon": "inv_12_trinket_void_reaperslibram",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251783,
+                "name": "Lost Idol of the Hash'ey",
+                "icon": "inv_12_trinket_grisgrisofconfidenc",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 273794,
+                "name": "Knot of Writhing Serpents",
+                "icon": "inv_121_trinket_dungeon_ulatek_writhe",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 246304,
+                "name": "Darkmoon Dominion: Hunt",
+                "icon": "inv_12_profession_inscriptions_darkmoondominions_bloom",
+                "quality": 4,
+                "categories": [
+                  "crafting"
+                ]
+              },
+              {
+                "itemId": 251786,
+                "name": "Ever-Collapsing Void Fissure",
+                "icon": "inv_112_raiddimensius_blackhole",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "D",
+            "items": [
+              {
+                "itemId": 246305,
+                "name": "Darkmoon Dominion: Blood",
+                "icon": "inv_12_profession_inscriptions_darkmoondominions_hunt",
+                "quality": 4,
+                "categories": [
+                  "crafting"
+                ]
+              },
+              {
+                "itemId": 246306,
+                "name": "Darkmoon Dominion: Rot",
+                "icon": "inv_12_profession_inscriptions_darkmoondominions_rot",
+                "quality": 4,
+                "categories": [
+                  "crafting"
+                ]
+              },
+              {
+                "itemId": 246307,
+                "name": "Darkmoon Dominion: Void",
+                "icon": "inv_12_profession_inscriptions_darkmoondominions_void",
+                "quality": 4,
+                "categories": [
+                  "crafting"
+                ]
+              },
+              {
+                "itemId": 241340,
+                "name": "Magister's Alchemist Stone",
+                "icon": "inv_12_profession_alchemy_alchemists_stone",
+                "quality": 4,
+                "categories": [
+                  "crafting"
+                ]
+              },
+              {
+                "itemId": 250214,
+                "name": "Lightspire Core",
+                "icon": "inv_enchant_essenceastrallarge",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 274493,
+                "name": "Effigy of Ula'tek's Faithful",
+                "icon": "ability_fomor_boss_rune_green",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251787,
+                "name": "Sealed Chaos Urn",
+                "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251784,
+                "name": "Sylvan Wakrapuku",
+                "icon": "inv_12_trinket_sylvanwakrapuku",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274495,
+                "name": "Pulse Seeker's Oculus",
+                "icon": "inv_bfa_paragoncache_tortollanseekers",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 280123,
+                "name": "Sharp Axe Holster",
+                "icon": "inv_throwingaxe_01",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274496,
+                "name": "Ophidian Bone Whistle",
+                "icon": "inv_misc_coin_12",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274497,
+                "name": "Spirit-Rending Poison",
+                "icon": "inv_ability_poison_debuff",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "consumables": {
+        "url": "https://www.wowhead.com/guide/classes/demon-hunter/devourer/enchants-gems-pve-dps",
+        "available": true,
+        "rows": [
+          {
+            "type": "Flask",
+            "items": [
+              {
+                "itemId": 241322,
+                "name": "Flask of the Magisters",
+                "icon": "inv_12_profession_alchemy_flask_sindoreipotion_black",
+                "quality": 1
+              },
+              {
+                "itemId": 241326,
+                "name": "Flask of the Shattered Sun",
+                "icon": "inv_12_profession_alchemy_flask_sindoreipotion_red--",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Combat Potion",
+            "items": [
+              {
+                "itemId": 241288,
+                "name": "Potion of Recklessness",
+                "icon": "inv_12_profession_alchemy_voidpotion_red",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Health Potion",
+            "items": [
+              {
+                "itemId": 271884,
+                "name": "Concentrated Silvermoon Health Potion",
+                "icon": "inv_12_profession_alchemy_lightpotion_purple",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Weapon Buff",
+            "items": [
+              {
+                "itemId": 243734,
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_12_profession_enchanting_manaoil_red",
+                "quality": 2
+              }
+            ]
+          },
+          {
+            "type": "Augment Rune",
+            "items": [
+              {
+                "itemId": 259085,
+                "name": "Void-Touched Augment Rune",
+                "icon": "inv_10_enchanting_crystal_color2",
+                "quality": 3
+              }
+            ]
+          },
+          {
+            "type": "Food",
+            "items": [
+              {
+                "itemId": 275266,
+                "name": "Feast of Knowledge",
+                "icon": "inv_cooking_80_minorfeast",
+                "quality": 3
+              },
+              {
+                "itemId": 242274,
+                "name": "Champion's Bento",
+                "icon": "inv_misc_food_vendor_poundedricecake_1",
+                "quality": 3
+              }
+            ]
+          }
+        ]
+      }
     }
   },
-  "updatedAt": "2026-08-17T13:56:47.559Z"
+  "updatedAt": "2026-08-17T23:12:51.977Z"
 }

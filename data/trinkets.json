@@ -17943,7 +17943,32 @@
         }
       },
       "fetchedAt": "2026-08-17T12:40:17.257Z"
+    },
+    "demon-hunter-devourer": {
+      "key": "demon-hunter-devourer",
+      "available": false,
+      "targets": {
+        "1": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk/demon_hunter/devourer",
+          "available": false,
+          "reason": "No standard chart with these values found.",
+          "trinkets": []
+        },
+        "3": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk3/demon_hunter/devourer",
+          "available": false,
+          "reason": "No standard chart with these values found.",
+          "trinkets": []
+        },
+        "5": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk5/demon_hunter/devourer",
+          "available": false,
+          "reason": "No standard chart with these values found.",
+          "trinkets": []
+        }
+      },
+      "fetchedAt": "2026-08-17T23:12:51.351Z"
     }
   },
-  "updatedAt": "2026-08-17T13:56:47.435Z"
+  "updatedAt": "2026-08-17T23:12:51.353Z"
 }

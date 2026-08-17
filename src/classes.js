@@ -5,7 +5,7 @@
  *
  * `slug` est le slug de spec, `role` sert a construire l'URL Icy Veins :
  *   icy-veins.com/wow/<spec>-<classe>-pve-<role>-gear-best-in-slot
- * Les 39 combinaisons ont ete verifiees une a une (toutes en 200).
+ * Les 40 combinaisons ont ete verifiees une a une (toutes en 200).
  *
  * `icon` : slug d'icone sur le CDN Wowhead. Attention, les slugs de spec ne sont pas
  * uniques entre classes (frost, holy, protection, restoration) : ne jamais faire de
@@ -31,6 +31,7 @@ const CLASSES = {
     specs: [
       { slug: 'havoc', label: 'Dévastation', role: 'dps', icon: 'ability_demonhunter_specdps' },
       { slug: 'vengeance', label: 'Vengeance', role: 'tank', icon: 'ability_demonhunter_spectank' },
+      { slug: 'devourer', label: 'Dévoration', role: 'dps', icon: 'classicon_demonhunter_void' },
     ],
   },
   druid: {
