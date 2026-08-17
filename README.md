@@ -270,6 +270,20 @@ Vérifié sur les 39 specs : **toutes** publient une tier list, de 4 à 6 rangs.
 sont **non bloquants** dans `/api/scrape`, comme Bloodmallet : une page qui change de forme ne
 doit pas faire échouer la mise à jour du BiS. Cache dans `data/wowhead.json`.
 
+## Deux périmètres de specs
+
+Une distinction qui compte, et qui a déjà causé un bug :
+
+- `scoredSpecs()` — les specs **jouées** dans le roster. C'est le périmètre du butin :
+  `buildSources()` n'a de sens qu'avec des joueurs devant un boss.
+- `specsAvecCache()` — toutes les specs **dont on a les listes**, jouées ou non. C'est le
+  périmètre de tout ce qui décrit une spec pour elle-même : sa liste BiS, ses donjons à farmer
+  (« M+ opti »), ses consommables, et la classification des sources en raid / donjon.
+
+Confondre les deux fait disparaître des vues au premier reroll : quand le Chaman Élémentaire du
+roster est passé Amélioration, « M+ opti » s'est vidé pour Élémentaire, alors que la liste BiS de
+cette spec était toujours là et toujours juste. La nature d'un donjon ne dépend pas de qui le joue.
+
 ## Roster mythique : deux périmètres, pas deux rosters
 
 Tout le monde fait du Mythique+, mais **tout le monde ne va pas en raid**. Une case

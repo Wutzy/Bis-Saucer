@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T12:40:00.245Z",
+  "updatedAt": "2026-08-17T14:01:54.691Z",
   "members": [
     {
       "n": 1,
@@ -80,7 +80,7 @@
       "n": 9,
       "name": "Sam",
       "class": "shaman",
-      "spec": "enhancement",
+      "spec": "elemental",
       "id": "sam",
       "raid": true,
       "trial": false
