@@ -194,6 +194,7 @@ const els = {
   tabs: Array.from(document.querySelectorAll('.tab')),
   tabsNav: document.querySelector('.tabs'),
   panelHead: document.querySelector('.panel-head'),
+  panelTitle: document.querySelector('.panel-title'),
 };
 
 let specs = [];
@@ -355,6 +356,17 @@ function derniereMaj() {
   if (!valides.length) return null;
 
   return new Date(Math.max(...valides.map((d) => d.getTime()))).toISOString();
+}
+
+/** Date courte : 17/08/2026. */
+function formatDateCourte(iso) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return null;
+  return date.toLocaleDateString('fr-FR', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  });
 }
 
 /** Ecart lisible avec maintenant : « aujourd'hui », « il y a 3 jours ». */
@@ -3209,8 +3221,13 @@ function renderHeader() {
   const color = spec ? classColor(spec.class) : '#d9a441';
 
   // Ecran d'accueil de la guilde : les trois cartes se presentent toutes seules, un
-  // titre « /rand » au-dessus ne dirait rien de plus.
-  els.panelHead.hidden = activeView === 'rand' && randScope === 'guild' && !randMode;
+  // titre « /rand » au-dessus ne dirait rien de plus. L'en-tete ne subsiste alors que
+  // s'il lui reste quelque chose a montrer — la date, sur la version publiee — sinon
+  // il ne serait qu'une bande vide.
+  const maj = derniereMaj();
+  const accueilGuilde = activeView === 'rand' && randScope === 'guild' && !randMode;
+  els.panelTitle.hidden = accueilGuilde;
+  els.panelHead.hidden = accueilGuilde && !(STATIC && maj);
 
   document.querySelector('.panel').style.setProperty('--spec', color);
   els.avatar.className = 'avatar lg';
@@ -3289,14 +3306,15 @@ function renderHeader() {
   const visible = visibleSpecs();
   const cachedCount = visible.filter((s) => entryFor(s.key)).length;
   const withSpec = roster.filter((m) => m.spec).length;
-  // Version publiee : la fraicheur monte en haut a droite, personne ne pouvant y
-  // declencher de mise a jour. En local elle reste en pied de page, ou le bouton
-  // « Mettre a jour » est juste a cote.
-  const maj = derniereMaj();
+  // Version publiee : la fraicheur prend la place du bouton « Mettre a jour », que
+  // personne ne peut y actionner. En local elle reste en pied de page, ou le bouton
+  // est juste a cote.
   els.majDonnees.hidden = !STATIC || !maj;
   if (STATIC && maj) {
-    els.majDonnees.textContent = `Données ${ilYA(maj)}`;
-    els.majDonnees.title = `Dernière mise à jour : ${formatDate(maj)}`;
+    // Date en clair plutot que « aujourd'hui » : sur la version publiee on veut
+    // pouvoir citer le jour, pas seulement sentir que c'est recent.
+    els.majDonnees.textContent = `Données du ${formatDateCourte(maj)}`;
+    els.majDonnees.title = `Dernière mise à jour : ${formatDate(maj)} (${ilYA(maj)})`;
   }
 
   els.storeStatus.textContent =

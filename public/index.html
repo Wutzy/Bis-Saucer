@@ -24,10 +24,6 @@
         </div>
         <div id="selector-bar" class="selector-bar"></div>
         <div class="topbar-end">
-          <!-- Fraîcheur des données, en évidence sur la version publiée : là-bas
-               personne ne peut mettre à jour, savoir de quand ça date est la seule
-               chose qui compte. Rempli par le script, masqué en local. -->
-          <span id="maj-donnees" class="maj" hidden></span>
           <div class="lang-switch" id="lang-switch">
             <button type="button" data-lang="fr">FR</button>
             <button type="button" data-lang="en">EN</button>
@@ -54,6 +50,10 @@
           >
             Mettre à jour
           </button>
+          <!-- Fraîcheur des données, sur la version publiée seulement : là-bas
+               personne ne peut mettre à jour, savoir de quand ça date est la seule
+               chose qui compte. Occupe la place du bouton, qui y est masqué. -->
+          <span id="maj-donnees" class="maj" hidden></span>
         </header>
 
         <!-- Uniquement les vues de la spec affichée : ce qui concerne tout le roster
