@@ -108,7 +108,7 @@ La portée sépare les deux niveaux de navigation, et rien ne les mélange :
   suivie** (la spec active est en couleur, les autres désaturées ; le survol donne le libellé, qui
   la joue et le nombre de slots en cache).
 - **Le bandeau d'onglets** ne porte que les vues de la spec affichée : **Liste BiS**, **M+ opti**,
-  **/rand**.
+  **Consommables**, **/rand**.
 
 Le blason ouvre un **écran d'accueil à trois cartes** — /rand Raid, /rand Mythique+, et le
 **Roster Mythique (prévisionnel)** — puis une barre reprend ces trois destinations en haut de
@@ -127,7 +127,7 @@ haut, elle, reste affichée partout : c'est par elle qu'on en sort, de deux faç
 - **une icône de spec**, qui rouvre les vues de cette spec — les onglets réapparaissent. Depuis le
   /rand de guilde, elle bascule sur le /rand de cette spec, sans quitter la vue.
 
-## Les cinq vues
+## Les six vues
 
 ### Portée « spec »
 
@@ -151,6 +151,9 @@ haut, elle, reste affichée partout : c'est par elle qu'on en sort, de deux faç
   La vue s'ouvre sur une **grille de donjons illustrée** — de quoi voir d'un coup d'œil où aller
   farmer. Cliquer une carte **descend jusqu'au donjon et estompe les autres**, pour en lire un à
   la fois ; un second clic remet tout à plat.
+- **Consommables** — ce que le guide **Wowhead** recommande d'emporter : flacon, potions,
+  huile d'arme, rune d'amélioration, nourriture. Une ligne par type ; plusieurs objets sur une
+  ligne quand l'auteur les donne comme équivalents ou dépendants de la situation.
 - **/rand** — la vue à ouvrir pendant un raid : boss par boss, **uniquement les objets sur
   lesquels la spec affichée doit rand**, avec, sur chaque ligne, **tous les autres joueurs du
   roster qui les convoitent** — ceux contre qui il faudra rand. Un boss qui ne concerne pas la
@@ -171,6 +174,76 @@ haut, elle, reste affichée partout : c'est par elle qu'on en sort, de deux faç
   La vue ne montre **que les membres du roster mythique** ; les autres sont dans un repli
   « Hors roster mythique » en bas, d'où on peut les réintégrer. C'est aussi ici qu'on **ajoute et
   retire des membres** (pseudo + classe + spec) et qu'on coche les deux statuts (voir plus bas).
+
+## Bijoux : trois lectures empilées
+
+Le choix d'un bijou ne se tranche pas d'une seule source. La vue **Liste BiS** en montre deux,
+dans cet ordre :
+
+1. **Bloodmallet** — le classement par simulation, avec l'écart en % au meilleur. En premier :
+   c'est la lecture chiffrée, celle qui tranche.
+2. **Une liste éditoriale au choix**, sélecteur dans l'en-tête du panneau :
+   - **Wowhead** — la **tier list** du guide, un rang par ligne (S, A, B…), avec les mêmes cases
+     de provenance que sur le site : Raid, Mythique+, Gouffres, Artisanat. Décocher une case
+     retire les bijoux correspondants de tous les rangs.
+   - **Icy Veins** — les bijoux mis en avant par l'auteur, rangés comme lui les range (à utiliser
+     / passifs, ou S Tier / A Tier selon les guides). Vient du même scrape que la liste BiS, via
+     `trinketAdvice`.
+
+Ces deux-là disent la même chose autrement : les empiler ferait doublon, on en regarde **une à la
+fois**. Le choix vaut pour toutes les specs. Une source sans données pour la spec affichée garde
+son bouton, désactivé — et la préférence revient dès qu'on retombe sur une spec qui l'a.
+
+Un bijou retenu dans la liste BiS du guide porte un badge **BiS** dans la liste éditoriale.
+
+### Le sélecteur de liste vaut aussi pour les bijoux
+
+Quand le guide publie plusieurs listes (**Overall**, **Mythic+**, **Raid**), le choix ne concerne
+plus seulement l'armure : les bijoux suivent.
+
+| Liste | Bijoux affichés |
+| --- | --- |
+| Overall (ou une déclinaison par talent de héros) | tous, affichage inchangé |
+| Mythic+ | uniquement ceux **obtenables en donjon** |
+| Raid | uniquement ceux **obtenables en raid** |
+
+Sur une liste ciblée, un bijou de craft ou de PvP disparaît : il n'y est pas obtenable. Le
+classement Bloodmallet est **filtré avant d'être coupé au top 5**, pour que les cinq affichés
+soient les cinq meilleurs *éligibles* et non un reste de la liste générale ; l'écart en % reste
+mesuré par rapport au meilleur toutes provenances confondues, puisque c'est ce qu'on perd à se
+limiter à ce contenu. Côté tier list Wowhead, les cases de provenance s'effacent au profit d'une
+mention — la liste décide déjà, deux filtres concurrents sur le même panneau seraient illisibles.
+
+La provenance d'un bijou se lit sur **trois signaux, du plus précis au plus général**, chacun
+portant sur l'objet lui-même : la catégorie que Bloodmallet lui donne, la provenance lue dans les
+listes Icy Veins (arbitrée par `classifySources()`), puis les catégories du guide Wowhead **de la
+spec affichée**. Ce dernier point compte : agréger les catégories de tous les guides donnait des
+bijoux à la fois « raid » et « donjon », donc visibles partout — les auteurs ne rangent pas
+toujours un objet de la même façon. Un bijou qu'aucun signal ne sait ranger **reste affiché** :
+on n'écarte que ce qu'on sait appartenir ailleurs.
+
+### Comment la donnée Wowhead est récupérée
+
+[`src/wowhead.js`](src/wowhead.js). Les guides Wowhead sont écrits dans un **balisage maison
+servi tel quel dans le HTML**, encapsulé en JSON — rien à exécuter, aucun navigateur à piloter :
+
+```
+[tier-list=rows grid]
+  [tier][tier-label bg=q5]S[/tier-label][tier-content]
+  [icon-badge=270164 quality=4 display-options=raid tooltip="..."]
+
+[table class=grid]
+  [tr][td]Flask[/td][td align=center][item=241322][item=241324][/td][/tr]
+```
+
+La même page embarque nom, icône et qualité de chaque objet cité (`WH.Gatherer.addData`) : **une
+seule requête** suffit par page. Les bijoux viennent de `bis-gear`, les consommables de
+`enchants-gems-pve-<rôle>` — où le rôle s'écrit `dps`, `tank` ou `healer` (notre référentiel dit
+`healing`, d'où la table de correspondance).
+
+Vérifié sur les 39 specs : **toutes** publient une tier list, de 4 à 6 rangs. Les deux appels
+sont **non bloquants** dans `/api/scrape`, comme Bloodmallet : une page qui change de forme ne
+doit pas faire échouer la mise à jour du BiS. Cache dans `data/wowhead.json`.
 
 ## Roster mythique : deux périmètres, pas deux rosters
 
@@ -424,6 +497,8 @@ gauche. Rien n'est codé en dur : si l'étoile change de membre, les images suiv
 | `POST` | `/api/roster` | Body `{ "name": "Toto", "class": "mage", "spec": "fire" }` — ajoute un membre |
 | `DELETE` | `/api/roster/:id` | Retire un membre |
 | `GET` | `/api/bis` | Contenu du cache `data/bis.json` |
+| `GET` | `/api/trinkets` | Classements Bloodmallet (`data/trinkets.json`) |
+| `GET` | `/api/wowhead` | Tier lists et consommables Wowhead (`data/wowhead.json`) |
 | `POST` | `/api/scrape` | Body `{ "class": "warrior", "spec": "arms" }` — scrape et met à jour le cache |
 
 `POST /api/scrape` renvoie `429` avec `retryAfterSeconds` si la spec a déjà été rafraîchie

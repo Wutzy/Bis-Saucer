@@ -15,8 +15,15 @@ const API = STATIC
       roster: 'api/roster.json',
       bis: 'api/bis.json',
       trinkets: 'api/trinkets.json',
+      wowhead: 'api/wowhead.json',
     }
-  : { specs: '/api/specs', roster: '/api/roster', bis: '/api/bis', trinkets: '/api/trinkets' };
+  : {
+      specs: '/api/specs',
+      roster: '/api/roster',
+      bis: '/api/bis',
+      trinkets: '/api/trinkets',
+      wowhead: '/api/wowhead',
+    };
 
 /* ---------------- langue ---------------- */
 
@@ -191,6 +198,7 @@ const els = {
 let specs = [];
 let store = { specs: {} };
 let trinketStore = { specs: {} };
+let wowheadStore = { specs: {} };
 let roster = [];
 let classes = {};
 let activeKey = null;
@@ -240,6 +248,11 @@ const DPS_DISTANCE = new Set([
   'warlock-demonology',
   'warlock-destruction',
 ]);
+
+// Liste de bijoux editoriale affichee : 'wowhead' ou 'icy'. Les deux disent la meme
+// chose autrement — on en regarde une a la fois, pas les deux empilees. Le choix vaut
+// pour toutes les specs, on compare en general de la meme facon.
+let trinketSource = 'wowhead';
 
 // Section "hors roster mythique" depliee ou non. Repliee par defaut : la vue montre
 // la composition mythique, ces membres-la n'en font pas partie.
@@ -469,6 +482,85 @@ function emptyState(title, message) {
   return div;
 }
 
+/* ---------------- provenance des bijoux ---------------- */
+
+/**
+ * Contenu vise par la liste BiS affichee : 'raid', 'dungeon', ou null quand la liste
+ * ne cible rien en particulier (Overall, ou une declinaison par talent de heros).
+ *
+ * C'est ce que le selecteur de liste dit deja pour l'armure ; les bijoux doivent
+ * suivre, sinon la liste "Raid" propose des bijoux qu'on ne peut pas y obtenir.
+ */
+function contenuListe(entry, specKey) {
+  const lists = listsOf(entry);
+  if (lists.length < 2) return null;
+  const label = (lists[selectedList[specKey] || 0] || {}).label || '';
+  if (/overall|general|général/i.test(label)) return null;
+  if (/mythic|m\+|donjon|dungeon/i.test(label)) return 'dungeon';
+  if (/raid/i.test(label)) return 'raid';
+  return null;
+}
+
+/**
+ * Provenance des bijoux selon le guide Wowhead **d'une spec donnee**.
+ *
+ * Surtout pas tous guides confondus : les auteurs ne rangent pas toujours un objet de
+ * la meme facon, et l'union des categories finissait par donner des bijoux a la fois
+ * "raid" et "donjon", donc visibles partout. Un seul guide reste coherent avec lui-meme.
+ */
+const categoriesParSpec = new Map();
+
+function categoriesBijouxDeSpec(specKey) {
+  if (categoriesParSpec.has(specKey)) return categoriesParSpec.get(specKey);
+
+  const index = new Map();
+  const entree = wowheadStore.specs[specKey];
+  for (const tier of (entree && entree.trinkets && entree.trinkets.tiers) || []) {
+    for (const item of tier.items) {
+      index.set(String(item.itemId), new Set(item.categories || []));
+    }
+  }
+  categoriesParSpec.set(specKey, index);
+  return index;
+}
+
+/**
+ * Ce bijou est-il **obtenable** dans le contenu vise ?
+ *
+ * Trois signaux, du plus precis au plus general — chacun porte sur l'objet lui-meme,
+ * jamais sur une moyenne entre guides :
+ *
+ *  1. la categorie que Bloodmallet donne a l'objet (Raid / Dungeon / Profession) ;
+ *  2. la provenance lue dans les listes Icy Veins, arbitree par `classifySources()` ;
+ *  3. les categories du guide Wowhead de la spec affichee.
+ *
+ * Un objet craft ou PvP n'est obtenable ni en raid ni en donjon : il sort des deux
+ * listes ciblees. **Un objet qu'aucun signal ne sait ranger reste affiche** : on
+ * n'ecarte que ce qu'on sait appartenir ailleurs, jamais ce qu'on ignore.
+ */
+function bijouDansContenu(itemId, contenu, sourceKinds, sourceSim, specKey) {
+  if (!contenu) return true;
+
+  if (sourceSim) {
+    if (/raid/i.test(sourceSim)) return contenu === 'raid';
+    if (/dungeon|mythic/i.test(sourceSim)) return contenu === 'dungeon';
+    return false;
+  }
+
+  const info = itemInfoById(itemId);
+  const raw = (info && info.source) || ITEM_SOURCES[itemId];
+  if (raw && sourceKinds) {
+    const kind = sourceKinds.get(raw) || sourceKinds.get(cleanSourceLabel(raw));
+    if (kind === 'raid' || kind === 'dungeon') return kind === contenu;
+    if (kind === 'other') return false;
+  }
+
+  const cats = specKey && categoriesBijouxDeSpec(specKey).get(String(itemId));
+  if (cats && cats.size) return cats.has(contenu === 'raid' ? 'raid' : 'dungeon');
+
+  return true;
+}
+
 /* ---------------- vue liste ---------------- */
 
 /** Ligne "provenance" d'une carte : source du drop + mention de catalyse si besoin. */
@@ -580,22 +672,31 @@ function simulatedTrinkets(specKey) {
  * et quelques DPS selon les patchs) : les recommandations du guide lui-meme.
  * Presente separement, car ce sont des conseils d'auteur, pas un classement chiffre.
  */
-function renderTrinketAdvice(entry, guideTrinkets) {
-  const advice = entry && entry.trinketAdvice;
-  if (!advice || !advice.length) return null;
+function renderTrinketAdvice(entry, guideTrinkets, contenu, sourceKinds, specKey) {
+  const brut = (entry && entry.trinketAdvice) || [];
+  // Sur une liste ciblee, un groupe vide de ses bijoux hors contenu disparait.
+  const advice = brut
+    .map((g) => ({
+      ...g,
+      items: g.items.filter((i) =>
+        bijouDansContenu(i.itemId, contenu, sourceKinds, null, specKey)
+      ),
+    }))
+    .filter((g) => g.items.length);
+  if (!advice.length) return null;
 
   const panel = document.createElement('div');
   panel.className = 'trinket-panel trinket-panel--advice';
 
   const head = document.createElement('div');
   head.className = 'tp-head';
-  head.textContent = 'Bijoux — recommandations du guide';
+  head.textContent = 'Bijoux — Icy Veins';
 
   const note = document.createElement('span');
   note.className = 'tp-source';
-  note.textContent = 'Bloodmallet ne simule pas cette spec';
+  note.textContent = 'recommandations du guide';
   note.title =
-    'Aucune donnée Bloodmallet pour cette spécialisation (toute la classe Moine, les spés de soin et quelques DPS ne sont pas simulés). Ces bijoux viennent du guide Icy Veins.';
+    'Bijoux mis en avant par l’auteur du guide Icy Veins, rangés comme lui les range (à utiliser / passifs).';
   head.appendChild(note);
   panel.appendChild(head);
 
@@ -641,7 +742,217 @@ function renderTrinketAdvice(entry, guideTrinkets) {
   return panel;
 }
 
-function renderTrinketPanel(sim, guideTrinkets) {
+/**
+ * Liste de bijoux editoriale, au choix : la tier list Wowhead ou les recommandations
+ * Icy Veins. Les deux disent la meme chose autrement, les empiler ferait doublon —
+ * on affiche celle qu'on demande, avec un selecteur dans son en-tete.
+ *
+ * Chaque panneau garde exactement sa mise en forme : rangs colores pour Wowhead,
+ * colonnes par categorie pour Icy Veins.
+ */
+function renderListeBijoux(entry, specKey, guideTrinkets, contenu, sourceKinds) {
+  const panneaux = {
+    wowhead: renderWowheadTiers(specKey, guideTrinkets, contenu),
+    icy: renderTrinketAdvice(entry, guideTrinkets, contenu, sourceKinds, specKey),
+  };
+  if (!panneaux.wowhead && !panneaux.icy) return null;
+
+  // Une source sans donnees pour cette spec ne peut pas etre affichee : on bascule
+  // sur l'autre sans changer la preference, qui vaudra de nouveau des qu'elle revient.
+  const actif = panneaux[trinketSource] ? trinketSource : panneaux.wowhead ? 'wowhead' : 'icy';
+  const panneau = panneaux[actif];
+
+  const choix = document.createElement('div');
+  choix.className = 'tp-choix';
+  for (const [source, label] of [
+    ['wowhead', 'Wowhead'],
+    ['icy', 'Icy Veins'],
+  ]) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = `tp-choix-btn${actif === source ? ' is-active' : ''}`;
+    btn.textContent = label;
+    if (!panneaux[source]) {
+      btn.disabled = true;
+      btn.title = `Aucune donnée ${label} pour cette spec`;
+    } else {
+      btn.addEventListener('click', () => {
+        trinketSource = source;
+        renderContent();
+      });
+    }
+    choix.appendChild(btn);
+  }
+
+  const head = panneau.querySelector('.tp-head');
+  if (head) head.appendChild(choix);
+  return panneau;
+}
+
+/* ---------------- tier list Wowhead ---------------- */
+
+// Provenances telles que Wowhead les filtre, dans l'ordre de ses propres cases.
+const WOWHEAD_CATEGORIES = [
+  { slug: 'raid', label: 'Raid' },
+  { slug: 'dungeon', label: 'Mythique+' },
+  { slug: 'delves', label: 'Gouffres' },
+  { slug: 'crafting', label: 'Artisanat' },
+];
+
+// Filtres actifs de la tier list, partages par toutes les specs : on regarde en
+// general le meme contenu d'une spec a l'autre.
+const wowheadFiltres = new Set(WOWHEAD_CATEGORIES.map((c) => c.slug));
+
+/**
+ * Un objet sans provenance connue reste visible : on ne masque que ce qu'on sait ranger.
+ *
+ * Sur une liste ciblee (Raid, Mythic+), c'est elle qui decide et les cases s'effacent :
+ * deux filtres concurrents sur le meme panneau seraient illisibles.
+ */
+function bijouVisible(item, contenu) {
+  if (!item.categories || !item.categories.length) return true;
+  if (contenu) return item.categories.includes(contenu === 'raid' ? 'raid' : 'dungeon');
+  return item.categories.some((c) => wowheadFiltres.has(c));
+}
+
+/**
+ * Tier list de bijoux du guide Wowhead : un rang par ligne (S, A, B...), filtrable
+ * par provenance comme sur le site. Le classement est celui de l'auteur, pas une
+ * simulation — c'est la lecture qui complete le mieux Bloodmallet.
+ */
+function renderWowheadTiers(specKey, guideTrinkets, contenu) {
+  const entree = wowheadStore.specs[specKey];
+  const data = entree && entree.trinkets;
+  if (!data || !data.available || !data.tiers || !data.tiers.length) return null;
+
+  const panel = document.createElement('div');
+  panel.className = 'trinket-panel trinket-panel--tiers';
+
+  const head = document.createElement('div');
+  head.className = 'tp-head';
+  head.textContent = 'Bijoux — tier list Wowhead';
+
+  const note = document.createElement('span');
+  note.className = 'tp-source';
+  note.textContent = 'classement du guide';
+  note.title = data.url
+    ? `Rangs publiés par l’auteur du guide Wowhead — ${data.url}`
+    : 'Rangs publiés par l’auteur du guide Wowhead.';
+  head.appendChild(note);
+  panel.appendChild(head);
+
+  if (contenu) {
+    // La liste BiS choisie fait deja le tri : on l'annonce plutot que de laisser
+    // croire a des cases qui ne serviraient a rien.
+    const note = document.createElement('p');
+    note.className = 'wh-note-filtre';
+    note.textContent =
+      contenu === 'raid'
+        ? 'Limité aux bijoux de raid, comme la liste BiS affichée.'
+        : 'Limité aux bijoux de Mythique+, comme la liste BiS affichée.';
+    panel.appendChild(note);
+  } else {
+    // Cases de provenance, comme sur Wowhead. Une categorie absente de cette spec
+    // n'est pas proposee : elle ne filtrerait rien.
+    const presentes = new Set(
+      data.tiers.flatMap((t) => t.items).flatMap((i) => i.categories || [])
+    );
+    const filtres = document.createElement('div');
+    filtres.className = 'wh-filtres';
+    for (const cat of WOWHEAD_CATEGORIES) {
+      if (!presentes.has(cat.slug)) continue;
+      const label = document.createElement('label');
+      label.className = `wh-filtre wh-filtre--${cat.slug}`;
+      const box = document.createElement('input');
+      box.type = 'checkbox';
+      box.checked = wowheadFiltres.has(cat.slug);
+      box.addEventListener('change', () => {
+        if (box.checked) wowheadFiltres.add(cat.slug);
+        else wowheadFiltres.delete(cat.slug);
+        renderContent();
+      });
+      const texte = document.createElement('span');
+      texte.textContent = cat.label;
+      label.append(box, texte);
+      filtres.appendChild(label);
+    }
+    if (filtres.children.length > 1) panel.appendChild(filtres);
+  }
+
+  const guideIds = new Set(guideTrinkets.map((t) => t.itemId));
+
+  const grille = document.createElement('div');
+  grille.className = 'wh-tiers';
+
+  for (const tier of data.tiers) {
+    const visibles = tier.items.filter((item) => bijouVisible(item, contenu));
+
+    const ligne = document.createElement('div');
+    ligne.className = 'wh-tier';
+
+    const rang = document.createElement('div');
+    // Le rang colore la ligne : S en tete, puis on descend. Au-dela de la 5e lettre
+    // on retombe sur le style neutre plutot que d'inventer une couleur.
+    rang.className = `wh-rang wh-rang--${(tier.rank || '?').toLowerCase().replace(/[^a-z0-9]/g, '') || 'x'}`;
+    rang.textContent = tier.rank;
+    ligne.appendChild(rang);
+
+    const corps = document.createElement('div');
+    corps.className = 'wh-contenu';
+
+    if (!visibles.length) {
+      const vide = document.createElement('span');
+      vide.className = 'wh-vide';
+      vide.textContent = contenu ? 'rien dans ce contenu' : 'rien avec ces filtres';
+      corps.appendChild(vide);
+    }
+
+    for (const item of visibles) {
+      const carte = document.createElement('span');
+      carte.className = `wh-bijou${guideIds.has(item.itemId) ? ' wh-bijou--bis' : ''}`;
+      // Une categorie donne sa couleur de contour, comme les cases de filtre.
+      const cat = (item.categories || []).find((c) =>
+        contenu ? c === (contenu === 'raid' ? 'raid' : 'dungeon') : wowheadFiltres.has(c)
+      );
+      if (cat) carte.classList.add(`wh-bijou--${cat}`);
+
+      carte.appendChild(iconEl(item.icon || iconForItemId(item.itemId), 'wh-icone', ''));
+
+      // Meme mecanique que partout ailleurs : l'embed Wowhead nomme et colore le lien,
+      // et le localise en francais quand la langue l'est.
+      const lien = document.createElement('a');
+      lien.className = 'wh-nom';
+      lien.href = itemUrl(item.itemId);
+      lien.target = '_blank';
+      lien.rel = 'noopener noreferrer';
+      lien.dataset.wowhead = `item=${item.itemId}${LANG === 'fr' ? '&domain=fr' : ''}`;
+      lien.textContent = item.name || `objet ${item.itemId}`;
+      carte.appendChild(lien);
+
+      if (guideIds.has(item.itemId)) {
+        const flag = document.createElement('span');
+        flag.className = 'tp-flag';
+        flag.textContent = 'BiS';
+        flag.title = 'Retenu dans la liste BiS du guide Icy Veins';
+        carte.appendChild(flag);
+      }
+
+      const provenance = (item.categories || [])
+        .map((c) => (WOWHEAD_CATEGORIES.find((x) => x.slug === c) || {}).label || c)
+        .join(', ');
+      carte.title = [`Rang ${tier.rank}`, provenance || null].filter(Boolean).join(' — ');
+      corps.appendChild(carte);
+    }
+
+    ligne.appendChild(corps);
+    grille.appendChild(ligne);
+  }
+
+  panel.appendChild(grille);
+  return panel;
+}
+
+function renderTrinketPanel(sim, guideTrinkets, contenu, sourceKinds) {
   const panel = document.createElement('div');
   panel.className = 'trinket-panel';
 
@@ -682,8 +993,22 @@ function renderTrinketPanel(sim, guideTrinkets) {
       continue;
     }
 
+    const eligibles = data.trinkets.filter((t) =>
+      bijouDansContenu(t.itemId, contenu, sourceKinds, t.source, sim.key)
+    );
+    if (!eligibles.length) {
+      const none = document.createElement('div');
+      none.className = 'tp-empty';
+      none.textContent = 'aucun dans ce contenu';
+      col.appendChild(none);
+      cols.appendChild(col);
+      continue;
+    }
+
+    // L'ecart en % se lit toujours par rapport au meilleur bijou toutes provenances
+    // confondues : c'est ce qu'on perd a se limiter a ce contenu.
     const best = data.trinkets[0];
-    for (const trinket of data.trinkets.slice(0, SIM_TRINKET_COUNT)) {
+    for (const trinket of eligibles.slice(0, SIM_TRINKET_COUNT)) {
       const row = document.createElement('div');
       row.className = `tp-item${guideIds.has(trinket.itemId) ? ' tp-item--bis' : ''}`;
 
@@ -843,11 +1168,17 @@ function renderList(entry, key) {
   }
   wrap.appendChild(grid);
 
-  if (useSimPanel) {
-    wrap.appendChild(renderTrinketPanel(sim, items.filter(isTrinket)));
-  } else {
-    const advice = renderTrinketAdvice(entry, items.filter(isTrinket));
-    if (advice) wrap.appendChild(advice);
+  // La simulation d'abord — c'est la lecture chiffree, celle qui tranche — puis une
+  // seule des deux listes editoriales, au choix.
+  // La liste choisie (Overall / Mythic+ / Raid) vaut aussi pour les bijoux : sur une
+  // liste ciblee, on ne propose que ce qui tombe dans ce contenu.
+  const contenu = contenuListe(entry, key);
+  const bijoux = items.filter(isTrinket);
+  for (const panneau of [
+    useSimPanel ? renderTrinketPanel(sim, bijoux, contenu, sourceKinds) : null,
+    renderListeBijoux(entry, key, bijoux, contenu, sourceKinds),
+  ]) {
+    if (panneau) wrap.appendChild(panneau);
   }
 
   const weapons = items.filter(isWeapon);
@@ -2102,6 +2433,127 @@ function renderRand() {
   return wrap;
 }
 
+/* ---------------- vue consommables ---------------- */
+
+/**
+ * Libelles francais des types de consommables. Wowhead les ecrit en anglais dans son
+ * tableau ; la table est a completer si un guide en introduit un nouveau, une entree
+ * manquante retombant sur le libelle d'origine sans rien casser.
+ */
+const CONSO_FR = {
+  Flask: 'Flacon',
+  'Combat Potion': 'Potion de combat',
+  'Health Potion': 'Potion de soins',
+  'Weapon Buff': 'Huile d’arme',
+  'Augment Rune': 'Rune d’amélioration',
+  Food: 'Nourriture',
+  Phial: 'Fiole',
+  Rune: 'Rune',
+  Oil: 'Huile',
+  Potion: 'Potion',
+  Enchant: 'Enchantement',
+  Gem: 'Gemme',
+};
+
+function typeConso(type) {
+  if (LANG !== 'fr') return type;
+  return CONSO_FR[type] || type;
+}
+
+/**
+ * Consommables recommandes par le guide Wowhead de la spec : une ligne par type,
+ * plusieurs objets quand l'auteur en propose plusieurs.
+ */
+function renderConsumables() {
+  const spec = activeSpec();
+  if (!spec) return emptyState('Aucune spec sélectionnée', 'Choisis une spec en haut de page.');
+
+  const entree = wowheadStore.specs[spec.key];
+  const conso = entree && entree.consumables;
+
+  if (!conso || !conso.available || !conso.rows.length) {
+    return emptyState(
+      'Aucun consommable en cache',
+      STATIC
+        ? 'Cette spec n’a pas encore été rafraîchie depuis l’ajout des consommables.'
+        : 'Clique « Rafraîchir depuis Icy Veins » : les consommables du guide Wowhead sont récupérés dans la foulée.'
+    );
+  }
+
+  const wrap = document.createElement('div');
+  wrap.className = 'conso';
+
+  const intro = document.createElement('p');
+  intro.className = 'mplus-intro';
+  intro.textContent =
+    'Ce que le guide Wowhead recommande d’emporter. Plusieurs objets sur une ligne : ' +
+    'l’auteur les donne comme équivalents ou dépendants de la situation.';
+  wrap.appendChild(intro);
+
+  const table = document.createElement('table');
+  table.className = 'conso-table';
+
+  const thead = document.createElement('thead');
+  thead.innerHTML = '<tr><th>Type</th><th>Recommandé</th></tr>';
+  table.appendChild(thead);
+
+  const tbody = document.createElement('tbody');
+  for (const row of conso.rows) {
+    const tr = document.createElement('tr');
+
+    const typeTd = document.createElement('td');
+    typeTd.className = 'conso-type';
+    typeTd.textContent = typeConso(row.type);
+    if (typeConso(row.type) !== row.type) typeTd.title = row.type;
+
+    const itemsTd = document.createElement('td');
+    const liste = document.createElement('div');
+    liste.className = 'conso-items';
+
+    for (const item of row.items) {
+      const carte = document.createElement('span');
+      carte.className = 'conso-item';
+      carte.appendChild(iconEl(item.icon || iconForItemId(item.itemId), 'conso-icone', ''));
+
+      // Meme mecanique que partout ailleurs : l'embed Wowhead nomme, colore et
+      // localise le lien a partir du seul identifiant.
+      const lien = document.createElement('a');
+      lien.className = 'conso-nom';
+      lien.href = itemUrl(item.itemId);
+      lien.target = '_blank';
+      lien.rel = 'noopener noreferrer';
+      lien.dataset.wowhead = `item=${item.itemId}${LANG === 'fr' ? '&domain=fr' : ''}`;
+      lien.textContent = item.name || `objet ${item.itemId}`;
+      carte.appendChild(lien);
+
+      liste.appendChild(carte);
+    }
+
+    itemsTd.appendChild(liste);
+    tr.append(typeTd, itemsTd);
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+
+  if (conso.url) {
+    const note = document.createElement('p');
+    note.className = 'roster-note';
+    const texte = document.createElement('span');
+    texte.textContent = 'Source : ';
+    const lien = document.createElement('a');
+    lien.href = conso.url;
+    lien.target = '_blank';
+    lien.rel = 'noopener noreferrer';
+    lien.textContent = 'guide Wowhead — Enchants & Consumables';
+    note.append(texte, lien);
+    wrap.appendChild(note);
+  }
+
+  return wrap;
+}
+
 /* ---------------- vue roster ---------------- */
 
 const MSG_STATIC = 'Version consultable : la modification du roster se fait sur l’instance locale.';
@@ -2777,6 +3229,12 @@ function renderHeader() {
         ? 'Choisis une source ci-dessous'
         : 'Sur quoi votre guilde doit rand — choisis raid ou Mythique+';
     }
+  } else if (activeView === 'conso' && spec) {
+    const entree = wowheadStore.specs[spec.key];
+    const conso = entree && entree.consumables;
+    els.sub.textContent = conso && conso.available
+      ? `Flacon, potions, huile d'arme, rune et nourriture — guide Wowhead`
+      : 'Aucun tableau de consommables en cache pour cette spec';
   } else if (activeView === 'mplus' && spec) {
     const played = membersBySpec().get(spec.key) || [];
     els.sub.textContent = played.length
@@ -2862,6 +3320,7 @@ function renderContent() {
   renderListPicker();
   if (activeView === 'roster') els.content.appendChild(renderRoster());
   else if (activeView === 'rand') els.content.appendChild(renderRand());
+  else if (activeView === 'conso') els.content.appendChild(renderConsumables());
   else if (activeView === 'mplus') els.content.appendChild(renderMplus());
   else els.content.appendChild(renderList(spec ? entryFor(spec.key) : null, spec && spec.key));
   refreshTooltips();
@@ -2908,6 +3367,23 @@ async function loadTrinkets() {
   const res = await fetch(API.trinkets);
   const data = await res.json();
   trinketStore = data && typeof data.specs === 'object' ? data : { specs: {} };
+}
+
+/**
+ * Tier lists Wowhead. Le fichier peut ne pas exister encore (aucune spec rafraichie
+ * depuis l'ajout de cette source) : c'est un complement, son absence ne doit pas
+ * empecher le reste de s'afficher.
+ */
+async function loadWowhead() {
+  try {
+    const res = await fetch(API.wowhead);
+    if (!res.ok) return;
+    const data = await res.json();
+    wowheadStore = data && typeof data.specs === 'object' ? data : { specs: {} };
+  } catch (err) {
+    wowheadStore = { specs: {} };
+  }
+  categoriesParSpec.clear();
 }
 
 async function loadStore() {
@@ -2986,7 +3462,7 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
 
 (async function init() {
   try {
-    await Promise.all([loadSpecs(), loadRoster(), loadStore(), loadTrinkets()]);
+    await Promise.all([loadSpecs(), loadRoster(), loadStore(), loadTrinkets(), loadWowhead()]);
     // Etat de depart : l'ecran d'accueil de la guilde, onglets masques.
     selectView('rand', 'guild');
     render();

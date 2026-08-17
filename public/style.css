@@ -1194,6 +1194,45 @@ a.pd-catalyst:hover {
   font-size: 0.72rem;
 }
 
+/* Sélecteur de source : Wowhead ou Icy Veins. Poussé à droite de l'en-tête, il ne
+   déplace pas le titre du panneau quand on bascule. */
+.tp-choix {
+  display: inline-flex;
+  gap: 0.2rem;
+  margin-left: auto;
+  padding: 0.12rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--panel-2);
+}
+
+.tp-choix-btn {
+  font: inherit;
+  font-size: 0.74rem;
+  padding: 0.15rem 0.6rem;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted-2);
+  cursor: pointer;
+}
+
+.tp-choix-btn:hover:not(:disabled):not(.is-active) {
+  color: var(--text);
+}
+
+.tp-choix-btn.is-active {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  color: var(--accent);
+}
+
+/* Source sans données pour cette spec : le bouton reste visible, pour qu'on voie
+   qu'elle existe, mais il ne promet rien. */
+.tp-choix-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
 .tp-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1707,4 +1746,221 @@ a.pd-catalyst:hover {
   .legend-meta {
     margin-left: 0;
   }
+}
+
+/* ---------------- Consommables ---------------- */
+
+.conso-table {
+  width: 100%;
+}
+
+.conso-type {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  width: 1%;
+}
+
+/* Plusieurs objets sur une ligne quand l'auteur les donne comme équivalents. */
+.conso-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.conso-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.25rem 0.6rem 0.25rem 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--panel-2);
+}
+
+.conso-icone {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: block;
+  flex: none;
+}
+
+.conso-nom {
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+/* ---------------- Tier list Wowhead ---------------- */
+
+/* Cases de provenance, reprises de celles du site : chacune a sa couleur, et on lit
+   d'un coup ce qui est affiché. */
+.wh-filtres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.6rem 0.75rem 0;
+}
+
+.wh-filtre {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid color-mix(in srgb, var(--cat) 55%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cat) 10%, transparent);
+  color: var(--muted);
+  font-size: 0.78rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wh-filtre:hover {
+  color: var(--text);
+}
+
+.wh-filtre input {
+  accent-color: var(--cat);
+  width: 13px;
+  height: 13px;
+  cursor: inherit;
+}
+
+/* Une couleur par provenance, la même que sur le contour des bijoux. */
+.wh-filtre--raid {
+  --cat: #b477e0;
+}
+.wh-filtre--dungeon {
+  --cat: #4a9fe0;
+}
+.wh-filtre--delves {
+  --cat: #4fbf6a;
+}
+.wh-filtre--crafting {
+  --cat: #e0723a;
+}
+
+/* La liste BiS choisie filtre déjà : on le dit à la place des cases. */
+.wh-note-filtre {
+  margin: 0.5rem 0.75rem 0;
+  color: var(--muted-2);
+  font-size: 0.76rem;
+}
+
+.wh-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.6rem 0.75rem 0.75rem;
+}
+
+/* Un rang par ligne : la pastille de gauche, les bijoux à droite. */
+.wh-tier {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.wh-rang {
+  flex: none;
+  width: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--rang, var(--panel-2));
+  color: #16181d;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+/* Dégradé classique des tier lists : S chaud, D neutre. Un rang non prévu (F, S+)
+   retombe sur le fond neutre plutôt que sur une couleur inventée. */
+.wh-rang--s {
+  --rang: #e08a2e;
+}
+.wh-rang--a {
+  --rang: #a855c9;
+}
+.wh-rang--b {
+  --rang: #3b82d9;
+}
+.wh-rang--c {
+  --rang: #4fbf6a;
+}
+.wh-rang--d {
+  --rang: #cfd3da;
+}
+
+/* Certains guides descendent jusqu'à F, d'autres montent à S+ (qui retombe sur le
+   style S, la ponctuation étant retirée du nom de classe). */
+.wh-rang--f {
+  --rang: #8b8f98;
+}
+
+.wh-contenu {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-content: center;
+  padding: 0.3rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel-2);
+  min-height: 44px;
+}
+
+.wh-bijou {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 15rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--panel);
+}
+
+/* Contour coloré par provenance, comme la case de filtre correspondante. */
+.wh-bijou--raid {
+  border-color: color-mix(in srgb, #b477e0 60%, transparent);
+}
+.wh-bijou--dungeon {
+  border-color: color-mix(in srgb, #4a9fe0 60%, transparent);
+}
+.wh-bijou--delves {
+  border-color: color-mix(in srgb, #4fbf6a 60%, transparent);
+}
+.wh-bijou--crafting {
+  border-color: color-mix(in srgb, #e0723a 60%, transparent);
+}
+
+/* Retenu dans la liste BiS du guide : le seul marquage qui prime sur la provenance. */
+.wh-bijou--bis {
+  box-shadow: 0 0 0 1px var(--amber);
+}
+
+.wh-icone {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: block;
+  flex: none;
+}
+
+.wh-nom {
+  font-size: 0.8rem;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wh-vide {
+  color: var(--muted-2);
+  font-size: 0.78rem;
+  padding: 0 0.4rem;
 }

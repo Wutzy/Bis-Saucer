@@ -6,9 +6,17 @@ const express = require('express');
 const { SPECS, specKey, findSpec, guideUrl } = require('./src/specs');
 const { CLASSES } = require('./src/classes');
 const { readRoster, updateMember, addMember, removeMember } = require('./src/roster');
-const { readStore, saveSpecEntry, readTrinkets, saveTrinketEntry } = require('./src/store');
+const {
+  readStore,
+  saveSpecEntry,
+  readTrinkets,
+  saveTrinketEntry,
+  readWowhead,
+  saveWowheadEntry,
+} = require('./src/store');
 const { scrapeGuide, ScrapeError } = require('./src/icyveins');
 const { fetchTrinkets } = require('./src/bloodmallet');
+const { fetchTrinketTiers, fetchConsumables } = require('./src/wowhead');
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
@@ -114,6 +122,11 @@ app.get('/api/trinkets', (req, res) => {
   res.json(readTrinkets());
 });
 
+/** Tier lists de bijoux Wowhead (data/wowhead.json). Aucun appel reseau. */
+app.get('/api/wowhead', (req, res) => {
+  res.json(readWowhead());
+});
+
 /** Scrape a la demande d'une classe/spec. */
 app.post('/api/scrape', async (req, res) => {
   const body = req.body || {};
@@ -193,7 +206,45 @@ app.post('/api/scrape', async (req, res) => {
       console.warn(`[bloodmallet] ${key} indisponible : ${err.message}`);
     }
 
-    return res.json({ entry: record, trinkets });
+    // Guides Wowhead : tier list de bijoux et consommables. Non bloquants pour les
+    // memes raisons que Bloodmallet — ce sont des complements, et une page qui change
+    // de forme ne doit pas faire echouer la mise a jour du BiS.
+    let wowhead = null;
+    const partiel = { key, fetchedAt: new Date().toISOString() };
+
+    try {
+      partiel.trinkets = await fetchTrinketTiers(entry.class, entry.spec);
+      const total = partiel.trinkets.tiers.reduce((s, t) => s + t.items.length, 0);
+      console.log(
+        `[wowhead] ${key} bijoux : ${
+          partiel.trinkets.available
+            ? `${partiel.trinkets.tiers.length} rangs, ${total} bijoux`
+            : 'pas de tier list'
+        }`
+      );
+    } catch (err) {
+      console.warn(`[wowhead] ${key} bijoux indisponibles : ${err.message}`);
+    }
+
+    try {
+      partiel.consumables = await fetchConsumables(entry.class, entry.spec, entry.role);
+      console.log(
+        `[wowhead] ${key} conso : ${
+          partiel.consumables.available
+            ? `${partiel.consumables.rows.length} ligne(s)`
+            : 'pas de tableau'
+        }`
+      );
+    } catch (err) {
+      console.warn(`[wowhead] ${key} conso indisponibles : ${err.message}`);
+    }
+
+    if (partiel.trinkets || partiel.consumables) {
+      wowhead = partiel;
+      saveWowheadEntry(key, wowhead);
+    }
+
+    return res.json({ entry: record, trinkets, wowhead });
   } catch (err) {
     const isScrapeError = err instanceof ScrapeError;
     console.error(`[scrape] echec ${key} : ${err.message}`);

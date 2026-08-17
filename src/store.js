@@ -6,6 +6,7 @@ const path = require('path');
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const STORE_PATH = path.join(DATA_DIR, 'bis.json');
 const TRINKETS_PATH = path.join(DATA_DIR, 'trinkets.json');
+const WOWHEAD_PATH = path.join(DATA_DIR, 'wowhead.json');
 
 const EMPTY_STORE = { version: 1, specs: {} };
 
@@ -71,12 +72,43 @@ function saveTrinketEntry(key, entry) {
   return store;
 }
 
+/* ------------------------------------------------------------------ */
+/* Tier lists de bijoux (Wowhead), meme mecanique, fichier separe       */
+/* ------------------------------------------------------------------ */
+
+function readWowhead() {
+  try {
+    const parsed = JSON.parse(fs.readFileSync(WOWHEAD_PATH, 'utf8'));
+    if (parsed && typeof parsed.specs === 'object') return parsed;
+  } catch (err) {
+    if (err.code !== 'ENOENT') {
+      console.warn(`[store] data/wowhead.json illisible (${err.message}), cache ignoré.`);
+    }
+  }
+  return { version: 1, specs: {} };
+}
+
+function saveWowheadEntry(key, entry) {
+  const store = readWowhead();
+  store.specs[key] = entry;
+  store.updatedAt = new Date().toISOString();
+
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  const tmpPath = `${WOWHEAD_PATH}.tmp`;
+  fs.writeFileSync(tmpPath, JSON.stringify(store, null, 2), 'utf8');
+  fs.renameSync(tmpPath, WOWHEAD_PATH);
+  return store;
+}
+
 module.exports = {
   readStore,
   writeStore,
   saveSpecEntry,
   readTrinkets,
   saveTrinketEntry,
+  readWowhead,
+  saveWowheadEntry,
   STORE_PATH,
   TRINKETS_PATH,
+  WOWHEAD_PATH,
 };
