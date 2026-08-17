@@ -3977,7 +3977,7 @@
     },
     "shaman-elemental": {
       "key": "shaman-elemental",
-      "fetchedAt": "2026-08-17T05:05:12.221Z",
+      "fetchedAt": "2026-08-17T13:56:47.439Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/elemental/bis-gear",
         "available": true,
@@ -6158,5 +6158,5 @@
       }
     }
   },
-  "updatedAt": "2026-08-17T12:40:17.361Z"
+  "updatedAt": "2026-08-17T13:56:47.559Z"
 }

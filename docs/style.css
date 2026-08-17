@@ -15,6 +15,13 @@
   --amber-bg: #302514;
   --error: #e06c6c;
   --spec: var(--accent); /* surchargee par la couleur de classe */
+
+  /* Provenance d'un objet. Une seule definition pour toute l'application : un bleu
+     veut dire « donjon » aussi bien sur une carte BiS que dans la tier list Wowhead. */
+  --src-raid: #b477e0;
+  --src-dungeon: #4a9fe0;
+  --src-delves: #4fbf6a;
+  --src-crafting: #e0723a;
 }
 
 * {
@@ -914,6 +921,87 @@ tbody tr:last-child td {
 
 .pd-item--catalyst {
   border-color: color-mix(in srgb, var(--amber) 35%, var(--border));
+}
+
+/* Provenance : liseré sur le bord intérieur de la carte, plus une teinte de fond
+   très légère. On n'utilise pas la bordure, déjà porteuse de la mention Catalyseur —
+   les deux informations doivent pouvoir cohabiter sur une même pièce. */
+.pd-item--raid,
+.pd-item--dungeon {
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--src) 9%, var(--panel-2)),
+    var(--panel-2) 60%
+  );
+}
+
+.pd-item--raid::after,
+.pd-item--dungeon::after {
+  content: '';
+  position: absolute;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  left: 0;
+  width: 4px;
+  border-radius: 0 3px 3px 0;
+  background: var(--src);
+}
+
+/* Colonne de droite : la carte est en row-reverse, son bord de lecture est à droite. */
+.pd-item--right.pd-item--raid,
+.pd-item--right.pd-item--dungeon {
+  background: linear-gradient(
+    to left,
+    color-mix(in srgb, var(--src) 9%, var(--panel-2)),
+    var(--panel-2) 60%
+  );
+}
+
+.pd-item--right.pd-item--raid::after,
+.pd-item--right.pd-item--dungeon::after {
+  left: auto;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.pd-item--raid {
+  --src: var(--src-raid);
+}
+
+.pd-item--dungeon {
+  --src: var(--src-dungeon);
+}
+
+/* Légende des deux couleurs, au-dessus de la grille. */
+.pd-legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.pd-legende-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--muted-2);
+  font-size: 0.74rem;
+}
+
+.pd-legende-item::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: var(--src);
+}
+
+.pd-legende-item--raid {
+  --src: var(--src-raid);
+}
+
+.pd-legende-item--dungeon {
+  --src: var(--src-dungeon);
 }
 
 /* Pièce de set à récupérer en donjon : bordure plus épaisse et plus marquée.
@@ -1848,18 +1936,18 @@ a.pd-catalyst:hover {
   cursor: inherit;
 }
 
-/* Une couleur par provenance, la même que sur le contour des bijoux. */
+/* Une couleur par provenance, celle de :root — la même que sur les cartes BiS. */
 .wh-filtre--raid {
-  --cat: #b477e0;
+  --cat: var(--src-raid);
 }
 .wh-filtre--dungeon {
-  --cat: #4a9fe0;
+  --cat: var(--src-dungeon);
 }
 .wh-filtre--delves {
-  --cat: #4fbf6a;
+  --cat: var(--src-delves);
 }
 .wh-filtre--crafting {
-  --cat: #e0723a;
+  --cat: var(--src-crafting);
 }
 
 /* La liste BiS choisie filtre déjà : on le dit à la place des cases. */
@@ -1945,16 +2033,16 @@ a.pd-catalyst:hover {
 
 /* Contour coloré par provenance, comme la case de filtre correspondante. */
 .wh-bijou--raid {
-  border-color: color-mix(in srgb, #b477e0 60%, transparent);
+  border-color: color-mix(in srgb, var(--src-raid) 60%, transparent);
 }
 .wh-bijou--dungeon {
-  border-color: color-mix(in srgb, #4a9fe0 60%, transparent);
+  border-color: color-mix(in srgb, var(--src-dungeon) 60%, transparent);
 }
 .wh-bijou--delves {
-  border-color: color-mix(in srgb, #4fbf6a 60%, transparent);
+  border-color: color-mix(in srgb, var(--src-delves) 60%, transparent);
 }
 .wh-bijou--crafting {
-  border-color: color-mix(in srgb, #e0723a 60%, transparent);
+  border-color: color-mix(in srgb, var(--src-crafting) 60%, transparent);
 }
 
 /* Retenu dans la liste BiS du guide : le seul marquage qui prime sur la provenance. */

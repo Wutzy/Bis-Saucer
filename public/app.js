@@ -1107,6 +1107,14 @@ function paperdollCard(item, sourceKinds, specKey) {
   if (item.empty) card.classList.add('pd-item--empty');
   if (item.catalyst) card.classList.add('pd-item--catalyst');
 
+  // Provenance de la pièce : raid ou donjon. Elle colore un liseré sur le bord de
+  // la carte — pas la bordure, déjà prise par la mention Catalyseur. Les mêmes
+  // couleurs que la tier list Wowhead, pour qu'un bleu veuille dire « donjon » partout.
+  const provenance = sourceKinds && item.source ? sourceKinds.get(item.source) : null;
+  if (provenance === 'raid' || provenance === 'dungeon') {
+    card.classList.add(`pd-item--${provenance}`);
+  }
+
   // Pièce de set à récupérer en donjon : c'est la plus contraignante à obtenir
   // (il faut farmer le donjon puis catalyser), donc elle est mise en avant.
   if (item.catalyst && sourceKinds && sourceKinds.get(item.source) === 'dungeon') {
@@ -1204,6 +1212,29 @@ function renderList(entry, key) {
 
   const wrap = document.createElement('div');
   wrap.className = 'paperdoll';
+
+  // Une couleur sans mode d'emploi ne dit rien : la légende n'apparaît que si les
+  // deux provenances sont effectivement représentées dans la liste affichée.
+  const provenances = new Set(
+    items
+      .filter((i) => !i.empty && i.source)
+      .map((i) => sourceKinds.get(i.source))
+      .filter((k) => k === 'raid' || k === 'dungeon')
+  );
+  if (provenances.size > 1) {
+    const legende = document.createElement('div');
+    legende.className = 'pd-legende';
+    for (const [kind, label] of [
+      ['raid', 'Raid'],
+      ['dungeon', 'Mythique+'],
+    ]) {
+      const chip = document.createElement('span');
+      chip.className = `pd-legende-item pd-legende-item--${kind}`;
+      chip.textContent = label;
+      legende.appendChild(chip);
+    }
+    wrap.appendChild(legende);
+  }
 
   const grid = document.createElement('div');
   grid.className = 'pd-grid';
@@ -1391,7 +1422,10 @@ function buildSourceIndex(rawLabels) {
  * affichee et au reperage des copains qui ont interet a farmer le meme donjon.
  */
 function buildDungeonIndex() {
-  const { played, specs: usedSpecs } = scoredSpecs();
+  // `played` sert uniquement a nommer les camarades ; l'indexation, elle, couvre toutes
+  // les specs en cache, une spec sans joueur gardant ses propres donjons a farmer.
+  const played = membersBySpec();
+  const usedSpecs = specsAvecCache();
 
   const sourceIndex = buildSourceIndex(
     usedSpecs.flatMap((spec) =>
@@ -1762,6 +1796,18 @@ function renderMplus() {
 /* ---------------- vue butin par boss ---------------- */
 
 /** Specs prises en compte : celles jouees dans le roster, sinon tout ce qui est en cache. */
+/**
+ * Specs dont on a les listes, qu'elles soient jouees ou non.
+ *
+ * A distinguer de `scoredSpecs()` : le butin de guilde n'a de sens qu'avec des joueurs
+ * devant, mais tout ce qui decrit une spec pour elle-meme — sa liste BiS, ses donjons a
+ * farmer, ses consommables — reste valable meme si personne ne la joue en ce moment.
+ * Un reroll ne doit pas vider ses vues.
+ */
+function specsAvecCache() {
+  return visibleSpecs().filter((s) => entryFor(s.key));
+}
+
 function scoredSpecs() {
   const played = membersBySpec();
   const cached = visibleSpecs().filter((s) => entryFor(s.key));
@@ -1779,7 +1825,9 @@ function scoredSpecs() {
  * (C'est ainsi qu'on voit que Tidebound Grotto est bien une source de raid.)
  */
 function classifySources() {
-  const { specs: usedSpecs } = scoredSpecs();
+  // Toutes les specs en cache : la nature d'une source est un fait des guides, pas
+  // une consequence de la composition du roster.
+  const usedSpecs = specsAvecCache();
   const counts = new Map();
 
   for (const spec of usedSpecs) {
