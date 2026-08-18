@@ -3,7 +3,7 @@
   "specs": {
     "death-knight-blood": {
       "key": "death-knight-blood",
-      "fetchedAt": "2026-08-17T05:03:59.298Z",
+      "fetchedAt": "2026-08-18T04:57:53.878Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear",
         "available": true,
@@ -287,7 +287,7 @@
     },
     "death-knight-frost": {
       "key": "death-knight-frost",
-      "fetchedAt": "2026-08-17T05:04:04.155Z",
+      "fetchedAt": "2026-08-18T04:57:58.935Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/frost/bis-gear",
         "available": true,
@@ -538,7 +538,7 @@
     },
     "demon-hunter-havoc": {
       "key": "demon-hunter-havoc",
-      "fetchedAt": "2026-08-17T05:04:09.206Z",
+      "fetchedAt": "2026-08-18T04:58:02.924Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/bis-gear",
         "available": true,
@@ -908,7 +908,7 @@
     },
     "druid-balance": {
       "key": "druid-balance",
-      "fetchedAt": "2026-08-17T05:04:13.481Z",
+      "fetchedAt": "2026-08-18T04:58:11.126Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/balance/bis-gear",
         "available": true,
@@ -1180,7 +1180,7 @@
     },
     "druid-restoration": {
       "key": "druid-restoration",
-      "fetchedAt": "2026-08-17T05:04:21.189Z",
+      "fetchedAt": "2026-08-18T04:58:19.136Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/restoration/bis-gear",
         "available": true,
@@ -1505,7 +1505,7 @@
     },
     "hunter-beast-mastery": {
       "key": "hunter-beast-mastery",
-      "fetchedAt": "2026-08-17T05:04:26.208Z",
+      "fetchedAt": "2026-08-18T04:58:24.011Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/beast-mastery/bis-gear",
         "available": true,
@@ -1849,7 +1849,7 @@
     },
     "mage-fire": {
       "key": "mage-fire",
-      "fetchedAt": "2026-08-17T05:04:36.086Z",
+      "fetchedAt": "2026-08-18T04:58:33.497Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear",
         "available": true,
@@ -2238,7 +2238,7 @@
     },
     "paladin-holy": {
       "key": "paladin-holy",
-      "fetchedAt": "2026-08-17T05:04:44.519Z",
+      "fetchedAt": "2026-08-18T04:58:41.792Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/holy/bis-gear",
         "available": true,
@@ -2524,7 +2524,7 @@
     },
     "paladin-protection": {
       "key": "paladin-protection",
-      "fetchedAt": "2026-08-17T05:04:49.233Z",
+      "fetchedAt": "2026-08-18T04:58:46.193Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/protection/bis-gear",
         "available": true,
@@ -2841,7 +2841,7 @@
     },
     "paladin-retribution": {
       "key": "paladin-retribution",
-      "fetchedAt": "2026-08-17T05:04:53.426Z",
+      "fetchedAt": "2026-08-18T04:58:50.304Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/retribution/bis-gear",
         "available": true,
@@ -3170,7 +3170,7 @@
     },
     "priest-discipline": {
       "key": "priest-discipline",
-      "fetchedAt": "2026-08-17T05:04:57.540Z",
+      "fetchedAt": "2026-08-18T04:58:54.081Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/priest/discipline/bis-gear",
         "available": true,
@@ -3182,15 +3182,6 @@
                 "itemId": 270167,
                 "name": "Wavecaller's Seastone",
                 "icon": "inv_tradeskillitem_sorcererswater",
-                "quality": 4,
-                "categories": [
-                  "raid"
-                ]
-              },
-              {
-                "itemId": 270162,
-                "name": "Soulcoiler Ritual Vessel",
-                "icon": "inv_121_trinket_raid_ulatek_ritualvessel",
                 "quality": 4,
                 "categories": [
                   "raid"
@@ -3211,12 +3202,12 @@
             "rank": "A",
             "items": [
               {
-                "itemId": 250215,
-                "name": "Freightrunner's Flask",
-                "icon": "inv_alchemy_90_flask_red",
-                "quality": 3,
+                "itemId": 270162,
+                "name": "Soulcoiler Ritual Vessel",
+                "icon": "inv_121_trinket_raid_ulatek_ritualvessel",
+                "quality": 4,
                 "categories": [
-                  "dungeon"
+                  "raid"
                 ]
               },
               {
@@ -3227,7 +3218,12 @@
                 "categories": [
                   "raid"
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "rank": "B",
+            "items": [
               {
                 "itemId": 251792,
                 "name": "Glorious Crusader's Keepsake",
@@ -3236,12 +3232,7 @@
                 "categories": [
                   "delves"
                 ]
-              }
-            ]
-          },
-          {
-            "rank": "B",
-            "items": [
+              },
               {
                 "itemId": 248583,
                 "name": "Drum of Renewed Bonds",
@@ -3261,9 +3252,9 @@
                 ]
               },
               {
-                "itemId": 250255,
-                "name": "Unstable Felheart Crystal",
-                "icon": "tooltip_crystallizedfel",
+                "itemId": 250214,
+                "name": "Lightspire Core",
+                "icon": "inv_enchant_essenceastrallarge",
                 "quality": 3,
                 "categories": [
                   "dungeon"
@@ -3293,9 +3284,18 @@
                 ]
               },
               {
-                "itemId": 250214,
-                "name": "Lightspire Core",
-                "icon": "inv_enchant_essenceastrallarge",
+                "itemId": 250215,
+                "name": "Freightrunner's Flask",
+                "icon": "inv_alchemy_90_flask_red",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250255,
+                "name": "Unstable Felheart Crystal",
+                "icon": "tooltip_crystallizedfel",
                 "quality": 3,
                 "categories": [
                   "dungeon"
@@ -3386,7 +3386,7 @@
     },
     "priest-shadow": {
       "key": "priest-shadow",
-      "fetchedAt": "2026-08-17T05:05:02.594Z",
+      "fetchedAt": "2026-08-18T04:58:58.613Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/priest/shadow/bis-gear",
         "available": true,
@@ -3619,7 +3619,7 @@
     },
     "rogue-subtlety": {
       "key": "rogue-subtlety",
-      "fetchedAt": "2026-08-17T05:05:07.394Z",
+      "fetchedAt": "2026-08-18T04:59:03.357Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear",
         "available": true,
@@ -3629,16 +3629,18 @@
             "items": [
               {
                 "itemId": 270175,
-                "name": null,
-                "icon": null,
+                "name": "Voracious Heart of Ula'tek",
+                "icon": "inv_121_trinket_raid_ulatek_heart",
+                "quality": 4,
                 "categories": [
                   "raid"
                 ]
               },
               {
                 "itemId": 270173,
-                "name": null,
-                "icon": null,
+                "name": "Zul'jin's Guillotine Technique",
+                "icon": "inv_121_trinket_raid_ulatek_trolltablet",
+                "quality": 4,
                 "categories": [
                   "raid"
                 ]
@@ -3650,32 +3652,36 @@
             "items": [
               {
                 "itemId": 270164,
-                "name": null,
-                "icon": null,
+                "name": "Gebbo's Bottomless Bag",
+                "icon": "inv_10_tailoring_bag1_color2",
+                "quality": 4,
                 "categories": [
                   "raid"
                 ]
               },
               {
                 "itemId": 250259,
-                "name": null,
-                "icon": null,
+                "name": "Sapling of the Dawnroot",
+                "icon": "inv_misc_herb_nightmarevine",
+                "quality": 3,
                 "categories": [
                   "dungeon"
                 ]
               },
               {
                 "itemId": 270165,
-                "name": null,
-                "icon": null,
+                "name": "Keeper's Seething Core",
+                "icon": "inv_121_trinket_raid_ulatek_golemhearts_green",
+                "quality": 4,
                 "categories": [
                   "raid"
                 ]
               },
               {
                 "itemId": 250215,
-                "name": null,
-                "icon": null,
+                "name": "Freightrunner's Flask",
+                "icon": "inv_alchemy_90_flask_red",
+                "quality": 3,
                 "categories": [
                   "dungeon"
                 ]
@@ -3687,48 +3693,54 @@
             "items": [
               {
                 "itemId": 250214,
-                "name": null,
-                "icon": null,
+                "name": "Lightspire Core",
+                "icon": "inv_enchant_essenceastrallarge",
+                "quality": 3,
                 "categories": [
                   "dungeon"
                 ]
               },
               {
                 "itemId": 270166,
-                "name": null,
-                "icon": null,
+                "name": "Vashnik's Sanguine Rancor",
+                "icon": "inv_11_0_raid_gruesomesyringe_blue",
+                "quality": 4,
                 "categories": [
                   "raid"
                 ]
               },
               {
                 "itemId": 159617,
-                "name": null,
-                "icon": null,
+                "name": "Lustrous Golden Plumage",
+                "icon": "inv_icon_feather06a",
+                "quality": 3,
                 "categories": [
                   "dungeon"
                 ]
               },
               {
                 "itemId": 273797,
-                "name": null,
-                "icon": null,
+                "name": "Tattered Amani War Banner",
+                "icon": "inv_121_trinket_dungeon_ulatek_banner",
+                "quality": 3,
                 "categories": [
                   "dungeon"
                 ]
               },
               {
                 "itemId": 251785,
-                "name": null,
-                "icon": null,
+                "name": "Void-Reaper's Libram",
+                "icon": "inv_12_trinket_void_reaperslibram",
+                "quality": 4,
                 "categories": [
                   "dungeon"
                 ]
               },
               {
                 "itemId": 270168,
-                "name": null,
-                "icon": null,
+                "name": "Font of Venomous Rage",
+                "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green",
+                "quality": 4,
                 "categories": [
                   "raid"
                 ]
@@ -3740,64 +3752,72 @@
             "items": [
               {
                 "itemId": 273796,
-                "name": null,
-                "icon": null,
+                "name": "Vile Vial of Volatile Venom",
+                "icon": "inv_121_trinket_dungeon_ulatek_vile",
+                "quality": 3,
                 "categories": [
                   "dungeon"
                 ]
               },
               {
                 "itemId": 251792,
-                "name": null,
-                "icon": null,
+                "name": "Glorious Crusader's Keepsake",
+                "icon": "inv_12_trinket_gloriuscrusaderskeepsake",
+                "quality": 4,
                 "categories": [
                   "delves"
                 ]
               },
               {
                 "itemId": 250225,
-                "name": null,
-                "icon": null,
+                "name": "Void Execution Mandate",
+                "icon": "inv_inscription_80_warscroll_intellect",
+                "quality": 3,
                 "categories": [
                   "dungeon"
                 ]
               },
               {
                 "itemId": 193757,
-                "name": null,
-                "icon": null,
+                "name": "Ruby Whelp Shell",
+                "icon": "inv_item_dragonegg_redbroken01",
+                "quality": 3,
                 "categories": [
                   "dungeon"
                 ]
               },
               {
                 "itemId": 274493,
-                "name": null,
-                "icon": null,
+                "name": "Effigy of Ula'tek's Faithful",
+                "icon": "ability_fomor_boss_rune_green",
+                "quality": 4,
                 "categories": [
                   "delves"
                 ]
               },
               {
                 "itemId": 158374,
-                "name": null,
-                "icon": null,
+                "name": "Tiny Electromental in a Jar",
+                "icon": "inv_alchemy_71_potion4",
+                "quality": 3,
                 "categories": [
                   "dungeon"
                 ]
               },
               {
                 "itemId": 250228,
-                "name": null,
-                "icon": null,
+                "name": "Resonant Bellowstone",
+                "icon": "inv_alchemy_90_stone_green",
+                "quality": 3,
                 "categories": [
                   "dungeon"
                 ]
               },
               {
                 "itemId": 248583,
-                "name": null,
-                "icon": null,
+                "name": "Drum of Renewed Bonds",
+                "icon": "inv_archaeology_70_tauren_drum",
+                "quality": 2,
                 "categories": [
                   "delves"
                 ]
@@ -3809,72 +3829,81 @@
             "items": [
               {
                 "itemId": 265657,
-                "name": null,
-                "icon": null,
+                "name": "Fiber of Living Agony",
+                "icon": "ability_rogue_sanguinaryvein",
+                "quality": 2,
                 "categories": [
                   "delves"
                 ]
               },
               {
                 "itemId": 251783,
-                "name": null,
-                "icon": null,
+                "name": "Lost Idol of the Hash'ey",
+                "icon": "inv_12_trinket_grisgrisofconfidenc",
+                "quality": 4,
                 "categories": [
                   "raid"
                 ]
               },
               {
                 "itemId": 246304,
-                "name": null,
-                "icon": null,
+                "name": "Darkmoon Dominion: Hunt",
+                "icon": "inv_12_profession_inscriptions_darkmoondominions_bloom",
+                "quality": 4,
                 "categories": [
                   "crafting"
                 ]
               },
               {
                 "itemId": 241340,
-                "name": null,
-                "icon": null,
+                "name": "Magister's Alchemist Stone",
+                "icon": "inv_12_profession_alchemy_alchemists_stone",
+                "quality": 4,
                 "categories": [
                   "crafting"
                 ]
               },
               {
                 "itemId": 246305,
-                "name": null,
-                "icon": null,
+                "name": "Darkmoon Dominion: Blood",
+                "icon": "inv_12_profession_inscriptions_darkmoondominions_hunt",
+                "quality": 4,
                 "categories": [
                   "crafting"
                 ]
               },
               {
                 "itemId": 246306,
-                "name": null,
-                "icon": null,
+                "name": "Darkmoon Dominion: Rot",
+                "icon": "inv_12_profession_inscriptions_darkmoondominions_rot",
+                "quality": 4,
                 "categories": [
                   "crafting"
                 ]
               },
               {
                 "itemId": 246307,
-                "name": null,
-                "icon": null,
+                "name": "Darkmoon Dominion: Void",
+                "icon": "inv_12_profession_inscriptions_darkmoondominions_void",
+                "quality": 4,
                 "categories": [
                   "crafting"
                 ]
               },
               {
                 "itemId": 274497,
-                "name": null,
-                "icon": null,
+                "name": "Spirit-Rending Poison",
+                "icon": "inv_ability_poison_debuff",
+                "quality": 4,
                 "categories": [
                   "delves"
                 ]
               },
               {
                 "itemId": 274496,
-                "name": null,
-                "icon": null,
+                "name": "Ophidian Bone Whistle",
+                "icon": "inv_misc_coin_12",
+                "quality": 4,
                 "categories": [
                   "delves"
                 ]
@@ -3977,7 +4006,7 @@
     },
     "shaman-elemental": {
       "key": "shaman-elemental",
-      "fetchedAt": "2026-08-17T13:56:47.439Z",
+      "fetchedAt": "2026-08-18T04:59:07.940Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/elemental/bis-gear",
         "available": true,
@@ -4261,7 +4290,7 @@
     },
     "shaman-restoration": {
       "key": "shaman-restoration",
-      "fetchedAt": "2026-08-17T05:05:16.246Z",
+      "fetchedAt": "2026-08-18T04:59:16.241Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/restoration/bis-gear",
         "available": true,
@@ -4277,12 +4306,48 @@
                 "categories": [
                   "raid"
                 ]
+              },
+              {
+                "itemId": 270164,
+                "name": "Gebbo's Bottomless Bag",
+                "icon": "inv_10_tailoring_bag1_color2",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270167,
+                "name": "Wavecaller's Seastone",
+                "icon": "inv_tradeskillitem_sorcererswater",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
               }
             ]
           },
           {
             "rank": "A",
             "items": [
+              {
+                "itemId": 270169,
+                "name": "Hex Lord's Dooming Idol",
+                "icon": "inv_archaeology_orcclans_crackedidol",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 193757,
+                "name": "Ruby Whelp Shell",
+                "icon": "inv_item_dragonegg_redbroken01",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
               {
                 "itemId": 250215,
                 "name": "Freightrunner's Flask",
@@ -4309,7 +4374,12 @@
                 "categories": [
                   "delves"
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "rank": "B",
+            "items": [
               {
                 "itemId": 250214,
                 "name": "Lightspire Core",
@@ -4320,44 +4390,12 @@
                 ]
               },
               {
-                "itemId": 270164,
-                "name": "Gebbo's Bottomless Bag",
-                "icon": "inv_10_tailoring_bag1_color2",
-                "quality": 4,
-                "categories": [
-                  "raid"
-                ]
-              }
-            ]
-          },
-          {
-            "rank": "B",
-            "items": [
-              {
-                "itemId": 250248,
-                "name": "Mycolic Medicine",
-                "icon": "inv_misc_starspecklemushroom",
+                "itemId": 273796,
+                "name": "Vile Vial of Volatile Venom",
+                "icon": "inv_121_trinket_dungeon_ulatek_vile",
                 "quality": 3,
                 "categories": [
                   "dungeon"
-                ]
-              },
-              {
-                "itemId": 270167,
-                "name": "Wavecaller's Seastone",
-                "icon": "inv_tradeskillitem_sorcererswater",
-                "quality": 4,
-                "categories": [
-                  "raid"
-                ]
-              },
-              {
-                "itemId": 249343,
-                "name": "Gaze of the Alnseer",
-                "icon": "inv_12_trinket_raid_dreamrift_gazeofthealnseer",
-                "quality": 4,
-                "categories": [
-                  "raid"
                 ]
               }
             ]
@@ -4366,27 +4404,9 @@
             "rank": "C",
             "items": [
               {
-                "itemId": 250254,
-                "name": "Seed of Radiant Hope",
-                "icon": "inv12_jewelrytrinkets_dungeon_seedofradianthope",
-                "quality": 3,
-                "categories": [
-                  "dungeon"
-                ]
-              },
-              {
-                "itemId": 193757,
-                "name": "Ruby Whelp Shell",
-                "icon": "inv_item_dragonegg_redbroken01",
-                "quality": 3,
-                "categories": [
-                  "dungeon"
-                ]
-              },
-              {
-                "itemId": 250255,
-                "name": "Unstable Felheart Crystal",
-                "icon": "tooltip_crystallizedfel",
+                "itemId": 250248,
+                "name": "Mycolic Medicine",
+                "icon": "inv_misc_starspecklemushroom",
                 "quality": 3,
                 "categories": [
                   "dungeon"
@@ -4398,18 +4418,9 @@
             "rank": "D",
             "items": [
               {
-                "itemId": 270169,
-                "name": "Hex Lord's Dooming Idol",
-                "icon": "inv_archaeology_orcclans_crackedidol",
-                "quality": 4,
-                "categories": [
-                  "raid"
-                ]
-              },
-              {
-                "itemId": 273796,
-                "name": "Vile Vial of Volatile Venom",
-                "icon": "inv_121_trinket_dungeon_ulatek_vile",
+                "itemId": 250255,
+                "name": "Unstable Felheart Crystal",
+                "icon": "tooltip_crystallizedfel",
                 "quality": 3,
                 "categories": [
                   "dungeon"
@@ -4431,6 +4442,38 @@
                 "quality": 4,
                 "categories": [
                   "raid"
+                ]
+              },
+              {
+                "itemId": 250254,
+                "name": "Seed of Radiant Hope",
+                "icon": "inv12_jewelrytrinkets_dungeon_seedofradianthope",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "F",
+            "items": [
+              {
+                "itemId": 193748,
+                "name": "Kyrakka's Searing Embers",
+                "icon": "inv_10_dungeonjewelry_primalist_trinket_4_fire",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 264701,
+                "name": "Cosmic Bell",
+                "icon": "inv_11_0_arathordungeon_bell_color4",
+                "quality": 4,
+                "categories": [
+                  "delves"
                 ]
               }
             ]
@@ -4519,7 +4562,7 @@
     },
     "warlock-affliction": {
       "key": "warlock-affliction",
-      "fetchedAt": "2026-08-17T05:05:21.349Z",
+      "fetchedAt": "2026-08-18T04:59:20.478Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warlock/affliction/bis-gear",
         "available": true,
@@ -4794,7 +4837,7 @@
     },
     "warrior-arms": {
       "key": "warrior-arms",
-      "fetchedAt": "2026-08-17T05:05:25.934Z",
+      "fetchedAt": "2026-08-18T04:59:25.409Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warrior/arms/bis-gear",
         "available": true,
@@ -5031,7 +5074,7 @@
     },
     "monk-windwalker": {
       "key": "monk-windwalker",
-      "fetchedAt": "2026-08-17T05:04:40.618Z",
+      "fetchedAt": "2026-08-18T04:58:38.024Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/monk/windwalker/bis-gear",
         "available": true,
@@ -5297,7 +5340,7 @@
     },
     "druid-feral": {
       "key": "druid-feral",
-      "fetchedAt": "2026-08-17T05:04:17.412Z",
+      "fetchedAt": "2026-08-18T04:58:15.169Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/feral/bis-gear",
         "available": true,
@@ -5568,7 +5611,7 @@
     },
     "hunter-marksmanship": {
       "key": "hunter-marksmanship",
-      "fetchedAt": "2026-08-17T05:04:31.101Z",
+      "fetchedAt": "2026-08-18T04:58:28.437Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear",
         "available": true,
@@ -5576,14 +5619,6 @@
           {
             "rank": "S",
             "items": [
-              {
-                "itemId": 270164,
-                "name": null,
-                "icon": null,
-                "categories": [
-                  "raid"
-                ]
-              },
               {
                 "itemId": 270175,
                 "name": null,
@@ -5606,15 +5641,7 @@
             "rank": "A",
             "items": [
               {
-                "itemId": 270165,
-                "name": null,
-                "icon": null,
-                "categories": [
-                  "raid"
-                ]
-              },
-              {
-                "itemId": 250214,
+                "itemId": 273796,
                 "name": null,
                 "icon": null,
                 "categories": [
@@ -5643,7 +5670,7 @@
             "rank": "B",
             "items": [
               {
-                "itemId": 273796,
+                "itemId": 250225,
                 "name": null,
                 "icon": null,
                 "categories": [
@@ -5651,7 +5678,60 @@
                 ]
               },
               {
-                "itemId": 250225,
+                "itemId": 250215,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270165,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 273797,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270164,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270166,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 250214,
+                "name": null,
+                "icon": null,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "C",
+            "items": [
+              {
+                "itemId": 193757,
                 "name": null,
                 "icon": null,
                 "categories": [
@@ -5667,27 +5747,6 @@
                 ]
               },
               {
-                "itemId": 193757,
-                "name": null,
-                "icon": null,
-                "categories": [
-                  "dungeon"
-                ]
-              },
-              {
-                "itemId": 270166,
-                "name": null,
-                "icon": null,
-                "categories": [
-                  "raid"
-                ]
-              }
-            ]
-          },
-          {
-            "rank": "C",
-            "items": [
-              {
                 "itemId": 158374,
                 "name": null,
                 "icon": null,
@@ -5696,19 +5755,11 @@
                 ]
               },
               {
-                "itemId": 250259,
+                "itemId": 246304,
                 "name": null,
                 "icon": null,
                 "categories": [
-                  "dungeon"
-                ]
-              },
-              {
-                "itemId": 250215,
-                "name": null,
-                "icon": null,
-                "categories": [
-                  "dungeon"
+                  "crafting"
                 ]
               }
             ]
@@ -5717,7 +5768,7 @@
             "rank": "D",
             "items": [
               {
-                "itemId": 273797,
+                "itemId": 250259,
                 "name": null,
                 "icon": null,
                 "categories": [
@@ -5820,7 +5871,7 @@
     },
     "shaman-enhancement": {
       "key": "shaman-enhancement",
-      "fetchedAt": "2026-08-17T12:40:17.262Z",
+      "fetchedAt": "2026-08-18T04:59:12.331Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear",
         "available": true,
@@ -6159,7 +6210,7 @@
     },
     "demon-hunter-devourer": {
       "key": "demon-hunter-devourer",
-      "fetchedAt": "2026-08-17T23:12:51.357Z",
+      "fetchedAt": "2026-08-18T04:58:07.022Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/demon-hunter/devourer/bis-gear",
         "available": true,
@@ -6547,5 +6598,5 @@
       }
     }
   },
-  "updatedAt": "2026-08-17T23:12:51.977Z"
+  "updatedAt": "2026-08-18T04:59:25.439Z"
 }
