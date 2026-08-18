@@ -16,11 +16,12 @@
   --error: #e06c6c;
   --spec: var(--accent); /* surchargee par la couleur de classe */
 
-  /* Provenance d'un objet. Une seule definition pour toute l'application : un bleu
-     veut dire « donjon » aussi bien sur une carte BiS que dans la tier list Wowhead. */
-  --src-raid: #b477e0;
+  /* Provenance d'un objet. Une seule definition pour toute l'application : un vert
+     veut dire « raid » et un bleu « donjon », aussi bien sur une carte BiS que dans la
+     tier list Wowhead. Les gouffres heritent du violet libere par le raid. */
+  --src-raid: #4fbf6a;
   --src-dungeon: #4a9fe0;
-  --src-delves: #4fbf6a;
+  --src-delves: #b477e0;
   --src-crafting: #e0723a;
 }
 
@@ -880,6 +881,9 @@ tbody tr:last-child td {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  /* Les etiquettes de provenance debordent du haut des cartes : la premiere rangee a
+     besoin de cette marge pour ne pas venir toucher ce qui la precede. */
+  padding-top: 0.4rem;
 }
 
 .pd-grid {
@@ -898,6 +902,10 @@ tbody tr:last-child td {
 }
 
 .pd-item {
+  /* `--src` est la couleur de provenance, `--ring` l'anneau interieur du Catalyseur.
+     Neutres par defaut : une carte sans provenance connue garde son aspect d'origine. */
+  --src: var(--border);
+  --ring: transparent;
   position: relative;
   display: flex;
   align-items: center;
@@ -906,6 +914,7 @@ tbody tr:last-child td {
   border: 1px solid var(--border);
   border-radius: 10px;
   background: var(--panel-2);
+  box-shadow: inset 0 0 0 2px var(--ring);
   min-height: 74px;
 }
 
@@ -919,49 +928,57 @@ tbody tr:last-child td {
   background: transparent;
 }
 
+/* Le Catalyseur passe sur l'anneau interieur : la bordure appartient desormais a la
+   provenance, et les deux informations doivent tenir sur une meme piece. */
 .pd-item--catalyst {
-  border-color: color-mix(in srgb, var(--amber) 35%, var(--border));
+  --ring: color-mix(in srgb, var(--amber) 40%, transparent);
 }
 
-/* Provenance : liseré sur le bord intérieur de la carte, plus une teinte de fond
-   très légère. On n'utilise pas la bordure, déjà porteuse de la mention Catalyseur —
-   les deux informations doivent pouvoir cohabiter sur une même pièce. */
+/* Provenance : toute la bordure de la carte, doublee d'une teinte de fond et du
+   contour de l'icone. On veut que la source se lise d'un coup d'oeil sur la grille
+   entiere — violet = raid, bleu = Mythique+ — pas au prix d'un examen carte par carte. */
 .pd-item--raid,
 .pd-item--dungeon {
+  border-color: color-mix(in srgb, var(--src) 75%, transparent);
   background: linear-gradient(
     to right,
-    color-mix(in srgb, var(--src) 9%, var(--panel-2)),
-    var(--panel-2) 60%
+    color-mix(in srgb, var(--src) 17%, var(--panel-2)),
+    color-mix(in srgb, var(--src) 6%, var(--panel-2))
   );
 }
 
-.pd-item--raid::after,
-.pd-item--dungeon::after {
-  content: '';
-  position: absolute;
-  top: 0.35rem;
-  bottom: 0.35rem;
-  left: 0;
-  width: 4px;
-  border-radius: 0 3px 3px 0;
-  background: var(--src);
-}
-
-/* Colonne de droite : la carte est en row-reverse, son bord de lecture est à droite. */
+/* Colonne de droite : la carte est en row-reverse, son bord de lecture est a droite. */
 .pd-item--right.pd-item--raid,
 .pd-item--right.pd-item--dungeon {
   background: linear-gradient(
     to left,
-    color-mix(in srgb, var(--src) 9%, var(--panel-2)),
-    var(--panel-2) 60%
+    color-mix(in srgb, var(--src) 17%, var(--panel-2)),
+    color-mix(in srgb, var(--src) 6%, var(--panel-2))
   );
 }
 
-.pd-item--right.pd-item--raid::after,
-.pd-item--right.pd-item--dungeon::after {
-  left: auto;
-  right: 0;
-  border-radius: 3px 0 0 3px;
+/* Provenance ecrite en toutes lettres, posee sur le trait haut du cadre a la maniere
+   d'une legende de fieldset : la couleur seule se remarquait trop peu, le mot tranche.
+   Hors du flux, elle ne bouscule ni l'icone ni le corps de la carte. */
+.pd-tag {
+  position: absolute;
+  top: -0.45rem;
+  left: 0.6rem;
+  padding: 0 0.35rem;
+  border-radius: 4px;
+  border: 1px solid color-mix(in srgb, var(--src) 55%, transparent);
+  background: color-mix(in srgb, var(--src) 22%, var(--panel));
+  color: color-mix(in srgb, var(--src) 88%, var(--text));
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.pd-item--raid .pd-icon,
+.pd-item--dungeon .pd-icon {
+  border-color: color-mix(in srgb, var(--src) 55%, transparent);
 }
 
 .pd-item--raid {
@@ -972,45 +989,14 @@ tbody tr:last-child td {
   --src: var(--src-dungeon);
 }
 
-/* Légende des deux couleurs, au-dessus de la grille. */
-.pd-legende {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.7rem;
-}
-
-.pd-legende-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  color: var(--muted-2);
-  font-size: 0.74rem;
-}
-
-.pd-legende-item::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 3px;
-  background: var(--src);
-}
-
-.pd-legende-item--raid {
-  --src: var(--src-raid);
-}
-
-.pd-legende-item--dungeon {
-  --src: var(--src-dungeon);
-}
-
-/* Pièce de set à récupérer en donjon : bordure plus épaisse et plus marquée.
-   Le padding compense l'épaisseur pour que la carte garde la même taille. */
+/* Piece de set a recuperer en donjon : la plus contraignante a obtenir (farmer le
+   donjon, puis catalyser). Elle garde le bleu du donjon sur la bordure — sa provenance
+   reste lisible — et l'ambre s'epaissit sur l'anneau. Le padding compense l'epaisseur
+   pour que la carte garde la meme taille. */
 .pd-item--dungeon-set {
+  --ring: color-mix(in srgb, var(--amber) 60%, transparent);
   border-width: 2px;
-  border-color: var(--amber);
   padding: calc(0.6rem - 1px) calc(0.75rem - 1px);
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--amber) 18%, transparent);
 }
 
 .pd-icon {

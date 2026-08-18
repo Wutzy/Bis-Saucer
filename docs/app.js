@@ -1107,12 +1107,17 @@ function paperdollCard(item, sourceKinds, specKey) {
   if (item.empty) card.classList.add('pd-item--empty');
   if (item.catalyst) card.classList.add('pd-item--catalyst');
 
-  // Provenance de la pièce : raid ou donjon. Elle colore un liseré sur le bord de
-  // la carte — pas la bordure, déjà prise par la mention Catalyseur. Les mêmes
-  // couleurs que la tier list Wowhead, pour qu'un bleu veuille dire « donjon » partout.
+  // Provenance de la pièce : raid ou donjon. Elle colore la bordure de la carte ET
+  // s'écrit en toutes lettres sur le trait du haut — une couleur seule se remarque trop
+  // peu quand on balaie la grille. Le Catalyseur, lui, passe sur l'anneau intérieur.
+  // Mêmes couleurs que la tier list Wowhead : un vert veut dire « raid » partout.
   const provenance = sourceKinds && item.source ? sourceKinds.get(item.source) : null;
   if (provenance === 'raid' || provenance === 'dungeon') {
     card.classList.add(`pd-item--${provenance}`);
+    const tag = document.createElement('span');
+    tag.className = 'pd-tag';
+    tag.textContent = provenance === 'raid' ? 'Raid' : 'Donjon';
+    card.appendChild(tag);
   }
 
   // Pièce de set à récupérer en donjon : c'est la plus contraignante à obtenir
@@ -1213,28 +1218,8 @@ function renderList(entry, key) {
   const wrap = document.createElement('div');
   wrap.className = 'paperdoll';
 
-  // Une couleur sans mode d'emploi ne dit rien : la légende n'apparaît que si les
-  // deux provenances sont effectivement représentées dans la liste affichée.
-  const provenances = new Set(
-    items
-      .filter((i) => !i.empty && i.source)
-      .map((i) => sourceKinds.get(i.source))
-      .filter((k) => k === 'raid' || k === 'dungeon')
-  );
-  if (provenances.size > 1) {
-    const legende = document.createElement('div');
-    legende.className = 'pd-legende';
-    for (const [kind, label] of [
-      ['raid', 'Raid'],
-      ['dungeon', 'Mythique+'],
-    ]) {
-      const chip = document.createElement('span');
-      chip.className = `pd-legende-item pd-legende-item--${kind}`;
-      chip.textContent = label;
-      legende.appendChild(chip);
-    }
-    wrap.appendChild(legende);
-  }
+  // Pas de légende de couleurs : chaque carte écrit sa provenance, la répéter en tête
+  // de grille ne dirait rien de plus.
 
   const grid = document.createElement('div');
   grid.className = 'pd-grid';

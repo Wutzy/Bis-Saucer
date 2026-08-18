@@ -150,13 +150,15 @@ haut, elle, reste affichée partout : c'est par elle qu'on en sort, de deux faç
 - **Liste BiS** — présentation « feuille de personnage » reprise du guide : deux colonnes
   d'emplacements, armes en bas, emplacements vides (chemise, tabard) inclus. Chaque carte porte
   l'objet, son emplacement, sa provenance, son enchantement et ses gemmes.
-  Un **liseré coloré** sur le bord intérieur dit d'où tombe la pièce : **violet pour le raid**,
-  **bleu pour le Mythique+**, rien pour le reste (craft, trash). Une légende n'apparaît que si les
-  deux provenances coexistent dans la liste affichée — sur les listes « Raid » ou « Mythic+ », tout
-  est de la même couleur et l'expliquer serait du bruit.
-  Les pièces de set à récupérer **en donjon** ont en plus une bordure ambre plus épaisse : ce sont
-  les plus contraignantes à obtenir, puisqu'il faut farmer le donjon puis catalyser. Les deux
-  marquages cohabitent — le liseré pour la provenance, la bordure pour la contrainte.
+  La provenance est **écrite en toutes lettres** sur le trait haut du cadre, à gauche — « Raid »
+  en vert, « Donjon » en bleu — et la même couleur reprend la bordure de la carte, sa teinte de fond
+  et le tour de l'icône. Le mot d'abord : une couleur seule se remarquait trop peu quand on balaie
+  la grille. Les pièces sans provenance connue (craft, trash) gardent un cadre neutre et pas
+  d'étiquette. Aucune légende n'est nécessaire, chaque carte se nomme elle-même.
+  Les pièces de set à récupérer **en donjon** ont en plus un **anneau ambre** à l'intérieur du
+  contour, épaissi : ce sont les plus contraignantes à obtenir, puisqu'il faut farmer le donjon puis
+  catalyser. Les deux marquages cohabitent sans se disputer le même trait — la bordure pour la
+  provenance, l'anneau intérieur pour la contrainte du Catalyseur.
   Quand le guide publie plusieurs listes (Overall / Mythic+ / Raid, et une déclinaison par talent
   de héros chez certaines specs), un sélecteur apparaît au-dessus.
 - **M+ opti** — le classement des donjons par nombre de pièces BiS à y récupérer, avec la liste
@@ -236,8 +238,9 @@ limiter à ce contenu. Côté tier list Wowhead, les cases de provenance s'effac
 mention — la liste décide déjà, deux filtres concurrents sur le même panneau seraient illisibles.
 
 Les couleurs de provenance sont définies une seule fois, dans `:root`
-([`public/style.css`](public/style.css)) : un bleu veut dire « donjon » aussi bien sur une carte
-BiS que sur les cases et les contours de la tier list Wowhead.
+([`public/style.css`](public/style.css)) : un vert veut dire « raid » et un bleu « donjon », aussi
+bien sur une carte BiS que sur les cases et les contours de la tier list Wowhead. Les gouffres ont
+hérité du violet que le raid a laissé, pour que les quatre provenances restent distinctes.
 
 La provenance d'un bijou se lit sur **trois signaux, du plus précis au plus général**, chacun
 portant sur l'objet lui-même : la catégorie que Bloodmallet lui donne, la provenance lue dans les
