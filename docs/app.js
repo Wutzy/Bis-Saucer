@@ -1189,8 +1189,8 @@ function paperdollCard(item, sourceKinds, specKey) {
 }
 
 /**
- * Presentation "feuille de personnage" : deux colonnes d'emplacements, armes en bas,
- * reprise de la mise en page du guide Icy Veins. L'ordre des objets alterne deja
+ * Presentation "feuille de personnage" : deux colonnes d'emplacements, armes en bas de
+ * l'equipement, reprise de la mise en page du guide Icy Veins. L'ordre des objets alterne deja
  * gauche/droite, on le conserve tel quel dans une grille a deux colonnes.
  */
 function renderList(entry, key) {
@@ -1228,6 +1228,18 @@ function renderList(entry, key) {
   }
   wrap.appendChild(grid);
 
+  // Les armes ferment la feuille de personnage : ce sont des cartes comme celles de la
+  // grille, elles restent avec elles. Les panneaux de bijoux changent de registre
+  // (simulation chiffree, listes editoriales) — les renvoyer apres evite de couper
+  // l'equipement en deux morceaux separes par un tableau.
+  const weapons = items.filter(isWeapon);
+  if (weapons.length) {
+    const row = document.createElement('div');
+    row.className = 'pd-weapons';
+    for (const item of weapons) row.appendChild(paperdollCard(item, sourceKinds, key));
+    wrap.appendChild(row);
+  }
+
   // La simulation d'abord — c'est la lecture chiffree, celle qui tranche — puis une
   // seule des deux listes editoriales, au choix.
   // La liste choisie (Overall / Mythic+ / Raid) vaut aussi pour les bijoux : sur une
@@ -1239,14 +1251,6 @@ function renderList(entry, key) {
     renderListeBijoux(entry, key, bijoux, contenu, sourceKinds),
   ]) {
     if (panneau) wrap.appendChild(panneau);
-  }
-
-  const weapons = items.filter(isWeapon);
-  if (weapons.length) {
-    const row = document.createElement('div');
-    row.className = 'pd-weapons';
-    for (const item of weapons) row.appendChild(paperdollCard(item, sourceKinds, key));
-    wrap.appendChild(row);
   }
 
   return wrap;

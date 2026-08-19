@@ -148,8 +148,9 @@ haut, elle, reste affichée partout : c'est par elle qu'on en sort, de deux faç
 ### Portée « spec »
 
 - **Liste BiS** — présentation « feuille de personnage » reprise du guide : deux colonnes
-  d'emplacements, armes en bas, emplacements vides (chemise, tabard) inclus. Chaque carte porte
-  l'objet, son emplacement, sa provenance, son enchantement et ses gemmes.
+  d'emplacements, armes juste en dessous, emplacements vides (chemise, tabard) inclus — l'équipement
+  tient d'un bloc, avant les panneaux de bijoux qui changent de registre. Chaque carte porte l'objet,
+  son emplacement, sa provenance, son enchantement et ses gemmes.
   La provenance est **écrite en toutes lettres** sur le trait haut du cadre, à gauche — « Raid »
   en vert, « Donjon » en bleu — et la même couleur reprend la bordure de la carte, sa teinte de fond
   et le tour de l'icône. Le mot d'abord : une couleur seule se remarquait trop peu quand on balaie
