@@ -36890,7 +36890,1697 @@
           "gems": []
         }
       ]
+    },
+    "rogue-assassination": {
+      "key": "rogue-assassination",
+      "class": "rogue",
+      "spec": "assassination",
+      "label": "Voleur — Assassinat",
+      "url": "https://www.icy-veins.com/wow/assassination-rogue-pve-dps-gear-best-in-slot",
+      "guideTitle": "Assassination Rogue DPS Gear and Best in Slot — 12.1",
+      "guideAuthor": null,
+      "guideUpdated": null,
+      "tableLabel": "Overall",
+      "lists": [
+        {
+          "label": "Overall",
+          "items": [
+            {
+              "slot": "Helm",
+              "slotFr": "Tête",
+              "align": "left",
+              "empty": false,
+              "itemId": 271875,
+              "originalItemId": null,
+              "wowheadParams": "item=271875&bonus=13847:13848",
+              "name": "Gaze of the Coiled Watcher",
+              "quality": 4,
+              "icon": "inv_helm_leather_raiddruidulatek_d_01",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Empowered Blessing of Speed",
+                "itemId": 243981,
+                "wowheadParams": "item=243981",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Powerful Eversong Diamond",
+                  "itemId": 240967,
+                  "wowheadParams": "item=240967",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange"
+                }
+              ]
+            },
+            {
+              "slot": "Hands",
+              "slotFr": "Mains",
+              "align": "right",
+              "empty": false,
+              "itemId": 271511,
+              "originalItemId": 251124,
+              "wowheadParams": "item=271511&bonus=12854&original-item=251124",
+              "name": "Chosen Bloodslayer's Fanged Grips",
+              "quality": 4,
+              "icon": "inv_glove_leather_raidrogueulatek_d_01",
+              "source": "Entombed Sentinels",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Neck",
+              "slotFr": "Cou",
+              "align": "left",
+              "empty": false,
+              "itemId": 268265,
+              "originalItemId": null,
+              "wowheadParams": "item=268265&bonus=13708:13848",
+              "name": "Aqirbane Reliquary",
+              "quality": 4,
+              "icon": "inv_121_jewelry_neck03_green",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Quick Garnet",
+                  "itemId": 240906,
+                  "wowheadParams": "item=240906",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+                },
+                {
+                  "name": "Flawless Quick Garnet",
+                  "itemId": 240906,
+                  "wowheadParams": "item=240906",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+                }
+              ]
+            },
+            {
+              "slot": "Waist",
+              "slotFr": "Taille",
+              "align": "right",
+              "empty": false,
+              "itemId": 268256,
+              "originalItemId": null,
+              "wowheadParams": "item=268256&bonus=12854",
+              "name": "Sash of the Forlorn Vessel",
+              "quality": 4,
+              "icon": "inv_belt_leather_raiddruidulatek_d_01",
+              "source": "The Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Shoulders",
+              "slotFr": "Épaules",
+              "align": "left",
+              "empty": false,
+              "itemId": 271508,
+              "originalItemId": 251223,
+              "wowheadParams": "item=271508&bonus=12854&original-item=251223",
+              "name": "Chosen Bloodslayer's Voodoo Guards",
+              "quality": 4,
+              "icon": "inv_shoulder_leather_raidrogueulatek_d_01",
+              "source": "Voidscar Arena",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Amirdrassil's Grace",
+                "itemId": 243990,
+                "wowheadParams": "item=243990",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Legs",
+              "slotFr": "Jambes",
+              "align": "right",
+              "empty": false,
+              "itemId": 271509,
+              "originalItemId": 268225,
+              "wowheadParams": "item=271509&bonus=13848&original-item=268225",
+              "name": "Chosen Bloodslayer's Reinforced Pants",
+              "quality": 4,
+              "icon": "inv_pant_leather_raidrogueulatek_d_01",
+              "source": "The Coiled Altar",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Forest Hunter's",
+                "itemId": 244640,
+                "wowheadParams": "item=244640",
+                "icon": "inv_12_profession_leatherworking_amani_armor_kit"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Cloak",
+              "slotFr": "Cape",
+              "align": "left",
+              "empty": false,
+              "itemId": 268253,
+              "originalItemId": null,
+              "wowheadParams": "item=268253&bonus=12854",
+              "name": "Silken Voodoo Drape",
+              "quality": 4,
+              "icon": "inv_cape_leather_raidrogueulatek_d_01",
+              "source": "The Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Feet",
+              "slotFr": "Pieds",
+              "align": "right",
+              "empty": false,
+              "itemId": 251153,
+              "originalItemId": null,
+              "wowheadParams": "item=251153&bonus=12854",
+              "name": "Arctic Explorer's Legwraps",
+              "quality": 3,
+              "icon": "inv_boot_leather_dungeonharronir_c_01",
+              "source": "Den of Nalorakk",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Farstrider's Hunt",
+                "itemId": 244008,
+                "wowheadParams": "item=244008",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Chest",
+              "slotFr": "Torse",
+              "align": "left",
+              "empty": false,
+              "itemId": 271513,
+              "originalItemId": 251159,
+              "wowheadParams": "item=271513&bonus=12854&original-item=251159",
+              "name": "Chosen Bloodslayer's Banded Poncho",
+              "quality": 4,
+              "icon": "inv_chest_leather_raidrogueulatek_d_01",
+              "source": "Den of Nalorakk",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Mark of the Worldsoul",
+                "itemId": 243977,
+                "wowheadParams": "item=243977",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 268249,
+              "originalItemId": null,
+              "wowheadParams": "item=268249&bonus=12854",
+              "name": "Vile Alchemist's Band",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring01_purple",
+              "source": "Vashnik",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Deadly Peridot",
+                  "itemId": 240890,
+                  "wowheadParams": "item=240890",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green"
+                }
+              ]
+            },
+            {
+              "slot": "Shirt",
+              "slotFr": "Chemise",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 273792,
+              "originalItemId": null,
+              "wowheadParams": "item=273792&bonus=12854",
+              "name": "Band of the Amani Warlord",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring02_green",
+              "source": "Altar of Fangs",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Quick Garnet",
+                  "itemId": 240906,
+                  "wowheadParams": "item=240906",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+                }
+              ]
+            },
+            {
+              "slot": "Tabard",
+              "slotFr": "Tabard",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270168,
+              "originalItemId": null,
+              "wowheadParams": "item=270168&bonus=13848",
+              "name": "Font of Venomous Rage",
+              "quality": 4,
+              "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Bracers",
+              "slotFr": "Poignets",
+              "align": "left",
+              "empty": false,
+              "itemId": 244576,
+              "originalItemId": null,
+              "wowheadParams": "item=244576&bonus=13751:12497:13836:8790",
+              "name": "Silvermoon Agent's Deflectors",
+              "quality": 4,
+              "icon": "inv_bracer_leather_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Lapis",
+                  "itemId": 240914,
+                  "wowheadParams": "item=240914",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue"
+                },
+                {
+                  "name": "Adorned Fang",
+                  "itemId": 273068,
+                  "wowheadParams": "item=273068",
+                  "icon": "inv_knife_1h_ulatek_d_01"
+                }
+              ]
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270175,
+              "originalItemId": null,
+              "wowheadParams": "item=270175&bonus=13848",
+              "name": "Voracious Heart of Ula'tek",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_heart",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Main Hand",
+              "slotFr": "Main droite",
+              "align": "right",
+              "empty": false,
+              "itemId": 271093,
+              "originalItemId": null,
+              "wowheadParams": "item=271093&bonus=13848",
+              "name": "Zatha'tek, Breath of Corruption",
+              "quality": 4,
+              "icon": "inv_knife_1h_ulatekfang_d_01_poison",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Acuity of the Ren'dorei",
+                "itemId": 244029,
+                "wowheadParams": "item=244029",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Off Hand",
+              "slotFr": "Main gauche",
+              "align": "left",
+              "empty": false,
+              "itemId": 237837,
+              "originalItemId": null,
+              "wowheadParams": "item=237837&bonus=13751:12497:13836:8790",
+              "name": "Farstrider's Mercy",
+              "quality": 4,
+              "icon": "inv_knife_1h_questbloodelf_b_02",
+              "source": "Craft (Blacksmithing)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Blacksmithing",
+              "enchant": {
+                "name": "Acuity of the Ren'dorei",
+                "itemId": 244029,
+                "wowheadParams": "item=244029",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": [
+                {
+                  "name": "Hunter's Ritual Stone",
+                  "itemId": 273059,
+                  "wowheadParams": "item=273059",
+                  "icon": "inv_12_profession_blacksmithing_weightstone_green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Mythic+",
+          "items": [
+            {
+              "slot": "Helm",
+              "slotFr": "Tête",
+              "align": "left",
+              "empty": false,
+              "itemId": 273791,
+              "originalItemId": null,
+              "wowheadParams": "item=273791&bonus=12854",
+              "name": "Spare Speaker's Hood",
+              "quality": 4,
+              "icon": "inv_helm_leather_outdooramaniloa_c_01",
+              "source": "Altar of Fangs",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Empowered Blessing of Speed",
+                "itemId": 243981,
+                "wowheadParams": "item=243981",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Powerful Eversong Diamond",
+                  "itemId": 240967,
+                  "wowheadParams": "item=240967",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange"
+                }
+              ]
+            },
+            {
+              "slot": "Hands",
+              "slotFr": "Mains",
+              "align": "right",
+              "empty": false,
+              "itemId": 271511,
+              "originalItemId": 251124,
+              "wowheadParams": "item=271511&bonus=12854&original-item=251124",
+              "name": "Chosen Bloodslayer's Fanged Grips",
+              "quality": 4,
+              "icon": "inv_glove_leather_raidrogueulatek_d_01",
+              "source": "Murder Row",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Neck",
+              "slotFr": "Cou",
+              "align": "left",
+              "empty": false,
+              "itemId": 273781,
+              "originalItemId": null,
+              "wowheadParams": "item=273781&bonus=12854",
+              "name": "Strand of Warding Fangs",
+              "quality": 4,
+              "icon": "inv_121_jewelry_neck03_teal",
+              "source": "Altar of Fangs",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Quick Garnet",
+                  "itemId": 240906,
+                  "wowheadParams": "item=240906",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+                }
+              ]
+            },
+            {
+              "slot": "Waist",
+              "slotFr": "Taille",
+              "align": "right",
+              "empty": false,
+              "itemId": 159301,
+              "originalItemId": null,
+              "wowheadParams": "item=159301&bonus=12854",
+              "name": "Primal Dinomancer's Belt",
+              "quality": 4,
+              "icon": "inv_belt_leather_zandalardungeon_c_01",
+              "source": "King's Rest",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Shoulders",
+              "slotFr": "Épaules",
+              "align": "left",
+              "empty": false,
+              "itemId": 271508,
+              "originalItemId": 251223,
+              "wowheadParams": "item=271508&bonus=12854&original-item=251223",
+              "name": "Chosen Bloodslayer's Voodoo Guards",
+              "quality": 4,
+              "icon": "inv_shoulder_leather_raidrogueulatek_d_01",
+              "source": "Voidscar Arena",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Amirdrassil's Grace",
+                "itemId": 243990,
+                "wowheadParams": "item=243990",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Legs",
+              "slotFr": "Jambes",
+              "align": "right",
+              "empty": false,
+              "itemId": 271509,
+              "originalItemId": 268225,
+              "wowheadParams": "item=271509&bonus=12854&original-item=268225",
+              "name": "Chosen Bloodslayer's Reinforced Pants",
+              "quality": 4,
+              "icon": "inv_pant_leather_raidrogueulatek_d_01",
+              "source": "Murder Row",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Forest Hunter's",
+                "itemId": 244640,
+                "wowheadParams": "item=244640",
+                "icon": "inv_12_profession_leatherworking_amani_armor_kit"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Cloak",
+              "slotFr": "Cape",
+              "align": "left",
+              "empty": false,
+              "itemId": 193763,
+              "originalItemId": null,
+              "wowheadParams": "item=193763&bonus=:12854",
+              "name": "Fireproof Drape",
+              "quality": 4,
+              "icon": "inv_mail_dragondungeon_c_01_cape",
+              "source": "Ruby Life Pools",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Feet",
+              "slotFr": "Pieds",
+              "align": "right",
+              "empty": false,
+              "itemId": 251153,
+              "originalItemId": null,
+              "wowheadParams": "item=251153&bonus=12854",
+              "name": "Arctic Explorer's Legwraps",
+              "quality": 3,
+              "icon": "inv_boot_leather_dungeonharronir_c_01",
+              "source": "Den of Nalorakk",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Farstrider's Hunt",
+                "itemId": 244008,
+                "wowheadParams": "item=244008",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Chest",
+              "slotFr": "Torse",
+              "align": "left",
+              "empty": false,
+              "itemId": 271513,
+              "originalItemId": 251159,
+              "wowheadParams": "item=271513&bonus=12854&original-item=251159",
+              "name": "Chosen Bloodslayer's Banded Poncho",
+              "quality": 4,
+              "icon": "inv_chest_leather_raidrogueulatek_d_01",
+              "source": "Den of Nalorakk",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Mark of the Worldsoul",
+                "itemId": 243977,
+                "wowheadParams": "item=243977",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 273792,
+              "originalItemId": null,
+              "wowheadParams": "item=273792&bonus=12854",
+              "name": "Band of the Amani Warlord",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring02_green",
+              "source": "Altar of Fangs",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Deadly Peridot",
+                  "itemId": 240890,
+                  "wowheadParams": "item=240890",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green"
+                }
+              ]
+            },
+            {
+              "slot": "Shirt",
+              "slotFr": "Chemise",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 251136,
+              "originalItemId": null,
+              "wowheadParams": "item=251136&bonus=12854",
+              "name": "Signet of Snarling Servitude",
+              "quality": 3,
+              "icon": "inv_12_jewelry_voidelf_ring_teal",
+              "source": "Murder Row",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Quick Garnet",
+                  "itemId": 240906,
+                  "wowheadParams": "item=240906",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+                }
+              ]
+            },
+            {
+              "slot": "Tabard",
+              "slotFr": "Tabard",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 250259,
+              "originalItemId": null,
+              "wowheadParams": "item=250259&bonus=12854",
+              "name": "Sapling of the Dawnroot",
+              "quality": 3,
+              "icon": "inv_misc_herb_nightmarevine",
+              "source": "Blinding Vale",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Bracers",
+              "slotFr": "Poignets",
+              "align": "left",
+              "empty": false,
+              "itemId": 244576,
+              "originalItemId": null,
+              "wowheadParams": "item=244576&bonus=13751:12497:13836:8790",
+              "name": "Silvermoon Agent's Deflectors",
+              "quality": 4,
+              "icon": "inv_bracer_leather_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Lapis",
+                  "itemId": 240914,
+                  "wowheadParams": "item=240914",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue"
+                },
+                {
+                  "name": "Adorned Fang",
+                  "itemId": 273068,
+                  "wowheadParams": "item=273068",
+                  "icon": "inv_knife_1h_ulatek_d_01"
+                }
+              ]
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 159617,
+              "originalItemId": null,
+              "wowheadParams": "item=159617&bonus=12854",
+              "name": "Lustrous Golden Plumage",
+              "quality": 3,
+              "icon": "inv_icon_feather06a",
+              "source": "King's Rest",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Main Hand",
+              "slotFr": "Main droite",
+              "align": "right",
+              "empty": false,
+              "itemId": 275070,
+              "originalItemId": null,
+              "wowheadParams": "item=275070&bonus=12854",
+              "name": "Sharpened Lightwood Slasher",
+              "quality": 4,
+              "icon": "inv_knife_1h_zuljin_d_01",
+              "source": "Altar of Fangs",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Acuity of the Ren'dorei",
+                "itemId": 244029,
+                "wowheadParams": "item=244029",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Off Hand",
+              "slotFr": "Main gauche",
+              "align": "left",
+              "empty": false,
+              "itemId": 237837,
+              "originalItemId": null,
+              "wowheadParams": "item=237837&bonus=13751:12497:13836:8790",
+              "name": "Farstrider's Mercy",
+              "quality": 4,
+              "icon": "inv_knife_1h_questbloodelf_b_02",
+              "source": "Craft (Blacksmithing)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Blacksmithing",
+              "enchant": {
+                "name": "Acuity of the Ren'dorei",
+                "itemId": 244029,
+                "wowheadParams": "item=244029",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": [
+                {
+                  "name": "Hunter's Ritual Stone",
+                  "itemId": 273059,
+                  "wowheadParams": "item=273059",
+                  "icon": "inv_12_profession_blacksmithing_weightstone_green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Raid",
+          "items": [
+            {
+              "slot": "Helm",
+              "slotFr": "Tête",
+              "align": "left",
+              "empty": false,
+              "itemId": 271875,
+              "originalItemId": null,
+              "wowheadParams": "item=271875&bonus=13847:13848",
+              "name": "Gaze of the Coiled Watcher",
+              "quality": 4,
+              "icon": "inv_helm_leather_raiddruidulatek_d_01",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Empowered Blessing of Speed",
+                "itemId": 243981,
+                "wowheadParams": "item=243981",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Powerful Eversong Diamond",
+                  "itemId": 240967,
+                  "wowheadParams": "item=240967",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange"
+                }
+              ]
+            },
+            {
+              "slot": "Hands",
+              "slotFr": "Mains",
+              "align": "right",
+              "empty": false,
+              "itemId": 271511,
+              "originalItemId": null,
+              "wowheadParams": "item=271511&bonus=12854",
+              "name": "Chosen Bloodslayer's Fanged Grips",
+              "quality": 4,
+              "icon": "inv_glove_leather_raidrogueulatek_d_01",
+              "source": "Entombed Sentinels",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Neck",
+              "slotFr": "Cou",
+              "align": "left",
+              "empty": false,
+              "itemId": 268265,
+              "originalItemId": null,
+              "wowheadParams": "item=268265&bonus=13708:13848",
+              "name": "Aqirbane Reliquary",
+              "quality": 4,
+              "icon": "inv_121_jewelry_neck03_green",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Quick Garnet",
+                  "itemId": 240906,
+                  "wowheadParams": "item=240906",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+                },
+                {
+                  "name": "Flawless Quick Garnet",
+                  "itemId": 240906,
+                  "wowheadParams": "item=240906",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+                }
+              ]
+            },
+            {
+              "slot": "Waist",
+              "slotFr": "Taille",
+              "align": "right",
+              "empty": false,
+              "itemId": 268256,
+              "originalItemId": null,
+              "wowheadParams": "item=268256&bonus=12854",
+              "name": "Sash of the Forlorn Vessel",
+              "quality": 4,
+              "icon": "inv_belt_leather_raiddruidulatek_d_01",
+              "source": "The Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Amethyst",
+                  "itemId": 240898,
+                  "wowheadParams": "item=240898",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                }
+              ]
+            },
+            {
+              "slot": "Shoulders",
+              "slotFr": "Épaules",
+              "align": "left",
+              "empty": false,
+              "itemId": 271508,
+              "originalItemId": null,
+              "wowheadParams": "item=271508&bonus=12854",
+              "name": "Chosen Bloodslayer's Voodoo Guards",
+              "quality": 4,
+              "icon": "inv_shoulder_leather_raidrogueulatek_d_01",
+              "source": "Lost Explorers",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Amirdrassil's Grace",
+                "itemId": 243990,
+                "wowheadParams": "item=243990",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Legs",
+              "slotFr": "Jambes",
+              "align": "right",
+              "empty": false,
+              "itemId": 271509,
+              "originalItemId": 268225,
+              "wowheadParams": "item=271509&bonus=13848&original-item=268225",
+              "name": "Chosen Bloodslayer's Reinforced Pants",
+              "quality": 4,
+              "icon": "inv_pant_leather_raidrogueulatek_d_01",
+              "source": "The Coiled Altar",
+              "catalyst": true,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Forest Hunter's",
+                "itemId": 244640,
+                "wowheadParams": "item=244640",
+                "icon": "inv_12_profession_leatherworking_amani_armor_kit"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Cloak",
+              "slotFr": "Cape",
+              "align": "left",
+              "empty": false,
+              "itemId": 268253,
+              "originalItemId": null,
+              "wowheadParams": "item=268253&bonus=12854",
+              "name": "Silken Voodoo Drape",
+              "quality": 4,
+              "icon": "inv_cape_leather_raidrogueulatek_d_01",
+              "source": "The Coiled Altar",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Feet",
+              "slotFr": "Pieds",
+              "align": "right",
+              "empty": false,
+              "itemId": 268261,
+              "originalItemId": null,
+              "wowheadParams": "item=268261&bonus=12854",
+              "name": "Bespittled Slitherslippers",
+              "quality": 4,
+              "icon": "inv_boot_leather_raidmonkulatek_d_01",
+              "source": "Twin Fangs",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Farstrider's Hunt",
+                "itemId": 244008,
+                "wowheadParams": "item=244008",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Chest",
+              "slotFr": "Torse",
+              "align": "left",
+              "empty": false,
+              "itemId": 271513,
+              "originalItemId": null,
+              "wowheadParams": "item=271513&bonus=12854",
+              "name": "Chosen Bloodslayer's Banded Poncho",
+              "quality": 4,
+              "icon": "inv_chest_leather_raidrogueulatek_d_01",
+              "source": "Vashnik",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Mark of the Worldsoul",
+                "itemId": 243977,
+                "wowheadParams": "item=243977",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 268249,
+              "originalItemId": null,
+              "wowheadParams": "item=268249&bonus=12854",
+              "name": "Vile Alchemist's Band",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring01_purple",
+              "source": "Vashnik",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Deadly Peridot",
+                  "itemId": 240890,
+                  "wowheadParams": "item=240890",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green"
+                }
+              ]
+            },
+            {
+              "slot": "Shirt",
+              "slotFr": "Chemise",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Ring",
+              "slotFr": "Anneau",
+              "align": "right",
+              "empty": false,
+              "itemId": 268252,
+              "originalItemId": null,
+              "wowheadParams": "item=268252&bonus=12854",
+              "name": "Apex Brute's Claw Ring",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring03_red",
+              "source": "Sszorak",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Eyes of the Eagle",
+                "itemId": 243956,
+                "wowheadParams": "item=243956",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+              },
+              "gems": [
+                {
+                  "name": "Flawless Quick Garnet",
+                  "itemId": 240906,
+                  "wowheadParams": "item=240906",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+                }
+              ]
+            },
+            {
+              "slot": "Tabard",
+              "slotFr": "Tabard",
+              "align": "left",
+              "empty": true
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270168,
+              "originalItemId": null,
+              "wowheadParams": "item=270168&bonus=13848",
+              "name": "Font of Venomous Rage",
+              "quality": 4,
+              "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Bracers",
+              "slotFr": "Poignets",
+              "align": "left",
+              "empty": false,
+              "itemId": 244576,
+              "originalItemId": null,
+              "wowheadParams": "item=244576&bonus=13751:12497:13836:8790",
+              "name": "Silvermoon Agent's Deflectors",
+              "quality": 4,
+              "icon": "inv_bracer_leather_questbloodelf_b_01",
+              "source": "Craft (Leatherworking)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Leatherworking",
+              "enchant": null,
+              "gems": [
+                {
+                  "name": "Flawless Deadly Lapis",
+                  "itemId": 240914,
+                  "wowheadParams": "item=240914",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue"
+                },
+                {
+                  "name": "Adorned Fang",
+                  "itemId": 273068,
+                  "wowheadParams": "item=273068",
+                  "icon": "inv_knife_1h_ulatek_d_01"
+                }
+              ]
+            },
+            {
+              "slot": "Trinket",
+              "slotFr": "Bijou",
+              "align": "right",
+              "empty": false,
+              "itemId": 270175,
+              "originalItemId": null,
+              "wowheadParams": "item=270175&bonus=13848",
+              "name": "Voracious Heart of Ula'tek",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_heart",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": null,
+              "gems": []
+            },
+            {
+              "slot": "Main Hand",
+              "slotFr": "Main droite",
+              "align": "right",
+              "empty": false,
+              "itemId": 271093,
+              "originalItemId": null,
+              "wowheadParams": "item=271093&bonus=13848",
+              "name": "Zatha'tek, Breath of Corruption",
+              "quality": 4,
+              "icon": "inv_knife_1h_ulatekfang_d_01_poison",
+              "source": "Ula'tek",
+              "catalyst": false,
+              "crafted": false,
+              "profession": null,
+              "enchant": {
+                "name": "Acuity of the Ren'dorei",
+                "itemId": 244029,
+                "wowheadParams": "item=244029",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": []
+            },
+            {
+              "slot": "Off Hand",
+              "slotFr": "Main gauche",
+              "align": "left",
+              "empty": false,
+              "itemId": 237837,
+              "originalItemId": null,
+              "wowheadParams": "item=237837&bonus=13751:12497:13836:8790",
+              "name": "Farstrider's Mercy",
+              "quality": 4,
+              "icon": "inv_knife_1h_questbloodelf_b_02",
+              "source": "Craft (Blacksmithing)",
+              "catalyst": false,
+              "crafted": true,
+              "profession": "Blacksmithing",
+              "enchant": {
+                "name": "Acuity of the Ren'dorei",
+                "itemId": 244029,
+                "wowheadParams": "item=244029",
+                "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+              },
+              "gems": [
+                {
+                  "name": "Hunter's Ritual Stone",
+                  "itemId": 273059,
+                  "wowheadParams": "item=273059",
+                  "icon": "inv_12_profession_blacksmithing_weightstone_green"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "trinketAdvice": [
+        {
+          "category": "On-Use",
+          "items": [
+            {
+              "itemId": 270175,
+              "wowheadParams": "item=270175",
+              "name": "Voracious Heart of Ula'tek",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_heart"
+            },
+            {
+              "itemId": 159617,
+              "wowheadParams": "item=159617",
+              "name": "Lustrous Golden Plumage",
+              "quality": 3,
+              "icon": "inv_icon_feather06a"
+            }
+          ]
+        },
+        {
+          "category": "Passive",
+          "items": [
+            {
+              "itemId": 270168,
+              "wowheadParams": "item=270168",
+              "name": "Font of Venomous Rage",
+              "quality": 4,
+              "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green"
+            },
+            {
+              "itemId": 270164,
+              "wowheadParams": "item=270164",
+              "name": "Gebbo's Bottomless Bag",
+              "quality": 4,
+              "icon": "inv_10_tailoring_bag1_color2"
+            }
+          ]
+        }
+      ],
+      "provider": "icy-veins",
+      "scrapedAt": "2026-08-19T07:33:33.804Z",
+      "items": [
+        {
+          "slot": "Helm",
+          "slotFr": "Tête",
+          "align": "left",
+          "empty": false,
+          "itemId": 271875,
+          "originalItemId": null,
+          "wowheadParams": "item=271875&bonus=13847:13848",
+          "name": "Gaze of the Coiled Watcher",
+          "quality": 4,
+          "icon": "inv_helm_leather_raiddruidulatek_d_01",
+          "source": "Ula'tek",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Empowered Blessing of Speed",
+            "itemId": 243981,
+            "wowheadParams": "item=243981",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": [
+            {
+              "name": "Powerful Eversong Diamond",
+              "itemId": 240967,
+              "wowheadParams": "item=240967",
+              "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "slotFr": "Mains",
+          "align": "right",
+          "empty": false,
+          "itemId": 271511,
+          "originalItemId": 251124,
+          "wowheadParams": "item=271511&bonus=12854&original-item=251124",
+          "name": "Chosen Bloodslayer's Fanged Grips",
+          "quality": 4,
+          "icon": "inv_glove_leather_raidrogueulatek_d_01",
+          "source": "Entombed Sentinels",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Neck",
+          "slotFr": "Cou",
+          "align": "left",
+          "empty": false,
+          "itemId": 268265,
+          "originalItemId": null,
+          "wowheadParams": "item=268265&bonus=13708:13848",
+          "name": "Aqirbane Reliquary",
+          "quality": 4,
+          "icon": "inv_121_jewelry_neck03_green",
+          "source": "Ula'tek",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": [
+            {
+              "name": "Flawless Quick Garnet",
+              "itemId": 240906,
+              "wowheadParams": "item=240906",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+            },
+            {
+              "name": "Flawless Quick Garnet",
+              "itemId": 240906,
+              "wowheadParams": "item=240906",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+            }
+          ]
+        },
+        {
+          "slot": "Waist",
+          "slotFr": "Taille",
+          "align": "right",
+          "empty": false,
+          "itemId": 268256,
+          "originalItemId": null,
+          "wowheadParams": "item=268256&bonus=12854",
+          "name": "Sash of the Forlorn Vessel",
+          "quality": 4,
+          "icon": "inv_belt_leather_raiddruidulatek_d_01",
+          "source": "The Coiled Altar",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": [
+            {
+              "name": "Flawless Deadly Amethyst",
+              "itemId": 240898,
+              "wowheadParams": "item=240898",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "slotFr": "Épaules",
+          "align": "left",
+          "empty": false,
+          "itemId": 271508,
+          "originalItemId": 251223,
+          "wowheadParams": "item=271508&bonus=12854&original-item=251223",
+          "name": "Chosen Bloodslayer's Voodoo Guards",
+          "quality": 4,
+          "icon": "inv_shoulder_leather_raidrogueulatek_d_01",
+          "source": "Voidscar Arena",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Amirdrassil's Grace",
+            "itemId": 243990,
+            "wowheadParams": "item=243990",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Legs",
+          "slotFr": "Jambes",
+          "align": "right",
+          "empty": false,
+          "itemId": 271509,
+          "originalItemId": 268225,
+          "wowheadParams": "item=271509&bonus=13848&original-item=268225",
+          "name": "Chosen Bloodslayer's Reinforced Pants",
+          "quality": 4,
+          "icon": "inv_pant_leather_raidrogueulatek_d_01",
+          "source": "The Coiled Altar",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Forest Hunter's",
+            "itemId": 244640,
+            "wowheadParams": "item=244640",
+            "icon": "inv_12_profession_leatherworking_amani_armor_kit"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Cloak",
+          "slotFr": "Cape",
+          "align": "left",
+          "empty": false,
+          "itemId": 268253,
+          "originalItemId": null,
+          "wowheadParams": "item=268253&bonus=12854",
+          "name": "Silken Voodoo Drape",
+          "quality": 4,
+          "icon": "inv_cape_leather_raidrogueulatek_d_01",
+          "source": "The Coiled Altar",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Feet",
+          "slotFr": "Pieds",
+          "align": "right",
+          "empty": false,
+          "itemId": 251153,
+          "originalItemId": null,
+          "wowheadParams": "item=251153&bonus=12854",
+          "name": "Arctic Explorer's Legwraps",
+          "quality": 3,
+          "icon": "inv_boot_leather_dungeonharronir_c_01",
+          "source": "Den of Nalorakk",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Farstrider's Hunt",
+            "itemId": 244008,
+            "wowheadParams": "item=244008",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Chest",
+          "slotFr": "Torse",
+          "align": "left",
+          "empty": false,
+          "itemId": 271513,
+          "originalItemId": 251159,
+          "wowheadParams": "item=271513&bonus=12854&original-item=251159",
+          "name": "Chosen Bloodslayer's Banded Poncho",
+          "quality": 4,
+          "icon": "inv_chest_leather_raidrogueulatek_d_01",
+          "source": "Den of Nalorakk",
+          "catalyst": true,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Mark of the Worldsoul",
+            "itemId": 243977,
+            "wowheadParams": "item=243977",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Ring",
+          "slotFr": "Anneau",
+          "align": "right",
+          "empty": false,
+          "itemId": 268249,
+          "originalItemId": null,
+          "wowheadParams": "item=268249&bonus=12854",
+          "name": "Vile Alchemist's Band",
+          "quality": 4,
+          "icon": "inv_121_jewelry_ring01_purple",
+          "source": "Vashnik",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Eyes of the Eagle",
+            "itemId": 243956,
+            "wowheadParams": "item=243956",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": [
+            {
+              "name": "Flawless Deadly Peridot",
+              "itemId": 240890,
+              "wowheadParams": "item=240890",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green"
+            }
+          ]
+        },
+        {
+          "slot": "Shirt",
+          "slotFr": "Chemise",
+          "align": "left",
+          "empty": true
+        },
+        {
+          "slot": "Ring",
+          "slotFr": "Anneau",
+          "align": "right",
+          "empty": false,
+          "itemId": 273792,
+          "originalItemId": null,
+          "wowheadParams": "item=273792&bonus=12854",
+          "name": "Band of the Amani Warlord",
+          "quality": 4,
+          "icon": "inv_121_jewelry_ring02_green",
+          "source": "Altar of Fangs",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Eyes of the Eagle",
+            "itemId": 243956,
+            "wowheadParams": "item=243956",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
+          },
+          "gems": [
+            {
+              "name": "Flawless Quick Garnet",
+              "itemId": 240906,
+              "wowheadParams": "item=240906",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
+            }
+          ]
+        },
+        {
+          "slot": "Tabard",
+          "slotFr": "Tabard",
+          "align": "left",
+          "empty": true
+        },
+        {
+          "slot": "Trinket",
+          "slotFr": "Bijou",
+          "align": "right",
+          "empty": false,
+          "itemId": 270168,
+          "originalItemId": null,
+          "wowheadParams": "item=270168&bonus=13848",
+          "name": "Font of Venomous Rage",
+          "quality": 4,
+          "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green",
+          "source": "Ula'tek",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Bracers",
+          "slotFr": "Poignets",
+          "align": "left",
+          "empty": false,
+          "itemId": 244576,
+          "originalItemId": null,
+          "wowheadParams": "item=244576&bonus=13751:12497:13836:8790",
+          "name": "Silvermoon Agent's Deflectors",
+          "quality": 4,
+          "icon": "inv_bracer_leather_questbloodelf_b_01",
+          "source": "Craft (Leatherworking)",
+          "catalyst": false,
+          "crafted": true,
+          "profession": "Leatherworking",
+          "enchant": null,
+          "gems": [
+            {
+              "name": "Flawless Deadly Lapis",
+              "itemId": 240914,
+              "wowheadParams": "item=240914",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue"
+            },
+            {
+              "name": "Adorned Fang",
+              "itemId": 273068,
+              "wowheadParams": "item=273068",
+              "icon": "inv_knife_1h_ulatek_d_01"
+            }
+          ]
+        },
+        {
+          "slot": "Trinket",
+          "slotFr": "Bijou",
+          "align": "right",
+          "empty": false,
+          "itemId": 270175,
+          "originalItemId": null,
+          "wowheadParams": "item=270175&bonus=13848",
+          "name": "Voracious Heart of Ula'tek",
+          "quality": 4,
+          "icon": "inv_121_trinket_raid_ulatek_heart",
+          "source": "Ula'tek",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": null,
+          "gems": []
+        },
+        {
+          "slot": "Main Hand",
+          "slotFr": "Main droite",
+          "align": "right",
+          "empty": false,
+          "itemId": 271093,
+          "originalItemId": null,
+          "wowheadParams": "item=271093&bonus=13848",
+          "name": "Zatha'tek, Breath of Corruption",
+          "quality": 4,
+          "icon": "inv_knife_1h_ulatekfang_d_01_poison",
+          "source": "Ula'tek",
+          "catalyst": false,
+          "crafted": false,
+          "profession": null,
+          "enchant": {
+            "name": "Acuity of the Ren'dorei",
+            "itemId": 244029,
+            "wowheadParams": "item=244029",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+          },
+          "gems": []
+        },
+        {
+          "slot": "Off Hand",
+          "slotFr": "Main gauche",
+          "align": "left",
+          "empty": false,
+          "itemId": 237837,
+          "originalItemId": null,
+          "wowheadParams": "item=237837&bonus=13751:12497:13836:8790",
+          "name": "Farstrider's Mercy",
+          "quality": 4,
+          "icon": "inv_knife_1h_questbloodelf_b_02",
+          "source": "Craft (Blacksmithing)",
+          "catalyst": false,
+          "crafted": true,
+          "profession": "Blacksmithing",
+          "enchant": {
+            "name": "Acuity of the Ren'dorei",
+            "itemId": 244029,
+            "wowheadParams": "item=244029",
+            "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
+          },
+          "gems": [
+            {
+              "name": "Hunter's Ritual Stone",
+              "itemId": 273059,
+              "wowheadParams": "item=273059",
+              "icon": "inv_12_profession_blacksmithing_weightstone_green"
+            }
+          ]
+        }
+      ]
     }
   },
-  "updatedAt": "2026-08-19T04:59:57.747Z"
+  "updatedAt": "2026-08-19T07:33:33.810Z"
 }

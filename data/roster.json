@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T23:12:09.113Z",
+  "updatedAt": "2026-08-19T07:33:23.745Z",
   "members": [
     {
       "n": 1,
@@ -170,7 +170,7 @@
       "n": 20,
       "name": "Reinox93",
       "class": "rogue",
-      "spec": "subtlety",
+      "spec": "assassination",
       "id": "reinox93",
       "raid": true,
       "trial": true

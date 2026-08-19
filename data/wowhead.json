@@ -6596,7 +6596,375 @@
           }
         ]
       }
+    },
+    "rogue-assassination": {
+      "key": "rogue-assassination",
+      "fetchedAt": "2026-08-19T07:33:36.889Z",
+      "trinkets": {
+        "url": "https://www.wowhead.com/guide/classes/rogue/assassination/bis-gear",
+        "available": true,
+        "tiers": [
+          {
+            "rank": "S",
+            "items": [
+              {
+                "itemId": 270175,
+                "name": "Voracious Heart of Ula'tek",
+                "icon": "inv_121_trinket_raid_ulatek_heart",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270168,
+                "name": "Font of Venomous Rage",
+                "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "A",
+            "items": [
+              {
+                "itemId": 270173,
+                "name": "Zul'jin's Guillotine Technique",
+                "icon": "inv_121_trinket_raid_ulatek_trolltablet",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 250259,
+                "name": "Sapling of the Dawnroot",
+                "icon": "inv_misc_herb_nightmarevine",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270164,
+                "name": "Gebbo's Bottomless Bag",
+                "icon": "inv_10_tailoring_bag1_color2",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270165,
+                "name": "Keeper's Seething Core",
+                "icon": "inv_121_trinket_raid_ulatek_golemhearts_green",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "B",
+            "items": [
+              {
+                "itemId": 159617,
+                "name": "Lustrous Golden Plumage",
+                "icon": "inv_icon_feather06a",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250228,
+                "name": "Resonant Bellowstone",
+                "icon": "inv_alchemy_90_stone_green",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 273796,
+                "name": "Vile Vial of Volatile Venom",
+                "icon": "inv_121_trinket_dungeon_ulatek_vile",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250225,
+                "name": "Void Execution Mandate",
+                "icon": "inv_inscription_80_warscroll_intellect",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270166,
+                "name": "Vashnik's Sanguine Rancor",
+                "icon": "inv_11_0_raid_gruesomesyringe_blue",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "C",
+            "items": [
+              {
+                "itemId": 250215,
+                "name": "Freightrunner's Flask",
+                "icon": "inv_alchemy_90_flask_red",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 193757,
+                "name": "Ruby Whelp Shell",
+                "icon": "inv_item_dragonegg_redbroken01",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 273797,
+                "name": "Tattered Amani War Banner",
+                "icon": "inv_121_trinket_dungeon_ulatek_banner",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250214,
+                "name": "Lightspire Core",
+                "icon": "inv_enchant_essenceastrallarge",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "D",
+            "items": [
+              {
+                "itemId": 158374,
+                "name": "Tiny Electromental in a Jar",
+                "icon": "inv_alchemy_71_potion4",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250462,
+                "name": "Forgotten Farstrider's Insignia",
+                "icon": "inv_misc_tournaments_banner_bloodelf",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 250245,
+                "name": "Tumor of the Swarm",
+                "icon": "ability_pet_baneling",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 251783,
+                "name": "Lost Idol of the Hash'ey",
+                "icon": "inv_12_trinket_grisgrisofconfidenc",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251782,
+                "name": "Withered Saptor's Paw",
+                "icon": "inv_12_trinket_witheredsaptorspaw",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251792,
+                "name": "Glorious Crusader's Keepsake",
+                "icon": "inv_12_trinket_gloriuscrusaderskeepsake",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251791,
+                "name": "Holy Retributor's Order",
+                "icon": "inv_12_trinket_holy_retributors_order",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251787,
+                "name": "Sealed Chaos Urn",
+                "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251784,
+                "name": "Sylvan Wakrapuku",
+                "icon": "inv_12_trinket_sylvanwakrapuku",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251785,
+                "name": "Void-Reaper's Libram",
+                "icon": "inv_12_trinket_void_reaperslibram",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 280123,
+                "name": "Sharp Axe Holster",
+                "icon": "inv_throwingaxe_01",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274496,
+                "name": "Ophidian Bone Whistle",
+                "icon": "inv_misc_coin_12",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274497,
+                "name": "Spirit-Rending Poison",
+                "icon": "inv_ability_poison_debuff",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274493,
+                "name": "Effigy of Ula'tek's Faithful",
+                "icon": "ability_fomor_boss_rune_green",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "consumables": {
+        "url": "https://www.wowhead.com/guide/classes/rogue/assassination/enchants-gems-pve-dps",
+        "available": true,
+        "rows": [
+          {
+            "type": "Flask",
+            "items": [
+              {
+                "itemId": 241324,
+                "name": "Flask of the Blood Knights",
+                "icon": "inv_12_profession_alchemy_flask_sindoreipotion_white-",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Combat Potion",
+            "items": [
+              {
+                "itemId": 271887,
+                "name": "Liquid Luster",
+                "icon": "inv_121_professions_alchemy_potion_amani_blue",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Health Potion",
+            "items": [
+              {
+                "itemId": 271884,
+                "name": "Concentrated Silvermoon Health Potion",
+                "icon": "inv_12_profession_alchemy_lightpotion_purple",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Weapon Buff",
+            "items": [
+              {
+                "itemId": 243734,
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_12_profession_enchanting_manaoil_red",
+                "quality": 2
+              }
+            ]
+          },
+          {
+            "type": "Augment Rune",
+            "items": [
+              {
+                "itemId": 259085,
+                "name": "Void-Touched Augment Rune",
+                "icon": "inv_10_enchanting_crystal_color2",
+                "quality": 3
+              }
+            ]
+          },
+          {
+            "type": "Food",
+            "items": [
+              {
+                "itemId": 255845,
+                "name": "Silvermoon Parade",
+                "icon": "inv_tradeskill_cooking_feastofblood",
+                "quality": 3
+              }
+            ]
+          }
+        ]
+      }
     }
   },
-  "updatedAt": "2026-08-19T05:00:00.253Z"
+  "updatedAt": "2026-08-19T07:33:37.033Z"
 }
