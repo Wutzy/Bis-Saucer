@@ -7,6 +7,7 @@ const DATA_DIR = path.join(__dirname, '..', 'data');
 const STORE_PATH = path.join(DATA_DIR, 'bis.json');
 const TRINKETS_PATH = path.join(DATA_DIR, 'trinkets.json');
 const WOWHEAD_PATH = path.join(DATA_DIR, 'wowhead.json');
+const POWER_INFUSION_PATH = path.join(DATA_DIR, 'powerinfusion.json');
 
 const EMPTY_STORE = { version: 1, specs: {} };
 
@@ -100,6 +101,36 @@ function saveWowheadEntry(key, entry) {
   return store;
 }
 
+/* ------------------------------------------------------------------ */
+/* Power Infusion : un classement unique, pas un cache par spec         */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Contrairement aux trois autres, ce fichier n'a pas de `specs` : le classement
+ * Power Infusion compare toutes les specs entre elles, il n'appartient a aucune.
+ * D'ou un objet unique, remplace en entier a chaque mise a jour.
+ */
+function readPowerInfusion() {
+  try {
+    const parsed = JSON.parse(fs.readFileSync(POWER_INFUSION_PATH, 'utf8'));
+    if (parsed && typeof parsed === 'object' && parsed.targets) return parsed;
+  } catch (err) {
+    if (err.code !== 'ENOENT') {
+      console.warn(`[store] data/powerinfusion.json illisible (${err.message}), cache ignoré.`);
+    }
+  }
+  return { version: 1, available: false, targets: {} };
+}
+
+function savePowerInfusion(donnees) {
+  const store = { version: 1, ...donnees, updatedAt: new Date().toISOString() };
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  const tmpPath = `${POWER_INFUSION_PATH}.tmp`;
+  fs.writeFileSync(tmpPath, JSON.stringify(store, null, 2), 'utf8');
+  fs.renameSync(tmpPath, POWER_INFUSION_PATH);
+  return store;
+}
+
 module.exports = {
   readStore,
   writeStore,
@@ -108,7 +139,10 @@ module.exports = {
   saveTrinketEntry,
   readWowhead,
   saveWowheadEntry,
+  readPowerInfusion,
+  savePowerInfusion,
   STORE_PATH,
   TRINKETS_PATH,
   WOWHEAD_PATH,
+  POWER_INFUSION_PATH,
 };

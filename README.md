@@ -110,6 +110,20 @@ La portée sépare les deux niveaux de navigation, et rien ne les mélange :
 - **Le bandeau d'onglets** ne porte que les vues de la spec affichée : **Liste BiS**, **M+ opti**,
   **Consommables**, **/rand**.
 
+Tout en haut à gauche, l'**icône de clé mythique** — au gabarit d'une pastille de spec, sur la
+même ligne qu'elles — déroule une antisèche : ce que rapporte chaque
+niveau de clé, en fin de donjon comme au grand coffre, écusson compris. Le panneau descend
+par-dessus la page — il ne pousse rien — et se referme au clic ailleurs ou avec Échap. Ce sont des
+valeurs de jeu, pas des données scrapées : elles vivent en dur dans `CLE_RECOMPENSES`
+([`public/app.js`](public/app.js)) et ne bougent qu'à une mise à jour de Blizzard.
+
+À côté, l'**icône de Power Infusion** ouvre le même genre de panneau : **qui profite le plus**
+du buff du prêtre, **top 5** pour **1, 3 et 5 cibles**. Le gain est en dps simulé et en
+pourcentage, la spec porte la couleur de sa classe. Une **étoile** signale les specs dont la
+rotation simulée ne sait pas recevoir un PI externe : leur chiffre vient d'un PI à heure fixe,
+il est indicatif. Ces données-là **changent**, elles sont donc récupérées et mises en cache
+comme le reste — voir [Power Infusion](#power-infusion--qui-buffer).
+
 Le blason ouvre un **écran d'accueil à deux cartes** — /rand Raid et /rand Mythique+ — puis une
 barre reprend ces deux destinations en haut de chacune, pour passer de l'une à l'autre sans
 repasser par l'accueil. Cet écran d'accueil se passe d'en-tête : les cartes se présentent toutes
@@ -404,6 +418,39 @@ de set (tête, épaules, torse, mains, jambes) :
 Enfin, quand la seule provenance donnée par le guide est « Catalyseur » (cas du Paladin Vindicte),
 le mot n'est pas répété en gris à côté du badge ambre : seul le badge s'affiche.
 
+## Power Infusion : qui buffer
+
+Bloodmallet publie un classement Power Infusion sous le profil du prêtre ombre :
+
+```
+https://bloodmallet.com/chart/get/power_infusion/<style_de_combat>/priest/shadow
+```
+
+Ce n'est **pas** une donnée par spec — c'est un tableau unique qui compare toutes les specs
+entre elles. D'où un fichier à part, `data/powerinfusion.json`, sans `specs` : un seul objet,
+remplacé en entier à chaque mise à jour, avec les trois nombres de cibles (1, 3, 5) que
+Bloodmallet simule.
+
+Trois choses à savoir sur ce jeu de données, vérifiées dans leur script d'import public :
+
+- `data` contient **deux entrées par spec** : `Fire Mage` (avec PI) et `{Fire Mage}` (sans).
+  Le gain est la différence — la valeur brute seule ne veut rien dire.
+- `sorted_data_keys_2` range par gain **absolu**, `sorted_data_keys` par gain **relatif**. Le
+  site affiche l'absolu par défaut, on garde le même ordre pour ne pas dire autre chose que la
+  source.
+- `profile_without_pi_support` liste les specs dont la rotation simulée ne sait pas recevoir un
+  PI externe. Elles sont gardées, mais marquées d'une étoile.
+
+On ne stocke que le **top 5** de chaque nombre de cibles : au-delà ce n'est plus une aide à la
+décision, c'est un tableau à lire.
+
+**Quand c'est mis à jour.**
+[`tools/refresh-all.js`](tools/refresh-all.js) le rafraîchit à chaque passage — donc une fois
+par jour via la GitHub Action, en une seule requête pour toute l'application. Le bouton
+« Mettre à jour » le fait aussi, mais **seulement si le cache dépasse 12 h** : Bloodmallet ne
+resimule qu'une fois par jour, le retaper à chaque clic n'apporterait rien. Dans les deux cas
+son échec est sans conséquence — le reste de la mise à jour est publié normalement.
+
 ## Vérification des bijoux (Bloodmallet)
 
 Les bijoux ne se classent pas pareil selon le nombre de cibles, donc la vue Liste BiS leur
@@ -581,6 +628,7 @@ si son guide n'a pas bougé.
 | `GET` | `/api/bis` | Contenu du cache `data/bis.json` |
 | `GET` | `/api/trinkets` | Classements Bloodmallet (`data/trinkets.json`) |
 | `GET` | `/api/wowhead` | Tier lists et consommables Wowhead (`data/wowhead.json`) |
+| `GET` | `/api/powerinfusion` | Classement Power Infusion (`data/powerinfusion.json`) |
 | `POST` | `/api/scrape` | Body `{ "class": "warrior", "spec": "arms" }` — scrape et met à jour le cache |
 
 `POST /api/scrape` renvoie `429` avec `retryAfterSeconds` si la spec a déjà été rafraîchie
@@ -679,6 +727,11 @@ elles restent donc à la même distance quelle que soit la largeur de l'écran.
 
 En dessous de 1780 px les marges deviennent trop étroites : celle de gauche disparaît et celle de
 droite se replie dans le coin de la barre du haut. En dessous de 700 px, les deux disparaissent.
+
+La barre du haut, elle, aligne ses trois colonnes sur la **première rangée d'icônes** : centrées,
+elles flottaient entre les deux rangées dès que le sélecteur passait à la ligne. En dessous de
+860 px il n'y a plus la largeur pour trois colonnes — la marque et les langues gardent la première
+ligne, le sélecteur passe dessous sur toute la largeur.
 
 Le script calcule un indice de magenta `(rouge + bleu) / 2 - vert`, interpole l'alpha entre deux
 seuils pour éviter un contour en escalier, retire la dominante magenta sur les pixels de bord,

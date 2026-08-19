@@ -59,8 +59,8 @@ body {
   display: grid;
   /* minmax identique a gauche et a droite : sans plancher, la colonne de droite
      tombe a 0 alors que le titre ne peut pas se reduire autant, et le centre derive. */
-  grid-template-columns: minmax(110px, 1fr) auto minmax(110px, 1fr);
-  align-items: center;
+  grid-template-columns: minmax(186px, 1fr) auto minmax(186px, 1fr);
+  align-items: start;
   gap: 1.2rem;
   padding: 0.7rem 1rem;
   background: var(--panel);
@@ -101,6 +101,201 @@ body {
 .lang-switch button.is-active {
   background: color-mix(in srgb, var(--accent) 18%, transparent);
   color: var(--accent);
+}
+
+/* ---------------- Antiseche : recompenses par niveau de cle ---------------- */
+
+/* Le bouton et son panneau vivent dans la meme boite que la marque : c'est elle qui
+   sert de repere de position au panneau, qui descend juste dessous. */
+.brand-zone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 42px;
+  min-width: 0;
+}
+
+.cle-toggle {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-2);
+  cursor: pointer;
+  filter: grayscale(0.55);
+  opacity: 0.75;
+  transition: filter 0.12s, opacity 0.12s, border-color 0.12s;
+}
+
+.cle-toggle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cle-toggle:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.cle-toggle.is-open {
+  filter: none;
+  opacity: 1;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 0 10px -2px var(--accent);
+}
+
+/* Hors du flux : le panneau se deroule par-dessus la page sans rien pousser. On anime
+   l'opacite et la translation, pas la hauteur — le tableau n'a pas a etre mesure. */
+.cle-panneau {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  z-index: 30;
+  width: max-content;
+  max-width: min(88vw, 560px);
+  max-height: min(70vh, 620px);
+  overflow: auto;
+  padding: 0.8rem 0.9rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--panel);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.5rem);
+  transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s;
+}
+
+.cle-panneau.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cle-panneau {
+    transition: none;
+  }
+}
+
+.cle-titre {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.cle-table tbody td {
+  padding: 0.35rem 0.7rem;
+  white-space: nowrap;
+}
+
+.cle-niveau {
+  color: var(--accent);
+}
+
+/* L'ilvl porte la lecture, la piste d'amelioration la precise dessous. */
+.cle-piste {
+  display: block;
+  color: var(--muted-2);
+  font-size: 0.7rem;
+}
+
+/* Couleurs de qualite du jeu : bleu champion, violet heros, orange mythe. Elles ne
+   parlent que d'ecussons, aucun rapport avec les couleurs de provenance des cartes. */
+.cle-ecusson {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.cle-ecusson--champion {
+  color: #4a9fe0;
+}
+
+.cle-ecusson--hero {
+  color: #b477e0;
+}
+
+.cle-ecusson--myth {
+  color: #e0843a;
+}
+
+/* Classement Power Infusion : trois blocs (1, 3, 5 cibles) dans le meme panneau. */
+.cle-panneau--pi {
+  max-width: min(88vw, 420px);
+}
+
+.pi-cibles {
+  margin: 0.7rem 0 0.2rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.pi-cibles:first-of-type {
+  margin-top: 0.2rem;
+}
+
+.pi-table tbody td {
+  padding: 0.3rem 0.5rem;
+}
+
+.pi-rang {
+  width: 1%;
+  color: var(--muted-2);
+  font-size: 0.74rem;
+  text-align: right;
+}
+
+/* La spec porte la couleur de sa classe, comme partout ailleurs dans l’application. */
+.pi-spec {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--spec, var(--text));
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.pi-icone {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+}
+
+/* Chiffre indicatif : la rotation simulee ne sait pas recevoir un PI externe. */
+.pi-etoile {
+  color: var(--muted-2);
+  cursor: help;
+  text-decoration: none;
+}
+
+.pi-gain {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.pi-pct {
+  display: block;
+  color: var(--muted-2);
+  font-size: 0.7rem;
+}
+
+.cle-note {
+  margin: 0.55rem 0 0;
+  color: var(--muted-2);
+  font-size: 0.7rem;
 }
 
 .brand {
@@ -1832,9 +2027,28 @@ a.pd-catalyst:hover {
   margin-left: auto;
 }
 
+/* Sous 860px, il n'y a plus la largeur pour trois colonnes : la marque et les langues
+   gardent la premiere ligne, le selecteur passe dessous sur toute la largeur. Il y
+   respire, au lieu de se serrer contre la marque jusqu'a la chevaucher. */
 @media (max-width: 860px) {
   .topbar {
-    align-items: flex-start;
+    grid-template-columns: 1fr auto;
+    row-gap: 0.8rem;
+  }
+
+  .brand-zone {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .topbar-end {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .selector-bar {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 
   .legend-meta {

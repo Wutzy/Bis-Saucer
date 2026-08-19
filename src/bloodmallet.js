@@ -145,8 +145,129 @@ async function fetchTrinkets(className, specSlug, timeoutMs = 20000) {
   return { available, targets };
 }
 
+/* ------------------------------------------------------------------ */
+/* Power Infusion : quelle spec profite le plus du buff du pretre       */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Bloodmallet publie un classement Power Infusion sous le profil du pretre ombre :
+ *   https://bloodmallet.com/chart/get/power_infusion/<style>/priest/shadow
+ * Ce n'est pas une donnee par spec — c'est un tableau unique qui compare toutes les
+ * specs entre elles, qu'on lit pour les trois nombres de cibles.
+ *
+ * Trois choses a savoir sur ce jeu de donnees, verifiees dans leur script d'import
+ * public (`bloodmallet_chart_import.js`) :
+ *
+ *  - `data` contient DEUX entrees par spec : "Fire Mage" (avec PI) et "{Fire Mage}"
+ *    (sans). Le gain est la difference ; la valeur brute seule ne veut rien dire.
+ *  - `sorted_data_keys_2` range par gain ABSOLU, `sorted_data_keys` par gain RELATIF.
+ *    Le site affiche l'absolu par defaut, on garde le meme ordre pour ne pas dire
+ *    autre chose que la source.
+ *  - `profile_without_pi_support` liste les specs dont la rotation simulee ne sait pas
+ *    recevoir un PI externe : leur chiffre vient d'un PI a heure fixe, il est indicatif.
+ */
+const PI_SPEC = { class: 'priest', spec: 'shadow' };
+
+function powerInfusionUrl(style) {
+  return `${BASE}/power_infusion/${style}/${PI_SPEC.class}/${PI_SPEC.spec}`;
+}
+
+/** "Beast_Mastery Hunter" -> { class: 'hunter', spec: 'beast-mastery' }. */
+function parseSpecName(nom) {
+  const morceaux = String(nom || '').trim().split(/\s+/);
+  if (morceaux.length < 2) return null;
+  const [spec, ...classe] = morceaux;
+  return {
+    class: classe.join('-').toLowerCase(),
+    spec: spec.replace(/_/g, '-').toLowerCase(),
+  };
+}
+
+async function fetchPowerInfusionStyle(style, top, timeoutMs) {
+  const url = powerInfusionUrl(style);
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+  let payload;
+  try {
+    const res = await fetch(url, {
+      headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' },
+      signal: controller.signal,
+    });
+    if (!res.ok) throw new TrinketError(`Bloodmallet a répondu ${res.status}`, 'BAD_STATUS');
+    payload = await res.json();
+  } catch (err) {
+    if (err instanceof TrinketError) throw err;
+    if (err.name === 'AbortError') {
+      throw new TrinketError(`Timeout après ${timeoutMs} ms`, 'TIMEOUT');
+    }
+    throw new TrinketError(`Échec de la requête (${err.message})`, 'NETWORK');
+  } finally {
+    clearTimeout(timer);
+  }
+
+  if (payload && payload.status === 'error') {
+    return { style, url, available: false, reason: payload.message || 'Aucune donnée', top: [] };
+  }
+  if (!payload || !payload.data || !Array.isArray(payload.sorted_data_keys_2)) {
+    throw new TrinketError(
+      "Réponse Power Infusion inattendue (ni données, ni statut d'erreur).",
+      'UNEXPECTED_STRUCTURE'
+    );
+  }
+
+  const sansSupport = new Set(payload.profile_without_pi_support || []);
+  const entrees = [];
+  for (const nom of payload.sorted_data_keys_2) {
+    const avec = payload.data[nom];
+    const sans = payload.data[`{${nom}}`];
+    if (!Number.isFinite(avec) || !Number.isFinite(sans) || sans <= 0) continue;
+    const gain = Math.round(avec - sans);
+    entrees.push({
+      name: nom,
+      ...(parseSpecName(nom) || {}),
+      gain,
+      pct: Number(((100 * (avec - sans)) / sans).toFixed(2)),
+      sansSupport: sansSupport.has(nom),
+    });
+    if (entrees.length >= top) break;
+  }
+
+  return {
+    style,
+    url,
+    available: entrees.length > 0,
+    simulatedAt: payload.timestamp || null,
+    top: entrees,
+  };
+}
+
+/**
+ * Le classement pour les trois nombres de cibles. Les trois appels sont espaces comme
+ * ceux des bijoux : on ne martele pas un site qui nous rend service.
+ */
+async function fetchPowerInfusion(top = 5, timeoutMs = 20000) {
+  const targets = {};
+  let available = false;
+
+  for (const [index, { targets: count, style }] of FIGHT_STYLES.entries()) {
+    if (index > 0) await new Promise((resolve) => setTimeout(resolve, 800));
+    try {
+      const data = await fetchPowerInfusionStyle(style, top, timeoutMs);
+      targets[count] = data;
+      if (data.available) available = true;
+    } catch (err) {
+      targets[count] = { style, available: false, reason: err.message, top: [] };
+    }
+  }
+
+  return { available, targets };
+}
+
 module.exports = {
   fetchTrinkets,
+  fetchPowerInfusion,
+  powerInfusionUrl,
   fetchStyle,
   bloodmalletUrl,
   TrinketError,

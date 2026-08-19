@@ -19,8 +19,52 @@
           hidden
         />
         <img class="ewe" src="img/ewe.png" alt="" title="Ewe" />
-        <div class="brand">
-          <strong>BiS Saucer</strong>
+        <div class="brand-zone">
+          <!-- Antiseche des recompenses Mythique+ : une table de reference qu'on
+               deroule d'un clic et qu'on referme aussitot, sans quitter la vue en
+               cours. Le panneau est rempli par app.js. -->
+          <button
+            id="cle-toggle"
+            class="cle-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="cle-panneau"
+            title="Récompenses par niveau de clé mythique"
+          >
+            <img
+              src="https://wow.zamimg.com/images/wow/icons/medium/inv_relics_hourglass.jpg"
+              alt="Récompenses par niveau de clé"
+            />
+          </button>
+          <!-- Classement Power Infusion, meme mecanique de panneau deroulant. -->
+          <button
+            id="pi-toggle"
+            class="cle-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="pi-panneau"
+            title="Qui profite le plus de la Power Infusion du prêtre"
+          >
+            <img
+              src="https://wow.zamimg.com/images/wow/icons/medium/spell_holy_powerinfusion.jpg"
+              alt="Classement Power Infusion"
+            />
+          </button>
+          <div class="brand">
+            <strong>BiS Saucer</strong>
+          </div>
+          <div
+            id="pi-panneau"
+            class="cle-panneau cle-panneau--pi"
+            role="dialog"
+            aria-label="Classement Power Infusion"
+          ></div>
+          <div
+            id="cle-panneau"
+            class="cle-panneau"
+            role="dialog"
+            aria-label="Récompenses par niveau de clé mythique"
+          ></div>
         </div>
         <div id="selector-bar" class="selector-bar"></div>
         <div class="topbar-end">

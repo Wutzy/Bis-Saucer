@@ -16,6 +16,7 @@ const API = STATIC
       bis: 'api/bis.json',
       trinkets: 'api/trinkets.json',
       wowhead: 'api/wowhead.json',
+      powerinfusion: 'api/powerinfusion.json',
     }
   : {
       specs: '/api/specs',
@@ -23,6 +24,7 @@ const API = STATIC
       bis: '/api/bis',
       trinkets: '/api/trinkets',
       wowhead: '/api/wowhead',
+      powerinfusion: '/api/powerinfusion',
     };
 
 /* ---------------- langue ---------------- */
@@ -201,6 +203,7 @@ let specs = [];
 let store = { specs: {} };
 let trinketStore = { specs: {} };
 let wowheadStore = { specs: {} };
+let piStore = { available: false, targets: {} };
 let roster = [];
 let classes = {};
 let activeKey = null;
@@ -3498,6 +3501,21 @@ async function loadWowhead() {
   categoriesParSpec.clear();
 }
 
+/**
+ * Classement Power Infusion. Absent du cache tant qu'une mise a jour n'est pas
+ * passee : le panneau le dit alors, plutot que d'afficher un tableau vide.
+ */
+async function loadPowerInfusion() {
+  try {
+    const res = await fetch(API.powerinfusion);
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && typeof data === 'object' && data.targets) piStore = data;
+  } catch (err) {
+    piStore = { available: false, targets: {} };
+  }
+}
+
 async function loadStore() {
   const res = await fetch(API.bis);
   const data = await res.json();
@@ -3567,6 +3585,254 @@ async function refresh() {
   }
 }
 
+/* ---------------- antiseche : recompenses par niveau de cle ---------------- */
+
+/**
+ * Ce que rapporte une cle mythique, en fin de donjon et au grand coffre. Ce sont des
+ * valeurs de jeu, pas des donnees scrapees : elles ne bougent qu'a une mise a jour de
+ * Blizzard, d'ou leur place ici en dur plutot que dans data/.
+ *
+ * `piste` est la piste d'amelioration de la piece et son rang sur 6 ; `ecusson` la
+ * qualite d'ecusson lachee par le donjon.
+ */
+const CLE_RECOMPENSES = [
+  { cle: 2, fin: 295, finPiste: 'Champion 2/6', ecusson: 'champion', coffre: 305, coffrePiste: 'Héros 1/6' },
+  { cle: 3, fin: 295, finPiste: 'Champion 2/6', ecusson: 'champion', coffre: 305, coffrePiste: 'Héros 1/6' },
+  { cle: 4, fin: 298, finPiste: 'Champion 3/6', ecusson: 'hero', coffre: 308, coffrePiste: 'Héros 2/6' },
+  { cle: 5, fin: 302, finPiste: 'Champion 4/6', ecusson: 'hero', coffre: 308, coffrePiste: 'Héros 2/6' },
+  { cle: 6, fin: 305, finPiste: 'Héros 1/6', ecusson: 'hero', coffre: 311, coffrePiste: 'Héros 3/6' },
+  { cle: 7, fin: 305, finPiste: 'Héros 1/6', ecusson: 'hero', coffre: 315, coffrePiste: 'Héros 4/6' },
+  { cle: 8, fin: 308, finPiste: 'Héros 2/6', ecusson: 'hero', coffre: 315, coffrePiste: 'Héros 4/6' },
+  { cle: 9, fin: 308, finPiste: 'Héros 2/6', ecusson: 'myth', coffre: 315, coffrePiste: 'Héros 4/6' },
+  { cle: 10, fin: 311, finPiste: 'Héros 3/6', ecusson: 'myth', coffre: 318, coffrePiste: 'Mythe 1/6' },
+  { cle: 11, fin: 311, finPiste: 'Héros 3/6', ecusson: 'myth', coffre: 318, coffrePiste: 'Mythe 1/6' },
+  { cle: 12, etPlus: true, fin: 311, finPiste: 'Héros 3/6', ecusson: 'myth', coffre: 318, coffrePiste: 'Mythe 1/6' },
+];
+
+const ECUSSON_LABEL = { champion: 'Champion', hero: 'Héros', myth: 'Mythe' };
+
+/** Une valeur d'ilvl et, dessous, la piste d'amelioration a laquelle elle correspond. */
+function celluleIlvl(ilvl, piste) {
+  const td = document.createElement('td');
+  const valeur = document.createElement('strong');
+  valeur.textContent = ilvl;
+  const detail = document.createElement('span');
+  detail.className = 'cle-piste';
+  detail.textContent = piste;
+  td.append(valeur, detail);
+  return td;
+}
+
+function panneauCle() {
+  const wrap = document.createElement('div');
+
+  const titre = document.createElement('p');
+  titre.className = 'cle-titre';
+  titre.textContent = 'Récompenses par niveau de clé';
+  wrap.appendChild(titre);
+
+  const table = document.createElement('table');
+  table.className = 'cle-table';
+
+  const thead = document.createElement('thead');
+  thead.innerHTML =
+    '<tr><th>Clé</th><th>Fin de donjon</th><th>Écusson</th><th>Grand coffre</th></tr>';
+  table.appendChild(thead);
+
+  const tbody = document.createElement('tbody');
+  for (const ligne of CLE_RECOMPENSES) {
+    const tr = document.createElement('tr');
+
+    const niveau = document.createElement('td');
+    const cle = document.createElement('strong');
+    cle.className = 'cle-niveau';
+    // Une seule ligne couvre le haut de l'echelle : au-dela de +12 les recompenses ne
+    // bougent plus, autant le dire que d'aligner des lignes identiques.
+    cle.textContent = ligne.etPlus ? `+${ligne.cle} et plus` : `+${ligne.cle}`;
+    niveau.appendChild(cle);
+
+    const ecusson = document.createElement('td');
+    const puce = document.createElement('span');
+    puce.className = `cle-ecusson cle-ecusson--${ligne.ecusson}`;
+    puce.textContent = ECUSSON_LABEL[ligne.ecusson];
+    ecusson.appendChild(puce);
+
+    tr.append(
+      niveau,
+      celluleIlvl(ligne.fin, ligne.finPiste),
+      ecusson,
+      celluleIlvl(ligne.coffre, ligne.coffrePiste)
+    );
+    tbody.appendChild(tr);
+  }
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+
+  const note = document.createElement('p');
+  note.className = 'cle-note';
+  note.textContent =
+    'La colonne Grand coffre vaut aussi pour les relances bonus du Nebulous Voidcore.';
+  wrap.appendChild(note);
+
+  return wrap;
+}
+
+/**
+ * Libelle francais d'une spec, dans la forme employee partout ailleurs :
+ * « Chaman — Amelioration ». La classe d'abord, parce que plusieurs classes
+ * partagent le meme nom de spec (Givre, Restauration, Protection, Sacre...).
+ * Repli sur les slugs quand le referentiel ignore la spec.
+ */
+function specLabelFr(className, specSlug) {
+  const info = classInfo(className);
+  const spec = (info.specs || []).find((s) => s.slug === specSlug);
+  return spec ? `${info.label} — ${spec.label}` : `${className} — ${specSlug}`;
+}
+
+/** Une ligne du classement : rang, spec, gain en dps et gain relatif. */
+function lignePI(entree, rang) {
+  const tr = document.createElement('tr');
+
+  const tdRang = document.createElement('td');
+  tdRang.className = 'pi-rang';
+  tdRang.textContent = rang;
+
+  const tdSpec = document.createElement('td');
+  const spec = document.createElement('span');
+  spec.className = 'pi-spec';
+  if (entree.class) {
+    spec.appendChild(iconEl(specIcon(entree.class, entree.spec), 'pi-icone', ''));
+    spec.style.setProperty('--spec', classColor(entree.class));
+  }
+  const nom = document.createElement('span');
+  // Le nom français quand la spec est connue, sinon celui de Bloodmallet tel quel :
+  // une spec absente du référentiel reste lisible plutôt que d'être masquée.
+  nom.textContent = entree.class ? specLabelFr(entree.class, entree.spec) : entree.name;
+  spec.appendChild(nom);
+  if (entree.sansSupport) {
+    const etoile = document.createElement('abbr');
+    etoile.className = 'pi-etoile';
+    etoile.textContent = '*';
+    etoile.title =
+      'La rotation simulée de cette spec ne sait pas recevoir un PI externe : le chiffre vient d’un PI à heure fixe, il est indicatif.';
+    spec.appendChild(etoile);
+  }
+  tdSpec.appendChild(spec);
+
+  const tdGain = document.createElement('td');
+  tdGain.className = 'pi-gain';
+  const gain = document.createElement('strong');
+  gain.textContent = `+${entree.gain.toLocaleString('fr-FR')}`;
+  const pct = document.createElement('span');
+  pct.className = 'pi-pct';
+  pct.textContent = `+${entree.pct.toLocaleString('fr-FR')} %`;
+  tdGain.append(gain, pct);
+
+  tr.append(tdRang, tdSpec, tdGain);
+  return tr;
+}
+
+/**
+ * Classement Power Infusion : le gain de dps qu'un prêtre offre à sa cible, pour les
+ * trois nombres de cibles simulés par Bloodmallet. Top 5 seulement — au-delà ce n'est
+ * plus une aide à la décision, c'est un tableau à lire.
+ */
+function panneauPI() {
+  const wrap = document.createElement('div');
+
+  const titre = document.createElement('p');
+  titre.className = 'cle-titre';
+  titre.textContent = 'Power Infusion — top 5 des gains';
+  wrap.appendChild(titre);
+
+  const cibles = [1, 3, 5].filter((n) => (piStore.targets || {})[n]);
+  if (!cibles.length) {
+    const vide = document.createElement('p');
+    vide.className = 'cle-note';
+    vide.textContent =
+      'Aucun classement en cache. Il arrivera avec la prochaine mise à jour des données.';
+    wrap.appendChild(vide);
+    return wrap;
+  }
+
+  let etoile = false;
+  for (const n of cibles) {
+    const bloc = piStore.targets[n];
+
+    const sousTitre = document.createElement('p');
+    sousTitre.className = 'pi-cibles';
+    sousTitre.textContent = n === 1 ? '1 cible' : `${n} cibles`;
+    wrap.appendChild(sousTitre);
+
+    if (!bloc.available || !bloc.top || !bloc.top.length) {
+      const vide = document.createElement('p');
+      vide.className = 'cle-note';
+      vide.textContent = bloc.reason || 'Pas de données pour ce nombre de cibles.';
+      wrap.appendChild(vide);
+      continue;
+    }
+
+    const table = document.createElement('table');
+    table.className = 'cle-table pi-table';
+    const tbody = document.createElement('tbody');
+    bloc.top.forEach((entree, index) => {
+      if (entree.sansSupport) etoile = true;
+      tbody.appendChild(lignePI(entree, index + 1));
+    });
+    table.appendChild(tbody);
+    wrap.appendChild(table);
+  }
+
+  const note = document.createElement('p');
+  note.className = 'cle-note';
+  note.textContent = `Gain de dps simulé par Bloodmallet, classé en valeur absolue${
+    etoile ? ' · * rotation simulée sans PI externe' : ''
+  }.`;
+  wrap.appendChild(note);
+
+  return wrap;
+}
+
+/**
+ * Le panneau descend sous le bouton et se referme au clic ailleurs ou avec Echap :
+ * c'est une antiseche qu'on consulte au passage, elle ne doit jamais rester dans les
+ * pattes de la vue en cours.
+ */
+// Les panneaux deroulants de la barre du haut : ouvrir l'un ferme l'autre, deux
+// antiseches ouvertes en meme temps se marcheraient dessus.
+const panneauxBarre = [];
+
+function armerPanneau(idBouton, idPanneau, construire) {
+  const bouton = document.getElementById(idBouton);
+  const panneau = document.getElementById(idPanneau);
+  if (!bouton || !panneau) return;
+
+  panneau.appendChild(construire());
+
+  const afficher = (ouvert) => {
+    panneau.classList.toggle('is-open', ouvert);
+    bouton.classList.toggle('is-open', ouvert);
+    bouton.setAttribute('aria-expanded', String(ouvert));
+  };
+
+  panneauxBarre.push({ afficher, panneau });
+
+  bouton.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const ouvrir = !panneau.classList.contains('is-open');
+    for (const autre of panneauxBarre) if (autre.panneau !== panneau) autre.afficher(false);
+    afficher(ouvrir);
+  });
+
+  // Un clic dans le panneau ne le referme pas : on y lit un tableau, on peut vouloir
+  // le faire defiler ou selectionner une valeur.
+  panneau.addEventListener('click', (event) => event.stopPropagation());
+  document.addEventListener('click', () => afficher(false));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') afficher(false);
+  });
+}
+
 /* ---------------- init ---------------- */
 
 for (const tab of els.tabs) {
@@ -3593,12 +3859,21 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
 
 (async function init() {
   try {
-    await Promise.all([loadSpecs(), loadRoster(), loadStore(), loadTrinkets(), loadWowhead()]);
+    await Promise.all([
+      loadSpecs(),
+      loadRoster(),
+      loadStore(),
+      loadTrinkets(),
+      loadWowhead(),
+      loadPowerInfusion(),
+    ]);
     // Etat de depart : l'ecran d'accueil de la guilde, onglets masques.
     selectView('rand', 'guild');
     render();
     // Une seule fois : `renderMascotte` passe a chaque rendu, l'ecouteur non.
     armerAccesRoster();
+    armerPanneau('cle-toggle', 'cle-panneau', panneauCle);
+    armerPanneau('pi-toggle', 'pi-panneau', panneauPI);
   } catch (err) {
     showMessage(`Erreur au chargement : ${err.message}`, 'error');
   }

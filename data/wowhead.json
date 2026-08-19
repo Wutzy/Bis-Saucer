@@ -3,7 +3,7 @@
   "specs": {
     "death-knight-blood": {
       "key": "death-knight-blood",
-      "fetchedAt": "2026-08-19T04:58:21.546Z",
+      "fetchedAt": "2026-08-19T13:37:18.383Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear",
         "available": true,
@@ -6966,5 +6966,5 @@
       }
     }
   },
-  "updatedAt": "2026-08-19T07:33:37.033Z"
+  "updatedAt": "2026-08-19T13:37:18.495Z"
 }

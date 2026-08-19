@@ -30,9 +30,10 @@ const {
   saveSpecEntry,
   saveTrinketEntry,
   saveWowheadEntry,
+  savePowerInfusion,
 } = require(path.join(ROOT, 'src/store'));
 const { scrapeGuide } = require(path.join(ROOT, 'src/icyveins'));
-const { fetchTrinkets } = require(path.join(ROOT, 'src/bloodmallet'));
+const { fetchTrinkets, fetchPowerInfusion } = require(path.join(ROOT, 'src/bloodmallet'));
 const { fetchTrinketTiers, fetchConsumables } = require(path.join(ROOT, 'src/wowhead'));
 
 function option(nom, defaut) {
@@ -132,6 +133,26 @@ async function majSpec(entry) {
   return resultat;
 }
 
+/**
+ * Classement Power Infusion : une seule requete pour toute l'application, hors de la
+ * boucle des specs puisqu'il n'appartient a aucune. Il echoue seul — le reste de la
+ * mise a jour reste publiable.
+ */
+async function majPowerInfusion() {
+  try {
+    const classement = await fetchPowerInfusion();
+    if (!classement.available) return 'Power Infusion : aucune donnée';
+    savePowerInfusion(classement);
+    const compte = Object.entries(classement.targets)
+      .filter(([, d]) => d.available)
+      .map(([cibles, d]) => `${d.top.length} à ${cibles} cible(s)`)
+      .join(', ');
+    return `Power Infusion : ${compte}`;
+  } catch (err) {
+    return `Power Infusion : ÉCHEC (${err.message})`;
+  }
+}
+
 (async () => {
   const cibles = specsSuivies().slice(0, LIMITE);
   if (!cibles.length) {
@@ -155,6 +176,8 @@ async function majSpec(entry) {
 
     if (index < cibles.length - 1) await pause(DELAI);
   }
+
+  console.log(`  ${await majPowerInfusion()}`);
 
   console.log(
     `\n${cibles.length - echecsComplets.length}/${cibles.length} spec(s) à jour, ` +

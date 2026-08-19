@@ -13,9 +13,11 @@ const {
   saveTrinketEntry,
   readWowhead,
   saveWowheadEntry,
+  readPowerInfusion,
+  savePowerInfusion,
 } = require('./src/store');
 const { scrapeGuide, ScrapeError } = require('./src/icyveins');
-const { fetchTrinkets } = require('./src/bloodmallet');
+const { fetchTrinkets, fetchPowerInfusion } = require('./src/bloodmallet');
 const { fetchTrinketTiers, fetchConsumables } = require('./src/wowhead');
 
 const app = express();
@@ -126,6 +128,32 @@ app.get('/api/trinkets', (req, res) => {
 app.get('/api/wowhead', (req, res) => {
   res.json(readWowhead());
 });
+
+/** Classement Power Infusion (data/powerinfusion.json). Aucun appel reseau. */
+app.get('/api/powerinfusion', (req, res) => {
+  res.json(readPowerInfusion());
+});
+
+/**
+ * Le classement PI ne depend d'aucune spec : il n'a pas sa place dans la boucle de
+ * scrape, mais il doit suivre les mises a jour. On le rafraichit au passage, et
+ * seulement si celui en cache date de plus de 12 h — Bloodmallet ne le resimule
+ * qu'une fois par jour, le retaper a chaque clic n'apporterait rien.
+ */
+const PI_MAX_AGE_MS = 12 * 60 * 60 * 1000;
+
+async function rafraichirPowerInfusionSiVieux() {
+  const cache = readPowerInfusion();
+  const age = cache.updatedAt ? Date.now() - new Date(cache.updatedAt).getTime() : Infinity;
+  if (age >= 0 && age < PI_MAX_AGE_MS) return;
+  try {
+    const classement = await fetchPowerInfusion();
+    if (classement.available) savePowerInfusion(classement);
+  } catch (err) {
+    // Le classement PI est un bonus : son echec ne doit jamais faire echouer un scrape.
+    console.warn(`[power-infusion] mise à jour ignorée (${err.message})`);
+  }
+}
 
 /** Scrape a la demande d'une classe/spec. */
 app.post('/api/scrape', async (req, res) => {
@@ -243,6 +271,10 @@ app.post('/api/scrape', async (req, res) => {
       wowhead = partiel;
       saveWowheadEntry(key, wowhead);
     }
+
+    // Le classement Power Infusion ne depend d'aucune spec, mais mettre a jour, c'est
+    // tout mettre a jour : on le rafraichit ici aussi, s'il a vieilli.
+    await rafraichirPowerInfusionSiVieux();
 
     return res.json({ entry: record, trinkets, wowhead });
   } catch (err) {

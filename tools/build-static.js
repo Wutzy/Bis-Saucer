@@ -21,7 +21,12 @@ const OUT = path.join(ROOT, 'docs'); // GitHub Pages sait servir /docs sans CI
 const { SPECS, specKey, guideUrl } = require(path.join(ROOT, 'src/specs'));
 const { CLASSES } = require(path.join(ROOT, 'src/classes'));
 const { readRoster } = require(path.join(ROOT, 'src/roster'));
-const { readStore, readTrinkets, readWowhead } = require(path.join(ROOT, 'src/store'));
+const {
+  readStore,
+  readTrinkets,
+  readWowhead,
+  readPowerInfusion,
+} = require(path.join(ROOT, 'src/store'));
 
 function copyDir(from, to) {
   fs.mkdirSync(to, { recursive: true });
@@ -70,6 +75,7 @@ const sizes = {
   bis: write('bis.json', readStore()),
   trinkets: write('trinkets.json', readTrinkets()),
   wowhead: write('wowhead.json', readWowhead()),
+  powerinfusion: write('powerinfusion.json', readPowerInfusion()),
 };
 
 // GitHub Pages passe le site dans Jekyll par defaut, qui ignore certains fichiers.
