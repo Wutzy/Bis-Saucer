@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:57:51.251Z",
+      "scrapedAt": "2026-08-19T04:58:18.842Z",
       "items": [
         {
           "slot": "Helm",
@@ -2660,7 +2660,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:57:56.235Z",
+      "scrapedAt": "2026-08-19T04:58:23.611Z",
       "items": [
         {
           "slot": "Helm",
@@ -4322,7 +4322,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:01.022Z",
+      "scrapedAt": "2026-08-19T04:58:28.476Z",
       "items": [
         {
           "slot": "Helm",
@@ -4769,10 +4769,10 @@
               },
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -4818,10 +4818,10 @@
                   "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green"
                 },
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -4843,10 +4843,10 @@
               "enchant": null,
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -4990,10 +4990,10 @@
               },
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5026,10 +5026,10 @@
               },
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5044,13 +5044,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 250215,
+              "itemId": 273796,
               "originalItemId": null,
-              "wowheadParams": "item=250215&bonus=12854",
-              "name": "Freightrunner's Flask",
-              "quality": 3,
-              "icon": "inv_alchemy_90_flask_red",
-              "source": "Murder Row",
+              "wowheadParams": "item=273796&bonus=12854",
+              "name": "Vile Vial of Volatile Venom",
+              "quality": 4,
+              "icon": "inv_121_trinket_dungeon_ulatek_vile",
+              "source": "Altar of Fangs",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -5062,23 +5062,23 @@
               "slotFr": "Poignets",
               "align": "left",
               "empty": false,
-              "itemId": 244576,
+              "itemId": 268240,
               "originalItemId": null,
-              "wowheadParams": "item=244576&bonus=13751:12497:13836",
-              "name": "Silvermoon Agent's Deflectors",
+              "wowheadParams": "item=268240&bonus=13751:12497:13836",
+              "name": "Restless Spirit Shackles",
               "quality": 4,
-              "icon": "inv_bracer_leather_questbloodelf_b_01",
-              "source": "Craft (Leatherworking)",
+              "icon": "8095063",
+              "source": "Nek'zali",
               "catalyst": false,
-              "crafted": true,
-              "profession": "Leatherworking",
+              "crafted": false,
+              "profession": null,
               "enchant": null,
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 },
                 {
                   "name": "Arcanoweave Lining",
@@ -5122,9 +5122,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Acuity of the Ren'dorei",
-                "itemId": 244029,
-                "wowheadParams": "item=244029",
+                "name": "Arcane Mastery",
+                "itemId": 244031,
+                "wowheadParams": "item=244031",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -5134,18 +5134,25 @@
               "slotFr": "Main gauche",
               "align": "left",
               "empty": false,
-              "itemId": 251191,
+              "itemId": 245769,
               "originalItemId": null,
-              "wowheadParams": "item=251191&bonus=12854",
-              "name": "Luminescent Sprout",
-              "quality": 3,
+              "wowheadParams": "item=245769&bonus=13751:12497:13836",
+              "name": "Aln'hara Lantern",
+              "quality": 4,
               "icon": "inv_offhand_1h_dungeonharronir_c_01",
-              "source": "Blinding Vale",
+              "source": "Craft (Inscription)",
               "catalyst": false,
-              "crafted": false,
-              "profession": null,
+              "crafted": true,
+              "profession": "Inscription",
               "enchant": null,
-              "gems": []
+              "gems": [
+                {
+                  "name": "Hunter's Ritual Stone",
+                  "itemId": 273059,
+                  "wowheadParams": "item=273059",
+                  "icon": "inv_12_profession_blacksmithing_weightstone_green"
+                }
+              ]
             }
           ]
         },
@@ -5175,10 +5182,10 @@
               },
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5243,10 +5250,10 @@
               "enchant": null,
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5390,10 +5397,10 @@
               },
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5426,10 +5433,10 @@
               },
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5444,13 +5451,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 250215,
+              "itemId": 273796,
               "originalItemId": null,
-              "wowheadParams": "item=250215&bonus=12854",
-              "name": "Freightrunner's Flask",
-              "quality": 3,
-              "icon": "inv_alchemy_90_flask_red",
-              "source": "Murder Row",
+              "wowheadParams": "item=273796&bonus=12854",
+              "name": "Vile Vial of Volatile Venom",
+              "quality": 4,
+              "icon": "inv_121_trinket_dungeon_ulatek_vile",
+              "source": "Altar of Fangs",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -5475,10 +5482,10 @@
               "enchant": null,
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 },
                 {
                   "name": "Arcanoweave Lining",
@@ -5522,9 +5529,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Acuity of the Ren'dorei",
-                "itemId": 244029,
-                "wowheadParams": "item=244029",
+                "name": "Arcane Mastery",
+                "itemId": 244031,
+                "wowheadParams": "item=244031",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -5534,18 +5541,25 @@
               "slotFr": "Main gauche",
               "align": "left",
               "empty": false,
-              "itemId": 251191,
+              "itemId": 245769,
               "originalItemId": null,
-              "wowheadParams": "item=251191&bonus=12854",
-              "name": "Luminescent Sprout",
-              "quality": 3,
+              "wowheadParams": "item=245769&bonus=13751:12497:13836",
+              "name": "Aln'hara Lantern",
+              "quality": 4,
               "icon": "inv_offhand_1h_dungeonharronir_c_01",
-              "source": "Blinding Vale",
+              "source": "Craft (Inscription)",
               "catalyst": false,
-              "crafted": false,
-              "profession": null,
+              "crafted": true,
+              "profession": "Inscription",
               "enchant": null,
-              "gems": []
+              "gems": [
+                {
+                  "name": "Hunter's Ritual Stone",
+                  "itemId": 273059,
+                  "wowheadParams": "item=273059",
+                  "icon": "inv_12_profession_blacksmithing_weightstone_green"
+                }
+              ]
             }
           ]
         },
@@ -5575,10 +5589,10 @@
               },
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5624,10 +5638,10 @@
                   "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green"
                 },
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5649,10 +5663,10 @@
               "enchant": null,
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5796,10 +5810,10 @@
               },
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5832,10 +5846,10 @@
               },
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 }
               ]
             },
@@ -5850,13 +5864,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 270161,
+              "itemId": 270169,
               "originalItemId": null,
-              "wowheadParams": "item=270161&bonus=12854",
-              "name": "Fang of Umbral Malignance",
+              "wowheadParams": "item=270169&bonus=13848",
+              "name": "Hex Lord's Dooming Idol",
               "quality": 4,
-              "icon": "inv_121_trinket_raid_ulatek_fang_purple",
-              "source": "Vashnik",
+              "icon": "inv_archaeology_orcclans_crackedidol",
+              "source": "Coiled Altar",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -5881,10 +5895,10 @@
               "enchant": null,
               "gems": [
                 {
-                  "name": "Flawless Deadly Amethyst",
-                  "itemId": 240898,
-                  "wowheadParams": "item=240898",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+                  "name": "Flawless Quick Amethyst",
+                  "itemId": 240900,
+                  "wowheadParams": "item=240900",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
                 },
                 {
                   "name": "Arcanoweave Lining",
@@ -5928,9 +5942,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Acuity of the Ren'dorei",
-                "itemId": 244029,
-                "wowheadParams": "item=244029",
+                "name": "Arcane Mastery",
+                "itemId": 244031,
+                "wowheadParams": "item=244031",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -5940,18 +5954,25 @@
               "slotFr": "Main gauche",
               "align": "left",
               "empty": false,
-              "itemId": 268197,
+              "itemId": 245769,
               "originalItemId": null,
-              "wowheadParams": "item=268197&bonus=12854",
-              "name": "Spine of the Hissing Abyss",
+              "wowheadParams": "item=245769&bonus=13751:12497:13836",
+              "name": "Aln'hara Lantern",
               "quality": 4,
-              "icon": "inv_offhand_1h_ulatek_d_01",
-              "source": "Entombed Sentinels",
+              "icon": "inv_offhand_1h_dungeonharronir_c_01",
+              "source": "Craft (Inscription)",
               "catalyst": false,
-              "crafted": false,
-              "profession": null,
+              "crafted": true,
+              "profession": "Inscription",
               "enchant": null,
-              "gems": []
+              "gems": [
+                {
+                  "name": "Hunter's Ritual Stone",
+                  "itemId": 273059,
+                  "wowheadParams": "item=273059",
+                  "icon": "inv_12_profession_blacksmithing_weightstone_green"
+                }
+              ]
             }
           ]
         }
@@ -5961,18 +5982,18 @@
           "category": "On-Use",
           "items": [
             {
-              "itemId": 250215,
-              "wowheadParams": "item=250215",
-              "name": "Freightrunner's Flask",
-              "quality": 3,
-              "icon": "inv_alchemy_90_flask_red"
-            },
-            {
               "itemId": 273796,
               "wowheadParams": "item=273796",
               "name": "Vile Vial of Volatile Venom",
               "quality": 4,
               "icon": "inv_121_trinket_dungeon_ulatek_vile"
+            },
+            {
+              "itemId": 250215,
+              "wowheadParams": "item=250215",
+              "name": "Freightrunner's Flask",
+              "quality": 3,
+              "icon": "inv_alchemy_90_flask_red"
             }
           ]
         },
@@ -5990,7 +6011,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:09.225Z",
+      "scrapedAt": "2026-08-19T04:58:37.326Z",
       "items": [
         {
           "slot": "Helm",
@@ -6015,10 +6036,10 @@
           },
           "gems": [
             {
-              "name": "Flawless Deadly Amethyst",
-              "itemId": 240898,
-              "wowheadParams": "item=240898",
-              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+              "name": "Flawless Quick Amethyst",
+              "itemId": 240900,
+              "wowheadParams": "item=240900",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
             }
           ]
         },
@@ -6064,10 +6085,10 @@
               "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green"
             },
             {
-              "name": "Flawless Deadly Amethyst",
-              "itemId": 240898,
-              "wowheadParams": "item=240898",
-              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+              "name": "Flawless Quick Amethyst",
+              "itemId": 240900,
+              "wowheadParams": "item=240900",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
             }
           ]
         },
@@ -6089,10 +6110,10 @@
           "enchant": null,
           "gems": [
             {
-              "name": "Flawless Deadly Amethyst",
-              "itemId": 240898,
-              "wowheadParams": "item=240898",
-              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+              "name": "Flawless Quick Amethyst",
+              "itemId": 240900,
+              "wowheadParams": "item=240900",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
             }
           ]
         },
@@ -6236,10 +6257,10 @@
           },
           "gems": [
             {
-              "name": "Flawless Deadly Amethyst",
-              "itemId": 240898,
-              "wowheadParams": "item=240898",
-              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+              "name": "Flawless Quick Amethyst",
+              "itemId": 240900,
+              "wowheadParams": "item=240900",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
             }
           ]
         },
@@ -6272,10 +6293,10 @@
           },
           "gems": [
             {
-              "name": "Flawless Deadly Amethyst",
-              "itemId": 240898,
-              "wowheadParams": "item=240898",
-              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+              "name": "Flawless Quick Amethyst",
+              "itemId": 240900,
+              "wowheadParams": "item=240900",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
             }
           ]
         },
@@ -6290,13 +6311,13 @@
           "slotFr": "Bijou",
           "align": "right",
           "empty": false,
-          "itemId": 250215,
+          "itemId": 273796,
           "originalItemId": null,
-          "wowheadParams": "item=250215&bonus=12854",
-          "name": "Freightrunner's Flask",
-          "quality": 3,
-          "icon": "inv_alchemy_90_flask_red",
-          "source": "Murder Row",
+          "wowheadParams": "item=273796&bonus=12854",
+          "name": "Vile Vial of Volatile Venom",
+          "quality": 4,
+          "icon": "inv_121_trinket_dungeon_ulatek_vile",
+          "source": "Altar of Fangs",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -6308,23 +6329,23 @@
           "slotFr": "Poignets",
           "align": "left",
           "empty": false,
-          "itemId": 244576,
+          "itemId": 268240,
           "originalItemId": null,
-          "wowheadParams": "item=244576&bonus=13751:12497:13836",
-          "name": "Silvermoon Agent's Deflectors",
+          "wowheadParams": "item=268240&bonus=13751:12497:13836",
+          "name": "Restless Spirit Shackles",
           "quality": 4,
-          "icon": "inv_bracer_leather_questbloodelf_b_01",
-          "source": "Craft (Leatherworking)",
+          "icon": "8095063",
+          "source": "Nek'zali",
           "catalyst": false,
-          "crafted": true,
-          "profession": "Leatherworking",
+          "crafted": false,
+          "profession": null,
           "enchant": null,
           "gems": [
             {
-              "name": "Flawless Deadly Amethyst",
-              "itemId": 240898,
-              "wowheadParams": "item=240898",
-              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
+              "name": "Flawless Quick Amethyst",
+              "itemId": 240900,
+              "wowheadParams": "item=240900",
+              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
             },
             {
               "name": "Arcanoweave Lining",
@@ -6368,9 +6389,9 @@
           "crafted": false,
           "profession": null,
           "enchant": {
-            "name": "Acuity of the Ren'dorei",
-            "itemId": 244029,
-            "wowheadParams": "item=244029",
+            "name": "Arcane Mastery",
+            "itemId": 244031,
+            "wowheadParams": "item=244031",
             "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
           },
           "gems": []
@@ -6380,18 +6401,25 @@
           "slotFr": "Main gauche",
           "align": "left",
           "empty": false,
-          "itemId": 251191,
+          "itemId": 245769,
           "originalItemId": null,
-          "wowheadParams": "item=251191&bonus=12854",
-          "name": "Luminescent Sprout",
-          "quality": 3,
+          "wowheadParams": "item=245769&bonus=13751:12497:13836",
+          "name": "Aln'hara Lantern",
+          "quality": 4,
           "icon": "inv_offhand_1h_dungeonharronir_c_01",
-          "source": "Blinding Vale",
+          "source": "Craft (Inscription)",
           "catalyst": false,
-          "crafted": false,
-          "profession": null,
+          "crafted": true,
+          "profession": "Inscription",
           "enchant": null,
-          "gems": []
+          "gems": [
+            {
+              "name": "Hunter's Ritual Stone",
+              "itemId": 273059,
+              "wowheadParams": "item=273059",
+              "icon": "inv_12_profession_blacksmithing_weightstone_green"
+            }
+          ]
         }
       ]
     },
@@ -7548,7 +7576,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:17.233Z",
+      "scrapedAt": "2026-08-19T04:58:46.100Z",
       "items": [
         {
           "slot": "Helm",
@@ -8106,13 +8134,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 268233,
+              "itemId": 159388,
               "originalItemId": null,
-              "wowheadParams": "item=268233&bonus=12854",
-              "name": "Ferocious Scaleboots",
-              "quality": 4,
-              "icon": "inv_boot_mail_raidhunterulatek_d_01",
-              "source": "Sszorak",
+              "wowheadParams": "item=159388&bonus=12854",
+              "name": "Sabatons of Coruscating Energy",
+              "quality": 3,
+              "icon": "inv_boot_mail_zandalardungeon_c_01",
+              "source": "Temple of Sethraliss",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -8188,13 +8216,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 252258,
+              "itemId": 158366,
               "originalItemId": null,
-              "wowheadParams": "item=252258&bonus=12854",
-              "name": "Sickening Signet of Atroxus",
+              "wowheadParams": "item=158366&bonus=12854",
+              "name": "Charged Sandstone Band",
               "quality": 3,
-              "icon": "inv_12_jewelry_devouringhost_ring_bronze2",
-              "source": "Voidscar Arena",
+              "icon": "inv_ring_80_03d",
+              "source": "Temple of Sethraliss",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -9120,7 +9148,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:21.549Z",
+      "scrapedAt": "2026-08-19T04:58:50.561Z",
       "items": [
         {
           "slot": "Helm",
@@ -9301,13 +9329,13 @@
           "slotFr": "Pieds",
           "align": "right",
           "empty": false,
-          "itemId": 268233,
+          "itemId": 159388,
           "originalItemId": null,
-          "wowheadParams": "item=268233&bonus=12854",
-          "name": "Ferocious Scaleboots",
-          "quality": 4,
-          "icon": "inv_boot_mail_raidhunterulatek_d_01",
-          "source": "Sszorak",
+          "wowheadParams": "item=159388&bonus=12854",
+          "name": "Sabatons of Coruscating Energy",
+          "quality": 3,
+          "icon": "inv_boot_mail_zandalardungeon_c_01",
+          "source": "Temple of Sethraliss",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -9383,13 +9411,13 @@
           "slotFr": "Anneau",
           "align": "right",
           "empty": false,
-          "itemId": 252258,
+          "itemId": 158366,
           "originalItemId": null,
-          "wowheadParams": "item=252258&bonus=12854",
-          "name": "Sickening Signet of Atroxus",
+          "wowheadParams": "item=158366&bonus=12854",
+          "name": "Charged Sandstone Band",
           "quality": 3,
-          "icon": "inv_12_jewelry_devouringhost_ring_bronze2",
-          "source": "Voidscar Arena",
+          "icon": "inv_ring_80_03d",
+          "source": "Temple of Sethraliss",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -10744,7 +10772,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:31.050Z",
+      "scrapedAt": "2026-08-19T04:59:00.640Z",
       "items": [
         {
           "slot": "Helm",
@@ -12340,7 +12368,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:39.882Z",
+      "scrapedAt": "2026-08-19T04:59:10.226Z",
       "items": [
         {
           "slot": "Helm",
@@ -13916,7 +13944,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:43.837Z",
+      "scrapedAt": "2026-08-19T04:59:14.401Z",
       "items": [
         {
           "slot": "Helm",
@@ -15483,7 +15511,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:48.392Z",
+      "scrapedAt": "2026-08-19T04:59:19.548Z",
       "items": [
         {
           "slot": "Helm",
@@ -15961,16 +15989,16 @@
               "slotFr": "Taille",
               "align": "right",
               "empty": false,
-              "itemId": 268257,
+              "itemId": 239649,
               "originalItemId": null,
-              "wowheadParams": "item=268257&bonus=13848",
-              "name": "Caustic Chain-Wrapped Sash",
+              "wowheadParams": "item=239649&bonus=12497",
+              "name": "Martyr's Waistwrap",
               "quality": 4,
-              "icon": "inv_belt_cloth_raidwarlockulatek_d_01",
-              "source": "Sszorak",
+              "icon": "inv_belt_cloth_questbloodelf_b_01",
+              "source": "Craft (Tailoring)",
               "catalyst": false,
-              "crafted": false,
-              "profession": null,
+              "crafted": true,
+              "profession": "Tailoring",
               "enchant": null,
               "gems": [
                 {
@@ -16264,16 +16292,16 @@
               "slotFr": "Main gauche",
               "align": "left",
               "empty": false,
-              "itemId": 245769,
+              "itemId": 159667,
               "originalItemId": null,
-              "wowheadParams": "item=245769&bonus=13751:13836:12497:8793:13771",
-              "name": "Aln'hara Lantern",
-              "quality": 4,
-              "icon": "inv_offhand_1h_dungeonharronir_c_01",
-              "source": "Craft (Inscription)",
+              "wowheadParams": "item=159667",
+              "name": "Vessel of Last Rites",
+              "quality": 3,
+              "icon": "inv_offhand_1h_battledungeon_c_02",
+              "source": "King's Rest",
               "catalyst": false,
-              "crafted": true,
-              "profession": "Inscription",
+              "crafted": false,
+              "profession": null,
               "enchant": null,
               "gems": []
             }
@@ -17134,16 +17162,16 @@
               "slotFr": "Taille",
               "align": "right",
               "empty": false,
-              "itemId": 268257,
+              "itemId": 239649,
               "originalItemId": null,
-              "wowheadParams": "item=268257&bonus=13848",
-              "name": "Caustic Chain-Wrapped Sash",
+              "wowheadParams": "item=239649&bonus=12497",
+              "name": "Martyr's Waistwrap",
               "quality": 4,
-              "icon": "inv_belt_cloth_raidwarlockulatek_d_01",
-              "source": "Sszorak",
+              "icon": "inv_belt_cloth_questbloodelf_b_01",
+              "source": "Craft (Tailoring)",
               "catalyst": false,
-              "crafted": false,
-              "profession": null,
+              "crafted": true,
+              "profession": "Tailoring",
               "enchant": null,
               "gems": [
                 {
@@ -17437,16 +17465,16 @@
               "slotFr": "Main gauche",
               "align": "left",
               "empty": false,
-              "itemId": 245769,
+              "itemId": 159667,
               "originalItemId": null,
-              "wowheadParams": "item=245769&bonus=13751:13836:12497:8793:13771",
-              "name": "Aln'hara Lantern",
-              "quality": 4,
-              "icon": "inv_offhand_1h_dungeonharronir_c_01",
-              "source": "Craft (Inscription)",
+              "wowheadParams": "item=159667",
+              "name": "Vessel of Last Rites",
+              "quality": 3,
+              "icon": "inv_offhand_1h_battledungeon_c_02",
+              "source": "King's Rest",
               "catalyst": false,
-              "crafted": true,
-              "profession": "Inscription",
+              "crafted": false,
+              "profession": null,
               "enchant": null,
               "gems": []
             }
@@ -18248,7 +18276,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:52.178Z",
+      "scrapedAt": "2026-08-19T04:59:24.671Z",
       "items": [
         {
           "slot": "Helm",
@@ -18334,16 +18362,16 @@
           "slotFr": "Taille",
           "align": "right",
           "empty": false,
-          "itemId": 268257,
+          "itemId": 239649,
           "originalItemId": null,
-          "wowheadParams": "item=268257&bonus=13848",
-          "name": "Caustic Chain-Wrapped Sash",
+          "wowheadParams": "item=239649&bonus=12497",
+          "name": "Martyr's Waistwrap",
           "quality": 4,
-          "icon": "inv_belt_cloth_raidwarlockulatek_d_01",
-          "source": "Sszorak",
+          "icon": "inv_belt_cloth_questbloodelf_b_01",
+          "source": "Craft (Tailoring)",
           "catalyst": false,
-          "crafted": false,
-          "profession": null,
+          "crafted": true,
+          "profession": "Tailoring",
           "enchant": null,
           "gems": [
             {
@@ -18637,16 +18665,16 @@
           "slotFr": "Main gauche",
           "align": "left",
           "empty": false,
-          "itemId": 245769,
+          "itemId": 159667,
           "originalItemId": null,
-          "wowheadParams": "item=245769&bonus=13751:13836:12497:8793:13771",
-          "name": "Aln'hara Lantern",
-          "quality": 4,
-          "icon": "inv_offhand_1h_dungeonharronir_c_01",
-          "source": "Craft (Inscription)",
+          "wowheadParams": "item=159667",
+          "name": "Vessel of Last Rites",
+          "quality": 3,
+          "icon": "inv_offhand_1h_battledungeon_c_02",
+          "source": "King's Rest",
           "catalyst": false,
-          "crafted": true,
-          "profession": "Inscription",
+          "crafted": false,
+          "profession": null,
           "enchant": null,
           "gems": []
         }
@@ -18744,16 +18772,16 @@
               "slotFr": "Taille",
               "align": "right",
               "empty": false,
-              "itemId": 268257,
+              "itemId": 239649,
               "originalItemId": null,
-              "wowheadParams": "item=268257&bonus=12854",
-              "name": "Caustic Chain-Wrapped Sash",
+              "wowheadParams": "item=239649&bonus=13751:12497:13836:8793:12384",
+              "name": "Martyr's Waistwrap",
               "quality": 4,
-              "icon": "inv_belt_cloth_raidwarlockulatek_d_01",
-              "source": "Sszorak",
+              "icon": "inv_belt_cloth_questbloodelf_b_01",
+              "source": "Craft (Tailoring)",
               "catalyst": false,
-              "crafted": false,
-              "profession": null,
+              "crafted": true,
+              "profession": "Tailoring",
               "enchant": null,
               "gems": [
                 {
@@ -18761,6 +18789,12 @@
                   "itemId": 240900,
                   "wowheadParams": "item=240900",
                   "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
+                },
+                {
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
                 }
               ]
             },
@@ -19041,25 +19075,18 @@
               "slotFr": "Main gauche",
               "align": "left",
               "empty": false,
-              "itemId": 245769,
+              "itemId": 268197,
               "originalItemId": null,
-              "wowheadParams": "item=245769&bonus=13751:12497:13836:8793:13771",
-              "name": "Aln'hara Lantern",
+              "wowheadParams": "item=268197&bonus=12854",
+              "name": "Spine of the Hissing Abyss",
               "quality": 4,
-              "icon": "inv_offhand_1h_dungeonharronir_c_01",
-              "source": "Craft (Inscription)",
+              "icon": "inv_offhand_1h_ulatek_d_01",
+              "source": "Entombed Sentinels",
               "catalyst": false,
-              "crafted": true,
-              "profession": "Inscription",
+              "crafted": false,
+              "profession": null,
               "enchant": null,
-              "gems": [
-                {
-                  "name": "Hunter's Ritual Stone",
-                  "itemId": 273059,
-                  "wowheadParams": "item=273059",
-                  "icon": "inv_12_profession_blacksmithing_weightstone_green"
-                }
-              ]
+              "gems": []
             }
           ]
         },
@@ -19879,7 +19906,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:55.983Z",
+      "scrapedAt": "2026-08-19T04:59:29.017Z",
       "items": [
         {
           "slot": "Helm",
@@ -19959,16 +19986,16 @@
           "slotFr": "Taille",
           "align": "right",
           "empty": false,
-          "itemId": 268257,
+          "itemId": 239649,
           "originalItemId": null,
-          "wowheadParams": "item=268257&bonus=12854",
-          "name": "Caustic Chain-Wrapped Sash",
+          "wowheadParams": "item=239649&bonus=13751:12497:13836:8793:12384",
+          "name": "Martyr's Waistwrap",
           "quality": 4,
-          "icon": "inv_belt_cloth_raidwarlockulatek_d_01",
-          "source": "Sszorak",
+          "icon": "inv_belt_cloth_questbloodelf_b_01",
+          "source": "Craft (Tailoring)",
           "catalyst": false,
-          "crafted": false,
-          "profession": null,
+          "crafted": true,
+          "profession": "Tailoring",
           "enchant": null,
           "gems": [
             {
@@ -19976,6 +20003,12 @@
               "itemId": 240900,
               "wowheadParams": "item=240900",
               "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple"
+            },
+            {
+              "name": "Arcanoweave Lining",
+              "itemId": 240167,
+              "wowheadParams": "item=240167",
+              "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
             }
           ]
         },
@@ -20256,25 +20289,18 @@
           "slotFr": "Main gauche",
           "align": "left",
           "empty": false,
-          "itemId": 245769,
+          "itemId": 268197,
           "originalItemId": null,
-          "wowheadParams": "item=245769&bonus=13751:12497:13836:8793:13771",
-          "name": "Aln'hara Lantern",
+          "wowheadParams": "item=268197&bonus=12854",
+          "name": "Spine of the Hissing Abyss",
           "quality": 4,
-          "icon": "inv_offhand_1h_dungeonharronir_c_01",
-          "source": "Craft (Inscription)",
+          "icon": "inv_offhand_1h_ulatek_d_01",
+          "source": "Entombed Sentinels",
           "catalyst": false,
-          "crafted": true,
-          "profession": "Inscription",
+          "crafted": false,
+          "profession": null,
           "enchant": null,
-          "gems": [
-            {
-              "name": "Hunter's Ritual Stone",
-              "itemId": 273059,
-              "wowheadParams": "item=273059",
-              "icon": "inv_12_profession_blacksmithing_weightstone_green"
-            }
-          ]
+          "gems": []
         }
       ]
     },
@@ -21527,7 +21553,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:59:00.780Z",
+      "scrapedAt": "2026-08-19T04:59:33.992Z",
       "items": [
         {
           "slot": "Helm",
@@ -23262,7 +23288,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:59:05.510Z",
+      "scrapedAt": "2026-08-19T04:59:38.972Z",
       "items": [
         {
           "slot": "Helm",
@@ -24900,7 +24926,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:59:14.340Z",
+      "scrapedAt": "2026-08-19T04:59:48.677Z",
       "items": [
         {
           "slot": "Helm",
@@ -26576,7 +26602,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:59:18.049Z",
+      "scrapedAt": "2026-08-19T04:59:52.725Z",
       "items": [
         {
           "slot": "Helm",
@@ -28294,7 +28320,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:59:23.497Z",
+      "scrapedAt": "2026-08-19T04:59:57.739Z",
       "items": [
         {
           "slot": "Helm",
@@ -29879,7 +29905,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:36.105Z",
+      "scrapedAt": "2026-08-19T04:59:06.020Z",
       "items": [
         {
           "slot": "Helm",
@@ -31481,7 +31507,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:13.258Z",
+      "scrapedAt": "2026-08-19T04:58:41.656Z",
       "items": [
         {
           "slot": "Helm",
@@ -32067,13 +32093,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 268233,
+              "itemId": 159388,
               "originalItemId": null,
-              "wowheadParams": "item=268233&bonus=12854",
-              "name": "Ferocious Scaleboots",
-              "quality": 4,
-              "icon": "inv_boot_mail_raidhunterulatek_d_01",
-              "source": "Sszorak",
+              "wowheadParams": "item=159388&bonus=12854",
+              "name": "Sabatons of Coruscating Energy",
+              "quality": 3,
+              "icon": "inv_boot_mail_zandalardungeon_c_01",
+              "source": "Temple of Sethraliss",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -33100,7 +33126,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:26.005Z",
+      "scrapedAt": "2026-08-19T04:58:55.425Z",
       "items": [
         {
           "slot": "Helm",
@@ -33281,13 +33307,13 @@
           "slotFr": "Pieds",
           "align": "right",
           "empty": false,
-          "itemId": 268233,
+          "itemId": 159388,
           "originalItemId": null,
-          "wowheadParams": "item=268233&bonus=12854",
-          "name": "Ferocious Scaleboots",
-          "quality": 4,
-          "icon": "inv_boot_mail_raidhunterulatek_d_01",
-          "source": "Sszorak",
+          "wowheadParams": "item=159388&bonus=12854",
+          "name": "Sabatons of Coruscating Energy",
+          "quality": 3,
+          "icon": "inv_boot_mail_zandalardungeon_c_01",
+          "source": "Temple of Sethraliss",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -34765,7 +34791,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:59:10.011Z",
+      "scrapedAt": "2026-08-19T04:59:43.641Z",
       "items": [
         {
           "slot": "Helm",
@@ -36455,7 +36481,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-18T04:58:05.123Z",
+      "scrapedAt": "2026-08-19T04:58:33.047Z",
       "items": [
         {
           "slot": "Helm",
@@ -36866,5 +36892,5 @@
       ]
     }
   },
-  "updatedAt": "2026-08-18T04:59:23.504Z"
+  "updatedAt": "2026-08-19T04:59:57.747Z"
 }
