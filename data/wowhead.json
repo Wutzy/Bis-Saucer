@@ -7002,6 +7002,275 @@
           }
         ]
       }
+    },
+    "warlock-demonology": {
+      "key": "warlock-demonology",
+      "fetchedAt": "2026-08-20T06:28:32.839Z",
+      "trinkets": {
+        "url": "https://www.wowhead.com/guide/classes/warlock/demonology/bis-gear",
+        "available": true,
+        "tiers": [
+          {
+            "rank": "S",
+            "items": [
+              {
+                "itemId": 270164,
+                "name": "Gebbo's Bottomless Bag",
+                "icon": "inv_10_tailoring_bag1_color2",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 250215,
+                "name": "Freightrunner's Flask",
+                "icon": "inv_alchemy_90_flask_red",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270167,
+                "name": "Wavecaller's Seastone",
+                "icon": "inv_tradeskillitem_sorcererswater",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "A",
+            "items": [
+              {
+                "itemId": 273796,
+                "name": "Vile Vial of Volatile Venom",
+                "icon": "inv_121_trinket_dungeon_ulatek_vile",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250214,
+                "name": "Lightspire Core",
+                "icon": "inv_enchant_essenceastrallarge",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270170,
+                "name": "Vexhul's Everflowing Gland",
+                "icon": "inv_11_0_misc_organmass_color3",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 250259,
+                "name": "Sapling of the Dawnroot",
+                "icon": "inv_misc_herb_nightmarevine",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 273649,
+                "name": "Stormbound Emblem of Dazar",
+                "icon": "inv_7_0raid_necklace_14a",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "B",
+            "items": [
+              {
+                "itemId": 250224,
+                "name": "Mindpiercer's Sigil",
+                "icon": "inv_icon_shadowcouncilorb_purple",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270169,
+                "name": "Hex Lord's Dooming Idol",
+                "icon": "inv_archaeology_orcclans_crackedidol",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 193757,
+                "name": "Ruby Whelp Shell",
+                "icon": "inv_item_dragonegg_redbroken01",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "C",
+            "items": [
+              {
+                "itemId": 270161,
+                "name": "Fang of Umbral Malignance",
+                "icon": "inv_121_trinket_raid_ulatek_fang_purple",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 273794,
+                "name": "Knot of Writhing Serpents",
+                "icon": "inv_121_trinket_dungeon_ulatek_writhe",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 274493,
+                "name": "Effigy of Ula'tek's Faithful",
+                "icon": "ability_fomor_boss_rune_green",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251792,
+                "name": "Glorious Crusader's Keepsake",
+                "icon": "inv_12_trinket_gloriuscrusaderskeepsake",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "D",
+            "items": [
+              {
+                "itemId": 251786,
+                "name": "Ever-Collapsing Void Fissure",
+                "icon": "inv_112_raiddimensius_blackhole",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274497,
+                "name": "Spirit-Rending Poison",
+                "icon": "inv_ability_poison_debuff",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 274496,
+                "name": "Ophidian Bone Whistle",
+                "icon": "inv_misc_coin_12",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "consumables": {
+        "url": "https://www.wowhead.com/guide/classes/warlock/demonology/enchants-gems-pve-dps",
+        "available": true,
+        "rows": [
+          {
+            "type": "Flask",
+            "items": [
+              {
+                "itemId": 241326,
+                "name": "Flask of the Shattered Sun",
+                "icon": "inv_12_profession_alchemy_flask_sindoreipotion_red--",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Combat Potion",
+            "items": [
+              {
+                "itemId": 241308,
+                "name": "Light's Potential",
+                "icon": "inv_12_profession_alchemy_lightpotion_yellow",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Health Potion",
+            "items": [
+              {
+                "itemId": 271884,
+                "name": "Concentrated Silvermoon Health Potion",
+                "icon": "inv_12_profession_alchemy_lightpotion_purple",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Weapon Buff",
+            "items": [
+              {
+                "itemId": 243734,
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_12_profession_enchanting_manaoil_red",
+                "quality": 2
+              }
+            ]
+          },
+          {
+            "type": "Augment Rune",
+            "items": [
+              {
+                "itemId": 259085,
+                "name": "Void-Touched Augment Rune",
+                "icon": "inv_10_enchanting_crystal_color2",
+                "quality": 3
+              }
+            ]
+          },
+          {
+            "type": "Food",
+            "items": [
+              {
+                "itemId": 242275,
+                "name": "Royal Roast",
+                "icon": "inv_cooking_100_roastduck",
+                "quality": 3
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   "updatedAt": "2026-08-22T04:57:25.362Z"
