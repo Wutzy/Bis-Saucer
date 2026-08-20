@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T13:37:15.431Z",
+      "scrapedAt": "2026-08-20T05:00:02.102Z",
       "items": [
         {
           "slot": "Helm",
@@ -2660,7 +2660,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:58:23.611Z",
+      "scrapedAt": "2026-08-20T05:00:06.648Z",
       "items": [
         {
           "slot": "Helm",
@@ -4322,7 +4322,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:58:28.476Z",
+      "scrapedAt": "2026-08-20T05:00:11.206Z",
       "items": [
         {
           "slot": "Helm",
@@ -6011,7 +6011,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:58:37.326Z",
+      "scrapedAt": "2026-08-20T05:00:19.159Z",
       "items": [
         {
           "slot": "Helm",
@@ -7576,7 +7576,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:58:46.100Z",
+      "scrapedAt": "2026-08-20T05:00:27.291Z",
       "items": [
         {
           "slot": "Helm",
@@ -9148,7 +9148,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:58:50.561Z",
+      "scrapedAt": "2026-08-20T05:00:31.695Z",
       "items": [
         {
           "slot": "Helm",
@@ -10772,7 +10772,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:00.640Z",
+      "scrapedAt": "2026-08-20T05:00:40.623Z",
       "items": [
         {
           "slot": "Helm",
@@ -12368,7 +12368,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:10.226Z",
+      "scrapedAt": "2026-08-20T05:00:48.996Z",
       "items": [
         {
           "slot": "Helm",
@@ -13431,13 +13431,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 273796,
+              "itemId": 250259,
               "originalItemId": null,
-              "wowheadParams": "item=273796&bonus=4786:12854",
-              "name": "Vile Vial of Volatile Venom",
-              "quality": 4,
-              "icon": "inv_121_trinket_dungeon_ulatek_vile",
-              "source": "Altar of Fangs",
+              "wowheadParams": "item=250259&bonus=4786:12854",
+              "name": "Sapling of the Dawnroot",
+              "quality": 3,
+              "icon": "inv_misc_herb_nightmarevine",
+              "source": "Blinding Vale",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -13515,13 +13515,13 @@
               "slotFr": "Main gauche",
               "align": "left",
               "empty": false,
-              "itemId": 193754,
+              "itemId": 251150,
               "originalItemId": null,
-              "wowheadParams": "item=193754&bonus=:4786:12854",
-              "name": "Drake Rider's Stecktarge",
-              "quality": 4,
-              "icon": "inv_shield_1h_drakonid_c_01",
-              "source": "Ruby Life Pools",
+              "wowheadParams": "item=251150&bonus=4786:12854",
+              "name": "Tempest's Shelter",
+              "quality": 3,
+              "icon": "inv_shield_1h_dungeonharronir_c_01",
+              "source": "Den of Nalorakk",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -13944,7 +13944,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:14.401Z",
+      "scrapedAt": "2026-08-20T05:00:52.735Z",
       "items": [
         {
           "slot": "Helm",
@@ -15511,7 +15511,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:19.548Z",
+      "scrapedAt": "2026-08-20T05:00:57.087Z",
       "items": [
         {
           "slot": "Helm",
@@ -18276,7 +18276,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:24.671Z",
+      "scrapedAt": "2026-08-20T05:01:00.976Z",
       "items": [
         {
           "slot": "Helm",
@@ -19906,7 +19906,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:29.017Z",
+      "scrapedAt": "2026-08-20T05:01:04.865Z",
       "items": [
         {
           "slot": "Helm",
@@ -21553,7 +21553,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:33.992Z",
+      "scrapedAt": "2026-08-20T05:01:13.873Z",
       "items": [
         {
           "slot": "Helm",
@@ -22190,13 +22190,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 252258,
+              "itemId": 268252,
               "originalItemId": null,
-              "wowheadParams": "item=252258&bonus=12854",
-              "name": "Sickening Signet of Atroxus",
-              "quality": 3,
-              "icon": "inv_12_jewelry_devouringhost_ring_bronze2",
-              "source": "Voidscar Arena",
+              "wowheadParams": "item=268252&bonus=12854",
+              "name": "Apex Brute's Claw Ring",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring03_red",
+              "source": "Sszorak",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -22226,13 +22226,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 268249,
+              "itemId": 273792,
               "originalItemId": null,
-              "wowheadParams": "item=268249&bonus=12854",
-              "name": "Vile Alchemist's Band",
+              "wowheadParams": "item=273792&bonus=12854",
+              "name": "Band of the Amani Warlord",
               "quality": 4,
-              "icon": "inv_121_jewelry_ring01_purple",
-              "source": "Vashnik",
+              "icon": "inv_121_jewelry_ring02_green",
+              "source": "Altar of Fangs",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -22311,13 +22311,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 250215,
+              "itemId": 273796,
               "originalItemId": null,
-              "wowheadParams": "item=250215&bonus=12854",
-              "name": "Freightrunner's Flask",
-              "quality": 3,
-              "icon": "inv_alchemy_90_flask_red",
-              "source": "Murder Row",
+              "wowheadParams": "item=273796&bonus=12854",
+              "name": "Vile Vial of Volatile Venom",
+              "quality": 4,
+              "icon": "inv_121_trinket_dungeon_ulatek_vile",
+              "source": "Altar of Fangs",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -22662,13 +22662,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 193757,
+              "itemId": 273794,
               "originalItemId": null,
-              "wowheadParams": "item=193757&bonus=:12854",
-              "name": "Ruby Whelp Shell",
+              "wowheadParams": "item=273794&bonus=12854",
+              "name": "Knot of Writhing Serpents",
               "quality": 4,
-              "icon": "inv_item_dragonegg_redbroken01",
-              "source": "Ruby Life Pools",
+              "icon": "inv_121_trinket_dungeon_ulatek_writhe",
+              "source": "Altar of Fangs",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -22711,13 +22711,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 250215,
+              "itemId": 273796,
               "originalItemId": null,
-              "wowheadParams": "item=250215&bonus=12854",
-              "name": "Freightrunner's Flask",
-              "quality": 3,
-              "icon": "inv_alchemy_90_flask_red",
-              "source": "Murder Row",
+              "wowheadParams": "item=273796&bonus=12854",
+              "name": "Vile Vial of Volatile Venom",
+              "quality": 4,
+              "icon": "inv_121_trinket_dungeon_ulatek_vile",
+              "source": "Altar of Fangs",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -23191,12 +23191,7 @@
               "name": "Gebbo's Bottomless Bag",
               "quality": 4,
               "icon": "inv_10_tailoring_bag1_color2"
-            }
-          ]
-        },
-        {
-          "category": "A Tier",
-          "items": [
+            },
             {
               "itemId": 250215,
               "wowheadParams": "item=250215&bonus=12854",
@@ -23221,7 +23216,7 @@
           ]
         },
         {
-          "category": "B Tier",
+          "category": "A Tier",
           "items": [
             {
               "itemId": 270161,
@@ -23254,8 +23249,15 @@
           ]
         },
         {
-          "category": "C Tier",
+          "category": "B Tier",
           "items": [
+            {
+              "itemId": 270169,
+              "wowheadParams": "item=270169",
+              "name": "Hex Lord's Dooming Idol",
+              "quality": 4,
+              "icon": "inv_archaeology_orcclans_crackedidol"
+            },
             {
               "itemId": 251792,
               "wowheadParams": "item=251792&bonus=12850",
@@ -23271,6 +23273,25 @@
               "icon": "inv_archaeology_70_tauren_drum"
             },
             {
+              "itemId": 273794,
+              "wowheadParams": "item=273794",
+              "name": "Knot of Writhing Serpents",
+              "quality": 4,
+              "icon": "inv_121_trinket_dungeon_ulatek_writhe"
+            },
+            {
+              "itemId": 245752,
+              "wowheadParams": "item=245752",
+              "name": "Thalassian Competitor's Insignia of Alacrity",
+              "quality": 2,
+              "icon": "inv_misc_token_argentdawn3"
+            }
+          ]
+        },
+        {
+          "category": "C Tier",
+          "items": [
+            {
               "itemId": 193757,
               "wowheadParams": "item=193757&bonus=:12854",
               "name": "Ruby Whelp Shell",
@@ -23283,12 +23304,26 @@
               "name": "Font of Venomous Rage",
               "quality": 4,
               "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green"
+            },
+            {
+              "itemId": 250259,
+              "wowheadParams": "item=250259",
+              "name": "Sapling of the Dawnroot",
+              "quality": 3,
+              "icon": "inv_misc_herb_nightmarevine"
+            },
+            {
+              "itemId": 250224,
+              "wowheadParams": "item=250224",
+              "name": "Mindpiercer's Sigil",
+              "quality": 3,
+              "icon": "inv_icon_shadowcouncilorb_purple"
             }
           ]
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:38.972Z",
+      "scrapedAt": "2026-08-20T05:01:18.655Z",
       "items": [
         {
           "slot": "Helm",
@@ -23509,13 +23544,13 @@
           "slotFr": "Anneau",
           "align": "right",
           "empty": false,
-          "itemId": 252258,
+          "itemId": 268252,
           "originalItemId": null,
-          "wowheadParams": "item=252258&bonus=12854",
-          "name": "Sickening Signet of Atroxus",
-          "quality": 3,
-          "icon": "inv_12_jewelry_devouringhost_ring_bronze2",
-          "source": "Voidscar Arena",
+          "wowheadParams": "item=268252&bonus=12854",
+          "name": "Apex Brute's Claw Ring",
+          "quality": 4,
+          "icon": "inv_121_jewelry_ring03_red",
+          "source": "Sszorak",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -23545,13 +23580,13 @@
           "slotFr": "Anneau",
           "align": "right",
           "empty": false,
-          "itemId": 268249,
+          "itemId": 273792,
           "originalItemId": null,
-          "wowheadParams": "item=268249&bonus=12854",
-          "name": "Vile Alchemist's Band",
+          "wowheadParams": "item=273792&bonus=12854",
+          "name": "Band of the Amani Warlord",
           "quality": 4,
-          "icon": "inv_121_jewelry_ring01_purple",
-          "source": "Vashnik",
+          "icon": "inv_121_jewelry_ring02_green",
+          "source": "Altar of Fangs",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -23630,13 +23665,13 @@
           "slotFr": "Bijou",
           "align": "right",
           "empty": false,
-          "itemId": 250215,
+          "itemId": 273796,
           "originalItemId": null,
-          "wowheadParams": "item=250215&bonus=12854",
-          "name": "Freightrunner's Flask",
-          "quality": 3,
-          "icon": "inv_alchemy_90_flask_red",
-          "source": "Murder Row",
+          "wowheadParams": "item=273796&bonus=12854",
+          "name": "Vile Vial of Volatile Venom",
+          "quality": 4,
+          "icon": "inv_121_trinket_dungeon_ulatek_vile",
+          "source": "Altar of Fangs",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -24926,7 +24961,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:48.677Z",
+      "scrapedAt": "2026-08-20T05:01:28.127Z",
       "items": [
         {
           "slot": "Helm",
@@ -26602,7 +26637,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:52.725Z",
+      "scrapedAt": "2026-08-20T05:01:31.868Z",
       "items": [
         {
           "slot": "Helm",
@@ -28320,7 +28355,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:57.739Z",
+      "scrapedAt": "2026-08-20T05:01:37.308Z",
       "items": [
         {
           "slot": "Helm",
@@ -29905,7 +29940,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:06.020Z",
+      "scrapedAt": "2026-08-20T05:00:45.129Z",
       "items": [
         {
           "slot": "Helm",
@@ -31507,7 +31542,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:58:41.656Z",
+      "scrapedAt": "2026-08-20T05:00:23.024Z",
       "items": [
         {
           "slot": "Helm",
@@ -33126,7 +33161,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:58:55.425Z",
+      "scrapedAt": "2026-08-20T05:00:36.205Z",
       "items": [
         {
           "slot": "Helm",
@@ -34791,7 +34826,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:59:43.641Z",
+      "scrapedAt": "2026-08-20T05:01:22.918Z",
       "items": [
         {
           "slot": "Helm",
@@ -36481,7 +36516,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T04:58:33.047Z",
+      "scrapedAt": "2026-08-20T05:00:15.133Z",
       "items": [
         {
           "slot": "Helm",
@@ -38171,7 +38206,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-19T07:33:33.804Z",
+      "scrapedAt": "2026-08-20T05:01:09.447Z",
       "items": [
         {
           "slot": "Helm",
@@ -38582,5 +38617,5 @@
       ]
     }
   },
-  "updatedAt": "2026-08-19T13:37:15.439Z"
+  "updatedAt": "2026-08-20T05:01:37.316Z"
 }
