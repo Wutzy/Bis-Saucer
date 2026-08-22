@@ -6,6 +6,7 @@ const express = require('express');
 const { SPECS, specKey, findSpec, guideUrl } = require('./src/specs');
 const { CLASSES } = require('./src/classes');
 const { readRoster, updateMember, addMember, removeMember } = require('./src/roster');
+const { readLoot, addLoot, removeLoot } = require('./src/loot');
 const {
   readStore,
   saveSpecEntry,
@@ -127,6 +128,25 @@ app.get('/api/trinkets', (req, res) => {
 /** Tier lists de bijoux Wowhead (data/wowhead.json). Aucun appel reseau. */
 app.get('/api/wowhead', (req, res) => {
   res.json(readWowhead());
+});
+
+/** Journal du butin (data/loot.json). Aucun appel reseau. */
+app.get('/api/loot', (req, res) => {
+  res.json(readLoot());
+});
+
+/** Note un objet recu par un membre. */
+app.post('/api/loot', (req, res) => {
+  const { entry, error } = addLoot(req.body || {});
+  if (error) return res.status(400).json({ error });
+  res.status(201).json({ entry });
+});
+
+/** Retire une ligne du journal : une saisie ratee doit pouvoir s'annuler. */
+app.delete('/api/loot/:id', (req, res) => {
+  const entry = removeLoot(req.params.id);
+  if (!entry) return res.status(404).json({ error: 'Ligne inconnue.' });
+  res.json({ entry });
 });
 
 /** Classement Power Infusion (data/powerinfusion.json). Aucun appel reseau. */

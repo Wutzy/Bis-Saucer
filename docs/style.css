@@ -103,6 +103,27 @@ body {
   color: var(--accent);
 }
 
+/* ---------------- Journal du butin ---------------- */
+
+/* Emplacement et provenance sous le nom : un rappel, pas une colonne de plus. */
+.butin-detail {
+  color: var(--muted-2);
+  font-size: 0.74rem;
+  white-space: nowrap;
+}
+
+/* La liste des pieces BiS porte des noms longs : elle prend la place disponible. */
+.butin-form .butin-objet {
+  flex: 1 1 260px;
+  min-width: 0;
+  max-width: 340px;
+}
+
+.butin-form .butin-date {
+  flex: 0 0 auto;
+  width: 9.5rem;
+}
+
 /* ---------------- Antiseche : recompenses par niveau de cle ---------------- */
 
 /* Le bouton et son panneau vivent dans la meme boite que la marque : c'est elle qui

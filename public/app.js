@@ -17,6 +17,7 @@ const API = STATIC
       trinkets: 'api/trinkets.json',
       wowhead: 'api/wowhead.json',
       powerinfusion: 'api/powerinfusion.json',
+      loot: 'api/loot.json',
     }
   : {
       specs: '/api/specs',
@@ -25,6 +26,7 @@ const API = STATIC
       trinkets: '/api/trinkets',
       wowhead: '/api/wowhead',
       powerinfusion: '/api/powerinfusion',
+      loot: '/api/loot',
     };
 
 /* ---------------- langue ---------------- */
@@ -204,6 +206,7 @@ let store = { specs: {} };
 let trinketStore = { specs: {} };
 let wowheadStore = { specs: {} };
 let piStore = { available: false, targets: {} };
+let lootStore = { entries: [] };
 let roster = [];
 let classes = {};
 let activeKey = null;
@@ -2247,6 +2250,7 @@ function randChoice() {
   for (const [mode, titre, soustitre] of [
     ['raid', 'Raid', 'Rand par boss de raid'],
     ['mplus', 'Mythique+', 'Les BiS des membres de la guilde, triés par donjon'],
+    ['butin', 'Butin', 'Qui a reçu quoi, et combien'],
   ]) {
     const card = document.createElement('button');
     card.type = 'button';
@@ -2262,6 +2266,11 @@ function randChoice() {
 
     card.append(t, s);
     card.addEventListener('click', () => {
+      if (mode === 'butin') {
+        selectView('butin');
+        render();
+        return;
+      }
       randMode = mode;
       activeBoss = null;
       render();
@@ -2299,9 +2308,14 @@ function randSources(kind) {
  * vue cachee, l'annoncer dans une barre la rendrait trouvable.
  */
 function randNav() {
-  const portee = activeView === 'roster' ? 'guild' : randScope;
+  const portee = activeView === 'rand' ? randScope : 'guild';
   const nav = document.createElement('div');
   nav.className = 'rand-nav';
+
+  // Le butin est une vue de guilde a part entiere : il partage cette barre plutot
+  // que d'obliger a repasser par l'ecran d'accueil.
+  const butin = document.createElement('button');
+  butin.type = 'button';
 
   for (const [mode, label] of [
     ['raid', 'Raid'],
@@ -2320,6 +2334,15 @@ function randNav() {
     });
     nav.appendChild(btn);
   }
+
+  butin.className = `rand-tab${activeView === 'butin' ? ' is-active' : ''}`;
+  butin.textContent = 'Butin';
+  butin.title = 'Qui a reçu quoi';
+  butin.addEventListener('click', () => {
+    selectView('butin');
+    render();
+  });
+  nav.appendChild(butin);
 
   return nav;
 }
@@ -2631,7 +2654,8 @@ const MSG_STATIC = 'Version consultable : la modification du roster se fait sur 
  * En version publiee il n'y a pas de serveur : le garde-fou repond a la place, pour
  * les deux champs dont les controles restent affiches (spec et roster mythique).
  */
-async function ecrireRoster(url, options, erreurParDefaut) {
+/** Appel d'ecriture de l'API : gere le mode statique, les erreurs et le message. */
+async function ecrireApi(url, options, erreurParDefaut) {
   if (STATIC) {
     showMessage(MSG_STATIC, 'info');
     return null;
@@ -2663,7 +2687,7 @@ function corpsJson(body) {
 }
 
 async function updateMemberSpec(member, spec) {
-  const data = await ecrireRoster(
+  const data = await ecrireApi(
     urlMembre(member),
     { method: 'PUT', ...corpsJson({ spec: spec || null }) },
     'Impossible d’enregistrer la spec.'
@@ -2682,7 +2706,7 @@ async function updateMemberSpec(member, spec) {
 
 /** Entree / sortie du roster mythique : ne change que le butin de raid. */
 async function updateMemberRaid(member, raid) {
-  const data = await ecrireRoster(
+  const data = await ecrireApi(
     urlMembre(member),
     { method: 'PUT', ...corpsJson({ raid }) },
     'Impossible d’enregistrer le roster mythique.'
@@ -2701,7 +2725,7 @@ async function updateMemberRaid(member, raid) {
 
 /** Marque un membre a l'essai. Purement indicatif : ne filtre aucun butin. */
 async function updateMemberTrial(member, trial) {
-  const data = await ecrireRoster(
+  const data = await ecrireApi(
     urlMembre(member),
     { method: 'PUT', ...corpsJson({ trial }) },
     'Impossible d’enregistrer le statut d’essai.'
@@ -2719,7 +2743,7 @@ async function updateMemberTrial(member, trial) {
 }
 
 async function ajouterMembre(nom, className, spec) {
-  const data = await ecrireRoster(
+  const data = await ecrireApi(
     '/api/roster',
     { method: 'POST', ...corpsJson({ name: nom, class: className, spec: spec || null }) },
     'Impossible d’ajouter ce membre.'
@@ -2740,7 +2764,7 @@ async function retirerMembre(member) {
   // Une suppression ne se rattrape pas depuis l'interface : on demande confirmation.
   if (!window.confirm(`Retirer ${member.name} du roster ?`)) return;
 
-  const data = await ecrireRoster(
+  const data = await ecrireApi(
     urlMembre(member),
     { method: 'DELETE' },
     'Impossible de retirer ce membre.'
@@ -3221,7 +3245,11 @@ function renderSelector() {
 
 /** Vrai dans les vues qui concernent tout le roster, pas la spec affichee. */
 function estVueGuilde() {
-  return activeView === 'roster' || (activeView === 'rand' && randScope === 'guild');
+  return (
+    activeView === 'roster' ||
+    activeView === 'butin' ||
+    (activeView === 'rand' && randScope === 'guild')
+  );
 }
 
 /** Entre dans une vue de guilde en retenant d'ou l'on vient. */
@@ -3406,6 +3434,7 @@ function renderContent() {
   els.content.innerHTML = '';
   renderListPicker();
   if (activeView === 'roster') els.content.appendChild(renderRoster());
+  else if (activeView === 'butin') els.content.appendChild(renderButin());
   else if (activeView === 'rand') els.content.appendChild(renderRand());
   else if (activeView === 'conso') els.content.appendChild(renderConsumables());
   else if (activeView === 'mplus') els.content.appendChild(renderMplus());
@@ -3505,6 +3534,18 @@ async function loadWowhead() {
  * Classement Power Infusion. Absent du cache tant qu'une mise a jour n'est pas
  * passee : le panneau le dit alors, plutot que d'afficher un tableau vide.
  */
+/** Journal du butin. Vide tant que personne n’a rien noté : ce n’est pas une erreur. */
+async function loadLoot() {
+  try {
+    const res = await fetch(API.loot);
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && Array.isArray(data.entries)) lootStore = data;
+  } catch (err) {
+    lootStore = { entries: [] };
+  }
+}
+
 async function loadPowerInfusion() {
   try {
     const res = await fetch(API.powerinfusion);
@@ -3583,6 +3624,349 @@ async function refresh() {
     els.refresh.textContent = label;
     render();
   }
+}
+
+/* ---------------- vue Butin ---------------- */
+
+/**
+ * Journal du butin : qui a recu quoi. C'est la seule donnee saisie a la main de
+ * l'application, et la seule qu'aucun scrape ne peut reconstituer.
+ *
+ * Deux lectures, dans cet ordre : le compte par membre — c'est ce qu'on regarde au
+ * moment d'arbitrer un roll — puis le detail chronologique, qui sert de preuve.
+ */
+function butinParMembre() {
+  const compte = new Map();
+  for (const membre of roster) {
+    compte.set(membre.id, { membre, lignes: [], bis: 0 });
+  }
+  // Un membre retire du roster garde ses lignes : le butin recu ne s'efface pas.
+  for (const ligne of lootStore.entries || []) {
+    if (!compte.has(ligne.memberId)) {
+      compte.set(ligne.memberId, { membre: null, lignes: [], bis: 0 });
+    }
+    const bloc = compte.get(ligne.memberId);
+    bloc.lignes.push(ligne);
+    if (ligne.bis) bloc.bis += 1;
+  }
+  return compte;
+}
+
+function nomMembre(memberId, membre) {
+  return membre ? membre.name : `${memberId} (hors roster)`;
+}
+
+/** Nom du membre, precede de l'icone de sa spec et dans la couleur de sa classe. */
+function pastilleMembre(membre) {
+  const wrap = document.createElement('span');
+  wrap.className = 'pi-spec';
+  if (membre.spec) wrap.appendChild(iconEl(specIcon(membre.class, membre.spec), 'pi-icone', ''));
+  wrap.style.setProperty('--spec', classColor(membre.class));
+  const texte = document.createElement('span');
+  texte.textContent = membre.name;
+  wrap.appendChild(texte);
+  return wrap;
+}
+
+/** Objet d'une ligne : icone, lien Wowhead quand on a l'identifiant, sinon le nom. */
+function celluleObjetButin(ligne) {
+  const wrap = document.createElement('div');
+  wrap.className = 'item-cell';
+
+  const img = document.createElement('img');
+  img.className = 'item-icon';
+  img.src = iconUrl(ligne.icon);
+  img.alt = '';
+  img.loading = 'lazy';
+  wrap.appendChild(img);
+
+  const corps = document.createElement('div');
+  if (ligne.itemId) {
+    const lien = document.createElement('a');
+    lien.className = 'item-link';
+    lien.href = itemUrl(ligne.itemId);
+    lien.target = '_blank';
+    lien.rel = 'noopener noreferrer';
+    lien.dataset.wowhead = `item=${ligne.itemId}`;
+    lien.textContent = ligne.nameFr || ligne.name;
+    corps.appendChild(lien);
+  } else {
+    const nom = document.createElement('span');
+    nom.textContent = ligne.nameFr || ligne.name;
+    corps.appendChild(nom);
+  }
+
+  const detail = [ligne.slot, ligne.source].filter(Boolean).join(' · ');
+  if (detail) {
+    const sous = document.createElement('div');
+    sous.className = 'butin-detail';
+    sous.textContent = detail;
+    corps.appendChild(sous);
+  }
+
+  wrap.appendChild(corps);
+  return wrap;
+}
+
+/** Tableau de synthese : le moins servi en tete, c'est la question qu'on se pose. */
+function tableauSyntheseButin(parMembre) {
+  const table = document.createElement('table');
+  const thead = document.createElement('thead');
+  thead.innerHTML =
+    '<tr><th>Membre</th><th class="col-center">Objets</th><th class="col-center">Dont BiS</th><th>Dernier</th></tr>';
+  table.appendChild(thead);
+
+  const tbody = document.createElement('tbody');
+  const blocs = [...parMembre.values()]
+    .filter((b) => b.membre || b.lignes.length)
+    .sort((a, b) => {
+      if (a.lignes.length !== b.lignes.length) return a.lignes.length - b.lignes.length;
+      const na = a.membre ? a.membre.name : '';
+      const nb = b.membre ? b.membre.name : '';
+      return na.localeCompare(nb, 'fr');
+    });
+
+  for (const bloc of blocs) {
+    const tr = document.createElement('tr');
+
+    const nom = document.createElement('td');
+    if (bloc.membre) nom.appendChild(pastilleMembre(bloc.membre));
+    else nom.textContent = nomMembre(bloc.lignes[0] && bloc.lignes[0].memberId, null);
+
+    const total = document.createElement('td');
+    total.className = 'col-center';
+    total.appendChild(badge(bloc.lignes.length ? 'bis' : 'none', String(bloc.lignes.length)));
+
+    const bis = document.createElement('td');
+    bis.className = 'col-center';
+    bis.textContent = bloc.bis || '—';
+
+    const dernier = document.createElement('td');
+    dernier.className = 'butin-detail';
+    const dates = bloc.lignes.map((l) => l.date).sort();
+    dernier.textContent = dates.length ? dates[dates.length - 1] : '—';
+
+    tr.append(nom, total, bis, dernier);
+    tbody.appendChild(tr);
+  }
+  table.appendChild(tbody);
+  return table;
+}
+
+/** Detail chronologique, le plus recent en tete. */
+function tableauLignesButin(parMembre) {
+  const table = document.createElement('table');
+  const thead = document.createElement('thead');
+  const colonnes =
+    '<th>Date</th><th>Membre</th><th>Objet</th><th class="col-center">BiS</th>';
+  thead.innerHTML = `<tr>${colonnes}${STATIC ? '' : '<th></th>'}</tr>`;
+  table.appendChild(thead);
+
+  const tbody = document.createElement('tbody');
+  const lignes = [...(lootStore.entries || [])].sort((a, b) =>
+    a.date === b.date ? b.id.localeCompare(a.id) : b.date.localeCompare(a.date)
+  );
+
+  for (const ligne of lignes) {
+    const bloc = parMembre.get(ligne.memberId);
+    const tr = document.createElement('tr');
+
+    const date = document.createElement('td');
+    date.className = 'butin-detail';
+    date.textContent = ligne.date;
+
+    const membre = document.createElement('td');
+    if (bloc && bloc.membre) membre.appendChild(pastilleMembre(bloc.membre));
+    else membre.textContent = nomMembre(ligne.memberId, null);
+
+    const objet = document.createElement('td');
+    objet.appendChild(celluleObjetButin(ligne));
+
+    const bis = document.createElement('td');
+    bis.className = 'col-center';
+    if (ligne.bis) bis.appendChild(badge('bis', 'BiS'));
+
+    tr.append(date, membre, objet, bis);
+
+    if (!STATIC) {
+      const action = document.createElement('td');
+      action.className = 'col-center';
+      const retirer = document.createElement('button');
+      retirer.type = 'button';
+      retirer.className = 'roster-retirer';
+      retirer.textContent = '✕';
+      retirer.title = 'Retirer cette ligne du journal';
+      retirer.addEventListener('click', () => retirerButin(ligne));
+      action.appendChild(retirer);
+      tr.appendChild(action);
+    }
+
+    tbody.appendChild(tr);
+  }
+  table.appendChild(tbody);
+  return table;
+}
+
+/**
+ * Saisie d'une ligne. La liste d'objets suit le membre choisi : ce sont les pieces de
+ * SA liste BiS, ce qui remplit nom, icone, emplacement et source d'un coup — et marque
+ * la ligne comme BiS sans avoir a y penser. Le champ libre reste la pour tout le reste :
+ * un objet hors BiS se note aussi.
+ */
+function formulaireButin() {
+  const form = document.createElement('form');
+  form.className = 'roster-ajout butin-form';
+
+  const titre = document.createElement('span');
+  titre.className = 'roster-ajout-titre';
+  titre.textContent = 'Noter un objet';
+
+  const membreSelect = document.createElement('select');
+  membreSelect.className = 'spec-select';
+  const vide = document.createElement('option');
+  vide.value = '';
+  vide.textContent = '— membre —';
+  membreSelect.appendChild(vide);
+  for (const membre of [...roster].sort((a, b) => a.name.localeCompare(b.name, 'fr'))) {
+    const option = document.createElement('option');
+    option.value = membre.id;
+    option.textContent = membre.name;
+    membreSelect.appendChild(option);
+  }
+
+  const objetSelect = document.createElement('select');
+  objetSelect.className = 'spec-select butin-objet';
+
+  function remplirObjets() {
+    objetSelect.innerHTML = '';
+    const premier = document.createElement('option');
+    premier.value = '';
+    objetSelect.appendChild(premier);
+
+    const membre = roster.find((m) => m.id === membreSelect.value);
+    const key = membre && membre.spec ? `${membre.class}-${membre.spec}` : null;
+    const entry = key ? entryFor(key) : null;
+    const items = entry ? itemsOf(entry, key).filter((i) => !i.empty) : [];
+
+    premier.textContent = items.length ? '— dans son BiS —' : '— aucun BiS en cache —';
+    objetSelect.disabled = !items.length;
+
+    for (const item of items) {
+      const option = document.createElement('option');
+      option.value = String(item.itemId || item.name);
+      option.textContent = `${item.slotFr} — ${item.name}`;
+      option.dataset.item = JSON.stringify({
+        name: item.name,
+        itemId: item.itemId || null,
+        icon: item.icon || null,
+        slot: item.slotFr || null,
+        source: item.source || null,
+      });
+      objetSelect.appendChild(option);
+    }
+  }
+  membreSelect.addEventListener('change', remplirObjets);
+  remplirObjets();
+
+  const libre = document.createElement('input');
+  libre.type = 'text';
+  libre.className = 'roster-champ';
+  libre.placeholder = 'ou un autre objet';
+  libre.maxLength = 120;
+
+  const date = document.createElement('input');
+  date.type = 'date';
+  date.className = 'roster-champ butin-date';
+  date.value = new Date().toISOString().slice(0, 10);
+
+  const valider = document.createElement('button');
+  valider.type = 'submit';
+  valider.className = 'roster-valider';
+  valider.textContent = 'Noter';
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!membreSelect.value) {
+      showMessage('Choisis le membre qui a reçu l’objet.', 'error');
+      return;
+    }
+
+    const choisi = objetSelect.selectedOptions[0];
+    const depuisBis = choisi && choisi.dataset.item ? JSON.parse(choisi.dataset.item) : null;
+    const saisi = libre.value.trim();
+
+    // Le champ libre prime : s'il est rempli, c'est qu'on note autre chose que le BiS.
+    const payload = saisi ? { name: saisi, bis: false } : depuisBis && { ...depuisBis, bis: true };
+    if (!payload) {
+      showMessage('Choisis un objet dans la liste BiS, ou saisis-en un.', 'error');
+      return;
+    }
+
+    ajouterButin({ ...payload, memberId: membreSelect.value, date: date.value });
+    libre.value = '';
+    objetSelect.selectedIndex = 0;
+  });
+
+  form.append(titre, membreSelect, objetSelect, libre, date, valider);
+  return form;
+}
+
+function renderButin() {
+  const wrap = document.createElement('div');
+  wrap.appendChild(randNav());
+
+  const parMembre = butinParMembre();
+  const total = (lootStore.entries || []).length;
+
+  if (!total) {
+    wrap.appendChild(
+      emptyState(
+        'Aucun butin noté',
+        STATIC
+          ? 'Le journal se remplit en local, puis on republie.'
+          : 'Note un objet ci-dessous : la liste propose le BiS du membre choisi.'
+      )
+    );
+  } else {
+    wrap.appendChild(tableauSyntheseButin(parMembre));
+
+    const note = document.createElement('p');
+    note.className = 'roster-note';
+    note.textContent = `${total} objet(s) noté(s), du plus récent au plus ancien.`;
+    wrap.appendChild(note);
+
+    wrap.appendChild(tableauLignesButin(parMembre));
+  }
+
+  if (!STATIC) wrap.appendChild(formulaireButin());
+  return wrap;
+}
+
+async function ajouterButin(payload) {
+  const data = await ecrireApi(
+    '/api/loot',
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    },
+    'Impossible de noter cet objet.'
+  );
+  if (!data) return;
+  lootStore.entries = [...(lootStore.entries || []), data.entry];
+  showMessage(`${data.entry.name} noté.`, 'info');
+  render();
+}
+
+async function retirerButin(ligne) {
+  const data = await ecrireApi(
+    `/api/loot/${encodeURIComponent(ligne.id)}`,
+    { method: 'DELETE' },
+    'Impossible de retirer cette ligne.'
+  );
+  if (!data) return;
+  lootStore.entries = (lootStore.entries || []).filter((e) => e.id !== ligne.id);
+  render();
 }
 
 /* ---------------- antiseche : recompenses par niveau de cle ---------------- */
@@ -3866,6 +4250,7 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
       loadTrinkets(),
       loadWowhead(),
       loadPowerInfusion(),
+      loadLoot(),
     ]);
     // Etat de depart : l'ecran d'accueil de la guilde, onglets masques.
     selectView('rand', 'guild');

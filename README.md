@@ -418,6 +418,30 @@ de set (tête, épaules, torse, mains, jambes) :
 Enfin, quand la seule provenance donnée par le guide est « Catalyseur » (cas du Paladin Vindicte),
 le mot n'est pas répété en gris à côté du badge ambre : seul le badge s'affiche.
 
+## Butin : qui a reçu quoi
+
+La vue **Butin** (troisième carte de l'écran de guilde, et troisième onglet de sa barre)
+tient le journal des objets distribués. Deux lectures, dans cet ordre :
+
+1. **La synthèse par membre**, du **moins servi au plus servi** — c'est la question qu'on se
+   pose au moment d'arbitrer un roll : combien d'objets, dont combien de BiS, et à quand
+   remonte le dernier.
+2. **Le détail chronologique**, le plus récent en tête, qui sert de preuve.
+
+**La saisie tire parti du reste de l'application.** On choisit un membre, et la liste d'objets
+devient **sa liste BiS** : le nom, l'icône, l'emplacement et la source sont remplis d'un coup,
+et la ligne est marquée **BiS** sans y penser. Un champ libre reste à côté pour tout le reste —
+un objet hors BiS se note aussi, il compte dans le total. La date est celle du jour par défaut,
+modifiable pour saisir après coup.
+
+Les entrées sont **plates et autonomes** : nom, icône et source sont recopiés à la saisie. Le
+butin de mardi ne change pas d'affichage parce qu'une liste BiS a été rescrapée depuis, et les
+lignes d'un membre retiré du roster ne disparaissent pas — elles s'affichent « hors roster ».
+
+C'est le seul jeu de données que **personne ne scrape** : il ne se recalcule pas, perdre
+`data/loot.json` c'est perdre l'historique. D'où l'écriture atomique, comme pour le roster.
+Sur la version publiée, la vue est en lecture seule : on note en local, puis on republie.
+
 ## Power Infusion : qui buffer
 
 Bloodmallet publie un classement Power Infusion sous le profil du prêtre ombre :
@@ -629,6 +653,9 @@ si son guide n'a pas bougé.
 | `GET` | `/api/trinkets` | Classements Bloodmallet (`data/trinkets.json`) |
 | `GET` | `/api/wowhead` | Tier lists et consommables Wowhead (`data/wowhead.json`) |
 | `GET` | `/api/powerinfusion` | Classement Power Infusion (`data/powerinfusion.json`) |
+| `GET` | `/api/loot` | Journal du butin (`data/loot.json`) |
+| `POST` | `/api/loot` | Body `{ "memberId": "kao", "name": "…", "itemId": 123, "bis": true }` — note un objet |
+| `DELETE` | `/api/loot/:id` | Retire une ligne du journal |
 | `POST` | `/api/scrape` | Body `{ "class": "warrior", "spec": "arms" }` — scrape et met à jour le cache |
 
 `POST /api/scrape` renvoie `429` avec `retryAfterSeconds` si la spec a déjà été rafraîchie
