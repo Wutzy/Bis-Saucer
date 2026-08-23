@@ -3,7 +3,7 @@
   "specs": {
     "death-knight-blood": {
       "key": "death-knight-blood",
-      "fetchedAt": "2026-08-22T04:55:48.283Z",
+      "fetchedAt": "2026-08-23T04:58:03.556Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear",
         "available": true,
@@ -287,7 +287,7 @@
     },
     "death-knight-frost": {
       "key": "death-knight-frost",
-      "fetchedAt": "2026-08-22T04:55:52.876Z",
+      "fetchedAt": "2026-08-23T04:58:07.932Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/frost/bis-gear",
         "available": true,
@@ -538,7 +538,7 @@
     },
     "demon-hunter-havoc": {
       "key": "demon-hunter-havoc",
-      "fetchedAt": "2026-08-22T04:55:57.210Z",
+      "fetchedAt": "2026-08-23T04:58:12.019Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/bis-gear",
         "available": true,
@@ -574,15 +574,6 @@
           {
             "rank": "B",
             "items": [
-              {
-                "itemId": 250259,
-                "name": "Sapling of the Dawnroot",
-                "icon": "inv_misc_herb_nightmarevine",
-                "quality": 3,
-                "categories": [
-                  "dungeon"
-                ]
-              },
               {
                 "itemId": 270168,
                 "name": "Font of Venomous Rage",
@@ -710,6 +701,15 @@
           {
             "rank": "D",
             "items": [
+              {
+                "itemId": 250259,
+                "name": "Sapling of the Dawnroot",
+                "icon": "inv_misc_herb_nightmarevine",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
               {
                 "itemId": 251785,
                 "name": "Void-Reaper's Libram",
@@ -908,7 +908,7 @@
     },
     "druid-balance": {
       "key": "druid-balance",
-      "fetchedAt": "2026-08-22T04:56:05.270Z",
+      "fetchedAt": "2026-08-23T04:58:19.676Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/balance/bis-gear",
         "available": true,
@@ -1180,7 +1180,7 @@
     },
     "druid-restoration": {
       "key": "druid-restoration",
-      "fetchedAt": "2026-08-22T04:56:13.540Z",
+      "fetchedAt": "2026-08-23T04:58:29.329Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/restoration/bis-gear",
         "available": true,
@@ -1505,7 +1505,7 @@
     },
     "hunter-beast-mastery": {
       "key": "hunter-beast-mastery",
-      "fetchedAt": "2026-08-22T04:56:17.933Z",
+      "fetchedAt": "2026-08-23T04:58:33.703Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/beast-mastery/bis-gear",
         "available": true,
@@ -1849,7 +1849,7 @@
     },
     "mage-fire": {
       "key": "mage-fire",
-      "fetchedAt": "2026-08-22T04:56:28.281Z",
+      "fetchedAt": "2026-08-23T04:58:48.168Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear",
         "available": true,
@@ -2238,7 +2238,7 @@
     },
     "paladin-holy": {
       "key": "paladin-holy",
-      "fetchedAt": "2026-08-22T04:56:36.619Z",
+      "fetchedAt": "2026-08-23T04:58:56.323Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/holy/bis-gear",
         "available": true,
@@ -2524,7 +2524,7 @@
     },
     "paladin-protection": {
       "key": "paladin-protection",
-      "fetchedAt": "2026-08-22T04:56:41.280Z",
+      "fetchedAt": "2026-08-23T04:59:00.551Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/protection/bis-gear",
         "available": true,
@@ -2841,7 +2841,7 @@
     },
     "paladin-retribution": {
       "key": "paladin-retribution",
-      "fetchedAt": "2026-08-22T04:56:45.292Z",
+      "fetchedAt": "2026-08-23T04:59:04.429Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/retribution/bis-gear",
         "available": true,
@@ -3170,7 +3170,7 @@
     },
     "priest-discipline": {
       "key": "priest-discipline",
-      "fetchedAt": "2026-08-22T04:56:49.217Z",
+      "fetchedAt": "2026-08-23T04:59:08.300Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/priest/discipline/bis-gear",
         "available": true,
@@ -3386,7 +3386,7 @@
     },
     "priest-shadow": {
       "key": "priest-shadow",
-      "fetchedAt": "2026-08-22T04:56:53.950Z",
+      "fetchedAt": "2026-08-23T04:59:13.131Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/priest/shadow/bis-gear",
         "available": true,
@@ -3619,7 +3619,7 @@
     },
     "rogue-subtlety": {
       "key": "rogue-subtlety",
-      "fetchedAt": "2026-08-22T04:57:03.672Z",
+      "fetchedAt": "2026-08-23T04:59:22.925Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear",
         "available": true,
@@ -4006,7 +4006,7 @@
     },
     "shaman-elemental": {
       "key": "shaman-elemental",
-      "fetchedAt": "2026-08-22T04:57:08.325Z",
+      "fetchedAt": "2026-08-23T04:59:27.262Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/elemental/bis-gear",
         "available": true,
@@ -4290,7 +4290,7 @@
     },
     "shaman-restoration": {
       "key": "shaman-restoration",
-      "fetchedAt": "2026-08-22T04:57:16.991Z",
+      "fetchedAt": "2026-08-23T04:59:35.293Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/restoration/bis-gear",
         "available": true,
@@ -4562,7 +4562,7 @@
     },
     "warlock-affliction": {
       "key": "warlock-affliction",
-      "fetchedAt": "2026-08-22T04:57:21.420Z",
+      "fetchedAt": "2026-08-23T04:59:39.610Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warlock/affliction/bis-gear",
         "available": true,
@@ -4837,7 +4837,7 @@
     },
     "warrior-arms": {
       "key": "warrior-arms",
-      "fetchedAt": "2026-08-22T04:57:25.307Z",
+      "fetchedAt": "2026-08-23T04:59:47.755Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warrior/arms/bis-gear",
         "available": true,
@@ -5074,7 +5074,7 @@
     },
     "monk-windwalker": {
       "key": "monk-windwalker",
-      "fetchedAt": "2026-08-22T04:56:32.735Z",
+      "fetchedAt": "2026-08-23T04:58:52.503Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/monk/windwalker/bis-gear",
         "available": true,
@@ -5340,7 +5340,7 @@
     },
     "druid-feral": {
       "key": "druid-feral",
-      "fetchedAt": "2026-08-22T04:56:09.225Z",
+      "fetchedAt": "2026-08-23T04:58:24.481Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/feral/bis-gear",
         "available": true,
@@ -5611,7 +5611,7 @@
     },
     "hunter-marksmanship": {
       "key": "hunter-marksmanship",
-      "fetchedAt": "2026-08-22T04:56:23.003Z",
+      "fetchedAt": "2026-08-23T04:58:38.394Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear",
         "available": true,
@@ -5871,7 +5871,7 @@
     },
     "shaman-enhancement": {
       "key": "shaman-enhancement",
-      "fetchedAt": "2026-08-22T04:57:12.896Z",
+      "fetchedAt": "2026-08-23T04:59:31.402Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear",
         "available": true,
@@ -5939,6 +5939,15 @@
                 ]
               },
               {
+                "itemId": 250225,
+                "name": "Void Execution Mandate",
+                "icon": "inv_inscription_80_warscroll_intellect",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
                 "itemId": 250228,
                 "name": "Resonant Bellowstone",
                 "icon": "inv_alchemy_90_stone_green",
@@ -5962,27 +5971,9 @@
                 ]
               },
               {
-                "itemId": 250259,
-                "name": "Sapling of the Dawnroot",
-                "icon": "inv_misc_herb_nightmarevine",
-                "quality": 3,
-                "categories": [
-                  "dungeon"
-                ]
-              },
-              {
                 "itemId": 159617,
                 "name": "Lustrous Golden Plumage",
                 "icon": "inv_icon_feather06a",
-                "quality": 3,
-                "categories": [
-                  "dungeon"
-                ]
-              },
-              {
-                "itemId": 250225,
-                "name": "Void Execution Mandate",
-                "icon": "inv_inscription_80_warscroll_intellect",
                 "quality": 3,
                 "categories": [
                   "dungeon"
@@ -6005,6 +5996,15 @@
                 "categories": [
                   "delves"
                 ]
+              },
+              {
+                "itemId": 270166,
+                "name": "Vashnik's Sanguine Rancor",
+                "icon": "inv_11_0_raid_gruesomesyringe_blue",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
               }
             ]
           },
@@ -6012,9 +6012,9 @@
             "rank": "C",
             "items": [
               {
-                "itemId": 270166,
-                "name": "Vashnik's Sanguine Rancor",
-                "icon": "inv_11_0_raid_gruesomesyringe_blue",
+                "itemId": 270168,
+                "name": "Font of Venomous Rage",
+                "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green",
                 "quality": 4,
                 "categories": [
                   "raid"
@@ -6039,12 +6039,12 @@
                 ]
               },
               {
-                "itemId": 270168,
-                "name": "Font of Venomous Rage",
-                "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green",
-                "quality": 4,
+                "itemId": 250259,
+                "name": "Sapling of the Dawnroot",
+                "icon": "inv_misc_herb_nightmarevine",
+                "quality": 3,
                 "categories": [
-                  "raid"
+                  "dungeon"
                 ]
               },
               {
@@ -6177,9 +6177,9 @@
             "type": "Flask",
             "items": [
               {
-                "itemId": 241324,
-                "name": "Flask of the Blood Knights",
-                "icon": "inv_12_profession_alchemy_flask_sindoreipotion_white-",
+                "itemId": 241322,
+                "name": "Flask of the Magisters",
+                "icon": "inv_12_profession_alchemy_flask_sindoreipotion_black",
                 "quality": 1
               }
             ]
@@ -6188,9 +6188,9 @@
             "type": "Combat Potion",
             "items": [
               {
-                "itemId": 241288,
-                "name": "Potion of Recklessness",
-                "icon": "inv_12_profession_alchemy_voidpotion_red",
+                "itemId": 271887,
+                "name": "Liquid Luster",
+                "icon": "inv_121_professions_alchemy_potion_amani_blue",
                 "quality": 1
               }
             ]
@@ -6239,7 +6239,7 @@
     },
     "demon-hunter-devourer": {
       "key": "demon-hunter-devourer",
-      "fetchedAt": "2026-08-22T04:56:01.181Z",
+      "fetchedAt": "2026-08-23T04:58:15.856Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/demon-hunter/devourer/bis-gear",
         "available": true,
@@ -6628,7 +6628,7 @@
     },
     "rogue-assassination": {
       "key": "rogue-assassination",
-      "fetchedAt": "2026-08-22T04:56:59.260Z",
+      "fetchedAt": "2026-08-23T04:59:18.464Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/rogue/assassination/bis-gear",
         "available": true,
@@ -7005,7 +7005,7 @@
     },
     "warlock-demonology": {
       "key": "warlock-demonology",
-      "fetchedAt": "2026-08-20T06:28:32.839Z",
+      "fetchedAt": "2026-08-23T04:59:44.013Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warlock/demonology/bis-gear",
         "available": true,
@@ -7274,7 +7274,7 @@
     },
     "hunter-survival": {
       "key": "hunter-survival",
-      "fetchedAt": "2026-08-22T09:04:39.007Z",
+      "fetchedAt": "2026-08-23T04:58:43.711Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/survival/bis-gear",
         "available": true,
@@ -7524,5 +7524,5 @@
       }
     }
   },
-  "updatedAt": "2026-08-22T09:04:39.552Z"
+  "updatedAt": "2026-08-23T04:59:47.782Z"
 }

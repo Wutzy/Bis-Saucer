@@ -274,10 +274,10 @@
                   "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
                 },
                 {
-                  "name": "Polished Ammolite",
-                  "itemId": 273066,
-                  "wowheadParams": "item=273066",
-                  "icon": "inv_jewelcrafting_cut-epic-gem_color1"
+                  "name": "Prismatic Focusing Iris",
+                  "itemId": 251487,
+                  "wowheadParams": "item=251487",
+                  "icon": "item_cutmetagem"
                 }
               ]
             },
@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:55:45.760Z",
+      "scrapedAt": "2026-08-23T04:58:01.026Z",
       "items": [
         {
           "slot": "Helm",
@@ -1351,10 +1351,10 @@
               "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
             },
             {
-              "name": "Polished Ammolite",
-              "itemId": 273066,
-              "wowheadParams": "item=273066",
-              "icon": "inv_jewelcrafting_cut-epic-gem_color1"
+              "name": "Prismatic Focusing Iris",
+              "itemId": 251487,
+              "wowheadParams": "item=251487",
+              "icon": "item_cutmetagem"
             }
           ]
         },
@@ -2660,7 +2660,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:55:50.475Z",
+      "scrapedAt": "2026-08-23T04:58:05.581Z",
       "items": [
         {
           "slot": "Helm",
@@ -4322,7 +4322,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:55:55.332Z",
+      "scrapedAt": "2026-08-23T04:58:10.104Z",
       "items": [
         {
           "slot": "Helm",
@@ -6011,7 +6011,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:03.289Z",
+      "scrapedAt": "2026-08-23T04:58:17.749Z",
       "items": [
         {
           "slot": "Helm",
@@ -7576,7 +7576,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:11.582Z",
+      "scrapedAt": "2026-08-23T04:58:27.436Z",
       "items": [
         {
           "slot": "Helm",
@@ -9148,7 +9148,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:15.637Z",
+      "scrapedAt": "2026-08-23T04:58:31.257Z",
       "items": [
         {
           "slot": "Helm",
@@ -10772,7 +10772,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:25.633Z",
+      "scrapedAt": "2026-08-23T04:58:45.823Z",
       "items": [
         {
           "slot": "Helm",
@@ -12368,7 +12368,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:34.751Z",
+      "scrapedAt": "2026-08-23T04:58:54.413Z",
       "items": [
         {
           "slot": "Helm",
@@ -13944,7 +13944,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:38.615Z",
+      "scrapedAt": "2026-08-23T04:58:58.207Z",
       "items": [
         {
           "slot": "Helm",
@@ -15511,7 +15511,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:43.383Z",
+      "scrapedAt": "2026-08-23T04:59:02.423Z",
       "items": [
         {
           "slot": "Helm",
@@ -18276,7 +18276,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:47.326Z",
+      "scrapedAt": "2026-08-23T04:59:06.397Z",
       "items": [
         {
           "slot": "Helm",
@@ -19906,7 +19906,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:51.373Z",
+      "scrapedAt": "2026-08-23T04:59:10.723Z",
       "items": [
         {
           "slot": "Helm",
@@ -21553,7 +21553,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:57:01.180Z",
+      "scrapedAt": "2026-08-23T04:59:20.392Z",
       "items": [
         {
           "slot": "Helm",
@@ -23323,7 +23323,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:57:05.977Z",
+      "scrapedAt": "2026-08-23T04:59:24.827Z",
       "items": [
         {
           "slot": "Helm",
@@ -24961,7 +24961,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:57:15.069Z",
+      "scrapedAt": "2026-08-23T04:59:33.337Z",
       "items": [
         {
           "slot": "Helm",
@@ -26637,7 +26637,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:57:18.848Z",
+      "scrapedAt": "2026-08-23T04:59:37.098Z",
       "items": [
         {
           "slot": "Helm",
@@ -28355,7 +28355,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:57:23.412Z",
+      "scrapedAt": "2026-08-23T04:59:45.860Z",
       "items": [
         {
           "slot": "Helm",
@@ -29940,7 +29940,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:30.866Z",
+      "scrapedAt": "2026-08-23T04:58:50.601Z",
       "items": [
         {
           "slot": "Helm",
@@ -31542,7 +31542,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:07.254Z",
+      "scrapedAt": "2026-08-23T04:58:22.561Z",
       "items": [
         {
           "slot": "Helm",
@@ -33161,7 +33161,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:20.617Z",
+      "scrapedAt": "2026-08-23T04:58:35.777Z",
       "items": [
         {
           "slot": "Helm",
@@ -34826,7 +34826,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:57:10.568Z",
+      "scrapedAt": "2026-08-23T04:59:29.050Z",
       "items": [
         {
           "slot": "Helm",
@@ -36516,7 +36516,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:55:59.291Z",
+      "scrapedAt": "2026-08-23T04:58:13.955Z",
       "items": [
         {
           "slot": "Helm",
@@ -38206,7 +38206,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T04:56:56.820Z",
+      "scrapedAt": "2026-08-23T04:59:15.331Z",
       "items": [
         {
           "slot": "Helm",
@@ -39866,7 +39866,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-20T06:28:29.203Z",
+      "scrapedAt": "2026-08-23T04:59:41.648Z",
       "items": [
         {
           "slot": "Helm",
@@ -40351,7 +40351,7 @@
               "empty": false,
               "itemId": 244581,
               "originalItemId": null,
-              "wowheadParams": "item=244581&bonus=13751:12497:13836:13767:8791:8960:1808",
+              "wowheadParams": "item=244581&bonus=13751:12497:13836:12384:8791:8960:1808",
               "name": "Farstrider's Trophy Belt",
               "quality": 4,
               "icon": "inv_belt_mail_questbloodelf_b_01",
@@ -40368,10 +40368,10 @@
                   "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
                 },
                 {
-                  "name": "Adorned Fang",
-                  "itemId": 273068,
-                  "wowheadParams": "item=273068",
-                  "icon": "inv_knife_1h_ulatek_d_01"
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
                 }
               ]
             },
@@ -40582,7 +40582,7 @@
               "empty": false,
               "itemId": 244584,
               "originalItemId": null,
-              "wowheadParams": "item=244584&bonus=13751:12497:13836:13767:8791:8960:1808",
+              "wowheadParams": "item=244584&bonus=13751:12497:13836:12384:8791:8960:1808",
               "name": "Farstrider's Plated Bracers",
               "quality": 4,
               "icon": "inv_bracer_mail_questbloodelf_b_01",
@@ -40599,10 +40599,10 @@
                   "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
                 },
                 {
-                  "name": "Adorned Fang",
-                  "itemId": 273068,
-                  "wowheadParams": "item=273068",
-                  "icon": "inv_knife_1h_ulatek_d_01"
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
                 }
               ]
             },
@@ -40738,7 +40738,7 @@
               "empty": false,
               "itemId": 244581,
               "originalItemId": null,
-              "wowheadParams": "item=244581&bonus=13751:12497:13836:13767:8791:8960:1808",
+              "wowheadParams": "item=244581&bonus=13751:12497:13836:12384:8791:8960:1808",
               "name": "Farstrider's Trophy Belt",
               "quality": 4,
               "icon": "inv_belt_mail_questbloodelf_b_01",
@@ -40755,10 +40755,10 @@
                   "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
                 },
                 {
-                  "name": "Adorned Fang",
-                  "itemId": 273068,
-                  "wowheadParams": "item=273068",
-                  "icon": "inv_knife_1h_ulatek_d_01"
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
                 }
               ]
             },
@@ -40969,7 +40969,7 @@
               "empty": false,
               "itemId": 244584,
               "originalItemId": null,
-              "wowheadParams": "item=244584&bonus=13751:12497:13836:13767:8791:8960:1808",
+              "wowheadParams": "item=244584&bonus=13751:12497:13836:12384:8791:8960:1808",
               "name": "Farstrider's Plated Bracers",
               "quality": 4,
               "icon": "inv_bracer_mail_questbloodelf_b_01",
@@ -40986,10 +40986,10 @@
                   "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
                 },
                 {
-                  "name": "Adorned Fang",
-                  "itemId": 273068,
-                  "wowheadParams": "item=273068",
-                  "icon": "inv_knife_1h_ulatek_d_01"
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
                 }
               ]
             },
@@ -41148,7 +41148,7 @@
               "empty": false,
               "itemId": 244581,
               "originalItemId": null,
-              "wowheadParams": "item=244581&bonus=13751:12497:13836:13767:8791:8960:1808",
+              "wowheadParams": "item=244581&bonus=13751:12497:13836:12384:8791:8960:1808",
               "name": "Farstrider's Trophy Belt",
               "quality": 4,
               "icon": "inv_belt_mail_questbloodelf_b_01",
@@ -41165,10 +41165,10 @@
                   "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
                 },
                 {
-                  "name": "Adorned Fang",
-                  "itemId": 273068,
-                  "wowheadParams": "item=273068",
-                  "icon": "inv_knife_1h_ulatek_d_01"
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
                 }
               ]
             },
@@ -41379,7 +41379,7 @@
               "empty": false,
               "itemId": 244584,
               "originalItemId": null,
-              "wowheadParams": "item=244584&bonus=13751:12497:13836:13767:8791:8960:1808",
+              "wowheadParams": "item=244584&bonus=13751:12497:13836:12384:8791:8960:1808",
               "name": "Farstrider's Plated Bracers",
               "quality": 4,
               "icon": "inv_bracer_mail_questbloodelf_b_01",
@@ -41396,10 +41396,10 @@
                   "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
                 },
                 {
-                  "name": "Adorned Fang",
-                  "itemId": 273068,
-                  "wowheadParams": "item=273068",
-                  "icon": "inv_knife_1h_ulatek_d_01"
+                  "name": "Arcanoweave Lining",
+                  "itemId": 240167,
+                  "wowheadParams": "item=240167",
+                  "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
                 }
               ]
             },
@@ -41475,7 +41475,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-22T09:04:35.881Z",
+      "scrapedAt": "2026-08-23T04:58:41.239Z",
       "items": [
         {
           "slot": "Helm",
@@ -41563,7 +41563,7 @@
           "empty": false,
           "itemId": 244581,
           "originalItemId": null,
-          "wowheadParams": "item=244581&bonus=13751:12497:13836:13767:8791:8960:1808",
+          "wowheadParams": "item=244581&bonus=13751:12497:13836:12384:8791:8960:1808",
           "name": "Farstrider's Trophy Belt",
           "quality": 4,
           "icon": "inv_belt_mail_questbloodelf_b_01",
@@ -41580,10 +41580,10 @@
               "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
             },
             {
-              "name": "Adorned Fang",
-              "itemId": 273068,
-              "wowheadParams": "item=273068",
-              "icon": "inv_knife_1h_ulatek_d_01"
+              "name": "Arcanoweave Lining",
+              "itemId": 240167,
+              "wowheadParams": "item=240167",
+              "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
             }
           ]
         },
@@ -41794,7 +41794,7 @@
           "empty": false,
           "itemId": 244584,
           "originalItemId": null,
-          "wowheadParams": "item=244584&bonus=13751:12497:13836:13767:8791:8960:1808",
+          "wowheadParams": "item=244584&bonus=13751:12497:13836:12384:8791:8960:1808",
           "name": "Farstrider's Plated Bracers",
           "quality": 4,
           "icon": "inv_bracer_mail_questbloodelf_b_01",
@@ -41811,10 +41811,10 @@
               "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple"
             },
             {
-              "name": "Adorned Fang",
-              "itemId": 273068,
-              "wowheadParams": "item=273068",
-              "icon": "inv_knife_1h_ulatek_d_01"
+              "name": "Arcanoweave Lining",
+              "itemId": 240167,
+              "wowheadParams": "item=240167",
+              "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth"
             }
           ]
         },
@@ -41868,5 +41868,5 @@
       ]
     }
   },
-  "updatedAt": "2026-08-22T09:04:35.889Z"
+  "updatedAt": "2026-08-23T04:59:45.867Z"
 }
