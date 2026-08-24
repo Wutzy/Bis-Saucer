@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:01.026Z",
+      "scrapedAt": "2026-08-24T05:07:59.300Z",
       "items": [
         {
           "slot": "Helm",
@@ -2660,7 +2660,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:05.581Z",
+      "scrapedAt": "2026-08-24T05:08:04.273Z",
       "items": [
         {
           "slot": "Helm",
@@ -4322,7 +4322,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:10.104Z",
+      "scrapedAt": "2026-08-24T05:08:09.593Z",
       "items": [
         {
           "slot": "Helm",
@@ -6011,7 +6011,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:17.749Z",
+      "scrapedAt": "2026-08-24T05:08:17.417Z",
       "items": [
         {
           "slot": "Helm",
@@ -7576,7 +7576,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:27.436Z",
+      "scrapedAt": "2026-08-24T05:08:25.418Z",
       "items": [
         {
           "slot": "Helm",
@@ -9148,7 +9148,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:31.257Z",
+      "scrapedAt": "2026-08-24T05:08:29.458Z",
       "items": [
         {
           "slot": "Helm",
@@ -9632,16 +9632,16 @@
               "slotFr": "Taille",
               "align": "right",
               "empty": false,
-              "itemId": 239649,
+              "itemId": 268257,
               "originalItemId": null,
-              "wowheadParams": "item=239649&bonus=13751:12497:13836:12384",
-              "name": "Martyr's Waistwrap",
+              "wowheadParams": "item=268257&bonus=13848:13708",
+              "name": "Caustic Chain-Wrapped Sash",
               "quality": 4,
-              "icon": "inv_belt_cloth_questbloodelf_b_01",
-              "source": "Craft (Tailoring)",
+              "icon": "inv_belt_cloth_raidwarlockulatek_d_01",
+              "source": "Sszorak",
               "catalyst": false,
-              "crafted": true,
-              "profession": "Tailoring",
+              "crafted": false,
+              "profession": null,
               "enchant": null,
               "gems": [
                 {
@@ -9929,16 +9929,16 @@
               "slotFr": "Main gauche",
               "align": "left",
               "empty": false,
-              "itemId": 159667,
+              "itemId": 245769,
               "originalItemId": null,
-              "wowheadParams": "item=159667&bonus=12854",
-              "name": "Vessel of Last Rites",
-              "quality": 3,
-              "icon": "inv_offhand_1h_battledungeon_c_02",
-              "source": "King's Rest",
+              "wowheadParams": "item=245769&bonus=13751:12497:13836:13771",
+              "name": "Aln'hara Lantern",
+              "quality": 4,
+              "icon": "inv_offhand_1h_dungeonharronir_c_01",
+              "source": "Craft (Inscription)",
               "catalyst": false,
-              "crafted": false,
-              "profession": null,
+              "crafted": true,
+              "profession": "Inscription",
               "enchant": null,
               "gems": []
             }
@@ -10418,16 +10418,16 @@
               "slotFr": "Taille",
               "align": "right",
               "empty": false,
-              "itemId": 239649,
+              "itemId": 268257,
               "originalItemId": null,
-              "wowheadParams": "item=239649&bonus=13751:12497:13836:12384",
-              "name": "Martyr's Waistwrap",
+              "wowheadParams": "item=268257&bonus=13848:13708",
+              "name": "Caustic Chain-Wrapped Sash",
               "quality": 4,
-              "icon": "inv_belt_cloth_questbloodelf_b_01",
-              "source": "Craft (Tailoring)",
+              "icon": "inv_belt_cloth_raidwarlockulatek_d_01",
+              "source": "Sszorak",
               "catalyst": false,
-              "crafted": true,
-              "profession": "Tailoring",
+              "crafted": false,
+              "profession": null,
               "enchant": null,
               "gems": [
                 {
@@ -10715,16 +10715,16 @@
               "slotFr": "Main gauche",
               "align": "left",
               "empty": false,
-              "itemId": 268263,
+              "itemId": 245769,
               "originalItemId": null,
-              "wowheadParams": "item=268263&bonus=12854",
-              "name": "Frostscale's Mystic Frond",
+              "wowheadParams": "item=245769&bonus=13751:12497:13836:13771",
+              "name": "Aln'hara Lantern",
               "quality": 4,
-              "icon": "inv_offhand_1h_ulatek_d_01",
-              "source": "Nek'zali",
+              "icon": "inv_offhand_1h_dungeonharronir_c_01",
+              "source": "Craft (Inscription)",
               "catalyst": false,
-              "crafted": false,
-              "profession": null,
+              "crafted": true,
+              "profession": "Inscription",
               "enchant": null,
               "gems": []
             }
@@ -10772,7 +10772,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:45.823Z",
+      "scrapedAt": "2026-08-24T05:08:43.366Z",
       "items": [
         {
           "slot": "Helm",
@@ -10852,16 +10852,16 @@
           "slotFr": "Taille",
           "align": "right",
           "empty": false,
-          "itemId": 239649,
+          "itemId": 268257,
           "originalItemId": null,
-          "wowheadParams": "item=239649&bonus=13751:12497:13836:12384",
-          "name": "Martyr's Waistwrap",
+          "wowheadParams": "item=268257&bonus=13848:13708",
+          "name": "Caustic Chain-Wrapped Sash",
           "quality": 4,
-          "icon": "inv_belt_cloth_questbloodelf_b_01",
-          "source": "Craft (Tailoring)",
+          "icon": "inv_belt_cloth_raidwarlockulatek_d_01",
+          "source": "Sszorak",
           "catalyst": false,
-          "crafted": true,
-          "profession": "Tailoring",
+          "crafted": false,
+          "profession": null,
           "enchant": null,
           "gems": [
             {
@@ -11149,16 +11149,16 @@
           "slotFr": "Main gauche",
           "align": "left",
           "empty": false,
-          "itemId": 159667,
+          "itemId": 245769,
           "originalItemId": null,
-          "wowheadParams": "item=159667&bonus=12854",
-          "name": "Vessel of Last Rites",
-          "quality": 3,
-          "icon": "inv_offhand_1h_battledungeon_c_02",
-          "source": "King's Rest",
+          "wowheadParams": "item=245769&bonus=13751:12497:13836:13771",
+          "name": "Aln'hara Lantern",
+          "quality": 4,
+          "icon": "inv_offhand_1h_dungeonharronir_c_01",
+          "source": "Craft (Inscription)",
           "catalyst": false,
-          "crafted": false,
-          "profession": null,
+          "crafted": true,
+          "profession": "Inscription",
           "enchant": null,
           "gems": []
         }
@@ -12368,7 +12368,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:54.413Z",
+      "scrapedAt": "2026-08-24T05:08:52.514Z",
       "items": [
         {
           "slot": "Helm",
@@ -13944,7 +13944,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:58.207Z",
+      "scrapedAt": "2026-08-24T05:08:56.618Z",
       "items": [
         {
           "slot": "Helm",
@@ -15511,7 +15511,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:02.423Z",
+      "scrapedAt": "2026-08-24T05:09:01.490Z",
       "items": [
         {
           "slot": "Helm",
@@ -18276,7 +18276,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:06.397Z",
+      "scrapedAt": "2026-08-24T05:09:05.385Z",
       "items": [
         {
           "slot": "Helm",
@@ -19906,7 +19906,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:10.723Z",
+      "scrapedAt": "2026-08-24T05:09:09.282Z",
       "items": [
         {
           "slot": "Helm",
@@ -21553,7 +21553,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:20.392Z",
+      "scrapedAt": "2026-08-24T05:09:18.680Z",
       "items": [
         {
           "slot": "Helm",
@@ -23323,7 +23323,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:24.827Z",
+      "scrapedAt": "2026-08-24T05:09:23.526Z",
       "items": [
         {
           "slot": "Helm",
@@ -24961,7 +24961,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:33.337Z",
+      "scrapedAt": "2026-08-24T05:09:33.309Z",
       "items": [
         {
           "slot": "Helm",
@@ -26637,7 +26637,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:37.098Z",
+      "scrapedAt": "2026-08-24T05:09:37.096Z",
       "items": [
         {
           "slot": "Helm",
@@ -28355,7 +28355,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:45.860Z",
+      "scrapedAt": "2026-08-24T05:09:46.996Z",
       "items": [
         {
           "slot": "Helm",
@@ -29940,7 +29940,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:50.601Z",
+      "scrapedAt": "2026-08-24T05:08:48.333Z",
       "items": [
         {
           "slot": "Helm",
@@ -31542,7 +31542,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:22.561Z",
+      "scrapedAt": "2026-08-24T05:08:21.306Z",
       "items": [
         {
           "slot": "Helm",
@@ -33161,7 +33161,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:35.777Z",
+      "scrapedAt": "2026-08-24T05:08:33.915Z",
       "items": [
         {
           "slot": "Helm",
@@ -34826,7 +34826,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:29.050Z",
+      "scrapedAt": "2026-08-24T05:09:28.072Z",
       "items": [
         {
           "slot": "Helm",
@@ -36516,7 +36516,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:13.955Z",
+      "scrapedAt": "2026-08-24T05:08:13.555Z",
       "items": [
         {
           "slot": "Helm",
@@ -38206,7 +38206,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:15.331Z",
+      "scrapedAt": "2026-08-24T05:09:13.981Z",
       "items": [
         {
           "slot": "Helm",
@@ -39866,7 +39866,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:59:41.648Z",
+      "scrapedAt": "2026-08-24T05:09:42.475Z",
       "items": [
         {
           "slot": "Helm",
@@ -41475,7 +41475,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-23T04:58:41.239Z",
+      "scrapedAt": "2026-08-24T05:08:38.564Z",
       "items": [
         {
           "slot": "Helm",
@@ -41868,5 +41868,5 @@
       ]
     }
   },
-  "updatedAt": "2026-08-23T04:59:45.867Z"
+  "updatedAt": "2026-08-24T05:09:47.004Z"
 }
