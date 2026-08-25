@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:07:59.300Z",
+      "scrapedAt": "2026-08-25T05:00:33.503Z",
       "items": [
         {
           "slot": "Helm",
@@ -2660,7 +2660,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:04.273Z",
+      "scrapedAt": "2026-08-25T05:00:38.312Z",
       "items": [
         {
           "slot": "Helm",
@@ -3118,7 +3118,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&bonus=13848:13708:10835",
+              "wowheadParams": "item=268265&bonus=13848:13987:10835",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -3455,9 +3455,9 @@
               "crafted": true,
               "profession": "Blacksmithing",
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Jan'alai's Precision",
+                "itemId": 243970,
+                "wowheadParams": "item=243970",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": [
@@ -3860,9 +3860,9 @@
               "crafted": true,
               "profession": "Blacksmithing",
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Jan'alai's Precision",
+                "itemId": 243970,
+                "wowheadParams": "item=243970",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": [
@@ -3934,7 +3934,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&bonus=13848:13708:10835",
+              "wowheadParams": "item=268265&bonus=13848:13987:10835",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -4271,9 +4271,9 @@
               "crafted": true,
               "profession": "Blacksmithing",
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Jan'alai's Precision",
+                "itemId": 243970,
+                "wowheadParams": "item=243970",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": [
@@ -4310,19 +4310,12 @@
               "name": "Zul'jin's Guillotine Technique",
               "quality": 4,
               "icon": "inv_121_trinket_raid_ulatek_trolltablet"
-            },
-            {
-              "itemId": 270164,
-              "wowheadParams": "item=270164&bonus=12854",
-              "name": "Gebbo's Bottomless Bag",
-              "quality": 4,
-              "icon": "inv_10_tailoring_bag1_color2"
             }
           ]
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:09.593Z",
+      "scrapedAt": "2026-08-25T05:00:43.091Z",
       "items": [
         {
           "slot": "Helm",
@@ -4379,7 +4372,7 @@
           "empty": false,
           "itemId": 268265,
           "originalItemId": null,
-          "wowheadParams": "item=268265&bonus=13848:13708:10835",
+          "wowheadParams": "item=268265&bonus=13848:13987:10835",
           "name": "Aqirbane Reliquary",
           "quality": 4,
           "icon": "inv_121_jewelry_neck03_green",
@@ -4716,9 +4709,9 @@
           "crafted": true,
           "profession": "Blacksmithing",
           "enchant": {
-            "name": "Arcane Mastery",
-            "itemId": 244031,
-            "wowheadParams": "item=244031",
+            "name": "Jan'alai's Precision",
+            "itemId": 243970,
+            "wowheadParams": "item=243970",
             "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
           },
           "gems": [
@@ -6011,7 +6004,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:17.417Z",
+      "scrapedAt": "2026-08-25T05:00:51.454Z",
       "items": [
         {
           "slot": "Helm",
@@ -7576,7 +7569,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:25.418Z",
+      "scrapedAt": "2026-08-25T05:01:00.124Z",
       "items": [
         {
           "slot": "Helm",
@@ -8330,9 +8323,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -8717,9 +8710,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -9110,9 +9103,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -9148,7 +9141,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:29.458Z",
+      "scrapedAt": "2026-08-25T05:01:04.805Z",
       "items": [
         {
           "slot": "Helm",
@@ -9525,9 +9518,9 @@
           "crafted": false,
           "profession": null,
           "enchant": {
-            "name": "Arcane Mastery",
-            "itemId": 244031,
-            "wowheadParams": "item=244031",
+            "name": "Rite of the Hash'ey",
+            "itemId": 273072,
+            "wowheadParams": "item=273072",
             "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
           },
           "gems": []
@@ -9773,7 +9766,7 @@
               "name": "Alluring Bubbleband",
               "quality": 4,
               "icon": "inv_70_raid_ring8c",
-              "source": "Nek'zali",
+              "source": "Tidebound Grotto",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -10559,7 +10552,7 @@
               "name": "Alluring Bubbleband",
               "quality": 4,
               "icon": "inv_70_raid_ring8c",
-              "source": "Nek'zali",
+              "source": "Tidebound Grotto",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -10772,7 +10765,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:43.366Z",
+      "scrapedAt": "2026-08-25T05:01:19.552Z",
       "items": [
         {
           "slot": "Helm",
@@ -10993,7 +10986,7 @@
           "name": "Alluring Bubbleband",
           "quality": 4,
           "icon": "inv_70_raid_ring8c",
-          "source": "Nek'zali",
+          "source": "Tidebound Grotto",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -12368,7 +12361,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:52.514Z",
+      "scrapedAt": "2026-08-25T05:01:28.924Z",
       "items": [
         {
           "slot": "Helm",
@@ -13944,7 +13937,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:56.618Z",
+      "scrapedAt": "2026-08-25T05:01:33.055Z",
       "items": [
         {
           "slot": "Helm",
@@ -15511,7 +15504,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:01.490Z",
+      "scrapedAt": "2026-08-25T05:01:37.862Z",
       "items": [
         {
           "slot": "Helm",
@@ -18276,7 +18269,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:05.385Z",
+      "scrapedAt": "2026-08-25T05:01:42.403Z",
       "items": [
         {
           "slot": "Helm",
@@ -19906,7 +19899,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:09.282Z",
+      "scrapedAt": "2026-08-25T05:01:46.721Z",
       "items": [
         {
           "slot": "Helm",
@@ -21553,7 +21546,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:18.680Z",
+      "scrapedAt": "2026-08-25T05:01:56.687Z",
       "items": [
         {
           "slot": "Helm",
@@ -23323,7 +23316,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:23.526Z",
+      "scrapedAt": "2026-08-25T05:02:01.107Z",
       "items": [
         {
           "slot": "Helm",
@@ -24961,7 +24954,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:33.309Z",
+      "scrapedAt": "2026-08-25T05:02:10.544Z",
       "items": [
         {
           "slot": "Helm",
@@ -26637,7 +26630,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:37.096Z",
+      "scrapedAt": "2026-08-25T05:02:14.719Z",
       "items": [
         {
           "slot": "Helm",
@@ -28355,7 +28348,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:46.996Z",
+      "scrapedAt": "2026-08-25T05:02:24.159Z",
       "items": [
         {
           "slot": "Helm",
@@ -29940,7 +29933,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:48.333Z",
+      "scrapedAt": "2026-08-25T05:01:24.748Z",
       "items": [
         {
           "slot": "Helm",
@@ -30389,7 +30382,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&bonus=13848:13708:10835",
+              "wowheadParams": "item=268265&bonus=13848:13987:10835",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -30710,9 +30703,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -31098,9 +31091,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -31171,7 +31164,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&bonus=13848:13708:10835",
+              "wowheadParams": "item=268265&bonus=13848:13987:10835",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -31492,9 +31485,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -31542,7 +31535,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:21.306Z",
+      "scrapedAt": "2026-08-25T05:00:55.588Z",
       "items": [
         {
           "slot": "Helm",
@@ -31599,7 +31592,7 @@
           "empty": false,
           "itemId": 268265,
           "originalItemId": null,
-          "wowheadParams": "item=268265&bonus=13848:13708:10835",
+          "wowheadParams": "item=268265&bonus=13848:13987:10835",
           "name": "Aqirbane Reliquary",
           "quality": 4,
           "icon": "inv_121_jewelry_neck03_green",
@@ -31920,9 +31913,9 @@
           "crafted": false,
           "profession": null,
           "enchant": {
-            "name": "Arcane Mastery",
-            "itemId": 244031,
-            "wowheadParams": "item=244031",
+            "name": "Rite of the Hash'ey",
+            "itemId": 273072,
+            "wowheadParams": "item=273072",
             "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
           },
           "gems": []
@@ -32324,9 +32317,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Jan'alai's Precision",
-                "itemId": 243970,
-                "wowheadParams": "item=243970",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -32711,9 +32704,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Jan'alai's Precision",
-                "itemId": 243970,
-                "wowheadParams": "item=243970",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -33104,9 +33097,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Jan'alai's Precision",
-                "itemId": 243970,
-                "wowheadParams": "item=243970",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -33161,7 +33154,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:33.915Z",
+      "scrapedAt": "2026-08-25T05:01:10.034Z",
       "items": [
         {
           "slot": "Helm",
@@ -33538,9 +33531,9 @@
           "crafted": false,
           "profession": null,
           "enchant": {
-            "name": "Jan'alai's Precision",
-            "itemId": 243970,
-            "wowheadParams": "item=243970",
+            "name": "Rite of the Hash'ey",
+            "itemId": 273072,
+            "wowheadParams": "item=273072",
             "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
           },
           "gems": []
@@ -33603,13 +33596,13 @@
               "align": "right",
               "empty": false,
               "itemId": 271484,
-              "originalItemId": 160213,
-              "wowheadParams": "item=271484&bonus=12854&original-item=160213",
+              "originalItemId": null,
+              "wowheadParams": "item=271484&bonus=12854",
               "name": "Hexing Grips of the Ophidian Oracle",
               "quality": 4,
               "icon": "inv_glove_mail_raidshamanulatek_d_01",
-              "source": "King's Rest",
-              "catalyst": true,
+              "source": "Entombed Sentinels",
+              "catalyst": false,
               "crafted": false,
               "profession": null,
               "enchant": null,
@@ -33622,7 +33615,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&bonus=13848:13708:10835",
+              "wowheadParams": "item=268265&bonus=13848:13987:10835",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -33740,13 +33733,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 268233,
+              "itemId": 268258,
               "originalItemId": null,
-              "wowheadParams": "item=268233&bonus=12854",
-              "name": "Ferocious Scaleboots",
+              "wowheadParams": "item=268258&bonus=12854",
+              "name": "Boots of the Reckless Wayfarer",
               "quality": 4,
-              "icon": "inv_boot_mail_raidhunterulatek_d_01",
-              "source": "Sszorak",
+              "icon": "inv_boot_mail_raidevokerulatek_d_01",
+              "source": "Lost Explorers",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -33786,13 +33779,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 268249,
+              "itemId": 268252,
               "originalItemId": null,
-              "wowheadParams": "item=268249&bonus=12854",
-              "name": "Vile Alchemist's Band",
+              "wowheadParams": "item=268252&bonus=12854",
+              "name": "Apex Brute's Claw Ring",
               "quality": 4,
-              "icon": "inv_121_jewelry_ring01_purple",
-              "source": "Vashnik",
+              "icon": "inv_121_jewelry_ring03_red",
+              "source": "Sszorak",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -33822,13 +33815,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 252258,
+              "itemId": 273792,
               "originalItemId": null,
-              "wowheadParams": "item=252258&bonus=12854",
-              "name": "Sickening Signet of Atroxus",
-              "quality": 3,
-              "icon": "inv_12_jewelry_devouringhost_ring_bronze2",
-              "source": "Voidscar Arena",
+              "wowheadParams": "item=273792&bonus=12854",
+              "name": "Band of the Amani Warlord",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring02_green",
+              "source": "Altar of Fangs",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -33936,9 +33929,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Berserker's Rage",
-                "itemId": 243973,
-                "wowheadParams": "item=243973",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -33959,9 +33952,9 @@
               "crafted": true,
               "profession": "Blacksmithing",
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": [
@@ -34014,12 +34007,12 @@
               "align": "right",
               "empty": false,
               "itemId": 271484,
-              "originalItemId": 160213,
-              "wowheadParams": "item=271484&bonus=12854&original-item=160213",
+              "originalItemId": 193752,
+              "wowheadParams": "item=271484&bonus=12854&original-item=193752",
               "name": "Hexing Grips of the Ophidian Oracle",
               "quality": 4,
               "icon": "inv_glove_mail_raidshamanulatek_d_01",
-              "source": "King's Rest",
+              "source": "Ruby Life Pools",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -34031,13 +34024,13 @@
               "slotFr": "Cou",
               "align": "left",
               "empty": false,
-              "itemId": 251142,
+              "itemId": 251234,
               "originalItemId": null,
-              "wowheadParams": "item=251142&bonus=12854",
-              "name": "Pendant of Malefic Fury",
+              "wowheadParams": "item=251234&bonus=12854",
+              "name": "Graft of the Domanaar",
               "quality": 3,
-              "icon": "inv_12_jewelry_silvermoonelf_necklace_green",
-              "source": "Murder Row",
+              "icon": "inv_12_jewelry_devouringhost_necklace_silver2",
+              "source": "Voidscar Arena",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -34056,13 +34049,13 @@
               "slotFr": "Taille",
               "align": "right",
               "empty": false,
-              "itemId": 251228,
+              "itemId": 251155,
               "originalItemId": null,
-              "wowheadParams": "item=251228&bonus=12854",
-              "name": "Behemoth Waistband",
+              "wowheadParams": "item=251155&bonus=12854",
+              "name": "Tribal Defender's Cord",
               "quality": 3,
               "icon": "inv_belt_mail_dungeonharronir_c_01",
-              "source": "Voidscar Arena",
+              "source": "Den of Nalorakk",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -34341,9 +34334,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Berserker's Rage",
-                "itemId": 243973,
-                "wowheadParams": "item=243973",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -34364,9 +34357,9 @@
               "crafted": true,
               "profession": "Blacksmithing",
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": [
@@ -34389,13 +34382,13 @@
               "align": "left",
               "empty": false,
               "itemId": 271483,
-              "originalItemId": null,
-              "wowheadParams": "item=271483&bonus=12854",
+              "originalItemId": 268230,
+              "wowheadParams": "item=271483&bonus=12854&original-item=268230",
               "name": "Serpent Crown of the Ophidian Oracle",
               "quality": 4,
               "icon": "inv_helm_mail_raidshamanulatek_d_01",
-              "source": "Twin Fangs",
-              "catalyst": false,
+              "source": "Nek'zali",
+              "catalyst": true,
               "crafted": false,
               "profession": null,
               "enchant": {
@@ -34438,7 +34431,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&bonus=13848:13708:10835",
+              "wowheadParams": "item=268265&bonus=13848:13987:10835",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -34556,13 +34549,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 268233,
+              "itemId": 268258,
               "originalItemId": null,
-              "wowheadParams": "item=268233&bonus=12854",
-              "name": "Ferocious Scaleboots",
+              "wowheadParams": "item=268258&bonus=12854",
+              "name": "Boots of the Reckless Wayfarer",
               "quality": 4,
-              "icon": "inv_boot_mail_raidhunterulatek_d_01",
-              "source": "Sszorak",
+              "icon": "inv_boot_mail_raidevokerulatek_d_01",
+              "source": "Lost Explorers",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -34752,9 +34745,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Berserker's Rage",
-                "itemId": 243973,
-                "wowheadParams": "item=243973",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -34775,9 +34768,9 @@
               "crafted": true,
               "profession": "Blacksmithing",
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Rite of the Hash'ey",
+                "itemId": 273072,
+                "wowheadParams": "item=273072",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": [
@@ -34826,7 +34819,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:28.072Z",
+      "scrapedAt": "2026-08-25T05:02:05.928Z",
       "items": [
         {
           "slot": "Helm",
@@ -34864,13 +34857,13 @@
           "align": "right",
           "empty": false,
           "itemId": 271484,
-          "originalItemId": 160213,
-          "wowheadParams": "item=271484&bonus=12854&original-item=160213",
+          "originalItemId": null,
+          "wowheadParams": "item=271484&bonus=12854",
           "name": "Hexing Grips of the Ophidian Oracle",
           "quality": 4,
           "icon": "inv_glove_mail_raidshamanulatek_d_01",
-          "source": "King's Rest",
-          "catalyst": true,
+          "source": "Entombed Sentinels",
+          "catalyst": false,
           "crafted": false,
           "profession": null,
           "enchant": null,
@@ -34883,7 +34876,7 @@
           "empty": false,
           "itemId": 268265,
           "originalItemId": null,
-          "wowheadParams": "item=268265&bonus=13848:13708:10835",
+          "wowheadParams": "item=268265&bonus=13848:13987:10835",
           "name": "Aqirbane Reliquary",
           "quality": 4,
           "icon": "inv_121_jewelry_neck03_green",
@@ -35001,13 +34994,13 @@
           "slotFr": "Pieds",
           "align": "right",
           "empty": false,
-          "itemId": 268233,
+          "itemId": 268258,
           "originalItemId": null,
-          "wowheadParams": "item=268233&bonus=12854",
-          "name": "Ferocious Scaleboots",
+          "wowheadParams": "item=268258&bonus=12854",
+          "name": "Boots of the Reckless Wayfarer",
           "quality": 4,
-          "icon": "inv_boot_mail_raidhunterulatek_d_01",
-          "source": "Sszorak",
+          "icon": "inv_boot_mail_raidevokerulatek_d_01",
+          "source": "Lost Explorers",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -35047,13 +35040,13 @@
           "slotFr": "Anneau",
           "align": "right",
           "empty": false,
-          "itemId": 268249,
+          "itemId": 268252,
           "originalItemId": null,
-          "wowheadParams": "item=268249&bonus=12854",
-          "name": "Vile Alchemist's Band",
+          "wowheadParams": "item=268252&bonus=12854",
+          "name": "Apex Brute's Claw Ring",
           "quality": 4,
-          "icon": "inv_121_jewelry_ring01_purple",
-          "source": "Vashnik",
+          "icon": "inv_121_jewelry_ring03_red",
+          "source": "Sszorak",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -35083,13 +35076,13 @@
           "slotFr": "Anneau",
           "align": "right",
           "empty": false,
-          "itemId": 252258,
+          "itemId": 273792,
           "originalItemId": null,
-          "wowheadParams": "item=252258&bonus=12854",
-          "name": "Sickening Signet of Atroxus",
-          "quality": 3,
-          "icon": "inv_12_jewelry_devouringhost_ring_bronze2",
-          "source": "Voidscar Arena",
+          "wowheadParams": "item=273792&bonus=12854",
+          "name": "Band of the Amani Warlord",
+          "quality": 4,
+          "icon": "inv_121_jewelry_ring02_green",
+          "source": "Altar of Fangs",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -35197,9 +35190,9 @@
           "crafted": false,
           "profession": null,
           "enchant": {
-            "name": "Berserker's Rage",
-            "itemId": 243973,
-            "wowheadParams": "item=243973",
+            "name": "Rite of the Hash'ey",
+            "itemId": 273072,
+            "wowheadParams": "item=273072",
             "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
           },
           "gems": []
@@ -35220,9 +35213,9 @@
           "crafted": true,
           "profession": "Blacksmithing",
           "enchant": {
-            "name": "Arcane Mastery",
-            "itemId": 244031,
-            "wowheadParams": "item=244031",
+            "name": "Rite of the Hash'ey",
+            "itemId": 273072,
+            "wowheadParams": "item=273072",
             "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
           },
           "gems": [
@@ -36516,7 +36509,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:13.555Z",
+      "scrapedAt": "2026-08-25T05:00:47.480Z",
       "items": [
         {
           "slot": "Helm",
@@ -38206,7 +38199,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:13.981Z",
+      "scrapedAt": "2026-08-25T05:01:51.656Z",
       "items": [
         {
           "slot": "Helm",
@@ -39866,7 +39859,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:09:42.475Z",
+      "scrapedAt": "2026-08-25T05:02:19.384Z",
       "items": [
         {
           "slot": "Helm",
@@ -40640,9 +40633,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Berserker's Rage",
+                "itemId": 243973,
+                "wowheadParams": "item=243973",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -41027,9 +41020,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Berserker's Rage",
+                "itemId": 243973,
+                "wowheadParams": "item=243973",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -41050,9 +41043,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Berserker's Rage",
+                "itemId": 243973,
+                "wowheadParams": "item=243973",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -41437,9 +41430,9 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Arcane Mastery",
-                "itemId": 244031,
-                "wowheadParams": "item=244031",
+                "name": "Berserker's Rage",
+                "itemId": 243973,
+                "wowheadParams": "item=243973",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
               },
               "gems": []
@@ -41475,7 +41468,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-24T05:08:38.564Z",
+      "scrapedAt": "2026-08-25T05:01:14.982Z",
       "items": [
         {
           "slot": "Helm",
@@ -41852,9 +41845,9 @@
           "crafted": false,
           "profession": null,
           "enchant": {
-            "name": "Arcane Mastery",
-            "itemId": 244031,
-            "wowheadParams": "item=244031",
+            "name": "Berserker's Rage",
+            "itemId": 243973,
+            "wowheadParams": "item=243973",
             "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
           },
           "gems": []
@@ -41868,5 +41861,5 @@
       ]
     }
   },
-  "updatedAt": "2026-08-24T05:09:47.004Z"
+  "updatedAt": "2026-08-25T05:02:24.166Z"
 }
