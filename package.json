@@ -8,7 +8,8 @@
     "start": "node server.js",
     "build:static": "node tools/build-static.js",
     "refresh:all": "node tools/refresh-all.js",
-    "check": "node tools/check-bis.js"
+    "check": "node tools/check-bis.js",
+    "refresh:portraits": "node tools/refresh-portraits.js"
   },
   "engines": {
     "node": ">=18"

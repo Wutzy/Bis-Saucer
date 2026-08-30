@@ -18,6 +18,8 @@ const API = STATIC
       wowhead: 'api/wowhead.json',
       powerinfusion: 'api/powerinfusion.json',
       loot: 'api/loot.json',
+      views: 'api/views.json',
+      portraits: 'api/portraits.json',
     }
   : {
       specs: '/api/specs',
@@ -27,6 +29,9 @@ const API = STATIC
       wowhead: '/api/wowhead',
       powerinfusion: '/api/powerinfusion',
       loot: '/api/loot',
+      views: '/api/views',
+      portraits: '/api/portraits',
+      portraitsRefresh: '/api/portraits/refresh',
     };
 
 /* ---------------- langue ---------------- */
@@ -207,6 +212,10 @@ let trinketStore = { specs: {} };
 let wowheadStore = { specs: {} };
 let piStore = { available: false, targets: {} };
 let lootStore = { entries: [] };
+let viewsStore = { specs: {} };
+// Vignettes d'armurerie, par id de membre. Vide tant qu'aucun rapprochement n'a ete
+// lance : les cartes retombent alors sur l'icone de spec.
+let portraitStore = { members: {}, unmatched: [] };
 let roster = [];
 let classes = {};
 let activeKey = null;
@@ -222,6 +231,10 @@ let randScope = 'guild';
 // Le roster sert a preparer la composition mythique : son libelle le dit, et il est
 // le meme partout (carte d'entree, barre de guilde, titre du panneau).
 const ROSTER_LABEL = 'Roster Mythique (prévisionnel)';
+
+// La vue Joueurs porte le meme libelle que son titre de contenu : on doit pouvoir
+// citer l'ecran sans hesiter sur son nom.
+const JOUEURS_LABEL = 'Sélection du joueur';
 
 // Vue a rouvrir en quittant une vue de guilde (/rand ou Roster) : leurs onglets etant
 // masques, ce sont les carres de la barre du haut qui servent de porte de sortie, et
@@ -2248,6 +2261,7 @@ function randChoice() {
   // Le roster n'est pas propose ici : il s'ouvre par cinq clics sur la mascotte
   // (voir `armerAccesRoster`). C'est volontairement introuvable sans le savoir.
   for (const [mode, titre, soustitre] of [
+    ['joueurs', 'Joueurs', 'La composition en cartes : choisis un membre, vois son équipement'],
     ['raid', 'Raid', 'Rand par boss de raid'],
     ['mplus', 'Mythique+', 'Les BiS des membres de la guilde, triés par donjon'],
     ['butin', 'Butin', 'Qui a reçu quoi, et combien'],
@@ -2266,8 +2280,8 @@ function randChoice() {
 
     card.append(t, s);
     card.addEventListener('click', () => {
-      if (mode === 'butin') {
-        selectView('butin');
+      if (mode === 'butin' || mode === 'joueurs') {
+        selectView(mode);
         render();
         return;
       }
@@ -2316,6 +2330,19 @@ function randNav() {
   // que d'obliger a repasser par l'ecran d'accueil.
   const butin = document.createElement('button');
   butin.type = 'button';
+
+  // Les joueurs ouvrent la barre : c'est par eux qu'on entre dans la composition,
+  // les autres vues en decoulent.
+  const joueurs = document.createElement('button');
+  joueurs.type = 'button';
+  joueurs.className = `rand-tab${activeView === 'joueurs' ? ' is-active' : ''}`;
+  joueurs.textContent = 'Joueurs';
+  joueurs.title = 'La composition en cartes, rangée par rôle';
+  joueurs.addEventListener('click', () => {
+    selectView('joueurs');
+    render();
+  });
+  nav.appendChild(joueurs);
 
   for (const [mode, label] of [
     ['raid', 'Raid'],
@@ -2552,50 +2579,66 @@ function typeConso(type) {
 }
 
 /**
- * Consommables recommandes par le guide Wowhead de la spec : une ligne par type,
- * plusieurs objets quand l'auteur en propose plusieurs.
+ * Emplacements du tableau d'enchantements. Chaque auteur Wowhead ecrit le sien
+ * ("Head" ou "Helmet", "Ring" ou "Rings") : on traduit ce qu'on reconnait, le reste
+ * passe tel quel plutot que de disparaitre.
  */
-function renderConsumables() {
-  const spec = activeSpec();
-  if (!spec) return emptyState('Aucune spec sélectionnée', 'Choisis une spec en haut de page.');
+const ENCH_FR = {
+  Weapon: 'Arme',
+  'Both Weapons': 'Les deux armes',
+  'Main Hand': 'Main droite',
+  'Weapon - Main Hand': 'Main droite',
+  'Off Hand': 'Main gauche',
+  'Off-hand': 'Main gauche',
+  'Weapon - Off Hand': 'Main gauche',
+  Head: 'Tête',
+  Helmet: 'Tête',
+  Helm: 'Tête',
+  Shoulder: 'Épaules',
+  Shoulders: 'Épaules',
+  Chest: 'Torse',
+  Back: 'Dos',
+  Cloak: 'Cape',
+  Wrist: 'Poignets',
+  Bracers: 'Poignets',
+  Hands: 'Mains',
+  Gloves: 'Mains',
+  Legs: 'Jambes',
+  Feet: 'Pieds',
+  Belt: 'Ceinture',
+  Waist: 'Ceinture',
+  Boots: 'Pieds',
+  Ring: 'Anneaux',
+  Rings: 'Anneaux',
+  Gems: 'Gemmes',
+  Diamond: 'Diamant',
+  'Diamond (one of)': 'Diamant (au choix)',
+  'Other Gems': 'Autres gemmes',
+};
 
-  const entree = wowheadStore.specs[spec.key];
-  const conso = entree && entree.consumables;
+function libelleEnchant(type) {
+  if (LANG !== 'fr') return type;
+  return ENCH_FR[type] || type;
+}
 
-  if (!conso || !conso.available || !conso.rows.length) {
-    return emptyState(
-      'Aucun consommable en cache',
-      STATIC
-        ? 'Cette spec n’a pas encore été rafraîchie depuis l’ajout des consommables.'
-        : 'Clique « Mettre à jour » : les consommables du guide Wowhead sont récupérés dans la foulée.'
-    );
-  }
-
-  const wrap = document.createElement('div');
-  wrap.className = 'conso';
-
-  const intro = document.createElement('p');
-  intro.className = 'mplus-intro';
-  intro.textContent =
-    'Ce que le guide Wowhead recommande d’emporter. Plusieurs objets sur une ligne : ' +
-    'l’auteur les donne comme équivalents ou dépendants de la situation.';
-  wrap.appendChild(intro);
-
+/** Tableau "libelle -> objets", commun aux consommables et aux enchantements. */
+function tableauObjetsGuide(rows, libelle) {
   const table = document.createElement('table');
   table.className = 'conso-table';
 
   const thead = document.createElement('thead');
-  thead.innerHTML = '<tr><th>Type</th><th>Recommandé</th></tr>';
+  thead.innerHTML = `<tr><th>${libelle.colonne}</th><th>${libelle.valeur}</th></tr>`;
   table.appendChild(thead);
 
   const tbody = document.createElement('tbody');
-  for (const row of conso.rows) {
+  for (const row of rows) {
     const tr = document.createElement('tr');
 
     const typeTd = document.createElement('td');
     typeTd.className = 'conso-type';
-    typeTd.textContent = typeConso(row.type);
-    if (typeConso(row.type) !== row.type) typeTd.title = row.type;
+    const traduit = libelle.traduire(row.type);
+    typeTd.textContent = traduit;
+    if (traduit !== row.type) typeTd.title = row.type;
 
     const itemsTd = document.createElement('td');
     const liste = document.createElement('div');
@@ -2626,9 +2669,84 @@ function renderConsumables() {
   }
 
   table.appendChild(tbody);
-  wrap.appendChild(table);
+  return table;
+}
 
-  if (conso.url) {
+/**
+ * Enchantements, gemmes et consommables du guide Wowhead de la spec : une ligne par
+ * emplacement ou par type, plusieurs objets quand l'auteur en propose plusieurs.
+ */
+function renderConsumables() {
+  const spec = activeSpec();
+  if (!spec) return emptyState('Aucune spec sélectionnée', 'Choisis une spec en haut de page.');
+
+  const entree = wowheadStore.specs[spec.key];
+  const conso = entree && entree.consumables;
+  const enchants = (conso && conso.enchants) || null;
+  const aDesEnchants = Boolean(enchants && enchants.available && enchants.rows.length);
+  const aDesConso = Boolean(conso && conso.available && conso.rows.length);
+
+  if (!aDesConso && !aDesEnchants) {
+    return emptyState(
+      'Aucun consommable en cache',
+      STATIC
+        ? 'Cette spec n’a pas encore été rafraîchie depuis l’ajout des consommables.'
+        : 'Clique « Mettre à jour » : les consommables du guide Wowhead sont récupérés dans la foulée.'
+    );
+  }
+
+  const wrap = document.createElement('div');
+  wrap.className = 'conso';
+
+  const intro = document.createElement('p');
+  intro.className = 'mplus-intro';
+  intro.textContent =
+    'Ce que le guide Wowhead recommande : d’abord ce qui se pose une fois sur l’équipement, ' +
+    'ensuite ce qui s’emporte. Plusieurs objets sur une ligne : l’auteur les donne comme ' +
+    'équivalents ou dépendants de la situation.';
+  wrap.appendChild(intro);
+
+  // Les enchantements d'abord : ils se posent une fois, avant de penser aux flacons.
+  if (aDesEnchants) {
+    const titre = document.createElement('h3');
+    titre.className = 'conso-titre';
+    titre.textContent = 'Enchantements et gemmes';
+    wrap.appendChild(titre);
+    wrap.appendChild(
+      tableauObjetsGuide(enchants.rows, {
+        colonne: 'Emplacement',
+        valeur: 'Recommandé',
+        traduire: libelleEnchant,
+      })
+    );
+  }
+
+  if (aDesConso) {
+    const titre = document.createElement('h3');
+    titre.className = 'conso-titre';
+    titre.textContent = 'Consommables';
+    wrap.appendChild(titre);
+    wrap.appendChild(
+      tableauObjetsGuide(conso.rows, {
+        colonne: 'Type',
+        valeur: 'Recommandé',
+        traduire: typeConso,
+      })
+    );
+  }
+
+  // Une spec deja en cache avant l'ajout des enchantements n'en a pas : on le dit,
+  // sinon la section semble avoir disparu.
+  if (!aDesEnchants) {
+    const manque = document.createElement('p');
+    manque.className = 'roster-note';
+    manque.textContent = STATIC
+      ? 'Enchantements absents du cache : cette spec n’a pas été rafraîchie depuis leur ajout.'
+      : 'Enchantements absents du cache : clique « Mettre à jour » pour les récupérer.';
+    wrap.appendChild(manque);
+  }
+
+  if (conso && conso.url) {
     const note = document.createElement('p');
     note.className = 'roster-note';
     const texte = document.createElement('span');
@@ -2675,10 +2793,6 @@ async function ecrireApi(url, options, erreurParDefaut) {
   return data;
 }
 
-function urlMembre(member) {
-  return `/api/roster/${encodeURIComponent(member.id)}`;
-}
-
 function corpsJson(body) {
   return {
     headers: { 'Content-Type': 'application/json' },
@@ -2686,62 +2800,7 @@ function corpsJson(body) {
   };
 }
 
-async function updateMemberSpec(member, spec) {
-  const data = await ecrireApi(
-    urlMembre(member),
-    { method: 'PUT', ...corpsJson({ spec: spec || null }) },
-    'Impossible d’enregistrer la spec.'
-  );
-  if (!data) return render();
-
-  member.spec = data.member.spec;
-  showMessage(
-    spec
-      ? `${member.name} : spec enregistrée. Pense à la mettre à jour depuis la barre du haut.`
-      : `${member.name} : spec effacée.`,
-    'info'
-  );
-  render();
-}
-
-/** Entree / sortie du roster mythique : ne change que le butin de raid. */
-async function updateMemberRaid(member, raid) {
-  const data = await ecrireApi(
-    urlMembre(member),
-    { method: 'PUT', ...corpsJson({ raid }) },
-    'Impossible d’enregistrer le roster mythique.'
-  );
-  if (!data) return render();
-
-  member.raid = data.member.raid;
-  showMessage(
-    raid
-      ? `${member.name} entre dans le roster mythique : il compte de nouveau pour le butin de raid.`
-      : `${member.name} sort du roster mythique : il reste compté en Mythique+, mais plus en raid.`,
-    'info'
-  );
-  render();
-}
-
-/** Marque un membre a l'essai. Purement indicatif : ne filtre aucun butin. */
-async function updateMemberTrial(member, trial) {
-  const data = await ecrireApi(
-    urlMembre(member),
-    { method: 'PUT', ...corpsJson({ trial }) },
-    'Impossible d’enregistrer le statut d’essai.'
-  );
-  if (!data) return render();
-
-  member.trial = data.member.trial;
-  showMessage(
-    trial
-      ? `${member.name} passe en test : signalé partout, mais compté comme les autres.`
-      : `${member.name} n’est plus en test.`,
-    'info'
-  );
-  render();
-}
-
+/** Ajoute un membre au roster : c'est la seule ecriture que la vue propose encore. */
 async function ajouterMembre(nom, className, spec) {
   const data = await ecrireApi(
     '/api/roster',
@@ -2753,27 +2812,56 @@ async function ajouterMembre(nom, className, spec) {
   await loadRoster();
   showMessage(
     spec
-      ? `${data.member.name} ajouté au roster. Pense à mettre à jour sa spec.`
-      : `${data.member.name} ajouté au roster, spec à renseigner.`,
+      ? `${data.member.name} ajouté au roster.`
+      : `${data.member.name} ajouté au roster, spec à renseigner dans data/roster.json.`,
     'info'
   );
   render();
 }
 
-async function retirerMembre(member) {
-  // Une suppression ne se rattrape pas depuis l'interface : on demande confirmation.
-  if (!window.confirm(`Retirer ${member.name} du roster ?`)) return;
+/**
+ * Portrait d'un membre, dans l'ordre ou l'on fait confiance aux sources :
+ *
+ *  1. une illustration posee dans public/img/ (`portrait`) — c'est un choix
+ *     editorial, il passe avant tout le reste ;
+ *  2. la vignette d'armurerie rapprochee par src/armory.js ;
+ *  3. rien : l'appelant retombe sur l'icone de spec.
+ */
+function portraitDe(member) {
+  if (!member) return null;
+  if (member.portrait) {
+    return { src: `img/${member.portrait}`, source: 'local', titre: member.name };
+  }
+  const armurerie = portraitStore.members[member.id];
+  if (armurerie && (armurerie.inset || armurerie.thumbnail)) {
+    return {
+      // Le rendu large d'abord : l'avatar fait 84 px, il bouillonne des qu'on
+      // l'agrandit a la taille d'une carte. Il reste le repli.
+      src: armurerie.inset || armurerie.thumbnail,
+      repli: armurerie.inset ? armurerie.thumbnail : null,
+      source: 'armurerie',
+      titre: `${armurerie.character}-${armurerie.realm}`,
+      profil: armurerie.profileUrl || null,
+    };
+  }
+  return null;
+}
 
-  const data = await ecrireApi(
-    urlMembre(member),
-    { method: 'DELETE' },
-    'Impossible de retirer ce membre.'
-  );
-  if (!data) return;
+/**
+ * Ilvl equipe d'un membre, ou null si son personnage n'est pas rapproche.
+ *
+ * C'est celui de la derniere publication de l'armurerie, pas celui de l'instant : une
+ * piece recue ce soir n'y sera qu'au prochain passage de Blizzard. D'ou l'infobulle
+ * qui date la valeur plutot que de la donner pour vraie a la seconde.
+ */
+function ilvlDe(member) {
+  const armurerie = portraitStore.members[member && member.id];
+  return (armurerie && armurerie.ilvl) || null;
+}
 
-  await loadRoster();
-  showMessage(`${member.name} retiré du roster.`, 'info');
-  render();
+/** Ce que le rapprochement a trouve pour un membre, ou null. */
+function armurerieDe(member) {
+  return (member && portraitStore.members[member.id]) || null;
 }
 
 /** Role d'affichage d'un membre : c'est ainsi que le roster est range. */
@@ -2786,231 +2874,13 @@ function roleDe(member) {
 }
 
 /**
- * Range les membres par role, DPS scinde en distance / corps a corps. Une composition
- * de raid se lit comme ca, pas classe par classe : ce qui compte est de voir d'un coup
- * si les tanks et les soigneurs sont la.
- */
-function grouperParRole(membres) {
-  const par = { tank: [], heal: [], 'dps-distance': [], 'dps-melee': [], 'sans-spec': [] };
-  for (const m of membres) par[roleDe(m)].push(m);
-
-  // A l'interieur d'un groupe : par classe, puis par numero d'arrivee.
-  for (const liste of Object.values(par)) {
-    liste.sort(
-      (a, b) =>
-        classInfo(a.class).label.localeCompare(classInfo(b.class).label, 'fr') ||
-        (Number(a.n) || 0) - (Number(b.n) || 0)
-    );
-  }
-
-  const groupes = [
-    { label: 'Tank', membres: par.tank },
-    { label: 'Soigneur', membres: par.heal },
-    {
-      label: 'DPS',
-      sous: [
-        { label: 'Distance', membres: par['dps-distance'] },
-        { label: 'Corps à corps', membres: par['dps-melee'] },
-      ],
-    },
-    { label: 'Spec à renseigner', membres: par['sans-spec'] },
-  ];
-
-  // Un groupe vide n'a rien a dire ; DPS disparait si ses deux sous-groupes le sont.
-  return groupes.filter((g) =>
-    g.sous ? g.sous.some((s) => s.membres.length) : g.membres.length
-  );
-}
-
-/** Nombre de colonnes du tableau, selon que les actions sont rendues ou non. */
-function colonnesRoster() {
-  return STATIC ? 6 : 7;
-}
-
-/** Ligne d'en-tete d'un groupe, ou d'un sous-groupe en retrait. */
-function ligneGroupe(label, total, sous) {
-  const tr = document.createElement('tr');
-  tr.className = `group-row${sous ? ' group-row--sous' : ''}`;
-  const td = document.createElement('td');
-  td.colSpan = colonnesRoster();
-  const texte = document.createElement('span');
-  texte.textContent = `${label} · ${total}`;
-  td.appendChild(texte);
-  tr.appendChild(td);
-  return tr;
-}
-
-/** Cellule a case a cocher du roster, verrouillee en version consultable. */
-function caseRoster(coche, auChangement, infobulle) {
-  const td = document.createElement('td');
-  td.className = 'col-center';
-  const label = document.createElement('label');
-  label.className = 'roster-raid';
-  const box = document.createElement('input');
-  box.type = 'checkbox';
-  box.checked = coche;
-  box.disabled = STATIC;
-  label.title = STATIC ? MSG_STATIC : infobulle;
-  box.addEventListener('change', () => auChangement(box.checked));
-  label.appendChild(box);
-  td.appendChild(label);
-  return td;
-}
-
-/** Une ligne de membre, identique dans le roster mythique et dans le repli. */
-function ligneMembre(member) {
-  const info = classInfo(member.class);
-  const tr = document.createElement('tr');
-  if (member.star) tr.className = 'roster-star';
-
-  const nTd = document.createElement('td');
-  nTd.className = 'col-muted';
-  nTd.textContent = member.n;
-
-  // Icone de spec collee au nom, comme dans la liste d'origine de la guilde.
-  const nameTd = document.createElement('td');
-  const memberIcon = iconEl(
-    member.spec ? specIcon(member.class, member.spec) : info.icon,
-    'row-icon',
-    member.spec || info.label
-  );
-  const memberName = document.createElement('span');
-  memberName.textContent = member.name;
-  memberName.style.color = info.color;
-  nameTd.append(memberIcon, memberName);
-
-  if (member.star) {
-    const star = document.createElement('span');
-    star.className = 'roster-star-badge';
-    star.textContent = '★ Mascotte';
-    star.title = 'Star de la guilde';
-    nameTd.appendChild(star);
-  }
-
-  if (member.trial) {
-    const essai = document.createElement('span');
-    essai.className = 'roster-trial-badge';
-    essai.textContent = 'en test';
-    essai.title = 'À l’essai — compté comme les autres, mais signalé';
-    nameTd.appendChild(essai);
-  }
-
-  // Portrait détouré, en tête de ligne, pour les membres qui en ont un.
-  if (member.portrait) {
-    const portrait = document.createElement('img');
-    portrait.className = 'roster-portrait';
-    portrait.src = `img/${member.portrait}`;
-    portrait.alt = '';
-    portrait.title = member.name;
-    portrait.loading = 'lazy';
-    nameTd.insertBefore(portrait, nameTd.firstChild);
-  }
-
-  const specTd = document.createElement('td');
-  const select = document.createElement('select');
-  select.className = 'spec-select';
-  if (STATIC) {
-    select.disabled = true;
-    select.title = 'Version consultable : modification possible sur l’instance locale.';
-  }
-  const empty = document.createElement('option');
-  empty.value = '';
-  empty.textContent = '— à renseigner —';
-  select.appendChild(empty);
-  for (const spec of info.specs) {
-    const option = document.createElement('option');
-    option.value = spec.slug;
-    option.textContent = spec.label;
-    if (member.spec === spec.slug) option.selected = true;
-    select.appendChild(option);
-  }
-  select.addEventListener('change', () => updateMemberSpec(member, select.value));
-  specTd.appendChild(select);
-
-  const raidTd = caseRoster(
-    member.raid !== false,
-    (coche) => updateMemberRaid(member, coche),
-    member.raid !== false
-      ? `${member.name} est dans le roster mythique : il compte pour le butin de raid.`
-      : `${member.name} est hors roster mythique : ignoré en raid, compté en Mythique+.`
-  );
-
-  // En test : contrairement au roster mythique, ce statut ne filtre rien. Il ne fait
-  // que signaler la personne, ici et sur les pastilles des tableaux de butin.
-  const trialTd = caseRoster(
-    member.trial === true,
-    (coche) => updateMemberTrial(member, coche),
-    member.trial
-      ? `${member.name} est à l’essai : signalé partout, compté comme les autres.`
-      : `${member.name} n’est pas à l’essai.`
-  );
-
-  const dataTd = document.createElement('td');
-  if (!member.spec) {
-    dataTd.appendChild(badge('none', '-'));
-  } else {
-    const entry = entryFor(`${member.class}-${member.spec}`);
-    dataTd.appendChild(
-      entry ? badge('bis', `${entry.items.length} slots`) : badge('bis-multi', 'à scraper')
-    );
-  }
-
-  tr.append(nTd, nameTd, specTd, raidTd, trialTd, dataTd);
-
-  if (!STATIC) {
-    const actionTd = document.createElement('td');
-    actionTd.className = 'col-center';
-    const retirer = document.createElement('button');
-    retirer.type = 'button';
-    retirer.className = 'roster-retirer';
-    retirer.textContent = '✕';
-    retirer.title = `Retirer ${member.name} du roster`;
-    retirer.addEventListener('click', () => retirerMembre(member));
-    actionTd.appendChild(retirer);
-    tr.appendChild(actionTd);
-  }
-
-  return tr;
-}
-
-/** Tableau du roster, groupes en tete de section. */
-function tableauRoster(groupes) {
-  const table = document.createElement('table');
-  const thead = document.createElement('thead');
-  // Composer et retirer des membres se fait sur l'instance locale, jamais sur la
-  // version publiee : la-bas les controles ne sont pas grises, ils n'existent pas.
-  const colonnes =
-    '<th>#</th><th>Membre</th><th>Spec</th><th class="col-center">Roster mythique</th>' +
-    '<th class="col-center">En test</th><th>Données BiS</th>';
-  thead.innerHTML = `<tr>${colonnes}${STATIC ? '' : '<th></th>'}</tr>`;
-  table.appendChild(thead);
-
-  const tbody = document.createElement('tbody');
-  for (const groupe of groupes) {
-    if (!groupe.sous) {
-      tbody.appendChild(ligneGroupe(groupe.label, groupe.membres.length));
-      for (const member of groupe.membres) tbody.appendChild(ligneMembre(member));
-      continue;
-    }
-    const total = groupe.sous.reduce((somme, s) => somme + s.membres.length, 0);
-    tbody.appendChild(ligneGroupe(groupe.label, total));
-    for (const sous of groupe.sous) {
-      if (!sous.membres.length) continue;
-      tbody.appendChild(ligneGroupe(sous.label, sous.membres.length, true));
-      for (const member of sous.membres) tbody.appendChild(ligneMembre(member));
-    }
-  }
-  table.appendChild(tbody);
-  return table;
-}
-
-/**
  * Vue Roster Mythique : elle montre la composition, donc uniquement les membres qui en
  * font partie. Les autres restent atteignables dans un repli en bas — sans quoi
  * decocher quelqu'un le ferait disparaitre pour de bon, sans moyen de le remettre.
  */
 function renderRoster() {
   const wrap = document.createElement('div');
+  wrap.className = 'joueurs roster-cartes';
   // Le roster est une des trois entrees de guilde : on garde la barre pour passer
   // aux deux autres sans repasser par l'ecran d'accueil.
   wrap.appendChild(randNav());
@@ -3018,14 +2888,18 @@ function renderRoster() {
   const mythique = roster.filter((m) => m.raid !== false);
   const horsRoster = roster.filter((m) => m.raid === false);
 
-  wrap.appendChild(
-    mythique.length
-      ? tableauRoster(grouperParRole(mythique))
-      : emptyState(
-          'Roster mythique vide',
-          'Personne n’est coché « Roster mythique ». Déplie la section ci-dessous pour en réintégrer.'
-        )
-  );
+  // Meme rangement que la vue Joueurs : tank, soigneur, DPS distance, DPS mêlée.
+  // Une composition de raid se lit comme ça, pas classe par classe.
+  if (mythique.length) {
+    for (const section of sectionsRoles(mythique)) wrap.appendChild(section);
+  } else {
+    wrap.appendChild(
+      emptyState(
+        'Roster mythique vide',
+        'Personne n’est coché « Roster mythique ». Déplie la section ci-dessous pour en réintégrer.'
+      )
+    );
+  }
 
   if (horsRoster.length) {
     const repli = document.createElement('section');
@@ -3044,7 +2918,9 @@ function renderRoster() {
     });
     repli.appendChild(bouton);
 
-    if (rosterHorsVisible) repli.appendChild(tableauRoster(grouperParRole(horsRoster)));
+    if (rosterHorsVisible) {
+      for (const section of sectionsRoles(horsRoster)) repli.appendChild(section);
+    }
     wrap.appendChild(repli);
   }
 
@@ -3147,6 +3023,656 @@ function formulaireAjout() {
   return form;
 }
 
+/* ---------------- vue Joueurs : la selection par carte ---------------- */
+
+/**
+ * Vocabulaire des roles d'affichage : libelle, icone et couleur d'accent, au meme
+ * endroit pour toute la vue. Les clefs sont exactement celles que renvoie `roleDe`,
+ * donc cette vue et le Roster rangent les membres pareil — une seule verite sur ce
+ * qu'est un tank, un soigneur, un DPS distance ou corps a corps.
+ */
+const ROLES = {
+  tank: { label: 'Tank', icon: 'ability_warrior_defensivestance', couleur: '#4a9fe0' },
+  heal: { label: 'Soigneur', icon: 'spell_holy_holybolt', couleur: '#4ea36a' },
+  'dps-distance': { label: 'DPS distance', icon: 'ability_marksmanship', couleur: '#d9a441' },
+  'dps-melee': { label: 'DPS corps à corps', icon: 'ability_dualwield', couleur: '#e0723a' },
+  'sans-spec': { label: 'Spec à renseigner', icon: 'inv_misc_questionmark', couleur: '#8d97a6' },
+};
+
+// Icone de l'ilvl, partout ou il est affiche : cartes et compteur de composition.
+const ICONE_ILVL = 'inv_helmet_03';
+
+// Ordre de lecture d'une composition : qui encaisse, qui soigne, puis qui tape.
+const ROLES_ORDRE = ['tank', 'heal', 'dps-distance', 'dps-melee', 'sans-spec'];
+
+/**
+ * Buffs de raid, par la classe qui les apporte. Un porteur suffit : ce qu'on regarde
+ * sur cette bande, c'est la case eteinte — le buff que personne n'amene ce soir.
+ *
+ * C'est la seule table a toucher si Blizzard redistribue les cartes.
+ */
+const BUFFS_RAID = [
+  {
+    label: 'Intelligence',
+    sort: 'Intellect arcanique',
+    classe: 'mage',
+    icon: 'spell_holy_magicalsentry',
+  },
+  {
+    label: 'Endurance',
+    sort: 'Mot de pouvoir : Robustesse',
+    classe: 'priest',
+    icon: 'spell_holy_wordfortitude',
+  },
+  {
+    label: 'Puissance d’attaque',
+    sort: 'Cri de guerre',
+    classe: 'warrior',
+    icon: 'ability_warrior_battleshout',
+  },
+  {
+    label: 'Polyvalence',
+    sort: 'Marque du Sauvage',
+    classe: 'druid',
+    icon: 'spell_nature_regeneration',
+  },
+  {
+    label: 'Furie du ciel',
+    sort: 'Totem de furie du ciel',
+    classe: 'shaman',
+    icon: 'ability_shaman_repulsiontotem',
+  },
+  {
+    label: 'Bénédiction du bronze',
+    sort: 'Bénédiction du bronze',
+    classe: 'evoker',
+    icon: 'ability_evoker_blessingofthebronze',
+  },
+  {
+    label: 'Toucher mystique',
+    sort: 'Dégâts physiques subis +5 %',
+    classe: 'monk',
+    icon: 'ability_monk_sparring',
+  },
+  {
+    label: 'Marque du chaos',
+    sort: 'Dégâts magiques subis +5 %',
+    classe: 'demon-hunter',
+    icon: 'ability_demonhunter_specdps',
+  },
+  {
+    label: 'Aura de dévotion',
+    sort: 'Dégâts magiques subis réduits',
+    classe: 'paladin',
+    icon: 'spell_holy_devotionaura',
+  },
+];
+
+/** Compte des membres par role, dans l'ordre de `ROLES_ORDRE`. */
+function compterRoles(membres) {
+  const par = new Map(ROLES_ORDRE.map((role) => [role, 0]));
+  for (const m of membres) {
+    const role = roleDe(m);
+    par.set(role, (par.get(role) || 0) + 1);
+  }
+  return par;
+}
+
+/** Un cartouche de l'en-tete : une icone, un nombre, et l'infobulle qui l'explique. */
+function compteurJoueurs(icon, valeur, titre, couleur) {
+  const el = document.createElement('div');
+  el.className = 'joueurs-compteur';
+  if (couleur) el.style.setProperty('--role', couleur);
+  el.title = titre;
+  el.appendChild(iconEl(icon, 'joueurs-compteur-icone', ''));
+  const n = document.createElement('span');
+  n.className = 'joueurs-compteur-n';
+  n.textContent = valeur;
+  el.appendChild(n);
+  return el;
+}
+
+/**
+ * En-tete de la vue : ce qu'on regarde a gauche, la composition chiffree a droite.
+ * Le total d'abord, puis un cartouche par role — la meme decomposition que les
+ * sections en dessous, pour qu'on retrouve chaque nombre en descendant.
+ */
+function enteteJoueurs(membres) {
+  const tete = document.createElement('div');
+  tete.className = 'joueurs-tete';
+
+  const titre = document.createElement('div');
+  titre.className = 'joueurs-titre';
+  const h = document.createElement('strong');
+  h.textContent = 'Sélection du joueur';
+  const sous = document.createElement('span');
+  sous.textContent = 'Choisis le membre dont tu veux voir l’équipement.';
+  titre.append(h, sous);
+
+  const compteurs = document.createElement('div');
+  compteurs.className = 'joueurs-compteurs';
+
+  // L'ilvl moyen ouvre la serie : c'est le chiffre qu'on regarde avant de savoir
+  // combien on est. Calcule sur les seuls membres rapproches — moyenner en comptant
+  // les inconnus pour zero donnerait un nombre faux.
+  const ilvls = membres.map((m) => ilvlDe(m)).filter(Boolean);
+  if (ilvls.length) {
+    const moyen = Math.round(ilvls.reduce((somme, v) => somme + v, 0) / ilvls.length);
+    compteurs.appendChild(
+      compteurJoueurs(
+        ICONE_ILVL,
+        moyen,
+        `ilvl moyen ${moyen} · sur ${ilvls.length}/${membres.length} membre(s) rapproché(s)` +
+          `\nDu plus haut (${Math.max(...ilvls)}) au plus bas (${Math.min(...ilvls)})`
+      )
+    );
+  }
+
+  compteurs.appendChild(
+    compteurJoueurs(
+      'inv_misc_grouplooking',
+      membres.length,
+      `${membres.length} membre(s) dans le roster mythique`
+    )
+  );
+
+  const par = compterRoles(membres);
+  for (const role of ROLES_ORDRE) {
+    const total = par.get(role) || 0;
+    // Un role a zero reste affiche : c'est justement le trou qu'on cherche. Sauf
+    // « spec a renseigner », qui n'est pas un role mais un oubli.
+    if (role === 'sans-spec' && !total) continue;
+    const meta = ROLES[role];
+    compteurs.appendChild(
+      compteurJoueurs(meta.icon, total, `${meta.label} · ${total}`, meta.couleur)
+    );
+  }
+
+  tete.append(titre, compteurs);
+  return tete;
+}
+
+/**
+ * Bouton « Portraits ». Absent de la version publiee : la-bas il n'y a pas de
+ * serveur pour interroger l'armurerie, les vignettes sont celles du dernier
+ * rapprochement fait en local puis republie.
+ */
+function boutonPortraits() {
+  const barre = document.createElement('div');
+  barre.className = 'joueurs-armurerie';
+
+  const bouton = document.createElement('button');
+  bouton.type = 'button';
+  bouton.className = 'rand-tab';
+  bouton.textContent = 'Portraits';
+  bouton.title =
+    'Rapproche le roster de l’armurerie (via Raider.IO) et récupère les vignettes';
+  bouton.addEventListener('click', () => rapprocherArmurerie(bouton));
+  barre.appendChild(bouton);
+
+  const etat = document.createElement('span');
+  etat.className = 'joueurs-armurerie-etat';
+  const trouves = Object.values(portraitStore.members).filter((m) => m.thumbnail).length;
+  const rates = (portraitStore.unmatched || []).length;
+  etat.textContent = portraitStore.updatedAt
+    ? `${trouves} portrait(s)${rates ? ` · ${rates} non rapproché(s)` : ''} · ${ilYA(
+        portraitStore.updatedAt
+      )}`
+    : 'Aucun portrait récupéré pour l’instant.';
+  if (rates) {
+    etat.title = (portraitStore.unmatched || [])
+      .map((u) => `${u.name} : ${u.raison}`)
+      .join('\n');
+  }
+  barre.appendChild(etat);
+
+  return barre;
+}
+
+/** Lance le rapprochement, puis recharge le cache et redessine. */
+async function rapprocherArmurerie(bouton) {
+  const libelle = bouton.textContent;
+  bouton.disabled = true;
+  bouton.textContent = 'Rapprochement…';
+  showMessage('Interrogation de l’armurerie via Raider.IO…', 'info');
+
+  try {
+    const res = await fetch(API.portraitsRefresh, { method: 'POST' });
+    const data = await res.json().catch(() => null);
+    if (!res.ok) {
+      showMessage((data && data.error) || 'Rapprochement impossible.', 'error');
+      return;
+    }
+    portraitStore = { unmatched: [], ...data };
+    const trouves = Object.values(portraitStore.members).filter((m) => m.thumbnail).length;
+    const rates = portraitStore.unmatched.length;
+    showMessage(
+      `${trouves} portrait(s) récupéré(s)` +
+        (rates
+          ? ` · ${rates} membre(s) non rapproché(s) : renseigne leur personnage dans la colonne « Armurerie » du Roster.`
+          : '.'),
+      'info'
+    );
+  } catch (err) {
+    showMessage(`Rapprochement impossible : ${err.message}`, 'error');
+  } finally {
+    bouton.disabled = false;
+    bouton.textContent = libelle;
+    render();
+  }
+}
+
+/**
+ * Image d'un membre : sa vignette d'armurerie, ou l'icone de sa spec a defaut.
+ *
+ * Une vignette peut manquer — tous les personnages n'ont pas de rendu large publie,
+ * et un transfert ou un renommage invalide l'URL. On redescend d'un cran a chaque
+ * echec (rendu large, puis avatar, puis icone) plutot que de laisser un cadre casse.
+ */
+function imagePortrait(member) {
+  const info = classInfo(member.class);
+  const embleme = () =>
+    iconEl(member.spec ? specIcon(member.class, member.spec) : info.icon, 'joueur-embleme', '');
+
+  const portrait = portraitDe(member);
+  if (!portrait) return embleme();
+
+  const img = document.createElement('img');
+  img.className = `joueur-portrait joueur-portrait--${portrait.source}`;
+  img.src = portrait.src;
+  img.alt = '';
+  img.loading = 'lazy';
+  let repli = portrait.repli;
+  img.addEventListener('error', () => {
+    if (repli) {
+      img.src = repli;
+      repli = null;
+      return;
+    }
+    img.replaceWith(embleme());
+  });
+  return img;
+}
+
+/** Pastilles d'exception d'un membre : mascotte, essai, hors roster mythique. */
+function marquesJoueur(member) {
+  const marques = document.createElement('div');
+  marques.className = 'joueur-marques';
+  if (member.star) {
+    const star = document.createElement('span');
+    star.className = 'joueur-marque joueur-marque--star';
+    star.textContent = '★';
+    star.title = 'Star de la guilde';
+    marques.appendChild(star);
+  }
+  if (member.trial) {
+    const essai = document.createElement('span');
+    essai.className = 'joueur-marque';
+    essai.textContent = 'test';
+    essai.title = 'À l’essai — compté comme les autres, mais signalé';
+    marques.appendChild(essai);
+  }
+  if (member.raid === false) {
+    const hors = document.createElement('span');
+    hors.className = 'joueur-marque';
+    hors.textContent = 'M+';
+    hors.title = 'Hors roster mythique : compté en Mythique+, ignoré sur le butin de raid';
+    marques.appendChild(hors);
+  }
+  return marques.childElementCount ? marques : null;
+}
+
+/**
+ * Emplacements du cadre de carte, en pourcentages de l'image.
+ *
+ * Mesures relevees sur les PNG produits par tools/card-frames.js (~196x297), pas
+ * estimees : le medaillon tombe a 20 % / 9 % pour 57 x 43,5 %, la banderole a 45 %,
+ * le cartouche a 65 %. Le medaillon est pris un peu plus large que le trou reel —
+ * le cerclage recouvre ses bords, mieux vaut deborder dessous qu'y laisser un
+ * croissant de vide.
+ *
+ * Ils vivent ici plutot qu'en CSS parce qu'ils decrivent CES images : changer de
+ * planche demande de reprendre ces chiffres, et le CSS ne dit pas ou les trouver.
+ */
+const CADRE_HS = {
+  ratio: '196 / 297',
+  medaillon: { left: 18.5, top: 7.5, width: 60, height: 46.5 },
+  losange: { left: 13.8, top: 15.7 },
+  banderole: { left: 9, top: 47.5, width: 76, height: 15 },
+  cartouche: { left: 9.5, top: 65, width: 75, height: 30.5 },
+};
+
+/**
+ * Specs qui ont leur propre cadre sur la planche, en plus de celui de leur classe.
+ *
+ * L'illustration en fournit six : les trois du chasseur de demons et les trois du
+ * pretre. Toute autre spec retombe sur le cadre de sa classe — c'est le cas general,
+ * pas un repli de secours.
+ */
+const CADRES_SPEC = new Set([
+  'demon-hunter-havoc',
+  'demon-hunter-vengeance',
+  'demon-hunter-devourer',
+  'priest-discipline',
+  'priest-holy',
+  'priest-shadow',
+]);
+
+/** Cadre d'un membre : celui de sa spec s'il existe, sinon celui de sa classe. */
+function cadreDe(member) {
+  const cle = member.spec ? `${member.class}-${member.spec}` : null;
+  return `img/cards/${cle && CADRES_SPEC.has(cle) ? cle : member.class}.png`;
+}
+
+/**
+ * Taille du nom dans le cartouche.
+ *
+ * Ce qui limite n'est pas la longueur du pseudo mais celle de son MOT LE PLUS LONG :
+ * le cartouche laisse passer plusieurs lignes, « Maowar / Leberger » y tient sur
+ * trois sans que rien ne soit coupe. Mesurer le total faisait ecrire « Kronox » en
+ * « Krono » puis « x », alors qu'un seul mot de six lettres tient largement.
+ *
+ * Le coefficient vient d'une mesure : en Georgia gras, un caractere occupe environ
+ * 0,69 fois la taille de police, et la boite fait ~70 cqw une fois ses marges
+ * retirees. D'ou 70 / 0,69 ≈ 102, ramene a 90 pour garder du jeu — les majuscules
+ * et les accents debordent de la moyenne.
+ *
+ * En unites de conteneur, pour que le rendu tienne quelle que soit la largeur de la
+ * carte. Le plafond evite qu'un « Kao » remplisse le cartouche a lui seul.
+ */
+const PSEUDO_MAX_CQW = 20;
+const PSEUDO_MIN_CQW = 5;
+
+function taillePseudo(nom) {
+  // Les separateurs des doubles comptes sont des points de passage a la ligne : le
+  // navigateur coupe deja la, on mesure donc les morceaux, pas la chaine entiere.
+  const mots = String(nom || '')
+    .split(/[ /()|,_-]+/)
+    .filter(Boolean);
+  const plusLong = mots.reduce((max, mot) => Math.max(max, mot.length), 1);
+  return Math.min(PSEUDO_MAX_CQW, Math.max(PSEUDO_MIN_CQW, 90 / plusLong));
+}
+
+/** Un contenu pose sur un emplacement du cadre. */
+function slotHS(classe, zone) {
+  const el = document.createElement('div');
+  el.className = `hs-slot ${classe}`;
+  el.style.left = `${zone.left}%`;
+  el.style.top = `${zone.top}%`;
+  if (zone.width !== undefined) el.style.width = `${zone.width}%`;
+  if (zone.height !== undefined) el.style.height = `${zone.height}%`;
+  return el;
+}
+
+/**
+ * Carte d'un membre, montee dans le cadre de sa classe.
+ *
+ * Le cadre porte deja la couleur de la classe : la carte n'a donc plus a l'ecrire.
+ * Le medaillon prend le portrait, le losange du coin l'icone de spec — c'est elle
+ * qui distingue un mage Feu d'un mage Givre, la ou le cadre les confond — la
+ * banderole l'ilvl, et le grand cartouche le nom du PERSONNAGE.
+ *
+ * Le nom affiche est celui de l'armurerie, pas le pseudo du roster : c'est celui
+ * qu'on lit en jeu, et il evite les doubles comptes a rallonge que la guilde note
+ * dans sa liste (« Maowar / Leberger » tient sur la carte comme « Maosham »). Le
+ * pseudo reste en tete de l'infobulle, personne ne le perd.
+ *
+ * Le cadre est pose par-dessus le portrait, qui deborde volontiers sous lui : c'est
+ * le decor qui decoupe l'image, pas l'inverse.
+ *
+ * Cliquer revient a choisir sa spec dans la barre du haut — c'est le meme geste,
+ * dit avec le nom du joueur plutot qu'avec une icone.
+ */
+function carteJoueur(member) {
+  const info = classInfo(member.class);
+  const spec = member.spec ? specByKey(`${member.class}-${member.spec}`) : null;
+  const specLabel = (info.specs || []).find((sp) => sp.slug === member.spec);
+  const entry = spec ? entryFor(spec.key) : null;
+  const armurerie = armurerieDe(member);
+  const ilvl = ilvlDe(member);
+
+  const card = document.createElement('button');
+  card.type = 'button';
+  card.className = 'joueur-carte carte-hs';
+  card.style.setProperty('--spec', info.color);
+  card.style.aspectRatio = CADRE_HS.ratio;
+  if (spec && spec.key === activeKey) card.classList.add('is-active');
+  if (member.raid === false) card.classList.add('joueur-carte--hors');
+  if (!member.spec) card.classList.add('joueur-carte--sans-spec');
+  card.title = [
+    member.name,
+    specLabel ? `${specLabel.label} · ${info.label}` : `${info.label} — spec à renseigner`,
+    armurerie ? `Armurerie : ${armurerie.character}-${armurerie.realm}` : null,
+    ilvl
+      ? `ilvl ${ilvl}${armurerie && armurerie.ilvlAt ? ` — armurerie du ${formatDateCourte(armurerie.ilvlAt)}` : ''}`
+      : null,
+    entry ? `${entry.items.length} slots en cache` : 'aucune donnée BiS en cache',
+  ]
+    .filter(Boolean)
+    .join('\n');
+
+  // Le portrait, sous le cadre.
+  const medaillon = slotHS('hs-medaillon', CADRE_HS.medaillon);
+  medaillon.appendChild(imagePortrait(member));
+  card.appendChild(medaillon);
+
+  // Le cadre lui-meme, par-dessus. Transparent au clic : c'est la carte entiere qui
+  // est le bouton, pas ce qui la decore.
+  const cadre = document.createElement('img');
+  cadre.className = 'hs-cadre';
+  cadre.src = cadreDe(member);
+  cadre.alt = '';
+  card.appendChild(cadre);
+
+  // Losange du coin : l'icone de spec, celle des guides et de la barre du haut.
+  const losange = slotHS('hs-embleme', CADRE_HS.losange);
+  losange.appendChild(
+    iconEl(
+      member.spec ? specIcon(member.class, member.spec) : info.icon,
+      'hs-embleme-icone',
+      ''
+    )
+  );
+  losange.title = specLabel ? `${specLabel.label} · ${info.label}` : info.label;
+  card.appendChild(losange);
+
+  // La banderole ne porte que l'ilvl : trois chiffres, c'est exactement ce qu'un
+  // ruban d'une ligne sait tenir. Vide tant que le personnage n'est pas rapproche —
+  // un zero y serait faux, et un tiret dit mieux « on ne sait pas ».
+  const ruban = slotHS('hs-ilvl', CADRE_HS.banderole);
+  ruban.textContent = ilvl || '—';
+  if (!ilvl) {
+    ruban.classList.add('hs-ilvl--absent');
+    ruban.title = 'Personnage non rapproché à l’armurerie';
+  }
+  card.appendChild(ruban);
+
+  // Le grand cartouche prend le pseudo : c'est la seule zone assez large pour
+  // l'ecrire en grand, et assez haute pour le laisser passer a la ligne.
+  const nom = slotHS('hs-nom', CADRE_HS.cartouche);
+  const affiche = (armurerie && armurerie.character) || member.name;
+  nom.textContent = affiche;
+  nom.style.fontSize = `${taillePseudo(affiche).toFixed(2)}cqw`;
+  card.appendChild(nom);
+
+  const marques = marquesJoueur(member);
+  if (marques) card.appendChild(marques);
+
+  card.addEventListener('click', () => {
+    // Sans spec renseignee il n'y a rien a ouvrir : on le dit plutot que de ne rien
+    // faire, un clic sans effet passe pour une panne.
+    if (!spec) {
+      showMessage(
+        `${member.name} n’a pas de spec renseignée : rien à afficher tant qu’elle manque.`,
+        'info'
+      );
+      return;
+    }
+    compterConsultation(spec);
+    activeKey = spec.key;
+    mplusFocus = null;
+    selectView('list');
+    showMessage(null);
+    render();
+  });
+
+  return card;
+}
+
+/**
+ * Une section de role : son en-tete chiffre, puis la grille de ses membres.
+ *
+ * `carte` dit quoi fabriquer pour chaque membre : la vignette cliquable de la vue
+ * Joueurs, ou la carte modifiable du Roster Mythique. Le rangement, lui, ne change
+ * pas d'une vue a l'autre.
+ */
+function sectionRole(role, membres, carte = carteJoueur) {
+  const meta = ROLES[role];
+  const section = document.createElement('section');
+  section.className = 'joueurs-role';
+  section.style.setProperty('--role', meta.couleur);
+
+  const titre = document.createElement('h3');
+  titre.className = 'joueurs-role-titre';
+  titre.appendChild(iconEl(meta.icon, 'joueurs-role-icone', ''));
+  const label = document.createElement('span');
+  label.textContent = meta.label;
+  const compte = document.createElement('span');
+  compte.className = 'joueurs-role-compte';
+  compte.textContent = membres.length;
+  titre.append(label, compte);
+
+  const grille = document.createElement('div');
+  grille.className = 'joueurs-grille';
+  // Par classe puis par numero d'arrivee : le meme tri que le Roster, pour qu'un
+  // membre se retrouve au meme endroit d'une vue a l'autre.
+  const tries = membres
+    .slice()
+    .sort(
+      (a, b) =>
+        classInfo(a.class).label.localeCompare(classInfo(b.class).label, 'fr') ||
+        (Number(a.n) || 0) - (Number(b.n) || 0)
+    );
+  for (const member of tries) grille.appendChild(carte(member));
+
+  section.append(titre, grille);
+  return section;
+}
+
+/** Les sections de role d'un ensemble de membres, les roles vides en moins. */
+function sectionsRoles(membres, carte = carteJoueur) {
+  const par = new Map(ROLES_ORDRE.map((role) => [role, []]));
+  for (const m of membres) par.get(roleDe(m)).push(m);
+  return ROLES_ORDRE.filter((role) => par.get(role).length).map((role) =>
+    sectionRole(role, par.get(role), carte)
+  );
+}
+
+/**
+ * Bande des buffs de raid : un carreau par buff, eteint quand personne ne l'apporte.
+ * C'est le seul endroit ou l'absence d'une classe se voit sans compter les cartes
+ * une a une, d'ou sa place au bas de la composition.
+ */
+function bandeBuffs(membres) {
+  const parClasse = new Map();
+  for (const m of membres) parClasse.set(m.class, (parClasse.get(m.class) || 0) + 1);
+
+  const section = document.createElement('section');
+  section.className = 'joueurs-buffs';
+
+  const titre = document.createElement('h3');
+  titre.className = 'joueurs-role-titre';
+  const label = document.createElement('span');
+  label.textContent = 'Buffs de raid';
+  const couverts = BUFFS_RAID.filter((b) => parClasse.get(b.classe)).length;
+  const compte = document.createElement('span');
+  compte.className = 'joueurs-role-compte';
+  compte.textContent = `${couverts}/${BUFFS_RAID.length}`;
+  compte.title =
+    couverts < BUFFS_RAID.length
+      ? `${BUFFS_RAID.length - couverts} buff(s) que personne n’apporte`
+      : 'Tous les buffs sont couverts';
+  titre.append(label, compte);
+
+  const bande = document.createElement('div');
+  bande.className = 'buffs-bande';
+  for (const buff of BUFFS_RAID) {
+    const total = parClasse.get(buff.classe) || 0;
+    const info = classInfo(buff.classe);
+    const tuile = document.createElement('div');
+    tuile.className = `buff-tuile${total ? '' : ' buff-tuile--absent'}`;
+    tuile.style.setProperty('--spec', info.color);
+    tuile.title = [
+      `${buff.label} — ${buff.sort}`,
+      `${info.label} · ${total} dans le roster mythique`,
+    ].join('\n');
+    tuile.appendChild(iconEl(buff.icon, 'buff-icone', buff.label));
+    const n = document.createElement('span');
+    n.className = 'buff-compte';
+    n.textContent = total;
+    tuile.appendChild(n);
+    bande.appendChild(tuile);
+  }
+
+  section.append(titre, bande);
+  return section;
+}
+
+/**
+ * Vue Joueurs : la composition en cartes, rangee par role, une entree par membre.
+ *
+ * Elle montre le roster mythique, comme la vue Roster : ceux qui n'en font pas
+ * partie restent atteignables dans le repli du bas, avec le meme interrupteur.
+ */
+function renderJoueurs() {
+  const wrap = document.createElement('div');
+  wrap.className = 'joueurs';
+  wrap.appendChild(randNav());
+
+  const mythique = roster.filter((m) => m.raid !== false);
+  const horsRoster = roster.filter((m) => m.raid === false);
+
+  wrap.appendChild(enteteJoueurs(mythique));
+  if (!STATIC) wrap.appendChild(boutonPortraits());
+
+  if (!mythique.length) {
+    wrap.appendChild(
+      emptyState(
+        'Roster mythique vide',
+        'Personne n’est coché « Roster mythique ». Déplie la section ci-dessous pour en réintégrer.'
+      )
+    );
+  } else {
+    for (const section of sectionsRoles(mythique)) wrap.appendChild(section);
+    wrap.appendChild(bandeBuffs(mythique));
+  }
+
+  if (horsRoster.length) {
+    const repli = document.createElement('section');
+    repli.className = 'roster-repli';
+
+    const bouton = document.createElement('button');
+    bouton.type = 'button';
+    bouton.className = `roster-repli-titre${rosterHorsVisible ? ' is-open' : ''}`;
+    bouton.textContent = `${
+      rosterHorsVisible ? '▾' : '▸'
+    } Hors roster mythique · ${horsRoster.length}`;
+    bouton.title = 'Ces membres comptent en Mythique+, mais pas sur le butin de raid';
+    bouton.addEventListener('click', () => {
+      rosterHorsVisible = !rosterHorsVisible;
+      render();
+    });
+    repli.appendChild(bouton);
+
+    if (rosterHorsVisible) {
+      for (const section of sectionsRoles(horsRoster)) repli.appendChild(section);
+    }
+    wrap.appendChild(repli);
+  }
+
+  return wrap;
+}
+
 /* ---------------- rendu global ---------------- */
 
 
@@ -3228,6 +3754,7 @@ function renderSelector() {
 
     btn.appendChild(iconEl(specIcon(spec.class, spec.spec), null, spec.label));
     btn.addEventListener('click', () => {
+      compterConsultation(spec);
       activeKey = spec.key;
       mplusFocus = null;
       // Choisir une spec, c'est demander a la voir : on ouvre sa liste BiS, quelle que
@@ -3247,6 +3774,7 @@ function renderSelector() {
 function estVueGuilde() {
   return (
     activeView === 'roster' ||
+    activeView === 'joueurs' ||
     activeView === 'butin' ||
     (activeView === 'rand' && randScope === 'guild')
   );
@@ -3277,9 +3805,12 @@ function renderHeader() {
   // s'il lui reste quelque chose a montrer — la date, sur la version publiee — sinon
   // il ne serait qu'une bande vide.
   const maj = derniereMaj();
+  // La vue Joueurs porte son titre dans son propre en-tete, a cote des compteurs de
+  // composition : le repeter ici ferait deux fois le meme mot a deux lignes d'ecart.
   const accueilGuilde = activeView === 'rand' && randScope === 'guild' && !randMode;
-  els.panelTitle.hidden = accueilGuilde;
-  els.panelHead.hidden = accueilGuilde && !(STATIC && maj);
+  const titreDansContenu = accueilGuilde || activeView === 'joueurs';
+  els.panelTitle.hidden = titreDansContenu;
+  els.panelHead.hidden = titreDansContenu && !(STATIC && maj);
 
   document.querySelector('.panel').style.setProperty('--spec', color);
   els.avatar.className = 'avatar lg';
@@ -3287,13 +3818,16 @@ function renderHeader() {
   // Le /rand d'une spec reste une vue de spec : son icone garde son sens. Celui de
   // la guilde ne depend d'aucune spec, l'icone n'y a rien a dire.
   els.avatar.hidden =
-    activeView === 'roster' || (activeView === 'rand' && randScope === 'guild');
+    activeView === 'roster' ||
+    activeView === 'joueurs' ||
+    (activeView === 'rand' && randScope === 'guild');
   if (spec && !els.avatar.hidden) {
     els.avatar.title = spec.label;
     els.avatar.appendChild(iconEl(specIcon(spec.class, spec.spec), null, spec.label));
   }
 
   if (activeView === 'roster') els.name.textContent = ROSTER_LABEL;
+  else if (activeView === 'joueurs') els.name.textContent = JOUEURS_LABEL;
   else if (activeView === 'rand') {
     els.name.textContent = activeBoss ? translateSource(activeBoss) : '/rand';
   } else els.name.textContent = spec ? spec.label : '—';
@@ -3304,12 +3838,16 @@ function renderHeader() {
 
   // Le bouton agit sur une spec : il n'a pas de sens dans les vues roster / boss,
   // ni en hebergement statique ou aucun scrape n'est possible.
-  els.refresh.hidden = STATIC || activeView === 'roster' || activeView === 'rand';
+  els.refresh.hidden =
+    STATIC || activeView === 'roster' || activeView === 'joueurs' || activeView === 'rand';
   els.refresh.disabled = !spec;
 
   els.sub.innerHTML = '';
   if (activeView === 'roster') {
     els.sub.textContent = `${roster.length} membres · specs enregistrées dans data/roster.json`;
+  } else if (activeView === 'joueurs') {
+    const mythique = roster.filter((m) => m.raid !== false).length;
+    els.sub.textContent = `${mythique} membre(s) dans le roster mythique · un clic ouvre son équipement`;
   } else if (activeView === 'rand') {
     const pourSpec = randScope === 'spec' && spec;
     const source =
@@ -3377,7 +3915,7 @@ function renderHeader() {
     ? `Dernière mise à jour des données : ${formatDate(maj)}`
     : 'Aucune donnée en cache';
 
-  if (activeView === 'rand' || activeView === 'roster') {
+  if (activeView === 'rand' || activeView === 'roster' || activeView === 'joueurs') {
     els.legendMeta.textContent = '';
   } else {
     els.legendMeta.textContent = entry
@@ -3434,6 +3972,7 @@ function renderContent() {
   els.content.innerHTML = '';
   renderListPicker();
   if (activeView === 'roster') els.content.appendChild(renderRoster());
+  else if (activeView === 'joueurs') els.content.appendChild(renderJoueurs());
   else if (activeView === 'butin') els.content.appendChild(renderButin());
   else if (activeView === 'rand') els.content.appendChild(renderRand());
   else if (activeView === 'conso') els.content.appendChild(renderConsumables());
@@ -3535,6 +4074,18 @@ async function loadWowhead() {
  * passee : le panneau le dit alors, plutot que d'afficher un tableau vide.
  */
 /** Journal du butin. Vide tant que personne n’a rien noté : ce n’est pas une erreur. */
+/** Compteurs de consultation. Absents = personne n’a encore ouvert de spec. */
+async function loadViews() {
+  try {
+    const res = await fetch(API.views);
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && typeof data.specs === 'object' && data.specs) viewsStore = data;
+  } catch (err) {
+    viewsStore = { specs: {} };
+  }
+}
+
 async function loadLoot() {
   try {
     const res = await fetch(API.loot);
@@ -3554,6 +4105,24 @@ async function loadPowerInfusion() {
     if (data && typeof data === 'object' && data.targets) piStore = data;
   } catch (err) {
     piStore = { available: false, targets: {} };
+  }
+}
+
+/**
+ * Vignettes d'armurerie (data/portraits.json). Complement facultatif : un cache
+ * absent — personne n'a encore lance le rapprochement — n'est pas une erreur, les
+ * cartes gardent simplement leur icone de spec.
+ */
+async function loadPortraits() {
+  try {
+    const res = await fetch(API.portraits);
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && typeof data.members === 'object' && data.members) {
+      portraitStore = { unmatched: [], ...data };
+    }
+  } catch (err) {
+    portraitStore = { members: {}, unmatched: [] };
   }
 }
 
@@ -3969,6 +4538,127 @@ async function retirerButin(ligne) {
   render();
 }
 
+/* ---------------- compteurs de consultation ---------------- */
+
+/**
+ * Combien de fois chaque spec a ete ouverte. On compte au clic sur une pastille :
+ * c'est la seule action qui veut dire « montre-moi cette spec ». Les rendus, les
+ * retours de vue et les rechargements ne comptent pas — sinon le chiffre mesurerait
+ * le nombre de rendus, pas les consultations.
+ *
+ * L'increment est optimiste : on met a jour le compteur local tout de suite, et on
+ * previent le serveur sans attendre sa reponse. Un echec reseau ne doit pas retarder
+ * l'affichage d'une liste BiS pour une statistique.
+ */
+function compterConsultation(spec) {
+  if (!spec) return;
+  const courant = viewsStore.specs[spec.key] || { count: 0, lastAt: null };
+  viewsStore.specs[spec.key] = {
+    count: courant.count + 1,
+    lastAt: new Date().toISOString(),
+  };
+  if (STATIC) return;
+  fetch(API.views, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ class: spec.class, spec: spec.spec }),
+  }).catch(() => {
+    // Sans serveur, le compteur de la session reste juste : il ne sera pas enregistre.
+  });
+}
+
+/** Total par classe, avec le detail de ses specs — la classe, c'est la somme. */
+function consultationsParClasse() {
+  const parClasse = new Map();
+  for (const [key, entree] of Object.entries(viewsStore.specs || {})) {
+    const spec = specByKey(key);
+    const className = spec ? spec.class : key.split('-').slice(0, -1).join('-');
+    if (!parClasse.has(className)) parClasse.set(className, { total: 0, specs: [], lastAt: null });
+    const bloc = parClasse.get(className);
+    bloc.total += entree.count;
+    bloc.specs.push({ key, label: spec ? spec.label : key, count: entree.count });
+    if (!bloc.lastAt || (entree.lastAt || '') > bloc.lastAt) bloc.lastAt = entree.lastAt;
+  }
+  for (const bloc of parClasse.values()) bloc.specs.sort((a, b) => b.count - a.count);
+  return [...parClasse.entries()].sort((a, b) => b[1].total - a[1].total);
+}
+
+function panneauVues() {
+  const wrap = document.createElement('div');
+
+  const titre = document.createElement('p');
+  titre.className = 'cle-titre';
+  titre.textContent = 'Classes les plus consultées';
+  wrap.appendChild(titre);
+
+  const classes = consultationsParClasse();
+  if (!classes.length) {
+    const vide = document.createElement('p');
+    vide.className = 'cle-note';
+    vide.textContent = 'Aucune consultation enregistrée pour l’instant.';
+    wrap.appendChild(vide);
+    return wrap;
+  }
+
+  const total = classes.reduce((s, [, bloc]) => s + bloc.total, 0);
+  const max = classes[0][1].total;
+
+  const table = document.createElement('table');
+  table.className = 'cle-table vues-table';
+  const tbody = document.createElement('tbody');
+
+  for (const [className, bloc] of classes) {
+    const info = classInfo(className);
+    const tr = document.createElement('tr');
+
+    const nom = document.createElement('td');
+    const pastille = document.createElement('span');
+    pastille.className = 'pi-spec';
+    pastille.style.setProperty('--spec', classColor(className));
+    pastille.appendChild(iconEl(info.icon, 'pi-icone', ''));
+    const texte = document.createElement('span');
+    texte.textContent = info.label;
+    pastille.appendChild(texte);
+    nom.appendChild(pastille);
+
+    // Le detail des specs sous le nom : c'est lui qui dit d'ou vient le total.
+    const detail = document.createElement('div');
+    detail.className = 'vues-detail';
+    detail.textContent = bloc.specs
+      .map((s) => `${s.label.split('—').pop().trim()} ${s.count}`)
+      .join(' · ');
+    nom.appendChild(detail);
+
+    // Barre proportionnelle a la classe la plus consultee : un classement se lit mieux
+    // en longueur qu'en chiffres alignes.
+    const barre = document.createElement('td');
+    barre.className = 'vues-barre-cellule';
+    const piste = document.createElement('span');
+    piste.className = 'vues-barre';
+    piste.style.setProperty('--part', `${Math.round((bloc.total / max) * 100)}%`);
+    piste.style.setProperty('--spec', classColor(className));
+    barre.appendChild(piste);
+
+    const compte = document.createElement('td');
+    compte.className = 'vues-compte';
+    compte.textContent = bloc.total;
+
+    tr.append(nom, barre, compte);
+    tbody.appendChild(tr);
+  }
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+
+  const note = document.createElement('p');
+  note.className = 'cle-note';
+  note.textContent = STATIC
+    ? `${total} consultation(s) enregistrées en local. La version publiée les affiche sans les compter.`
+    : `${total} consultation(s) depuis le début, enregistrées dans data/views.json.`;
+  wrap.appendChild(note);
+
+  return wrap;
+}
+
 /* ---------------- antiseche : recompenses par niveau de cle ---------------- */
 
 /**
@@ -4191,9 +4881,14 @@ function armerPanneau(idBouton, idPanneau, construire) {
   const panneau = document.getElementById(idPanneau);
   if (!bouton || !panneau) return;
 
-  panneau.appendChild(construire());
-
+  // Le contenu est refait a chaque ouverture : les compteurs bougent au fil des
+  // clics, et le classement PI change apres une mise a jour. Reconstruire un
+  // tableau est sans cout a cote du risque d'afficher un chiffre perime.
   const afficher = (ouvert) => {
+    if (ouvert) {
+      panneau.innerHTML = '';
+      panneau.appendChild(construire());
+    }
     panneau.classList.toggle('is-open', ouvert);
     bouton.classList.toggle('is-open', ouvert);
     bouton.setAttribute('aria-expanded', String(ouvert));
@@ -4251,6 +4946,8 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
       loadWowhead(),
       loadPowerInfusion(),
       loadLoot(),
+      loadViews(),
+      loadPortraits(),
     ]);
     // Etat de depart : l'ecran d'accueil de la guilde, onglets masques.
     selectView('rand', 'guild');
@@ -4259,6 +4956,7 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
     armerAccesRoster();
     armerPanneau('cle-toggle', 'cle-panneau', panneauCle);
     armerPanneau('pi-toggle', 'pi-panneau', panneauPI);
+    armerPanneau('vues-toggle', 'vues-panneau', panneauVues);
   } catch (err) {
     showMessage(`Erreur au chargement : ${err.message}`, 'error');
   }

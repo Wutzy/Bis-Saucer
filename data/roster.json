@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T06:28:23.453Z",
+  "updatedAt": "2026-08-30T10:57:50.375Z",
   "members": [
     {
       "n": 1,
@@ -18,7 +18,8 @@
       "spec": "frost",
       "id": "ryims",
       "raid": true,
-      "trial": false
+      "trial": false,
+      "armory": "Woryms"
     },
     {
       "n": 3,
@@ -29,7 +30,8 @@
       "portrait": "bolderiz.png",
       "id": "bolderiz-franky",
       "raid": true,
-      "trial": false
+      "trial": false,
+      "armory": "Bølederiz"
     },
     {
       "n": 4,
@@ -56,7 +58,8 @@
       "spec": "arms",
       "id": "elgior",
       "raid": false,
-      "trial": false
+      "trial": false,
+      "armory": "Orrikhan"
     },
     {
       "n": 7,
@@ -65,7 +68,8 @@
       "spec": "protection",
       "id": "solhan",
       "raid": true,
-      "trial": true
+      "trial": true,
+      "armory": "Soldun"
     },
     {
       "n": 8,
@@ -74,7 +78,8 @@
       "spec": "shadow",
       "id": "kiyohara",
       "raid": true,
-      "trial": false
+      "trial": false,
+      "armory": "Velharu"
     },
     {
       "n": 9,
@@ -88,11 +93,12 @@
     {
       "n": 10,
       "name": "Maowar / Leberger",
-      "class": "warrior",
-      "spec": "arms",
+      "class": "shaman",
+      "spec": "elemental",
       "id": "maowar-leberger",
       "raid": true,
-      "trial": true
+      "trial": true,
+      "armory": "Maosham"
     },
     {
       "n": 11,
@@ -106,11 +112,12 @@
     {
       "n": 13,
       "name": "projectbabytattoo",
-      "class": "priest",
-      "spec": "discipline",
+      "class": "shaman",
+      "spec": "restoration",
       "id": "projectbabytattoo",
       "raid": true,
-      "trial": true
+      "trial": true,
+      "armory": "Prøjectbaby"
     },
     {
       "n": 14,
@@ -119,7 +126,8 @@
       "spec": "havoc",
       "id": "ragelolz",
       "raid": true,
-      "trial": false
+      "trial": false,
+      "armory": "Ràge"
     },
     {
       "n": 15,
@@ -155,7 +163,8 @@
       "spec": "holy",
       "id": "echodoll",
       "raid": true,
-      "trial": true
+      "trial": true,
+      "armory": "Èchø"
     },
     {
       "n": 19,
@@ -185,22 +194,23 @@
       "trial": true
     },
     {
-      "n": 22,
-      "name": "Sashoot",
-      "class": "hunter",
-      "spec": "marksmanship",
-      "raid": true,
-      "trial": true,
-      "id": "sashoot"
-    },
-    {
       "n": 23,
       "name": "Xaly",
-      "class": "demon-hunter",
-      "spec": "devourer",
+      "class": "shaman",
+      "spec": "enhancement",
       "raid": true,
       "trial": false,
-      "id": "xaly"
+      "id": "xaly",
+      "armory": "Saythstorm"
+    },
+    {
+      "n": 24,
+      "name": "Sheechy",
+      "class": "shaman",
+      "spec": "elemental",
+      "raid": true,
+      "trial": false,
+      "id": "sheechy"
     }
   ]
 }

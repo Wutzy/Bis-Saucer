@@ -42,9 +42,15 @@ const BADGE = /\[icon-badge=(\d+)([^\]]*)\]/g;
 const CATEGORIES = /display-options=([a-z0-9,_-]+)/i;
 const GATHERER = /WH\.Gatherer\.addData\(\s*3\s*,\s*1\s*,\s*(\{[\s\S]*?\})\s*\)\s*;/g;
 
-// Tableau des consommables : un [table] dont les lignes sont "type -> objets". On le
-// repere par le titre qui le precede, la page en contenant plusieurs.
+// Tableaux de la page : un [table] dont les lignes sont "libelle -> objets". On les
+// repere par le titre qui les precede, la page en contenant plusieurs.
+//
+// La page s'appelle « Enchants & Consumables » et publie bien deux tableaux : les
+// consommables sous un titre Consumables, les enchantements sous un titre que chaque
+// auteur ecrit a sa facon — « Enchants » chez les uns, « Gems & Enchants » chez les
+// autres. Les guillemets sont echappes dans le HTML servi, d'ou le motif souple.
 const TITRE_CONSO = /\[h[23][^\]]*toc=Consumables[^\]]*\]/i;
+const TITRE_ENCHANTS = /\[h[23][^\]]*toc=\\?"?(?:Gems ?(?:&|and) ?)?Enchants/i;
 const TABLE_OUVERTURE = /\[table[^\]]*\]/;
 const TABLE_FERMETURE = /\[\\?\/table\]/;
 const LIGNE = /\[tr\]([\s\S]*?)\[\\?\/tr\]/g;
@@ -190,9 +196,13 @@ async function fetchTrinketTiers(className, specSlug, timeoutMs = 20000) {
   return { url, available: tiers.length > 0, tiers };
 }
 
-/** Contenu du tableau de consommables, ou null si la page n'en publie pas. */
-function extraireTableConso(html) {
-  const titre = html.match(TITRE_CONSO);
+/** Contenu du premier tableau qui suit un titre donne, ou null s'il n'y en a pas. */
+function extraireTableConso(html, motifTitre = TITRE_CONSO) {
+  const titre = html.match(motifTitre);
+  // Sans le titre attendu, on ne devine pas : prendre le premier tableau venu
+  // reviendrait a servir les consommables comme enchantements, ou l'inverse. Seul le
+  // tableau des consommables garde son repli historique sur le debut de page.
+  if (!titre && motifTitre !== TITRE_CONSO) return null;
   const depuis = titre ? html.slice(titre.index) : html;
 
   const ouverture = depuis.match(TABLE_OUVERTURE);
@@ -237,18 +247,30 @@ function parseConsumables(table, objets) {
 
 /**
  * Consommables recommandes pour une spec : flacon, potions, huile d'arme, rune,
- * nourriture. Meme contrat que la tier list : `available: false` si la page repond
- * mais ne publie pas ce tableau.
+ * nourriture — et, dans la foulee, les enchantements et gemmes, qui vivent sur la MEME
+ * page. Deux tableaux, une seule requete : rien ne justifie de la faire deux fois.
+ *
+ * Meme contrat que la tier list : `available: false` si la page repond mais ne publie
+ * pas le tableau. Les deux sections sont independantes — un guide peut donner ses
+ * enchantements sans consommables, et c'est un cas normal, pas une panne.
  */
 async function fetchConsumables(className, specSlug, role, timeoutMs = 20000) {
   const url = consumablesUrl(className, specSlug, role);
   const html = await fetchGuide(url, timeoutMs);
+  const objets = extraireObjets(html);
 
-  const table = extraireTableConso(html);
-  if (!table) return { url, available: false, rows: [] };
+  const tableConso = extraireTableConso(html);
+  const rows = tableConso ? parseConsumables(tableConso, objets) : [];
 
-  const rows = parseConsumables(table, extraireObjets(html));
-  return { url, available: rows.length > 0, rows };
+  const tableEnchants = extraireTableConso(html, TITRE_ENCHANTS);
+  const enchants = tableEnchants ? parseConsumables(tableEnchants, objets) : [];
+
+  return {
+    url,
+    available: rows.length > 0,
+    rows,
+    enchants: { available: enchants.length > 0, rows: enchants },
+  };
 }
 
 module.exports = {
@@ -263,4 +285,5 @@ module.exports = {
   parseTiers,
   extraireTableConso,
   parseConsumables,
+  TITRE_ENCHANTS,
 };

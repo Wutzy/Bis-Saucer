@@ -50,9 +50,29 @@
               alt="Classement Power Infusion"
             />
           </button>
+          <!-- Compteurs de consultation, meme mecanique de panneau deroulant. -->
+          <button
+            id="vues-toggle"
+            class="cle-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="vues-panneau"
+            title="Classes les plus consultées"
+          >
+            <img
+              src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_spyglass_02.jpg"
+              alt="Classes les plus consultées"
+            />
+          </button>
           <div class="brand">
             <strong>BiS Saucer</strong>
           </div>
+          <div
+            id="vues-panneau"
+            class="cle-panneau cle-panneau--vues"
+            role="dialog"
+            aria-label="Classes les plus consultées"
+          ></div>
           <div
             id="pi-panneau"
             class="cle-panneau cle-panneau--pi"

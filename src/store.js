@@ -8,6 +8,7 @@ const STORE_PATH = path.join(DATA_DIR, 'bis.json');
 const TRINKETS_PATH = path.join(DATA_DIR, 'trinkets.json');
 const WOWHEAD_PATH = path.join(DATA_DIR, 'wowhead.json');
 const POWER_INFUSION_PATH = path.join(DATA_DIR, 'powerinfusion.json');
+const PORTRAITS_PATH = path.join(DATA_DIR, 'portraits.json');
 
 const EMPTY_STORE = { version: 1, specs: {} };
 
@@ -131,6 +132,36 @@ function savePowerInfusion(donnees) {
   return store;
 }
 
+/* ------------------------------------------------------------------ */
+/* Portraits d'armurerie : un cache unique, pas un cache par spec       */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Comme le classement PI, ce fichier ne parle pas de specs mais du roster entier :
+ * il est remplace en bloc a chaque rapprochement. Il ne contient que des URLs — les
+ * vignettes restent servies par Blizzard, on n'en copie aucune.
+ */
+function readPortraits() {
+  try {
+    const parsed = JSON.parse(fs.readFileSync(PORTRAITS_PATH, 'utf8'));
+    if (parsed && typeof parsed.members === 'object' && parsed.members) return parsed;
+  } catch (err) {
+    if (err.code !== 'ENOENT') {
+      console.warn(`[store] data/portraits.json illisible (${err.message}), cache ignoré.`);
+    }
+  }
+  return { version: 1, members: {}, unmatched: [] };
+}
+
+function savePortraits(donnees) {
+  const store = { version: 1, ...donnees };
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  const tmpPath = `${PORTRAITS_PATH}.tmp`;
+  fs.writeFileSync(tmpPath, JSON.stringify(store, null, 2), 'utf8');
+  fs.renameSync(tmpPath, PORTRAITS_PATH);
+  return store;
+}
+
 module.exports = {
   readStore,
   writeStore,
@@ -141,8 +172,11 @@ module.exports = {
   saveWowheadEntry,
   readPowerInfusion,
   savePowerInfusion,
+  readPortraits,
+  savePortraits,
   STORE_PATH,
   TRINKETS_PATH,
   WOWHEAD_PATH,
   POWER_INFUSION_PATH,
+  PORTRAITS_PATH,
 };

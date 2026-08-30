@@ -22,11 +22,13 @@ const { SPECS, specKey, guideUrl } = require(path.join(ROOT, 'src/specs'));
 const { CLASSES } = require(path.join(ROOT, 'src/classes'));
 const { readRoster } = require(path.join(ROOT, 'src/roster'));
 const { readLoot } = require(path.join(ROOT, 'src/loot'));
+const { readViews } = require(path.join(ROOT, 'src/views'));
 const {
   readStore,
   readTrinkets,
   readWowhead,
   readPowerInfusion,
+  readPortraits,
 } = require(path.join(ROOT, 'src/store'));
 
 function copyDir(from, to) {
@@ -78,6 +80,10 @@ const sizes = {
   wowhead: write('wowhead.json', readWowhead()),
   powerinfusion: write('powerinfusion.json', readPowerInfusion()),
   loot: write('loot.json', readLoot()),
+  views: write('views.json', readViews()),
+  // Les vignettes sont des URLs de Blizzard : la version publiee les affiche sans
+  // rien interroger, elle ne peut simplement pas les rafraichir.
+  portraits: write('portraits.json', readPortraits()),
 };
 
 // GitHub Pages passe le site dans Jekyll par defaut, qui ignore certains fichiers.

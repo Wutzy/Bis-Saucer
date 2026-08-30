@@ -59,7 +59,7 @@ body {
   display: grid;
   /* minmax identique a gauche et a droite : sans plancher, la colonne de droite
      tombe a 0 alors que le titre ne peut pas se reduire autant, et le centre derive. */
-  grid-template-columns: minmax(186px, 1fr) auto minmax(186px, 1fr);
+  grid-template-columns: minmax(236px, 1fr) auto minmax(236px, 1fr);
   align-items: start;
   gap: 1.2rem;
   padding: 0.7rem 1rem;
@@ -101,6 +101,45 @@ body {
 .lang-switch button.is-active {
   background: color-mix(in srgb, var(--accent) 18%, transparent);
   color: var(--accent);
+}
+
+/* Compteurs de consultation : un classement, donc des barres plutot que des chiffres. */
+.cle-panneau--vues {
+  max-width: min(88vw, 400px);
+}
+
+.vues-table tbody td {
+  padding: 0.35rem 0.5rem;
+  vertical-align: middle;
+}
+
+/* Le detail des specs dit d’où vient le total de la classe. */
+.vues-detail {
+  margin-top: 0.1rem;
+  color: var(--muted-2);
+  font-size: 0.68rem;
+}
+
+.vues-barre-cellule {
+  width: 40%;
+}
+
+.vues-barre {
+  display: block;
+  height: 6px;
+  width: var(--part, 0%);
+  min-width: 3px;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--spec) 70%, transparent);
+}
+
+.vues-compte {
+  width: 1%;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
 }
 
 /* ---------------- Journal du butin ---------------- */
@@ -2079,6 +2118,20 @@ a.pd-catalyst:hover {
 
 /* ---------------- Consommables ---------------- */
 
+/* Deux tableaux dans la meme vue : un titre les separe, sans peser comme un h2. */
+.conso-titre {
+  margin: 1rem 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.conso-titre:first-of-type {
+  margin-top: 0.2rem;
+}
+
 .conso-table {
   width: 100%;
 }
@@ -2293,3 +2346,468 @@ a.pd-catalyst:hover {
   font-size: 0.78rem;
   padding: 0 0.4rem;
 }
+
+/* ---------------- Vue Joueurs : la composition en cartes ---------------- */
+
+.joueurs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+/* En-tete : le titre a gauche, la composition chiffree a droite. Les deux blocs
+   passent l'un sous l'autre quand la largeur ne suffit plus. */
+.joueurs-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.joueurs-titre {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.joueurs-titre strong {
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.joueurs-titre span {
+  color: var(--muted-2);
+  font-size: 0.82rem;
+}
+
+.joueurs-compteurs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+/* Un cartouche par role : l'icone dit lequel, le nombre dit combien. Le liseré du
+   haut reprend la couleur du role, la meme que sur sa section plus bas. */
+.joueurs-compteur {
+  --role: var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  min-width: 58px;
+  padding: 0.4rem 0.5rem 0.35rem;
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--role);
+  border-radius: 8px;
+  background: var(--panel-2);
+}
+
+.joueurs-compteur-icone {
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  display: block;
+}
+
+.joueurs-compteur-n {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--text);
+}
+
+/* Une section par role, dans l'ordre tank / soigneur / DPS distance / DPS mêlée. */
+.joueurs-role {
+  --role: var(--accent);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.joueurs-role-titre {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border-soft);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--role, var(--accent));
+}
+
+.joueurs-role-icone {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Le compte se detache du libelle : c'est le chiffre qu'on vient verifier. */
+.joueurs-role-compte {
+  margin-left: auto;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--role, var(--accent)) 16%, transparent);
+  color: var(--role, var(--accent));
+  font-size: 0.78rem;
+  letter-spacing: 0;
+}
+
+.joueurs-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: 0.55rem;
+}
+
+/* Carte d'un membre. Le liseré du haut est aux couleurs de sa classe : sur une
+   grille de vingt cartes, c'est ce qui laisse repérer une classe d'un coup d'oeil. */
+.joueur-carte {
+  --spec: var(--accent);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--spec);
+  border-radius: 9px;
+  background: var(--panel-2);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.12s ease, transform 0.12s ease;
+}
+
+.joueur-carte:hover {
+  border-color: var(--spec);
+  transform: translateY(-2px);
+}
+
+/* La spec deja affichee dans le panneau : la carte le dit, sinon on ne sait plus
+   d'ou l'on vient en revenant ici. */
+.joueur-carte.is-active {
+  border-color: var(--spec);
+  box-shadow: 0 0 0 1px var(--spec);
+}
+
+/* Hors roster mythique, ou sans spec : la carte reste lisible mais recule d'un cran. */
+.joueur-carte--hors,
+.joueur-carte--sans-spec {
+  opacity: 0.62;
+}
+
+.joueur-carte--hors:hover,
+.joueur-carte--sans-spec:hover {
+  opacity: 1;
+}
+
+.joueur-embleme {
+  width: 46%;
+  max-width: 56px;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--spec) 55%, transparent);
+  display: block;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+/* Pastilles d'exception, posees sur le visuel pour ne pas manger la ligne du nom. */
+.joueur-marques {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.2rem;
+}
+
+.joueur-marque {
+  padding: 0.05rem 0.28rem;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.62);
+  color: var(--muted);
+  font-size: 0.64rem;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.joueur-marque--star {
+  color: var(--accent);
+  font-size: 0.7rem;
+  letter-spacing: 0;
+}
+
+/* Bande des buffs de raid, au bas de la composition : ce qu'on verifie juste avant
+   de lancer. Une tuile eteinte = un buff que personne n'apporte. */
+.joueurs-buffs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.buffs-bande {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.buff-tuile {
+  --spec: var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  width: 54px;
+  padding: 0.35rem 0.2rem 0.3rem;
+  border: 1px solid var(--border);
+  border-bottom: 2px solid var(--spec);
+  border-radius: 8px;
+  background: var(--panel-2);
+}
+
+.buff-icone {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: block;
+}
+
+.buff-compte {
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--text);
+}
+
+/* Personne pour l'apporter : l'icone est desaturee et le compte passe en alerte,
+   pour que le trou saute aux yeux sans avoir a lire les infobulles. */
+.buff-tuile--absent {
+  border-bottom-color: var(--border);
+  background: var(--panel);
+}
+
+.buff-tuile--absent .buff-icone {
+  filter: grayscale(1);
+  opacity: 0.4;
+}
+
+.buff-tuile--absent .buff-compte {
+  color: var(--error);
+}
+
+/* Ecrans etroits : des cartes plus petites plutot qu'une seule colonne, la grille
+   n'a d'interet que si elle montre la composition entiere. */
+@media (max-width: 700px) {
+  .joueurs-grille {
+    grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+  }
+
+  .joueurs-titre strong {
+    font-size: 1.2rem;
+  }
+
+  /* Les cartouches de composition tiennent sur une seule ligne : repartis sur deux,
+     ils ne se lisent plus comme un total suivi de sa decomposition. */
+  .joueurs-compteur {
+    min-width: 44px;
+    padding: 0.3rem 0.3rem 0.25rem;
+  }
+
+  .joueurs-compteur-icone {
+    width: 21px;
+    height: 21px;
+  }
+
+  .joueurs-compteur-n {
+    font-size: 0.82rem;
+  }
+}
+
+/* ---------------- Portraits d'armurerie ---------------- */
+
+/* Bandeau de rapprochement, sous les compteurs de la vue Joueurs. Absent de la
+   version publiée : là-bas rien ne peut interroger l'armurerie. */
+.joueurs-armurerie {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: -0.4rem;
+}
+
+.joueurs-armurerie-etat {
+  color: var(--muted-2);
+  font-size: 0.78rem;
+}
+
+/* Une vignette d'armurerie est un carré de 84 px cadré sur le buste : elle remplit
+   la carte, contrairement à une illustration détourée qu'on ne veut pas rogner. */
+/* Le rendu inset de Blizzard fait 230x116 et cadre le buste au centre : on le
+   laisse remplir la carte, en remontant le cadrage pour garder la tete. */
+.joueur-portrait--armurerie {
+  object-position: center 30%;
+}
+
+/* ---------------- Carte de classe (vue Joueurs) ---------------- */
+
+/* La grille tient compte du format haut de la carte : plus étroit que les vignettes
+   qu'elle remplace, sinon vingt cartes font une page interminable. */
+.joueurs:not(.roster-cartes) .joueurs-grille {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.7rem;
+}
+
+/* Tout le contenu est posé en pourcentages du cadre, et dimensionné en `cqw` : la
+   carte est son propre conteneur de requête, donc textes et icônes suivent sa
+   largeur au lieu d'être calés sur une taille en pixels qui ne vaudrait que pour
+   une seule grille. */
+.carte-hs {
+  container-type: inline-size;
+  position: relative;
+  display: block;
+  padding: 0;
+  overflow: visible;
+  border: none;
+  border-radius: 0;
+  background: none;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.55));
+  transition: transform 0.14s ease, filter 0.14s ease;
+}
+
+.carte-hs:hover {
+  transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.7));
+}
+
+/* La carte affichée dans le panneau : un halo aux couleurs de la classe, puisque
+   la carte n'a plus de bordure à colorer. */
+.carte-hs.is-active {
+  box-shadow: none;
+  filter: drop-shadow(0 0 6px var(--spec)) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.55));
+}
+
+.hs-slot {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Le médaillon passe sous le cadre : le portrait déborde, et c'est le décor qui le
+   découpe. L'ellipse évite qu'un coin d'image dépasse du cerclage. */
+.hs-medaillon {
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #0b0d11;
+}
+
+.hs-medaillon .joueur-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+  display: block;
+}
+
+.hs-medaillon .joueur-embleme {
+  width: 52%;
+  max-width: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* Le cadre par-dessus, transparent au clic : c'est la carte entière qui est le
+   bouton, pas son décor. */
+.hs-cadre {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Le losange du coin porte l'icône de spec : le cadre dit la classe, l'icône dit
+   laquelle de ses specs. Centrée sur le losange, d'où la translation de moitié. */
+.hs-embleme {
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.hs-embleme-icone {
+  width: 15cqw;
+  height: 15cqw;
+  display: block;
+  border-radius: 22%;
+  border: 0.5cqw solid rgba(20, 14, 6, 0.85);
+  box-shadow: 0 0.4cqw 0.8cqw rgba(0, 0, 0, 0.7);
+}
+
+/* L'ilvl sur la banderole : trois chiffres, ce qu'un ruban d'une ligne tient. */
+.hs-ilvl {
+  color: #2a1d0e;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11cqw;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0.15cqw 0 rgba(255, 255, 255, 0.35);
+}
+
+/* Personnage non rapproché : un tiret plutôt qu'un zéro, qui se lirait comme un
+   ilvl nul. */
+.hs-ilvl--absent {
+  opacity: 0.35;
+}
+
+/* Le pseudo occupe le grand cartouche. Sa taille est posée en ligne par
+   `taillePseudo` — elle dépend de la longueur du nom, ce que le CSS ne sait pas
+   mesurer. Le passage à la ligne est autorisé : la boîte est assez haute, et
+   « projectbabytattoo » est un seul mot qu'il faut bien couper quelque part. */
+.hs-nom {
+  padding: 0 6%;
+  color: #3a2a17;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  line-height: 1.05;
+  text-align: center;
+  /* Ne coupe un mot que s il ne tient vraiment pas : la taille est deja calculee
+     pour que ce soit rare. */
+  overflow-wrap: break-word;
+  text-shadow: 0 0.3cqw 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Les pastilles d'exception passent au-dessus du cadre, calées sur le haut de la
+   carte plutôt que sur un visuel qui n'existe plus. */
+.carte-hs .joueur-marques {
+  top: 1%;
+  right: 2%;
+  z-index: 4;
+}
+
+.carte-hs .joueur-marque {
+  font-size: 4.2cqw;
+  padding: 0.3cqw 1.4cqw;
+}
+
+.carte-hs .joueur-marque--star {
+  font-size: 5cqw;
+}
+
+@media (max-width: 700px) {
+  .joueurs:not(.roster-cartes) .joueurs-grille {
+    grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+  }
+}
+

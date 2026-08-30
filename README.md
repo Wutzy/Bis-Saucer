@@ -189,9 +189,18 @@ haut, elle, reste affichée partout : c'est par elle qu'on en sort, de deux faç
   La vue s'ouvre sur une **grille de donjons illustrée** — de quoi voir d'un coup d'œil où aller
   farmer. Cliquer une carte **descend jusqu'au donjon et estompe les autres**, pour en lire un à
   la fois ; un second clic remet tout à plat.
-- **Consommables** — ce que le guide **Wowhead** recommande d'emporter : flacon, potions,
-  huile d'arme, rune d'amélioration, nourriture. Une ligne par type ; plusieurs objets sur une
-  ligne quand l'auteur les donne comme équivalents ou dépendants de la situation.
+- **Consommables** — deux tableaux tirés de la **même page Wowhead**, dans cet ordre :
+  d'abord les **enchantements et gemmes**, une ligne par emplacement (arme, tête, épaules…) —
+  ce qui se pose une fois sur l'équipement ; ensuite les **consommables** à emporter, une ligne
+  par type (flacon, potions, huile d'arme, rune d'amélioration, nourriture). Plusieurs objets
+  sur une ligne quand l'auteur les donne comme équivalents ou dépendants de la situation.
+
+  Les deux sections sont **indépendantes** : un guide peut publier ses enchantements sans
+  consommables, c'est un cas normal. Une spec mise en cache avant l'ajout des enchantements le
+  signale au lieu de faire disparaître la section. Le titre du tableau change d'un auteur à
+  l'autre — « Enchants » chez les uns, « Gems & Enchants » chez les autres — et les libellés
+  d'emplacement aussi (« Head » ou « Helmet », « Ring » ou « Rings ») : la traduction couvre ce
+  qui est connu, le reste passe tel quel plutôt que de disparaître.
 - **/rand** — la vue à ouvrir pendant un raid : boss par boss, **uniquement les objets sur
   lesquels la spec affichée doit rand**, avec, sur chaque ligne, **tous les autres joueurs du
   roster qui les convoitent** — ceux contre qui il faudra rand. Un boss qui ne concerne pas la
@@ -417,6 +426,27 @@ de set (tête, épaules, torse, mains, jambes) :
 
 Enfin, quand la seule provenance donnée par le guide est « Catalyseur » (cas du Paladin Vindicte),
 le mot n'est pas répété en gris à côté du badge ambre : seul le badge s'affiche.
+
+## Compteur de consultations
+
+La **longue-vue**, troisième icône de la barre du haut, ouvre le classement des **classes les
+plus consultées** : un total par classe, une barre proportionnelle à la plus consultée, et le
+détail des specs qui composent ce total.
+
+On compte **par spec**, jamais par classe : la classe s'obtient en additionnant ses specs,
+l'inverse est impossible. Et on compte **au clic sur une pastille** — la seule action qui veut
+dire « montre-moi cette spec ». Les rendus, les retours de vue et les rechargements ne comptent
+pas, sinon le chiffre mesurerait le nombre de rendus, pas les consultations.
+
+L'incrément est **optimiste** : le compteur local monte tout de suite, le serveur est prévenu
+sans qu'on attende sa réponse. Une statistique ne doit pas retarder l'affichage d'une liste BiS.
+La clé passe par la liste blanche côté serveur — sans ça, une requête pourrait créer des
+compteurs pour des specs qui n'existent pas.
+
+> **Portée.** `data/views.json` n'enregistre que ce qui est consulté **sur cette instance**.
+> La version publiée sur GitHub Pages n'a pas de serveur pour écrire : elle **affiche** les
+> compteurs commités, elle ne les incrémente pas. Compter les consultations de toute la guilde
+> demanderait un hébergement avec backend, ce que le projet a justement choisi de ne pas avoir.
 
 ## Butin : qui a reçu quoi
 
@@ -646,7 +676,7 @@ si son guide n'a pas bougé.
 | --- | --- | --- |
 | `GET` | `/api/specs` | Classes/specs supportées (liste blanche serveur, 39 entrées) |
 | `GET` | `/api/roster` | Membres de la guilde + référentiel classes/specs |
-| `PUT` | `/api/roster/:id` | Body `{ "spec": "fury" }`, `{ "spec": null }`, `{ "raid": false }` et/ou `{ "trial": true }` |
+| `PUT` | `/api/roster/:id` | Body `{ "spec": "fury" }`, `{ "spec": null }`, `{ "raid": false }`, `{ "trial": true }` et/ou `{ "armory": "Wutzwutz" }` |
 | `POST` | `/api/roster` | Body `{ "name": "Toto", "class": "mage", "spec": "fire" }` — ajoute un membre |
 | `DELETE` | `/api/roster/:id` | Retire un membre |
 | `GET` | `/api/bis` | Contenu du cache `data/bis.json` |
@@ -654,6 +684,10 @@ si son guide n'a pas bougé.
 | `GET` | `/api/wowhead` | Tier lists et consommables Wowhead (`data/wowhead.json`) |
 | `GET` | `/api/powerinfusion` | Classement Power Infusion (`data/powerinfusion.json`) |
 | `GET` | `/api/loot` | Journal du butin (`data/loot.json`) |
+| `GET` | `/api/views` | Compteurs de consultation (`data/views.json`) |
+| `GET` | `/api/portraits` | Vignettes d'armurerie rapprochées (`data/portraits.json`) |
+| `POST` | `/api/portraits/refresh` | Rapproche le roster de l'armurerie et récupère les vignettes (`?force=1` ignore la fraîcheur du cache) |
+| `POST` | `/api/views` | Body `{ "class": "mage", "spec": "fire" }` — compte une consultation |
 | `POST` | `/api/loot` | Body `{ "memberId": "kao", "name": "…", "itemId": 123, "bis": true }` — note un objet |
 | `DELETE` | `/api/loot/:id` | Retire une ligne du journal |
 | `POST` | `/api/scrape` | Body `{ "class": "warrior", "spec": "arms" }` — scrape et met à jour le cache |
@@ -661,6 +695,71 @@ si son guide n'a pas bougé.
 `POST /api/scrape` renvoie `429` avec `retryAfterSeconds` si la spec a déjà été rafraîchie
 récemment, `409` si un scrape est déjà en cours, `502` si Icy Veins répond mal ou si la page
 n'est plus parsable.
+
+`POST /api/portraits/refresh` renvoie `409` si un rapprochement est déjà en cours, `502` si
+Raider.IO répond mal — avec, dans les deux cas, le cache existant, pour que la page reste
+affichable.
+
+## Portraits d'armurerie
+
+La vue **Joueurs** montre le vrai personnage plutôt qu'une icône de spec. Les vignettes
+viennent de l'armurerie Blizzard (`render.worldofwarcraft.com`), obtenues **via Raider.IO** :
+son API publique renvoie l'URL de rendu Blizzard sans demander de clef, là où l'API profil
+de Blizzard réclame des identifiants OAuth Battle.net. Aucune image n'est téléchargée —
+`data/portraits.json` ne contient que des URLs, et la page charge le rendu `-inset.jpg`
+(230 × 116), l'avatar 84 px servant de repli.
+
+    npm run refresh:portraits              # les entrées nouvelles ou vieilles de 7 jours
+    npm run refresh:portraits -- --force   # tout le monde
+    npm run refresh:portraits -- --dry     # rapproche sans rien écrire
+
+La guilde interrogée est `Gold Saucer` sur `eu-hyjal`, modifiable par les variables
+d'environnement `GUILD_REGION`, `GUILD_REALM` et `GUILD_NAME`.
+
+### Les cadres de carte
+
+La vue **Joueurs** monte chaque membre dans un cadre aux couleurs de sa classe
+(`public/img/cards/<classe>.png`) : le medaillon porte le portrait, le losange du coin
+l'icone de spec, la banderole le pseudo, et le grand cartouche l'ilvl, seul.
+
+Le cadre disant deja la classe, c'est l'icone de **spec** qui va dans le losange : elle
+est la seule chose qui distingue un mage Feu d'un mage Givre.
+
+Six specs ont leur propre cadre sur la planche — les trois du chasseur de demons et les
+trois du pretre. Elles sont listees dans `CADRES_SPEC`
+([`public/app.js`](public/app.js)) ; toute autre spec prend le cadre de sa classe.
+
+Le placement est en pourcentages du cadre, releves sur les PNG et regroupes dans
+`CADRE_HS` : remplacer la planche demande de reprendre ces chiffres. Les textes sont
+dimensionnes en `cqw`, la carte etant son propre conteneur de requete — ils suivent sa
+largeur quelle que soit la grille.
+
+Les dix-neuf cadres se regenerent depuis la planche en une passe :
+
+    node tools/card-frames.js cardsHearthstone.png
+
+L'outil repere les cartes par composantes connexes (les libelles dessines sous chacune
+sont trop petits pour etre retenus), puis perce **deux** trous par propagation a travers
+les pixels sombres : le fond autour de la carte, et l'interieur du medaillon — que
+l'illustration remplit d'un aplat noir qui, pose sur le portrait, le cacherait
+entierement. Sur trois cadres les deux trous se rejoignent, ce qui ne change rien au
+resultat. L'ordre de lecture de la planche est code dans la table `CADRES` de l'outil :
+c'est le seul endroit qui sache quel cadre va a quelle classe.
+
+Comme pour les autres outils d'image du depot, la planche brute reste hors
+versionnement et ce sont les PNG produits qui sont commites.
+
+### Rapprochement pseudo → personnage
+
+Les pseudos du roster ne sont pas les noms des personnages : surnoms, doubles comptes
+(« lafrustré / elzoska »), rerolls homonymes. [`src/armory.js`](src/armory.js) rapproche sur
+**le nom ET la classe**, et refuse de deviner dès qu'il y a un doute — un faux portrait est
+pire que pas de portrait. Un membre non rapproché garde son icône de spec.
+
+Pour trancher, la colonne **Armurerie** de la vue Roster (ou le champ `armory` dans
+`data/roster.json`) nomme le personnage exact : `"Woryms"`, `"Woryms-Hyjal"` ou
+`"eu/hyjal/Woryms"`. La saisie relance le rapprochement pour ce membre seul, et une liste
+déroulante propose les personnages de la guilde qui ont sa classe.
 
 ## Liste blanche des pages scrapables
 

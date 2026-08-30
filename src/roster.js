@@ -70,6 +70,11 @@ function slugify(name) {
  * joueur en test raid et roule comme les autres, c'est bien l'interet d'un essai. Il est
  * seulement signale, pour qu'on sache a qui on a affaire au moment d'arbitrer.
  * Absent = `false` : un membre sans mention n'est pas a l'essai.
+ *
+ * `armory` nomme le PERSONNAGE a l'armurerie, quand le pseudo de la guilde ne suffit
+ * pas a le retrouver (surnom, double compte, reroll homonyme). Trois ecritures sont
+ * acceptees : 'Wutzwutz', 'Wutzwutz-Hyjal', 'eu/hyjal/Wutzwutz'. Absent : le
+ * rapprochement automatique s'en charge, ou renonce (voir src/armory.js).
  */
 function withIds(members) {
   return members.map((m) => ({
@@ -126,6 +131,12 @@ function updateMember(id, patch) {
   }
   if ('raid' in patch) member.raid = Boolean(patch.raid);
   if ('trial' in patch) member.trial = Boolean(patch.trial);
+  if ('armory' in patch) {
+    // Champ vide = on retire la correction et on repasse au rapprochement automatique.
+    const personnage = typeof patch.armory === 'string' ? patch.armory.trim() : '';
+    if (personnage) member.armory = personnage;
+    else delete member.armory;
+  }
 
   writeRoster(members);
   return member;

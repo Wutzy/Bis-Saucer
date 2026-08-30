@@ -7,6 +7,7 @@ const { SPECS, specKey, findSpec, guideUrl } = require('./src/specs');
 const { CLASSES } = require('./src/classes');
 const { readRoster, updateMember, addMember, removeMember } = require('./src/roster');
 const { readLoot, addLoot, removeLoot } = require('./src/loot');
+const { readViews, bumpView } = require('./src/views');
 const {
   readStore,
   saveSpecEntry,
@@ -16,10 +17,13 @@ const {
   saveWowheadEntry,
   readPowerInfusion,
   savePowerInfusion,
+  readPortraits,
+  savePortraits,
 } = require('./src/store');
 const { scrapeGuide, ScrapeError } = require('./src/icyveins');
 const { fetchTrinkets, fetchPowerInfusion } = require('./src/bloodmallet');
 const { fetchTrinketTiers, fetchConsumables } = require('./src/wowhead');
+const { fetchPortraits, ArmoryError } = require('./src/armory');
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
@@ -72,6 +76,15 @@ app.put('/api/roster/:id', (req, res) => {
     }
     patch.spec = body.spec;
   }
+  if ('armory' in body) {
+    if (body.armory !== null && typeof body.armory !== 'string') {
+      return res.status(400).json({ error: 'Champ "armory" attendu (nom de personnage ou null).' });
+    }
+    if (typeof body.armory === 'string' && body.armory.length > 60) {
+      return res.status(400).json({ error: 'Nom de personnage trop long (60 caractères maximum).' });
+    }
+    patch.armory = body.armory === null ? '' : body.armory;
+  }
   for (const champ of ['raid', 'trial']) {
     if (!(champ in body)) continue;
     if (typeof body[champ] !== 'boolean') {
@@ -82,7 +95,7 @@ app.put('/api/roster/:id', (req, res) => {
   if (!Object.keys(patch).length) {
     return res
       .status(400)
-      .json({ error: 'Rien à modifier : "spec", "raid" ou "trial" attendu.' });
+      .json({ error: 'Rien à modifier : "spec", "raid", "trial" ou "armory" attendu.' });
   }
 
   const member = updateMember(req.params.id, patch);
@@ -130,6 +143,23 @@ app.get('/api/wowhead', (req, res) => {
   res.json(readWowhead());
 });
 
+/** Compteurs de consultation (data/views.json). Aucun appel reseau. */
+app.get('/api/views', (req, res) => {
+  res.json(readViews());
+});
+
+/**
+ * Compte une consultation. La cle passe par la liste blanche : sans ca, n'importe
+ * quelle requete pourrait creer des compteurs pour des specs qui n'existent pas.
+ */
+app.post('/api/views', (req, res) => {
+  const body = req.body || {};
+  const entry = findSpec(body.class, body.spec);
+  if (!entry) return res.status(400).json({ error: 'Classe/spec inconnue.', code: 'UNKNOWN_SPEC' });
+  const key = specKey(entry.class, entry.spec);
+  res.json({ key, ...bumpView(key) });
+});
+
 /** Journal du butin (data/loot.json). Aucun appel reseau. */
 app.get('/api/loot', (req, res) => {
   res.json(readLoot());
@@ -147,6 +177,59 @@ app.delete('/api/loot/:id', (req, res) => {
   const entry = removeLoot(req.params.id);
   if (!entry) return res.status(404).json({ error: 'Ligne inconnue.' });
   res.json({ entry });
+});
+
+/** Portraits d'armurerie (data/portraits.json). Aucun appel reseau. */
+app.get('/api/portraits', (req, res) => {
+  res.json(readPortraits());
+});
+
+/**
+ * Rapproche le roster de l'armurerie et rafraichit les vignettes.
+ *
+ * Une seule requete a la fois : le rapprochement interroge Raider.IO une fois par
+ * membre, deux clics simultanes doubleraient le trafic pour rien.
+ *
+ * `?force=1` ignore la fraicheur du cache et re-interroge tout le monde — utile
+ * apres un changement de look ou un transfert de royaume.
+ */
+let portraitsEnCours = false;
+
+app.post('/api/portraits/refresh', async (req, res) => {
+  if (portraitsEnCours) {
+    return res.status(409).json({
+      error: 'Un rapprochement est déjà en cours.',
+      code: 'IN_FLIGHT',
+    });
+  }
+
+  portraitsEnCours = true;
+  try {
+    const precedent = readPortraits();
+    const donnees = await fetchPortraits(readRoster(), {
+      precedent: precedent.members,
+      maxAgeMs: req.query.force ? 0 : undefined,
+      log: (ligne) => console.log(ligne),
+    });
+    const store = savePortraits(donnees);
+    console.log(
+      `[armurerie] ${Object.keys(store.members).length} portrait(s), ${
+        store.unmatched.length
+      } membre(s) non rapproché(s)`
+    );
+    return res.json(store);
+  } catch (err) {
+    const connue = err instanceof ArmoryError;
+    console.error(`[armurerie] echec : ${err.message}`);
+    return res.status(connue ? 502 : 500).json({
+      error: connue ? err.message : `Erreur inattendue : ${err.message}`,
+      code: connue ? err.code : 'INTERNAL',
+      // Le cache existant repart avec l'erreur : la page reste affichable.
+      store: readPortraits(),
+    });
+  } finally {
+    portraitsEnCours = false;
+  }
 });
 
 /** Classement Power Infusion (data/powerinfusion.json). Aucun appel reseau. */
