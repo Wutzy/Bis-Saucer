@@ -3,7 +3,7 @@
   "specs": {
     "death-knight-blood": {
       "key": "death-knight-blood",
-      "fetchedAt": "2026-08-30T10:00:24.046Z",
+      "fetchedAt": "2026-08-31T10:59:17.995Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear",
         "available": true,
@@ -282,12 +282,105 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 243981,
+                  "name": "Enchant Helm - Empowered Blessing of Speed",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243963,
+                  "name": "Enchant Shoulders - Akil'zon's Swiftness",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Feet",
+              "items": [
+                {
+                  "itemId": 244009,
+                  "name": "Enchant Boots - Farstrider's Hunt",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243987,
+                  "name": "Enchant Ring - Nature's Fury",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240890,
+                  "name": "Flawless Deadly Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "death-knight-frost": {
       "key": "death-knight-frost",
-      "fetchedAt": "2026-08-30T10:00:29.478Z",
+      "fetchedAt": "2026-08-31T10:59:24.311Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/frost/bis-gear",
         "available": true,
@@ -533,12 +626,105 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243963,
+                  "name": "Enchant Shoulders - Akil'zon's Swiftness",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 243981,
+                  "name": "Enchant Helm - Empowered Blessing of Speed",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 244009,
+                  "name": "Enchant Boots - Farstrider's Hunt",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240908,
+                  "name": "Flawless Masterful Garnet",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "demon-hunter-havoc": {
       "key": "demon-hunter-havoc",
-      "fetchedAt": "2026-08-30T10:00:33.913Z",
+      "fetchedAt": "2026-08-31T10:59:29.608Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/bis-gear",
         "available": true,
@@ -903,12 +1089,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulder",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Eversong Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240908,
+                  "name": "Flawless Masterful Garnet",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "druid-balance": {
       "key": "druid-balance",
-      "fetchedAt": "2026-08-30T10:00:42.788Z",
+      "fetchedAt": "2026-08-31T10:59:39.732Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/balance/bis-gear",
         "available": true,
@@ -1175,12 +1465,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240133,
+                  "name": "Sunfire Silk Spellthread",
+                  "icon": "inv_tailoring_spellthread_orange_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Eversong Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240900,
+                  "name": "Flawless Quick Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "druid-restoration": {
       "key": "druid-restoration",
-      "fetchedAt": "2026-08-30T10:00:52.192Z",
+      "fetchedAt": "2026-08-31T10:59:50.206Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/restoration/bis-gear",
         "available": true,
@@ -1500,12 +1894,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 243973,
+                  "name": "Enchant Weapon - Berserker's Rage",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 243951,
+                  "name": "Enchant Helm - Empowered Hex of Leeching",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 244021,
+                  "name": "Enchant Shoulders - Silvermoon's Mending",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240155,
+                  "name": "Arcanoweave Spellthread",
+                  "icon": "inv_12_tailoring_spellthread_violet_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243983,
+                  "name": "Enchant Boots - Shaladrassil's Roots",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 244015,
+                  "name": "Enchant Ring - Silvermoon's Alacrity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond (one of)",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240892,
+                  "name": "Flawless Masterful Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "hunter-beast-mastery": {
       "key": "hunter-beast-mastery",
-      "fetchedAt": "2026-08-30T10:00:57.009Z",
+      "fetchedAt": "2026-08-31T10:59:55.762Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/beast-mastery/bis-gear",
         "available": true,
@@ -1850,12 +2348,135 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Rings",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Gems",
+              "items": [
+                {
+                  "itemId": 240967,
+                  "name": "Powerful Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange",
+                  "quality": 4
+                },
+                {
+                  "itemId": 240898,
+                  "name": "Flawless Deadly Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240918,
+                  "name": "Flawless Masterful Lapis",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_blue",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240908,
+                  "name": "Flawless Masterful Garnet",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240892,
+                  "name": "Flawless Masterful Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240900,
+                  "name": "Flawless Quick Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "mage-fire": {
       "key": "mage-fire",
-      "fetchedAt": "2026-08-30T10:01:11.768Z",
+      "fetchedAt": "2026-08-31T11:00:13.493Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear",
         "available": true,
@@ -2239,12 +2860,123 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 244029,
+                  "name": "Enchant Weapon - Acuity of the Ren'dorei",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240133,
+                  "name": "Sunfire Silk Spellthread",
+                  "icon": "inv_tailoring_spellthread_orange_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Rings",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Gems",
+              "items": [
+                {
+                  "itemId": 240967,
+                  "name": "Powerful Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange",
+                  "quality": 4
+                },
+                {
+                  "itemId": 240892,
+                  "name": "Flawless Masterful Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240900,
+                  "name": "Flawless Quick Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240916,
+                  "name": "Flawless Quick Lapis",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_blue",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "paladin-holy": {
       "key": "paladin-holy",
-      "fetchedAt": "2026-08-30T10:01:21.069Z",
+      "fetchedAt": "2026-08-31T11:00:23.965Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/holy/bis-gear",
         "available": true,
@@ -2525,12 +3257,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 244021,
+                  "name": "Enchant Shoulders - Silvermoon's Mending",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 244003,
+                  "name": "Enchant Chest - Mark of the Magister",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helmet",
+              "items": [
+                {
+                  "itemId": 243951,
+                  "name": "Enchant Helm - Empowered Hex of Leeching",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240155,
+                  "name": "Arcanoweave Spellthread",
+                  "icon": "inv_12_tailoring_spellthread_violet_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243983,
+                  "name": "Enchant Boots - Shaladrassil's Roots",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243959,
+                  "name": "Enchant Ring - Zul'jin's Mastery",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Eversong Diamond",
+              "items": [
+                {
+                  "itemId": 240969,
+                  "name": "Telluric Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_blue",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240900,
+                  "name": "Flawless Quick Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "paladin-protection": {
       "key": "paladin-protection",
-      "fetchedAt": "2026-08-30T10:01:25.724Z",
+      "fetchedAt": "2026-08-31T11:00:28.808Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/protection/bis-gear",
         "available": true,
@@ -2623,6 +3459,33 @@
                 "categories": [
                   "dungeon"
                 ]
+              },
+              {
+                "itemId": 250259,
+                "name": "Sapling of the Dawnroot",
+                "icon": "inv_misc_herb_nightmarevine",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250245,
+                "name": "Tumor of the Swarm",
+                "icon": "ability_pet_baneling",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250229,
+                "name": "Idol of the War Loa",
+                "icon": "inv12_jewelrytrinkets_dungeon_idolofthewargod",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
               }
             ]
           },
@@ -2648,15 +3511,6 @@
                 ]
               },
               {
-                "itemId": 250229,
-                "name": "Idol of the War Loa",
-                "icon": "inv12_jewelrytrinkets_dungeon_idolofthewargod",
-                "quality": 3,
-                "categories": [
-                  "dungeon"
-                ]
-              },
-              {
                 "itemId": 193762,
                 "name": "Blazebinder's Hoof",
                 "icon": "inv_10_dungeonjewelry_primalist_trinket_2_fire",
@@ -2669,6 +3523,38 @@
           },
           {
             "rank": "C",
+            "items": [
+              {
+                "itemId": 241340,
+                "name": "Magister's Alchemist Stone",
+                "icon": "inv_12_profession_alchemy_alchemists_stone",
+                "quality": 4,
+                "categories": [
+                  "crafting"
+                ]
+              },
+              {
+                "itemId": 250238,
+                "name": "Seed of the Devouring Wild",
+                "icon": "inv12_jewelrytrinkets_dungeon_seedofthedevouringwild",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 193757,
+                "name": "Ruby Whelp Shell",
+                "icon": "inv_item_dragonegg_redbroken01",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "D",
             "items": [
               {
                 "itemId": 246304,
@@ -2704,56 +3590,6 @@
                 "quality": 4,
                 "categories": [
                   "crafting"
-                ]
-              },
-              {
-                "itemId": 241340,
-                "name": "Magister's Alchemist Stone",
-                "icon": "inv_12_profession_alchemy_alchemists_stone",
-                "quality": 4,
-                "categories": [
-                  "crafting"
-                ]
-              },
-              {
-                "itemId": 250238,
-                "name": "Seed of the Devouring Wild",
-                "icon": "inv12_jewelrytrinkets_dungeon_seedofthedevouringwild",
-                "quality": 3,
-                "categories": [
-                  "dungeon"
-                ]
-              },
-              {
-                "itemId": 193757,
-                "name": "Ruby Whelp Shell",
-                "icon": "inv_item_dragonegg_redbroken01",
-                "quality": 3,
-                "categories": [
-                  "dungeon"
-                ]
-              }
-            ]
-          },
-          {
-            "rank": "D",
-            "items": [
-              {
-                "itemId": 250259,
-                "name": "Sapling of the Dawnroot",
-                "icon": "inv_misc_herb_nightmarevine",
-                "quality": 3,
-                "categories": [
-                  "dungeon"
-                ]
-              },
-              {
-                "itemId": 250245,
-                "name": "Tumor of the Swarm",
-                "icon": "ability_pet_baneling",
-                "quality": 3,
-                "categories": [
-                  "dungeon"
                 ]
               }
             ]
@@ -2842,12 +3678,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 243973,
+                  "name": "Enchant Weapon - Berserker's Rage",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulder",
+              "items": [
+                {
+                  "itemId": 243963,
+                  "name": "Enchant Shoulders - Akil'zon's Swiftness",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 243981,
+                  "name": "Enchant Helm - Empowered Blessing of Speed",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 244009,
+                  "name": "Enchant Boots - Farstrider's Hunt",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 244015,
+                  "name": "Enchant Ring - Silvermoon's Alacrity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Algari Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240894,
+                  "name": "Flawless Versatile Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_green",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "paladin-retribution": {
       "key": "paladin-retribution",
-      "fetchedAt": "2026-08-30T10:01:30.687Z",
+      "fetchedAt": "2026-08-31T11:00:33.371Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/retribution/bis-gear",
         "available": true,
@@ -3166,12 +4106,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243990,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243952,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Eversong Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240892,
+                  "name": "Flawless Masterful Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "priest-discipline": {
       "key": "priest-discipline",
-      "fetchedAt": "2026-08-30T10:01:34.845Z",
+      "fetchedAt": "2026-08-31T11:00:37.967Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/priest/discipline/bis-gear",
         "available": true,
@@ -3382,12 +4426,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 243973,
+                  "name": "Enchant Weapon - Berserker's Rage",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 244021,
+                  "name": "Enchant Shoulders - Silvermoon's Mending",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 243951,
+                  "name": "Enchant Helm - Empowered Hex of Leeching",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240133,
+                  "name": "Sunfire Silk Spellthread",
+                  "icon": "inv_tailoring_spellthread_orange_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243983,
+                  "name": "Enchant Boots - Shaladrassil's Roots",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 244015,
+                  "name": "Enchant Ring - Silvermoon's Alacrity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240890,
+                  "name": "Flawless Deadly Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "priest-shadow": {
       "key": "priest-shadow",
-      "fetchedAt": "2026-08-30T10:01:40.330Z",
+      "fetchedAt": "2026-08-31T11:00:43.681Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/priest/shadow/bis-gear",
         "available": true,
@@ -3615,12 +4763,128 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 244031,
+                  "name": "Enchant Weapon - Arcane Mastery",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243963,
+                  "name": "Enchant Shoulders - Akil'zon's Swiftness",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240133,
+                  "name": "Sunfire Silk Spellthread",
+                  "icon": "inv_tailoring_spellthread_orange_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240906,
+                  "name": "Flawless Quick Garnet",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240898,
+                  "name": "Flawless Deadly Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240892,
+                  "name": "Flawless Masterful Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "rogue-subtlety": {
       "key": "rogue-subtlety",
-      "fetchedAt": "2026-08-30T10:01:50.693Z",
+      "fetchedAt": "2026-08-31T11:00:53.798Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear",
         "available": true,
@@ -4002,12 +5266,117 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon - Main Hand",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": null,
+                  "icon": null
+                }
+              ]
+            },
+            {
+              "type": "Weapon - Off Hand",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": null,
+                  "icon": null
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": null,
+                  "icon": null
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": null,
+                  "icon": null
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": null,
+                  "icon": null
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": null,
+                  "icon": null
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": null,
+                  "icon": null
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": null,
+                  "icon": null
+                }
+              ]
+            },
+            {
+              "type": "Eversong Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": null,
+                  "icon": null
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240900,
+                  "name": null,
+                  "icon": null
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "shaman-elemental": {
       "key": "shaman-elemental",
-      "fetchedAt": "2026-08-30T10:01:55.934Z",
+      "fetchedAt": "2026-08-31T11:00:59.604Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/elemental/bis-gear",
         "available": true,
@@ -4286,12 +5655,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 243973,
+                  "name": "Enchant Weapon - Berserker's Rage",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulder",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240133,
+                  "name": "Sunfire Silk Spellthread",
+                  "icon": "inv_tailoring_spellthread_orange_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Thalassian Diamond",
+              "items": [
+                {
+                  "itemId": 240967,
+                  "name": "Powerful Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240908,
+                  "name": "Flawless Masterful Garnet",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "shaman-restoration": {
       "key": "shaman-restoration",
-      "fetchedAt": "2026-08-30T10:02:05.118Z",
+      "fetchedAt": "2026-08-31T11:01:09.688Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/restoration/bis-gear",
         "available": true,
@@ -4558,12 +6031,140 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 244029,
+                  "name": "Enchant Weapon - Acuity of the Ren'dorei",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 243951,
+                  "name": "Enchant Helm - Empowered Hex of Leeching",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 244021,
+                  "name": "Enchant Shoulders - Silvermoon's Mending",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 244003,
+                  "name": "Enchant Chest - Mark of the Magister",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240155,
+                  "name": "Arcanoweave Spellthread",
+                  "icon": "inv_12_tailoring_spellthread_violet_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243983,
+                  "name": "Enchant Boots - Shaladrassil's Roots",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Dazzling Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                },
+                {
+                  "itemId": 240968,
+                  "name": "Telluric Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_blue",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240909,
+                  "name": "Flawless Versatile Garnet",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_red",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240889,
+                  "name": "Flawless Deadly Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240913,
+                  "name": "Flawless Deadly Lapis",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240897,
+                  "name": "Flawless Deadly Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "warlock-affliction": {
       "key": "warlock-affliction",
-      "fetchedAt": "2026-08-30T10:02:09.805Z",
+      "fetchedAt": "2026-08-31T11:01:14.969Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warlock/affliction/bis-gear",
         "available": true,
@@ -4833,12 +6434,128 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 243971,
+                  "name": "Enchant Weapon - Jan'alai's Precision",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243961,
+                  "name": "Enchant Shoulders - Flight of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240133,
+                  "name": "Sunfire Silk Spellthread",
+                  "icon": "inv_tailoring_spellthread_orange_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240906,
+                  "name": "Flawless Quick Garnet",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240898,
+                  "name": "Flawless Deadly Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240892,
+                  "name": "Flawless Masterful Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "warrior-arms": {
       "key": "warrior-arms",
-      "fetchedAt": "2026-08-30T10:02:19.331Z",
+      "fetchedAt": "2026-08-31T11:01:26.310Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warrior/arms/bis-gear",
         "available": true,
@@ -5070,12 +6787,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 243951,
+                  "name": "Enchant Helm - Empowered Hex of Leeching",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulder",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244643,
+                  "name": "Blood Knight's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_thalassian_amor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240967,
+                  "name": "Powerful Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240906,
+                  "name": "Flawless Quick Garnet",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "monk-windwalker": {
       "key": "monk-windwalker",
-      "fetchedAt": "2026-08-30T10:01:16.909Z",
+      "fetchedAt": "2026-08-31T11:00:19.107Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/monk/windwalker/bis-gear",
         "available": true,
@@ -5336,12 +7157,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240890,
+                  "name": "Flawless Deadly Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "druid-feral": {
       "key": "druid-feral",
-      "fetchedAt": "2026-08-30T10:00:47.469Z",
+      "fetchedAt": "2026-08-31T10:59:44.785Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/feral/bis-gear",
         "available": true,
@@ -5607,12 +7532,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon - Main Hand",
+              "items": [
+                {
+                  "itemId": 244029,
+                  "name": "Enchant Weapon - Acuity of the Ren'dorei",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Eversong Diamond",
+              "items": [
+                {
+                  "itemId": 240967,
+                  "name": "Powerful Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240900,
+                  "name": "Flawless Quick Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "hunter-marksmanship": {
       "key": "hunter-marksmanship",
-      "fetchedAt": "2026-08-30T10:01:01.922Z",
+      "fetchedAt": "2026-08-31T11:00:01.919Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear",
         "available": true,
@@ -5867,12 +7896,140 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 243951,
+                  "name": "Enchant Helm - Empowered Hex of Leeching",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 244021,
+                  "name": "Enchant Shoulders - Silvermoon's Mending",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243983,
+                  "name": "Enchant Boots - Shaladrassil's Roots",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240967,
+                  "name": "Powerful Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange",
+                  "quality": 4
+                },
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240890,
+                  "name": "Flawless Deadly Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240898,
+                  "name": "Flawless Deadly Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240914,
+                  "name": "Flawless Deadly Lapis",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240908,
+                  "name": "Flawless Masterful Garnet",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "shaman-enhancement": {
       "key": "shaman-enhancement",
-      "fetchedAt": "2026-08-30T10:02:00.723Z",
+      "fetchedAt": "2026-08-31T11:01:05.100Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear",
         "available": true,
@@ -6235,12 +8392,127 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Main Hand",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Off Hand",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Bracers",
+              "items": [
+                {
+                  "itemId": 275707,
+                  "name": "Miasmic Jewelbinder",
+                  "icon": "inv_potiond_4",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Belt",
+              "items": [
+                {
+                  "itemId": 275707,
+                  "name": "Miasmic Jewelbinder",
+                  "icon": "inv_potiond_4",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "demon-hunter-devourer": {
       "key": "demon-hunter-devourer",
-      "fetchedAt": "2026-08-30T10:00:38.357Z",
+      "fetchedAt": "2026-08-31T10:59:35.098Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/demon-hunter/devourer/bis-gear",
         "available": true,
@@ -6624,12 +8896,133 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Main Hand",
+              "items": [
+                {
+                  "itemId": 273071,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Off Hand",
+              "items": [
+                {
+                  "itemId": 273071,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240133,
+                  "name": "Sunfire Silk Spellthread",
+                  "icon": "inv_tailoring_spellthread_orange_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240898,
+                  "name": "Flawless Deadly Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240900,
+                  "name": "Flawless Quick Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "rogue-assassination": {
       "key": "rogue-assassination",
-      "fetchedAt": "2026-08-30T10:01:45.278Z",
+      "fetchedAt": "2026-08-31T11:00:48.897Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/rogue/assassination/bis-gear",
         "available": true,
@@ -7025,12 +9418,116 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Both Weapons",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 243951,
+                  "name": "Enchant Helm - Empowered Hex of Leeching",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulder",
+              "items": [
+                {
+                  "itemId": 244021,
+                  "name": "Enchant Shoulders - Silvermoon's Mending",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243983,
+                  "name": "Enchant Boots - Shaladrassil's Roots",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240892,
+                  "name": "Flawless Masterful Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "warlock-demonology": {
       "key": "warlock-demonology",
-      "fetchedAt": "2026-08-30T10:02:14.622Z",
+      "fetchedAt": "2026-08-31T11:01:20.720Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warlock/demonology/bis-gear",
         "available": true,
@@ -7294,12 +9791,128 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 243971,
+                  "name": "Enchant Weapon - Jan'alai's Precision",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243961,
+                  "name": "Enchant Shoulders - Flight of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240133,
+                  "name": "Sunfire Silk Spellthread",
+                  "icon": "inv_tailoring_spellthread_orange_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 244015,
+                  "name": "Enchant Ring - Silvermoon's Alacrity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240906,
+                  "name": "Flawless Quick Garnet",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240898,
+                  "name": "Flawless Deadly Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240892,
+                  "name": "Flawless Masterful Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "hunter-survival": {
       "key": "hunter-survival",
-      "fetchedAt": "2026-08-30T10:01:06.829Z",
+      "fetchedAt": "2026-08-31T11:00:07.615Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/survival/bis-gear",
         "available": true,
@@ -7545,9 +10158,108 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244641,
+                  "name": "Forest Hunter's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Rings",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Gems",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                },
+                {
+                  "itemId": 240898,
+                  "name": "Flawless Deadly Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     }
   },
-  "updatedAt": "2026-08-30T10:02:19.739Z"
+  "updatedAt": "2026-08-31T11:01:27.193Z"
 }
