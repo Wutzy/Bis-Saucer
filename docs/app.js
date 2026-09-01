@@ -212,7 +212,6 @@ let trinketStore = { specs: {} };
 let wowheadStore = { specs: {} };
 let piStore = { available: false, targets: {} };
 let lootStore = { entries: [] };
-let viewsStore = { specs: {} };
 // Vignettes d'armurerie, par id de membre. Vide tant qu'aucun rapprochement n'a ete
 // lance : les cartes retombent alors sur l'icone de spec.
 let portraitStore = { members: {}, unmatched: [] };
@@ -235,6 +234,9 @@ const ROSTER_LABEL = 'Roster Mythique (prévisionnel)';
 // La vue Joueurs porte le meme libelle que son titre de contenu : on doit pouvoir
 // citer l'ecran sans hesiter sur son nom.
 const JOUEURS_LABEL = 'Sélection du joueur';
+
+// Le butin est une vue de guilde : son titre ne nomme aucune spec.
+const BUTIN_LABEL = 'Butin de guilde';
 
 // Vue a rouvrir en quittant une vue de guilde (/rand ou Roster) : leurs onglets etant
 // masques, ce sont les carres de la barre du haut qui servent de porte de sortie, et
@@ -2261,7 +2263,7 @@ function randChoice() {
   // Le roster n'est pas propose ici : il s'ouvre par cinq clics sur la mascotte
   // (voir `armerAccesRoster`). C'est volontairement introuvable sans le savoir.
   for (const [mode, titre, soustitre] of [
-    ['joueurs', 'Joueurs', 'La composition en cartes : choisis un membre, vois son équipement'],
+    ['joueurs', 'Roster Mythique', 'La composition en cartes : choisis un membre, vois son équipement'],
     ['raid', 'Raid', 'Rand par boss de raid'],
     ['mplus', 'Mythique+', 'Les BiS des membres de la guilde, triés par donjon'],
     ['butin', 'Butin', 'Qui a reçu quoi, et combien'],
@@ -2336,7 +2338,7 @@ function randNav() {
   const joueurs = document.createElement('button');
   joueurs.type = 'button';
   joueurs.className = `rand-tab${activeView === 'joueurs' ? ' is-active' : ''}`;
-  joueurs.textContent = 'Joueurs';
+  joueurs.textContent = 'Roster Mythique';
   joueurs.title = 'La composition en cartes, rangée par rôle';
   joueurs.addEventListener('click', () => {
     selectView('joueurs');
@@ -3108,6 +3110,24 @@ const BUFFS_RAID = [
   },
 ];
 
+/**
+ * Ce que la guilde cherche. Une seule table a tenir a jour, en haut de la vue
+ * Joueurs : les besoins de recrutement changent plus vite que le code.
+ *
+ * `prio` distingue ce qu'on cherche vraiment de ce qui dependra des essais en
+ * cours — l'annoncer autrement reviendrait a promettre une place qu'on n'a pas.
+ * Un groupe sans specs disparait ; vider les deux listes fait disparaitre la bande.
+ */
+const RECRUTEMENT = {
+  role: 'DPS',
+  prio: [{ classe: 'warrior', specs: ['arms', 'fury'] }],
+  selonEssais: [
+    { classe: 'rogue', specs: ['assassination', 'outlaw', 'subtlety'] },
+    { classe: 'warlock', specs: ['affliction', 'demonology', 'destruction'] },
+    { classe: 'priest', specs: ['shadow'] },
+  ],
+};
+
 /** Compte des membres par role, dans l'ordre de `ROLES_ORDRE`. */
 function compterRoles(membres) {
   const par = new Map(ROLES_ORDRE.map((role) => [role, 0]));
@@ -3130,6 +3150,67 @@ function compteurJoueurs(icon, valeur, titre, couleur) {
   n.textContent = valeur;
   el.appendChild(n);
   return el;
+}
+
+/** Les icones de spec d'un groupe de classes, chacune avec son infobulle. */
+function iconesRecrutement(groupes) {
+  const liste = document.createElement('div');
+  liste.className = 'recrut-classes';
+
+  for (const groupe of groupes) {
+    const info = classInfo(groupe.classe);
+    const bloc = document.createElement('div');
+    bloc.className = 'recrut-classe';
+    bloc.style.setProperty('--spec', info.color);
+
+    for (const slug of groupe.specs) {
+      const spec = (info.specs || []).find((sp) => sp.slug === slug);
+      const icone = iconEl(specIcon(groupe.classe, slug), 'recrut-icone', '');
+      icone.title = spec ? `${spec.label} ${info.label}` : info.label;
+      bloc.appendChild(icone);
+    }
+    liste.appendChild(bloc);
+  }
+  return liste;
+}
+
+/**
+ * Bande de recrutement, au-dessus de la selection.
+ *
+ * Elle ne dit que des specs : c'est ce qu'on lit sur une annonce de guilde, et ca
+ * evite d'ecrire « guerrier DPS » quand deux icones le disent mieux.
+ */
+function bandeRecrutement() {
+  const groupes = [
+    { label: 'Prioritaire', classes: RECRUTEMENT.prio, prio: true },
+    { label: 'Selon les tests', classes: RECRUTEMENT.selonEssais, prio: false },
+  ].filter((g) => g.classes && g.classes.length);
+  if (!groupes.length) return null;
+
+  const bande = document.createElement('section');
+  bande.className = 'recrutement';
+
+  const titre = document.createElement('span');
+  titre.className = 'recrut-titre';
+  titre.textContent = `Recrutement ${RECRUTEMENT.role}`;
+  bande.appendChild(titre);
+
+  for (const groupe of groupes) {
+    const bloc = document.createElement('div');
+    bloc.className = `recrut-groupe${groupe.prio ? ' recrut-groupe--prio' : ''}`;
+
+    const label = document.createElement('span');
+    label.className = 'recrut-label';
+    label.textContent = groupe.label;
+    if (!groupe.prio) {
+      label.title = 'Ouvert selon ce que donneront les essais en cours';
+    }
+
+    bloc.append(label, iconesRecrutement(groupe.classes));
+    bande.appendChild(bloc);
+  }
+
+  return bande;
 }
 
 /**
@@ -3345,17 +3426,17 @@ const CADRE_HS = {
 /**
  * Specs qui ont leur propre cadre sur la planche, en plus de celui de leur classe.
  *
- * L'illustration en fournit six : les trois du chasseur de demons et les trois du
- * pretre. Toute autre spec retombe sur le cadre de sa classe — c'est le cas general,
- * pas un repli de secours.
+ * La planche en fournit six, mais on n'en retient que trois : celles du chasseur de
+ * demons, qui restent toutes violettes — la classe s'y lit encore. Celles du pretre
+ * vont du rouge a l'or et lui faisaient perdre son blanc, sa couleur ; il garde donc
+ * son cadre de classe.
+ *
+ * Toute autre spec prend le cadre de sa classe : c'est le cas general, pas un repli.
  */
 const CADRES_SPEC = new Set([
   'demon-hunter-havoc',
   'demon-hunter-vengeance',
   'demon-hunter-devourer',
-  'priest-discipline',
-  'priest-holy',
-  'priest-shadow',
 ]);
 
 /** Cadre d'un membre : celui de sa spec s'il existe, sinon celui de sa classe. */
@@ -3635,6 +3716,11 @@ function renderJoueurs() {
   wrap.appendChild(enteteJoueurs(mythique));
   if (!STATIC) wrap.appendChild(boutonPortraits());
 
+  // Ce qu'on cherche, avant qui on a : la bande s'adresse a qui regarde le roster
+  // de l'exterieur, elle passe donc devant la composition.
+  const recrutement = bandeRecrutement();
+  if (recrutement) wrap.appendChild(recrutement);
+
   if (!mythique.length) {
     wrap.appendChild(
       emptyState(
@@ -3696,10 +3782,10 @@ function renderSelector() {
   const row = document.createElement('div');
   row.className = 'spec-chips';
 
-  // La partie guilde ouvre la barre : c'est la porte d'entree de l'outil, et l'ecran
-  // sur lequel on arrive. Le trait la separe des specs qui la suivent.
-  const groupe = document.createElement('div');
-  groupe.className = 'guild-group';
+  // Le blason ne vit plus dans cette barre mais en tete de la marque, avant les
+  // antiseches : c'est la porte d'entree de l'outil, elle passe avant les raccourcis.
+  const emplacement = document.getElementById('guild-slot');
+  emplacement.innerHTML = '';
 
   const dansGuilde = estVueGuilde();
   const guilde = document.createElement('button');
@@ -3722,8 +3808,7 @@ function renderSelector() {
     });
   });
 
-  groupe.appendChild(guilde);
-  row.appendChild(groupe);
+  emplacement.appendChild(guilde);
 
   if (!visible.length) {
     const hint = document.createElement('p');
@@ -3815,12 +3900,11 @@ function renderHeader() {
   document.querySelector('.panel').style.setProperty('--spec', color);
   els.avatar.className = 'avatar lg';
   els.avatar.innerHTML = '';
-  // Le /rand d'une spec reste une vue de spec : son icone garde son sens. Celui de
-  // la guilde ne depend d'aucune spec, l'icone n'y a rien a dire.
-  els.avatar.hidden =
-    activeView === 'roster' ||
-    activeView === 'joueurs' ||
-    (activeView === 'rand' && randScope === 'guild');
+  // Aucune vue de guilde ne parle d'une spec : ni son icone, ni son nom, ni son
+  // guide n'y ont leur place. Le /rand d'une spec, lui, en reste une — il est hors
+  // de `estVueGuilde`, et garde donc son icone.
+  const guilde = estVueGuilde();
+  els.avatar.hidden = guilde;
   if (spec && !els.avatar.hidden) {
     els.avatar.title = spec.label;
     els.avatar.appendChild(iconEl(specIcon(spec.class, spec.spec), null, spec.label));
@@ -3828,6 +3912,7 @@ function renderHeader() {
 
   if (activeView === 'roster') els.name.textContent = ROSTER_LABEL;
   else if (activeView === 'joueurs') els.name.textContent = JOUEURS_LABEL;
+  else if (activeView === 'butin') els.name.textContent = BUTIN_LABEL;
   else if (activeView === 'rand') {
     els.name.textContent = activeBoss ? translateSource(activeBoss) : '/rand';
   } else els.name.textContent = spec ? spec.label : '—';
@@ -3836,10 +3921,10 @@ function renderHeader() {
   // rien à piloter. On en sort par les carrés du haut ou par une icône de spec.
   els.tabsNav.hidden = estVueGuilde();
 
-  // Le bouton agit sur une spec : il n'a pas de sens dans les vues roster / boss,
-  // ni en hebergement statique ou aucun scrape n'est possible.
-  els.refresh.hidden =
-    STATIC || activeView === 'roster' || activeView === 'joueurs' || activeView === 'rand';
+  // Le bouton scrape le guide d'UNE spec : il n'a de sens que dans son contexte, et
+  // pas davantage sur son /rand, qui ne lit que le cache. Ni en hebergement statique,
+  // ou aucun scrape n'est possible.
+  els.refresh.hidden = STATIC || guilde || activeView === 'rand';
   els.refresh.disabled = !spec;
 
   els.sub.innerHTML = '';
@@ -3848,6 +3933,11 @@ function renderHeader() {
   } else if (activeView === 'joueurs') {
     const mythique = roster.filter((m) => m.raid !== false).length;
     els.sub.textContent = `${mythique} membre(s) dans le roster mythique · un clic ouvre son équipement`;
+  } else if (activeView === 'butin') {
+    const total = (lootStore.entries || []).length;
+    els.sub.textContent = total
+      ? `${total} objet(s) noté(s) · qui a reçu quoi, tous membres confondus`
+      : 'Rien de noté pour l’instant · qui a reçu quoi, tous membres confondus';
   } else if (activeView === 'rand') {
     const pourSpec = randScope === 'spec' && spec;
     const source =
@@ -3915,7 +4005,7 @@ function renderHeader() {
     ? `Dernière mise à jour des données : ${formatDate(maj)}`
     : 'Aucune donnée en cache';
 
-  if (activeView === 'rand' || activeView === 'roster' || activeView === 'joueurs') {
+  if (guilde || activeView === 'rand') {
     els.legendMeta.textContent = '';
   } else {
     els.legendMeta.textContent = entry
@@ -4074,18 +4164,6 @@ async function loadWowhead() {
  * passee : le panneau le dit alors, plutot que d'afficher un tableau vide.
  */
 /** Journal du butin. Vide tant que personne n’a rien noté : ce n’est pas une erreur. */
-/** Compteurs de consultation. Absents = personne n’a encore ouvert de spec. */
-async function loadViews() {
-  try {
-    const res = await fetch(API.views);
-    if (!res.ok) return;
-    const data = await res.json();
-    if (data && typeof data.specs === 'object' && data.specs) viewsStore = data;
-  } catch (err) {
-    viewsStore = { specs: {} };
-  }
-}
-
 async function loadLoot() {
   try {
     const res = await fetch(API.loot);
@@ -4546,18 +4624,13 @@ async function retirerButin(ligne) {
  * retours de vue et les rechargements ne comptent pas — sinon le chiffre mesurerait
  * le nombre de rendus, pas les consultations.
  *
- * L'increment est optimiste : on met a jour le compteur local tout de suite, et on
- * previent le serveur sans attendre sa reponse. Un echec reseau ne doit pas retarder
- * l'affichage d'une liste BiS pour une statistique.
+ * On previent le serveur sans attendre sa reponse : un echec reseau ne doit pas
+ * retarder l'affichage d'une liste BiS pour une statistique. Plus rien n'affiche ces
+ * compteurs — ils continuent d'alimenter data/views.json, qui reste la matiere d'un
+ * classement si on en veut un a nouveau.
  */
 function compterConsultation(spec) {
-  if (!spec) return;
-  const courant = viewsStore.specs[spec.key] || { count: 0, lastAt: null };
-  viewsStore.specs[spec.key] = {
-    count: courant.count + 1,
-    lastAt: new Date().toISOString(),
-  };
-  if (STATIC) return;
+  if (!spec || STATIC) return;
   fetch(API.views, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -4566,100 +4639,6 @@ function compterConsultation(spec) {
     // Sans serveur, le compteur de la session reste juste : il ne sera pas enregistre.
   });
 }
-
-/** Total par classe, avec le detail de ses specs — la classe, c'est la somme. */
-function consultationsParClasse() {
-  const parClasse = new Map();
-  for (const [key, entree] of Object.entries(viewsStore.specs || {})) {
-    const spec = specByKey(key);
-    const className = spec ? spec.class : key.split('-').slice(0, -1).join('-');
-    if (!parClasse.has(className)) parClasse.set(className, { total: 0, specs: [], lastAt: null });
-    const bloc = parClasse.get(className);
-    bloc.total += entree.count;
-    bloc.specs.push({ key, label: spec ? spec.label : key, count: entree.count });
-    if (!bloc.lastAt || (entree.lastAt || '') > bloc.lastAt) bloc.lastAt = entree.lastAt;
-  }
-  for (const bloc of parClasse.values()) bloc.specs.sort((a, b) => b.count - a.count);
-  return [...parClasse.entries()].sort((a, b) => b[1].total - a[1].total);
-}
-
-function panneauVues() {
-  const wrap = document.createElement('div');
-
-  const titre = document.createElement('p');
-  titre.className = 'cle-titre';
-  titre.textContent = 'Classes les plus consultées';
-  wrap.appendChild(titre);
-
-  const classes = consultationsParClasse();
-  if (!classes.length) {
-    const vide = document.createElement('p');
-    vide.className = 'cle-note';
-    vide.textContent = 'Aucune consultation enregistrée pour l’instant.';
-    wrap.appendChild(vide);
-    return wrap;
-  }
-
-  const total = classes.reduce((s, [, bloc]) => s + bloc.total, 0);
-  const max = classes[0][1].total;
-
-  const table = document.createElement('table');
-  table.className = 'cle-table vues-table';
-  const tbody = document.createElement('tbody');
-
-  for (const [className, bloc] of classes) {
-    const info = classInfo(className);
-    const tr = document.createElement('tr');
-
-    const nom = document.createElement('td');
-    const pastille = document.createElement('span');
-    pastille.className = 'pi-spec';
-    pastille.style.setProperty('--spec', classColor(className));
-    pastille.appendChild(iconEl(info.icon, 'pi-icone', ''));
-    const texte = document.createElement('span');
-    texte.textContent = info.label;
-    pastille.appendChild(texte);
-    nom.appendChild(pastille);
-
-    // Le detail des specs sous le nom : c'est lui qui dit d'ou vient le total.
-    const detail = document.createElement('div');
-    detail.className = 'vues-detail';
-    detail.textContent = bloc.specs
-      .map((s) => `${s.label.split('—').pop().trim()} ${s.count}`)
-      .join(' · ');
-    nom.appendChild(detail);
-
-    // Barre proportionnelle a la classe la plus consultee : un classement se lit mieux
-    // en longueur qu'en chiffres alignes.
-    const barre = document.createElement('td');
-    barre.className = 'vues-barre-cellule';
-    const piste = document.createElement('span');
-    piste.className = 'vues-barre';
-    piste.style.setProperty('--part', `${Math.round((bloc.total / max) * 100)}%`);
-    piste.style.setProperty('--spec', classColor(className));
-    barre.appendChild(piste);
-
-    const compte = document.createElement('td');
-    compte.className = 'vues-compte';
-    compte.textContent = bloc.total;
-
-    tr.append(nom, barre, compte);
-    tbody.appendChild(tr);
-  }
-  table.appendChild(tbody);
-  wrap.appendChild(table);
-
-  const note = document.createElement('p');
-  note.className = 'cle-note';
-  note.textContent = STATIC
-    ? `${total} consultation(s) enregistrées en local. La version publiée les affiche sans les compter.`
-    : `${total} consultation(s) depuis le début, enregistrées dans data/views.json.`;
-  wrap.appendChild(note);
-
-  return wrap;
-}
-
-/* ---------------- antiseche : recompenses par niveau de cle ---------------- */
 
 /**
  * Ce que rapporte une cle mythique, en fin de donjon et au grand coffre. Ce sont des
@@ -4946,7 +4925,6 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
       loadWowhead(),
       loadPowerInfusion(),
       loadLoot(),
-      loadViews(),
       loadPortraits(),
     ]);
     // Etat de depart : l'ecran d'accueil de la guilde, onglets masques.
@@ -4956,7 +4934,6 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
     armerAccesRoster();
     armerPanneau('cle-toggle', 'cle-panneau', panneauCle);
     armerPanneau('pi-toggle', 'pi-panneau', panneauPI);
-    armerPanneau('vues-toggle', 'vues-panneau', panneauVues);
   } catch (err) {
     showMessage(`Erreur au chargement : ${err.message}`, 'error');
   }

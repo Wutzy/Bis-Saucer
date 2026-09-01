@@ -335,8 +335,23 @@
       "ilvlAt": "2026-08-29T12:45:53.028Z",
       "match": "auto",
       "fetchedAt": "2026-08-30T10:52:32.643Z"
+    },
+    "samahel": {
+      "character": "Sahmaehl",
+      "realm": "Hyjal",
+      "region": "eu",
+      "thumbnail": "https://render.worldofwarcraft.com/eu/character/hyjal/91/221856091-avatar.jpg?alt=/wow/static/images/2d/avatar/29-0.jpg",
+      "inset": "https://render.worldofwarcraft.com/eu/character/hyjal/91/221856091-inset.jpg",
+      "profileUrl": "https://raider.io/characters/eu/hyjal/Sahmaehl",
+      "race": "Void Elf",
+      "faction": "alliance",
+      "activeSpec": "Shadow",
+      "ilvl": 305,
+      "ilvlAt": "2026-08-27T20:14:26.000Z",
+      "match": "manuel",
+      "fetchedAt": "2026-08-30T17:27:16.462Z"
     }
   },
   "unmatched": [],
-  "updatedAt": "2026-08-30T10:58:23.384Z"
+  "updatedAt": "2026-08-30T17:27:16.723Z"
 }

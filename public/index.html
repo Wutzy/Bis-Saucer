@@ -9,7 +9,6 @@
   <body>
     <div class="layout">
       <header class="topbar">
-        <img class="footzy footzy--left" src="img/footzy1.png" alt="" title="Footzy" />
         <img
           id="mascotte"
           class="mascotte"
@@ -20,6 +19,10 @@
         />
         <img class="ewe" src="img/ewe.png" alt="" title="Ewe" />
         <div class="brand-zone">
+          <!-- Le blason ouvre la barre : c'est la porte d'entree de l'outil, et il
+               doit se voir avant les antiseches. Rempli par app.js, qui sait s'il
+               faut l'allumer. -->
+          <div id="guild-slot" class="guild-slot"></div>
           <!-- Antiseche des recompenses Mythique+ : une table de reference qu'on
                deroule d'un clic et qu'on referme aussitot, sans quitter la vue en
                cours. Le panneau est rempli par app.js. -->
@@ -50,29 +53,6 @@
               alt="Classement Power Infusion"
             />
           </button>
-          <!-- Compteurs de consultation, meme mecanique de panneau deroulant. -->
-          <button
-            id="vues-toggle"
-            class="cle-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="vues-panneau"
-            title="Classes les plus consultées"
-          >
-            <img
-              src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_spyglass_02.jpg"
-              alt="Classes les plus consultées"
-            />
-          </button>
-          <div class="brand">
-            <strong>BiS Saucer</strong>
-          </div>
-          <div
-            id="vues-panneau"
-            class="cle-panneau cle-panneau--vues"
-            role="dialog"
-            aria-label="Classes les plus consultées"
-          ></div>
           <div
             id="pi-panneau"
             class="cle-panneau cle-panneau--pi"

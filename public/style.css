@@ -358,22 +358,6 @@ body {
   font-size: 0.7rem;
 }
 
-.brand {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-  flex: none;
-}
-
-.brand strong {
-  font-size: 1rem;
-}
-
-.brand span {
-  color: var(--muted-2);
-  font-size: 0.72rem;
-}
-
 .selector-bar {
   min-width: 0;
   display: flex;
@@ -428,19 +412,18 @@ body {
 
 /* ---------------- Blason de guilde et vue /rand ---------------- */
 
-/* Vues de guilde : en tête de barre, le trait les sépare des specs qui suivent. */
-.guild-group {
+.guild-slot {
+  flex: none;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  margin-right: 0.9rem;
-  padding-right: 0.9rem;
-  border-right: 1px solid var(--border);
 }
 
+/* Le blason est l'entree de l'outil : il a le droit d'etre plus grand que les
+   antiseches qui le suivent, et deborde un peu de la bande sans la pousser. */
 .guild-chip {
-  width: 42px;
-  height: 42px;
+  width: 109px;
+  height: 109px;
+  margin: -26px 0.15rem -26px 0;
   padding: 0;
   border: none;
   background: transparent;
@@ -450,11 +433,9 @@ body {
 }
 
 .guild-chip img {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
 }
 
@@ -469,8 +450,7 @@ body {
 }
 
 .guild-chip.is-active img {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 1px var(--accent), 0 0 12px -2px var(--accent);
+  filter: drop-shadow(0 0 3px var(--accent)) drop-shadow(0 0 7px var(--accent));
 }
 
 
@@ -664,10 +644,6 @@ body {
   filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
 }
 
-.footzy--left {
-  display: none;
-}
-
 /* Des que les marges autour du conteneur sont assez larges, les deux passent
    dedans, calees sur les bords du conteneur (700px = la moitie de son max-width)
    pour rester a la meme distance quelle que soit la largeur de l'ecran. */
@@ -684,10 +660,15 @@ body {
     height: 186px;
   }
 
-  .footzy--left {
-    display: block;
+  .guild-slot {
+    position: fixed;
+    top: 1rem;
     right: calc(50% + 700px + 10px);
-    height: 150px;
+    z-index: 6;
+  }
+
+  .guild-chip {
+    margin: 0;
   }
 }
 
@@ -2811,3 +2792,75 @@ a.pd-catalyst:hover {
   }
 }
 
+
+/* ---------------- Bande de recrutement ---------------- */
+
+/* Au-dessus de la composition : ce qu'on cherche passe devant qui on a. */
+.recrutement {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  background: var(--panel-2);
+}
+
+.recrut-titre {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.recrut-groupe {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.recrut-label {
+  color: var(--muted-2);
+  font-size: 0.74rem;
+  white-space: nowrap;
+}
+
+/* Ce qu'on cherche vraiment se lit avant le reste. */
+.recrut-groupe--prio .recrut-label {
+  color: var(--text);
+}
+
+.recrut-classes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* Les specs d'une même classe restent collées : on lit « un guerrier, deux specs »,
+   pas quatre icônes en vrac. */
+.recrut-classe {
+  display: flex;
+  gap: 0.12rem;
+  padding: 0.12rem 0.22rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--spec) 16%, transparent);
+}
+
+.recrut-icone {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Les pistes à l'étude reculent d'un cran : elles dépendent des essais en cours. */
+.recrut-groupe:not(.recrut-groupe--prio) .recrut-icone {
+  opacity: 0.62;
+}
+
+.recrut-groupe:not(.recrut-groupe--prio):hover .recrut-icone {
+  opacity: 1;
+}

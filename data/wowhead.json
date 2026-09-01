@@ -1855,7 +1855,7 @@
     },
     "mage-fire": {
       "key": "mage-fire",
-      "fetchedAt": "2026-08-30T10:01:11.768Z",
+      "fetchedAt": "2026-08-30T17:48:14.647Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear",
         "available": true,
@@ -2239,7 +2239,118 @@
               }
             ]
           }
-        ]
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 244029,
+                  "name": "Enchant Weapon - Acuity of the Ren'dorei",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Head",
+              "items": [
+                {
+                  "itemId": 244007,
+                  "name": "Enchant Helm - Empowered Rune of Avoidance",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240133,
+                  "name": "Sunfire Silk Spellthread",
+                  "icon": "inv_tailoring_spellthread_orange_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Rings",
+              "items": [
+                {
+                  "itemId": 243957,
+                  "name": "Enchant Ring - Eyes of the Eagle",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Gems",
+              "items": [
+                {
+                  "itemId": 240967,
+                  "name": "Powerful Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange",
+                  "quality": 4
+                },
+                {
+                  "itemId": 240892,
+                  "name": "Flawless Masterful Peridot",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240900,
+                  "name": "Flawless Quick Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+                  "quality": 3
+                },
+                {
+                  "itemId": 240916,
+                  "name": "Flawless Quick Lapis",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_blue",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     "paladin-holy": {
@@ -7549,5 +7660,5 @@
       }
     }
   },
-  "updatedAt": "2026-08-30T10:02:19.739Z"
+  "updatedAt": "2026-08-30T17:48:14.979Z"
 }

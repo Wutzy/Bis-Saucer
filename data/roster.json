@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-30T10:57:50.375Z",
+  "updatedAt": "2026-08-30T19:25:37.821Z",
   "members": [
     {
       "n": 1,
@@ -136,7 +136,7 @@
       "spec": "holy",
       "id": "folkvangr",
       "raid": true,
-      "trial": true
+      "trial": false
     },
     {
       "n": 16,
@@ -211,6 +211,16 @@
       "raid": true,
       "trial": false,
       "id": "sheechy"
+    },
+    {
+      "n": 25,
+      "name": "Samahel",
+      "class": "priest",
+      "spec": "discipline",
+      "armory": "Sahmaehl",
+      "id": "samahel",
+      "raid": true,
+      "trial": false
     }
   ]
 }

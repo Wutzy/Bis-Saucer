@@ -2,33 +2,57 @@
   "version": 1,
   "specs": {
     "mage-fire": {
-      "count": 1,
-      "lastAt": "2026-08-22T22:36:08.813Z"
+      "count": 8,
+      "lastAt": "2026-09-01T10:28:09.391Z"
     },
     "priest-discipline": {
-      "count": 1,
-      "lastAt": "2026-08-22T22:36:18.984Z"
+      "count": 2,
+      "lastAt": "2026-09-01T10:17:04.963Z"
     },
     "warrior-arms": {
-      "count": 1,
-      "lastAt": "2026-08-22T22:36:19.563Z"
+      "count": 2,
+      "lastAt": "2026-09-01T10:22:58.875Z"
     },
     "hunter-survival": {
       "count": 1,
       "lastAt": "2026-08-22T22:36:20.140Z"
     },
     "monk-windwalker": {
-      "count": 1,
-      "lastAt": "2026-08-30T07:56:32.284Z"
+      "count": 3,
+      "lastAt": "2026-09-01T10:19:21.902Z"
     },
     "warlock-affliction": {
       "count": 1,
       "lastAt": "2026-08-30T10:42:44.285Z"
     },
     "death-knight-blood": {
+      "count": 2,
+      "lastAt": "2026-09-01T10:36:45.641Z"
+    },
+    "shaman-restoration": {
       "count": 1,
-      "lastAt": "2026-08-30T11:33:59.229Z"
+      "lastAt": "2026-08-30T17:35:35.969Z"
+    },
+    "shaman-enhancement": {
+      "count": 2,
+      "lastAt": "2026-09-01T10:16:08.533Z"
+    },
+    "paladin-protection": {
+      "count": 2,
+      "lastAt": "2026-09-01T10:16:04.432Z"
+    },
+    "demon-hunter-havoc": {
+      "count": 4,
+      "lastAt": "2026-09-01T10:21:47.233Z"
+    },
+    "shaman-elemental": {
+      "count": 2,
+      "lastAt": "2026-09-01T10:28:54.602Z"
+    },
+    "hunter-marksmanship": {
+      "count": 1,
+      "lastAt": "2026-09-01T10:22:27.960Z"
     }
   },
-  "updatedAt": "2026-08-30T11:33:59.229Z"
+  "updatedAt": "2026-09-01T10:36:45.641Z"
 }
