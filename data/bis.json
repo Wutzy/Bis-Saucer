@@ -558,11 +558,11 @@
               "slotFr": "Torse",
               "align": "left",
               "empty": false,
-              "itemId": 159424,
+              "itemId": 239036,
               "originalItemId": null,
-              "wowheadParams": "item=159424&bonus=4786:12854",
+              "wowheadParams": "item=239036&bonus=4786:12854",
               "name": "Desert Guardian's Breastplate",
-              "quality": 3,
+              "quality": 4,
               "icon": "inv_chest_plate_zandalardungeon_c_01",
               "source": "Temple of Sethraliss",
               "catalyst": false,
@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T10:59:15.485Z",
+      "scrapedAt": "2026-09-01T09:30:17.430Z",
       "items": [
         {
           "slot": "Helm",
@@ -2660,7 +2660,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T10:59:21.885Z",
+      "scrapedAt": "2026-09-01T09:30:23.761Z",
       "items": [
         {
           "slot": "Helm",
@@ -4322,7 +4322,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T10:59:27.164Z",
+      "scrapedAt": "2026-09-01T09:30:28.815Z",
       "items": [
         {
           "slot": "Helm",
@@ -6011,7 +6011,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T10:59:37.773Z",
+      "scrapedAt": "2026-09-01T09:30:40.038Z",
       "items": [
         {
           "slot": "Helm",
@@ -7588,7 +7588,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T10:59:48.233Z",
+      "scrapedAt": "2026-09-01T09:30:49.848Z",
       "items": [
         {
           "slot": "Helm",
@@ -7979,12 +7979,12 @@
               "align": "left",
               "empty": false,
               "itemId": 271492,
-              "originalItemId": 251220,
-              "wowheadParams": "item=271492&bonus=12854&original-item=251220",
+              "originalItemId": 268230,
+              "wowheadParams": "item=271492&bonus=12854&original-item=268230",
               "name": "Skulking Viper's Weeping Fangs",
               "quality": 4,
               "icon": "inv_helm_mail_raidhunterulatek_d_01",
-              "source": "Voidscar Arena",
+              "source": "Nek'zali",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -8009,12 +8009,12 @@
               "align": "right",
               "empty": false,
               "itemId": 271493,
-              "originalItemId": 160213,
-              "wowheadParams": "item=271493&bonus=12854&original-item=160213",
+              "originalItemId": 193752,
+              "wowheadParams": "item=271493&bonus=12854&original-item=193752",
               "name": "Skulking Viper's Hidepiercers",
               "quality": 4,
               "icon": "inv_glove_mail_raidhunterulatek_d_01",
-              "source": "King's Rest",
+              "source": "Ruby Life Pools",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -8585,13 +8585,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 251194,
+              "itemId": 158366,
               "originalItemId": null,
-              "wowheadParams": "item=251194&bonus=12854",
-              "name": "Lightwarden's Bind",
-              "quality": 4,
-              "icon": "inv12_jewelrytrinkets_rutaani_ring_yellow",
-              "source": "The Blinding Vale",
+              "wowheadParams": "item=158366&bonus=12854",
+              "name": "Charged Sandstone Band",
+              "quality": 3,
+              "icon": "inv_ring_80_03d",
+              "source": "Temple of Sethraliss",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -8724,13 +8724,13 @@
               "slotFr": "Main droite",
               "align": "right",
               "empty": false,
-              "itemId": 251187,
+              "itemId": 271680,
               "originalItemId": null,
-              "wowheadParams": "item=251187&bonus=12854",
-              "name": "Amirdrassil's Reach",
-              "quality": 3,
-              "icon": "inv_crossbow_2h_dungeonharronir_c_01",
-              "source": "The Blinding Vale",
+              "wowheadParams": "item=271680&bonus=12854",
+              "name": "Sinseared Repeater",
+              "quality": 4,
+              "icon": "inv_firearm_2h_undergroundquest_b_01",
+              "source": "Murder Row",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -8932,13 +8932,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 268233,
+              "itemId": 268258,
               "originalItemId": null,
-              "wowheadParams": "item=268233&bonus=12854",
-              "name": "Ferocious Scaleboots",
+              "wowheadParams": "item=268258&bonus=12854",
+              "name": "Boots of the Reckless Wayfarer",
               "quality": 4,
-              "icon": "inv_boot_mail_raidhunterulatek_d_01",
-              "source": "Sszorak",
+              "icon": "inv_boot_mail_raidevokerulatek_d_01",
+              "source": "Lost Explorers",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -9014,13 +9014,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 268266,
+              "itemId": 268252,
               "originalItemId": null,
-              "wowheadParams": "item=268266&bonus=12854",
-              "name": "Alluring Bubbleband",
+              "wowheadParams": "item=268252&bonus=12854",
+              "name": "Apex Brute's Claw Ring",
               "quality": 4,
-              "icon": "inv_70_raid_ring8c",
-              "source": "Nymrissa Wavecaller",
+              "icon": "inv_121_jewelry_ring03_red",
+              "source": "Sszorak",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -9166,7 +9166,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T10:59:53.277Z",
+      "scrapedAt": "2026-09-01T09:30:54.558Z",
       "items": [
         {
           "slot": "Helm",
@@ -9174,12 +9174,12 @@
           "align": "left",
           "empty": false,
           "itemId": 271492,
-          "originalItemId": 251220,
-          "wowheadParams": "item=271492&bonus=12854&original-item=251220",
+          "originalItemId": 268230,
+          "wowheadParams": "item=271492&bonus=12854&original-item=268230",
           "name": "Skulking Viper's Weeping Fangs",
           "quality": 4,
           "icon": "inv_helm_mail_raidhunterulatek_d_01",
-          "source": "Voidscar Arena",
+          "source": "Nek'zali",
           "catalyst": true,
           "crafted": false,
           "profession": null,
@@ -9204,12 +9204,12 @@
           "align": "right",
           "empty": false,
           "itemId": 271493,
-          "originalItemId": 160213,
-          "wowheadParams": "item=271493&bonus=12854&original-item=160213",
+          "originalItemId": 193752,
+          "wowheadParams": "item=271493&bonus=12854&original-item=193752",
           "name": "Skulking Viper's Hidepiercers",
           "quality": 4,
           "icon": "inv_glove_mail_raidhunterulatek_d_01",
-          "source": "King's Rest",
+          "source": "Ruby Life Pools",
           "catalyst": true,
           "crafted": false,
           "profession": null,
@@ -9877,7 +9877,7 @@
               "empty": false,
               "itemId": 239648,
               "originalItemId": null,
-              "wowheadParams": "item=239648&bonus=13751:12497:13836:12384",
+              "wowheadParams": "item=239648&bonus=13751:12497:13836:12384:8792",
               "name": "Martyr's Bindings",
               "quality": 4,
               "icon": "inv_bracer_cloth_questbloodelf_b_01",
@@ -9949,7 +9949,7 @@
               "empty": false,
               "itemId": 245769,
               "originalItemId": null,
-              "wowheadParams": "item=245769&bonus=13751:12497:13836:13771",
+              "wowheadParams": "item=245769&bonus=13751:12497:13836:13771:8792",
               "name": "Aln'hara Lantern",
               "quality": 4,
               "icon": "inv_offhand_1h_dungeonharronir_c_01",
@@ -10045,7 +10045,7 @@
               "empty": false,
               "itemId": 239649,
               "originalItemId": null,
-              "wowheadParams": "item=239649&bonus=13751:12497:13836:12384",
+              "wowheadParams": "item=239649&bonus=13751:12497:13836:12384:8792",
               "name": "Martyr's Waistwrap",
               "quality": 4,
               "icon": "inv_belt_cloth_questbloodelf_b_01",
@@ -10270,7 +10270,7 @@
               "empty": false,
               "itemId": 239648,
               "originalItemId": null,
-              "wowheadParams": "item=239648&bonus=13751:12497:13836:12384",
+              "wowheadParams": "item=239648&bonus=13751:12497:13836:12384:8792",
               "name": "Martyr's Bindings",
               "quality": 4,
               "icon": "inv_bracer_cloth_questbloodelf_b_01",
@@ -10663,7 +10663,7 @@
               "empty": false,
               "itemId": 239648,
               "originalItemId": null,
-              "wowheadParams": "item=239648&bonus=13751:12497:13836:12384",
+              "wowheadParams": "item=239648&bonus=13751:12497:13836:12384:8792",
               "name": "Martyr's Bindings",
               "quality": 4,
               "icon": "inv_bracer_cloth_questbloodelf_b_01",
@@ -10735,7 +10735,7 @@
               "empty": false,
               "itemId": 245769,
               "originalItemId": null,
-              "wowheadParams": "item=245769&bonus=13751:12497:13836:13771",
+              "wowheadParams": "item=245769&bonus=13751:12497:13836:13771:8792",
               "name": "Aln'hara Lantern",
               "quality": 4,
               "icon": "inv_offhand_1h_dungeonharronir_c_01",
@@ -10790,7 +10790,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:11.048Z",
+      "scrapedAt": "2026-09-01T09:31:10.165Z",
       "items": [
         {
           "slot": "Helm",
@@ -11097,7 +11097,7 @@
           "empty": false,
           "itemId": 239648,
           "originalItemId": null,
-          "wowheadParams": "item=239648&bonus=13751:12497:13836:12384",
+          "wowheadParams": "item=239648&bonus=13751:12497:13836:12384:8792",
           "name": "Martyr's Bindings",
           "quality": 4,
           "icon": "inv_bracer_cloth_questbloodelf_b_01",
@@ -11169,7 +11169,7 @@
           "empty": false,
           "itemId": 245769,
           "originalItemId": null,
-          "wowheadParams": "item=245769&bonus=13751:12497:13836:13771",
+          "wowheadParams": "item=245769&bonus=13751:12497:13836:13771:8792",
           "name": "Aln'hara Lantern",
           "quality": 4,
           "icon": "inv_offhand_1h_dungeonharronir_c_01",
@@ -12386,7 +12386,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:21.990Z",
+      "scrapedAt": "2026-09-01T09:31:20.926Z",
       "items": [
         {
           "slot": "Helm",
@@ -13962,7 +13962,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:26.383Z",
+      "scrapedAt": "2026-09-01T09:31:25.493Z",
       "items": [
         {
           "slot": "Helm",
@@ -15529,7 +15529,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:31.394Z",
+      "scrapedAt": "2026-09-01T09:31:30.183Z",
       "items": [
         {
           "slot": "Helm",
@@ -18294,7 +18294,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:35.968Z",
+      "scrapedAt": "2026-09-01T09:31:34.841Z",
       "items": [
         {
           "slot": "Helm",
@@ -19924,7 +19924,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:41.219Z",
+      "scrapedAt": "2026-09-01T09:31:39.718Z",
       "items": [
         {
           "slot": "Helm",
@@ -21571,7 +21571,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:51.391Z",
+      "scrapedAt": "2026-09-01T09:31:50.979Z",
       "items": [
         {
           "slot": "Helm",
@@ -23341,7 +23341,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:57.201Z",
+      "scrapedAt": "2026-09-01T09:31:56.456Z",
       "items": [
         {
           "slot": "Helm",
@@ -24979,7 +24979,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:01:07.686Z",
+      "scrapedAt": "2026-09-01T09:32:07.290Z",
       "items": [
         {
           "slot": "Helm",
@@ -26655,7 +26655,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:01:12.473Z",
+      "scrapedAt": "2026-09-01T09:32:11.875Z",
       "items": [
         {
           "slot": "Helm",
@@ -28373,7 +28373,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:01:23.886Z",
+      "scrapedAt": "2026-09-01T09:32:22.882Z",
       "items": [
         {
           "slot": "Helm",
@@ -29958,7 +29958,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:16.652Z",
+      "scrapedAt": "2026-09-01T09:31:15.579Z",
       "items": [
         {
           "slot": "Helm",
@@ -31560,7 +31560,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T10:59:42.831Z",
+      "scrapedAt": "2026-09-01T09:30:45.013Z",
       "items": [
         {
           "slot": "Helm",
@@ -32146,13 +32146,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 159388,
+              "itemId": 268258,
               "originalItemId": null,
-              "wowheadParams": "item=159388&bonus=12854",
-              "name": "Sabatons of Coruscating Energy",
-              "quality": 3,
-              "icon": "inv_boot_mail_zandalardungeon_c_01",
-              "source": "Temple of Sethraliss",
+              "wowheadParams": "item=268258&bonus=12854",
+              "name": "Boots of the Reckless Wayfarer",
+              "quality": 4,
+              "icon": "inv_boot_mail_raidevokerulatek_d_01",
+              "source": "Lost Explorers",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -32228,13 +32228,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 268249,
+              "itemId": 158366,
               "originalItemId": null,
-              "wowheadParams": "item=268249&bonus=12854",
-              "name": "Vile Alchemist's Band",
-              "quality": 4,
-              "icon": "inv_121_jewelry_ring01_purple",
-              "source": "Vashnik",
+              "wowheadParams": "item=158366&bonus=12854",
+              "name": "Charged Sandstone Band",
+              "quality": 3,
+              "icon": "inv_ring_80_03d",
+              "source": "Temple of Sethraliss",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -32651,13 +32651,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 250214,
+              "itemId": 159617,
               "originalItemId": null,
-              "wowheadParams": "item=250214&bonus=12854",
-              "name": "Lightspire Core",
+              "wowheadParams": "item=159617&bonus=12854",
+              "name": "Lustrous Golden Plumage",
               "quality": 3,
-              "icon": "inv_enchant_essenceastrallarge",
-              "source": "The Blinding Vale",
+              "icon": "inv_icon_feather06a",
+              "source": "King's Rest",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -32700,13 +32700,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 159617,
+              "itemId": 250214,
               "originalItemId": null,
-              "wowheadParams": "item=159617&bonus=12854",
-              "name": "Lustrous Golden Plumage",
+              "wowheadParams": "item=250214&bonus=12854",
+              "name": "Lightspire Core",
               "quality": 3,
-              "icon": "inv_icon_feather06a",
-              "source": "King's Rest",
+              "icon": "inv_enchant_essenceastrallarge",
+              "source": "The Blinding Vale",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -32926,13 +32926,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 268233,
+              "itemId": 268258,
               "originalItemId": null,
-              "wowheadParams": "item=268233&bonus=12854",
-              "name": "Ferocious Scaleboots",
+              "wowheadParams": "item=268258&bonus=12854",
+              "name": "Boots of the Reckless Wayfarer",
               "quality": 4,
-              "icon": "inv_boot_mail_raidhunterulatek_d_01",
-              "source": "Sszorak",
+              "icon": "inv_boot_mail_raidevokerulatek_d_01",
+              "source": "Lost Explorers",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -33179,7 +33179,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T10:59:59.409Z",
+      "scrapedAt": "2026-09-01T09:30:59.612Z",
       "items": [
         {
           "slot": "Helm",
@@ -33360,13 +33360,13 @@
           "slotFr": "Pieds",
           "align": "right",
           "empty": false,
-          "itemId": 159388,
+          "itemId": 268258,
           "originalItemId": null,
-          "wowheadParams": "item=159388&bonus=12854",
-          "name": "Sabatons of Coruscating Energy",
-          "quality": 3,
-          "icon": "inv_boot_mail_zandalardungeon_c_01",
-          "source": "Temple of Sethraliss",
+          "wowheadParams": "item=268258&bonus=12854",
+          "name": "Boots of the Reckless Wayfarer",
+          "quality": 4,
+          "icon": "inv_boot_mail_raidevokerulatek_d_01",
+          "source": "Lost Explorers",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -33442,13 +33442,13 @@
           "slotFr": "Anneau",
           "align": "right",
           "empty": false,
-          "itemId": 268249,
+          "itemId": 158366,
           "originalItemId": null,
-          "wowheadParams": "item=268249&bonus=12854",
-          "name": "Vile Alchemist's Band",
-          "quality": 4,
-          "icon": "inv_121_jewelry_ring01_purple",
-          "source": "Vashnik",
+          "wowheadParams": "item=158366&bonus=12854",
+          "name": "Charged Sandstone Band",
+          "quality": 3,
+          "icon": "inv_ring_80_03d",
+          "source": "Temple of Sethraliss",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -34844,7 +34844,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:01:02.670Z",
+      "scrapedAt": "2026-09-01T09:32:02.042Z",
       "items": [
         {
           "slot": "Helm",
@@ -36534,7 +36534,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T10:59:32.630Z",
+      "scrapedAt": "2026-09-01T09:30:34.568Z",
       "items": [
         {
           "slot": "Helm",
@@ -38224,7 +38224,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:46.489Z",
+      "scrapedAt": "2026-09-01T09:31:45.351Z",
       "items": [
         {
           "slot": "Helm",
@@ -39884,7 +39884,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:01:18.265Z",
+      "scrapedAt": "2026-09-01T09:32:17.413Z",
       "items": [
         {
           "slot": "Helm",
@@ -41493,7 +41493,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-08-31T11:00:05.188Z",
+      "scrapedAt": "2026-09-01T09:31:05.288Z",
       "items": [
         {
           "slot": "Helm",
@@ -41886,5 +41886,5 @@
       ]
     }
   },
-  "updatedAt": "2026-08-31T11:01:23.894Z"
+  "updatedAt": "2026-09-01T09:32:22.890Z"
 }
