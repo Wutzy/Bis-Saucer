@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T10:51:34.963Z",
+  "updatedAt": "2026-09-01T12:20:51.936Z",
   "members": [
     {
       "n": 1,
@@ -215,9 +215,8 @@
     {
       "n": 25,
       "name": "Samahel",
-      "class": "priest",
-      "spec": "discipline",
-      "armory": "Sahmaehl",
+      "class": "paladin",
+      "spec": "holy",
       "id": "samahel",
       "raid": true,
       "trial": false
