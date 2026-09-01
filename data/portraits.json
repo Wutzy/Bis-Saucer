@@ -350,8 +350,23 @@
       "ilvlAt": "2026-08-27T20:14:26.000Z",
       "match": "manuel",
       "fetchedAt": "2026-08-30T17:27:16.462Z"
+    },
+    "jeanbon": {
+      "character": "Jeanbøn",
+      "realm": "Dalaran",
+      "region": "eu",
+      "thumbnail": "https://render.worldofwarcraft.com/eu/character/dalaran/234/178201834-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
+      "inset": "https://render.worldofwarcraft.com/eu/character/dalaran/234/178201834-inset.jpg",
+      "profileUrl": "https://raider.io/characters/eu/dalaran/Jeanbøn",
+      "race": "Human",
+      "faction": "alliance",
+      "activeSpec": "Arms",
+      "ilvl": 313,
+      "ilvlAt": "2026-09-01T08:13:04.085Z",
+      "match": "auto",
+      "fetchedAt": "2026-09-01T10:49:58.994Z"
     }
   },
   "unmatched": [],
-  "updatedAt": "2026-08-30T17:27:16.723Z"
+  "updatedAt": "2026-09-01T10:49:59.251Z"
 }

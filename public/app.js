@@ -3120,7 +3120,7 @@ const BUFFS_RAID = [
  */
 const RECRUTEMENT = {
   role: 'DPS',
-  prio: [{ classe: 'warrior', specs: ['arms', 'fury'] }],
+  prio: [],
   selonEssais: [
     { classe: 'rogue', specs: ['assassination', 'outlaw', 'subtlety'] },
     { classe: 'warlock', specs: ['affliction', 'demonology', 'destruction'] },

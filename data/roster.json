@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-30T19:25:37.821Z",
+  "updatedAt": "2026-09-01T10:51:34.963Z",
   "members": [
     {
       "n": 1,
@@ -209,7 +209,7 @@
       "class": "shaman",
       "spec": "elemental",
       "raid": true,
-      "trial": false,
+      "trial": true,
       "id": "sheechy"
     },
     {
@@ -219,6 +219,15 @@
       "spec": "discipline",
       "armory": "Sahmaehl",
       "id": "samahel",
+      "raid": true,
+      "trial": false
+    },
+    {
+      "n": 26,
+      "name": "Jeanbøn",
+      "class": "warrior",
+      "spec": "arms",
+      "id": "jeanbon",
       "raid": true,
       "trial": false
     }
