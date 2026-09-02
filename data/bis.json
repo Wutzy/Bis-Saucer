@@ -21,8 +21,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271474,
-              "originalItemId": null,
-              "wowheadParams": "item=271474&bonus=13692:13698:13750:12854",
+              "originalItemId": 239050,
+              "wowheadParams": "item=271474&bonus=13692:13698:13750:12854&original-item=239050",
               "name": "Baleful Grave-Knight's Casque",
               "quality": 4,
               "icon": "inv_helm_plate_raiddeathknightulatek_d_01",
@@ -129,7 +129,7 @@
               "empty": false,
               "itemId": 271878,
               "originalItemId": null,
-              "wowheadParams": "item=271878&bonus=4786:12806",
+              "wowheadParams": "item=271878&bonus=4786:13335:13708:13848",
               "name": "Chausses of Unbound Rancor",
               "quality": 4,
               "icon": "inv_pant_plate_raiddeathknightulatek_d_01",
@@ -192,8 +192,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271477,
-              "originalItemId": null,
-              "wowheadParams": "item=271477&bonus=13690:13698:12854",
+              "originalItemId": 268222,
+              "wowheadParams": "item=271477&bonus=13690:13698:12854&original-item=268222",
               "name": "Baleful Grave-Knight's Breastplate",
               "quality": 4,
               "icon": "inv_chest_plate_raiddeathknightulatek_d_01",
@@ -387,14 +387,14 @@
               "slotFr": "Tête",
               "align": "left",
               "empty": false,
-              "itemId": 239050,
-              "originalItemId": null,
-              "wowheadParams": "item=239050&domain=ptr&bonus=4786:12854",
-              "name": "Helm of the Raptor King",
+              "itemId": 271474,
+              "originalItemId": 239050,
+              "wowheadParams": "item=271474&bonus=13692:13698:13750:12854&original-item=239050",
+              "name": "Baleful Grave-Knight's Casque",
               "quality": 4,
-              "icon": "inv_helm_plate_zandalardungeon_c_01",
+              "icon": "inv_helm_plate_raiddeathknightulatek_d_01",
               "source": "King's Rest",
-              "catalyst": false,
+              "catalyst": true,
               "crafted": false,
               "profession": null,
               "enchant": {
@@ -471,14 +471,14 @@
               "slotFr": "Épaules",
               "align": "left",
               "empty": false,
-              "itemId": 239037,
-              "originalItemId": null,
-              "wowheadParams": "item=239037&bonus=4786:12854",
-              "name": "C'thraxxi Binders Pauldrons",
+              "itemId": 271472,
+              "originalItemId": 239037,
+              "wowheadParams": "item=271472&bonus=13692:13698:13750:12854&original-item=239037",
+              "name": "Baleful Grave-Knight's Gibbets",
               "quality": 4,
-              "icon": "inv_shoulder_plate_zandalardungeon_c_01",
+              "icon": "inv_shoulder_plate_raiddeathknightulatek_d_01",
               "source": "Temple of Sethraliss",
-              "catalyst": false,
+              "catalyst": true,
               "crafted": false,
               "profession": null,
               "enchant": {
@@ -494,14 +494,14 @@
               "slotFr": "Jambes",
               "align": "right",
               "empty": false,
-              "itemId": 273776,
-              "originalItemId": null,
-              "wowheadParams": "item=273776&bonus=4786:12854",
-              "name": "Ancient General's Obsidian Pillars",
+              "itemId": 271473,
+              "originalItemId": 273776,
+              "wowheadParams": "item=271473&bonus=13692:13698:13750:12854&original-item=273776",
+              "name": "Baleful Grave-Knight's Greaves",
               "quality": 4,
-              "icon": "inv_pant_plate_outdooramaniloa_c_01",
+              "icon": "inv_pant_plate_raiddeathknightulatek_d_01",
               "source": "Altar of Fangs",
-              "catalyst": false,
+              "catalyst": true,
               "crafted": false,
               "profession": null,
               "enchant": {
@@ -558,14 +558,14 @@
               "slotFr": "Torse",
               "align": "left",
               "empty": false,
-              "itemId": 239036,
-              "originalItemId": null,
-              "wowheadParams": "item=239036&bonus=4786:12854",
-              "name": "Desert Guardian's Breastplate",
+              "itemId": 271477,
+              "originalItemId": 239036,
+              "wowheadParams": "item=271477&bonus=13692:13698:13750:12854&original-item=239036",
+              "name": "Baleful Grave-Knight's Breastplate",
               "quality": 4,
-              "icon": "inv_chest_plate_zandalardungeon_c_01",
+              "icon": "inv_chest_plate_raiddeathknightulatek_d_01",
               "source": "Temple of Sethraliss",
-              "catalyst": false,
+              "catalyst": true,
               "crafted": false,
               "profession": null,
               "enchant": {
@@ -742,8 +742,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271474,
-              "originalItemId": null,
-              "wowheadParams": "item=271474&bonus=13692:13698:13750:12854",
+              "originalItemId": 268229,
+              "wowheadParams": "item=271474&bonus=13692:13698:13750:12854&original-item=268229",
               "name": "Baleful Grave-Knight's Casque",
               "quality": 4,
               "icon": "inv_helm_plate_raiddeathknightulatek_d_01",
@@ -850,7 +850,7 @@
               "empty": false,
               "itemId": 271878,
               "originalItemId": null,
-              "wowheadParams": "item=271878&bonus=4786:12806",
+              "wowheadParams": "item=271878&bonus=4786:13335:13708:13848",
               "name": "Chausses of Unbound Rancor",
               "quality": 4,
               "icon": "inv_pant_plate_raiddeathknightulatek_d_01",
@@ -913,8 +913,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271477,
-              "originalItemId": null,
-              "wowheadParams": "item=271477&bonus=13690:13698:12854",
+              "originalItemId": 268222,
+              "wowheadParams": "item=271477&bonus=13690:13698:12854&original-item=268222",
               "name": "Baleful Grave-Knight's Breastplate",
               "quality": 4,
               "icon": "inv_chest_plate_raiddeathknightulatek_d_01",
@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:30:17.430Z",
+      "scrapedAt": "2026-09-02T08:52:40.970Z",
       "items": [
         {
           "slot": "Helm",
@@ -1098,8 +1098,8 @@
           "align": "left",
           "empty": false,
           "itemId": 271474,
-          "originalItemId": null,
-          "wowheadParams": "item=271474&bonus=13692:13698:13750:12854",
+          "originalItemId": 239050,
+          "wowheadParams": "item=271474&bonus=13692:13698:13750:12854&original-item=239050",
           "name": "Baleful Grave-Knight's Casque",
           "quality": 4,
           "icon": "inv_helm_plate_raiddeathknightulatek_d_01",
@@ -1206,7 +1206,7 @@
           "empty": false,
           "itemId": 271878,
           "originalItemId": null,
-          "wowheadParams": "item=271878&bonus=4786:12806",
+          "wowheadParams": "item=271878&bonus=4786:13335:13708:13848",
           "name": "Chausses of Unbound Rancor",
           "quality": 4,
           "icon": "inv_pant_plate_raiddeathknightulatek_d_01",
@@ -1269,8 +1269,8 @@
           "align": "left",
           "empty": false,
           "itemId": 271477,
-          "originalItemId": null,
-          "wowheadParams": "item=271477&bonus=13690:13698:12854",
+          "originalItemId": 268222,
+          "wowheadParams": "item=271477&bonus=13690:13698:12854&original-item=268222",
           "name": "Baleful Grave-Knight's Breastplate",
           "quality": 4,
           "icon": "inv_chest_plate_raiddeathknightulatek_d_01",
@@ -2660,7 +2660,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:30:23.761Z",
+      "scrapedAt": "2026-09-02T08:52:46.023Z",
       "items": [
         {
           "slot": "Helm",
@@ -4322,7 +4322,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:30:28.815Z",
+      "scrapedAt": "2026-09-02T08:52:51.256Z",
       "items": [
         {
           "slot": "Helm",
@@ -6011,7 +6011,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:30:40.038Z",
+      "scrapedAt": "2026-09-02T08:53:00.998Z",
       "items": [
         {
           "slot": "Helm",
@@ -7588,7 +7588,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:30:49.848Z",
+      "scrapedAt": "2026-09-02T08:53:09.824Z",
       "items": [
         {
           "slot": "Helm",
@@ -9166,7 +9166,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:30:54.558Z",
+      "scrapedAt": "2026-09-02T08:53:18.840Z",
       "items": [
         {
           "slot": "Helm",
@@ -10802,7 +10802,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-02T07:22:16.513Z",
+      "scrapedAt": "2026-09-02T08:53:33.538Z",
       "items": [
         {
           "slot": "Helm",
@@ -12404,7 +12404,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:31:20.926Z",
+      "scrapedAt": "2026-09-02T08:53:43.946Z",
       "items": [
         {
           "slot": "Helm",
@@ -13980,7 +13980,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:31:25.493Z",
+      "scrapedAt": "2026-09-02T08:53:48.650Z",
       "items": [
         {
           "slot": "Helm",
@@ -14385,8 +14385,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271465,
-              "originalItemId": null,
-              "wowheadParams": "item=271465&bonus=12854",
+              "originalItemId": 268229,
+              "wowheadParams": "item=271465&bonus=12854&original-item=268229",
               "name": "Warhelm of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_helm_plate_raidpaladinulatek_d_01",
@@ -14415,8 +14415,8 @@
               "align": "right",
               "empty": false,
               "itemId": 271466,
-              "originalItemId": null,
-              "wowheadParams": "item=271466&bonus=12854",
+              "originalItemId": 251214,
+              "wowheadParams": "item=271466&bonus=12854&original-item=251214",
               "name": "Gauntlets of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_glove_plate_raidpaladinulatek_d_01",
@@ -14483,8 +14483,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271463,
-              "originalItemId": null,
-              "wowheadParams": "item=271463&bonus=12854",
+              "originalItemId": 251138,
+              "wowheadParams": "item=271463&bonus=12854&original-item=251138",
               "name": "Pauldrons of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_shoulder_plate_raidpaladinulatek_d_01",
@@ -14506,8 +14506,8 @@
               "align": "right",
               "empty": false,
               "itemId": 271464,
-              "originalItemId": null,
-              "wowheadParams": "item=271464&bonus=13848",
+              "originalItemId": 271878,
+              "wowheadParams": "item=271464&bonus=13848&original-item=271878",
               "name": "Greaves of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_pant_plate_raidpaladinulatek_d_01",
@@ -14570,8 +14570,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271468,
-              "originalItemId": null,
-              "wowheadParams": "item=271468&bonus=13848",
+              "originalItemId": 268222,
+              "wowheadParams": "item=271468&bonus=13848&original-item=268222",
               "name": "Bulwark of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_chest_plate_raidpaladinulatek_d_01",
@@ -14766,8 +14766,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271465,
-              "originalItemId": null,
-              "wowheadParams": "item=271465&bonus=12854",
+              "originalItemId": 251126,
+              "wowheadParams": "item=271465&bonus=12854&original-item=251126",
               "name": "Warhelm of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_helm_plate_raidpaladinulatek_d_01",
@@ -14796,8 +14796,8 @@
               "align": "right",
               "empty": false,
               "itemId": 271466,
-              "originalItemId": null,
-              "wowheadParams": "item=271466&bonus=12854",
+              "originalItemId": 251214,
+              "wowheadParams": "item=271466&bonus=12854&original-item=251214",
               "name": "Gauntlets of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_glove_plate_raidpaladinulatek_d_01",
@@ -14864,8 +14864,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271463,
-              "originalItemId": null,
-              "wowheadParams": "item=271463&bonus=12854",
+              "originalItemId": 251138,
+              "wowheadParams": "item=271463&bonus=12854&original-item=251138",
               "name": "Pauldrons of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_shoulder_plate_raidpaladinulatek_d_01",
@@ -14887,8 +14887,8 @@
               "align": "right",
               "empty": false,
               "itemId": 271464,
-              "originalItemId": null,
-              "wowheadParams": "item=271464&bonus=12854",
+              "originalItemId": 273776,
+              "wowheadParams": "item=271464&bonus=12854&original-item=273776",
               "name": "Greaves of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_pant_plate_raidpaladinulatek_d_01",
@@ -14951,8 +14951,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271468,
-              "originalItemId": null,
-              "wowheadParams": "item=271468&bonus=12854",
+              "originalItemId": 193753,
+              "wowheadParams": "item=271468&bonus=12854&original-item=193753",
               "name": "Bulwark of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_chest_plate_raidpaladinulatek_d_01",
@@ -15147,8 +15147,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271465,
-              "originalItemId": null,
-              "wowheadParams": "item=271465&bonus=12854",
+              "originalItemId": 268229,
+              "wowheadParams": "item=271465&bonus=12854&original-item=268229",
               "name": "Warhelm of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_helm_plate_raidpaladinulatek_d_01",
@@ -15177,8 +15177,8 @@
               "align": "right",
               "empty": false,
               "itemId": 271466,
-              "originalItemId": null,
-              "wowheadParams": "item=271466&bonus=12854",
+              "originalItemId": 268220,
+              "wowheadParams": "item=271466&bonus=12854&original-item=268220",
               "name": "Gauntlets of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_glove_plate_raidpaladinulatek_d_01",
@@ -15268,8 +15268,8 @@
               "align": "right",
               "empty": false,
               "itemId": 271464,
-              "originalItemId": null,
-              "wowheadParams": "item=271464&bonus=13848",
+              "originalItemId": 271878,
+              "wowheadParams": "item=271464&bonus=13848&original-item=271878",
               "name": "Greaves of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_pant_plate_raidpaladinulatek_d_01",
@@ -15332,8 +15332,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271468,
-              "originalItemId": null,
-              "wowheadParams": "item=271468&bonus=13848",
+              "originalItemId": 268222,
+              "wowheadParams": "item=271468&bonus=13848&original-item=268222",
               "name": "Bulwark of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_chest_plate_raidpaladinulatek_d_01",
@@ -15547,7 +15547,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:31:30.183Z",
+      "scrapedAt": "2026-09-02T08:53:53.907Z",
       "items": [
         {
           "slot": "Helm",
@@ -15555,8 +15555,8 @@
           "align": "left",
           "empty": false,
           "itemId": 271465,
-          "originalItemId": null,
-          "wowheadParams": "item=271465&bonus=12854",
+          "originalItemId": 268229,
+          "wowheadParams": "item=271465&bonus=12854&original-item=268229",
           "name": "Warhelm of the Consecrated Flame",
           "quality": 4,
           "icon": "inv_helm_plate_raidpaladinulatek_d_01",
@@ -15585,8 +15585,8 @@
           "align": "right",
           "empty": false,
           "itemId": 271466,
-          "originalItemId": null,
-          "wowheadParams": "item=271466&bonus=12854",
+          "originalItemId": 251214,
+          "wowheadParams": "item=271466&bonus=12854&original-item=251214",
           "name": "Gauntlets of the Consecrated Flame",
           "quality": 4,
           "icon": "inv_glove_plate_raidpaladinulatek_d_01",
@@ -15653,8 +15653,8 @@
           "align": "left",
           "empty": false,
           "itemId": 271463,
-          "originalItemId": null,
-          "wowheadParams": "item=271463&bonus=12854",
+          "originalItemId": 251138,
+          "wowheadParams": "item=271463&bonus=12854&original-item=251138",
           "name": "Pauldrons of the Consecrated Flame",
           "quality": 4,
           "icon": "inv_shoulder_plate_raidpaladinulatek_d_01",
@@ -15676,8 +15676,8 @@
           "align": "right",
           "empty": false,
           "itemId": 271464,
-          "originalItemId": null,
-          "wowheadParams": "item=271464&bonus=13848",
+          "originalItemId": 271878,
+          "wowheadParams": "item=271464&bonus=13848&original-item=271878",
           "name": "Greaves of the Consecrated Flame",
           "quality": 4,
           "icon": "inv_pant_plate_raidpaladinulatek_d_01",
@@ -15740,8 +15740,8 @@
           "align": "left",
           "empty": false,
           "itemId": 271468,
-          "originalItemId": null,
-          "wowheadParams": "item=271468&bonus=13848",
+          "originalItemId": 268222,
+          "wowheadParams": "item=271468&bonus=13848&original-item=268222",
           "name": "Bulwark of the Consecrated Flame",
           "quality": 4,
           "icon": "inv_chest_plate_raidpaladinulatek_d_01",
@@ -18312,7 +18312,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:31:34.841Z",
+      "scrapedAt": "2026-09-02T08:53:58.198Z",
       "items": [
         {
           "slot": "Helm",
@@ -19942,7 +19942,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:31:39.718Z",
+      "scrapedAt": "2026-09-02T08:54:03.076Z",
       "items": [
         {
           "slot": "Helm",
@@ -21589,7 +21589,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:31:50.979Z",
+      "scrapedAt": "2026-09-02T08:54:13.321Z",
       "items": [
         {
           "slot": "Helm",
@@ -23359,7 +23359,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:31:56.456Z",
+      "scrapedAt": "2026-09-02T08:54:18.478Z",
       "items": [
         {
           "slot": "Helm",
@@ -24997,7 +24997,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:32:07.290Z",
+      "scrapedAt": "2026-09-02T08:54:29.187Z",
       "items": [
         {
           "slot": "Helm",
@@ -25694,13 +25694,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 270170,
+              "itemId": 273649,
               "originalItemId": null,
-              "wowheadParams": "item=270170&bonus=12854",
-              "name": "Vexhul's Everflowing Gland",
+              "wowheadParams": "item=273649&bonus=12854",
+              "name": "Stormbound Emblem of Dazar",
               "quality": 4,
-              "icon": "inv_11_0_misc_organmass_color3",
-              "source": "Twin Fangs",
+              "icon": "inv_7_0raid_necklace_14a",
+              "source": "King's Rest",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -26618,11 +26618,11 @@
           "category": "Best-In-Slot",
           "items": [
             {
-              "itemId": 270170,
-              "wowheadParams": "item=270170&bonus=12854",
-              "name": "Vexhul's Everflowing Gland",
+              "itemId": 273649,
+              "wowheadParams": "item=273649&bonus=12854",
+              "name": "Stormbound Emblem of Dazar",
               "quality": 4,
-              "icon": "inv_11_0_misc_organmass_color3"
+              "icon": "inv_7_0raid_necklace_14a"
             },
             {
               "itemId": 270168,
@@ -26656,11 +26656,11 @@
           "category": "Runner Up Active",
           "items": [
             {
-              "itemId": 273649,
-              "wowheadParams": "item=273649&bonus=12854",
-              "name": "Stormbound Emblem of Dazar",
+              "itemId": 270170,
+              "wowheadParams": "item=270170&bonus=12854",
+              "name": "Vexhul's Everflowing Gland",
               "quality": 4,
-              "icon": "inv_7_0raid_necklace_14a"
+              "icon": "inv_11_0_misc_organmass_color3"
             },
             {
               "itemId": 273796,
@@ -26673,7 +26673,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:32:11.875Z",
+      "scrapedAt": "2026-09-02T08:54:33.666Z",
       "items": [
         {
           "slot": "Helm",
@@ -26966,13 +26966,13 @@
           "slotFr": "Bijou",
           "align": "right",
           "empty": false,
-          "itemId": 270170,
+          "itemId": 273649,
           "originalItemId": null,
-          "wowheadParams": "item=270170&bonus=12854",
-          "name": "Vexhul's Everflowing Gland",
+          "wowheadParams": "item=273649&bonus=12854",
+          "name": "Stormbound Emblem of Dazar",
           "quality": 4,
-          "icon": "inv_11_0_misc_organmass_color3",
-          "source": "Twin Fangs",
+          "icon": "inv_7_0raid_necklace_14a",
+          "source": "King's Rest",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -28391,7 +28391,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:32:22.882Z",
+      "scrapedAt": "2026-09-02T08:54:43.535Z",
       "items": [
         {
           "slot": "Helm",
@@ -29976,7 +29976,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:31:15.579Z",
+      "scrapedAt": "2026-09-02T08:53:38.797Z",
       "items": [
         {
           "slot": "Helm",
@@ -31578,7 +31578,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:30:45.013Z",
+      "scrapedAt": "2026-09-02T08:53:05.550Z",
       "items": [
         {
           "slot": "Helm",
@@ -33197,7 +33197,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:30:59.612Z",
+      "scrapedAt": "2026-09-02T08:53:23.628Z",
       "items": [
         {
           "slot": "Helm",
@@ -34862,7 +34862,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:32:02.042Z",
+      "scrapedAt": "2026-09-02T08:54:23.586Z",
       "items": [
         {
           "slot": "Helm",
@@ -36552,7 +36552,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:30:34.568Z",
+      "scrapedAt": "2026-09-02T08:52:56.090Z",
       "items": [
         {
           "slot": "Helm",
@@ -38242,7 +38242,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:31:45.351Z",
+      "scrapedAt": "2026-09-02T08:54:08.462Z",
       "items": [
         {
           "slot": "Helm",
@@ -39902,7 +39902,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-02T07:49:22.190Z",
+      "scrapedAt": "2026-09-02T08:54:38.609Z",
       "items": [
         {
           "slot": "Helm",
@@ -41511,7 +41511,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-01T09:31:05.288Z",
+      "scrapedAt": "2026-09-02T08:53:28.767Z",
       "items": [
         {
           "slot": "Helm",
@@ -43107,7 +43107,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-02T01:03:38.228Z",
+      "scrapedAt": "2026-09-02T08:53:13.986Z",
       "items": [
         {
           "slot": "Helm",
@@ -43493,5 +43493,5 @@
       ]
     }
   },
-  "updatedAt": "2026-09-02T07:49:22.198Z"
+  "updatedAt": "2026-09-02T08:54:43.545Z"
 }
