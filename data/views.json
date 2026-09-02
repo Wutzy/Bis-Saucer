@@ -2,8 +2,8 @@
   "version": 1,
   "specs": {
     "mage-fire": {
-      "count": 8,
-      "lastAt": "2026-09-01T10:28:09.391Z"
+      "count": 10,
+      "lastAt": "2026-09-02T06:44:44.327Z"
     },
     "priest-discipline": {
       "count": 2,
@@ -22,16 +22,16 @@
       "lastAt": "2026-09-01T10:19:21.902Z"
     },
     "warlock-affliction": {
-      "count": 1,
-      "lastAt": "2026-08-30T10:42:44.285Z"
+      "count": 3,
+      "lastAt": "2026-09-02T07:47:53.476Z"
     },
     "death-knight-blood": {
       "count": 2,
       "lastAt": "2026-09-01T10:36:45.641Z"
     },
     "shaman-restoration": {
-      "count": 1,
-      "lastAt": "2026-08-30T17:35:35.969Z"
+      "count": 2,
+      "lastAt": "2026-09-02T00:54:13.004Z"
     },
     "shaman-enhancement": {
       "count": 2,
@@ -52,7 +52,19 @@
     "hunter-marksmanship": {
       "count": 1,
       "lastAt": "2026-09-01T10:22:27.960Z"
+    },
+    "evoker-preservation": {
+      "count": 2,
+      "lastAt": "2026-09-02T01:05:31.807Z"
+    },
+    "paladin-holy": {
+      "count": 1,
+      "lastAt": "2026-09-02T01:05:21.949Z"
+    },
+    "warlock-demonology": {
+      "count": 3,
+      "lastAt": "2026-09-02T07:49:18.357Z"
     }
   },
-  "updatedAt": "2026-09-01T10:36:45.641Z"
+  "updatedAt": "2026-09-02T07:49:18.357Z"
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T12:20:51.936Z",
+  "updatedAt": "2026-09-01T12:58:39.111Z",
   "members": [
     {
       "n": 1,
@@ -188,7 +188,7 @@
       "n": 21,
       "name": "Dansenuit",
       "class": "druid",
-      "spec": "feral",
+      "spec": "balance",
       "raid": true,
       "id": "dansenuit",
       "trial": true

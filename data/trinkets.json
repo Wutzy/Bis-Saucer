@@ -8337,7 +8337,7 @@
               "itemId": 270168,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 205296
+              "dps": 212066
             },
             {
               "rank": 2,
@@ -8346,34 +8346,34 @@
               "itemId": 273796,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 204261
+              "dps": 211419
             },
             {
               "rank": 3,
-              "name": "Hex Lord's Dooming Idol",
-              "nameFr": "Idole funeste du seigneur des maléfices",
-              "itemId": 270169,
-              "source": "Raid",
-              "ilvl": 344,
-              "dps": 204022
-            },
-            {
-              "rank": 4,
-              "name": "Vexhul's Everflowing Gland",
-              "nameFr": "Glande ruisselante de Vexhul",
-              "itemId": 270170,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 203896
-            },
-            {
-              "rank": 5,
               "name": "Wavecaller's Seastone",
               "nameFr": "Pierre marine de Mande-vagues",
               "itemId": 270167,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 203624
+              "dps": 211168
+            },
+            {
+              "rank": 4,
+              "name": "Hex Lord's Dooming Idol",
+              "nameFr": "Idole funeste du seigneur des maléfices",
+              "itemId": 270169,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 211076
+            },
+            {
+              "rank": 5,
+              "name": "Vexhul's Everflowing Gland",
+              "nameFr": "Glande ruisselante de Vexhul",
+              "itemId": 270170,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 211024
             },
             {
               "rank": 6,
@@ -8382,16 +8382,16 @@
               "itemId": 250224,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 203425
+              "dps": 210473
             },
             {
               "rank": 7,
-              "name": "Gebbo's Bottomless Bag",
-              "nameFr": "Sac sans fond de Gebbo",
-              "itemId": 270164,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 203158
+              "name": "Magister's Alchemist Stone",
+              "nameFr": "Pierre d’alchimiste de magistère",
+              "itemId": 241340,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 210436
             },
             {
               "rank": 8,
@@ -8400,16 +8400,16 @@
               "itemId": 250214,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 203135
+              "dps": 210423
             },
             {
               "rank": 9,
-              "name": "Magister's Alchemist Stone",
-              "nameFr": "Pierre d’alchimiste de magistère",
-              "itemId": 241340,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 203092
+              "name": "Gebbo's Bottomless Bag",
+              "nameFr": "Sac sans fond de Gebbo",
+              "itemId": 270164,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 210375
             },
             {
               "rank": 10,
@@ -8418,70 +8418,70 @@
               "itemId": 246307,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 203085
+              "dps": 210249
             },
             {
               "rank": 11,
-              "name": "Darkmoon Dominion: Hunt",
-              "nameFr": "Domination de Sombrelune : Chasse",
-              "itemId": 246304,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 202845
-            },
-            {
-              "rank": 12,
-              "name": "Sapling of the Dawnroot",
-              "nameFr": "Arbrisseau d’Auberacine",
-              "itemId": 250259,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 202607
-            },
-            {
-              "rank": 13,
               "name": "Stormbound Emblem of Dazar",
               "nameFr": "Emblème de Dazar tempétueux",
               "itemId": 273649,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 202517
+              "dps": 209880
+            },
+            {
+              "rank": 12,
+              "name": "Darkmoon Dominion: Hunt",
+              "nameFr": "Domination de Sombrelune : Chasse",
+              "itemId": 246304,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 209841
+            },
+            {
+              "rank": 13,
+              "name": "Sapling of the Dawnroot",
+              "nameFr": "Arbrisseau d’Auberacine",
+              "itemId": 250259,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 209679
             },
             {
               "rank": 14,
-              "name": "Fang of Umbral Malignance",
-              "nameFr": "Crochet de malveillance ombreuse",
-              "itemId": 270161,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 202443
-            },
-            {
-              "rank": 15,
-              "name": "Knot of Writhing Serpents",
-              "nameFr": "Nœud de serpents tortueux",
-              "itemId": 273794,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 202283
-            },
-            {
-              "rank": 16,
-              "name": "Thalassian Competitor's Insignia of Alacrity",
-              "nameFr": "Insigne d’empressement de compétition thalassienne",
-              "itemId": 245752,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 202187
-            },
-            {
-              "rank": 17,
               "name": "Vaelgor's Final Stare",
               "nameFr": "Ultime regard de Vaelgor",
               "itemId": 249346,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 202154
+              "dps": 209398
+            },
+            {
+              "rank": 15,
+              "name": "Fang of Umbral Malignance",
+              "nameFr": "Crochet de malveillance ombreuse",
+              "itemId": 270161,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 209373
+            },
+            {
+              "rank": 16,
+              "name": "Knot of Writhing Serpents",
+              "nameFr": "Nœud de serpents tortueux",
+              "itemId": 273794,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 209333
+            },
+            {
+              "rank": 17,
+              "name": "Thalassian Competitor's Insignia of Alacrity",
+              "nameFr": "Insigne d’empressement de compétition thalassienne",
+              "itemId": 245752,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 209308
             },
             {
               "rank": 18,
@@ -8490,7 +8490,7 @@
               "itemId": 246305,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 201514
+              "dps": 208772
             },
             {
               "rank": 19,
@@ -8499,7 +8499,7 @@
               "itemId": 250144,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 201392
+              "dps": 208657
             },
             {
               "rank": 20,
@@ -8508,70 +8508,70 @@
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 201355
+              "dps": 208549
             },
             {
               "rank": 21,
-              "name": "Ruby Whelp Shell [St]",
-              "nameFr": "Coquille de Dragonnet rubis [St]",
-              "itemId": 193757,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 200906
-            },
-            {
-              "rank": 22,
               "name": "Locus-Walker's Ribbon",
               "nameFr": "Ruban de l’Arpenteur des ombres",
               "itemId": 249809,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 200885
+              "dps": 208130
             },
             {
-              "rank": 23,
-              "name": "Darkmoon Dominion: Rot",
-              "nameFr": "Domination de Sombrelune : Putréfaction",
-              "itemId": 246306,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 200663
-            },
-            {
-              "rank": 24,
-              "name": "Ruby Whelp Shell [Crit]",
-              "nameFr": "Coquille de Dragonnet rubis [Crit]",
+              "rank": 22,
+              "name": "Ruby Whelp Shell [St]",
+              "nameFr": "Coquille de Dragonnet rubis [St]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 200649
+              "dps": 208109
             },
             {
-              "rank": 25,
+              "rank": 23,
               "name": "Ruby Whelp Shell [Aoe]",
               "nameFr": "Coquille de Dragonnet rubis [Aoe]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 200618
+              "dps": 207936
             },
             {
-              "rank": 26,
+              "rank": 24,
               "name": "Venomous Gladiator's Insignia of Alacrity",
               "nameFr": "Insigne d’empressement du gladiateur venimeux",
               "itemId": 270603,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 200572
+              "dps": 207880
+            },
+            {
+              "rank": 25,
+              "name": "Darkmoon Dominion: Rot",
+              "nameFr": "Domination de Sombrelune : Putréfaction",
+              "itemId": 246306,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 207763
+            },
+            {
+              "rank": 26,
+              "name": "Ruby Whelp Shell [Crit]",
+              "nameFr": "Coquille de Dragonnet rubis [Crit]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 207441
             },
             {
               "rank": 27,
-              "name": "Venomous Gladiator's Badge of Ferocity",
-              "nameFr": "Écusson de férocité du gladiateur venimeux",
-              "itemId": 270602,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 199887
+              "name": "Shadow of the Empyrean Requiem",
+              "nameFr": "Ombre du requiem empyréen",
+              "itemId": 249810,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 207036
             },
             {
               "rank": 28,
@@ -8580,34 +8580,34 @@
               "itemId": 250215,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 199864
+              "dps": 206909
             },
             {
               "rank": 29,
-              "name": "Shadow of the Empyrean Requiem",
-              "nameFr": "Ombre du requiem empyréen",
-              "itemId": 249810,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 199700
+              "name": "Venomous Gladiator's Badge of Ferocity",
+              "nameFr": "Écusson de férocité du gladiateur venimeux",
+              "itemId": 270602,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 206804
             },
             {
               "rank": 30,
-              "name": "Heart of Wind",
-              "nameFr": "Cœur du vent",
-              "itemId": 250256,
-              "source": "Dungeon",
-              "ilvl": 298,
-              "dps": 199440
-            },
-            {
-              "rank": 31,
               "name": "Gaze of the Alnseer",
               "nameFr": "Regard de prophète d’Aln",
               "itemId": 249343,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 199232
+              "dps": 206505
+            },
+            {
+              "rank": 31,
+              "name": "Heart of Wind",
+              "nameFr": "Cœur du vent",
+              "itemId": 250256,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 206500
             },
             {
               "rank": 32,
@@ -8616,79 +8616,79 @@
               "itemId": 250223,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 199130
+              "dps": 206068
             },
             {
               "rank": 33,
-              "name": "Unstable Felheart Crystal",
-              "nameFr": "Cristal de gangrecœur instable",
-              "itemId": 250255,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 198803
-            },
-            {
-              "rank": 34,
-              "name": "Mycolic Medicine",
-              "nameFr": "Remède mycolique",
-              "itemId": 250248,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 198798
-            },
-            {
-              "rank": 35,
-              "name": "Seed of Radiant Hope",
-              "nameFr": "Graine d’espoir radieux",
-              "itemId": 250254,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 198785
-            },
-            {
-              "rank": 36,
-              "name": "Sethraliss' Defiled Relic",
-              "nameFr": "Relique profanée de Sephraliss",
-              "itemId": 158368,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 198679
-            },
-            {
-              "rank": 37,
               "name": "Soulcoiler Ritual Vessel",
               "nameFr": "Réceptacle rituel de l’Entortillâme",
               "itemId": 270162,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 198571
+              "dps": 205773
+            },
+            {
+              "rank": 34,
+              "name": "Sethraliss' Defiled Relic",
+              "nameFr": "Relique profanée de Sephraliss",
+              "itemId": 158368,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 205765
+            },
+            {
+              "rank": 35,
+              "name": "Unstable Felheart Crystal",
+              "nameFr": "Cristal de gangrecœur instable",
+              "itemId": 250255,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 205714
+            },
+            {
+              "rank": 36,
+              "name": "Mycolic Medicine",
+              "nameFr": "Remède mycolique",
+              "itemId": 250248,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 205699
+            },
+            {
+              "rank": 37,
+              "name": "Seed of Radiant Hope",
+              "nameFr": "Graine d’espoir radieux",
+              "itemId": 250254,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 205410
             },
             {
               "rank": 38,
-              "name": "Reality Breacher",
-              "nameFr": "Disrupteur de réalités",
-              "itemId": 151310,
-              "source": "Dungeon",
-              "ilvl": 298,
-              "dps": 197209
-            },
-            {
-              "rank": 39,
-              "name": "Venomous Gladiator's Sigil of Adaptation",
-              "nameFr": "Cachet d’adaptation du gladiateur venimeux",
-              "itemId": 270604,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 197177
-            },
-            {
-              "rank": 40,
               "name": "Eye of the Drowning Void",
               "nameFr": "Œil du Vide submergeant",
               "itemId": 250257,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 197176
+              "dps": 204184
+            },
+            {
+              "rank": 39,
+              "name": "Wraps of Cosmic Madness",
+              "nameFr": "Bandelettes de folie cosmique",
+              "itemId": 249340,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 204179
+            },
+            {
+              "rank": 40,
+              "name": "Venomous Gladiator's Sigil of Adaptation",
+              "nameFr": "Cachet d’adaptation du gladiateur venimeux",
+              "itemId": 270604,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 204043
             },
             {
               "rank": 41,
@@ -8697,16 +8697,16 @@
               "itemId": 270606,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 197142
+              "dps": 204042
             },
             {
               "rank": 42,
-              "name": "Wraps of Cosmic Madness",
-              "nameFr": "Bandelettes de folie cosmique",
-              "itemId": 249340,
-              "source": "Raid",
+              "name": "Reality Breacher",
+              "nameFr": "Disrupteur de réalités",
+              "itemId": 151310,
+              "source": "Dungeon",
               "ilvl": 298,
-              "dps": 197112
+              "dps": 204015
             },
             {
               "rank": 43,
@@ -8715,7 +8715,7 @@
               "itemId": 270605,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 196942
+              "dps": 203952
             },
             {
               "rank": 44,
@@ -8724,7 +8724,7 @@
               "itemId": 249808,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 195834
+              "dps": 202813
             },
             {
               "rank": 45,
@@ -8733,7 +8733,7 @@
               "itemId": 50259,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 195814
+              "dps": 202691
             },
             {
               "rank": 46,
@@ -8742,7 +8742,7 @@
               "itemId": 250258,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 195313
+              "dps": 202363
             },
             {
               "rank": 47,
@@ -8751,25 +8751,25 @@
               "itemId": 270174,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 192961
+              "dps": 199699
             },
             {
               "rank": 48,
-              "name": "Preternatural Antivenom",
-              "nameFr": "Antivenin surnaturel",
-              "itemId": 270171,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 190786
-            },
-            {
-              "rank": 49,
               "name": "Voracious Heart of Ula'tek",
               "nameFr": "Cœur avide d’Ula’tek",
               "itemId": 270175,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 190711
+              "dps": 197424
+            },
+            {
+              "rank": 49,
+              "name": "Preternatural Antivenom",
+              "nameFr": "Antivenin surnaturel",
+              "itemId": 270171,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 197246
             },
             {
               "rank": 50,
@@ -8778,7 +8778,7 @@
               "itemId": 250229,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 190551
+              "dps": 197214
             },
             {
               "rank": 51,
@@ -8787,7 +8787,7 @@
               "itemId": 249339,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 190221
+              "dps": 196975
             },
             {
               "rank": 52,
@@ -8796,14 +8796,14 @@
               "itemId": 250244,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 188584
+              "dps": 195403
             }
           ],
-          "baseline": 188592,
+          "baseline": 195302,
           "fightStyle": "castingpatchwerk",
           "iterations": "60000",
-          "simc": "bc9858b",
-          "simulatedAt": "2026-08-29 17:23"
+          "simc": "f869791",
+          "simulatedAt": "2026-09-02 03:03"
         },
         "3": {
           "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk3/mage/fire",
@@ -8816,7 +8816,7 @@
               "itemId": 273796,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 363420
+              "dps": 382673
             },
             {
               "rank": 2,
@@ -8825,25 +8825,25 @@
               "itemId": 270169,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 362350
+              "dps": 381447
             },
             {
               "rank": 3,
-              "name": "Lightspire Core",
-              "nameFr": "Cœur de flèche-lumineuse",
-              "itemId": 250214,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 361873
-            },
-            {
-              "rank": 4,
               "name": "Wavecaller's Seastone",
               "nameFr": "Pierre marine de Mande-vagues",
               "itemId": 270167,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 361670
+              "dps": 380763
+            },
+            {
+              "rank": 4,
+              "name": "Lightspire Core",
+              "nameFr": "Cœur de flèche-lumineuse",
+              "itemId": 250214,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 380492
             },
             {
               "rank": 5,
@@ -8852,7 +8852,7 @@
               "itemId": 270164,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 361375
+              "dps": 379842
             },
             {
               "rank": 6,
@@ -8861,43 +8861,43 @@
               "itemId": 241340,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 360773
+              "dps": 379714
             },
             {
               "rank": 7,
-              "name": "Stormbound Emblem of Dazar",
-              "nameFr": "Emblème de Dazar tempétueux",
-              "itemId": 273649,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 360749
-            },
-            {
-              "rank": 8,
               "name": "Darkmoon Dominion: Hunt",
               "nameFr": "Domination de Sombrelune : Chasse",
               "itemId": 246304,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 360665
+              "dps": 379665
             },
             {
-              "rank": 9,
+              "rank": 8,
               "name": "Darkmoon Dominion: Void",
               "nameFr": "Domination de Sombrelune : Vide",
               "itemId": 246307,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 360633
+              "dps": 379570
             },
             {
-              "rank": 10,
+              "rank": 9,
               "name": "Mindpiercer's Sigil",
               "nameFr": "Cachet de tranche-esprit",
               "itemId": 250224,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 360529
+              "dps": 379027
+            },
+            {
+              "rank": 10,
+              "name": "Stormbound Emblem of Dazar",
+              "nameFr": "Emblème de Dazar tempétueux",
+              "itemId": 273649,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 378944
             },
             {
               "rank": 11,
@@ -8906,7 +8906,7 @@
               "itemId": 249346,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 359821
+              "dps": 378700
             },
             {
               "rank": 12,
@@ -8915,7 +8915,7 @@
               "itemId": 270168,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 359711
+              "dps": 377351
             },
             {
               "rank": 13,
@@ -8924,7 +8924,7 @@
               "itemId": 245752,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 358990
+              "dps": 377272
             },
             {
               "rank": 14,
@@ -8933,7 +8933,7 @@
               "itemId": 270161,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 358685
+              "dps": 376973
             },
             {
               "rank": 15,
@@ -8942,7 +8942,7 @@
               "itemId": 246305,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 358309
+              "dps": 376965
             },
             {
               "rank": 16,
@@ -8951,7 +8951,7 @@
               "itemId": 250144,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 358220
+              "dps": 376527
             },
             {
               "rank": 17,
@@ -8960,34 +8960,34 @@
               "itemId": 270170,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 357823
+              "dps": 376471
             },
             {
               "rank": 18,
-              "name": "Knot of Writhing Serpents",
-              "nameFr": "Nœud de serpents tortueux",
-              "itemId": 273794,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 357450
-            },
-            {
-              "rank": 19,
-              "name": "Ruby Whelp Shell [Haste]",
-              "nameFr": "Coquille de Dragonnet rubis [Haste]",
-              "itemId": 193757,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 357267
-            },
-            {
-              "rank": 20,
               "name": "Locus-Walker's Ribbon",
               "nameFr": "Ruban de l’Arpenteur des ombres",
               "itemId": 249809,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 357209
+              "dps": 376375
+            },
+            {
+              "rank": 19,
+              "name": "Knot of Writhing Serpents",
+              "nameFr": "Nœud de serpents tortueux",
+              "itemId": 273794,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 376211
+            },
+            {
+              "rank": 20,
+              "name": "Ruby Whelp Shell [Haste]",
+              "nameFr": "Coquille de Dragonnet rubis [Haste]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 375822
             },
             {
               "rank": 21,
@@ -8996,7 +8996,7 @@
               "itemId": 250259,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 357189
+              "dps": 375341
             },
             {
               "rank": 22,
@@ -9005,79 +9005,79 @@
               "itemId": 270602,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 356904
+              "dps": 375248
             },
             {
               "rank": 23,
-              "name": "Ruby Whelp Shell [Aoe]",
-              "nameFr": "Coquille de Dragonnet rubis [Aoe]",
-              "itemId": 193757,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 355950
-            },
-            {
-              "rank": 24,
-              "name": "Ruby Whelp Shell [Crit]",
-              "nameFr": "Coquille de Dragonnet rubis [Crit]",
-              "itemId": 193757,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 355763
-            },
-            {
-              "rank": 25,
-              "name": "Ruby Whelp Shell [St]",
-              "nameFr": "Coquille de Dragonnet rubis [St]",
-              "itemId": 193757,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 355672
-            },
-            {
-              "rank": 26,
               "name": "Venomous Gladiator's Insignia of Alacrity",
               "nameFr": "Insigne d’empressement du gladiateur venimeux",
               "itemId": 270603,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 355621
+              "dps": 374669
+            },
+            {
+              "rank": 24,
+              "name": "Ruby Whelp Shell [Aoe]",
+              "nameFr": "Coquille de Dragonnet rubis [Aoe]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 374480
+            },
+            {
+              "rank": 25,
+              "name": "Ruby Whelp Shell [Crit]",
+              "nameFr": "Coquille de Dragonnet rubis [Crit]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 374463
+            },
+            {
+              "rank": 26,
+              "name": "Ruby Whelp Shell [St]",
+              "nameFr": "Coquille de Dragonnet rubis [St]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 374168
             },
             {
               "rank": 27,
-              "name": "Shadow of the Empyrean Requiem",
-              "nameFr": "Ombre du requiem empyréen",
-              "itemId": 249810,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 354994
-            },
-            {
-              "rank": 28,
               "name": "Freightrunner's Flask",
               "nameFr": "Flasque de cargaison",
               "itemId": 250215,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 354872
+              "dps": 373969
             },
             {
-              "rank": 29,
-              "name": "Gaze of the Alnseer",
-              "nameFr": "Regard de prophète d’Aln",
-              "itemId": 249343,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 354599
-            },
-            {
-              "rank": 30,
+              "rank": 28,
               "name": "Darkmoon Dominion: Rot",
               "nameFr": "Domination de Sombrelune : Putréfaction",
               "itemId": 246306,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 354320
+              "dps": 373540
+            },
+            {
+              "rank": 29,
+              "name": "Shadow of the Empyrean Requiem",
+              "nameFr": "Ombre du requiem empyréen",
+              "itemId": 249810,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 373449
+            },
+            {
+              "rank": 30,
+              "name": "Gaze of the Alnseer",
+              "nameFr": "Regard de prophète d’Aln",
+              "itemId": 249343,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 372790
             },
             {
               "rank": 31,
@@ -9086,16 +9086,16 @@
               "itemId": 250256,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 353621
+              "dps": 372274
             },
             {
               "rank": 32,
-              "name": "Soulcoiler Ritual Vessel",
-              "nameFr": "Réceptacle rituel de l’Entortillâme",
-              "itemId": 270162,
-              "source": "Raid",
+              "name": "Sethraliss' Defiled Relic",
+              "nameFr": "Relique profanée de Sephraliss",
+              "itemId": 158368,
+              "source": "Dungeon",
               "ilvl": 334,
-              "dps": 352950
+              "dps": 371533
             },
             {
               "rank": 33,
@@ -9104,7 +9104,7 @@
               "itemId": 250255,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 352899
+              "dps": 371482
             },
             {
               "rank": 34,
@@ -9113,25 +9113,25 @@
               "itemId": 250254,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 352889
+              "dps": 371399
             },
             {
               "rank": 35,
+              "name": "Soulcoiler Ritual Vessel",
+              "nameFr": "Réceptacle rituel de l’Entortillâme",
+              "itemId": 270162,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 371357
+            },
+            {
+              "rank": 36,
               "name": "Mycolic Medicine",
               "nameFr": "Remède mycolique",
               "itemId": 250248,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 352528
-            },
-            {
-              "rank": 36,
-              "name": "Sethraliss' Defiled Relic",
-              "nameFr": "Relique profanée de Sephraliss",
-              "itemId": 158368,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 352456
+              "dps": 371246
             },
             {
               "rank": 37,
@@ -9140,7 +9140,7 @@
               "itemId": 151310,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 351806
+              "dps": 369816
             },
             {
               "rank": 38,
@@ -9149,7 +9149,7 @@
               "itemId": 250223,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 351644
+              "dps": 369409
             },
             {
               "rank": 39,
@@ -9158,25 +9158,25 @@
               "itemId": 270604,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 350198
+              "dps": 368604
             },
             {
               "rank": 40,
-              "name": "Venomous Gladiator's Medallion",
-              "nameFr": "Médaillon du gladiateur venimeux",
-              "itemId": 270605,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 350134
-            },
-            {
-              "rank": 41,
               "name": "Venomous Gladiator's Emblem",
               "nameFr": "Emblème du gladiateur venimeux",
               "itemId": 270606,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 349871
+              "dps": 368336
+            },
+            {
+              "rank": 41,
+              "name": "Venomous Gladiator's Medallion",
+              "nameFr": "Médaillon du gladiateur venimeux",
+              "itemId": 270605,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 368316
             },
             {
               "rank": 42,
@@ -9185,7 +9185,7 @@
               "itemId": 250257,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 349850
+              "dps": 367886
             },
             {
               "rank": 43,
@@ -9194,25 +9194,25 @@
               "itemId": 249340,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 349803
+              "dps": 367831
             },
             {
               "rank": 44,
-              "name": "Litany of Lightblind Wrath",
-              "nameFr": "Litanie de courroux lumaveuglé",
-              "itemId": 249808,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 347850
-            },
-            {
-              "rank": 45,
               "name": "Nevermelting Ice Crystal",
               "nameFr": "Cristal de glace perpétuelle",
               "itemId": 50259,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 347773
+              "dps": 366209
+            },
+            {
+              "rank": 45,
+              "name": "Litany of Lightblind Wrath",
+              "nameFr": "Litanie de courroux lumaveuglé",
+              "itemId": 249808,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 366016
             },
             {
               "rank": 46,
@@ -9221,7 +9221,7 @@
               "itemId": 250258,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 347165
+              "dps": 365292
             },
             {
               "rank": 47,
@@ -9230,7 +9230,7 @@
               "itemId": 270174,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 343541
+              "dps": 361647
             },
             {
               "rank": 48,
@@ -9239,7 +9239,7 @@
               "itemId": 270175,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 338925
+              "dps": 356568
             },
             {
               "rank": 49,
@@ -9248,7 +9248,7 @@
               "itemId": 270171,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 338745
+              "dps": 356075
             },
             {
               "rank": 50,
@@ -9257,7 +9257,7 @@
               "itemId": 250229,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 338643
+              "dps": 356229
             },
             {
               "rank": 51,
@@ -9266,7 +9266,7 @@
               "itemId": 249339,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 338295
+              "dps": 355707
             },
             {
               "rank": 52,
@@ -9275,14 +9275,14 @@
               "itemId": 250244,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 335039
+              "dps": 352811
             }
           ],
-          "baseline": 335314,
+          "baseline": 352993,
           "fightStyle": "castingpatchwerk3",
           "iterations": "60000",
-          "simc": "bc9858b",
-          "simulatedAt": "2026-08-29 17:18"
+          "simc": "f869791",
+          "simulatedAt": "2026-09-02 03:03"
         },
         "5": {
           "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk5/mage/fire",
@@ -9295,7 +9295,7 @@
               "itemId": 273796,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 569299
+              "dps": 601008
             },
             {
               "rank": 2,
@@ -9304,7 +9304,7 @@
               "itemId": 270169,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 569178
+              "dps": 600059
             },
             {
               "rank": 3,
@@ -9313,43 +9313,43 @@
               "itemId": 270167,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 567319
+              "dps": 597958
             },
             {
               "rank": 4,
-              "name": "Stormbound Emblem of Dazar",
-              "nameFr": "Emblème de Dazar tempétueux",
-              "itemId": 273649,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 566037
-            },
-            {
-              "rank": 5,
               "name": "Magister's Alchemist Stone",
               "nameFr": "Pierre d’alchimiste de magistère",
               "itemId": 241340,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 565804
+              "dps": 597134
             },
             {
-              "rank": 6,
-              "name": "Darkmoon Dominion: Void",
-              "nameFr": "Domination de Sombrelune : Vide",
-              "itemId": 246307,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 565530
-            },
-            {
-              "rank": 7,
+              "rank": 5,
               "name": "Gebbo's Bottomless Bag",
               "nameFr": "Sac sans fond de Gebbo",
               "itemId": 270164,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 565356
+              "dps": 596261
+            },
+            {
+              "rank": 6,
+              "name": "Stormbound Emblem of Dazar",
+              "nameFr": "Emblème de Dazar tempétueux",
+              "itemId": 273649,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 595998
+            },
+            {
+              "rank": 7,
+              "name": "Darkmoon Dominion: Void",
+              "nameFr": "Domination de Sombrelune : Vide",
+              "itemId": 246307,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 595912
             },
             {
               "rank": 8,
@@ -9358,7 +9358,7 @@
               "itemId": 250214,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 564750
+              "dps": 595294
             },
             {
               "rank": 9,
@@ -9367,7 +9367,7 @@
               "itemId": 246304,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 564345
+              "dps": 595120
             },
             {
               "rank": 10,
@@ -9376,7 +9376,7 @@
               "itemId": 250224,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 563855
+              "dps": 593686
             },
             {
               "rank": 11,
@@ -9385,25 +9385,25 @@
               "itemId": 245752,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 562614
+              "dps": 593361
             },
             {
               "rank": 12,
-              "name": "Darkmoon Dominion: Blood",
-              "nameFr": "Domination de Sombrelune : Sang",
-              "itemId": 246305,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 562382
-            },
-            {
-              "rank": 13,
               "name": "Emberwing Feather",
               "nameFr": "Plume de braisaile",
               "itemId": 250144,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 562258
+              "dps": 592334
+            },
+            {
+              "rank": 13,
+              "name": "Darkmoon Dominion: Blood",
+              "nameFr": "Domination de Sombrelune : Sang",
+              "itemId": 246305,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 592228
             },
             {
               "rank": 14,
@@ -9412,7 +9412,7 @@
               "itemId": 249346,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 561282
+              "dps": 592049
             },
             {
               "rank": 15,
@@ -9421,7 +9421,7 @@
               "itemId": 270602,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 560256
+              "dps": 591079
             },
             {
               "rank": 16,
@@ -9430,124 +9430,124 @@
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 559911
+              "dps": 590607
             },
             {
               "rank": 17,
-              "name": "Locus-Walker's Ribbon",
-              "nameFr": "Ruban de l’Arpenteur des ombres",
-              "itemId": 249809,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 559122
-            },
-            {
-              "rank": 18,
-              "name": "Venomous Gladiator's Insignia of Alacrity",
-              "nameFr": "Insigne d’empressement du gladiateur venimeux",
-              "itemId": 270603,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 559043
-            },
-            {
-              "rank": 19,
-              "name": "Knot of Writhing Serpents",
-              "nameFr": "Nœud de serpents tortueux",
-              "itemId": 273794,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 559010
-            },
-            {
-              "rank": 20,
               "name": "Fang of Umbral Malignance",
               "nameFr": "Crochet de malveillance ombreuse",
               "itemId": 270161,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 558981
+              "dps": 589464
             },
             {
-              "rank": 21,
+              "rank": 18,
+              "name": "Knot of Writhing Serpents",
+              "nameFr": "Nœud de serpents tortueux",
+              "itemId": 273794,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 589300
+            },
+            {
+              "rank": 19,
+              "name": "Locus-Walker's Ribbon",
+              "nameFr": "Ruban de l’Arpenteur des ombres",
+              "itemId": 249809,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 589119
+            },
+            {
+              "rank": 20,
               "name": "Vexhul's Everflowing Gland",
               "nameFr": "Glande ruisselante de Vexhul",
               "itemId": 270170,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 558457
+              "dps": 588663
             },
             {
-              "rank": 22,
+              "rank": 21,
               "name": "Ruby Whelp Shell [Crit]",
               "nameFr": "Coquille de Dragonnet rubis [Crit]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 558362
+              "dps": 588655
+            },
+            {
+              "rank": 22,
+              "name": "Venomous Gladiator's Insignia of Alacrity",
+              "nameFr": "Insigne d’empressement du gladiateur venimeux",
+              "itemId": 270603,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 588563
             },
             {
               "rank": 23,
-              "name": "Sapling of the Dawnroot",
-              "nameFr": "Arbrisseau d’Auberacine",
-              "itemId": 250259,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 557817
-            },
-            {
-              "rank": 24,
               "name": "Ruby Whelp Shell [Aoe]",
               "nameFr": "Coquille de Dragonnet rubis [Aoe]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 557545
+              "dps": 588106
+            },
+            {
+              "rank": 24,
+              "name": "Sapling of the Dawnroot",
+              "nameFr": "Arbrisseau d’Auberacine",
+              "itemId": 250259,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 587961
             },
             {
               "rank": 25,
-              "name": "Ruby Whelp Shell [St]",
-              "nameFr": "Coquille de Dragonnet rubis [St]",
-              "itemId": 193757,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 557013
-            },
-            {
-              "rank": 26,
               "name": "Freightrunner's Flask",
               "nameFr": "Flasque de cargaison",
               "itemId": 250215,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 556806
+              "dps": 587627
             },
             {
-              "rank": 27,
+              "rank": 26,
               "name": "Font of Venomous Rage",
               "nameFr": "Source de rage venimeuse",
               "itemId": 270168,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 556753
+              "dps": 585861
+            },
+            {
+              "rank": 27,
+              "name": "Ruby Whelp Shell [St]",
+              "nameFr": "Coquille de Dragonnet rubis [St]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 585852
             },
             {
               "rank": 28,
-              "name": "Heart of Wind",
-              "nameFr": "Cœur du vent",
-              "itemId": 250256,
-              "source": "Dungeon",
-              "ilvl": 298,
-              "dps": 554550
-            },
-            {
-              "rank": 29,
               "name": "Darkmoon Dominion: Rot",
               "nameFr": "Domination de Sombrelune : Putréfaction",
               "itemId": 246306,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 554546
+              "dps": 585038
+            },
+            {
+              "rank": 29,
+              "name": "Heart of Wind",
+              "nameFr": "Cœur du vent",
+              "itemId": 250256,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 584916
             },
             {
               "rank": 30,
@@ -9556,25 +9556,25 @@
               "itemId": 249343,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 554350
+              "dps": 584614
             },
             {
               "rank": 31,
-              "name": "Shadow of the Empyrean Requiem",
-              "nameFr": "Ombre du requiem empyréen",
-              "itemId": 249810,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 553874
-            },
-            {
-              "rank": 32,
               "name": "Mycolic Medicine",
               "nameFr": "Remède mycolique",
               "itemId": 250248,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 553340
+              "dps": 583696
+            },
+            {
+              "rank": 32,
+              "name": "Shadow of the Empyrean Requiem",
+              "nameFr": "Ombre du requiem empyréen",
+              "itemId": 249810,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 583692
             },
             {
               "rank": 33,
@@ -9583,25 +9583,25 @@
               "itemId": 270162,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 553111
+              "dps": 583590
             },
             {
               "rank": 34,
-              "name": "Sethraliss' Defiled Relic",
-              "nameFr": "Relique profanée de Sephraliss",
-              "itemId": 158368,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 553106
-            },
-            {
-              "rank": 35,
               "name": "Unstable Felheart Crystal",
               "nameFr": "Cristal de gangrecœur instable",
               "itemId": 250255,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 553053
+              "dps": 583456
+            },
+            {
+              "rank": 35,
+              "name": "Sethraliss' Defiled Relic",
+              "nameFr": "Relique profanée de Sephraliss",
+              "itemId": 158368,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 583416
             },
             {
               "rank": 36,
@@ -9610,7 +9610,7 @@
               "itemId": 250254,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 552962
+              "dps": 583328
             },
             {
               "rank": 37,
@@ -9619,43 +9619,43 @@
               "itemId": 151310,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 551416
+              "dps": 581562
             },
             {
               "rank": 38,
-              "name": "Soulcatcher's Charm",
-              "nameFr": "Charme d’attrape-âme",
-              "itemId": 250223,
-              "source": "Dungeon",
-              "ilvl": 298,
-              "dps": 549028
-            },
-            {
-              "rank": 39,
-              "name": "Venomous Gladiator's Emblem",
-              "nameFr": "Emblème du gladiateur venimeux",
-              "itemId": 270606,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 548757
-            },
-            {
-              "rank": 40,
               "name": "Venomous Gladiator's Sigil of Adaptation",
               "nameFr": "Cachet d’adaptation du gladiateur venimeux",
               "itemId": 270604,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 548722
+              "dps": 579060
             },
             {
-              "rank": 41,
+              "rank": 39,
               "name": "Venomous Gladiator's Medallion",
               "nameFr": "Médaillon du gladiateur venimeux",
               "itemId": 270605,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 548375
+              "dps": 578988
+            },
+            {
+              "rank": 40,
+              "name": "Soulcatcher's Charm",
+              "nameFr": "Charme d’attrape-âme",
+              "itemId": 250223,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 578950
+            },
+            {
+              "rank": 41,
+              "name": "Venomous Gladiator's Emblem",
+              "nameFr": "Emblème du gladiateur venimeux",
+              "itemId": 270606,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 578944
             },
             {
               "rank": 42,
@@ -9664,7 +9664,7 @@
               "itemId": 250257,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 547862
+              "dps": 578259
             },
             {
               "rank": 43,
@@ -9673,7 +9673,7 @@
               "itemId": 249340,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 547857
+              "dps": 577415
             },
             {
               "rank": 44,
@@ -9682,7 +9682,7 @@
               "itemId": 50259,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 545531
+              "dps": 575404
             },
             {
               "rank": 45,
@@ -9691,7 +9691,7 @@
               "itemId": 249808,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 545322
+              "dps": 574866
             },
             {
               "rank": 46,
@@ -9700,7 +9700,7 @@
               "itemId": 250258,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 542911
+              "dps": 572600
             },
             {
               "rank": 47,
@@ -9709,25 +9709,25 @@
               "itemId": 270174,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 536775
+              "dps": 566293
             },
             {
               "rank": 48,
-              "name": "Preternatural Antivenom",
-              "nameFr": "Antivenin surnaturel",
-              "itemId": 270171,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 531530
-            },
-            {
-              "rank": 49,
               "name": "Voracious Heart of Ula'tek",
               "nameFr": "Cœur avide d’Ula’tek",
               "itemId": 270175,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 531515
+              "dps": 560689
+            },
+            {
+              "rank": 49,
+              "name": "Preternatural Antivenom",
+              "nameFr": "Antivenin surnaturel",
+              "itemId": 270171,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 559686
             },
             {
               "rank": 50,
@@ -9736,7 +9736,7 @@
               "itemId": 250229,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 531334
+              "dps": 560022
             },
             {
               "rank": 51,
@@ -9745,7 +9745,7 @@
               "itemId": 249339,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 530365
+              "dps": 559457
             },
             {
               "rank": 52,
@@ -9754,17 +9754,17 @@
               "itemId": 250244,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 526106
+              "dps": 554035
             }
           ],
-          "baseline": 525719,
+          "baseline": 554591,
           "fightStyle": "castingpatchwerk5",
           "iterations": "60000",
-          "simc": "bc9858b",
-          "simulatedAt": "2026-08-29 17:18"
+          "simc": "f869791",
+          "simulatedAt": "2026-09-02 03:04"
         }
       },
-      "fetchedAt": "2026-09-01T09:31:12.635Z"
+      "fetchedAt": "2026-09-02T07:22:19.331Z"
     },
     "paladin-holy": {
       "key": "paladin-holy",
@@ -26157,7 +26157,7 @@
               "itemId": 250215,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 218006
+              "dps": 217956
             },
             {
               "rank": 2,
@@ -26166,7 +26166,7 @@
               "itemId": 273796,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 217846
+              "dps": 217813
             },
             {
               "rank": 3,
@@ -26175,7 +26175,7 @@
               "itemId": 270164,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 217512
+              "dps": 217554
             },
             {
               "rank": 4,
@@ -26184,16 +26184,16 @@
               "itemId": 246305,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 217467
+              "dps": 217443
             },
             {
               "rank": 5,
-              "name": "Darkmoon Dominion: Hunt",
-              "nameFr": "Domination de Sombrelune : Chasse",
-              "itemId": 246304,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 217464
+              "name": "Stormbound Emblem of Dazar",
+              "nameFr": "Emblème de Dazar tempétueux",
+              "itemId": 273649,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 217429
             },
             {
               "rank": 6,
@@ -26202,106 +26202,106 @@
               "itemId": 270167,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 217388
+              "dps": 217424
             },
             {
               "rank": 7,
+              "name": "Darkmoon Dominion: Hunt",
+              "nameFr": "Domination de Sombrelune : Chasse",
+              "itemId": 246304,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 217244
+            },
+            {
+              "rank": 8,
               "name": "Hex Lord's Dooming Idol",
               "nameFr": "Idole funeste du seigneur des maléfices",
               "itemId": 270169,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 217012
+              "dps": 216975
             },
             {
-              "rank": 8,
+              "rank": 9,
               "name": "Font of Venomous Rage",
               "nameFr": "Source de rage venimeuse",
               "itemId": 270168,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 216762
-            },
-            {
-              "rank": 9,
-              "name": "Magister's Alchemist Stone",
-              "nameFr": "Pierre d’alchimiste de magistère",
-              "itemId": 241340,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 216466
+              "dps": 216916
             },
             {
               "rank": 10,
-              "name": "Vexhul's Everflowing Gland",
-              "nameFr": "Glande ruisselante de Vexhul",
-              "itemId": 270170,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 216366
-            },
-            {
-              "rank": 11,
               "name": "Darkmoon Dominion: Void",
               "nameFr": "Domination de Sombrelune : Vide",
               "itemId": 246307,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 216177
+              "dps": 216461
+            },
+            {
+              "rank": 11,
+              "name": "Magister's Alchemist Stone",
+              "nameFr": "Pierre d’alchimiste de magistère",
+              "itemId": 241340,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 216449
             },
             {
               "rank": 12,
+              "name": "Vexhul's Everflowing Gland",
+              "nameFr": "Glande ruisselante de Vexhul",
+              "itemId": 270170,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 216303
+            },
+            {
+              "rank": 13,
               "name": "Mindpiercer's Sigil",
               "nameFr": "Cachet de tranche-esprit",
               "itemId": 250224,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 215810
+              "dps": 215792
             },
             {
-              "rank": 13,
+              "rank": 14,
               "name": "Lightspire Core",
               "nameFr": "Cœur de flèche-lumineuse",
               "itemId": 250214,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 215663
+              "dps": 215731
             },
             {
-              "rank": 14,
+              "rank": 15,
               "name": "Thalassian Competitor's Insignia of Alacrity",
               "nameFr": "Insigne d’empressement de compétition thalassienne",
               "itemId": 245752,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 215616
+              "dps": 215693
             },
             {
-              "rank": 15,
+              "rank": 16,
               "name": "Ruby Whelp Shell [Crit]",
               "nameFr": "Coquille de Dragonnet rubis [Crit]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 215180
+              "dps": 215146
             },
             {
-              "rank": 16,
+              "rank": 17,
               "name": "Fang of Umbral Malignance",
               "nameFr": "Crochet de malveillance ombreuse",
               "itemId": 270161,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 214756
-            },
-            {
-              "rank": 17,
-              "name": "Venomous Gladiator's Badge of Ferocity",
-              "nameFr": "Écusson de férocité du gladiateur venimeux",
-              "itemId": 270602,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 214738
+              "dps": 214792
             },
             {
               "rank": 18,
@@ -26310,16 +26310,16 @@
               "itemId": 250144,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 214676
+              "dps": 214646
             },
             {
               "rank": 19,
-              "name": "Ruby Whelp Shell [Haste]",
-              "nameFr": "Coquille de Dragonnet rubis [Haste]",
-              "itemId": 193757,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 214432
+              "name": "Venomous Gladiator's Badge of Ferocity",
+              "nameFr": "Écusson de férocité du gladiateur venimeux",
+              "itemId": 270602,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 214624
             },
             {
               "rank": 20,
@@ -26328,52 +26328,52 @@
               "itemId": 273794,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 214252
+              "dps": 214565
             },
             {
               "rank": 21,
+              "name": "Ruby Whelp Shell [Haste]",
+              "nameFr": "Coquille de Dragonnet rubis [Haste]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 214541
+            },
+            {
+              "rank": 22,
               "name": "Venomous Gladiator's Insignia of Alacrity",
               "nameFr": "Insigne d’empressement du gladiateur venimeux",
               "itemId": 270603,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 214046
+              "dps": 213769
             },
             {
-              "rank": 22,
+              "rank": 23,
               "name": "Ruby Whelp Shell [St]",
               "nameFr": "Coquille de Dragonnet rubis [St]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 213492
+              "dps": 213530
             },
             {
-              "rank": 23,
+              "rank": 24,
               "name": "Locus-Walker's Ribbon",
               "nameFr": "Ruban de l’Arpenteur des ombres",
               "itemId": 249809,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 213432
+              "dps": 213433
             },
             {
-              "rank": 24,
+              "rank": 25,
               "name": "Ruby Whelp Shell [Aoe]",
               "nameFr": "Coquille de Dragonnet rubis [Aoe]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 213298
-            },
-            {
-              "rank": 25,
-              "name": "Gaze of the Alnseer",
-              "nameFr": "Regard de prophète d’Aln",
-              "itemId": 249343,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 213014
+              "dps": 213307
             },
             {
               "rank": 26,
@@ -26382,25 +26382,25 @@
               "itemId": 246306,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 212781
+              "dps": 212867
             },
             {
               "rank": 27,
+              "name": "Gaze of the Alnseer",
+              "nameFr": "Regard de prophète d’Aln",
+              "itemId": 249343,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 212752
+            },
+            {
+              "rank": 28,
               "name": "Heart of Wind",
               "nameFr": "Cœur du vent",
               "itemId": 250256,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 212698
-            },
-            {
-              "rank": 28,
-              "name": "Sapling of the Dawnroot",
-              "nameFr": "Arbrisseau d’Auberacine",
-              "itemId": 250259,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 212475
+              "dps": 212673
             },
             {
               "rank": 29,
@@ -26409,43 +26409,43 @@
               "itemId": 249346,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 212171
+              "dps": 212469
             },
             {
               "rank": 30,
+              "name": "Sapling of the Dawnroot",
+              "nameFr": "Arbrisseau d’Auberacine",
+              "itemId": 250259,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 212371
+            },
+            {
+              "rank": 31,
               "name": "Shadow of the Empyrean Requiem",
               "nameFr": "Ombre du requiem empyréen",
               "itemId": 249810,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 211860
+              "dps": 211836
             },
             {
-              "rank": 31,
+              "rank": 32,
               "name": "Unstable Felheart Crystal",
               "nameFr": "Cristal de gangrecœur instable",
               "itemId": 250255,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 211406
+              "dps": 211529
             },
             {
-              "rank": 32,
+              "rank": 33,
               "name": "Seed of Radiant Hope",
               "nameFr": "Graine d’espoir radieux",
               "itemId": 250254,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 211374
-            },
-            {
-              "rank": 33,
-              "name": "Mycolic Medicine",
-              "nameFr": "Remède mycolique",
-              "itemId": 250248,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 211240
+              "dps": 211224
             },
             {
               "rank": 34,
@@ -26454,16 +26454,16 @@
               "itemId": 158368,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 211199
+              "dps": 211219
             },
             {
               "rank": 35,
-              "name": "Litany of Lightblind Wrath",
-              "nameFr": "Litanie de courroux lumaveuglé",
-              "itemId": 249808,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 211161
+              "name": "Mycolic Medicine",
+              "nameFr": "Remède mycolique",
+              "itemId": 250248,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 211184
             },
             {
               "rank": 36,
@@ -26472,16 +26472,16 @@
               "itemId": 250223,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 211020
+              "dps": 210996
             },
             {
               "rank": 37,
-              "name": "Stormbound Emblem of Dazar",
-              "nameFr": "Emblème de Dazar tempétueux",
-              "itemId": 273649,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 210814
+              "name": "Litany of Lightblind Wrath",
+              "nameFr": "Litanie de courroux lumaveuglé",
+              "itemId": 249808,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 210993
             },
             {
               "rank": 38,
@@ -26490,25 +26490,25 @@
               "itemId": 50259,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 209733
+              "dps": 209841
             },
             {
               "rank": 39,
+              "name": "Venomous Gladiator's Sigil of Adaptation",
+              "nameFr": "Cachet d’adaptation du gladiateur venimeux",
+              "itemId": 270604,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 209696
+            },
+            {
+              "rank": 40,
               "name": "Venomous Gladiator's Emblem",
               "nameFr": "Emblème du gladiateur venimeux",
               "itemId": 270606,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 209731
-            },
-            {
-              "rank": 40,
-              "name": "Venomous Gladiator's Medallion",
-              "nameFr": "Médaillon du gladiateur venimeux",
-              "itemId": 270605,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 209710
+              "dps": 209555
             },
             {
               "rank": 41,
@@ -26517,16 +26517,16 @@
               "itemId": 151310,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 209482
+              "dps": 209520
             },
             {
               "rank": 42,
-              "name": "Venomous Gladiator's Sigil of Adaptation",
-              "nameFr": "Cachet d’adaptation du gladiateur venimeux",
-              "itemId": 270604,
+              "name": "Venomous Gladiator's Medallion",
+              "nameFr": "Médaillon du gladiateur venimeux",
+              "itemId": 270605,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 209477
+              "dps": 209363
             },
             {
               "rank": 43,
@@ -26535,7 +26535,7 @@
               "itemId": 249340,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 209153
+              "dps": 209125
             },
             {
               "rank": 44,
@@ -26544,7 +26544,7 @@
               "itemId": 270162,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 208774
+              "dps": 208852
             },
             {
               "rank": 45,
@@ -26553,7 +26553,7 @@
               "itemId": 250257,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 208441
+              "dps": 208479
             },
             {
               "rank": 46,
@@ -26562,7 +26562,7 @@
               "itemId": 249339,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 208431
+              "dps": 208361
             },
             {
               "rank": 47,
@@ -26571,34 +26571,34 @@
               "itemId": 250258,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 207390
+              "dps": 207209
             },
             {
               "rank": 48,
-              "name": "Voracious Heart of Ula'tek",
-              "nameFr": "Cœur avide d’Ula’tek",
-              "itemId": 270175,
-              "source": "Raid",
-              "ilvl": 344,
-              "dps": 206926
-            },
-            {
-              "rank": 49,
-              "name": "Preternatural Antivenom",
-              "nameFr": "Antivenin surnaturel",
-              "itemId": 270171,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 206761
-            },
-            {
-              "rank": 50,
               "name": "Idol of the War Loa",
               "nameFr": "Idole du Loa de la guerre",
               "itemId": 250229,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 206731
+              "dps": 206952
+            },
+            {
+              "rank": 49,
+              "name": "Voracious Heart of Ula'tek",
+              "nameFr": "Cœur avide d’Ula’tek",
+              "itemId": 270175,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 206920
+            },
+            {
+              "rank": 50,
+              "name": "Preternatural Antivenom",
+              "nameFr": "Antivenin surnaturel",
+              "itemId": 270171,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 206658
             },
             {
               "rank": 51,
@@ -26607,7 +26607,7 @@
               "itemId": 270174,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 204965
+              "dps": 205080
             },
             {
               "rank": 52,
@@ -26616,14 +26616,14 @@
               "itemId": 250244,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 200807
+              "dps": 200674
             }
           ],
-          "baseline": 200607,
+          "baseline": 200587,
           "fightStyle": "castingpatchwerk",
           "iterations": "60000",
-          "simc": "bc9858b",
-          "simulatedAt": "2026-08-29 17:33"
+          "simc": "f869791",
+          "simulatedAt": "2026-09-02 03:19"
         },
         "3": {
           "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk3/warlock/demonology",
@@ -26631,84 +26631,84 @@
           "trinkets": [
             {
               "rank": 1,
+              "name": "Stormbound Emblem of Dazar",
+              "nameFr": "Emblème de Dazar tempétueux",
+              "itemId": 273649,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 480330
+            },
+            {
+              "rank": 2,
               "name": "Vile Vial of Volatile Venom",
               "nameFr": "Fiole ignoble de venin volatil",
               "itemId": 273796,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 476673
+              "dps": 476456
             },
             {
-              "rank": 2,
+              "rank": 3,
               "name": "Hex Lord's Dooming Idol",
               "nameFr": "Idole funeste du seigneur des maléfices",
               "itemId": 270169,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 475734
+              "dps": 476431
             },
             {
-              "rank": 3,
+              "rank": 4,
               "name": "Freightrunner's Flask",
               "nameFr": "Flasque de cargaison",
               "itemId": 250215,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 475318
+              "dps": 476055
             },
             {
-              "rank": 4,
+              "rank": 5,
               "name": "Wavecaller's Seastone",
               "nameFr": "Pierre marine de Mande-vagues",
               "itemId": 270167,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 475158
+              "dps": 475212
             },
             {
-              "rank": 5,
+              "rank": 6,
               "name": "Gebbo's Bottomless Bag",
               "nameFr": "Sac sans fond de Gebbo",
               "itemId": 270164,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 474827
+              "dps": 475117
             },
             {
-              "rank": 6,
+              "rank": 7,
               "name": "Darkmoon Dominion: Blood",
               "nameFr": "Domination de Sombrelune : Sang",
               "itemId": 246305,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 474660
+              "dps": 474372
             },
             {
-              "rank": 7,
+              "rank": 8,
               "name": "Darkmoon Dominion: Hunt",
               "nameFr": "Domination de Sombrelune : Chasse",
               "itemId": 246304,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 474052
+              "dps": 473851
             },
             {
-              "rank": 8,
+              "rank": 9,
               "name": "Emberwing Feather",
               "nameFr": "Plume de braisaile",
               "itemId": 250144,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 473099
-            },
-            {
-              "rank": 9,
-              "name": "Darkmoon Dominion: Void",
-              "nameFr": "Domination de Sombrelune : Vide",
-              "itemId": 246307,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 472605
+              "dps": 473117
             },
             {
               "rank": 10,
@@ -26717,97 +26717,97 @@
               "itemId": 241340,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 472143
+              "dps": 472872
             },
             {
               "rank": 11,
+              "name": "Darkmoon Dominion: Void",
+              "nameFr": "Domination de Sombrelune : Vide",
+              "itemId": 246307,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 472593
+            },
+            {
+              "rank": 12,
               "name": "Thalassian Competitor's Insignia of Alacrity",
               "nameFr": "Insigne d’empressement de compétition thalassienne",
               "itemId": 245752,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 471403
+              "dps": 471482
             },
             {
-              "rank": 12,
+              "rank": 13,
               "name": "Lightspire Core",
               "nameFr": "Cœur de flèche-lumineuse",
               "itemId": 250214,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 470587
+              "dps": 470757
             },
             {
-              "rank": 13,
+              "rank": 14,
               "name": "Venomous Gladiator's Badge of Ferocity",
               "nameFr": "Écusson de férocité du gladiateur venimeux",
               "itemId": 270602,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 469155
+              "dps": 469671
             },
             {
-              "rank": 14,
+              "rank": 15,
               "name": "Mindpiercer's Sigil",
               "nameFr": "Cachet de tranche-esprit",
               "itemId": 250224,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 468521
+              "dps": 468333
             },
             {
-              "rank": 15,
+              "rank": 16,
               "name": "Venomous Gladiator's Insignia of Alacrity",
               "nameFr": "Insigne d’empressement du gladiateur venimeux",
               "itemId": 270603,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 467549
+              "dps": 467725
             },
             {
-              "rank": 16,
+              "rank": 17,
               "name": "Ruby Whelp Shell [Crit]",
               "nameFr": "Coquille de Dragonnet rubis [Crit]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 466658
+              "dps": 466815
             },
             {
-              "rank": 17,
+              "rank": 18,
               "name": "Vexhul's Everflowing Gland",
               "nameFr": "Glande ruisselante de Vexhul",
               "itemId": 270170,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 466273
+              "dps": 466201
             },
             {
-              "rank": 18,
+              "rank": 19,
               "name": "Ruby Whelp Shell [Haste]",
               "nameFr": "Coquille de Dragonnet rubis [Haste]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 466020
+              "dps": 465860
             },
             {
-              "rank": 19,
+              "rank": 20,
               "name": "Locus-Walker's Ribbon",
               "nameFr": "Ruban de l’Arpenteur des ombres",
               "itemId": 249809,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 465728
-            },
-            {
-              "rank": 20,
-              "name": "Heart of Wind",
-              "nameFr": "Cœur du vent",
-              "itemId": 250256,
-              "source": "Dungeon",
-              "ilvl": 298,
-              "dps": 465139
+              "dps": 465721
             },
             {
               "rank": 21,
@@ -26816,7 +26816,7 @@
               "itemId": 270161,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 464689
+              "dps": 465212
             },
             {
               "rank": 22,
@@ -26825,34 +26825,34 @@
               "itemId": 273794,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 464587
+              "dps": 464611
             },
             {
               "rank": 23,
+              "name": "Heart of Wind",
+              "nameFr": "Cœur du vent",
+              "itemId": 250256,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 464573
+            },
+            {
+              "rank": 24,
               "name": "Sapling of the Dawnroot",
               "nameFr": "Arbrisseau d’Auberacine",
               "itemId": 250259,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 464164
+              "dps": 464535
             },
             {
-              "rank": 24,
+              "rank": 25,
               "name": "Gaze of the Alnseer",
               "nameFr": "Regard de prophète d’Aln",
               "itemId": 249343,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 463992
-            },
-            {
-              "rank": 25,
-              "name": "Ruby Whelp Shell [Aoe]",
-              "nameFr": "Coquille de Dragonnet rubis [Aoe]",
-              "itemId": 193757,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 463351
+              "dps": 464384
             },
             {
               "rank": 26,
@@ -26861,7 +26861,7 @@
               "itemId": 249346,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 463104
+              "dps": 463008
             },
             {
               "rank": 27,
@@ -26870,79 +26870,79 @@
               "itemId": 270168,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 462754
+              "dps": 462523
             },
             {
               "rank": 28,
+              "name": "Ruby Whelp Shell [Aoe]",
+              "nameFr": "Coquille de Dragonnet rubis [Aoe]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 462411
+            },
+            {
+              "rank": 29,
               "name": "Ruby Whelp Shell [St]",
               "nameFr": "Coquille de Dragonnet rubis [St]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 462430
-            },
-            {
-              "rank": 29,
-              "name": "Darkmoon Dominion: Rot",
-              "nameFr": "Domination de Sombrelune : Putréfaction",
-              "itemId": 246306,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 461770
+              "dps": 462321
             },
             {
               "rank": 30,
-              "name": "Unstable Felheart Crystal",
-              "nameFr": "Cristal de gangrecœur instable",
-              "itemId": 250255,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 461324
-            },
-            {
-              "rank": 31,
               "name": "Shadow of the Empyrean Requiem",
               "nameFr": "Ombre du requiem empyréen",
               "itemId": 249810,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 461089
+              "dps": 461688
+            },
+            {
+              "rank": 31,
+              "name": "Darkmoon Dominion: Rot",
+              "nameFr": "Domination de Sombrelune : Putréfaction",
+              "itemId": 246306,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 461150
             },
             {
               "rank": 32,
-              "name": "Sethraliss' Defiled Relic",
-              "nameFr": "Relique profanée de Sephraliss",
-              "itemId": 158368,
+              "name": "Unstable Felheart Crystal",
+              "nameFr": "Cristal de gangrecœur instable",
+              "itemId": 250255,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 460917
+              "dps": 461089
             },
             {
               "rank": 33,
-              "name": "Mycolic Medicine",
-              "nameFr": "Remède mycolique",
-              "itemId": 250248,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 460720
-            },
-            {
-              "rank": 34,
               "name": "Seed of Radiant Hope",
               "nameFr": "Graine d’espoir radieux",
               "itemId": 250254,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 460265
+              "dps": 461030
+            },
+            {
+              "rank": 34,
+              "name": "Sethraliss' Defiled Relic",
+              "nameFr": "Relique profanée de Sephraliss",
+              "itemId": 158368,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 460919
             },
             {
               "rank": 35,
-              "name": "Stormbound Emblem of Dazar",
-              "nameFr": "Emblème de Dazar tempétueux",
-              "itemId": 273649,
+              "name": "Mycolic Medicine",
+              "nameFr": "Remède mycolique",
+              "itemId": 250248,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 460025
+              "dps": 460386
             },
             {
               "rank": 36,
@@ -26951,52 +26951,52 @@
               "itemId": 151310,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 457674
+              "dps": 457468
             },
             {
               "rank": 37,
-              "name": "Venomous Gladiator's Emblem",
-              "nameFr": "Emblème du gladiateur venimeux",
-              "itemId": 270606,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 457312
-            },
-            {
-              "rank": 38,
-              "name": "Litany of Lightblind Wrath",
-              "nameFr": "Litanie de courroux lumaveuglé",
-              "itemId": 249808,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 457232
-            },
-            {
-              "rank": 39,
-              "name": "Venomous Gladiator's Medallion",
-              "nameFr": "Médaillon du gladiateur venimeux",
-              "itemId": 270605,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 457136
-            },
-            {
-              "rank": 40,
               "name": "Soulcatcher's Charm",
               "nameFr": "Charme d’attrape-âme",
               "itemId": 250223,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 456904
+              "dps": 457178
             },
             {
-              "rank": 41,
+              "rank": 38,
               "name": "Venomous Gladiator's Sigil of Adaptation",
               "nameFr": "Cachet d’adaptation du gladiateur venimeux",
               "itemId": 270604,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 456811
+              "dps": 456924
+            },
+            {
+              "rank": 39,
+              "name": "Venomous Gladiator's Emblem",
+              "nameFr": "Emblème du gladiateur venimeux",
+              "itemId": 270606,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 456898
+            },
+            {
+              "rank": 40,
+              "name": "Litany of Lightblind Wrath",
+              "nameFr": "Litanie de courroux lumaveuglé",
+              "itemId": 249808,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 456823
+            },
+            {
+              "rank": 41,
+              "name": "Venomous Gladiator's Medallion",
+              "nameFr": "Médaillon du gladiateur venimeux",
+              "itemId": 270605,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 456723
             },
             {
               "rank": 42,
@@ -27005,25 +27005,25 @@
               "itemId": 250257,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 456245
+              "dps": 455839
             },
             {
               "rank": 43,
-              "name": "Soulcoiler Ritual Vessel",
-              "nameFr": "Réceptacle rituel de l’Entortillâme",
-              "itemId": 270162,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 455624
-            },
-            {
-              "rank": 44,
               "name": "Nevermelting Ice Crystal",
               "nameFr": "Cristal de glace perpétuelle",
               "itemId": 50259,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 455382
+              "dps": 455787
+            },
+            {
+              "rank": 44,
+              "name": "Soulcoiler Ritual Vessel",
+              "nameFr": "Réceptacle rituel de l’Entortillâme",
+              "itemId": 270162,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 455371
             },
             {
               "rank": 45,
@@ -27032,7 +27032,7 @@
               "itemId": 249340,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 454471
+              "dps": 454295
             },
             {
               "rank": 46,
@@ -27041,7 +27041,7 @@
               "itemId": 249339,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 452874
+              "dps": 452952
             },
             {
               "rank": 47,
@@ -27050,34 +27050,34 @@
               "itemId": 250258,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 451746
+              "dps": 452079
             },
             {
               "rank": 48,
-              "name": "Voracious Heart of Ula'tek",
-              "nameFr": "Cœur avide d’Ula’tek",
-              "itemId": 270175,
-              "source": "Raid",
-              "ilvl": 344,
-              "dps": 451012
-            },
-            {
-              "rank": 49,
-              "name": "Preternatural Antivenom",
-              "nameFr": "Antivenin surnaturel",
-              "itemId": 270171,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 450255
-            },
-            {
-              "rank": 50,
               "name": "Idol of the War Loa",
               "nameFr": "Idole du Loa de la guerre",
               "itemId": 250229,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 450033
+              "dps": 450538
+            },
+            {
+              "rank": 49,
+              "name": "Voracious Heart of Ula'tek",
+              "nameFr": "Cœur avide d’Ula’tek",
+              "itemId": 270175,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 450326
+            },
+            {
+              "rank": 50,
+              "name": "Preternatural Antivenom",
+              "nameFr": "Antivenin surnaturel",
+              "itemId": 270171,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 450311
             },
             {
               "rank": 51,
@@ -27086,7 +27086,7 @@
               "itemId": 270174,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 447748
+              "dps": 447587
             },
             {
               "rank": 52,
@@ -27095,14 +27095,14 @@
               "itemId": 250244,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 438136
+              "dps": 437720
             }
           ],
-          "baseline": 437254,
+          "baseline": 437988,
           "fightStyle": "castingpatchwerk3",
           "iterations": "60000",
-          "simc": "bc9858b",
-          "simulatedAt": "2026-08-29 17:33"
+          "simc": "f869791",
+          "simulatedAt": "2026-09-02 03:20"
         },
         "5": {
           "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk5/warlock/demonology",
@@ -27110,147 +27110,147 @@
           "trinkets": [
             {
               "rank": 1,
+              "name": "Stormbound Emblem of Dazar",
+              "nameFr": "Emblème de Dazar tempétueux",
+              "itemId": 273649,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 691501
+            },
+            {
+              "rank": 2,
               "name": "Hex Lord's Dooming Idol",
               "nameFr": "Idole funeste du seigneur des maléfices",
               "itemId": 270169,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 684319
+              "dps": 684742
             },
             {
-              "rank": 2,
+              "rank": 3,
               "name": "Vile Vial of Volatile Venom",
               "nameFr": "Fiole ignoble de venin volatil",
               "itemId": 273796,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 683924
+              "dps": 683762
             },
             {
-              "rank": 3,
+              "rank": 4,
               "name": "Freightrunner's Flask",
               "nameFr": "Flasque de cargaison",
               "itemId": 250215,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 681651
+              "dps": 682433
             },
             {
-              "rank": 4,
+              "rank": 5,
               "name": "Wavecaller's Seastone",
               "nameFr": "Pierre marine de Mande-vagues",
               "itemId": 270167,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 681340
+              "dps": 681226
             },
             {
-              "rank": 5,
+              "rank": 6,
               "name": "Emberwing Feather",
               "nameFr": "Plume de braisaile",
               "itemId": 250144,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 680755
+              "dps": 681076
             },
             {
-              "rank": 6,
+              "rank": 7,
               "name": "Gebbo's Bottomless Bag",
               "nameFr": "Sac sans fond de Gebbo",
               "itemId": 270164,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 680458
+              "dps": 680735
             },
             {
-              "rank": 7,
+              "rank": 8,
               "name": "Darkmoon Dominion: Blood",
               "nameFr": "Domination de Sombrelune : Sang",
               "itemId": 246305,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 679892
+              "dps": 680222
             },
             {
-              "rank": 8,
+              "rank": 9,
               "name": "Darkmoon Dominion: Hunt",
               "nameFr": "Domination de Sombrelune : Chasse",
               "itemId": 246304,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 679204
-            },
-            {
-              "rank": 9,
-              "name": "Magister's Alchemist Stone",
-              "nameFr": "Pierre d’alchimiste de magistère",
-              "itemId": 241340,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 676944
+              "dps": 679291
             },
             {
               "rank": 10,
-              "name": "Darkmoon Dominion: Void",
-              "nameFr": "Domination de Sombrelune : Vide",
-              "itemId": 246307,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 676599
-            },
-            {
-              "rank": 11,
               "name": "Thalassian Competitor's Insignia of Alacrity",
               "nameFr": "Insigne d’empressement de compétition thalassienne",
               "itemId": 245752,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 676060
+              "dps": 676854
+            },
+            {
+              "rank": 11,
+              "name": "Magister's Alchemist Stone",
+              "nameFr": "Pierre d’alchimiste de magistère",
+              "itemId": 241340,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 676728
             },
             {
               "rank": 12,
+              "name": "Darkmoon Dominion: Void",
+              "nameFr": "Domination de Sombrelune : Vide",
+              "itemId": 246307,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 676323
+            },
+            {
+              "rank": 13,
               "name": "Lightspire Core",
               "nameFr": "Cœur de flèche-lumineuse",
               "itemId": 250214,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 674885
+              "dps": 674823
             },
             {
-              "rank": 13,
+              "rank": 14,
               "name": "Venomous Gladiator's Badge of Ferocity",
               "nameFr": "Écusson de férocité du gladiateur venimeux",
               "itemId": 270602,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 674022
+              "dps": 673679
             },
             {
-              "rank": 14,
+              "rank": 15,
               "name": "Venomous Gladiator's Insignia of Alacrity",
               "nameFr": "Insigne d’empressement du gladiateur venimeux",
               "itemId": 270603,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 670394
+              "dps": 670736
             },
             {
-              "rank": 15,
+              "rank": 16,
               "name": "Mindpiercer's Sigil",
               "nameFr": "Cachet de tranche-esprit",
               "itemId": 250224,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 670301
-            },
-            {
-              "rank": 16,
-              "name": "Ruby Whelp Shell [Haste]",
-              "nameFr": "Coquille de Dragonnet rubis [Haste]",
-              "itemId": 193757,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 668866
+              "dps": 670304
             },
             {
               "rank": 17,
@@ -27259,52 +27259,52 @@
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 668615
+              "dps": 668169
             },
             {
               "rank": 18,
+              "name": "Ruby Whelp Shell [Haste]",
+              "nameFr": "Coquille de Dragonnet rubis [Haste]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 667718
+            },
+            {
+              "rank": 19,
               "name": "Locus-Walker's Ribbon",
               "nameFr": "Ruban de l’Arpenteur des ombres",
               "itemId": 249809,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 667916
+              "dps": 667072
             },
             {
-              "rank": 19,
+              "rank": 20,
               "name": "Heart of Wind",
               "nameFr": "Cœur du vent",
               "itemId": 250256,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 666477
+              "dps": 666657
             },
             {
-              "rank": 20,
+              "rank": 21,
               "name": "Vexhul's Everflowing Gland",
               "nameFr": "Glande ruisselante de Vexhul",
               "itemId": 270170,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 665622
+              "dps": 665931
             },
             {
-              "rank": 21,
+              "rank": 22,
               "name": "Gaze of the Alnseer",
               "nameFr": "Regard de prophète d’Aln",
               "itemId": 249343,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 664958
-            },
-            {
-              "rank": 22,
-              "name": "Fang of Umbral Malignance",
-              "nameFr": "Crochet de malveillance ombreuse",
-              "itemId": 270161,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 664700
+              "dps": 665386
             },
             {
               "rank": 23,
@@ -27313,79 +27313,79 @@
               "itemId": 273794,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 664663
+              "dps": 665306
             },
             {
               "rank": 24,
+              "name": "Fang of Umbral Malignance",
+              "nameFr": "Crochet de malveillance ombreuse",
+              "itemId": 270161,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 664414
+            },
+            {
+              "rank": 25,
               "name": "Vaelgor's Final Stare",
               "nameFr": "Ultime regard de Vaelgor",
               "itemId": 249346,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 663854
+              "dps": 664225
             },
             {
-              "rank": 25,
+              "rank": 26,
               "name": "Sapling of the Dawnroot",
               "nameFr": "Arbrisseau d’Auberacine",
               "itemId": 250259,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 663612
+              "dps": 663821
             },
             {
-              "rank": 26,
+              "rank": 27,
               "name": "Ruby Whelp Shell [Aoe]",
               "nameFr": "Coquille de Dragonnet rubis [Aoe]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 662715
+              "dps": 662417
             },
             {
-              "rank": 27,
+              "rank": 28,
               "name": "Ruby Whelp Shell [St]",
               "nameFr": "Coquille de Dragonnet rubis [St]",
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 662117
+              "dps": 662167
             },
             {
-              "rank": 28,
+              "rank": 29,
               "name": "Darkmoon Dominion: Rot",
               "nameFr": "Domination de Sombrelune : Putréfaction",
               "itemId": 246306,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 660759
+              "dps": 661216
             },
             {
-              "rank": 29,
+              "rank": 30,
               "name": "Unstable Felheart Crystal",
               "nameFr": "Cristal de gangrecœur instable",
               "itemId": 250255,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 660454
+              "dps": 660353
             },
             {
-              "rank": 30,
+              "rank": 31,
               "name": "Sethraliss' Defiled Relic",
               "nameFr": "Relique profanée de Sephraliss",
               "itemId": 158368,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 660391
-            },
-            {
-              "rank": 31,
-              "name": "Seed of Radiant Hope",
-              "nameFr": "Graine d’espoir radieux",
-              "itemId": 250254,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 660293
+              "dps": 659914
             },
             {
               "rank": 32,
@@ -27394,34 +27394,34 @@
               "itemId": 250248,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 659719
+              "dps": 659828
             },
             {
               "rank": 33,
-              "name": "Shadow of the Empyrean Requiem",
-              "nameFr": "Ombre du requiem empyréen",
-              "itemId": 249810,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 659380
+              "name": "Seed of Radiant Hope",
+              "nameFr": "Graine d’espoir radieux",
+              "itemId": 250254,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 659808
             },
             {
               "rank": 34,
-              "name": "Stormbound Emblem of Dazar",
-              "nameFr": "Emblème de Dazar tempétueux",
-              "itemId": 273649,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 659158
-            },
-            {
-              "rank": 35,
               "name": "Font of Venomous Rage",
               "nameFr": "Source de rage venimeuse",
               "itemId": 270168,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 659052
+              "dps": 659675
+            },
+            {
+              "rank": 35,
+              "name": "Shadow of the Empyrean Requiem",
+              "nameFr": "Ombre du requiem empyréen",
+              "itemId": 249810,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 658939
             },
             {
               "rank": 36,
@@ -27430,34 +27430,34 @@
               "itemId": 151310,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 656503
+              "dps": 656026
             },
             {
               "rank": 37,
-              "name": "Venomous Gladiator's Sigil of Adaptation",
-              "nameFr": "Cachet d’adaptation du gladiateur venimeux",
-              "itemId": 270604,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 654926
-            },
-            {
-              "rank": 38,
-              "name": "Venomous Gladiator's Emblem",
-              "nameFr": "Emblème du gladiateur venimeux",
-              "itemId": 270606,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 654386
-            },
-            {
-              "rank": 39,
               "name": "Venomous Gladiator's Medallion",
               "nameFr": "Médaillon du gladiateur venimeux",
               "itemId": 270605,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 654188
+              "dps": 655064
+            },
+            {
+              "rank": 38,
+              "name": "Venomous Gladiator's Sigil of Adaptation",
+              "nameFr": "Cachet d’adaptation du gladiateur venimeux",
+              "itemId": 270604,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 655056
+            },
+            {
+              "rank": 39,
+              "name": "Venomous Gladiator's Emblem",
+              "nameFr": "Emblème du gladiateur venimeux",
+              "itemId": 270606,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 655043
             },
             {
               "rank": 40,
@@ -27466,7 +27466,7 @@
               "itemId": 250257,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 653844
+              "dps": 653632
             },
             {
               "rank": 41,
@@ -27475,7 +27475,7 @@
               "itemId": 250223,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 653422
+              "dps": 653599
             },
             {
               "rank": 42,
@@ -27484,7 +27484,7 @@
               "itemId": 249808,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 653390
+              "dps": 653000
             },
             {
               "rank": 43,
@@ -27493,7 +27493,7 @@
               "itemId": 270162,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 653036
+              "dps": 652786
             },
             {
               "rank": 44,
@@ -27502,7 +27502,7 @@
               "itemId": 50259,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 651814
+              "dps": 652159
             },
             {
               "rank": 45,
@@ -27511,7 +27511,7 @@
               "itemId": 249340,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 651474
+              "dps": 651885
             },
             {
               "rank": 46,
@@ -27520,7 +27520,7 @@
               "itemId": 249339,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 648606
+              "dps": 648284
             },
             {
               "rank": 47,
@@ -27529,7 +27529,7 @@
               "itemId": 250258,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 647967
+              "dps": 648215
             },
             {
               "rank": 48,
@@ -27538,25 +27538,25 @@
               "itemId": 270175,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 645789
+              "dps": 646150
             },
             {
               "rank": 49,
-              "name": "Preternatural Antivenom",
-              "nameFr": "Antivenin surnaturel",
-              "itemId": 270171,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 645494
-            },
-            {
-              "rank": 50,
               "name": "Idol of the War Loa",
               "nameFr": "Idole du Loa de la guerre",
               "itemId": 250229,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 645423
+              "dps": 645386
+            },
+            {
+              "rank": 50,
+              "name": "Preternatural Antivenom",
+              "nameFr": "Antivenin surnaturel",
+              "itemId": 270171,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 645278
             },
             {
               "rank": 51,
@@ -27565,7 +27565,7 @@
               "itemId": 270174,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 641228
+              "dps": 640338
             },
             {
               "rank": 52,
@@ -27574,17 +27574,17 @@
               "itemId": 250244,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 627017
+              "dps": 626992
             }
           ],
-          "baseline": 627735,
+          "baseline": 626996,
           "fightStyle": "castingpatchwerk5",
           "iterations": "60000",
-          "simc": "bc9858b",
-          "simulatedAt": "2026-08-29 17:34"
+          "simc": "f869791",
+          "simulatedAt": "2026-09-02 03:20"
         }
       },
-      "fetchedAt": "2026-09-01T09:32:19.831Z"
+      "fetchedAt": "2026-09-02T07:49:25.098Z"
     },
     "hunter-survival": {
       "key": "hunter-survival",
@@ -29299,7 +29299,32 @@
         }
       },
       "fetchedAt": "2026-09-01T09:31:07.800Z"
+    },
+    "evoker-preservation": {
+      "key": "evoker-preservation",
+      "available": false,
+      "targets": {
+        "1": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk/evoker/preservation",
+          "available": false,
+          "reason": "No standard chart with these values found.",
+          "trinkets": []
+        },
+        "3": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk3/evoker/preservation",
+          "available": false,
+          "reason": "No standard chart with these values found.",
+          "trinkets": []
+        },
+        "5": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk5/evoker/preservation",
+          "available": false,
+          "reason": "No standard chart with these values found.",
+          "trinkets": []
+        }
+      },
+      "fetchedAt": "2026-09-02T01:03:40.585Z"
     }
   },
-  "updatedAt": "2026-09-01T09:32:25.303Z"
+  "updatedAt": "2026-09-02T07:49:25.102Z"
 }

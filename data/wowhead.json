@@ -2476,7 +2476,7 @@
     },
     "mage-fire": {
       "key": "mage-fire",
-      "fetchedAt": "2026-09-01T09:31:12.643Z",
+      "fetchedAt": "2026-09-02T07:22:19.341Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear",
         "available": true,
@@ -9527,7 +9527,7 @@
     },
     "warlock-demonology": {
       "key": "warlock-demonology",
-      "fetchedAt": "2026-09-01T09:32:19.841Z",
+      "fetchedAt": "2026-09-02T07:49:25.107Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warlock/demonology/bis-gear",
         "available": true,
@@ -10259,7 +10259,432 @@
           ]
         }
       }
+    },
+    "evoker-preservation": {
+      "key": "evoker-preservation",
+      "fetchedAt": "2026-09-02T01:03:40.594Z",
+      "trinkets": {
+        "url": "https://www.wowhead.com/guide/classes/evoker/preservation/bis-gear",
+        "available": true,
+        "tiers": [
+          {
+            "rank": "S",
+            "items": [
+              {
+                "itemId": 270162,
+                "name": "Soulcoiler Ritual Vessel",
+                "icon": "inv_121_trinket_raid_ulatek_ritualvessel",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "A",
+            "items": [
+              {
+                "itemId": 270164,
+                "name": "Gebbo's Bottomless Bag",
+                "icon": "inv_10_tailoring_bag1_color2",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270167,
+                "name": "Wavecaller's Seastone",
+                "icon": "inv_tradeskillitem_sorcererswater",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 250214,
+                "name": "Lightspire Core",
+                "icon": "inv_enchant_essenceastrallarge",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "B",
+            "items": [
+              {
+                "itemId": 248583,
+                "name": "Drum of Renewed Bonds",
+                "icon": "inv_archaeology_70_tauren_drum",
+                "quality": 2,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251792,
+                "name": "Glorious Crusader's Keepsake",
+                "icon": "inv_12_trinket_gloriuscrusaderskeepsake",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 250215,
+                "name": "Freightrunner's Flask",
+                "icon": "inv_alchemy_90_flask_red",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 273796,
+                "name": "Vile Vial of Volatile Venom",
+                "icon": "inv_121_trinket_dungeon_ulatek_vile",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 264507,
+                "name": "Crucible of Erratic Energies",
+                "icon": "inv_112_raidtrinkets_etherealenergystoragebattery_gold",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 270169,
+                "name": "Hex Lord's Dooming Idol",
+                "icon": "inv_archaeology_orcclans_crackedidol",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 273649,
+                "name": "Stormbound Emblem of Dazar",
+                "icon": "inv_7_0raid_necklace_14a",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250248,
+                "name": "Mycolic Medicine",
+                "icon": "inv_misc_starspecklemushroom",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 193757,
+                "name": "Ruby Whelp Shell",
+                "icon": "inv_item_dragonegg_redbroken01",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250254,
+                "name": "Seed of Radiant Hope",
+                "icon": "inv12_jewelrytrinkets_dungeon_seedofradianthope",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250255,
+                "name": "Unstable Felheart Crystal",
+                "icon": "tooltip_crystallizedfel",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 249343,
+                "name": "Gaze of the Alnseer",
+                "icon": "inv_12_trinket_raid_dreamrift_gazeofthealnseer",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "C",
+            "items": [
+              {
+                "itemId": 251788,
+                "name": "Gift of Light",
+                "icon": "inv_ability_holyfire_buff",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 251789,
+                "name": "Consecrated Chalice",
+                "icon": "inv_offhand_pvealliance_d_01",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "D",
+            "items": [
+              {
+                "itemId": 270171,
+                "name": "Preternatural Antivenom",
+                "icon": "inv_11_0_dungeon_tentaclevial_green",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "F",
+            "items": [
+              {
+                "itemId": 252957,
+                "name": "Tangle of Vibrant Vines",
+                "icon": "spell_nature_thorns",
+                "quality": 2,
+                "categories": [
+                  "delves"
+                ]
+              },
+              {
+                "itemId": 193748,
+                "name": "Kyrakka's Searing Embers",
+                "icon": "inv_10_dungeonjewelry_primalist_trinket_4_fire",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "G",
+            "items": [
+              {
+                "itemId": 264701,
+                "name": "Cosmic Bell",
+                "icon": "inv_11_0_arathordungeon_bell_color4",
+                "quality": 4,
+                "categories": [
+                  "delves"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "consumables": {
+        "url": "https://www.wowhead.com/guide/classes/evoker/preservation/enchants-gems-pve-healer",
+        "available": true,
+        "rows": [
+          {
+            "type": "Flask",
+            "items": [
+              {
+                "itemId": 241322,
+                "name": "Flask of the Magisters",
+                "icon": "inv_12_profession_alchemy_flask_sindoreipotion_black",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Combat Potion",
+            "items": [
+              {
+                "itemId": 241288,
+                "name": "Potion of Recklessness",
+                "icon": "inv_12_profession_alchemy_voidpotion_red",
+                "quality": 1
+              },
+              {
+                "itemId": 241300,
+                "name": "Lightfused Mana Potion",
+                "icon": "inv_12_profession_alchemy_lightpotion_blue",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Health Potion",
+            "items": [
+              {
+                "itemId": 241304,
+                "name": "Silvermoon Health Potion",
+                "icon": "inv_12_profession_alchemy_lightpotion_orange",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Weapon Buff",
+            "items": [
+              {
+                "itemId": 243734,
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_12_profession_enchanting_manaoil_red",
+                "quality": 2
+              }
+            ]
+          },
+          {
+            "type": "Augment Rune",
+            "items": [
+              {
+                "itemId": 259085,
+                "name": "Void-Touched Augment Rune",
+                "icon": "inv_10_enchanting_crystal_color2",
+                "quality": 3
+              }
+            ]
+          },
+          {
+            "type": "Food",
+            "items": [
+              {
+                "itemId": 255846,
+                "name": "Harandar Celebration",
+                "icon": "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+                "quality": 3
+              }
+            ]
+          }
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 244031,
+                  "name": "Enchant Weapon - Arcane Mastery",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 243951,
+                  "name": "Enchant Helm - Empowered Hex of Leeching",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulders",
+              "items": [
+                {
+                  "itemId": 244021,
+                  "name": "Enchant Shoulders - Silvermoon's Mending",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 240155,
+                  "name": "Arcanoweave Spellthread",
+                  "icon": "inv_12_tailoring_spellthread_violet_spellthread",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243983,
+                  "name": "Enchant Boots - Shaladrassil's Roots",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243959,
+                  "name": "Enchant Ring - Zul'jin's Mastery",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond (one of)",
+              "items": [
+                {
+                  "itemId": 240983,
+                  "name": "Indecipherable Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240900,
+                  "name": "Flawless Quick Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   },
-  "updatedAt": "2026-09-01T09:32:26.141Z"
+  "updatedAt": "2026-09-02T07:49:25.205Z"
 }
