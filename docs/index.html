@@ -73,6 +73,15 @@
             <button type="button" data-lang="en">EN</button>
           </div>
           <img class="footzy footzy--right" src="img/footzy.png" alt="" title="Footzy" />
+          <!-- Parses Warcraft Logs. Aucun bouton ne l'ouvre : il se deroule apres cinq
+               clics sur Footzy, comme le roster derriere la mascotte (voir
+               `armerAccesParses` dans app.js). Rempli par app.js a l'ouverture. -->
+          <div
+            id="wcl-panneau"
+            class="cle-panneau cle-panneau--wcl"
+            role="dialog"
+            aria-label="Parses Warcraft Logs du roster"
+          ></div>
         </div>
       </header>
 

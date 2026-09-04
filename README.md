@@ -124,9 +124,9 @@ rotation simulée ne sait pas recevoir un PI externe : leur chiffre vient d'un P
 il est indicatif. Ces données-là **changent**, elles sont donc récupérées et mises en cache
 comme le reste — voir [Power Infusion](#power-infusion--qui-buffer).
 
-Le blason ouvre un **écran d'accueil à deux cartes** — /rand Raid et /rand Mythique+ — puis une
-barre reprend ces deux destinations en haut de chacune, pour passer de l'une à l'autre sans
-repasser par l'accueil. Cet écran d'accueil se passe d'en-tête : les cartes se présentent toutes
+Le blason ouvre l'**écran d'accueil de la guilde**, une carte par destination — Roster Mythique,
+/rand Raid, /rand Mythique+, Butin, News Saucer — puis une barre reprend ces mêmes destinations en
+haut de chacune, pour passer de l'une à l'autre sans repasser par l'accueil. Cet écran d'accueil se passe d'en-tête : les cartes se présentent toutes
 seules. **C'est là que l'application démarre.**
 
 ### Le roster est une vue cachée
@@ -143,6 +143,41 @@ autres vues de guilde : le blason, ou une icône de spec.
 > **La mascotte ne s'affiche qu'au-delà de 1780 px de large** (`.mascotte` dans
 > [`public/style.css`](public/style.css)) : en dessous, il n'y a pas de porte d'entrée. Si le
 > roster doit rester joignable sur un écran plus étroit, c'est ce seuil qu'il faut baisser.
+
+### Les parses sont un panneau caché
+
+Même mécanique, autre porte : **cinq clics sur Footzy**, l'illustration de droite dans la barre du
+haut, déroulent le **classement Warcraft Logs du roster**. Rien ne l'annonce non plus, et pour la
+même raison — un classement nominatif des membres n'a pas à s'afficher sous le nez de qui passe
+sur le site. Le compteur retombe à zéro après **deux secondes sans clic**, comme pour la mascotte.
+
+Chaque ligne tient en une barre : le **plein s'arrête à la médiane**, le prolongement estompé va
+jusqu'au **best**. Les deux chiffres demandés tiennent ainsi dans la largeur d'un panneau, et
+l'écart entre les deux — l'information la plus utile, celle qui dit si un joueur est régulier ou
+en dents de scie — se lit sans avoir à le calculer. Les couleurs sont **celles de Warcraft Logs**
+(gris, vert, bleu, violet, orange) : ce ne sont pas un choix de palette, un raideur lit « violet »
+avant de lire « 84.7 ».
+
+Un percentile compare le joueur **à sa propre spé dans le monde entier**, pas aux autres membres :
+un parse de heal et un parse de dps ne se rangent pas sur la même règle. Le panneau le rappelle en
+note, parce que le tableau, lui, invite à la comparaison.
+
+> **Warcraft Logs ne se scrape pas.** Le site renvoie tout visiteur automatisé vers une page de
+> vérification anti-bot, y compris pour la simple lecture d'une fiche, et son API v2 demande des
+> identifiants OAuth à créer soi-même. Le relevé est donc **écrit à la main** dans
+> [`data/wcl.json`](data/wcl.json), sur le modèle de la gazette — voir
+> [`src/wcl.js`](src/wcl.js). Le bouton « Mettre à jour » ne le touche pas.
+
+> **Footzy disparaît en dessous de 700 px de large** (`.footzy` dans
+> [`public/style.css`](public/style.css)) : comme pour la mascotte, il n'y a pas de porte d'entrée
+> sur écran étroit.
+
+Le fichier est indexé par l'**`id` du membre**, jamais par son nom de personnage : c'est le roster
+qui porte le pseudo, la classe et la spec, et les recopier ici les ferait diverger dès le premier
+changement de main. `data/wcl.json` ne garde que ce que le roster ignore — le personnage
+effectivement loggé, son royaume, la métrique retenue (`damage` ou `healing`) et les trois
+chiffres. Un `best` à `null` veut dire **aucun parse**, ce qui est une information et pas un trou :
+le membre est rangé en fin de liste, sans rang.
 
 **Le /rand existe des deux côtés**, avec les mêmes tableaux, mais pas avec la même portée :
 l'onglet de spec montre **le raid seulement** — ce que cette spec doit rand — alors que le blason
@@ -471,6 +506,140 @@ lignes d'un membre retiré du roster ne disparaissent pas — elles s'affichent 
 C'est le seul jeu de données que **personne ne scrape** : il ne se recalcule pas, perdre
 `data/loot.json` c'est perdre l'historique. D'où l'écriture atomique, comme pour le roster.
 Sur la version publiée, la vue est en lecture seule : on note en local, puis on republie.
+
+## News Saucer : la gazette de guilde
+
+La vue **News Saucer** (dernière carte de l'écran de guilde, et dernier onglet de sa barre) tient
+les numéros de la gazette : la une en pleine page, les numéros précédents dessous. Un seul article
+est déplié à la fois — c'est un journal, pas un fil : on lit un numéro, puis on va en chercher un
+autre dans la pile, qui reste affichée sous l'article pour que ce second geste tienne en un clic.
+
+**Un numéro se monte de deux façons**, et c'est le fichier de données qui tranche : soit il est
+**écrit en HTML** — titre, encadrés, illustrations, tout se compose dans la page ; soit il est
+**publié tel quel**, sous forme d'affiche, agrandissable au clic. Le champ `affiche` fait basculer
+de l'un à l'autre.
+
+**C'est le seul écran clair de l'application, et c'est voulu** : un numéro doit se lire comme une
+coupure de journal punaisée sur la page. Le papier, le grain et l'encre sont en CSS, pas en image —
+titrage condensé (`Haettenschweiler`, `Arial Narrow`, `Impact`, selon ce que la machine a) sur un
+corps en serif, filets doubles, portrait désaturé. Aucune police n'est téléchargée : ce serait la
+seule requête de police de tout le site.
+
+Dans ce mode, **rien n'est cuit dans une image** : le texte reste sélectionnable, il se corrige à
+la ligne près, il pèse deux kilo-octets au lieu de deux mégaoctets, et **il se relit sur téléphone**
+— sous 900 px les encadrés passent en une colonne, au lieu d'obliger à zoomer dans un PNG.
+
+La mise en page est celle d'un journal, **pas deux colonnes strictes** : l'illustration flotte à
+gauche et les encadrés l'habillent, puis reprennent toute la largeur une fois qu'ils l'ont dépassée.
+En colonnes strictes, un portrait plus court que la pile d'encadrés laissait un tiers de page en
+papier vide — sur le numéro 1, l'article fait 1 376 px de haut au lieu de 2 475.
+
+### Écrire un numéro
+
+Un numéro est un objet de `data/gazette.json`. Rien ne se scrape et rien ne se recalcule : la
+gazette s'écrit à la main, comme le roster de départ, et la vue est en lecture seule.
+
+```json
+{
+  "id": "g2",
+  "numero": 2,
+  "date": "2026-09-10",
+  "edition": "Édition spéciale",
+  "provenance": "Nouvelles de Kalimdor",
+  "rubrique": "Carnet mondain",
+  "titre": "Deux départs, une arrivée",
+  "chapo": "Le roster bouge avant la reprise",
+  "image": "img/gazette/carnet-02.png",
+  "imageLegende": "Portrait robot",
+  "corps": ["Un paragraphe de texte courant."],
+  "encadres": [
+    { "titre": "Faits reprochés", "lignes": ["Une ligne par paragraphe."] },
+    { "titre": "Témoin", "image": "img/gazette/temoin-02.png", "lignes": ["Sa déposition."] },
+    { "titre": "Signalement", "liste": true, "lignes": ["Puce 1", "Puce 2"] },
+    { "titre": "Récompense", "ton": "accent", "lignes": ["5 000 PO", "Le reste en petit."] },
+    { "titre": "Avertissement", "ton": "alerte", "lignes": ["Précédé d'un ⚠."] }
+  ],
+  "signature": "La rédaction"
+}
+```
+
+Seuls `id` et `titre` comptent vraiment : **tout le reste est facultatif** et disparaît s'il manque,
+plutôt que de laisser un cadre vide. `ton: "accent"` retourne l'encadré en négatif et grossit sa
+première ligne — c'est le pavé qu'on lit en premier ; `ton: "alerte"` lui met un ⚠ devant son titre.
+
+Les numéros sont triés **du plus récent au plus ancien** sur la date, puis sur le numéro : le
+fichier peut donc être tenu dans n'importe quel ordre.
+
+Un encadré peut porter sa propre **vignette** (`image`) : elle se place en habillage, le texte
+reprenant toute la largeur une fois dépassée — la coupe d'un journal, et la seule qui tienne quand
+la colonne se resserre.
+
+**Toute illustration est facultative et le reste.** Elle vit dans `public/img/gazette/`, pas dans
+le JSON, et un fichier peut manquer : la figure disparaît alors, la mise en deux colonnes avec
+elle, et les encadrés se rangent en colonnes de journal. L'article se lit très bien sans.
+
+Les espaces fines insécables sont posées **au rendu** — devant `» : ; ! ?` et derrière `«` — pour
+qu'un guillemet ne se retrouve pas seul en début de ligne sur téléphone. Personne n'a à les taper
+en écrivant.
+
+### Recadrer une affiche
+
+Un numéro composé ailleurs arrive souvent comme **une affiche entière**, texte compris. On ne la
+publie pas telle quelle : ce serait afficher deux fois le même article, dont une version qu'on ne
+peut ni corriger ni lire sur un téléphone. On n'en garde que ce qu'elle est seule à porter — les
+dessins — et [`tools/gazette-portrait.js`](tools/gazette-portrait.js) les découpe :
+
+```bash
+node tools/gazette-portrait.js "NewzSaucer/Woryms+15.png" public/img/gazette/avis-recherche-01.png 38 549 477 561
+```
+
+```bash
+node tools/gazette-portrait.js "NewzSaucer/Woryms+15.png" public/img/gazette/temoin-murloc-01.png 546 882 144 226
+```
+
+Les arguments sont `x y largeur hauteur`, puis une largeur cible facultative — sans elle la
+définition d'origine est gardée, le dessin étant déjà petit dans l'affiche. La sortie est en
+**niveaux de gris** : la page désature l'illustration de toute façon, garder trois canaux
+identiques pèserait le triple sans rien montrer de plus. Sur l'affiche du numéro 1, 3 905 Ko de
+PNG donnent 217 Ko de portrait et 27 Ko de témoin.
+
+Comme pour le détourage de Footzy, **l'affiche source n'est pas versionnée** (`/NewzSaucer/` est
+dans `.gitignore`) : seuls les recadrages partent dans `public/img/gazette/`.
+
+### Publier un numéro tel quel
+
+Une affiche composée ailleurs se publie sans être retranscrite : il suffit d'ajouter `affiche` à
+l'article. Le numéro n'affiche alors **que l'image** — elle porte déjà son titre, sa date et ses
+encadrés, les redoubler en HTML montrerait deux fois le même article — et **un clic l'ouvre en
+grand**, à sa vraie définition, par-dessus la page. On en sort au clic ou avec Échap.
+
+```json
+{
+  "affiche": "img/gazette/affiche-01.png",
+  "afficheVignette": "img/gazette/affiche-01-vignette.png"
+}
+```
+
+**Deux fichiers, et c'est ce qui rend la chose tenable** : la vignette (560 px, 350 Ko) est ce que
+la page charge, l'affiche entière (1 024 px, 1 175 Ko) n'est demandée qu'au clic. Sans vignette,
+`affiche` sert aux deux.
+
+La loupe **défile** au lieu de ramener l'affiche à la hauteur de la fenêtre : sur un téléphone, une
+affiche entière tenue à l'écran ne serait pas plus lisible que la vignette. Elle s'ouvre centrée,
+sinon on verrait une image coupée plutôt qu'une affiche à explorer.
+
+**Les deux montages coexistent dans le même article.** Le numéro 1 a son `affiche` *et* sa
+transcription HTML — encadrés, signalement, témoin. Retirer la ligne `affiche` du fichier suffit à
+revenir à la version composée : c'est le même numéro, monté de deux façons.
+
+### Deux garde-fous avant de publier
+
+- **La cadence.** Un seul numéro daté, trois mois plus tard, fait site abandonné — pire que pas de
+  rubrique du tout. La numérotation vieillit mieux qu'une promesse d'hebdomadaire, et une bonne
+  part d'un numéro peut se tirer de ce que l'application sait déjà : les mouvements de roster,
+  `data/loot.json` pour le butin de la semaine, les compteurs de consultation.
+- **Les vraies têtes.** Le site publié est public et indexable. Seulement des gens qui ont dit oui,
+  retrait sur simple demande.
 
 ## Power Infusion : qui buffer
 

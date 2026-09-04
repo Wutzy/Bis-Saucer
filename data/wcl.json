@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "source": "warcraftlogs.com",
+  "zone": "The Venomous Abyss",
+  "difficulty": "Héroïque",
+  "updatedAt": "2026-09-04T00:00:00.000Z",
+  "guildAverage": {
+    "best": 54.5,
+    "median": 45.7
+  },
+  "members": {
+    "kao": { "character": "Kaoblood", "realm": "Hyjal", "metric": "damage", "best": 84.7, "median": 81.8, "kills": 12 },
+    "ragelolz": { "character": "Ràge", "realm": "Hyjal", "metric": "damage", "best": 77.0, "median": 76.0, "kills": 6 },
+    "folkvangr": { "character": "Fólkvangr", "realm": "Hyjal", "metric": "healing", "best": 75.7, "median": 69.2, "kills": 11 },
+    "dansenuit": { "character": "Dansenuit", "realm": "Hyjal", "metric": "damage", "best": 71.1, "median": 66.0, "kills": 14 },
+    "jeanbon": { "character": "Jeanbøn", "realm": "Dalaran", "metric": "damage", "best": 67.4, "median": 67.4, "kills": 7 },
+    "kronox": { "character": "Kronoxx", "realm": "Hyjal", "metric": "damage", "best": 67.1, "median": 53.0, "kills": 13 },
+    "kiyohara": { "character": "Velharu", "realm": "Hyjal", "metric": "damage", "best": 65.4, "median": 49.5, "kills": 16 },
+    "wutz": { "character": "Wutzwutz", "realm": "Hyjal", "metric": "damage", "best": 65.0, "median": 54.7, "kills": 14 },
+    "bolderiz-franky": { "character": "Bølederiz", "realm": "Hyjal", "metric": "damage", "best": 61.0, "median": 41.8, "kills": 19 },
+    "lafrustre-elzoska": { "character": "Lafrustré", "realm": "Hyjal", "metric": "damage", "best": 60.8, "median": 52.1, "kills": 13 },
+    "reinox93": { "character": "Reinox", "realm": "Archimonde", "metric": "damage", "best": 60.0, "median": 38.5, "kills": 15 },
+    "projectbabytattoo": { "character": "Prøjectbaby", "realm": "Hyjal", "metric": "healing", "best": 59.9, "median": 44.0, "kills": 12 },
+    "ganova": { "character": "Ganöva", "realm": "Hyjal", "metric": "damage", "best": 57.9, "median": 33.3, "kills": 13 },
+    "samahel": { "character": "Samahel", "realm": "Hyjal", "metric": "healing", "best": 54.3, "median": 54.3, "kills": 7 },
+    "sam": { "character": "Samvonsturm", "realm": "Hyjal", "metric": "damage", "best": 53.1, "median": 40.2, "kills": 19 },
+    "sheechy": { "character": "Sheechy", "realm": "Ysondre", "metric": "damage", "best": 52.4, "median": 49.0, "kills": 12 },
+    "elgior": { "character": "Orrikhan", "realm": "Hyjal", "metric": "damage", "best": 50.1, "median": 41.4, "kills": 12 },
+    "solhan": { "character": "Soldun", "realm": "Hyjal", "metric": "damage", "best": 49.2, "median": 32.8, "kills": 13 },
+    "ganai": { "character": "Ganaï", "realm": "Hyjal", "metric": "healing", "best": 43.3, "median": 33.5, "kills": 18 },
+    "xaly": { "character": "Saythstorm", "realm": "Hyjal", "metric": "damage", "best": 39.3, "median": 36.2, "kills": 14 },
+    "maowar-leberger": { "character": "Maosham", "realm": "Ysondre", "metric": "damage", "best": 20.9, "median": 18.5, "kills": 9 },
+    "ezra": { "character": "Ézra", "realm": "Hyjal", "metric": "damage", "best": 13.5, "median": 13.5, "kills": 1 },
+    "echodoll": { "character": "Èchø", "realm": "Hyjal", "metric": "healing", "best": 4.1, "median": 4.1, "kills": 1 },
+    "ryims": { "character": "Woryms", "realm": "Hyjal", "metric": "damage", "best": null, "median": null, "kills": 0 }
+  }
+}

@@ -19,6 +19,8 @@ const API = STATIC
       powerinfusion: 'api/powerinfusion.json',
       loot: 'api/loot.json',
       views: 'api/views.json',
+      gazette: 'api/gazette.json',
+      wcl: 'api/wcl.json',
       portraits: 'api/portraits.json',
     }
   : {
@@ -30,6 +32,8 @@ const API = STATIC
       powerinfusion: '/api/powerinfusion',
       loot: '/api/loot',
       views: '/api/views',
+      gazette: '/api/gazette',
+      wcl: '/api/wcl',
       portraits: '/api/portraits',
       portraitsRefresh: '/api/portraits/refresh',
     };
@@ -212,6 +216,12 @@ let trinketStore = { specs: {} };
 let wowheadStore = { specs: {} };
 let piStore = { available: false, targets: {} };
 let lootStore = { entries: [] };
+// Numeros de la gazette. Vide tant que data/gazette.json n'existe pas : la vue le dit,
+// elle ne se casse pas.
+let gazetteStore = { journal: null, articles: [] };
+// Parses Warcraft Logs, par id de membre. Vide tant que data/wcl.json n'existe pas :
+// le panneau le dit plutot que de s'afficher a moitie.
+let wclStore = { members: {} };
 // Vignettes d'armurerie, par id de membre. Vide tant qu'aucun rapprochement n'a ete
 // lance : les cartes retombent alors sur l'icone de spec.
 let portraitStore = { members: {}, unmatched: [] };
@@ -237,6 +247,14 @@ const JOUEURS_LABEL = 'Sélection du joueur';
 
 // Le butin est une vue de guilde : son titre ne nomme aucune spec.
 const BUTIN_LABEL = 'Butin de guilde';
+
+// La gazette porte le meme nom partout — carte d'entree, barre de guilde, titre du
+// panneau — pour qu'on puisse la citer sans hesiter.
+const NEWS_LABEL = 'News Saucer';
+
+// Numero affiche en grand. null = le plus recent, qui est la une par defaut : on
+// arrive sur la gazette pour lire les nouvelles, pas pour choisir dans une liste.
+let newsFocus = null;
 
 // Vue a rouvrir en quittant une vue de guilde (/rand ou Roster) : leurs onglets etant
 // masques, ce sont les carres de la barre du haut qui servent de porte de sortie, et
@@ -2267,6 +2285,7 @@ function randChoice() {
     ['raid', 'Raid', 'Rand par boss de raid'],
     ['mplus', 'Mythique+', 'Les BiS des membres de la guilde, triés par donjon'],
     ['butin', 'Butin', 'Qui a reçu quoi, et combien'],
+    ['news', NEWS_LABEL, 'La gazette de la guilde : la une et les numéros précédents'],
   ]) {
     const card = document.createElement('button');
     card.type = 'button';
@@ -2282,6 +2301,12 @@ function randChoice() {
 
     card.append(t, s);
     card.addEventListener('click', () => {
+      if (mode === 'news') {
+        newsFocus = null;
+        selectView(mode);
+        render();
+        return;
+      }
       if (mode === 'butin' || mode === 'joueurs') {
         selectView(mode);
         render();
@@ -2364,6 +2389,9 @@ function randNav() {
     nav.appendChild(btn);
   }
 
+  const news = document.createElement('button');
+  news.type = 'button';
+
   butin.className = `rand-tab${activeView === 'butin' ? ' is-active' : ''}`;
   butin.textContent = 'Butin';
   butin.title = 'Qui a reçu quoi';
@@ -2372,6 +2400,16 @@ function randNav() {
     render();
   });
   nav.appendChild(butin);
+
+  news.className = `rand-tab${activeView === 'news' ? ' is-active' : ''}`;
+  news.textContent = NEWS_LABEL;
+  news.title = 'La gazette de la guilde';
+  news.addEventListener('click', () => {
+    newsFocus = null;
+    selectView('news');
+    render();
+  });
+  nav.appendChild(news);
 
   return nav;
 }
@@ -3861,6 +3899,7 @@ function estVueGuilde() {
     activeView === 'roster' ||
     activeView === 'joueurs' ||
     activeView === 'butin' ||
+    activeView === 'news' ||
     (activeView === 'rand' && randScope === 'guild')
   );
 }
@@ -3913,6 +3952,7 @@ function renderHeader() {
   if (activeView === 'roster') els.name.textContent = ROSTER_LABEL;
   else if (activeView === 'joueurs') els.name.textContent = JOUEURS_LABEL;
   else if (activeView === 'butin') els.name.textContent = BUTIN_LABEL;
+  else if (activeView === 'news') els.name.textContent = NEWS_LABEL;
   else if (activeView === 'rand') {
     els.name.textContent = activeBoss ? translateSource(activeBoss) : '/rand';
   } else els.name.textContent = spec ? spec.label : '—';
@@ -3938,6 +3978,12 @@ function renderHeader() {
     els.sub.textContent = total
       ? `${total} objet(s) noté(s) · qui a reçu quoi, tous membres confondus`
       : 'Rien de noté pour l’instant · qui a reçu quoi, tous membres confondus';
+  } else if (activeView === 'news') {
+    const numeros = articlesGazette();
+    const dernier = numeros[0];
+    els.sub.textContent = dernier
+      ? `${numeros.length} numéro(s) · dernier le ${formatDateCourte(dernier.date) || dernier.date}`
+      : 'Aucun numéro paru · les articles s’écrivent dans data/gazette.json';
   } else if (activeView === 'rand') {
     const pourSpec = randScope === 'spec' && spec;
     const source =
@@ -4064,6 +4110,7 @@ function renderContent() {
   if (activeView === 'roster') els.content.appendChild(renderRoster());
   else if (activeView === 'joueurs') els.content.appendChild(renderJoueurs());
   else if (activeView === 'butin') els.content.appendChild(renderButin());
+  else if (activeView === 'news') els.content.appendChild(renderNews());
   else if (activeView === 'rand') els.content.appendChild(renderRand());
   else if (activeView === 'conso') els.content.appendChild(renderConsumables());
   else if (activeView === 'mplus') els.content.appendChild(renderMplus());
@@ -4172,6 +4219,37 @@ async function loadLoot() {
     if (data && Array.isArray(data.entries)) lootStore = data;
   } catch (err) {
     lootStore = { entries: [] };
+  }
+}
+
+/**
+ * Numeros de la gazette (data/gazette.json). Jeu de donnees facultatif : un fichier
+ * absent n'est pas une erreur, la vue affiche simplement qu'aucun numero n'est paru.
+ */
+async function loadGazette() {
+  try {
+    const res = await fetch(API.gazette);
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && Array.isArray(data.articles)) gazetteStore = data;
+  } catch (err) {
+    gazetteStore = { journal: null, articles: [] };
+  }
+}
+
+/**
+ * Parses Warcraft Logs (data/wcl.json). Complement facultatif, comme les vignettes :
+ * un fichier absent laisse simplement le panneau vide, ce n'est pas une erreur de
+ * chargement de l'application.
+ */
+async function loadWcl() {
+  try {
+    const res = await fetch(API.wcl);
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && typeof data.members === 'object' && data.members) wclStore = data;
+  } catch (err) {
+    wclStore = { members: {} };
   }
 }
 
@@ -4616,6 +4694,367 @@ async function retirerButin(ligne) {
   render();
 }
 
+/* ---------------- News Saucer ---------------- */
+
+/**
+ * Les numeros, du plus recent au plus ancien.
+ *
+ * On trie sur la date puis sur le numero : deux articles peuvent partager un jour
+ * (une une et un encadre publies ensemble), et c'est alors la numerotation qui
+ * tranche. Le fichier peut donc etre tenu dans n'importe quel ordre.
+ */
+function articlesGazette() {
+  return [...(gazetteStore.articles || [])].sort((a, b) => {
+    const da = String(a.date || '');
+    const db = String(b.date || '');
+    if (da !== db) return db.localeCompare(da);
+    return (b.numero || 0) - (a.numero || 0);
+  });
+}
+
+/**
+ * Espaces insecables autour de la ponctuation double et des guillemets francais.
+ *
+ * Sans ca, un « » ou un « : » finit seul en debut de ligne des que la colonne est
+ * etroite — c'est-a-dire tout le temps sur telephone. C'est fait au rendu plutot qu'a
+ * la saisie : personne ne va taper une espace fine insecable en ecrivant un article.
+ */
+function typographie(texte) {
+  return String(texte)
+    .replace(/«\s+/g, '«\u202f')
+    .replace(/\s+([»:;!?])/g, '\u202f$1');
+}
+
+/** Un encadre : le pave lateral d'une affiche. Une liste quand les lignes en sont une. */
+function encadreGazette(encadre) {
+  const box = document.createElement('div');
+  const ton =
+    encadre.ton === 'accent' || encadre.ton === 'alerte' ? ` gazette-encadre--${encadre.ton}` : '';
+  box.className = `gazette-encadre${ton}`;
+
+  if (encadre.titre) {
+    const titre = document.createElement('h4');
+    titre.className = 'gazette-encadre-titre';
+    titre.textContent = encadre.titre;
+    box.appendChild(titre);
+  }
+
+  // Le contenu est enveloppe meme sans vignette : c'est ce qui permet a l'image de se
+  // ranger a cote du texte plutot que par-dessus, et le cas sans image n'en souffre pas.
+  const contenu = document.createElement('div');
+  contenu.className = 'gazette-encadre-corps';
+
+  if (encadre.image) {
+    const img = document.createElement('img');
+    img.className = 'gazette-encadre-image';
+    img.src = encadre.image;
+    img.alt = '';
+    img.loading = 'lazy';
+    img.addEventListener('error', () => img.remove());
+    contenu.appendChild(img);
+  }
+
+  const texte = document.createElement('div');
+  texte.className = 'gazette-encadre-texte';
+  const lignes = encadre.lignes || [];
+  if (encadre.liste) {
+    const ul = document.createElement('ul');
+    ul.className = 'gazette-liste';
+    for (const ligne of lignes) {
+      const li = document.createElement('li');
+      li.textContent = typographie(ligne);
+      ul.appendChild(li);
+    }
+    texte.appendChild(ul);
+  } else {
+    for (const ligne of lignes) {
+      const p = document.createElement('p');
+      p.textContent = typographie(ligne);
+      texte.appendChild(p);
+    }
+  }
+  contenu.appendChild(texte);
+  box.appendChild(contenu);
+
+  return box;
+}
+
+/**
+ * Loupe : l'affiche seule, par-dessus la page, a sa vraie definition.
+ *
+ * Le calque defile plutot que de tout faire tenir a l'ecran : sur un telephone, une
+ * affiche ramenee a la hauteur de la fenetre ne serait pas plus lisible que la
+ * vignette — agrandir, c'est pouvoir se promener dedans. On en sort au clic ou par
+ * Echap, comme des panneaux de la barre du haut.
+ */
+function ouvrirLoupe(src, alt) {
+  const calque = document.createElement('div');
+  calque.className = 'loupe';
+  calque.setAttribute('role', 'dialog');
+  calque.setAttribute('aria-label', alt || 'Affiche en grand');
+
+  const cadre = document.createElement('div');
+  cadre.className = 'loupe-cadre';
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = alt || '';
+  cadre.appendChild(img);
+  calque.appendChild(cadre);
+
+  // Sur un ecran plus etroit que l'affiche, le calque s'ouvrirait colle au bord gauche :
+  // on verrait une image coupee plutot qu'une affiche a explorer. On se place donc au
+  // milieu, une fois l'image mesurable.
+  const centrer = () => {
+    calque.scrollLeft = (calque.scrollWidth - calque.clientWidth) / 2;
+  };
+  if (img.complete) requestAnimationFrame(centrer);
+  else img.addEventListener('load', centrer);
+
+  const surTouche = (e) => {
+    if (e.key === 'Escape') fermer();
+  };
+  function fermer() {
+    calque.remove();
+    document.removeEventListener('keydown', surTouche);
+    document.body.style.overflow = '';
+  }
+
+  calque.addEventListener('click', fermer);
+  document.addEventListener('keydown', surTouche);
+  // La page derriere ne doit pas defiler sous le calque : on la fige le temps de la
+  // consultation, et on lui rend la main a la fermeture.
+  document.body.style.overflow = 'hidden';
+  document.body.appendChild(calque);
+}
+
+/**
+ * Numero publie tel quel, sous forme d'affiche.
+ *
+ * L'affiche porte deja son titre, sa date et ses encadres : les redoubler en HTML
+ * afficherait deux fois le meme article. On ne montre donc qu'elle — le reste du
+ * numero (titre, chapo) sert au bandeau du panneau et a la pile des archives.
+ *
+ * Deux fichiers : une vignette legere pour la page, l'affiche entiere pour la loupe,
+ * qui n'est chargee qu'au clic. C'est ce qui permet d'avoir une page legere ET une
+ * affiche lisible quand on la demande.
+ */
+function afficheGazette(article) {
+  const figure = document.createElement('figure');
+  figure.className = 'gazette-affiche';
+
+  const bouton = document.createElement('button');
+  bouton.type = 'button';
+  bouton.className = 'gazette-affiche-bouton';
+  bouton.title = 'Agrandir l’affiche';
+
+  const img = document.createElement('img');
+  img.src = article.afficheVignette || article.affiche;
+  img.alt = article.titre || '';
+  img.loading = 'lazy';
+  bouton.appendChild(img);
+  bouton.addEventListener('click', () => ouvrirLoupe(article.affiche, article.titre));
+  figure.appendChild(bouton);
+
+  const legende = document.createElement('figcaption');
+  legende.textContent = 'Cliquer pour agrandir';
+  figure.appendChild(legende);
+
+  return figure;
+}
+
+/**
+ * Un numero en pleine page : bandeau du journal, titre, illustration et encadres.
+ *
+ * L'illustration est facultative et le reste : elle est en fichier, pas en donnee, et
+ * un fichier peut manquer. Dans ce cas la figure disparait plutot que d'afficher une
+ * image cassee — l'article se lit tres bien sans.
+ */
+function articleGazette(article) {
+  const wrap = document.createElement('article');
+  wrap.className = 'gazette';
+
+  // Un numero composé en image se passe du papier de la page : il apporte le sien.
+  // Retirer `affiche` du fichier suffit a revenir a la version HTML, qui reste
+  // ecrite a cote — c'est le meme numero, monte de deux façons.
+  if (article.affiche) {
+    wrap.classList.add('gazette--affiche');
+    wrap.appendChild(afficheGazette(article));
+    return wrap;
+  }
+
+  const tete = document.createElement('header');
+  tete.className = 'gazette-tete';
+
+  const journal = document.createElement('div');
+  journal.className = 'gazette-journal';
+  journal.textContent = gazetteStore.journal || 'La Gazette d’Azeroth';
+  tete.appendChild(journal);
+
+  // Le bandeau sous le titre du journal : ce qui date et situe le numero. Chaque
+  // mention est facultative, on n'affiche que celles qui sont renseignees.
+  const mentions = [
+    article.edition,
+    formatDateCourte(article.date) || article.date,
+    article.numero ? `N° ${article.numero}` : null,
+    article.provenance,
+  ].filter(Boolean);
+  if (mentions.length) {
+    const ourlet = document.createElement('div');
+    ourlet.className = 'gazette-ourlet';
+    for (const mention of mentions) {
+      const span = document.createElement('span');
+      span.textContent = mention;
+      ourlet.appendChild(span);
+    }
+    tete.appendChild(ourlet);
+  }
+  wrap.appendChild(tete);
+
+  if (article.rubrique) {
+    const rubrique = document.createElement('div');
+    rubrique.className = 'gazette-rubrique';
+    rubrique.textContent = article.rubrique;
+    wrap.appendChild(rubrique);
+  }
+
+  const titre = document.createElement('h3');
+  titre.className = 'gazette-titre';
+  titre.textContent = article.titre || '—';
+  wrap.appendChild(titre);
+
+  if (article.chapo) {
+    const chapo = document.createElement('p');
+    chapo.className = 'gazette-chapo';
+    chapo.textContent = typographie(article.chapo);
+    wrap.appendChild(chapo);
+  }
+
+  const corps = document.createElement('div');
+  corps.className = 'gazette-corps';
+
+  if (article.image) {
+    const figure = document.createElement('figure');
+    figure.className = 'gazette-figure';
+    const img = document.createElement('img');
+    img.src = article.image;
+    img.alt = article.imageLegende || '';
+    img.loading = 'lazy';
+    // Le fichier manquant ne laisse pas un trou : la figure part ET la mise en deux
+    // colonnes avec elle, sinon les encadres resteraient serres sur une moitie de page.
+    img.addEventListener('error', () => {
+      figure.remove();
+      corps.classList.remove('gazette-corps--illustre');
+    });
+    figure.appendChild(img);
+    if (article.imageLegende) {
+      const legende = document.createElement('figcaption');
+      legende.textContent = article.imageLegende;
+      figure.appendChild(legende);
+    }
+    corps.appendChild(figure);
+    corps.classList.add('gazette-corps--illustre');
+  }
+
+  const colonne = document.createElement('div');
+  colonne.className = 'gazette-colonne';
+  for (const paragraphe of article.corps || []) {
+    const p = document.createElement('p');
+    p.className = 'gazette-paragraphe';
+    p.textContent = typographie(paragraphe);
+    colonne.appendChild(p);
+  }
+  // Les encadres ont leur propre grille : appuyes contre l'illustration ils s'empilent,
+  // sans elle ils se rangent en colonnes plutot que de s'etaler sur toute la largeur.
+  const boites = document.createElement('div');
+  boites.className = 'gazette-encadres';
+  for (const encadre of article.encadres || []) {
+    boites.appendChild(encadreGazette(encadre));
+  }
+  colonne.appendChild(boites);
+  corps.appendChild(colonne);
+  wrap.appendChild(corps);
+
+  if (article.signature) {
+    const signature = document.createElement('p');
+    signature.className = 'gazette-signature';
+    signature.textContent = article.signature;
+    wrap.appendChild(signature);
+  }
+
+  return wrap;
+}
+
+/**
+ * News Saucer : la une, puis les numeros precedents.
+ *
+ * Un seul numero est deplie a la fois — c'est un journal, pas un fil : on lit un
+ * article, puis on va en chercher un autre dans la pile. Les archives restent
+ * affichees sous l'article pour que ce deuxieme geste tienne en un clic.
+ */
+function renderNews() {
+  const wrap = document.createElement('div');
+  wrap.appendChild(randNav());
+
+  const numeros = articlesGazette();
+  if (!numeros.length) {
+    wrap.appendChild(
+      emptyState(
+        'Aucun numéro paru',
+        'Les articles s’écrivent dans data/gazette.json, un objet par numéro.'
+      )
+    );
+    return wrap;
+  }
+
+  const affiche = numeros.find((a) => a.id === newsFocus) || numeros[0];
+  wrap.appendChild(articleGazette(affiche));
+
+  if (numeros.length > 1) {
+    const note = document.createElement('p');
+    note.className = 'roster-note';
+    note.textContent = `${numeros.length} numéro(s) parus, du plus récent au plus ancien.`;
+    wrap.appendChild(note);
+
+    const pile = document.createElement('div');
+    pile.className = 'gazette-archives';
+    for (const numero of numeros) {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = `gazette-archive${numero.id === affiche.id ? ' is-active' : ''}`;
+
+      const date = document.createElement('span');
+      date.className = 'gazette-archive-date';
+      date.textContent = [
+        numero.numero ? `N° ${numero.numero}` : null,
+        formatDateCourte(numero.date) || numero.date,
+      ]
+        .filter(Boolean)
+        .join(' · ');
+
+      const nom = document.createElement('span');
+      nom.className = 'gazette-archive-titre';
+      nom.textContent = numero.titre || '—';
+
+      btn.append(date, nom);
+      if (numero.chapo) {
+        const sous = document.createElement('span');
+        sous.className = 'gazette-archive-chapo';
+        sous.textContent = numero.chapo;
+        btn.appendChild(sous);
+      }
+
+      btn.addEventListener('click', () => {
+        newsFocus = numero.id;
+        render();
+      });
+      pile.appendChild(btn);
+    }
+    wrap.appendChild(pile);
+  }
+
+  return wrap;
+}
+
 /* ---------------- compteurs de consultation ---------------- */
 
 /**
@@ -4846,6 +5285,156 @@ function panneauPI() {
   return wrap;
 }
 
+/* ---------------- parses Warcraft Logs ---------------- */
+
+/**
+ * Couleurs de percentile de Warcraft Logs. Ce sont celles du site, pas un choix de
+ * palette : un raideur lit « violet » avant de lire « 84.7 », et changer ces bornes
+ * reviendrait a mentir sur ce que le chiffre veut dire.
+ */
+function couleurParse(valeur) {
+  if (valeur === null || valeur === undefined) return 'var(--muted-2)';
+  if (valeur >= 100) return '#e5cc80';
+  if (valeur >= 99) return '#e268a8';
+  if (valeur >= 95) return '#ff8000';
+  if (valeur >= 75) return '#a335ee';
+  if (valeur >= 50) return '#3b8ef0';
+  if (valeur >= 25) return '#3ba52e';
+  return '#8a8a8a';
+}
+
+/**
+ * Une ligne de parse : le rang, le membre, et la barre mediane -> best.
+ *
+ * La barre pleine s'arrete a la mediane, le prolongement estompe va jusqu'au best.
+ * C'est la seule facon de faire tenir les deux chiffres demandes dans une largeur de
+ * panneau : cote a cote ils se lisent l'un apres l'autre, superposes ils se lisent
+ * d'un coup — et l'ecart entre les deux, qui est l'information la plus utile, saute
+ * aux yeux sans qu'on ait a le calculer.
+ */
+function ligneParse(membre, parse, rang) {
+  const tr = document.createElement('tr');
+
+  const tdRang = document.createElement('td');
+  tdRang.className = 'wcl-rang';
+  tdRang.textContent = parse.best === null ? '—' : rang;
+  tr.appendChild(tdRang);
+
+  const tdNom = document.createElement('td');
+  tdNom.className = 'wcl-membre';
+
+  const nom = document.createElement('span');
+  nom.className = 'wcl-nom';
+  nom.style.setProperty('--spec', classColor(membre.class));
+  nom.textContent = membre.name;
+  tdNom.appendChild(nom);
+
+  if (parse.best === null) {
+    const vide = document.createElement('span');
+    vide.className = 'wcl-aucun';
+    vide.textContent = 'aucun parse loggé';
+    tdNom.appendChild(vide);
+  } else {
+    const piste = document.createElement('span');
+    piste.className = 'wcl-piste';
+
+    const plein = document.createElement('span');
+    plein.className = 'wcl-plein';
+    plein.style.width = `${parse.median}%`;
+    plein.style.background = couleurParse(parse.median);
+
+    const fantome = document.createElement('span');
+    fantome.className = 'wcl-fantome';
+    fantome.style.left = `${parse.median}%`;
+    fantome.style.width = `${parse.best - parse.median}%`;
+    fantome.style.background = couleurParse(parse.best);
+
+    piste.append(plein, fantome);
+    tdNom.appendChild(piste);
+  }
+  tr.appendChild(tdNom);
+
+  const tdChiffres = document.createElement('td');
+  tdChiffres.className = 'wcl-chiffres';
+
+  const best = document.createElement('span');
+  best.className = 'wcl-best';
+  best.style.color = couleurParse(parse.best);
+  best.textContent = parse.best === null ? '—' : parse.best.toFixed(1);
+
+  const detail = document.createElement('span');
+  detail.className = 'wcl-detail';
+  detail.textContent =
+    parse.best === null
+      ? `0 kill`
+      : `méd. ${parse.median.toFixed(1)} · ${parse.kills} kill${parse.kills > 1 ? 's' : ''}`;
+
+  tdChiffres.append(best, detail);
+  tr.appendChild(tdChiffres);
+
+  return tr;
+}
+
+/**
+ * Le classement du roster. Trie sur le best, les membres sans parse en fin de liste :
+ * ils n'ont pas un mauvais rang, ils n'en ont pas.
+ */
+function panneauWcl() {
+  const wrap = document.createElement('div');
+
+  const titre = document.createElement('p');
+  titre.className = 'cle-titre';
+  titre.textContent = wclStore.zone
+    ? `Parses — ${wclStore.zone} (${wclStore.difficulty || 'Héroïque'})`
+    : 'Parses Warcraft Logs';
+  wrap.appendChild(titre);
+
+  const lignes = roster
+    .map((membre) => ({ membre, parse: (wclStore.members || {})[membre.id] }))
+    .filter((entree) => entree.parse)
+    .sort((a, b) => {
+      if (a.parse.best === null && b.parse.best === null) return 0;
+      if (a.parse.best === null) return 1;
+      if (b.parse.best === null) return -1;
+      return b.parse.best - a.parse.best;
+    });
+
+  if (!lignes.length) {
+    const vide = document.createElement('p');
+    vide.className = 'cle-note';
+    vide.textContent =
+      'Aucun relevé en cache. Il s’écrit à la main dans data/wcl.json : Warcraft Logs refuse les lectures automatisées.';
+    wrap.appendChild(vide);
+    return wrap;
+  }
+
+  const table = document.createElement('table');
+  table.className = 'cle-table wcl-table';
+  const tbody = document.createElement('tbody');
+  lignes.forEach((entree, index) => {
+    tbody.appendChild(ligneParse(entree.membre, entree.parse, index + 1));
+  });
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+
+  const note = document.createElement('p');
+  note.className = 'cle-note';
+  const moyenne = wclStore.guildAverage;
+  note.textContent = `Barre pleine = médiane, prolongement = best.${
+    moyenne ? ` Moyenne de guilde : ${moyenne.best} au best, ${moyenne.median} en médiane.` : ''
+  } Un percentile se compare à la même spec dans le monde, pas aux autres membres — un parse de heal et un parse de dps ne se rangent pas sur la même règle.`;
+  wrap.appendChild(note);
+
+  const maj = document.createElement('p');
+  maj.className = 'cle-note';
+  maj.textContent = wclStore.updatedAt
+    ? `Relevé du ${new Date(wclStore.updatedAt).toLocaleDateString('fr-FR')} · warcraftlogs.com`
+    : 'Source : warcraftlogs.com';
+  wrap.appendChild(maj);
+
+  return wrap;
+}
+
 /**
  * Le panneau descend sous le bouton et se referme au clic ailleurs ou avec Echap :
  * c'est une antiseche qu'on consulte au passage, elle ne doit jamais rester dans les
@@ -4855,10 +5444,13 @@ function panneauPI() {
 // antiseches ouvertes en meme temps se marcheraient dessus.
 const panneauxBarre = [];
 
-function armerPanneau(idBouton, idPanneau, construire) {
-  const bouton = document.getElementById(idBouton);
+/**
+ * Enregistre un panneau deroulant. Le bouton est facultatif : celui des parses n'en a
+ * pas, il s'ouvre par cinq clics sur Footzy et n'a donc rien a allumer dans la barre.
+ */
+function enregistrerPanneau(idPanneau, construire, bouton) {
   const panneau = document.getElementById(idPanneau);
-  if (!bouton || !panneau) return;
+  if (!panneau) return null;
 
   // Le contenu est refait a chaque ouverture : les compteurs bougent au fil des
   // clics, et le classement PI change apres une mise a jour. Reconstruire un
@@ -4869,18 +5461,14 @@ function armerPanneau(idBouton, idPanneau, construire) {
       panneau.appendChild(construire());
     }
     panneau.classList.toggle('is-open', ouvert);
-    bouton.classList.toggle('is-open', ouvert);
-    bouton.setAttribute('aria-expanded', String(ouvert));
+    if (bouton) {
+      bouton.classList.toggle('is-open', ouvert);
+      bouton.setAttribute('aria-expanded', String(ouvert));
+    }
   };
 
-  panneauxBarre.push({ afficher, panneau });
-
-  bouton.addEventListener('click', (event) => {
-    event.stopPropagation();
-    const ouvrir = !panneau.classList.contains('is-open');
-    for (const autre of panneauxBarre) if (autre.panneau !== panneau) autre.afficher(false);
-    afficher(ouvrir);
-  });
+  const entree = { afficher, panneau };
+  panneauxBarre.push(entree);
 
   // Un clic dans le panneau ne le referme pas : on y lit un tableau, on peut vouloir
   // le faire defiler ou selectionner une valeur.
@@ -4888,6 +5476,60 @@ function armerPanneau(idBouton, idPanneau, construire) {
   document.addEventListener('click', () => afficher(false));
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') afficher(false);
+  });
+
+  return entree;
+}
+
+/** Ouvrir l'un ferme les autres : deux antiseches deroulees se marcheraient dessus. */
+function ouvrirSeul(entree, ouvert) {
+  for (const autre of panneauxBarre) if (autre.panneau !== entree.panneau) autre.afficher(false);
+  entree.afficher(ouvert);
+}
+
+function armerPanneau(idBouton, idPanneau, construire) {
+  const bouton = document.getElementById(idBouton);
+  if (!bouton) return;
+  const entree = enregistrerPanneau(idPanneau, construire, bouton);
+  if (!entree) return;
+
+  bouton.addEventListener('click', (event) => {
+    event.stopPropagation();
+    ouvrirSeul(entree, !entree.panneau.classList.contains('is-open'));
+  });
+}
+
+/**
+ * Acces cache aux parses : cinq clics sur Footzy, a droite de la barre.
+ *
+ * Meme mecanique que le roster derriere la mascotte, et pour la meme raison : un
+ * classement nominatif des membres n'a pas a s'afficher sous le nez de tout le monde
+ * qui passe sur le site. Rien ne l'annonce, et le compteur retombe a zero apres deux
+ * secondes sans clic, sinon cinq clics eparpilles dans la soiree finiraient par
+ * l'ouvrir tout seuls.
+ */
+const CLICS_PARSES = 5;
+let clicsFootzy = 0;
+let dernierClicFootzy = 0;
+
+function armerAccesParses() {
+  const el = document.querySelector('.footzy--right');
+  if (!el) return;
+  const entree = enregistrerPanneau('wcl-panneau', panneauWcl);
+  if (!entree) return;
+
+  el.addEventListener('click', (event) => {
+    // Sans ca, le clic remonte au document, dont l'ecouteur referme le panneau a
+    // l'instant meme ou le cinquieme clic vient de l'ouvrir.
+    event.stopPropagation();
+
+    const maintenant = Date.now();
+    clicsFootzy = maintenant - dernierClicFootzy > 2000 ? 1 : clicsFootzy + 1;
+    dernierClicFootzy = maintenant;
+    if (clicsFootzy < CLICS_PARSES) return;
+
+    clicsFootzy = 0;
+    ouvrirSeul(entree, true);
   });
 }
 
@@ -4925,6 +5567,8 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
       loadWowhead(),
       loadPowerInfusion(),
       loadLoot(),
+      loadGazette(),
+      loadWcl(),
       loadPortraits(),
     ]);
     // Etat de depart : l'ecran d'accueil de la guilde, onglets masques.
@@ -4932,6 +5576,7 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
     render();
     // Une seule fois : `renderMascotte` passe a chaque rendu, l'ecouteur non.
     armerAccesRoster();
+    armerAccesParses();
     armerPanneau('cle-toggle', 'cle-panneau', panneauCle);
     armerPanneau('pi-toggle', 'pi-panneau', panneauPI);
   } catch (err) {

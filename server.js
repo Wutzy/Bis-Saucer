@@ -8,6 +8,8 @@ const { CLASSES } = require('./src/classes');
 const { readRoster, updateMember, addMember, removeMember } = require('./src/roster');
 const { readLoot, addLoot, removeLoot } = require('./src/loot');
 const { readViews, bumpView } = require('./src/views');
+const { readGazette } = require('./src/gazette');
+const { readWcl } = require('./src/wcl');
 const {
   readStore,
   saveSpecEntry,
@@ -177,6 +179,19 @@ app.delete('/api/loot/:id', (req, res) => {
   const entry = removeLoot(req.params.id);
   if (!entry) return res.status(404).json({ error: 'Ligne inconnue.' });
   res.json({ entry });
+});
+
+/** Numeros de la gazette (data/gazette.json). Lecture seule : un numero s'ecrit au fichier. */
+app.get('/api/gazette', (req, res) => {
+  res.json(readGazette());
+});
+
+/**
+ * Parses Warcraft Logs (data/wcl.json). Lecture seule, et pour de bon : le site
+ * refuse les lectures automatisees, le releve s'ecrit au fichier a la main.
+ */
+app.get('/api/wcl', (req, res) => {
+  res.json(readWcl());
 });
 
 /** Portraits d'armurerie (data/portraits.json). Aucun appel reseau. */

@@ -23,6 +23,8 @@ const { CLASSES } = require(path.join(ROOT, 'src/classes'));
 const { readRoster } = require(path.join(ROOT, 'src/roster'));
 const { readLoot } = require(path.join(ROOT, 'src/loot'));
 const { readViews } = require(path.join(ROOT, 'src/views'));
+const { readGazette } = require(path.join(ROOT, 'src/gazette'));
+const { readWcl } = require(path.join(ROOT, 'src/wcl'));
 const {
   readStore,
   readTrinkets,
@@ -81,6 +83,8 @@ const sizes = {
   powerinfusion: write('powerinfusion.json', readPowerInfusion()),
   loot: write('loot.json', readLoot()),
   views: write('views.json', readViews()),
+  gazette: write('gazette.json', readGazette()),
+  wcl: write('wcl.json', readWcl()),
   // Les vignettes sont des URLs de Blizzard : la version publiee les affiche sans
   // rien interroger, elle ne peut simplement pas les rafraichir.
   portraits: write('portraits.json', readPortraits()),
