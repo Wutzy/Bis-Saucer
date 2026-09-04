@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:01:58.473Z",
+      "scrapedAt": "2026-09-04T08:56:51.531Z",
       "items": [
         {
           "slot": "Helm",
@@ -2660,7 +2660,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:03.362Z",
+      "scrapedAt": "2026-09-04T08:56:56.313Z",
       "items": [
         {
           "slot": "Helm",
@@ -4322,7 +4322,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:08.028Z",
+      "scrapedAt": "2026-09-04T08:57:00.972Z",
       "items": [
         {
           "slot": "Helm",
@@ -6011,7 +6011,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:16.812Z",
+      "scrapedAt": "2026-09-04T08:57:10.589Z",
       "items": [
         {
           "slot": "Helm",
@@ -7588,7 +7588,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:24.773Z",
+      "scrapedAt": "2026-09-04T08:57:18.762Z",
       "items": [
         {
           "slot": "Helm",
@@ -9166,7 +9166,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:32.937Z",
+      "scrapedAt": "2026-09-04T08:57:27.165Z",
       "items": [
         {
           "slot": "Helm",
@@ -10802,7 +10802,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:46.965Z",
+      "scrapedAt": "2026-09-04T08:57:42.325Z",
       "items": [
         {
           "slot": "Helm",
@@ -12404,7 +12404,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:56.512Z",
+      "scrapedAt": "2026-09-04T08:57:52.159Z",
       "items": [
         {
           "slot": "Helm",
@@ -13980,7 +13980,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:00.295Z",
+      "scrapedAt": "2026-09-04T08:57:56.600Z",
       "items": [
         {
           "slot": "Helm",
@@ -15547,7 +15547,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:04.572Z",
+      "scrapedAt": "2026-09-04T08:58:00.973Z",
       "items": [
         {
           "slot": "Helm",
@@ -18312,7 +18312,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:08.971Z",
+      "scrapedAt": "2026-09-04T08:58:05.352Z",
       "items": [
         {
           "slot": "Helm",
@@ -19942,7 +19942,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:13.256Z",
+      "scrapedAt": "2026-09-04T08:58:09.720Z",
       "items": [
         {
           "slot": "Helm",
@@ -20717,7 +20717,7 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Enchant Weapon - Arcane Mastery",
+                "name": "Enchant Weapon - Rite of the Hash'ey",
                 "itemId": null,
                 "wowheadParams": null,
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
@@ -20740,7 +20740,7 @@
               "crafted": true,
               "profession": "Blacksmithing",
               "enchant": {
-                "name": "Enchant Weapon - Arcane Mastery",
+                "name": "Enchant Weapon - Rite of the Hash'ey",
                 "itemId": null,
                 "wowheadParams": null,
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
@@ -21116,7 +21116,7 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Enchant Weapon - Arcane Mastery",
+                "name": "Enchant Weapon - Rite of the Hash'ey",
                 "itemId": null,
                 "wowheadParams": null,
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
@@ -21139,7 +21139,7 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Enchant Weapon - Arcane Mastery",
+                "name": "Enchant Weapon - Rite of the Hash'ey",
                 "itemId": null,
                 "wowheadParams": null,
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
@@ -21508,7 +21508,7 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Enchant Weapon - Arcane Mastery",
+                "name": "Enchant Weapon - Rite of the Hash'ey",
                 "itemId": null,
                 "wowheadParams": null,
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
@@ -21531,7 +21531,7 @@
               "crafted": false,
               "profession": null,
               "enchant": {
-                "name": "Enchant Weapon - Arcane Mastery",
+                "name": "Enchant Weapon - Rite of the Hash'ey",
                 "itemId": null,
                 "wowheadParams": null,
                 "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
@@ -21589,7 +21589,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:22.003Z",
+      "scrapedAt": "2026-09-04T08:58:19.088Z",
       "items": [
         {
           "slot": "Helm",
@@ -21954,7 +21954,7 @@
           "crafted": false,
           "profession": null,
           "enchant": {
-            "name": "Enchant Weapon - Arcane Mastery",
+            "name": "Enchant Weapon - Rite of the Hash'ey",
             "itemId": null,
             "wowheadParams": null,
             "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
@@ -21977,7 +21977,7 @@
           "crafted": true,
           "profession": "Blacksmithing",
           "enchant": {
-            "name": "Enchant Weapon - Arcane Mastery",
+            "name": "Enchant Weapon - Rite of the Hash'ey",
             "itemId": null,
             "wowheadParams": null,
             "icon": "inv_12_profession_enchanting_enchantedvellum_purple"
@@ -23359,7 +23359,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:26.692Z",
+      "scrapedAt": "2026-09-04T08:58:24.045Z",
       "items": [
         {
           "slot": "Helm",
@@ -23833,7 +23833,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&bonus=13708:13848:10835",
+              "wowheadParams": "item=268265&bonus=13987:13848:13335",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -23975,12 +23975,12 @@
               "align": "left",
               "empty": false,
               "itemId": 271486,
-              "originalItemId": 271876,
-              "wowheadParams": "item=271486&bonus=13708:13848&original-item=271876",
+              "originalItemId": 239046,
+              "wowheadParams": "item=271486&bonus=12854&original-item=239046",
               "name": "Fanged Raiment of the Ophidian Oracle",
               "quality": 4,
               "icon": "inv_robe_mail_raidshamanulatek_d_01",
-              "source": "Ula'tek",
+              "source": "King's Rest",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -24613,7 +24613,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&bonus=13708:13848:10835",
+              "wowheadParams": "item=268265&bonus=13987:13848:13335",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -24755,8 +24755,8 @@
               "align": "left",
               "empty": false,
               "itemId": 271486,
-              "originalItemId": 271876,
-              "wowheadParams": "item=271486&bonus=13708:13848&original-item=271876",
+              "originalItemId": 268223,
+              "wowheadParams": "item=271486&bonus=13848&original-item=268223",
               "name": "Fanged Raiment of the Ophidian Oracle",
               "quality": 4,
               "icon": "inv_robe_mail_raidshamanulatek_d_01",
@@ -24997,7 +24997,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:35.997Z",
+      "scrapedAt": "2026-09-04T08:58:33.159Z",
       "items": [
         {
           "slot": "Helm",
@@ -25054,7 +25054,7 @@
           "empty": false,
           "itemId": 268265,
           "originalItemId": null,
-          "wowheadParams": "item=268265&bonus=13708:13848:10835",
+          "wowheadParams": "item=268265&bonus=13987:13848:13335",
           "name": "Aqirbane Reliquary",
           "quality": 4,
           "icon": "inv_121_jewelry_neck03_green",
@@ -25196,12 +25196,12 @@
           "align": "left",
           "empty": false,
           "itemId": 271486,
-          "originalItemId": 271876,
-          "wowheadParams": "item=271486&bonus=13708:13848&original-item=271876",
+          "originalItemId": 239046,
+          "wowheadParams": "item=271486&bonus=12854&original-item=239046",
           "name": "Fanged Raiment of the Ophidian Oracle",
           "quality": 4,
           "icon": "inv_robe_mail_raidshamanulatek_d_01",
-          "source": "Ula'tek",
+          "source": "King's Rest",
           "catalyst": true,
           "crafted": false,
           "profession": null,
@@ -25976,13 +25976,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 268255,
+              "itemId": 251137,
               "originalItemId": null,
-              "wowheadParams": "item=268255&bonus=13848",
-              "name": "Cackling Soultreads",
-              "quality": 4,
-              "icon": "inv_boot_cloth_raidmageulatek_d_01",
-              "source": "Coiled Altar",
+              "wowheadParams": "item=251137&bonus=13848",
+              "name": "Tempestuous Sandals",
+              "quality": 3,
+              "icon": "inv_boot_cloth_dungeonharronir_c_01",
+              "source": "Murder Row",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -26673,7 +26673,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:40.023Z",
+      "scrapedAt": "2026-09-04T08:58:37.706Z",
       "items": [
         {
           "slot": "Helm",
@@ -28391,7 +28391,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:48.809Z",
+      "scrapedAt": "2026-09-04T08:58:46.669Z",
       "items": [
         {
           "slot": "Helm",
@@ -29976,7 +29976,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:51.647Z",
+      "scrapedAt": "2026-09-04T08:57:47.410Z",
       "items": [
         {
           "slot": "Helm",
@@ -31578,7 +31578,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:20.631Z",
+      "scrapedAt": "2026-09-04T08:57:14.723Z",
       "items": [
         {
           "slot": "Helm",
@@ -33197,7 +33197,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:37.505Z",
+      "scrapedAt": "2026-09-04T08:57:33.200Z",
       "items": [
         {
           "slot": "Helm",
@@ -34862,7 +34862,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:31.429Z",
+      "scrapedAt": "2026-09-04T08:58:28.643Z",
       "items": [
         {
           "slot": "Helm",
@@ -36552,7 +36552,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:12.557Z",
+      "scrapedAt": "2026-09-04T08:57:06.053Z",
       "items": [
         {
           "slot": "Helm",
@@ -38242,7 +38242,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:17.567Z",
+      "scrapedAt": "2026-09-04T08:58:14.453Z",
       "items": [
         {
           "slot": "Helm",
@@ -39212,13 +39212,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 268255,
+              "itemId": 251137,
               "originalItemId": null,
-              "wowheadParams": "item=268255&bonus=13848",
-              "name": "Cackling Soultreads",
-              "quality": 4,
-              "icon": "inv_boot_cloth_raidmageulatek_d_01",
-              "source": "Coiled Altar",
+              "wowheadParams": "item=251137&bonus=13848",
+              "name": "Tempestuous Sandals",
+              "quality": 3,
+              "icon": "inv_boot_cloth_dungeonharronir_c_01",
+              "source": "Murder Row",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -39902,7 +39902,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:03:44.529Z",
+      "scrapedAt": "2026-09-04T08:58:42.191Z",
       "items": [
         {
           "slot": "Helm",
@@ -41511,7 +41511,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:42.275Z",
+      "scrapedAt": "2026-09-04T08:57:37.719Z",
       "items": [
         {
           "slot": "Helm",
@@ -43107,7 +43107,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-03T09:02:29.001Z",
+      "scrapedAt": "2026-09-04T08:57:22.708Z",
       "items": [
         {
           "slot": "Helm",
@@ -43493,5 +43493,5 @@
       ]
     }
   },
-  "updatedAt": "2026-09-03T09:03:48.817Z"
+  "updatedAt": "2026-09-04T08:58:46.677Z"
 }
