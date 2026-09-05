@@ -1443,7 +1443,7 @@
           "simulatedAt": "2026-09-02 03:17"
         }
       },
-      "fetchedAt": "2026-09-04T08:58:26.419Z"
+      "fetchedAt": "2026-09-05T08:28:13.771Z"
     },
     "death-knight-blood": {
       "key": "death-knight-blood",
@@ -3130,7 +3130,7 @@
           "simulatedAt": "2026-09-02 02:52"
         }
       },
-      "fetchedAt": "2026-09-04T08:56:53.957Z"
+      "fetchedAt": "2026-09-05T08:26:37.055Z"
     },
     "priest-discipline": {
       "key": "priest-discipline",
@@ -3155,7 +3155,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-04T08:58:07.226Z"
+      "fetchedAt": "2026-09-05T08:27:53.429Z"
     },
     "death-knight-frost": {
       "key": "death-knight-frost",
@@ -4842,7 +4842,7 @@
           "simulatedAt": "2026-09-02 02:52"
         }
       },
-      "fetchedAt": "2026-09-04T08:56:58.690Z"
+      "fetchedAt": "2026-09-05T08:26:41.844Z"
     },
     "demon-hunter-havoc": {
       "key": "demon-hunter-havoc",
@@ -6556,7 +6556,7 @@
           "simulatedAt": "2026-09-02 02:53"
         }
       },
-      "fetchedAt": "2026-09-04T08:57:03.451Z"
+      "fetchedAt": "2026-09-05T08:26:46.900Z"
     },
     "druid-balance": {
       "key": "druid-balance",
@@ -6581,7 +6581,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-04T08:57:12.456Z"
+      "fetchedAt": "2026-09-05T08:26:56.372Z"
     },
     "druid-restoration": {
       "key": "druid-restoration",
@@ -6606,7 +6606,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-04T08:57:20.633Z"
+      "fetchedAt": "2026-09-05T08:27:04.395Z"
     },
     "hunter-beast-mastery": {
       "key": "hunter-beast-mastery",
@@ -8320,7 +8320,7 @@
           "simulatedAt": "2026-09-02 02:59"
         }
       },
-      "fetchedAt": "2026-09-04T08:57:29.474Z"
+      "fetchedAt": "2026-09-05T08:27:14.135Z"
     },
     "mage-fire": {
       "key": "mage-fire",
@@ -9764,7 +9764,7 @@
           "simulatedAt": "2026-09-02 03:04"
         }
       },
-      "fetchedAt": "2026-09-04T08:57:44.813Z"
+      "fetchedAt": "2026-09-05T08:27:28.718Z"
     },
     "paladin-holy": {
       "key": "paladin-holy",
@@ -9789,7 +9789,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-04T08:57:54.018Z"
+      "fetchedAt": "2026-09-05T08:27:38.829Z"
     },
     "paladin-protection": {
       "key": "paladin-protection",
@@ -11476,7 +11476,7 @@
           "simulatedAt": "2026-09-02 03:11"
         }
       },
-      "fetchedAt": "2026-09-04T08:57:59.061Z"
+      "fetchedAt": "2026-09-05T08:27:43.938Z"
     },
     "paladin-retribution": {
       "key": "paladin-retribution",
@@ -13163,7 +13163,7 @@
           "simulatedAt": "2026-09-03 01:40"
         }
       },
-      "fetchedAt": "2026-09-04T08:58:03.418Z"
+      "fetchedAt": "2026-09-05T08:27:49.341Z"
     },
     "priest-shadow": {
       "key": "priest-shadow",
@@ -14607,7 +14607,7 @@
           "simulatedAt": "2026-09-02 03:12"
         }
       },
-      "fetchedAt": "2026-09-04T08:58:12.003Z"
+      "fetchedAt": "2026-09-05T08:27:58.594Z"
     },
     "rogue-subtlety": {
       "key": "rogue-subtlety",
@@ -16321,7 +16321,7 @@
           "simulatedAt": "2026-09-02 03:16"
         }
       },
-      "fetchedAt": "2026-09-04T08:58:21.451Z"
+      "fetchedAt": "2026-09-05T08:28:08.875Z"
     },
     "shaman-restoration": {
       "key": "shaman-restoration",
@@ -16346,7 +16346,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-04T08:58:35.021Z"
+      "fetchedAt": "2026-09-05T08:28:23.133Z"
     },
     "warlock-affliction": {
       "key": "warlock-affliction",
@@ -17790,7 +17790,7 @@
           "simulatedAt": "2026-09-02 03:19"
         }
       },
-      "fetchedAt": "2026-09-04T08:58:40.025Z"
+      "fetchedAt": "2026-09-05T08:28:28.089Z"
     },
     "warrior-arms": {
       "key": "warrior-arms",
@@ -19477,7 +19477,7 @@
           "simulatedAt": "2026-09-02 03:21"
         }
       },
-      "fetchedAt": "2026-09-04T08:58:49.056Z"
+      "fetchedAt": "2026-09-05T08:28:39.719Z"
     },
     "monk-windwalker": {
       "key": "monk-windwalker",
@@ -21191,7 +21191,7 @@
           "simulatedAt": "2026-09-02 03:08"
         }
       },
-      "fetchedAt": "2026-09-04T08:57:49.865Z"
+      "fetchedAt": "2026-09-05T08:27:34.210Z"
     },
     "druid-feral": {
       "key": "druid-feral",
@@ -21216,7 +21216,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-04T08:57:16.585Z"
+      "fetchedAt": "2026-09-05T08:27:00.470Z"
     },
     "hunter-marksmanship": {
       "key": "hunter-marksmanship",
@@ -22930,7 +22930,7 @@
           "simulatedAt": "2026-09-02 02:59"
         }
       },
-      "fetchedAt": "2026-09-04T08:57:35.515Z"
+      "fetchedAt": "2026-09-05T08:27:18.843Z"
     },
     "shaman-enhancement": {
       "key": "shaman-enhancement",
@@ -24085,7 +24085,7 @@
               "itemId": 270175,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 685618
+              "dps": 685823
             },
             {
               "rank": 2,
@@ -24094,43 +24094,43 @@
               "itemId": 273796,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 678869
+              "dps": 679484
             },
             {
               "rank": 3,
-              "name": "Void Execution Mandate",
-              "nameFr": "Mandat d’exécution du Vide",
-              "itemId": 250225,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 676832
-            },
-            {
-              "rank": 4,
               "name": "Zul'jin's Guillotine Technique",
               "nameFr": "Coup de la guillotine de Zul’jin",
               "itemId": 270173,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 676758
+              "dps": 676861
+            },
+            {
+              "rank": 4,
+              "name": "Void Execution Mandate",
+              "nameFr": "Mandat d’exécution du Vide",
+              "itemId": 250225,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 676844
             },
             {
               "rank": 5,
+              "name": "Keeper's Seething Core",
+              "nameFr": "Cœur bouillonnant de la garde",
+              "itemId": 270165,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 675911
+            },
+            {
+              "rank": 6,
               "name": "Algeth'ar Puzzle Box",
               "nameFr": "Boîte à secret d’Algeth’ar",
               "itemId": 193701,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 676176
-            },
-            {
-              "rank": 6,
-              "name": "Lustrous Golden Plumage",
-              "nameFr": "Plumage doré satiné",
-              "itemId": 159617,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 675971
+              "dps": 675601
             },
             {
               "rank": 7,
@@ -24139,25 +24139,25 @@
               "itemId": 246304,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 675949
+              "dps": 675585
             },
             {
               "rank": 8,
+              "name": "Lustrous Golden Plumage",
+              "nameFr": "Plumage doré satiné",
+              "itemId": 159617,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 675398
+            },
+            {
+              "rank": 9,
               "name": "Freightrunner's Flask",
               "nameFr": "Flasque de cargaison",
               "itemId": 250215,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 675148
-            },
-            {
-              "rank": 9,
-              "name": "Keeper's Seething Core",
-              "nameFr": "Cœur bouillonnant de la garde",
-              "itemId": 270165,
-              "source": "Raid",
-              "ilvl": 334,
-              "dps": 674893
+              "dps": 674981
             },
             {
               "rank": 10,
@@ -24166,7 +24166,7 @@
               "itemId": 250214,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 673728
+              "dps": 673635
             },
             {
               "rank": 11,
@@ -24175,7 +24175,7 @@
               "itemId": 270164,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 673506
+              "dps": 672899
             },
             {
               "rank": 12,
@@ -24184,7 +24184,7 @@
               "itemId": 273797,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 671341
+              "dps": 671183
             },
             {
               "rank": 13,
@@ -24193,7 +24193,7 @@
               "itemId": 246305,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 670289
+              "dps": 670515
             },
             {
               "rank": 14,
@@ -24202,7 +24202,7 @@
               "itemId": 249806,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 669072
+              "dps": 668632
             },
             {
               "rank": 15,
@@ -24211,25 +24211,25 @@
               "itemId": 245752,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 667089
+              "dps": 667412
             },
             {
               "rank": 16,
-              "name": "Magister's Alchemist Stone",
-              "nameFr": "Pierre d’alchimiste de magistère",
-              "itemId": 241340,
-              "source": "Profession",
-              "ilvl": 331,
-              "dps": 666855
-            },
-            {
-              "rank": 17,
               "name": "Darkmoon Dominion: Void",
               "nameFr": "Domination de Sombrelune : Vide",
               "itemId": 246307,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 666611
+              "dps": 666640
+            },
+            {
+              "rank": 17,
+              "name": "Magister's Alchemist Stone",
+              "nameFr": "Pierre d’alchimiste de magistère",
+              "itemId": 241340,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 666396
             },
             {
               "rank": 18,
@@ -24238,7 +24238,7 @@
               "itemId": 250228,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 664994
+              "dps": 665112
             },
             {
               "rank": 19,
@@ -24247,25 +24247,25 @@
               "itemId": 249343,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 664962
+              "dps": 665074
             },
             {
               "rank": 20,
-              "name": "Venomous Gladiator's Insignia of Alacrity",
-              "nameFr": "Insigne d’empressement du gladiateur venimeux",
-              "itemId": 270603,
-              "source": "High PvP",
-              "ilvl": 315,
-              "dps": 662277
-            },
-            {
-              "rank": 21,
               "name": "Umbral Plume",
               "nameFr": "Plume ombreuse",
               "itemId": 260235,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 662090
+              "dps": 662049
+            },
+            {
+              "rank": 21,
+              "name": "Venomous Gladiator's Insignia of Alacrity",
+              "nameFr": "Insigne d’empressement du gladiateur venimeux",
+              "itemId": 270603,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 661840
             },
             {
               "rank": 22,
@@ -24274,7 +24274,7 @@
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 661752
+              "dps": 661491
             },
             {
               "rank": 23,
@@ -24283,43 +24283,43 @@
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 661325
+              "dps": 661348
             },
             {
               "rank": 24,
-              "name": "Tumor of the Swarm",
-              "nameFr": "Tumeur de l’essaim",
-              "itemId": 250245,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 659815
-            },
-            {
-              "rank": 25,
               "name": "Vashnik's Sanguine Rancor",
               "nameFr": "Rancune sanguinaire de Vashnik",
               "itemId": 270166,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 659629
+              "dps": 660418
+            },
+            {
+              "rank": 25,
+              "name": "Tumor of the Swarm",
+              "nameFr": "Tumeur de l’essaim",
+              "itemId": 250245,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 660112
             },
             {
               "rank": 26,
-              "name": "Emberwing Feather",
-              "nameFr": "Plume de braisaile",
-              "itemId": 250144,
-              "source": "Dungeon",
-              "ilvl": 298,
-              "dps": 658640
-            },
-            {
-              "rank": 27,
               "name": "Light Company Guidon",
               "nameFr": "Guidon de la compagnie de la Lumière",
               "itemId": 249344,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 658482
+              "dps": 659378
+            },
+            {
+              "rank": 27,
+              "name": "Emberwing Feather",
+              "nameFr": "Plume de braisaile",
+              "itemId": 250144,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 658739
             },
             {
               "rank": 28,
@@ -24328,7 +24328,7 @@
               "itemId": 270602,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 657882
+              "dps": 658316
             },
             {
               "rank": 29,
@@ -24337,52 +24337,52 @@
               "itemId": 250256,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 657511
+              "dps": 657392
             },
             {
               "rank": 30,
-              "name": "Solarflare Prism",
-              "nameFr": "Prisme d’éruption solaire",
-              "itemId": 252420,
-              "source": "Dungeon",
-              "ilvl": 298,
-              "dps": 657260
-            },
-            {
-              "rank": 31,
               "name": "Font of Venomous Rage",
               "nameFr": "Source de rage venimeuse",
               "itemId": 270168,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 657149
+              "dps": 656964
             },
             {
-              "rank": 32,
+              "rank": 31,
               "name": "Tiny Electromental in a Jar",
               "nameFr": "Petit électromentaire en bouteille",
               "itemId": 158374,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 657026
+              "dps": 656492
+            },
+            {
+              "rank": 32,
+              "name": "Solarflare Prism",
+              "nameFr": "Prisme d’éruption solaire",
+              "itemId": 252420,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 656121
             },
             {
               "rank": 33,
-              "name": "Ruby Whelp Shell [Aoe]",
-              "nameFr": "Coquille de Dragonnet rubis [Aoe]",
-              "itemId": 193757,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 656258
-            },
-            {
-              "rank": 34,
               "name": "Sapling of the Dawnroot",
               "nameFr": "Arbrisseau d’Auberacine",
               "itemId": 250259,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 655679
+              "dps": 656026
+            },
+            {
+              "rank": 34,
+              "name": "Ruby Whelp Shell [Aoe]",
+              "nameFr": "Coquille de Dragonnet rubis [Aoe]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 655818
             },
             {
               "rank": 35,
@@ -24391,7 +24391,7 @@
               "itemId": 193757,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 654438
+              "dps": 654505
             },
             {
               "rank": 36,
@@ -24400,25 +24400,25 @@
               "itemId": 246306,
               "source": "Profession",
               "ilvl": 331,
-              "dps": 651966
+              "dps": 652267
             },
             {
               "rank": 37,
-              "name": "Mchimba's Ritual Bandages",
-              "nameFr": "Bandages rituels de Mchimba",
-              "itemId": 159618,
-              "source": "Dungeon",
-              "ilvl": 334,
-              "dps": 651417
-            },
-            {
-              "rank": 38,
               "name": "First Mate's Shellward",
               "nameFr": "Garde-carapace de second",
               "itemId": 270160,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 650451
+              "dps": 651578
+            },
+            {
+              "rank": 38,
+              "name": "Mchimba's Ritual Bandages",
+              "nameFr": "Bandages rituels de Mchimba",
+              "itemId": 159618,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 651115
             },
             {
               "rank": 39,
@@ -24427,25 +24427,25 @@
               "itemId": 250243,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 650397
+              "dps": 651075
             },
             {
               "rank": 40,
-              "name": "Latch's Crooked Hook",
-              "nameFr": "Crochet tordu de Clenche",
-              "itemId": 250226,
-              "source": "Dungeon",
-              "ilvl": 298,
-              "dps": 649913
-            },
-            {
-              "rank": 41,
               "name": "Vessel of Tortured Souls",
               "nameFr": "Réceptacle des âmes torturées",
               "itemId": 250258,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 649881
+              "dps": 649717
+            },
+            {
+              "rank": 41,
+              "name": "Latch's Crooked Hook",
+              "nameFr": "Crochet tordu de Clenche",
+              "itemId": 250226,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 649673
             },
             {
               "rank": 42,
@@ -24454,7 +24454,7 @@
               "itemId": 249345,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 647933
+              "dps": 648102
             },
             {
               "rank": 43,
@@ -24463,7 +24463,7 @@
               "itemId": 151307,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 647373
+              "dps": 647846
             },
             {
               "rank": 44,
@@ -24472,34 +24472,34 @@
               "itemId": 270605,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 646489
+              "dps": 646192
             },
             {
               "rank": 45,
-              "name": "Undreamt God's Oozing Vestige",
-              "nameFr": "Vestige suintant de la divinité ineffable",
-              "itemId": 249805,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 646060
-            },
-            {
-              "rank": 46,
               "name": "Venomous Gladiator's Emblem",
               "nameFr": "Emblème du gladiateur venimeux",
               "itemId": 270606,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 645796
+              "dps": 646096
             },
             {
-              "rank": 47,
+              "rank": 46,
               "name": "Venomous Gladiator's Sigil of Adaptation",
               "nameFr": "Cachet d’adaptation du gladiateur venimeux",
               "itemId": 270604,
               "source": "High PvP",
               "ilvl": 315,
-              "dps": 645646
+              "dps": 645923
+            },
+            {
+              "rank": 47,
+              "name": "Undreamt God's Oozing Vestige",
+              "nameFr": "Vestige suintant de la divinité ineffable",
+              "itemId": 249805,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 645887
             },
             {
               "rank": 48,
@@ -24508,7 +24508,7 @@
               "itemId": 250257,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 644923
+              "dps": 643947
             },
             {
               "rank": 49,
@@ -24517,43 +24517,43 @@
               "itemId": 250227,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 643669
+              "dps": 643404
             },
             {
               "rank": 50,
-              "name": "The Eternal Egg",
-              "nameFr": "L’œuf éternel",
-              "itemId": 249807,
-              "source": "Raid",
-              "ilvl": 298,
-              "dps": 641646
-            },
-            {
-              "rank": 51,
               "name": "Ampoule of Pure Void",
               "nameFr": "Ampoule de Vide pur",
               "itemId": 151312,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 641625
+              "dps": 641993
             },
             {
-              "rank": 52,
+              "rank": 51,
               "name": "Jelly Replicator",
               "nameFr": "Réplication de gelée",
               "itemId": 250242,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 641586
+              "dps": 641921
             },
             {
-              "rank": 53,
+              "rank": 52,
               "name": "Rotting Globule",
               "nameFr": "Globule en putréfaction",
               "itemId": 252421,
               "source": "Dungeon",
               "ilvl": 298,
-              "dps": 641300
+              "dps": 641908
+            },
+            {
+              "rank": 53,
+              "name": "The Eternal Egg",
+              "nameFr": "L’œuf éternel",
+              "itemId": 249807,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 641810
             },
             {
               "rank": 54,
@@ -24562,7 +24562,7 @@
               "itemId": 270174,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 640806
+              "dps": 640498
             },
             {
               "rank": 55,
@@ -24571,7 +24571,7 @@
               "itemId": 249339,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 638270
+              "dps": 638914
             },
             {
               "rank": 56,
@@ -24580,7 +24580,7 @@
               "itemId": 249809,
               "source": "Raid",
               "ilvl": 298,
-              "dps": 637765
+              "dps": 637370
             },
             {
               "rank": 57,
@@ -24589,7 +24589,7 @@
               "itemId": 270169,
               "source": "Raid",
               "ilvl": 344,
-              "dps": 637605
+              "dps": 637234
             },
             {
               "rank": 58,
@@ -24598,7 +24598,7 @@
               "itemId": 270167,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 637171
+              "dps": 637153
             },
             {
               "rank": 59,
@@ -24607,7 +24607,7 @@
               "itemId": 270171,
               "source": "Raid",
               "ilvl": 334,
-              "dps": 635141
+              "dps": 634509
             },
             {
               "rank": 60,
@@ -24616,7 +24616,7 @@
               "itemId": 250229,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 634467
+              "dps": 634489
             },
             {
               "rank": 61,
@@ -24625,7 +24625,7 @@
               "itemId": 250224,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 629122
+              "dps": 628782
             },
             {
               "rank": 62,
@@ -24634,17 +24634,17 @@
               "itemId": 250244,
               "source": "Dungeon",
               "ilvl": 334,
-              "dps": 618400
+              "dps": 617944
             }
           ],
-          "baseline": 618232,
+          "baseline": 618250,
           "fightStyle": "castingpatchwerk5",
           "iterations": "60000",
-          "simc": "bc9858b",
-          "simulatedAt": "2026-08-29 17:32"
+          "simc": "ca042f5",
+          "simulatedAt": "2026-09-05 07:50"
         }
       },
-      "fetchedAt": "2026-09-04T08:58:31.031Z"
+      "fetchedAt": "2026-09-05T08:28:18.745Z"
     },
     "demon-hunter-devourer": {
       "key": "demon-hunter-devourer",
@@ -26088,7 +26088,7 @@
           "simulatedAt": "2026-09-02 03:01"
         }
       },
-      "fetchedAt": "2026-09-04T08:57:08.349Z"
+      "fetchedAt": "2026-09-05T08:26:51.923Z"
     },
     "rogue-assassination": {
       "key": "rogue-assassination",
@@ -27802,7 +27802,7 @@
           "simulatedAt": "2026-09-02 03:13"
         }
       },
-      "fetchedAt": "2026-09-04T08:58:16.811Z"
+      "fetchedAt": "2026-09-05T08:28:03.695Z"
     },
     "warlock-demonology": {
       "key": "warlock-demonology",
@@ -29246,7 +29246,7 @@
           "simulatedAt": "2026-09-02 03:20"
         }
       },
-      "fetchedAt": "2026-09-04T08:58:44.501Z"
+      "fetchedAt": "2026-09-05T08:28:33.044Z"
     },
     "hunter-survival": {
       "key": "hunter-survival",
@@ -30960,7 +30960,7 @@
           "simulatedAt": "2026-09-02 03:02"
         }
       },
-      "fetchedAt": "2026-09-04T08:57:40.021Z"
+      "fetchedAt": "2026-09-05T08:27:23.839Z"
     },
     "evoker-preservation": {
       "key": "evoker-preservation",
@@ -30985,8 +30985,8 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-04T08:57:24.567Z"
+      "fetchedAt": "2026-09-05T08:27:08.376Z"
     }
   },
-  "updatedAt": "2026-09-04T08:58:49.061Z"
+  "updatedAt": "2026-09-05T08:28:39.724Z"
 }

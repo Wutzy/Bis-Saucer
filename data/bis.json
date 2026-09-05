@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:56:51.531Z",
+      "scrapedAt": "2026-09-05T08:26:34.475Z",
       "items": [
         {
           "slot": "Helm",
@@ -2660,7 +2660,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:56:56.313Z",
+      "scrapedAt": "2026-09-05T08:26:39.467Z",
       "items": [
         {
           "slot": "Helm",
@@ -4322,7 +4322,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:00.972Z",
+      "scrapedAt": "2026-09-05T08:26:44.471Z",
       "items": [
         {
           "slot": "Helm",
@@ -6011,7 +6011,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:10.589Z",
+      "scrapedAt": "2026-09-05T08:26:54.521Z",
       "items": [
         {
           "slot": "Helm",
@@ -7588,7 +7588,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:18.762Z",
+      "scrapedAt": "2026-09-05T08:27:02.591Z",
       "items": [
         {
           "slot": "Helm",
@@ -8319,13 +8319,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 270173,
+              "itemId": 270165,
               "originalItemId": null,
-              "wowheadParams": "item=270173&bonus=13848",
-              "name": "Zul'jin's Guillotine Technique",
+              "wowheadParams": "item=270165&bonus=13848",
+              "name": "Keeper's Seething Core",
               "quality": 4,
-              "icon": "inv_121_trinket_raid_ulatek_trolltablet",
-              "source": "Coiled Altar",
+              "icon": "inv_121_trinket_raid_ulatek_golemhearts_green",
+              "source": "Entombed Sentinels",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -9156,6 +9156,25 @@
               "icon": "inv_121_trinket_raid_ulatek_heart"
             },
             {
+              "itemId": 270165,
+              "wowheadParams": "item=270165",
+              "name": "Keeper's Seething Core",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_golemhearts_green"
+            }
+          ]
+        },
+        {
+          "category": "Raid",
+          "items": [
+            {
+              "itemId": 270175,
+              "wowheadParams": "item=270175",
+              "name": "Voracious Heart of Ula'tek",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_heart"
+            },
+            {
               "itemId": 270173,
               "wowheadParams": "item=270173",
               "name": "Zul'jin's Guillotine Technique",
@@ -9166,7 +9185,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:27.165Z",
+      "scrapedAt": "2026-09-05T08:27:11.023Z",
       "items": [
         {
           "slot": "Helm",
@@ -9514,13 +9533,13 @@
           "slotFr": "Bijou",
           "align": "right",
           "empty": false,
-          "itemId": 270173,
+          "itemId": 270165,
           "originalItemId": null,
-          "wowheadParams": "item=270173&bonus=13848",
-          "name": "Zul'jin's Guillotine Technique",
+          "wowheadParams": "item=270165&bonus=13848",
+          "name": "Keeper's Seething Core",
           "quality": 4,
-          "icon": "inv_121_trinket_raid_ulatek_trolltablet",
-          "source": "Coiled Altar",
+          "icon": "inv_121_trinket_raid_ulatek_golemhearts_green",
+          "source": "Entombed Sentinels",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -10802,7 +10821,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:42.325Z",
+      "scrapedAt": "2026-09-05T08:27:26.304Z",
       "items": [
         {
           "slot": "Helm",
@@ -12404,7 +12423,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:52.159Z",
+      "scrapedAt": "2026-09-05T08:27:36.976Z",
       "items": [
         {
           "slot": "Helm",
@@ -13021,7 +13040,7 @@
               "name": "Band of the Amani Warlord",
               "quality": 4,
               "icon": "inv_121_jewelry_ring02_green",
-              "source": "Coiled Altar",
+              "source": "Altar of Fangs",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -13395,13 +13414,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 252258,
+              "itemId": 273792,
               "originalItemId": null,
-              "wowheadParams": "item=252258&bonus=4786:12854",
-              "name": "Sickening Signet of Atroxus",
-              "quality": 3,
-              "icon": "inv_12_jewelry_devouringhost_ring_bronze2",
-              "source": "Voidscar Arena",
+              "wowheadParams": "item=273792&bonus=4786:12854",
+              "name": "Band of the Amani Warlord",
+              "quality": 4,
+              "icon": "inv_121_jewelry_ring02_green",
+              "source": "Altar of Fangs",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -13781,13 +13800,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 273792,
+              "itemId": 268252,
               "originalItemId": null,
-              "wowheadParams": "item=273792&bonus=4786:12854",
-              "name": "Band of the Amani Warlord",
+              "wowheadParams": "item=268252&bonus=4786:12854",
+              "name": "Apex Brute's Claw Ring",
               "quality": 4,
-              "icon": "inv_121_jewelry_ring02_green",
-              "source": "Coiled Altar",
+              "icon": "inv_121_jewelry_ring03_red",
+              "source": "Sszorak",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -13980,7 +13999,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:56.600Z",
+      "scrapedAt": "2026-09-05T08:27:41.317Z",
       "items": [
         {
           "slot": "Helm",
@@ -14200,7 +14219,7 @@
           "name": "Band of the Amani Warlord",
           "quality": 4,
           "icon": "inv_121_jewelry_ring02_green",
-          "source": "Coiled Altar",
+          "source": "Altar of Fangs",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -15547,7 +15566,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:00.973Z",
+      "scrapedAt": "2026-09-05T08:27:46.670Z",
       "items": [
         {
           "slot": "Helm",
@@ -18312,7 +18331,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:05.352Z",
+      "scrapedAt": "2026-09-05T08:27:51.617Z",
       "items": [
         {
           "slot": "Helm",
@@ -19942,7 +19961,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:09.720Z",
+      "scrapedAt": "2026-09-05T08:27:55.968Z",
       "items": [
         {
           "slot": "Helm",
@@ -21589,7 +21608,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:19.088Z",
+      "scrapedAt": "2026-09-05T08:28:06.634Z",
       "items": [
         {
           "slot": "Helm",
@@ -23359,7 +23378,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:24.045Z",
+      "scrapedAt": "2026-09-05T08:28:11.494Z",
       "items": [
         {
           "slot": "Helm",
@@ -24760,7 +24779,7 @@
               "name": "Fanged Raiment of the Ophidian Oracle",
               "quality": 4,
               "icon": "inv_robe_mail_raidshamanulatek_d_01",
-              "source": "Ula'tek",
+              "source": "Twin Fangs",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -24997,7 +25016,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:33.159Z",
+      "scrapedAt": "2026-09-05T08:28:21.316Z",
       "items": [
         {
           "slot": "Helm",
@@ -25845,12 +25864,12 @@
               "align": "right",
               "empty": false,
               "itemId": 271547,
-              "originalItemId": 268243,
-              "wowheadParams": "item=271547&bonus=13848&original-item=268243",
+              "originalItemId": 159247,
+              "wowheadParams": "item=271547&bonus=13848&original-item=159247",
               "name": "Damned Necrolyte's Charred Grasps",
               "quality": 4,
               "icon": "inv_glove_cloth_raidwarlockulatek_d_01",
-              "source": "Catalyseur",
+              "source": "Temple of Sethraliss",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -25918,7 +25937,7 @@
               "name": "Spires of the Damned Necrolyte",
               "quality": 4,
               "icon": "inv_shoulder_cloth_raidwarlockulatek_d_01",
-              "source": "Catalyseur",
+              "source": "Temple of Sethraliss",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -25941,7 +25960,7 @@
               "name": "Damned Necrolyte's Leg Bindings",
               "quality": 4,
               "icon": "inv_pant_cloth_raidwarlockulatek_d_01",
-              "source": "Catalyseur",
+              "source": "Den of Nalorakk",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -26005,7 +26024,7 @@
               "name": "Damned Necrolyte's Rattling Robes",
               "quality": 4,
               "icon": "inv_robe_cloth_raidwarlockulatek_d_01",
-              "source": "Catalyseur",
+              "source": "Altar of Fangs",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -26673,7 +26692,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:37.706Z",
+      "scrapedAt": "2026-09-05T08:28:25.679Z",
       "items": [
         {
           "slot": "Helm",
@@ -28391,7 +28410,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:46.669Z",
+      "scrapedAt": "2026-09-05T08:28:35.247Z",
       "items": [
         {
           "slot": "Helm",
@@ -29976,7 +29995,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:47.410Z",
+      "scrapedAt": "2026-09-05T08:27:31.751Z",
       "items": [
         {
           "slot": "Helm",
@@ -31578,7 +31597,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:14.723Z",
+      "scrapedAt": "2026-09-05T08:26:58.605Z",
       "items": [
         {
           "slot": "Helm",
@@ -33197,7 +33216,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:33.200Z",
+      "scrapedAt": "2026-09-05T08:27:16.448Z",
       "items": [
         {
           "slot": "Helm",
@@ -34862,7 +34881,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:28.643Z",
+      "scrapedAt": "2026-09-05T08:28:16.266Z",
       "items": [
         {
           "slot": "Helm",
@@ -36552,7 +36571,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:06.053Z",
+      "scrapedAt": "2026-09-05T08:26:49.499Z",
       "items": [
         {
           "slot": "Helm",
@@ -38242,7 +38261,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:14.453Z",
+      "scrapedAt": "2026-09-05T08:28:01.098Z",
       "items": [
         {
           "slot": "Helm",
@@ -39081,12 +39100,12 @@
               "align": "right",
               "empty": false,
               "itemId": 271547,
-              "originalItemId": 268243,
-              "wowheadParams": "item=271547&bonus=13848&original-item=268243",
+              "originalItemId": 159247,
+              "wowheadParams": "item=271547&bonus=13848&original-item=159247",
               "name": "Damned Necrolyte's Charred Grasps",
               "quality": 4,
               "icon": "inv_glove_cloth_raidwarlockulatek_d_01",
-              "source": "Catalyseur",
+              "source": "Temple of Sethraliss",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -39154,7 +39173,7 @@
               "name": "Spires of the Damned Necrolyte",
               "quality": 4,
               "icon": "inv_shoulder_cloth_raidwarlockulatek_d_01",
-              "source": "Catalyseur",
+              "source": "Temple of Sethraliss",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -39177,7 +39196,7 @@
               "name": "Damned Necrolyte's Leg Bindings",
               "quality": 4,
               "icon": "inv_pant_cloth_raidwarlockulatek_d_01",
-              "source": "Catalyseur",
+              "source": "Den of Nalorakk",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -39241,7 +39260,7 @@
               "name": "Damned Necrolyte's Rattling Robes",
               "quality": 4,
               "icon": "inv_robe_cloth_raidwarlockulatek_d_01",
-              "source": "Catalyseur",
+              "source": "Altar of Fangs",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -39902,7 +39921,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:58:42.191Z",
+      "scrapedAt": "2026-09-05T08:28:30.530Z",
       "items": [
         {
           "slot": "Helm",
@@ -41511,7 +41530,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:37.719Z",
+      "scrapedAt": "2026-09-05T08:27:21.122Z",
       "items": [
         {
           "slot": "Helm",
@@ -43107,7 +43126,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-04T08:57:22.708Z",
+      "scrapedAt": "2026-09-05T08:27:06.566Z",
       "items": [
         {
           "slot": "Helm",
@@ -43493,5 +43512,5 @@
       ]
     }
   },
-  "updatedAt": "2026-09-04T08:58:46.677Z"
+  "updatedAt": "2026-09-05T08:28:35.260Z"
 }
