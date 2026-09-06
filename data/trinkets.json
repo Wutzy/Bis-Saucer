@@ -37736,7 +37736,2018 @@
         }
       },
       "fetchedAt": "2026-09-06T08:45:10.634Z"
+    },
+    "warrior-fury": {
+      "key": "warrior-fury",
+      "available": true,
+      "targets": {
+        "1": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk/warrior/fury",
+          "available": true,
+          "trinkets": [
+            {
+              "rank": 1,
+              "name": "Zul'jin's Guillotine Technique",
+              "nameFr": "Coup de la guillotine de Zul’jin",
+              "itemId": 270173,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 255519
+            },
+            {
+              "rank": 2,
+              "name": "Voracious Heart of Ula'tek",
+              "nameFr": "Cœur avide d’Ula’tek",
+              "itemId": 270175,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 251125
+            },
+            {
+              "rank": 3,
+              "name": "Keeper's Seething Core",
+              "nameFr": "Cœur bouillonnant de la garde",
+              "itemId": 270165,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 250699
+            },
+            {
+              "rank": 4,
+              "name": "Gebbo's Bottomless Bag",
+              "nameFr": "Sac sans fond de Gebbo",
+              "itemId": 270164,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 248445
+            },
+            {
+              "rank": 5,
+              "name": "Darkmoon Dominion: Hunt",
+              "nameFr": "Domination de Sombrelune : Chasse",
+              "itemId": 246304,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 248042
+            },
+            {
+              "rank": 6,
+              "name": "Sszorak's Ferocity",
+              "nameFr": "Férocité de Sszorak",
+              "itemId": 270163,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 247877
+            },
+            {
+              "rank": 7,
+              "name": "Darkmoon Dominion: Blood",
+              "nameFr": "Domination de Sombrelune : Sang",
+              "itemId": 246305,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 247747
+            },
+            {
+              "rank": 8,
+              "name": "Sapling of the Dawnroot",
+              "nameFr": "Arbrisseau d’Auberacine",
+              "itemId": 250259,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 247513
+            },
+            {
+              "rank": 9,
+              "name": "Thalassian Competitor's Insignia of Alacrity",
+              "nameFr": "Insigne d’empressement de compétition thalassienne",
+              "itemId": 245752,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 247479
+            },
+            {
+              "rank": 10,
+              "name": "Font of Venomous Rage",
+              "nameFr": "Source de rage venimeuse",
+              "itemId": 270168,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 247402
+            },
+            {
+              "rank": 11,
+              "name": "Magister's Alchemist Stone",
+              "nameFr": "Pierre d’alchimiste de magistère",
+              "itemId": 241340,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 247143
+            },
+            {
+              "rank": 12,
+              "name": "Darkmoon Dominion: Void",
+              "nameFr": "Domination de Sombrelune : Vide",
+              "itemId": 246307,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 246991
+            },
+            {
+              "rank": 13,
+              "name": "Withered Saptor's Paw",
+              "nameFr": "Patte de cédraptor flétrie",
+              "itemId": 251782,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 246702
+            },
+            {
+              "rank": 14,
+              "name": "Tumor of the Swarm",
+              "nameFr": "Tumeur de l’essaim",
+              "itemId": 250245,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 246445
+            },
+            {
+              "rank": 15,
+              "name": "Vile Vial of Volatile Venom",
+              "nameFr": "Fiole ignoble de venin volatil",
+              "itemId": 273796,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 246435
+            },
+            {
+              "rank": 16,
+              "name": "Ruby Whelp Shell [Haste]",
+              "nameFr": "Coquille de Dragonnet rubis [Haste]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 246385
+            },
+            {
+              "rank": 17,
+              "name": "Blazebinder's Hoof",
+              "nameFr": "Sabot braselié",
+              "itemId": 193762,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 245958
+            },
+            {
+              "rank": 18,
+              "name": "Tattered Amani War Banner",
+              "nameFr": "Bannière de guerre amani en lambeaux",
+              "itemId": 273797,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 245710
+            },
+            {
+              "rank": 19,
+              "name": "Venomous Gladiator's Insignia of Alacrity",
+              "nameFr": "Insigne d’empressement du gladiateur venimeux",
+              "itemId": 270603,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 245664
+            },
+            {
+              "rank": 20,
+              "name": "Resonant Bellowstone",
+              "nameFr": "Beuglepierre résonnante",
+              "itemId": 250228,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 245596
+            },
+            {
+              "rank": 21,
+              "name": "Ruby Whelp Shell [Crit]",
+              "nameFr": "Coquille de Dragonnet rubis [Crit]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 245438
+            },
+            {
+              "rank": 22,
+              "name": "Seed of the Devouring Wild",
+              "nameFr": "Graine de la nature dévorante",
+              "itemId": 250238,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 245370
+            },
+            {
+              "rank": 23,
+              "name": "Glorious Crusader's Keepsake",
+              "nameFr": "Souvenir de croisade glorieuse",
+              "itemId": 251792,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 245236
+            },
+            {
+              "rank": 24,
+              "name": "Fiber of Living Agony",
+              "nameFr": "Fibre d’agonie vivante",
+              "itemId": 265657,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 245076
+            },
+            {
+              "rank": 25,
+              "name": "Gaze of the Alnseer",
+              "nameFr": "Regard de prophète d’Aln",
+              "itemId": 249343,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 244970
+            },
+            {
+              "rank": 26,
+              "name": "Radiant Plume",
+              "nameFr": "Plume rayonnante",
+              "itemId": 249806,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 244775
+            },
+            {
+              "rank": 27,
+              "name": "Drum of Renewed Bonds [Haste]",
+              "nameFr": "Tambour de liens renouvelés [Haste]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 244737
+            },
+            {
+              "rank": 28,
+              "name": "Heart of Wind",
+              "nameFr": "Cœur du vent",
+              "itemId": 250256,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 244379
+            },
+            {
+              "rank": 29,
+              "name": "Idol of the War Loa",
+              "nameFr": "Idole du Loa de la guerre",
+              "itemId": 250229,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 244351
+            },
+            {
+              "rank": 30,
+              "name": "Drum of Renewed Bonds [Mastery]",
+              "nameFr": "Tambour de liens renouvelés [Mastery]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 244146
+            },
+            {
+              "rank": 31,
+              "name": "Heart of Ancient Hunger",
+              "nameFr": "Cœur de faim ancienne",
+              "itemId": 249342,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 244131
+            },
+            {
+              "rank": 32,
+              "name": "Ruby Whelp Shell [St]",
+              "nameFr": "Coquille de Dragonnet rubis [St]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 244066
+            },
+            {
+              "rank": 33,
+              "name": "Umbral Plume",
+              "nameFr": "Plume ombreuse",
+              "itemId": 260235,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 244026
+            },
+            {
+              "rank": 34,
+              "name": "Drum of Renewed Bonds [Versatility]",
+              "nameFr": "Tambour de liens renouvelés [Versatility]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 243769
+            },
+            {
+              "rank": 35,
+              "name": "Ruby Whelp Shell [Aoe]",
+              "nameFr": "Coquille de Dragonnet rubis [Aoe]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 243638
+            },
+            {
+              "rank": 36,
+              "name": "Drum of Renewed Bonds [Crit]",
+              "nameFr": "Tambour de liens renouvelés [Crit]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 243335
+            },
+            {
+              "rank": 37,
+              "name": "Light Company Guidon",
+              "nameFr": "Guidon de la compagnie de la Lumière",
+              "itemId": 249344,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 243143
+            },
+            {
+              "rank": 38,
+              "name": "Darkmoon Dominion: Rot",
+              "nameFr": "Domination de Sombrelune : Putréfaction",
+              "itemId": 246306,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 243110
+            },
+            {
+              "rank": 39,
+              "name": "Solarflare Prism",
+              "nameFr": "Prisme d’éruption solaire",
+              "itemId": 252420,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 242624
+            },
+            {
+              "rank": 40,
+              "name": "Algeth'ar Puzzle Box",
+              "nameFr": "Boîte à secret d’Algeth’ar",
+              "itemId": 193701,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 242504
+            },
+            {
+              "rank": 41,
+              "name": "Lost Idol of the Hash'ey",
+              "nameFr": "Idole perdue des hash’ey",
+              "itemId": 251783,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 242237
+            },
+            {
+              "rank": 42,
+              "name": "Venomous Gladiator's Badge of Ferocity",
+              "nameFr": "Écusson de férocité du gladiateur venimeux",
+              "itemId": 270602,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 241861
+            },
+            {
+              "rank": 43,
+              "name": "Coiled Fangstone",
+              "nameFr": "Crochepierre torsadée",
+              "itemId": 273795,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 241180
+            },
+            {
+              "rank": 44,
+              "name": "Kroluk's Warbanner",
+              "nameFr": "Bannière de guerre de Kroluk",
+              "itemId": 250227,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 241081
+            },
+            {
+              "rank": 45,
+              "name": "Dragon Games Equipment",
+              "nameFr": "Équipement des jeux draconiques",
+              "itemId": 193719,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 241046
+            },
+            {
+              "rank": 46,
+              "name": "First Mate's Shellward",
+              "nameFr": "Garde-carapace de second",
+              "itemId": 270160,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 241006
+            },
+            {
+              "rank": 47,
+              "name": "Merektha's Fang",
+              "nameFr": "Croc de Merekpha",
+              "itemId": 158367,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 240936
+            },
+            {
+              "rank": 48,
+              "name": "Undreamt God's Oozing Vestige",
+              "nameFr": "Vestige suintant de la divinité ineffable",
+              "itemId": 249805,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 240924
+            },
+            {
+              "rank": 49,
+              "name": "Manaheart's Binding Flame",
+              "nameFr": "Flamme de lien de Cœur-de-Mana",
+              "itemId": 250243,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 240889
+            },
+            {
+              "rank": 50,
+              "name": "Mchimba's Ritual Bandages",
+              "nameFr": "Bandages rituels de Mchimba",
+              "itemId": 159618,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 240805
+            },
+            {
+              "rank": 51,
+              "name": "Desecrated Chalice",
+              "nameFr": "Calice désacralisé",
+              "itemId": 251790,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 239962
+            },
+            {
+              "rank": 52,
+              "name": "Holy Retributor's Order",
+              "nameFr": "Ordre de saint châtiment",
+              "itemId": 251791,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 239895
+            },
+            {
+              "rank": 53,
+              "name": "Latch's Crooked Hook",
+              "nameFr": "Crochet tordu de Clenche",
+              "itemId": 250226,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 239866
+            },
+            {
+              "rank": 54,
+              "name": "Vessel of Tortured Souls",
+              "nameFr": "Réceptacle des âmes torturées",
+              "itemId": 250258,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 239765
+            },
+            {
+              "rank": 55,
+              "name": "Mark of Light",
+              "nameFr": "Marque de Lumière",
+              "itemId": 250241,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 239660
+            },
+            {
+              "rank": 56,
+              "name": "Venomous Gladiator's Medallion",
+              "nameFr": "Médaillon du gladiateur venimeux",
+              "itemId": 270605,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 239571
+            },
+            {
+              "rank": 57,
+              "name": "Void Stalker's Contract",
+              "nameFr": "Contrat de traqueur du Vide",
+              "itemId": 151307,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 239443
+            },
+            {
+              "rank": 58,
+              "name": "Venomous Gladiator's Sigil of Adaptation",
+              "nameFr": "Cachet d’adaptation du gladiateur venimeux",
+              "itemId": 270604,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 239318
+            },
+            {
+              "rank": 59,
+              "name": "Venomous Gladiator's Emblem",
+              "nameFr": "Emblème du gladiateur venimeux",
+              "itemId": 270606,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 239171
+            },
+            {
+              "rank": 60,
+              "name": "Tangle of Vibrant Vines",
+              "nameFr": "Lianes chatoyantes emmêlées",
+              "itemId": 252957,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 238271
+            },
+            {
+              "rank": 61,
+              "name": "Hex Lord's Dooming Idol",
+              "nameFr": "Idole funeste du seigneur des maléfices",
+              "itemId": 270169,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 238263
+            },
+            {
+              "rank": 62,
+              "name": "Gloom-Spattered Dreadscale",
+              "nameFr": "Écaille-d’effroi de tristegerbe",
+              "itemId": 249339,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 238149
+            },
+            {
+              "rank": 63,
+              "name": "The Eternal Egg",
+              "nameFr": "L’œuf éternel",
+              "itemId": 249807,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 238112
+            },
+            {
+              "rank": 64,
+              "name": "Jelly Replicator",
+              "nameFr": "Réplication de gelée",
+              "itemId": 250242,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 238091
+            },
+            {
+              "rank": 65,
+              "name": "Rotting Globule",
+              "nameFr": "Globule en putréfaction",
+              "itemId": 252421,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 238075
+            },
+            {
+              "rank": 66,
+              "name": "Ampoule of Pure Void",
+              "nameFr": "Ampoule de Vide pur",
+              "itemId": 151312,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 238002
+            },
+            {
+              "rank": 67,
+              "name": "Wavecaller's Seastone",
+              "nameFr": "Pierre marine de Mande-vagues",
+              "itemId": 270167,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 237868
+            },
+            {
+              "rank": 68,
+              "name": "Idol of the Howling Nexus",
+              "nameFr": "Idole du nexus hurlant",
+              "itemId": 270174,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 236846
+            },
+            {
+              "rank": 69,
+              "name": "Mindpiercer's Sigil",
+              "nameFr": "Cachet de tranche-esprit",
+              "itemId": 250224,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 236092
+            },
+            {
+              "rank": 70,
+              "name": "Locus-Walker's Ribbon",
+              "nameFr": "Ruban de l’Arpenteur des ombres",
+              "itemId": 249809,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 235998
+            },
+            {
+              "rank": 71,
+              "name": "Preternatural Antivenom",
+              "nameFr": "Antivenin surnaturel",
+              "itemId": 270171,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 235980
+            },
+            {
+              "rank": 72,
+              "name": "Sealed Chaos Urn",
+              "nameFr": "Urne de chaos scellée",
+              "itemId": 251787,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 233486
+            },
+            {
+              "rank": 73,
+              "name": "Permafrost Essence",
+              "nameFr": "Essence de pergélisol",
+              "itemId": 250244,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 230902
+            }
+          ],
+          "baseline": 230679,
+          "fightStyle": "castingpatchwerk",
+          "iterations": "60000",
+          "simc": "aa9de89",
+          "simulatedAt": "2026-09-05 12:11"
+        },
+        "3": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk3/warrior/fury",
+          "available": true,
+          "trinkets": [
+            {
+              "rank": 1,
+              "name": "Zul'jin's Guillotine Technique",
+              "nameFr": "Coup de la guillotine de Zul’jin",
+              "itemId": 270173,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 494432
+            },
+            {
+              "rank": 2,
+              "name": "Keeper's Seething Core",
+              "nameFr": "Cœur bouillonnant de la garde",
+              "itemId": 270165,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 484374
+            },
+            {
+              "rank": 3,
+              "name": "Voracious Heart of Ula'tek",
+              "nameFr": "Cœur avide d’Ula’tek",
+              "itemId": 270175,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 482106
+            },
+            {
+              "rank": 4,
+              "name": "Gebbo's Bottomless Bag",
+              "nameFr": "Sac sans fond de Gebbo",
+              "itemId": 270164,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 479526
+            },
+            {
+              "rank": 5,
+              "name": "Darkmoon Dominion: Hunt",
+              "nameFr": "Domination de Sombrelune : Chasse",
+              "itemId": 246304,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 479390
+            },
+            {
+              "rank": 6,
+              "name": "Darkmoon Dominion: Blood",
+              "nameFr": "Domination de Sombrelune : Sang",
+              "itemId": 246305,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 478251
+            },
+            {
+              "rank": 7,
+              "name": "Thalassian Competitor's Insignia of Alacrity",
+              "nameFr": "Insigne d’empressement de compétition thalassienne",
+              "itemId": 245752,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 477709
+            },
+            {
+              "rank": 8,
+              "name": "Magister's Alchemist Stone",
+              "nameFr": "Pierre d’alchimiste de magistère",
+              "itemId": 241340,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 476937
+            },
+            {
+              "rank": 9,
+              "name": "Darkmoon Dominion: Void",
+              "nameFr": "Domination de Sombrelune : Vide",
+              "itemId": 246307,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 476848
+            },
+            {
+              "rank": 10,
+              "name": "Withered Saptor's Paw",
+              "nameFr": "Patte de cédraptor flétrie",
+              "itemId": 251782,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 476614
+            },
+            {
+              "rank": 11,
+              "name": "Vile Vial of Volatile Venom",
+              "nameFr": "Fiole ignoble de venin volatil",
+              "itemId": 273796,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 475827
+            },
+            {
+              "rank": 12,
+              "name": "Ruby Whelp Shell [Haste]",
+              "nameFr": "Coquille de Dragonnet rubis [Haste]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 475368
+            },
+            {
+              "rank": 13,
+              "name": "Blazebinder's Hoof",
+              "nameFr": "Sabot braselié",
+              "itemId": 193762,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 475243
+            },
+            {
+              "rank": 14,
+              "name": "Tattered Amani War Banner",
+              "nameFr": "Bannière de guerre amani en lambeaux",
+              "itemId": 273797,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 474248
+            },
+            {
+              "rank": 15,
+              "name": "Resonant Bellowstone",
+              "nameFr": "Beuglepierre résonnante",
+              "itemId": 250228,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 474080
+            },
+            {
+              "rank": 16,
+              "name": "Venomous Gladiator's Insignia of Alacrity",
+              "nameFr": "Insigne d’empressement du gladiateur venimeux",
+              "itemId": 270603,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 474010
+            },
+            {
+              "rank": 17,
+              "name": "Glorious Crusader's Keepsake",
+              "nameFr": "Souvenir de croisade glorieuse",
+              "itemId": 251792,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 473843
+            },
+            {
+              "rank": 18,
+              "name": "Tumor of the Swarm",
+              "nameFr": "Tumeur de l’essaim",
+              "itemId": 250245,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 473819
+            },
+            {
+              "rank": 19,
+              "name": "Sszorak's Ferocity",
+              "nameFr": "Férocité de Sszorak",
+              "itemId": 270163,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 473540
+            },
+            {
+              "rank": 20,
+              "name": "Ruby Whelp Shell [Crit]",
+              "nameFr": "Coquille de Dragonnet rubis [Crit]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 473299
+            },
+            {
+              "rank": 21,
+              "name": "Seed of the Devouring Wild",
+              "nameFr": "Graine de la nature dévorante",
+              "itemId": 250238,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 473260
+            },
+            {
+              "rank": 22,
+              "name": "Gaze of the Alnseer",
+              "nameFr": "Regard de prophète d’Aln",
+              "itemId": 249343,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 473028
+            },
+            {
+              "rank": 23,
+              "name": "Drum of Renewed Bonds [Haste]",
+              "nameFr": "Tambour de liens renouvelés [Haste]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 472924
+            },
+            {
+              "rank": 24,
+              "name": "Radiant Plume",
+              "nameFr": "Plume rayonnante",
+              "itemId": 249806,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 472598
+            },
+            {
+              "rank": 25,
+              "name": "Fiber of Living Agony",
+              "nameFr": "Fibre d’agonie vivante",
+              "itemId": 265657,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 472302
+            },
+            {
+              "rank": 26,
+              "name": "Idol of the War Loa",
+              "nameFr": "Idole du Loa de la guerre",
+              "itemId": 250229,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 471904
+            },
+            {
+              "rank": 27,
+              "name": "Sapling of the Dawnroot",
+              "nameFr": "Arbrisseau d’Auberacine",
+              "itemId": 250259,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 471757
+            },
+            {
+              "rank": 28,
+              "name": "Heart of Wind",
+              "nameFr": "Cœur du vent",
+              "itemId": 250256,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 471454
+            },
+            {
+              "rank": 29,
+              "name": "Drum of Renewed Bonds [Mastery]",
+              "nameFr": "Tambour de liens renouvelés [Mastery]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 471393
+            },
+            {
+              "rank": 30,
+              "name": "Drum of Renewed Bonds [Versatility]",
+              "nameFr": "Tambour de liens renouvelés [Versatility]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 471027
+            },
+            {
+              "rank": 31,
+              "name": "Merektha's Fang",
+              "nameFr": "Croc de Merekpha",
+              "itemId": 158367,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 470721
+            },
+            {
+              "rank": 32,
+              "name": "Heart of Ancient Hunger",
+              "nameFr": "Cœur de faim ancienne",
+              "itemId": 249342,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 470707
+            },
+            {
+              "rank": 33,
+              "name": "Umbral Plume",
+              "nameFr": "Plume ombreuse",
+              "itemId": 260235,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 470409
+            },
+            {
+              "rank": 34,
+              "name": "Drum of Renewed Bonds [Crit]",
+              "nameFr": "Tambour de liens renouvelés [Crit]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 470293
+            },
+            {
+              "rank": 35,
+              "name": "Algeth'ar Puzzle Box",
+              "nameFr": "Boîte à secret d’Algeth’ar",
+              "itemId": 193701,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 469911
+            },
+            {
+              "rank": 36,
+              "name": "Ruby Whelp Shell [Aoe]",
+              "nameFr": "Coquille de Dragonnet rubis [Aoe]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 469212
+            },
+            {
+              "rank": 37,
+              "name": "Light Company Guidon",
+              "nameFr": "Guidon de la compagnie de la Lumière",
+              "itemId": 249344,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 469140
+            },
+            {
+              "rank": 38,
+              "name": "Font of Venomous Rage",
+              "nameFr": "Source de rage venimeuse",
+              "itemId": 270168,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 468991
+            },
+            {
+              "rank": 39,
+              "name": "Solarflare Prism",
+              "nameFr": "Prisme d’éruption solaire",
+              "itemId": 252420,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 468554
+            },
+            {
+              "rank": 40,
+              "name": "Ruby Whelp Shell [St]",
+              "nameFr": "Coquille de Dragonnet rubis [St]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 468414
+            },
+            {
+              "rank": 41,
+              "name": "Lost Idol of the Hash'ey",
+              "nameFr": "Idole perdue des hash’ey",
+              "itemId": 251783,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 467756
+            },
+            {
+              "rank": 42,
+              "name": "Darkmoon Dominion: Rot",
+              "nameFr": "Domination de Sombrelune : Putréfaction",
+              "itemId": 246306,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 467717
+            },
+            {
+              "rank": 43,
+              "name": "Venomous Gladiator's Badge of Ferocity",
+              "nameFr": "Écusson de férocité du gladiateur venimeux",
+              "itemId": 270602,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 467347
+            },
+            {
+              "rank": 44,
+              "name": "Coiled Fangstone",
+              "nameFr": "Crochepierre torsadée",
+              "itemId": 273795,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 465672
+            },
+            {
+              "rank": 45,
+              "name": "First Mate's Shellward",
+              "nameFr": "Garde-carapace de second",
+              "itemId": 270160,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 465566
+            },
+            {
+              "rank": 46,
+              "name": "Manaheart's Binding Flame",
+              "nameFr": "Flamme de lien de Cœur-de-Mana",
+              "itemId": 250243,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 465477
+            },
+            {
+              "rank": 47,
+              "name": "Mchimba's Ritual Bandages",
+              "nameFr": "Bandages rituels de Mchimba",
+              "itemId": 159618,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 465329
+            },
+            {
+              "rank": 48,
+              "name": "Undreamt God's Oozing Vestige",
+              "nameFr": "Vestige suintant de la divinité ineffable",
+              "itemId": 249805,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 463971
+            },
+            {
+              "rank": 49,
+              "name": "Latch's Crooked Hook",
+              "nameFr": "Crochet tordu de Clenche",
+              "itemId": 250226,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 463547
+            },
+            {
+              "rank": 50,
+              "name": "Void Stalker's Contract",
+              "nameFr": "Contrat de traqueur du Vide",
+              "itemId": 151307,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 463329
+            },
+            {
+              "rank": 51,
+              "name": "Holy Retributor's Order",
+              "nameFr": "Ordre de saint châtiment",
+              "itemId": 251791,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 463092
+            },
+            {
+              "rank": 52,
+              "name": "Desecrated Chalice",
+              "nameFr": "Calice désacralisé",
+              "itemId": 251790,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 463048
+            },
+            {
+              "rank": 53,
+              "name": "Kroluk's Warbanner",
+              "nameFr": "Bannière de guerre de Kroluk",
+              "itemId": 250227,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 462642
+            },
+            {
+              "rank": 54,
+              "name": "Venomous Gladiator's Medallion",
+              "nameFr": "Médaillon du gladiateur venimeux",
+              "itemId": 270605,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 462257
+            },
+            {
+              "rank": 55,
+              "name": "Vessel of Tortured Souls",
+              "nameFr": "Réceptacle des âmes torturées",
+              "itemId": 250258,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 462219
+            },
+            {
+              "rank": 56,
+              "name": "Venomous Gladiator's Sigil of Adaptation",
+              "nameFr": "Cachet d’adaptation du gladiateur venimeux",
+              "itemId": 270604,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 462104
+            },
+            {
+              "rank": 57,
+              "name": "Venomous Gladiator's Emblem",
+              "nameFr": "Emblème du gladiateur venimeux",
+              "itemId": 270606,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 462099
+            },
+            {
+              "rank": 58,
+              "name": "Mark of Light",
+              "nameFr": "Marque de Lumière",
+              "itemId": 250241,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 461988
+            },
+            {
+              "rank": 59,
+              "name": "Dragon Games Equipment",
+              "nameFr": "Équipement des jeux draconiques",
+              "itemId": 193719,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 461349
+            },
+            {
+              "rank": 60,
+              "name": "The Eternal Egg",
+              "nameFr": "L’œuf éternel",
+              "itemId": 249807,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 459877
+            },
+            {
+              "rank": 61,
+              "name": "Hex Lord's Dooming Idol",
+              "nameFr": "Idole funeste du seigneur des maléfices",
+              "itemId": 270169,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 459602
+            },
+            {
+              "rank": 62,
+              "name": "Rotting Globule",
+              "nameFr": "Globule en putréfaction",
+              "itemId": 252421,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 459547
+            },
+            {
+              "rank": 63,
+              "name": "Ampoule of Pure Void",
+              "nameFr": "Ampoule de Vide pur",
+              "itemId": 151312,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 459454
+            },
+            {
+              "rank": 64,
+              "name": "Jelly Replicator",
+              "nameFr": "Réplication de gelée",
+              "itemId": 250242,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 459302
+            },
+            {
+              "rank": 65,
+              "name": "Wavecaller's Seastone",
+              "nameFr": "Pierre marine de Mande-vagues",
+              "itemId": 270167,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 458852
+            },
+            {
+              "rank": 66,
+              "name": "Gloom-Spattered Dreadscale",
+              "nameFr": "Écaille-d’effroi de tristegerbe",
+              "itemId": 249339,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 458570
+            },
+            {
+              "rank": 67,
+              "name": "Tangle of Vibrant Vines",
+              "nameFr": "Lianes chatoyantes emmêlées",
+              "itemId": 252957,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 457893
+            },
+            {
+              "rank": 68,
+              "name": "Idol of the Howling Nexus",
+              "nameFr": "Idole du nexus hurlant",
+              "itemId": 270174,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 457081
+            },
+            {
+              "rank": 69,
+              "name": "Preternatural Antivenom",
+              "nameFr": "Antivenin surnaturel",
+              "itemId": 270171,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 455755
+            },
+            {
+              "rank": 70,
+              "name": "Locus-Walker's Ribbon",
+              "nameFr": "Ruban de l’Arpenteur des ombres",
+              "itemId": 249809,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 454954
+            },
+            {
+              "rank": 71,
+              "name": "Mindpiercer's Sigil",
+              "nameFr": "Cachet de tranche-esprit",
+              "itemId": 250224,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 453875
+            },
+            {
+              "rank": 72,
+              "name": "Permafrost Essence",
+              "nameFr": "Essence de pergélisol",
+              "itemId": 250244,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 445494
+            },
+            {
+              "rank": 73,
+              "name": "Sealed Chaos Urn",
+              "nameFr": "Urne de chaos scellée",
+              "itemId": 251787,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 444350
+            }
+          ],
+          "baseline": 445637,
+          "fightStyle": "castingpatchwerk3",
+          "iterations": "60000",
+          "simc": "aa9de89",
+          "simulatedAt": "2026-09-05 12:12"
+        },
+        "5": {
+          "url": "https://bloodmallet.com/chart/get/trinkets/castingpatchwerk5/warrior/fury",
+          "available": true,
+          "trinkets": [
+            {
+              "rank": 1,
+              "name": "Zul'jin's Guillotine Technique",
+              "nameFr": "Coup de la guillotine de Zul’jin",
+              "itemId": 270173,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 751180
+            },
+            {
+              "rank": 2,
+              "name": "Keeper's Seething Core",
+              "nameFr": "Cœur bouillonnant de la garde",
+              "itemId": 270165,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 747969
+            },
+            {
+              "rank": 3,
+              "name": "Voracious Heart of Ula'tek",
+              "nameFr": "Cœur avide d’Ula’tek",
+              "itemId": 270175,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 743476
+            },
+            {
+              "rank": 4,
+              "name": "Gebbo's Bottomless Bag",
+              "nameFr": "Sac sans fond de Gebbo",
+              "itemId": 270164,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 740651
+            },
+            {
+              "rank": 5,
+              "name": "Darkmoon Dominion: Hunt",
+              "nameFr": "Domination de Sombrelune : Chasse",
+              "itemId": 246304,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 740316
+            },
+            {
+              "rank": 6,
+              "name": "Darkmoon Dominion: Blood",
+              "nameFr": "Domination de Sombrelune : Sang",
+              "itemId": 246305,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 739018
+            },
+            {
+              "rank": 7,
+              "name": "Thalassian Competitor's Insignia of Alacrity",
+              "nameFr": "Insigne d’empressement de compétition thalassienne",
+              "itemId": 245752,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 737408
+            },
+            {
+              "rank": 8,
+              "name": "Magister's Alchemist Stone",
+              "nameFr": "Pierre d’alchimiste de magistère",
+              "itemId": 241340,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 737063
+            },
+            {
+              "rank": 9,
+              "name": "Darkmoon Dominion: Void",
+              "nameFr": "Domination de Sombrelune : Vide",
+              "itemId": 246307,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 736391
+            },
+            {
+              "rank": 10,
+              "name": "Vile Vial of Volatile Venom",
+              "nameFr": "Fiole ignoble de venin volatil",
+              "itemId": 273796,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 735745
+            },
+            {
+              "rank": 11,
+              "name": "Withered Saptor's Paw",
+              "nameFr": "Patte de cédraptor flétrie",
+              "itemId": 251782,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 735427
+            },
+            {
+              "rank": 12,
+              "name": "Ruby Whelp Shell [Haste]",
+              "nameFr": "Coquille de Dragonnet rubis [Haste]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 734152
+            },
+            {
+              "rank": 13,
+              "name": "Venomous Gladiator's Insignia of Alacrity",
+              "nameFr": "Insigne d’empressement du gladiateur venimeux",
+              "itemId": 270603,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 733848
+            },
+            {
+              "rank": 14,
+              "name": "Blazebinder's Hoof",
+              "nameFr": "Sabot braselié",
+              "itemId": 193762,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 733562
+            },
+            {
+              "rank": 15,
+              "name": "Resonant Bellowstone",
+              "nameFr": "Beuglepierre résonnante",
+              "itemId": 250228,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 732723
+            },
+            {
+              "rank": 16,
+              "name": "Tattered Amani War Banner",
+              "nameFr": "Bannière de guerre amani en lambeaux",
+              "itemId": 273797,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 732289
+            },
+            {
+              "rank": 17,
+              "name": "Glorious Crusader's Keepsake",
+              "nameFr": "Souvenir de croisade glorieuse",
+              "itemId": 251792,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 731627
+            },
+            {
+              "rank": 18,
+              "name": "Ruby Whelp Shell [Crit]",
+              "nameFr": "Coquille de Dragonnet rubis [Crit]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 731445
+            },
+            {
+              "rank": 19,
+              "name": "Sszorak's Ferocity",
+              "nameFr": "Férocité de Sszorak",
+              "itemId": 270163,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 731307
+            },
+            {
+              "rank": 20,
+              "name": "Radiant Plume",
+              "nameFr": "Plume rayonnante",
+              "itemId": 249806,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 731223
+            },
+            {
+              "rank": 21,
+              "name": "Seed of the Devouring Wild",
+              "nameFr": "Graine de la nature dévorante",
+              "itemId": 250238,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 730713
+            },
+            {
+              "rank": 22,
+              "name": "Tumor of the Swarm",
+              "nameFr": "Tumeur de l’essaim",
+              "itemId": 250245,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 730678
+            },
+            {
+              "rank": 23,
+              "name": "Fiber of Living Agony",
+              "nameFr": "Fibre d’agonie vivante",
+              "itemId": 265657,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 730622
+            },
+            {
+              "rank": 24,
+              "name": "Drum of Renewed Bonds [Haste]",
+              "nameFr": "Tambour de liens renouvelés [Haste]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 730375
+            },
+            {
+              "rank": 25,
+              "name": "Gaze of the Alnseer",
+              "nameFr": "Regard de prophète d’Aln",
+              "itemId": 249343,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 729999
+            },
+            {
+              "rank": 26,
+              "name": "Merektha's Fang",
+              "nameFr": "Croc de Merekpha",
+              "itemId": 158367,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 729612
+            },
+            {
+              "rank": 27,
+              "name": "Idol of the War Loa",
+              "nameFr": "Idole du Loa de la guerre",
+              "itemId": 250229,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 729330
+            },
+            {
+              "rank": 28,
+              "name": "Heart of Wind",
+              "nameFr": "Cœur du vent",
+              "itemId": 250256,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 728804
+            },
+            {
+              "rank": 29,
+              "name": "Heart of Ancient Hunger",
+              "nameFr": "Cœur de faim ancienne",
+              "itemId": 249342,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 727992
+            },
+            {
+              "rank": 30,
+              "name": "Drum of Renewed Bonds [Mastery]",
+              "nameFr": "Tambour de liens renouvelés [Mastery]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 727804
+            },
+            {
+              "rank": 31,
+              "name": "Umbral Plume",
+              "nameFr": "Plume ombreuse",
+              "itemId": 260235,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 727596
+            },
+            {
+              "rank": 32,
+              "name": "Drum of Renewed Bonds [Versatility]",
+              "nameFr": "Tambour de liens renouvelés [Versatility]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 727194
+            },
+            {
+              "rank": 33,
+              "name": "Drum of Renewed Bonds [Crit]",
+              "nameFr": "Tambour de liens renouvelés [Crit]",
+              "itemId": 248583,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 726676
+            },
+            {
+              "rank": 34,
+              "name": "Ruby Whelp Shell [Aoe]",
+              "nameFr": "Coquille de Dragonnet rubis [Aoe]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 725757
+            },
+            {
+              "rank": 35,
+              "name": "Algeth'ar Puzzle Box",
+              "nameFr": "Boîte à secret d’Algeth’ar",
+              "itemId": 193701,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 725388
+            },
+            {
+              "rank": 36,
+              "name": "Sapling of the Dawnroot",
+              "nameFr": "Arbrisseau d’Auberacine",
+              "itemId": 250259,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 725379
+            },
+            {
+              "rank": 37,
+              "name": "Light Company Guidon",
+              "nameFr": "Guidon de la compagnie de la Lumière",
+              "itemId": 249344,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 724905
+            },
+            {
+              "rank": 38,
+              "name": "Solarflare Prism",
+              "nameFr": "Prisme d’éruption solaire",
+              "itemId": 252420,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 724727
+            },
+            {
+              "rank": 39,
+              "name": "Ruby Whelp Shell [St]",
+              "nameFr": "Coquille de Dragonnet rubis [St]",
+              "itemId": 193757,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 723747
+            },
+            {
+              "rank": 40,
+              "name": "Lost Idol of the Hash'ey",
+              "nameFr": "Idole perdue des hash’ey",
+              "itemId": 251783,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 722338
+            },
+            {
+              "rank": 41,
+              "name": "Venomous Gladiator's Badge of Ferocity",
+              "nameFr": "Écusson de férocité du gladiateur venimeux",
+              "itemId": 270602,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 721711
+            },
+            {
+              "rank": 42,
+              "name": "Darkmoon Dominion: Rot",
+              "nameFr": "Domination de Sombrelune : Putréfaction",
+              "itemId": 246306,
+              "source": "Profession",
+              "ilvl": 331,
+              "dps": 720802
+            },
+            {
+              "rank": 43,
+              "name": "Coiled Fangstone",
+              "nameFr": "Crochepierre torsadée",
+              "itemId": 273795,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 719770
+            },
+            {
+              "rank": 44,
+              "name": "Font of Venomous Rage",
+              "nameFr": "Source de rage venimeuse",
+              "itemId": 270168,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 719600
+            },
+            {
+              "rank": 45,
+              "name": "Manaheart's Binding Flame",
+              "nameFr": "Flamme de lien de Cœur-de-Mana",
+              "itemId": 250243,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 719208
+            },
+            {
+              "rank": 46,
+              "name": "Mchimba's Ritual Bandages",
+              "nameFr": "Bandages rituels de Mchimba",
+              "itemId": 159618,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 719086
+            },
+            {
+              "rank": 47,
+              "name": "First Mate's Shellward",
+              "nameFr": "Garde-carapace de second",
+              "itemId": 270160,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 718499
+            },
+            {
+              "rank": 48,
+              "name": "Latch's Crooked Hook",
+              "nameFr": "Crochet tordu de Clenche",
+              "itemId": 250226,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 716778
+            },
+            {
+              "rank": 49,
+              "name": "Undreamt God's Oozing Vestige",
+              "nameFr": "Vestige suintant de la divinité ineffable",
+              "itemId": 249805,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 715983
+            },
+            {
+              "rank": 50,
+              "name": "Holy Retributor's Order",
+              "nameFr": "Ordre de saint châtiment",
+              "itemId": 251791,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 715956
+            },
+            {
+              "rank": 51,
+              "name": "Void Stalker's Contract",
+              "nameFr": "Contrat de traqueur du Vide",
+              "itemId": 151307,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 715950
+            },
+            {
+              "rank": 52,
+              "name": "Desecrated Chalice",
+              "nameFr": "Calice désacralisé",
+              "itemId": 251790,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 715635
+            },
+            {
+              "rank": 53,
+              "name": "Vessel of Tortured Souls",
+              "nameFr": "Réceptacle des âmes torturées",
+              "itemId": 250258,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 714595
+            },
+            {
+              "rank": 54,
+              "name": "Venomous Gladiator's Emblem",
+              "nameFr": "Emblème du gladiateur venimeux",
+              "itemId": 270606,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 714535
+            },
+            {
+              "rank": 55,
+              "name": "Venomous Gladiator's Sigil of Adaptation",
+              "nameFr": "Cachet d’adaptation du gladiateur venimeux",
+              "itemId": 270604,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 714405
+            },
+            {
+              "rank": 56,
+              "name": "Venomous Gladiator's Medallion",
+              "nameFr": "Médaillon du gladiateur venimeux",
+              "itemId": 270605,
+              "source": "High PvP",
+              "ilvl": 315,
+              "dps": 714389
+            },
+            {
+              "rank": 57,
+              "name": "Mark of Light",
+              "nameFr": "Marque de Lumière",
+              "itemId": 250241,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 713800
+            },
+            {
+              "rank": 58,
+              "name": "Kroluk's Warbanner",
+              "nameFr": "Bannière de guerre de Kroluk",
+              "itemId": 250227,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 712876
+            },
+            {
+              "rank": 59,
+              "name": "Dragon Games Equipment",
+              "nameFr": "Équipement des jeux draconiques",
+              "itemId": 193719,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 712577
+            },
+            {
+              "rank": 60,
+              "name": "Rotting Globule",
+              "nameFr": "Globule en putréfaction",
+              "itemId": 252421,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 711216
+            },
+            {
+              "rank": 61,
+              "name": "Jelly Replicator",
+              "nameFr": "Réplication de gelée",
+              "itemId": 250242,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 710882
+            },
+            {
+              "rank": 62,
+              "name": "Hex Lord's Dooming Idol",
+              "nameFr": "Idole funeste du seigneur des maléfices",
+              "itemId": 270169,
+              "source": "Raid",
+              "ilvl": 344,
+              "dps": 710511
+            },
+            {
+              "rank": 63,
+              "name": "The Eternal Egg",
+              "nameFr": "L’œuf éternel",
+              "itemId": 249807,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 710349
+            },
+            {
+              "rank": 64,
+              "name": "Ampoule of Pure Void",
+              "nameFr": "Ampoule de Vide pur",
+              "itemId": 151312,
+              "source": "Dungeon",
+              "ilvl": 298,
+              "dps": 709669
+            },
+            {
+              "rank": 65,
+              "name": "Wavecaller's Seastone",
+              "nameFr": "Pierre marine de Mande-vagues",
+              "itemId": 270167,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 708528
+            },
+            {
+              "rank": 66,
+              "name": "Gloom-Spattered Dreadscale",
+              "nameFr": "Écaille-d’effroi de tristegerbe",
+              "itemId": 249339,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 707159
+            },
+            {
+              "rank": 67,
+              "name": "Tangle of Vibrant Vines",
+              "nameFr": "Lianes chatoyantes emmêlées",
+              "itemId": 252957,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 704880
+            },
+            {
+              "rank": 68,
+              "name": "Idol of the Howling Nexus",
+              "nameFr": "Idole du nexus hurlant",
+              "itemId": 270174,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 706430
+            },
+            {
+              "rank": 69,
+              "name": "Locus-Walker's Ribbon",
+              "nameFr": "Ruban de l’Arpenteur des ombres",
+              "itemId": 249809,
+              "source": "Raid",
+              "ilvl": 298,
+              "dps": 704936
+            },
+            {
+              "rank": 70,
+              "name": "Preternatural Antivenom",
+              "nameFr": "Antivenin surnaturel",
+              "itemId": 270171,
+              "source": "Raid",
+              "ilvl": 334,
+              "dps": 703909
+            },
+            {
+              "rank": 71,
+              "name": "Mindpiercer's Sigil",
+              "nameFr": "Cachet de tranche-esprit",
+              "itemId": 250224,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 700014
+            },
+            {
+              "rank": 72,
+              "name": "Permafrost Essence",
+              "nameFr": "Essence de pergélisol",
+              "itemId": 250244,
+              "source": "Dungeon",
+              "ilvl": 334,
+              "dps": 687781
+            },
+            {
+              "rank": 73,
+              "name": "Sealed Chaos Urn",
+              "nameFr": "Urne de chaos scellée",
+              "itemId": 251787,
+              "source": "Delve",
+              "ilvl": 321,
+              "dps": 687646
+            }
+          ],
+          "baseline": 688102,
+          "fightStyle": "castingpatchwerk5",
+          "iterations": "60000",
+          "simc": "aa9de89",
+          "simulatedAt": "2026-09-05 12:13"
+        }
+      },
+      "fetchedAt": "2026-09-06T21:18:49.321Z"
     }
   },
-  "updatedAt": "2026-09-06T08:46:46.839Z"
+  "updatedAt": "2026-09-06T21:18:49.326Z"
 }

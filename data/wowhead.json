@@ -10684,7 +10684,348 @@
           ]
         }
       }
+    },
+    "warrior-fury": {
+      "key": "warrior-fury",
+      "fetchedAt": "2026-09-06T21:18:49.334Z",
+      "trinkets": {
+        "url": "https://www.wowhead.com/guide/classes/warrior/fury/bis-gear",
+        "available": true,
+        "tiers": [
+          {
+            "rank": "S",
+            "items": [
+              {
+                "itemId": 270173,
+                "name": "Zul'jin's Guillotine Technique",
+                "icon": "inv_121_trinket_raid_ulatek_trolltablet",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270175,
+                "name": "Voracious Heart of Ula'tek",
+                "icon": "inv_121_trinket_raid_ulatek_heart",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270164,
+                "name": "Gebbo's Bottomless Bag",
+                "icon": "inv_10_tailoring_bag1_color2",
+                "quality": 4,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "A",
+            "items": [
+              {
+                "itemId": 273796,
+                "name": "Vile Vial of Volatile Venom",
+                "icon": "inv_121_trinket_dungeon_ulatek_vile",
+                "quality": 3,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 250259,
+                "name": "Sapling of the Dawnroot",
+                "icon": "inv_misc_herb_nightmarevine",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250228,
+                "name": "Resonant Bellowstone",
+                "icon": "inv_alchemy_90_stone_green",
+                "quality": 3,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 270165,
+                "name": "Keeper's Seething Core",
+                "icon": "inv_121_trinket_raid_ulatek_golemhearts_green",
+                "quality": 4,
+                "categories": [
+                  "raid"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "B",
+            "items": [
+              {
+                "itemId": 250238,
+                "name": "Seed of the Devouring Wild",
+                "icon": "inv12_jewelrytrinkets_dungeon_seedofthedevouringwild",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 250229,
+                "name": "Idol of the War Loa",
+                "icon": "inv12_jewelrytrinkets_dungeon_idolofthewargod",
+                "quality": 3,
+                "categories": [
+                  "raid"
+                ]
+              },
+              {
+                "itemId": 193757,
+                "name": "Ruby Whelp Shell",
+                "icon": "inv_item_dragonegg_redbroken01",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 193762,
+                "name": "Blazebinder's Hoof",
+                "icon": "inv_10_dungeonjewelry_primalist_trinket_2_fire",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "C",
+            "items": [
+              {
+                "itemId": 270168,
+                "name": "Font of Venomous Rage",
+                "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_green",
+                "quality": 4,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 273797,
+                "name": "Tattered Amani War Banner",
+                "icon": "inv_121_trinket_dungeon_ulatek_banner",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 270163,
+                "name": "Sszorak's Ferocity",
+                "icon": "inv_121_trinket_raid_ulatek_ulatekclaw",
+                "quality": 4,
+                "categories": [
+                  "dungeon"
+                ]
+              },
+              {
+                "itemId": 273795,
+                "name": "Coiled Fangstone",
+                "icon": "inv_121_trinket_dungeon_ulatek_fangstone",
+                "quality": 3,
+                "categories": [
+                  "dungeon"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "consumables": {
+        "url": "https://www.wowhead.com/guide/classes/warrior/fury/enchants-gems-pve-dps",
+        "available": true,
+        "rows": [
+          {
+            "type": "Flask",
+            "items": [
+              {
+                "itemId": 241324,
+                "name": "Flask of the Blood Knights",
+                "icon": "inv_12_profession_alchemy_flask_sindoreipotion_white-",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Combat Potion",
+            "items": [
+              {
+                "itemId": 241288,
+                "name": "Potion of Recklessness",
+                "icon": "inv_12_profession_alchemy_voidpotion_red",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Health Potion",
+            "items": [
+              {
+                "itemId": 271884,
+                "name": "Concentrated Silvermoon Health Potion",
+                "icon": "inv_12_profession_alchemy_lightpotion_purple",
+                "quality": 1
+              }
+            ]
+          },
+          {
+            "type": "Weapon Buff",
+            "items": [
+              {
+                "itemId": 243734,
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_12_profession_enchanting_manaoil_red",
+                "quality": 2
+              }
+            ]
+          },
+          {
+            "type": "Augment Rune",
+            "items": [
+              {
+                "itemId": 259085,
+                "name": "Void-Touched Augment Rune",
+                "icon": "inv_10_enchanting_crystal_color2",
+                "quality": 3
+              }
+            ]
+          },
+          {
+            "type": "Food",
+            "items": [
+              {
+                "itemId": 242273,
+                "name": "Blooming Feast",
+                "icon": "inv_misc_food_cooked_greatpabanquet_wok",
+                "quality": 3
+              }
+            ]
+          }
+        ],
+        "enchants": {
+          "available": true,
+          "rows": [
+            {
+              "type": "Weapon",
+              "items": [
+                {
+                  "itemId": 273072,
+                  "name": "Enchant Weapon - Rite of the Hash'ey",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Helm",
+              "items": [
+                {
+                  "itemId": 243951,
+                  "name": "Enchant Helm - Empowered Hex of Leeching",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Shoulder",
+              "items": [
+                {
+                  "itemId": 243991,
+                  "name": "Enchant Shoulders - Amirdrassil's Grace",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Chest",
+              "items": [
+                {
+                  "itemId": 243977,
+                  "name": "Enchant Chest - Mark of the Worldsoul",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Legs",
+              "items": [
+                {
+                  "itemId": 244643,
+                  "name": "Blood Knight's Armor Kit",
+                  "icon": "inv_12_profession_leatherworking_thalassian_amor_kit",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Boots",
+              "items": [
+                {
+                  "itemId": 243953,
+                  "name": "Enchant Boots - Lynx's Dexterity",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Ring",
+              "items": [
+                {
+                  "itemId": 243959,
+                  "name": "Enchant Ring - Zul'jin's Mastery",
+                  "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+                  "quality": 3
+                }
+              ]
+            },
+            {
+              "type": "Diamond",
+              "items": [
+                {
+                  "itemId": 240967,
+                  "name": "Powerful Eversong Diamond",
+                  "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange",
+                  "quality": 4
+                }
+              ]
+            },
+            {
+              "type": "Other Gems",
+              "items": [
+                {
+                  "itemId": 240900,
+                  "name": "Flawless Quick Amethyst",
+                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+                  "quality": 3
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   },
-  "updatedAt": "2026-09-06T08:46:47.056Z"
+  "updatedAt": "2026-09-06T21:18:49.467Z"
 }

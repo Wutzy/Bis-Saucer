@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T12:58:39.111Z",
+  "updatedAt": "2026-09-06T21:18:31.065Z",
   "members": [
     {
       "n": 1,
@@ -229,6 +229,15 @@
       "id": "jeanbon",
       "raid": true,
       "trial": false
+    },
+    {
+      "n": 27,
+      "name": "Clikpanpan",
+      "class": "warrior",
+      "spec": "fury",
+      "raid": true,
+      "trial": true,
+      "id": "clikpanpan"
     }
   ]
 }
