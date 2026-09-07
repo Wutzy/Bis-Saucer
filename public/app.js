@@ -5055,6 +5055,86 @@ function renderNews() {
   return wrap;
 }
 
+/**
+ * La une : le dernier numero en plein ecran, a l'arrivee sur le site.
+ *
+ * C'est la vieille transition des films — le journal qui arrive en tournoyant vers
+ * la camera pour annoncer la nouvelle. On ouvre sur l'affiche parce qu'un numero de
+ * la gazette est fait pour etre vu avant d'etre lu : le reste du site est un outil,
+ * celui-la est une blague de guilde, et une blague se raconte tout de suite.
+ *
+ * Deux images, comme dans la vue News Saucer : la vignette part immediatement — elle
+ * est illisible pendant qu'elle tourne, sa definition n'a aucune importance a ce
+ * moment-la — et l'affiche pleine la remplace des qu'elle est chargee, pour la
+ * lecture. On ne fait donc pas attendre l'arrivee sur le site le temps d'un
+ * megaoctet.
+ *
+ * On en sort au clic, par Echap, ou par le lien qui mene aux numeros precedents.
+ */
+function ouvrirUne() {
+  const numero = articlesGazette()[0];
+  // Un numero compose en HTML n'a pas d'affiche a faire tournoyer, et un fichier
+  // gazette absent n'est pas une erreur : dans les deux cas on entre sur le site
+  // normalement, sans calque.
+  if (!numero || !numero.affiche) return;
+
+  const calque = document.createElement('div');
+  calque.className = 'une';
+  calque.setAttribute('role', 'dialog');
+  calque.setAttribute('aria-label', `${NEWS_LABEL} — ${numero.titre || 'dernier numéro'}`);
+
+  const cadre = document.createElement('div');
+  cadre.className = 'une-cadre';
+
+  const img = document.createElement('img');
+  img.className = 'une-affiche';
+  img.src = numero.afficheVignette || numero.affiche;
+  img.alt = numero.titre || '';
+  cadre.appendChild(img);
+
+  // Le remplacement se fait sur une image chargee a cote : affecter `src` directement
+  // laisserait le cadre vide pendant le decodage, en plein milieu de l'animation.
+  if (numero.afficheVignette && numero.affiche) {
+    const pleine = new Image();
+    pleine.addEventListener('load', () => {
+      img.src = numero.affiche;
+    });
+    pleine.src = numero.affiche;
+  }
+
+  const lien = document.createElement('button');
+  lien.type = 'button';
+  lien.className = 'une-lien';
+  lien.textContent = 'Voir tous les articles';
+
+  calque.append(cadre, lien);
+
+  const surTouche = (e) => {
+    if (e.key === 'Escape') fermer();
+  };
+  function fermer() {
+    calque.remove();
+    document.removeEventListener('keydown', surTouche);
+    document.body.style.overflow = '';
+  }
+
+  calque.addEventListener('click', fermer);
+  lien.addEventListener('click', (e) => {
+    // Sans ca, le clic remonte au calque, qui se contenterait de fermer sans naviguer.
+    e.stopPropagation();
+    fermer();
+    // Meme geste que la carte « News Saucer » de l'accueil : on ouvre la gazette sur
+    // sa une, pas sur le numero qu'une lecture precedente aurait laisse ouvert.
+    newsFocus = null;
+    selectView('news');
+    render();
+  });
+
+  document.addEventListener('keydown', surTouche);
+  document.body.style.overflow = 'hidden';
+  document.body.appendChild(calque);
+}
+
 /* ---------------- compteurs de consultation ---------------- */
 
 /**
@@ -5579,6 +5659,9 @@ for (const btn of document.querySelectorAll('#lang-switch button')) {
     armerAccesParses();
     armerPanneau('cle-toggle', 'cle-panneau', panneauCle);
     armerPanneau('pi-toggle', 'pi-panneau', panneauPI);
+    // En dernier : le calque s'ouvre par-dessus une page deja montee, pour qu'on la
+    // retrouve prete derriere lui quand on le referme.
+    ouvrirUne();
   } catch (err) {
     showMessage(`Erreur au chargement : ${err.message}`, 'error');
   }

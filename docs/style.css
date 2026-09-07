@@ -3183,7 +3183,8 @@ a.pd-catalyst:hover {
 }
 
 .gazette-affiche-bouton img,
-.loupe img {
+.loupe img,
+.une-affiche {
   display: block;
   /* L'affiche est stockee en niveaux de gris : trois canaux identiques auraient pese
      le triple (3 449 Ko contre 1 175). Sa teinte d'origine est une sepia pure, et se
@@ -3230,6 +3231,129 @@ a.pd-catalyst:hover {
   margin: auto;
   display: flex;
   align-items: center;
+}
+
+/* La une : l'affiche du dernier numero a l'arrivee sur le site.
+
+   La loupe est un agrandissement, celle-ci est une annonce : d'ou la difference de
+   mise en page. La loupe defile pour qu'on se promene dans l'affiche ; la une la
+   ramene entiere a la hauteur de la fenetre, parce qu'a ce moment-la on ne lit pas
+   encore, on regarde arriver le journal. */
+.une {
+  position: fixed;
+  inset: 0;
+  z-index: 60; /* au-dessus de la loupe (40) : c'est le premier calque de la visite */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(5, 6, 8, 0.94);
+  cursor: zoom-out;
+  /* Le journal part d'un point minuscule au centre et depasse la fenetre pendant sa
+     rotation : sans ca, les coins de l'affiche qui tourne feraient apparaitre des
+     barres de defilement le temps de l'animation. */
+  overflow: hidden;
+}
+
+/* `flex` plutot que `block` pour que le cadre epouse l'affiche : une image en flux
+   normal laisse sous elle l'espace de la ligne de base, et l'ombre portee tomberait
+   a cote du papier. */
+.une-cadre {
+  display: flex;
+  /* Deceleration franche mais pas brutale. Une courbe plus raide (0.16, 0.86, …)
+     expedie le tour en un quart du temps : a 20 % l'affiche est deja aux trois quarts
+     de sa taille et il ne reste presque rien a tourner — on ne voit plus le journal
+     arriver, il est deja pose. Ici a 20 % il est a 43 % et doit encore tourner 631°. */
+  animation: une-arrivee 1.5s cubic-bezier(0.33, 0.6, 0.3, 1) both;
+}
+
+.une-affiche {
+  /* Bornes en unites de fenetre, pas en pourcentages : un pourcentage se mesurerait
+     sur `.une-cadre`, dont la hauteur depend elle-meme de l'image. Le cercle se
+     resolvait par un etirement — l'affiche, un portrait 2:3, sortait en paysage.
+     On retire ici le padding du calque. `dvh` suit la barre d'adresse des
+     telephones, qui mange sinon le bas de l'affiche. */
+  max-width: calc(100vw - 3rem);
+  max-height: calc(100vh - 3rem);
+  max-height: calc(100dvh - 3rem);
+  width: auto;
+  height: auto;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+}
+
+/* Trois tours en arrivant de tres loin : c'est la transition des vieux films, le
+   journal qui tournoie vers la camera pour annoncer la nouvelle. L'opacite monte tot
+   (12 %) pour qu'on voie tourner le papier, pas surgir une image deja posee. */
+@keyframes une-arrivee {
+  from {
+    transform: rotate(-1080deg) scale(0.02);
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 1;
+  }
+
+  to {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* En bas a droite, ou l'on va apres avoir lu : la sortie de la une vers la pile. Il
+   arrive une fois le journal pose — annonce d'abord, navigation ensuite. */
+.une-lien {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-2);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+  animation: une-lien-arrivee 0.35s ease 1.4s both;
+}
+
+.une-lien:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, var(--panel-2));
+}
+
+@keyframes une-lien-arrivee {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pas de repli `prefers-reduced-motion` ici, contrairement au reste du site : l'arrivee
+   du journal EST l'annonce, la retirer ne laisse qu'une image qui apparait. Le calque
+   se referme au premier clic ou par Echap, et l'animation dure une seconde et demie. */
+
+@media (max-width: 640px) {
+  .une {
+    padding: 0.75rem;
+  }
+
+  /* Les bornes de l'affiche retirent le padding du calque : il change ici, elles aussi. */
+  .une-affiche {
+    max-width: calc(100vw - 1.5rem);
+    max-height: calc(100vh - 1.5rem);
+    max-height: calc(100dvh - 1.5rem);
+  }
+
+  .une-lien {
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
 }
 
 /* Les archives, elles, restent dans le noir de l'application : ce n'est plus le
