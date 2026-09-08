@@ -16,10 +16,10 @@
       "race": "Undead",
       "faction": "horde",
       "activeSpec": "Fire",
-      "ilvl": 312,
-      "ilvlAt": "2026-08-30T10:10:46.000Z",
+      "ilvl": 314,
+      "ilvlAt": "2026-09-08T05:16:30.239Z",
       "match": "auto-approchant",
-      "fetchedAt": "2026-08-30T10:52:23.187Z"
+      "fetchedAt": "2026-09-08T05:56:00.588Z"
     },
     "ryims": {
       "character": "Woryms",
@@ -31,10 +31,10 @@
       "race": "Blood Elf",
       "faction": "horde",
       "activeSpec": "Frost",
-      "ilvl": 311,
-      "ilvlAt": "2026-08-30T08:18:48.000Z",
+      "ilvl": 316,
+      "ilvlAt": "2026-09-04T00:44:09.311Z",
       "match": "manuel",
-      "fetchedAt": "2026-08-30T10:57:50.657Z"
+      "fetchedAt": "2026-09-08T05:56:01.181Z"
     },
     "bolderiz-franky": {
       "character": "Bølederiz",
@@ -46,10 +46,10 @@
       "race": "Pandaren",
       "faction": "horde",
       "activeSpec": "Windwalker",
-      "ilvl": 311,
-      "ilvlAt": "2026-08-30T10:10:46.000Z",
+      "ilvl": 317,
+      "ilvlAt": "2026-09-04T10:47:20.151Z",
       "match": "manuel",
-      "fetchedAt": "2026-08-30T10:57:51.069Z"
+      "fetchedAt": "2026-09-08T05:56:03.751Z"
     },
     "lafrustre-elzoska": {
       "character": "Lafrustré",
@@ -61,10 +61,10 @@
       "race": "Tauren",
       "faction": "horde",
       "activeSpec": "Retribution",
-      "ilvl": 311,
-      "ilvlAt": "2026-08-29T21:44:41.330Z",
+      "ilvl": 317,
+      "ilvlAt": "2026-09-08T05:16:47.844Z",
       "match": "auto",
-      "fetchedAt": "2026-08-30T10:52:24.311Z"
+      "fetchedAt": "2026-09-08T05:56:04.340Z"
     },
     "kronox": {
       "character": "Kronoxx",
@@ -76,10 +76,10 @@
       "race": "Undead",
       "faction": "horde",
       "activeSpec": "Demonology",
-      "ilvl": 305,
-      "ilvlAt": "2026-08-29T23:41:49.557Z",
+      "ilvl": 315,
+      "ilvlAt": "2026-09-04T11:31:58.668Z",
       "match": "auto-approchant",
-      "fetchedAt": "2026-08-30T10:52:24.841Z"
+      "fetchedAt": "2026-09-08T05:56:06.460Z"
     },
     "elgior": {
       "character": "Orrikhan",
@@ -90,11 +90,11 @@
       "profileUrl": "https://raider.io/characters/eu/hyjal/Orrikhan",
       "race": "Blood Elf",
       "faction": "horde",
-      "activeSpec": "Protection",
+      "activeSpec": "Arms",
       "ilvl": 314,
-      "ilvlAt": "2026-08-29T15:56:46.077Z",
+      "ilvlAt": "2026-09-07T13:57:11.084Z",
       "match": "manuel",
-      "fetchedAt": "2026-08-30T10:57:51.530Z"
+      "fetchedAt": "2026-09-08T05:56:07.707Z"
     },
     "solhan": {
       "character": "Soldun",
@@ -106,10 +106,10 @@
       "race": "Blood Elf",
       "faction": "horde",
       "activeSpec": "Protection",
-      "ilvl": 311,
-      "ilvlAt": "2026-08-30T00:10:38.109Z",
+      "ilvl": 314,
+      "ilvlAt": "2026-09-06T18:52:45.436Z",
       "match": "manuel",
-      "fetchedAt": "2026-08-30T10:57:52.007Z"
+      "fetchedAt": "2026-09-08T05:56:08.320Z"
     },
     "kiyohara": {
       "character": "Velharu",
@@ -121,10 +121,10 @@
       "race": "Night Elf",
       "faction": "alliance",
       "activeSpec": "Shadow",
-      "ilvl": 312,
-      "ilvlAt": "2026-08-30T10:36:52.610Z",
+      "ilvl": 316,
+      "ilvlAt": "2026-09-05T11:56:33.212Z",
       "match": "manuel",
-      "fetchedAt": "2026-08-30T10:57:52.839Z"
+      "fetchedAt": "2026-09-08T05:56:09.047Z"
     },
     "sam": {
       "character": "Samvonsturm",
@@ -136,10 +136,10 @@
       "race": "Troll",
       "faction": "horde",
       "activeSpec": "Elemental",
-      "ilvl": 311,
-      "ilvlAt": "2026-08-28T17:54:00.412Z",
+      "ilvl": 316,
+      "ilvlAt": "2026-09-07T15:47:54.157Z",
       "match": "auto-approchant",
-      "fetchedAt": "2026-08-30T10:52:26.645Z"
+      "fetchedAt": "2026-09-08T05:56:09.674Z"
     },
     "maowar-leberger": {
       "character": "Maosham",
@@ -150,11 +150,11 @@
       "profileUrl": "https://raider.io/characters/eu/ysondre/Maosham",
       "race": "Troll",
       "faction": "horde",
-      "activeSpec": "Restoration",
-      "ilvl": 313,
-      "ilvlAt": "2026-08-29T16:32:47.606Z",
+      "activeSpec": "Elemental",
+      "ilvl": 314,
+      "ilvlAt": "2026-09-04T16:51:04.875Z",
       "match": "manuel",
-      "fetchedAt": "2026-08-30T10:58:23.130Z"
+      "fetchedAt": "2026-09-08T05:56:10.295Z"
     },
     "kao": {
       "character": "Kaoblood",
@@ -166,10 +166,10 @@
       "race": "Dark Iron Dwarf",
       "faction": "alliance",
       "activeSpec": "Blood",
-      "ilvl": 315,
-      "ilvlAt": "2026-08-29T21:44:37.380Z",
+      "ilvl": 317,
+      "ilvlAt": "2026-09-04T16:51:05.551Z",
       "match": "auto-approchant",
-      "fetchedAt": "2026-08-30T10:52:27.819Z"
+      "fetchedAt": "2026-09-08T05:56:10.893Z"
     },
     "projectbabytattoo": {
       "character": "Prøjectbaby",
@@ -181,10 +181,10 @@
       "race": "Mag'har Orc",
       "faction": "horde",
       "activeSpec": "Restoration",
-      "ilvl": 300,
-      "ilvlAt": "2026-08-28T21:20:28.000Z",
+      "ilvl": 313,
+      "ilvlAt": "2026-09-07T14:08:35.093Z",
       "match": "manuel",
-      "fetchedAt": "2026-08-30T10:57:53.658Z"
+      "fetchedAt": "2026-09-08T05:56:11.533Z"
     },
     "ragelolz": {
       "character": "Ràge",
@@ -196,10 +196,10 @@
       "race": "Night Elf",
       "faction": "alliance",
       "activeSpec": "Havoc",
-      "ilvl": 313,
-      "ilvlAt": "2026-08-30T08:58:11.000Z",
+      "ilvl": 314,
+      "ilvlAt": "2026-09-07T13:34:22.955Z",
       "match": "manuel",
-      "fetchedAt": "2026-08-30T10:57:54.070Z"
+      "fetchedAt": "2026-09-08T05:56:12.309Z"
     },
     "folkvangr": {
       "character": "Fólkvangr",
@@ -211,10 +211,10 @@
       "race": "Dwarf",
       "faction": "alliance",
       "activeSpec": "Holy",
-      "ilvl": 315,
-      "ilvlAt": "2026-08-29T20:11:27.000Z",
+      "ilvl": 318,
+      "ilvlAt": "2026-09-08T05:17:38.998Z",
       "match": "auto",
-      "fetchedAt": "2026-08-30T10:52:29.157Z"
+      "fetchedAt": "2026-09-08T05:56:14.668Z"
     },
     "ganai": {
       "character": "Ganaï",
@@ -226,10 +226,10 @@
       "race": "Tauren",
       "faction": "horde",
       "activeSpec": "Restoration",
-      "ilvl": 301,
-      "ilvlAt": "2026-08-30T00:45:11.000Z",
+      "ilvl": 312,
+      "ilvlAt": "2026-09-08T05:17:46.748Z",
       "match": "auto",
-      "fetchedAt": "2026-08-30T10:52:29.581Z"
+      "fetchedAt": "2026-09-08T05:56:15.320Z"
     },
     "ezra": {
       "character": "Ézra",
@@ -241,25 +241,10 @@
       "race": "Haranir",
       "faction": "horde",
       "activeSpec": "Balance",
-      "ilvl": 303,
-      "ilvlAt": "2026-08-30T00:10:35.660Z",
+      "ilvl": 311,
+      "ilvlAt": "2026-09-07T23:12:42.078Z",
       "match": "auto",
-      "fetchedAt": "2026-08-30T10:52:30.002Z"
-    },
-    "echodoll": {
-      "character": "Èchø",
-      "realm": "Hyjal",
-      "region": "eu",
-      "thumbnail": "https://render.worldofwarcraft.com/eu/character/hyjal/166/120658342-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
-      "inset": "https://render.worldofwarcraft.com/eu/character/hyjal/166/120658342-inset.jpg",
-      "profileUrl": "https://raider.io/characters/eu/hyjal/Èchø",
-      "race": "Blood Elf",
-      "faction": "horde",
-      "activeSpec": "Holy",
-      "ilvl": 304,
-      "ilvlAt": "2026-08-30T00:16:05.977Z",
-      "match": "manuel",
-      "fetchedAt": "2026-08-30T10:57:54.581Z"
+      "fetchedAt": "2026-09-08T05:56:16.130Z"
     },
     "ganova": {
       "character": "Ganöva",
@@ -271,10 +256,10 @@
       "race": "Blood Elf",
       "faction": "horde",
       "activeSpec": "Beast Mastery",
-      "ilvl": 308,
-      "ilvlAt": "2026-08-29T15:56:46.827Z",
+      "ilvl": 311,
+      "ilvlAt": "2026-09-08T05:17:32.517Z",
       "match": "auto",
-      "fetchedAt": "2026-08-30T10:52:30.912Z"
+      "fetchedAt": "2026-09-08T05:56:17.326Z"
     },
     "reinox93": {
       "character": "Reinox",
@@ -286,10 +271,10 @@
       "race": "Blood Elf",
       "faction": "horde",
       "activeSpec": "Subtlety",
-      "ilvl": 311,
-      "ilvlAt": "2026-08-30T10:36:46.696Z",
+      "ilvl": 315,
+      "ilvlAt": "2026-09-06T17:42:29.773Z",
       "match": "auto-approchant",
-      "fetchedAt": "2026-08-30T10:52:31.327Z"
+      "fetchedAt": "2026-09-08T05:56:18.011Z"
     },
     "dansenuit": {
       "character": "Dansenuit",
@@ -301,25 +286,25 @@
       "race": "Night Elf",
       "faction": "alliance",
       "activeSpec": "Balance",
-      "ilvl": 309,
-      "ilvlAt": "2026-08-29T20:09:39.259Z",
+      "ilvl": 313,
+      "ilvlAt": "2026-09-06T15:42:18.922Z",
       "match": "auto",
-      "fetchedAt": "2026-08-30T10:52:31.809Z"
+      "fetchedAt": "2026-09-08T05:56:18.832Z"
     },
     "xaly": {
-      "character": "Saythstorm",
+      "character": "Saythfel",
       "realm": "Hyjal",
       "region": "eu",
-      "thumbnail": "https://render.worldofwarcraft.com/eu/character/hyjal/255/223523327-avatar.jpg?alt=/wow/static/images/2d/avatar/3-1.jpg",
-      "inset": "https://render.worldofwarcraft.com/eu/character/hyjal/255/223523327-inset.jpg",
-      "profileUrl": "https://raider.io/characters/eu/hyjal/Saythstorm",
-      "race": "Dwarf",
+      "thumbnail": "https://render.worldofwarcraft.com/eu/character/hyjal/139/223549067-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
+      "inset": "https://render.worldofwarcraft.com/eu/character/hyjal/139/223549067-inset.jpg",
+      "profileUrl": "https://raider.io/characters/eu/hyjal/Saythfel",
+      "race": "Night Elf",
       "faction": "alliance",
-      "activeSpec": "Enhancement",
-      "ilvl": 310,
-      "ilvlAt": "2026-08-28T21:29:10.000Z",
+      "activeSpec": "Demonology",
+      "ilvl": 313,
+      "ilvlAt": "2026-09-08T05:19:31.091Z",
       "match": "manuel",
-      "fetchedAt": "2026-08-30T10:57:55.113Z"
+      "fetchedAt": "2026-09-08T05:56:40.580Z"
     },
     "sheechy": {
       "character": "Sheechy",
@@ -331,10 +316,10 @@
       "race": "Dwarf",
       "faction": "alliance",
       "activeSpec": "Elemental",
-      "ilvl": 315,
-      "ilvlAt": "2026-08-29T12:45:53.028Z",
+      "ilvl": 317,
+      "ilvlAt": "2026-09-04T01:22:10.925Z",
       "match": "auto",
-      "fetchedAt": "2026-08-30T10:52:32.643Z"
+      "fetchedAt": "2026-09-08T05:56:20.277Z"
     },
     "samahel": {
       "character": "Samahel",
@@ -365,8 +350,38 @@
       "ilvlAt": "2026-09-01T08:13:04.085Z",
       "match": "auto",
       "fetchedAt": "2026-09-01T10:49:58.994Z"
+    },
+    "clikpanpan": {
+      "character": "Clikpanpan",
+      "realm": "Ysondre",
+      "region": "eu",
+      "thumbnail": "https://render.worldofwarcraft.com/eu/character/ysondre/205/167303629-avatar.jpg?alt=/wow/static/images/2d/avatar/6-1.jpg",
+      "inset": "https://render.worldofwarcraft.com/eu/character/ysondre/205/167303629-inset.jpg",
+      "profileUrl": "https://raider.io/characters/eu/ysondre/Clikpanpan",
+      "race": "Tauren",
+      "faction": "horde",
+      "activeSpec": "Fury",
+      "ilvl": 305,
+      "ilvlAt": "2026-09-07T01:37:22.910Z",
+      "match": "auto",
+      "fetchedAt": "2026-09-08T05:56:20.955Z"
+    },
+    "akkuhh": {
+      "character": "Akkuhh",
+      "realm": "Hyjal",
+      "region": "eu",
+      "thumbnail": "https://render.worldofwarcraft.com/eu/character/hyjal/72/192251720-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
+      "inset": "https://render.worldofwarcraft.com/eu/character/hyjal/72/192251720-inset.jpg",
+      "profileUrl": "https://raider.io/characters/eu/hyjal/Akkuhh",
+      "race": "Tauren",
+      "faction": "horde",
+      "activeSpec": "Beast Mastery",
+      "ilvl": 312,
+      "ilvlAt": "2026-09-06T20:18:37.915Z",
+      "match": "auto",
+      "fetchedAt": "2026-09-08T05:56:22.987Z"
     }
   },
   "unmatched": [],
-  "updatedAt": "2026-09-01T12:20:53.106Z"
+  "updatedAt": "2026-09-08T06:10:26.061Z"
 }

@@ -2,8 +2,8 @@
   "version": 1,
   "specs": {
     "mage-fire": {
-      "count": 10,
-      "lastAt": "2026-09-02T06:44:44.327Z"
+      "count": 11,
+      "lastAt": "2026-09-08T06:08:43.658Z"
     },
     "priest-discipline": {
       "count": 2,
@@ -68,7 +68,15 @@
     "demon-hunter-devourer": {
       "count": 1,
       "lastAt": "2026-09-04T18:44:19.625Z"
+    },
+    "warrior-fury": {
+      "count": 1,
+      "lastAt": "2026-09-07T09:35:22.075Z"
+    },
+    "druid-balance": {
+      "count": 1,
+      "lastAt": "2026-09-08T06:09:20.909Z"
     }
   },
-  "updatedAt": "2026-09-04T18:44:19.625Z"
+  "updatedAt": "2026-09-08T06:09:20.909Z"
 }

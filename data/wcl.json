@@ -28,10 +28,8 @@
     "elgior": { "character": "Orrikhan", "realm": "Hyjal", "metric": "damage", "best": 50.1, "median": 41.4, "kills": 12 },
     "solhan": { "character": "Soldun", "realm": "Hyjal", "metric": "damage", "best": 49.2, "median": 32.8, "kills": 13 },
     "ganai": { "character": "Ganaï", "realm": "Hyjal", "metric": "healing", "best": 43.3, "median": 33.5, "kills": 18 },
-    "xaly": { "character": "Saythstorm", "realm": "Hyjal", "metric": "damage", "best": 39.3, "median": 36.2, "kills": 14 },
     "maowar-leberger": { "character": "Maosham", "realm": "Ysondre", "metric": "damage", "best": 20.9, "median": 18.5, "kills": 9 },
     "ezra": { "character": "Ézra", "realm": "Hyjal", "metric": "damage", "best": 13.5, "median": 13.5, "kills": 1 },
-    "echodoll": { "character": "Èchø", "realm": "Hyjal", "metric": "healing", "best": 4.1, "median": 4.1, "kills": 1 },
     "ryims": { "character": "Woryms", "realm": "Hyjal", "metric": "damage", "best": null, "median": null, "kills": 0 }
   }
 }

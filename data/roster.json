@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-06T21:18:31.065Z",
+  "updatedAt": "2026-09-08T06:10:20.586Z",
   "members": [
     {
       "n": 1,
@@ -157,16 +157,6 @@
       "trial": false
     },
     {
-      "n": 18,
-      "name": "Echodoll",
-      "class": "paladin",
-      "spec": "holy",
-      "id": "echodoll",
-      "raid": true,
-      "trial": true,
-      "armory": "Èchø"
-    },
-    {
       "n": 19,
       "name": "Ganôva",
       "class": "hunter",
@@ -196,12 +186,12 @@
     {
       "n": 23,
       "name": "Xaly",
-      "class": "shaman",
-      "spec": "enhancement",
+      "class": "warlock",
+      "spec": "demonology",
       "raid": true,
       "trial": false,
       "id": "xaly",
-      "armory": "Saythstorm"
+      "armory": "Saythfel"
     },
     {
       "n": 24,
@@ -238,6 +228,15 @@
       "raid": true,
       "trial": true,
       "id": "clikpanpan"
+    },
+    {
+      "n": 28,
+      "name": "Akkuhh",
+      "class": "hunter",
+      "spec": "beast-mastery",
+      "raid": true,
+      "trial": true,
+      "id": "akkuhh"
     }
   ]
 }
