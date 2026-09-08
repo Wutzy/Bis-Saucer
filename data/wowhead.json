@@ -1198,7 +1198,7 @@
     },
     "druid-balance": {
       "key": "druid-balance",
-      "fetchedAt": "2026-09-07T09:31:02.607Z",
+      "fetchedAt": "2026-09-08T06:10:39.919Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/balance/bis-gear",
         "available": true,
@@ -11027,5 +11027,5 @@
       }
     }
   },
-  "updatedAt": "2026-09-07T09:33:10.012Z"
+  "updatedAt": "2026-09-08T06:10:40.703Z"
 }
