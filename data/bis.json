@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:56:38.694Z",
+      "scrapedAt": "2026-09-09T09:02:26.020Z",
       "items": [
         {
           "slot": "Helm",
@@ -2660,7 +2660,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:56:43.300Z",
+      "scrapedAt": "2026-09-09T09:02:30.399Z",
       "items": [
         {
           "slot": "Helm",
@@ -4322,7 +4322,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:56:47.786Z",
+      "scrapedAt": "2026-09-09T09:02:34.958Z",
       "items": [
         {
           "slot": "Helm",
@@ -6011,7 +6011,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:56:56.657Z",
+      "scrapedAt": "2026-09-09T09:02:45.181Z",
       "items": [
         {
           "slot": "Helm",
@@ -7588,7 +7588,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:04.656Z",
+      "scrapedAt": "2026-09-09T09:02:53.413Z",
       "items": [
         {
           "slot": "Helm",
@@ -9185,7 +9185,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:12.602Z",
+      "scrapedAt": "2026-09-09T09:03:01.682Z",
       "items": [
         {
           "slot": "Helm",
@@ -10821,7 +10821,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:27.076Z",
+      "scrapedAt": "2026-09-09T09:03:15.027Z",
       "items": [
         {
           "slot": "Helm",
@@ -12423,7 +12423,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:36.270Z",
+      "scrapedAt": "2026-09-09T09:03:24.202Z",
       "items": [
         {
           "slot": "Helm",
@@ -13999,7 +13999,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:40.281Z",
+      "scrapedAt": "2026-09-09T09:03:28.593Z",
       "items": [
         {
           "slot": "Helm",
@@ -15566,7 +15566,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:44.725Z",
+      "scrapedAt": "2026-09-09T09:03:33.318Z",
       "items": [
         {
           "slot": "Helm",
@@ -18331,7 +18331,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:49.060Z",
+      "scrapedAt": "2026-09-09T09:03:37.595Z",
       "items": [
         {
           "slot": "Helm",
@@ -19961,7 +19961,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:52.966Z",
+      "scrapedAt": "2026-09-09T09:03:41.447Z",
       "items": [
         {
           "slot": "Helm",
@@ -21584,31 +21584,24 @@
           "category": "Passive",
           "items": [
             {
+              "itemId": 270165,
+              "wowheadParams": "item=270165",
+              "name": "Keeper's Seething Core",
+              "quality": 4,
+              "icon": "inv_121_trinket_raid_ulatek_golemhearts_green"
+            },
+            {
               "itemId": 270173,
               "wowheadParams": "item=270173",
               "name": "Zul'jin's Guillotine Technique",
               "quality": 4,
               "icon": "inv_121_trinket_raid_ulatek_trolltablet"
-            },
-            {
-              "itemId": 250259,
-              "wowheadParams": "item=250259",
-              "name": "Sapling of the Dawnroot",
-              "quality": 3,
-              "icon": "inv_misc_herb_nightmarevine"
-            },
-            {
-              "itemId": 250228,
-              "wowheadParams": "item=250228",
-              "name": "Resonant Bellowstone",
-              "quality": 3,
-              "icon": "inv_alchemy_90_stone_green"
             }
           ]
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:58:01.744Z",
+      "scrapedAt": "2026-09-09T09:03:50.728Z",
       "items": [
         {
           "slot": "Helm",
@@ -23378,7 +23371,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:58:06.189Z",
+      "scrapedAt": "2026-09-09T09:03:55.123Z",
       "items": [
         {
           "slot": "Helm",
@@ -25016,7 +25009,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:58:15.441Z",
+      "scrapedAt": "2026-09-09T09:04:04.546Z",
       "items": [
         {
           "slot": "Helm",
@@ -26692,7 +26685,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:58:19.649Z",
+      "scrapedAt": "2026-09-09T09:04:08.296Z",
       "items": [
         {
           "slot": "Helm",
@@ -28410,7 +28403,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:58:28.872Z",
+      "scrapedAt": "2026-09-09T09:04:17.414Z",
       "items": [
         {
           "slot": "Helm",
@@ -29995,7 +29988,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:31.607Z",
+      "scrapedAt": "2026-09-09T09:03:19.558Z",
       "items": [
         {
           "slot": "Helm",
@@ -31597,7 +31590,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:00.648Z",
+      "scrapedAt": "2026-09-09T09:02:49.244Z",
       "items": [
         {
           "slot": "Helm",
@@ -33216,7 +33209,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:16.977Z",
+      "scrapedAt": "2026-09-09T09:03:05.800Z",
       "items": [
         {
           "slot": "Helm",
@@ -34881,7 +34874,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:58:10.846Z",
+      "scrapedAt": "2026-09-09T09:03:59.711Z",
       "items": [
         {
           "slot": "Helm",
@@ -36571,7 +36564,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:56:52.444Z",
+      "scrapedAt": "2026-09-09T09:02:40.804Z",
       "items": [
         {
           "slot": "Helm",
@@ -38261,7 +38254,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:57.310Z",
+      "scrapedAt": "2026-09-09T09:03:45.960Z",
       "items": [
         {
           "slot": "Helm",
@@ -39921,7 +39914,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:58:24.244Z",
+      "scrapedAt": "2026-09-09T09:04:13.031Z",
       "items": [
         {
           "slot": "Helm",
@@ -41530,7 +41523,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:22.116Z",
+      "scrapedAt": "2026-09-09T09:03:10.401Z",
       "items": [
         {
           "slot": "Helm",
@@ -43126,7 +43119,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:57:08.423Z",
+      "scrapedAt": "2026-09-09T09:02:57.431Z",
       "items": [
         {
           "slot": "Helm",
@@ -44868,7 +44861,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-08T08:58:33.647Z",
+      "scrapedAt": "2026-09-09T09:04:22.122Z",
       "items": [
         {
           "slot": "Helm",
@@ -45274,5 +45267,5 @@
       ]
     }
   },
-  "updatedAt": "2026-09-08T08:58:33.654Z"
+  "updatedAt": "2026-09-09T09:04:22.129Z"
 }
