@@ -3,7 +3,7 @@
   "specs": {
     "death-knight-blood": {
       "key": "death-knight-blood",
-      "fetchedAt": "2026-09-11T08:59:20.029Z",
+      "fetchedAt": "2026-09-12T08:42:55.222Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear",
         "available": true,
@@ -380,7 +380,7 @@
     },
     "death-knight-frost": {
       "key": "death-knight-frost",
-      "fetchedAt": "2026-09-11T08:59:24.922Z",
+      "fetchedAt": "2026-09-12T08:43:00.508Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/death-knight/frost/bis-gear",
         "available": true,
@@ -724,7 +724,7 @@
     },
     "demon-hunter-havoc": {
       "key": "demon-hunter-havoc",
-      "fetchedAt": "2026-09-11T08:59:30.031Z",
+      "fetchedAt": "2026-09-12T08:43:06.262Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/bis-gear",
         "available": true,
@@ -1198,7 +1198,7 @@
     },
     "druid-balance": {
       "key": "druid-balance",
-      "fetchedAt": "2026-09-11T08:59:39.645Z",
+      "fetchedAt": "2026-09-12T08:43:15.403Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/balance/bis-gear",
         "available": true,
@@ -1574,7 +1574,7 @@
     },
     "druid-restoration": {
       "key": "druid-restoration",
-      "fetchedAt": "2026-09-11T08:59:49.294Z",
+      "fetchedAt": "2026-09-12T08:43:25.064Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/restoration/bis-gear",
         "available": true,
@@ -2003,7 +2003,7 @@
     },
     "hunter-beast-mastery": {
       "key": "hunter-beast-mastery",
-      "fetchedAt": "2026-09-11T08:59:59.561Z",
+      "fetchedAt": "2026-09-12T08:43:34.647Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/beast-mastery/bis-gear",
         "available": true,
@@ -2476,7 +2476,7 @@
     },
     "mage-fire": {
       "key": "mage-fire",
-      "fetchedAt": "2026-09-11T09:00:14.528Z",
+      "fetchedAt": "2026-09-12T08:43:50.124Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear",
         "available": true,
@@ -2976,7 +2976,7 @@
     },
     "paladin-holy": {
       "key": "paladin-holy",
-      "fetchedAt": "2026-09-11T09:00:24.874Z",
+      "fetchedAt": "2026-09-12T08:43:59.412Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/holy/bis-gear",
         "available": true,
@@ -3366,7 +3366,7 @@
     },
     "paladin-protection": {
       "key": "paladin-protection",
-      "fetchedAt": "2026-09-11T09:00:30.585Z",
+      "fetchedAt": "2026-09-12T08:44:05.051Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/protection/bis-gear",
         "available": true,
@@ -3787,7 +3787,7 @@
     },
     "paladin-retribution": {
       "key": "paladin-retribution",
-      "fetchedAt": "2026-09-11T09:00:36.301Z",
+      "fetchedAt": "2026-09-12T08:44:10.599Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/paladin/retribution/bis-gear",
         "available": true,
@@ -4215,7 +4215,7 @@
     },
     "priest-discipline": {
       "key": "priest-discipline",
-      "fetchedAt": "2026-09-11T09:00:40.825Z",
+      "fetchedAt": "2026-09-12T08:44:14.763Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/priest/discipline/bis-gear",
         "available": true,
@@ -4535,7 +4535,7 @@
     },
     "priest-shadow": {
       "key": "priest-shadow",
-      "fetchedAt": "2026-09-11T09:00:46.079Z",
+      "fetchedAt": "2026-09-12T08:44:19.572Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/priest/shadow/bis-gear",
         "available": true,
@@ -4884,7 +4884,7 @@
     },
     "rogue-subtlety": {
       "key": "rogue-subtlety",
-      "fetchedAt": "2026-09-11T09:00:56.606Z",
+      "fetchedAt": "2026-09-12T08:44:30.082Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear",
         "available": true,
@@ -5376,7 +5376,7 @@
     },
     "shaman-elemental": {
       "key": "shaman-elemental",
-      "fetchedAt": "2026-09-11T09:01:02.047Z",
+      "fetchedAt": "2026-09-12T08:44:35.220Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/elemental/bis-gear",
         "available": true,
@@ -5764,7 +5764,7 @@
     },
     "shaman-restoration": {
       "key": "shaman-restoration",
-      "fetchedAt": "2026-09-11T09:01:11.950Z",
+      "fetchedAt": "2026-09-12T08:44:45.190Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/restoration/bis-gear",
         "available": true,
@@ -6164,7 +6164,7 @@
     },
     "warlock-affliction": {
       "key": "warlock-affliction",
-      "fetchedAt": "2026-09-11T09:01:16.943Z",
+      "fetchedAt": "2026-09-12T08:44:50.516Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warlock/affliction/bis-gear",
         "available": true,
@@ -6555,7 +6555,7 @@
     },
     "warrior-arms": {
       "key": "warrior-arms",
-      "fetchedAt": "2026-09-11T09:01:27.472Z",
+      "fetchedAt": "2026-09-12T08:45:00.381Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warrior/arms/bis-gear",
         "available": true,
@@ -6896,7 +6896,7 @@
     },
     "monk-windwalker": {
       "key": "monk-windwalker",
-      "fetchedAt": "2026-09-11T09:00:20.164Z",
+      "fetchedAt": "2026-09-12T08:43:54.919Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/monk/windwalker/bis-gear",
         "available": true,
@@ -7266,7 +7266,7 @@
     },
     "druid-feral": {
       "key": "druid-feral",
-      "fetchedAt": "2026-09-11T08:59:44.819Z",
+      "fetchedAt": "2026-09-12T08:43:20.590Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/druid/feral/bis-gear",
         "available": true,
@@ -7641,7 +7641,7 @@
     },
     "hunter-marksmanship": {
       "key": "hunter-marksmanship",
-      "fetchedAt": "2026-09-11T09:00:04.322Z",
+      "fetchedAt": "2026-09-12T08:43:39.735Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear",
         "available": true,
@@ -8029,7 +8029,7 @@
     },
     "shaman-enhancement": {
       "key": "shaman-enhancement",
-      "fetchedAt": "2026-09-11T09:01:07.292Z",
+      "fetchedAt": "2026-09-12T08:44:40.505Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear",
         "available": true,
@@ -8512,7 +8512,7 @@
     },
     "demon-hunter-devourer": {
       "key": "demon-hunter-devourer",
-      "fetchedAt": "2026-09-11T08:59:35.184Z",
+      "fetchedAt": "2026-09-12T08:43:11.250Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/demon-hunter/devourer/bis-gear",
         "available": true,
@@ -9022,7 +9022,7 @@
     },
     "rogue-assassination": {
       "key": "rogue-assassination",
-      "fetchedAt": "2026-09-11T09:00:51.576Z",
+      "fetchedAt": "2026-09-12T08:44:25.247Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/rogue/assassination/bis-gear",
         "available": true,
@@ -9527,7 +9527,7 @@
     },
     "warlock-demonology": {
       "key": "warlock-demonology",
-      "fetchedAt": "2026-09-11T09:01:22.505Z",
+      "fetchedAt": "2026-09-12T08:44:55.650Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warlock/demonology/bis-gear",
         "available": true,
@@ -9912,7 +9912,7 @@
     },
     "hunter-survival": {
       "key": "hunter-survival",
-      "fetchedAt": "2026-09-11T09:00:09.910Z",
+      "fetchedAt": "2026-09-12T08:43:45.040Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/hunter/survival/bis-gear",
         "available": true,
@@ -10262,7 +10262,7 @@
     },
     "evoker-preservation": {
       "key": "evoker-preservation",
-      "fetchedAt": "2026-09-11T08:59:54.203Z",
+      "fetchedAt": "2026-09-12T08:43:29.787Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/evoker/preservation/bis-gear",
         "available": true,
@@ -10676,7 +10676,7 @@
     },
     "warrior-fury": {
       "key": "warrior-fury",
-      "fetchedAt": "2026-09-11T09:01:33.136Z",
+      "fetchedAt": "2026-09-12T08:45:05.036Z",
       "trinkets": {
         "url": "https://www.wowhead.com/guide/classes/warrior/fury/bis-gear",
         "available": true,
@@ -11016,5 +11016,5 @@
       }
     }
   },
-  "updatedAt": "2026-09-11T09:01:33.966Z"
+  "updatedAt": "2026-09-12T08:45:05.665Z"
 }
