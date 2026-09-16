@@ -6,46 +6,46 @@
       "style": "castingpatchwerk",
       "url": "https://bloodmallet.com/chart/get/power_infusion/castingpatchwerk/priest/shadow",
       "available": true,
-      "simulatedAt": "2026-09-09 03:50",
+      "simulatedAt": "2026-09-16 04:18",
       "top": [
         {
           "name": "Assassination Rogue",
           "class": "rogue",
           "spec": "assassination",
-          "gain": 14513,
-          "pct": 5.98,
+          "gain": 14477,
+          "pct": 5.97,
           "sansSupport": false
         },
         {
           "name": "Affliction Warlock",
           "class": "warlock",
           "spec": "affliction",
-          "gain": 11783,
-          "pct": 5.09,
+          "gain": 13381,
+          "pct": 5.67,
           "sansSupport": false
         },
         {
-          "name": "Windwalker Monk",
-          "class": "monk",
-          "spec": "windwalker",
-          "gain": 11603,
-          "pct": 4.7,
-          "sansSupport": false
-        },
-        {
-          "name": "Enhancement Shaman",
-          "class": "shaman",
-          "spec": "enhancement",
-          "gain": 11264,
-          "pct": 4.81,
+          "name": "Feral Druid",
+          "class": "druid",
+          "spec": "feral",
+          "gain": 11688,
+          "pct": 4.71,
           "sansSupport": false
         },
         {
           "name": "Retribution Paladin",
           "class": "paladin",
           "spec": "retribution",
-          "gain": 11260,
-          "pct": 4.87,
+          "gain": 11505,
+          "pct": 4.98,
+          "sansSupport": false
+        },
+        {
+          "name": "Windwalker Monk",
+          "class": "monk",
+          "spec": "windwalker",
+          "gain": 11489,
+          "pct": 4.66,
           "sansSupport": false
         }
       ]
@@ -54,46 +54,46 @@
       "style": "castingpatchwerk3",
       "url": "https://bloodmallet.com/chart/get/power_infusion/castingpatchwerk3/priest/shadow",
       "available": true,
-      "simulatedAt": "2026-09-09 03:51",
+      "simulatedAt": "2026-09-16 04:18",
       "top": [
+        {
+          "name": "Demonology Warlock",
+          "class": "warlock",
+          "spec": "demonology",
+          "gain": 25296,
+          "pct": 5.1,
+          "sansSupport": false
+        },
         {
           "name": "Retribution Paladin",
           "class": "paladin",
           "spec": "retribution",
-          "gain": 25327,
-          "pct": 5.87,
+          "gain": 24963,
+          "pct": 5.78,
           "sansSupport": false
         },
         {
           "name": "Windwalker Monk",
           "class": "monk",
           "spec": "windwalker",
-          "gain": 24162,
-          "pct": 5.42,
-          "sansSupport": false
-        },
-        {
-          "name": "Demonology Warlock",
-          "class": "warlock",
-          "spec": "demonology",
-          "gain": 23787,
-          "pct": 4.75,
+          "gain": 23609,
+          "pct": 5.29,
           "sansSupport": false
         },
         {
           "name": "Enhancement Shaman",
           "class": "shaman",
           "spec": "enhancement",
-          "gain": 21948,
+          "gain": 21961,
           "pct": 4.59,
           "sansSupport": false
         },
         {
-          "name": "Fire Mage",
-          "class": "mage",
-          "spec": "fire",
-          "gain": 19491,
-          "pct": 4.76,
+          "name": "Assassination Rogue",
+          "class": "rogue",
+          "spec": "assassination",
+          "gain": 18349,
+          "pct": 5.41,
           "sansSupport": false
         }
       ]
@@ -102,29 +102,29 @@
       "style": "castingpatchwerk5",
       "url": "https://bloodmallet.com/chart/get/power_infusion/castingpatchwerk5/priest/shadow",
       "available": true,
-      "simulatedAt": "2026-09-10 05:42",
+      "simulatedAt": "2026-09-16 04:18",
       "top": [
         {
           "name": "Demonology Warlock",
           "class": "warlock",
           "spec": "demonology",
-          "gain": 43224,
-          "pct": 5.97,
+          "gain": 39265,
+          "pct": 5.51,
           "sansSupport": false
         },
         {
           "name": "Windwalker Monk",
           "class": "monk",
           "spec": "windwalker",
-          "gain": 35925,
-          "pct": 5.36,
+          "gain": 34326,
+          "pct": 5.11,
           "sansSupport": false
         },
         {
           "name": "Enhancement Shaman",
           "class": "shaman",
           "spec": "enhancement",
-          "gain": 33743,
+          "gain": 33751,
           "pct": 4.47,
           "sansSupport": false
         },
@@ -132,20 +132,20 @@
           "name": "Retribution Paladin",
           "class": "paladin",
           "spec": "retribution",
-          "gain": 33721,
-          "pct": 5.68,
+          "gain": 33285,
+          "pct": 5.6,
           "sansSupport": false
         },
         {
           "name": "Fire Mage",
           "class": "mage",
           "spec": "fire",
-          "gain": 30719,
-          "pct": 4.81,
+          "gain": 29288,
+          "pct": 4.67,
           "sansSupport": false
         }
       ]
     }
   },
-  "updatedAt": "2026-09-15T09:32:44.202Z"
+  "updatedAt": "2026-09-16T09:25:23.390Z"
 }
