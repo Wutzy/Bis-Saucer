@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:52:24.107Z",
+      "scrapedAt": "2026-09-20T09:22:04.526Z",
       "items": [
         {
           "slot": "Helm",
@@ -1477,7 +1477,7 @@
               "empty": false,
               "itemId": 271474,
               "originalItemId": null,
-              "wowheadParams": "item=271474&bonus=13847:12854",
+              "wowheadParams": "item=271474&bonus=12854",
               "name": "Baleful Grave-Knight's Casque",
               "quality": 4,
               "icon": "inv_helm_plate_raiddeathknightulatek_d_01",
@@ -1525,7 +1525,7 @@
               "empty": false,
               "itemId": 268265,
               "originalItemId": null,
-              "wowheadParams": "item=268265&bonus=13708:13848",
+              "wowheadParams": "item=268265&bonus=13848",
               "name": "Aqirbane Reliquary",
               "quality": 4,
               "icon": "inv_121_jewelry_neck03_green",
@@ -1534,20 +1534,7 @@
               "crafted": false,
               "profession": null,
               "enchant": null,
-              "gems": [
-                {
-                  "name": "Flawless Quick Garnet",
-                  "itemId": 240906,
-                  "wowheadParams": "item=240906",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
-                },
-                {
-                  "name": "Flawless Quick Garnet",
-                  "itemId": 240906,
-                  "wowheadParams": "item=240906",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
-                }
-              ]
+              "gems": []
             },
             {
               "slot": "Waist",
@@ -1565,14 +1552,7 @@
               "crafted": false,
               "profession": null,
               "enchant": null,
-              "gems": [
-                {
-                  "name": "Flawless Masterful Garnet",
-                  "itemId": 240908,
-                  "wowheadParams": "item=240908",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
-                }
-              ]
+              "gems": []
             },
             {
               "slot": "Shoulders",
@@ -1580,12 +1560,12 @@
               "align": "left",
               "empty": false,
               "itemId": 271472,
-              "originalItemId": 239037,
-              "wowheadParams": "item=271472&bonus=12854&original-item=239037",
+              "originalItemId": 251138,
+              "wowheadParams": "item=271472&bonus=12854&original-item=251138",
               "name": "Baleful Grave-Knight's Gibbets",
               "quality": 4,
               "icon": "inv_shoulder_plate_raiddeathknightulatek_d_01",
-              "source": "Temple of Sethraliss",
+              "source": "Murder Row",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -1689,13 +1669,13 @@
               "slotFr": "Anneau",
               "align": "right",
               "empty": false,
-              "itemId": 273792,
+              "itemId": 268249,
               "originalItemId": null,
-              "wowheadParams": "item=273792&bonus=12854",
-              "name": "Band of the Amani Warlord",
+              "wowheadParams": "item=268249&bonus=12854",
+              "name": "Vile Alchemist's Band",
               "quality": 4,
-              "icon": "inv_121_jewelry_ring02_green",
-              "source": "Altar of Fangs",
+              "icon": "inv_121_jewelry_ring01_purple",
+              "source": "Vashnik the Malignant",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -1777,12 +1757,6 @@
               "profession": "Blacksmithing",
               "enchant": null,
               "gems": [
-                {
-                  "name": "Flawless Quick Garnet",
-                  "itemId": 240906,
-                  "wowheadParams": "item=240906",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
-                },
                 {
                   "name": "Arcanoweave Lining",
                   "itemId": 240167,
@@ -1866,12 +1840,12 @@
               "align": "left",
               "empty": false,
               "itemId": 271474,
-              "originalItemId": 251229,
-              "wowheadParams": "item=271474&bonus=12854&original-item=251229",
+              "originalItemId": 251126,
+              "wowheadParams": "item=271474&bonus=12854&original-item=251126",
               "name": "Baleful Grave-Knight's Casque",
               "quality": 4,
               "icon": "inv_helm_plate_raiddeathknightulatek_d_01",
-              "source": "Voidscar Arena",
+              "source": "Murder Row",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -1915,7 +1889,7 @@
               "empty": false,
               "itemId": 251234,
               "originalItemId": null,
-              "wowheadParams": "item=251234&bonus=12854",
+              "wowheadParams": "item=251234&bonus=13708:12854",
               "name": "Graft of the Domanaar",
               "quality": 3,
               "icon": "inv_12_jewelry_devouringhost_necklace_silver2",
@@ -1924,14 +1898,7 @@
               "crafted": false,
               "profession": null,
               "enchant": null,
-              "gems": [
-                {
-                  "name": "Flawless Quick Garnet",
-                  "itemId": 240906,
-                  "wowheadParams": "item=240906",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
-                }
-              ]
+              "gems": []
             },
             {
               "slot": "Waist",
@@ -1957,12 +1924,12 @@
               "align": "left",
               "empty": false,
               "itemId": 271472,
-              "originalItemId": 239037,
-              "wowheadParams": "item=271472&bonus=239037&original-item=239037",
+              "originalItemId": 251138,
+              "wowheadParams": "item=271472&bonus=12854&original-item=251138",
               "name": "Baleful Grave-Knight's Gibbets",
               "quality": 4,
               "icon": "inv_shoulder_plate_raiddeathknightulatek_d_01",
-              "source": "Temple of Sethraliss",
+              "source": "Murder Row",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -2051,12 +2018,12 @@
               "align": "left",
               "empty": false,
               "itemId": 271477,
-              "originalItemId": 239036,
-              "wowheadParams": "item=271477&bonus=12854&original-item=239036",
+              "originalItemId": 193753,
+              "wowheadParams": "item=271477&bonus=12854&original-item=193753",
               "name": "Baleful Grave-Knight's Breastplate",
               "quality": 4,
               "icon": "inv_chest_plate_raiddeathknightulatek_d_01",
-              "source": "Temple of Sethraliss",
+              "source": "Ruby Life Pools",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -2131,13 +2098,13 @@
               "slotFr": "Bijou",
               "align": "right",
               "empty": false,
-              "itemId": 250238,
+              "itemId": 273797,
               "originalItemId": null,
-              "wowheadParams": "item=250238&bonus=12854",
-              "name": "Seed of the Devouring Wild",
+              "wowheadParams": "item=273797&bonus=12854",
+              "name": "Tattered Amani War Banner",
               "quality": 4,
-              "icon": "inv12_jewelrytrinkets_dungeon_seedofthedevouringwild",
-              "source": "The Blinding Vale",
+              "icon": "inv_121_trinket_dungeon_ulatek_banner",
+              "source": "Altar of Fangs",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -2161,12 +2128,6 @@
               "profession": "Blacksmithing",
               "enchant": null,
               "gems": [
-                {
-                  "name": "Flawless Quick Garnet",
-                  "itemId": 240906,
-                  "wowheadParams": "item=240906",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
-                },
                 {
                   "name": "Arcanoweave Lining",
                   "itemId": 240167,
@@ -2308,14 +2269,7 @@
               "crafted": false,
               "profession": null,
               "enchant": null,
-              "gems": [
-                {
-                  "name": "Flawless Quick Garnet",
-                  "itemId": 240906,
-                  "wowheadParams": "item=240906",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
-                }
-              ]
+              "gems": []
             },
             {
               "slot": "Waist",
@@ -2539,12 +2493,6 @@
               "enchant": null,
               "gems": [
                 {
-                  "name": "Flawless Quick Garnet",
-                  "itemId": 240906,
-                  "wowheadParams": "item=240906",
-                  "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
-                },
-                {
                   "name": "Arcanoweave Lining",
                   "itemId": 240167,
                   "wowheadParams": "item=240167",
@@ -2660,7 +2608,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:52:29.131Z",
+      "scrapedAt": "2026-09-20T09:22:09.942Z",
       "items": [
         {
           "slot": "Helm",
@@ -2669,7 +2617,7 @@
           "empty": false,
           "itemId": 271474,
           "originalItemId": null,
-          "wowheadParams": "item=271474&bonus=13847:12854",
+          "wowheadParams": "item=271474&bonus=12854",
           "name": "Baleful Grave-Knight's Casque",
           "quality": 4,
           "icon": "inv_helm_plate_raiddeathknightulatek_d_01",
@@ -2717,7 +2665,7 @@
           "empty": false,
           "itemId": 268265,
           "originalItemId": null,
-          "wowheadParams": "item=268265&bonus=13708:13848",
+          "wowheadParams": "item=268265&bonus=13848",
           "name": "Aqirbane Reliquary",
           "quality": 4,
           "icon": "inv_121_jewelry_neck03_green",
@@ -2726,20 +2674,7 @@
           "crafted": false,
           "profession": null,
           "enchant": null,
-          "gems": [
-            {
-              "name": "Flawless Quick Garnet",
-              "itemId": 240906,
-              "wowheadParams": "item=240906",
-              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
-            },
-            {
-              "name": "Flawless Quick Garnet",
-              "itemId": 240906,
-              "wowheadParams": "item=240906",
-              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
-            }
-          ]
+          "gems": []
         },
         {
           "slot": "Waist",
@@ -2757,14 +2692,7 @@
           "crafted": false,
           "profession": null,
           "enchant": null,
-          "gems": [
-            {
-              "name": "Flawless Masterful Garnet",
-              "itemId": 240908,
-              "wowheadParams": "item=240908",
-              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red"
-            }
-          ]
+          "gems": []
         },
         {
           "slot": "Shoulders",
@@ -2772,12 +2700,12 @@
           "align": "left",
           "empty": false,
           "itemId": 271472,
-          "originalItemId": 239037,
-          "wowheadParams": "item=271472&bonus=12854&original-item=239037",
+          "originalItemId": 251138,
+          "wowheadParams": "item=271472&bonus=12854&original-item=251138",
           "name": "Baleful Grave-Knight's Gibbets",
           "quality": 4,
           "icon": "inv_shoulder_plate_raiddeathknightulatek_d_01",
-          "source": "Temple of Sethraliss",
+          "source": "Murder Row",
           "catalyst": true,
           "crafted": false,
           "profession": null,
@@ -2881,13 +2809,13 @@
           "slotFr": "Anneau",
           "align": "right",
           "empty": false,
-          "itemId": 273792,
+          "itemId": 268249,
           "originalItemId": null,
-          "wowheadParams": "item=273792&bonus=12854",
-          "name": "Band of the Amani Warlord",
+          "wowheadParams": "item=268249&bonus=12854",
+          "name": "Vile Alchemist's Band",
           "quality": 4,
-          "icon": "inv_121_jewelry_ring02_green",
-          "source": "Altar of Fangs",
+          "icon": "inv_121_jewelry_ring01_purple",
+          "source": "Vashnik the Malignant",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -2969,12 +2897,6 @@
           "profession": "Blacksmithing",
           "enchant": null,
           "gems": [
-            {
-              "name": "Flawless Quick Garnet",
-              "itemId": 240906,
-              "wowheadParams": "item=240906",
-              "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red"
-            },
             {
               "name": "Arcanoweave Lining",
               "itemId": 240167,
@@ -4322,7 +4244,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:52:34.340Z",
+      "scrapedAt": "2026-09-20T09:22:15.251Z",
       "items": [
         {
           "slot": "Helm",
@@ -6011,7 +5933,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:52:44.159Z",
+      "scrapedAt": "2026-09-20T09:22:25.707Z",
       "items": [
         {
           "slot": "Helm",
@@ -7588,7 +7510,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:52:52.786Z",
+      "scrapedAt": "2026-09-20T09:22:35.320Z",
       "items": [
         {
           "slot": "Helm",
@@ -9185,7 +9107,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:01.395Z",
+      "scrapedAt": "2026-09-20T09:22:44.824Z",
       "items": [
         {
           "slot": "Helm",
@@ -10821,7 +10743,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:15.732Z",
+      "scrapedAt": "2026-09-20T09:23:00.528Z",
       "items": [
         {
           "slot": "Helm",
@@ -12423,7 +12345,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:24.700Z",
+      "scrapedAt": "2026-09-20T09:23:11.020Z",
       "items": [
         {
           "slot": "Helm",
@@ -13999,7 +13921,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:28.762Z",
+      "scrapedAt": "2026-09-20T09:23:15.889Z",
       "items": [
         {
           "slot": "Helm",
@@ -15566,7 +15488,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:33.106Z",
+      "scrapedAt": "2026-09-20T09:23:21.191Z",
       "items": [
         {
           "slot": "Helm",
@@ -18331,7 +18253,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:37.658Z",
+      "scrapedAt": "2026-09-20T09:23:26.464Z",
       "items": [
         {
           "slot": "Helm",
@@ -19961,7 +19883,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:41.915Z",
+      "scrapedAt": "2026-09-20T09:23:31.108Z",
       "items": [
         {
           "slot": "Helm",
@@ -21601,7 +21523,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:50.969Z",
+      "scrapedAt": "2026-09-20T09:23:42.248Z",
       "items": [
         {
           "slot": "Helm",
@@ -23371,7 +23293,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:55.765Z",
+      "scrapedAt": "2026-09-20T09:23:47.949Z",
       "items": [
         {
           "slot": "Helm",
@@ -25009,7 +24931,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:54:04.993Z",
+      "scrapedAt": "2026-09-20T09:23:58.003Z",
       "items": [
         {
           "slot": "Helm",
@@ -26685,7 +26607,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:54:09.115Z",
+      "scrapedAt": "2026-09-20T09:24:03.180Z",
       "items": [
         {
           "slot": "Helm",
@@ -28403,7 +28325,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:54:18.129Z",
+      "scrapedAt": "2026-09-20T09:24:13.528Z",
       "items": [
         {
           "slot": "Helm",
@@ -29988,7 +29910,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:20.323Z",
+      "scrapedAt": "2026-09-20T09:23:05.867Z",
       "items": [
         {
           "slot": "Helm",
@@ -31590,7 +31512,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:52:48.357Z",
+      "scrapedAt": "2026-09-20T09:22:30.437Z",
       "items": [
         {
           "slot": "Helm",
@@ -33209,7 +33131,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:06.310Z",
+      "scrapedAt": "2026-09-20T09:22:50.040Z",
       "items": [
         {
           "slot": "Helm",
@@ -34874,7 +34796,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:54:00.296Z",
+      "scrapedAt": "2026-09-20T09:23:52.826Z",
       "items": [
         {
           "slot": "Helm",
@@ -36564,7 +36486,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:52:39.386Z",
+      "scrapedAt": "2026-09-20T09:22:20.484Z",
       "items": [
         {
           "slot": "Helm",
@@ -38254,7 +38176,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:46.233Z",
+      "scrapedAt": "2026-09-20T09:23:36.473Z",
       "items": [
         {
           "slot": "Helm",
@@ -39914,7 +39836,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:54:13.809Z",
+      "scrapedAt": "2026-09-20T09:24:08.336Z",
       "items": [
         {
           "slot": "Helm",
@@ -41523,7 +41445,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:53:11.006Z",
+      "scrapedAt": "2026-09-20T09:22:55.270Z",
       "items": [
         {
           "slot": "Helm",
@@ -43119,7 +43041,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:52:56.948Z",
+      "scrapedAt": "2026-09-20T09:22:40.356Z",
       "items": [
         {
           "slot": "Helm",
@@ -44861,7 +44783,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-19T08:54:22.594Z",
+      "scrapedAt": "2026-09-20T09:24:18.560Z",
       "items": [
         {
           "slot": "Helm",
@@ -45267,5 +45189,5 @@
       ]
     }
   },
-  "updatedAt": "2026-09-19T08:54:22.602Z"
+  "updatedAt": "2026-09-20T09:24:18.573Z"
 }
