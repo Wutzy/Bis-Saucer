@@ -1794,7 +1794,7 @@
           "simulatedAt": "2026-09-23 04:11"
         }
       },
-      "fetchedAt": "2026-09-27T10:07:33.078Z"
+      "fetchedAt": "2026-09-28T11:06:39.344Z"
     },
     "death-knight-blood": {
       "key": "death-knight-blood",
@@ -3805,7 +3805,7 @@
           "simulatedAt": "2026-09-23 03:12"
         }
       },
-      "fetchedAt": "2026-09-27T10:05:56.986Z"
+      "fetchedAt": "2026-09-28T11:05:00.068Z"
     },
     "priest-discipline": {
       "key": "priest-discipline",
@@ -3830,7 +3830,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-27T10:07:13.826Z"
+      "fetchedAt": "2026-09-28T11:06:19.335Z"
     },
     "death-knight-frost": {
       "key": "death-knight-frost",
@@ -5841,7 +5841,7 @@
           "simulatedAt": "2026-09-23 03:12"
         }
       },
-      "fetchedAt": "2026-09-27T10:06:02.190Z"
+      "fetchedAt": "2026-09-28T11:05:05.278Z"
     },
     "demon-hunter-havoc": {
       "key": "demon-hunter-havoc",
@@ -7933,7 +7933,7 @@
           "simulatedAt": "2026-09-23 03:17"
         }
       },
-      "fetchedAt": "2026-09-27T10:06:07.495Z"
+      "fetchedAt": "2026-09-28T11:05:10.874Z"
     },
     "druid-balance": {
       "key": "druid-balance",
@@ -7958,7 +7958,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-27T10:06:17.181Z"
+      "fetchedAt": "2026-09-28T11:05:20.924Z"
     },
     "druid-restoration": {
       "key": "druid-restoration",
@@ -7983,7 +7983,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-27T10:06:26.289Z"
+      "fetchedAt": "2026-09-28T11:05:30.261Z"
     },
     "hunter-beast-mastery": {
       "key": "hunter-beast-mastery",
@@ -10075,7 +10075,7 @@
           "simulatedAt": "2026-09-23 03:33"
         }
       },
-      "fetchedAt": "2026-09-27T10:06:35.730Z"
+      "fetchedAt": "2026-09-28T11:05:39.432Z"
     },
     "mage-fire": {
       "key": "mage-fire",
@@ -11870,7 +11870,7 @@
           "simulatedAt": "2026-09-23 03:41"
         }
       },
-      "fetchedAt": "2026-09-27T10:06:50.587Z"
+      "fetchedAt": "2026-09-28T11:05:54.426Z"
     },
     "paladin-holy": {
       "key": "paladin-holy",
@@ -11895,7 +11895,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-27T10:06:59.622Z"
+      "fetchedAt": "2026-09-28T11:06:04.327Z"
     },
     "paladin-protection": {
       "key": "paladin-protection",
@@ -13906,7 +13906,7 @@
           "simulatedAt": "2026-09-23 03:55"
         }
       },
-      "fetchedAt": "2026-09-27T10:07:04.470Z"
+      "fetchedAt": "2026-09-28T11:06:10.067Z"
     },
     "paladin-retribution": {
       "key": "paladin-retribution",
@@ -15917,7 +15917,7 @@
           "simulatedAt": "2026-09-23 04:00"
         }
       },
-      "fetchedAt": "2026-09-27T10:07:09.590Z"
+      "fetchedAt": "2026-09-28T11:06:15.035Z"
     },
     "priest-shadow": {
       "key": "priest-shadow",
@@ -17712,7 +17712,7 @@
           "simulatedAt": "2026-09-23 04:00"
         }
       },
-      "fetchedAt": "2026-09-27T10:07:18.705Z"
+      "fetchedAt": "2026-09-28T11:06:24.413Z"
     },
     "rogue-subtlety": {
       "key": "rogue-subtlety",
@@ -19804,7 +19804,7 @@
           "simulatedAt": "2026-09-23 04:07"
         }
       },
-      "fetchedAt": "2026-09-27T10:07:28.359Z"
+      "fetchedAt": "2026-09-28T11:06:34.507Z"
     },
     "shaman-restoration": {
       "key": "shaman-restoration",
@@ -19829,7 +19829,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-27T10:07:41.991Z"
+      "fetchedAt": "2026-09-28T11:06:49.589Z"
     },
     "warlock-affliction": {
       "key": "warlock-affliction",
@@ -21624,7 +21624,7 @@
           "simulatedAt": "2026-09-23 04:15"
         }
       },
-      "fetchedAt": "2026-09-27T10:07:47.534Z"
+      "fetchedAt": "2026-09-28T11:06:54.634Z"
     },
     "warrior-arms": {
       "key": "warrior-arms",
@@ -23635,7 +23635,7 @@
           "simulatedAt": "2026-09-23 04:24"
         }
       },
-      "fetchedAt": "2026-09-27T10:07:56.992Z"
+      "fetchedAt": "2026-09-28T11:07:05.572Z"
     },
     "monk-windwalker": {
       "key": "monk-windwalker",
@@ -25727,7 +25727,7 @@
           "simulatedAt": "2026-09-23 03:52"
         }
       },
-      "fetchedAt": "2026-09-27T10:06:55.376Z"
+      "fetchedAt": "2026-09-28T11:05:59.518Z"
     },
     "druid-feral": {
       "key": "druid-feral",
@@ -27819,7 +27819,7 @@
           "simulatedAt": "2026-09-23 03:29"
         }
       },
-      "fetchedAt": "2026-09-27T10:06:21.833Z"
+      "fetchedAt": "2026-09-28T11:05:25.772Z"
     },
     "hunter-marksmanship": {
       "key": "hunter-marksmanship",
@@ -29911,7 +29911,7 @@
           "simulatedAt": "2026-09-23 03:36"
         }
       },
-      "fetchedAt": "2026-09-27T10:06:40.891Z"
+      "fetchedAt": "2026-09-28T11:05:44.345Z"
     },
     "shaman-enhancement": {
       "key": "shaman-enhancement",
@@ -32003,7 +32003,7 @@
           "simulatedAt": "2026-09-23 04:13"
         }
       },
-      "fetchedAt": "2026-09-27T10:07:37.621Z"
+      "fetchedAt": "2026-09-28T11:06:44.811Z"
     },
     "demon-hunter-devourer": {
       "key": "demon-hunter-devourer",
@@ -33798,7 +33798,7 @@
           "simulatedAt": "2026-09-23 03:24"
         }
       },
-      "fetchedAt": "2026-09-27T10:06:12.551Z"
+      "fetchedAt": "2026-09-28T11:05:16.434Z"
     },
     "rogue-assassination": {
       "key": "rogue-assassination",
@@ -35890,7 +35890,7 @@
           "simulatedAt": "2026-09-23 04:05"
         }
       },
-      "fetchedAt": "2026-09-27T10:07:23.689Z"
+      "fetchedAt": "2026-09-28T11:06:29.292Z"
     },
     "warlock-demonology": {
       "key": "warlock-demonology",
@@ -37685,7 +37685,7 @@
           "simulatedAt": "2026-09-23 04:17"
         }
       },
-      "fetchedAt": "2026-09-27T10:07:52.430Z"
+      "fetchedAt": "2026-09-28T11:06:59.542Z"
     },
     "hunter-survival": {
       "key": "hunter-survival",
@@ -39777,7 +39777,7 @@
           "simulatedAt": "2026-09-23 03:37"
         }
       },
-      "fetchedAt": "2026-09-27T10:06:45.676Z"
+      "fetchedAt": "2026-09-28T11:05:49.496Z"
     },
     "evoker-preservation": {
       "key": "evoker-preservation",
@@ -39802,7 +39802,7 @@
           "trinkets": []
         }
       },
-      "fetchedAt": "2026-09-27T10:06:30.467Z"
+      "fetchedAt": "2026-09-28T11:05:34.886Z"
     },
     "warrior-fury": {
       "key": "warrior-fury",
@@ -41813,8 +41813,8 @@
           "simulatedAt": "2026-09-23 04:27"
         }
       },
-      "fetchedAt": "2026-09-27T10:08:02.402Z"
+      "fetchedAt": "2026-09-28T11:07:10.774Z"
     }
   },
-  "updatedAt": "2026-09-27T10:08:02.409Z"
+  "updatedAt": "2026-09-28T11:07:10.781Z"
 }
