@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:35:39.191Z",
+      "scrapedAt": "2026-10-01T11:03:30.471Z",
       "items": [
         {
           "slot": "Helm",
@@ -2608,7 +2608,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:35:44.747Z",
+      "scrapedAt": "2026-10-01T11:03:36.401Z",
       "items": [
         {
           "slot": "Helm",
@@ -4244,7 +4244,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:35:50.020Z",
+      "scrapedAt": "2026-10-01T11:03:42.099Z",
       "items": [
         {
           "slot": "Helm",
@@ -5933,7 +5933,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:00.565Z",
+      "scrapedAt": "2026-10-01T11:03:52.914Z",
       "items": [
         {
           "slot": "Helm",
@@ -7510,7 +7510,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:11.198Z",
+      "scrapedAt": "2026-10-01T11:04:03.637Z",
       "items": [
         {
           "slot": "Helm",
@@ -8099,7 +8099,7 @@
               "empty": false,
               "itemId": 271495,
               "originalItemId": 271876,
-              "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+              "wowheadParams": "item=271495&bonus=13848&original-item=271876",
               "name": "Skulking Viper's Scuteplate",
               "quality": 4,
               "icon": "inv_chest_mail_raidhunterulatek_d_01",
@@ -8879,7 +8879,7 @@
               "empty": false,
               "itemId": 271495,
               "originalItemId": 271876,
-              "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+              "wowheadParams": "item=271495&bonus=13848&original-item=271876",
               "name": "Skulking Viper's Scuteplate",
               "quality": 4,
               "icon": "inv_chest_mail_raidhunterulatek_d_01",
@@ -9107,7 +9107,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:20.473Z",
+      "scrapedAt": "2026-10-01T11:04:14.333Z",
       "items": [
         {
           "slot": "Helm",
@@ -9313,7 +9313,7 @@
           "empty": false,
           "itemId": 271495,
           "originalItemId": 271876,
-          "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+          "wowheadParams": "item=271495&bonus=13848&original-item=271876",
           "name": "Skulking Viper's Scuteplate",
           "quality": 4,
           "icon": "inv_chest_mail_raidhunterulatek_d_01",
@@ -10743,7 +10743,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:37.139Z",
+      "scrapedAt": "2026-10-01T11:04:31.881Z",
       "items": [
         {
           "slot": "Helm",
@@ -12345,7 +12345,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:47.289Z",
+      "scrapedAt": "2026-10-01T11:04:42.703Z",
       "items": [
         {
           "slot": "Helm",
@@ -13921,7 +13921,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:52.249Z",
+      "scrapedAt": "2026-10-01T11:04:47.824Z",
       "items": [
         {
           "slot": "Helm",
@@ -15488,7 +15488,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:57.412Z",
+      "scrapedAt": "2026-10-01T11:04:53.599Z",
       "items": [
         {
           "slot": "Helm",
@@ -18253,7 +18253,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:02.550Z",
+      "scrapedAt": "2026-10-01T11:04:59.303Z",
       "items": [
         {
           "slot": "Helm",
@@ -19883,7 +19883,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:07.221Z",
+      "scrapedAt": "2026-10-01T11:05:04.452Z",
       "items": [
         {
           "slot": "Helm",
@@ -21523,7 +21523,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:17.871Z",
+      "scrapedAt": "2026-10-01T11:05:15.565Z",
       "items": [
         {
           "slot": "Helm",
@@ -23293,7 +23293,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:23.228Z",
+      "scrapedAt": "2026-10-01T11:05:20.899Z",
       "items": [
         {
           "slot": "Helm",
@@ -24931,7 +24931,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:34.260Z",
+      "scrapedAt": "2026-10-01T11:05:31.791Z",
       "items": [
         {
           "slot": "Helm",
@@ -26607,7 +26607,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:39.260Z",
+      "scrapedAt": "2026-10-01T11:05:36.303Z",
       "items": [
         {
           "slot": "Helm",
@@ -28325,7 +28325,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:50.023Z",
+      "scrapedAt": "2026-10-01T11:05:47.920Z",
       "items": [
         {
           "slot": "Helm",
@@ -29910,7 +29910,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:42.483Z",
+      "scrapedAt": "2026-10-01T11:04:37.345Z",
       "items": [
         {
           "slot": "Helm",
@@ -31512,7 +31512,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:05.441Z",
+      "scrapedAt": "2026-10-01T11:03:57.865Z",
       "items": [
         {
           "slot": "Helm",
@@ -32123,7 +32123,7 @@
               "empty": false,
               "itemId": 271495,
               "originalItemId": 271876,
-              "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+              "wowheadParams": "item=271495&bonus=13848&original-item=271876",
               "name": "Skulking Viper's Scuteplate",
               "quality": 4,
               "icon": "inv_chest_mail_raidhunterulatek_d_01",
@@ -32903,7 +32903,7 @@
               "empty": false,
               "itemId": 271495,
               "originalItemId": 271876,
-              "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+              "wowheadParams": "item=271495&bonus=13848&original-item=271876",
               "name": "Skulking Viper's Scuteplate",
               "quality": 4,
               "icon": "inv_chest_mail_raidhunterulatek_d_01",
@@ -33131,7 +33131,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:26.264Z",
+      "scrapedAt": "2026-10-01T11:04:20.889Z",
       "items": [
         {
           "slot": "Helm",
@@ -33337,7 +33337,7 @@
           "empty": false,
           "itemId": 271495,
           "originalItemId": 271876,
-          "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+          "wowheadParams": "item=271495&bonus=13848&original-item=271876",
           "name": "Skulking Viper's Scuteplate",
           "quality": 4,
           "icon": "inv_chest_mail_raidhunterulatek_d_01",
@@ -34796,7 +34796,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:28.501Z",
+      "scrapedAt": "2026-10-01T11:05:26.364Z",
       "items": [
         {
           "slot": "Helm",
@@ -36486,7 +36486,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:35:55.383Z",
+      "scrapedAt": "2026-10-01T11:03:47.383Z",
       "items": [
         {
           "slot": "Helm",
@@ -38176,7 +38176,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:12.523Z",
+      "scrapedAt": "2026-10-01T11:05:09.717Z",
       "items": [
         {
           "slot": "Helm",
@@ -39836,7 +39836,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:44.339Z",
+      "scrapedAt": "2026-10-01T11:05:42.159Z",
       "items": [
         {
           "slot": "Helm",
@@ -40439,7 +40439,7 @@
               "empty": false,
               "itemId": 271495,
               "originalItemId": 271876,
-              "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+              "wowheadParams": "item=271495&bonus=13848&original-item=271876",
               "name": "Skulking Viper's Scuteplate",
               "quality": 4,
               "icon": "inv_chest_mail_raidhunterulatek_d_01",
@@ -41236,7 +41236,7 @@
               "empty": false,
               "itemId": 271495,
               "originalItemId": 271876,
-              "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+              "wowheadParams": "item=271495&bonus=13848&original-item=271876",
               "name": "Skulking Viper's Scuteplate",
               "quality": 4,
               "icon": "inv_chest_mail_raidhunterulatek_d_01",
@@ -41445,7 +41445,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:31.880Z",
+      "scrapedAt": "2026-10-01T11:04:26.255Z",
       "items": [
         {
           "slot": "Helm",
@@ -41651,7 +41651,7 @@
           "empty": false,
           "itemId": 271495,
           "originalItemId": 271876,
-          "wowheadParams": "item=271495&bonus=13848:13708&original-item=271876",
+          "wowheadParams": "item=271495&bonus=13848&original-item=271876",
           "name": "Skulking Viper's Scuteplate",
           "quality": 4,
           "icon": "inv_chest_mail_raidhunterulatek_d_01",
@@ -43041,7 +43041,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:36:15.614Z",
+      "scrapedAt": "2026-10-01T11:04:08.987Z",
       "items": [
         {
           "slot": "Helm",
@@ -44783,7 +44783,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-09-30T10:37:55.249Z",
+      "scrapedAt": "2026-10-01T11:05:53.439Z",
       "items": [
         {
           "slot": "Helm",
@@ -45189,5 +45189,5 @@
       ]
     }
   },
-  "updatedAt": "2026-09-30T10:37:55.257Z"
+  "updatedAt": "2026-10-01T11:05:53.445Z"
 }
