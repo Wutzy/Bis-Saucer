@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:36:16.415Z",
+      "scrapedAt": "2026-10-03T09:57:14.040Z",
       "items": [
         {
           "slot": "Helm",
@@ -2608,7 +2608,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:36:21.737Z",
+      "scrapedAt": "2026-10-03T09:57:18.512Z",
       "items": [
         {
           "slot": "Helm",
@@ -4244,7 +4244,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:36:26.343Z",
+      "scrapedAt": "2026-10-03T09:57:23.542Z",
       "items": [
         {
           "slot": "Helm",
@@ -5933,7 +5933,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:36:35.676Z",
+      "scrapedAt": "2026-10-03T09:57:33.185Z",
       "items": [
         {
           "slot": "Helm",
@@ -7510,7 +7510,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:36:44.657Z",
+      "scrapedAt": "2026-10-03T09:57:42.473Z",
       "items": [
         {
           "slot": "Helm",
@@ -9107,7 +9107,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:36:53.247Z",
+      "scrapedAt": "2026-10-03T09:57:50.728Z",
       "items": [
         {
           "slot": "Helm",
@@ -10743,7 +10743,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:07.641Z",
+      "scrapedAt": "2026-10-03T09:58:04.871Z",
       "items": [
         {
           "slot": "Helm",
@@ -11161,19 +11161,19 @@
               "align": "left",
               "empty": false,
               "itemId": 271465,
-              "originalItemId": 239050,
-              "wowheadParams": "item=271465&bonus=12854&original-item=239050",
+              "originalItemId": 251126,
+              "wowheadParams": "item=271465&bonus=12854&original-item=251126",
               "name": "Warhelm of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_helm_plate_raidpaladinulatek_d_01",
-              "source": "King's Rest",
+              "source": "Murder Row",
               "catalyst": true,
               "crafted": false,
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -11321,13 +11321,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 273777,
+              "itemId": 159412,
               "originalItemId": null,
-              "wowheadParams": "item=273777&bonus=12854",
-              "name": "Poison-Proof Stompers",
+              "wowheadParams": "item=159412&bonus=12854",
+              "name": "Auric Puddle Stompers",
               "quality": 4,
-              "icon": "inv_boot_plate_outdooramaniloa_c_01",
-              "source": "Altar of Fangs",
+              "icon": "inv_boot_plate_zandalardungeon_c_01",
+              "source": "King's Rest",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -11547,19 +11547,19 @@
               "align": "left",
               "empty": false,
               "itemId": 271465,
-              "originalItemId": 239050,
-              "wowheadParams": "item=271465&bonus=12854&original-item=239050",
+              "originalItemId": 251126,
+              "wowheadParams": "item=271465&bonus=12854&original-item=251126",
               "name": "Warhelm of the Consecrated Flame",
               "quality": 4,
               "icon": "inv_helm_plate_raidpaladinulatek_d_01",
-              "source": "King's Rest",
+              "source": "Murder Row",
               "catalyst": true,
               "crafted": false,
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -11707,13 +11707,13 @@
               "slotFr": "Pieds",
               "align": "right",
               "empty": false,
-              "itemId": 273777,
+              "itemId": 159412,
               "originalItemId": null,
-              "wowheadParams": "item=273777&bonus=12854",
-              "name": "Poison-Proof Stompers",
+              "wowheadParams": "item=159412&bonus=12854",
+              "name": "Auric Puddle Stompers",
               "quality": 4,
-              "icon": "inv_boot_plate_outdooramaniloa_c_01",
-              "source": "Altar of Fangs",
+              "icon": "inv_boot_plate_zandalardungeon_c_01",
+              "source": "King's Rest",
               "catalyst": false,
               "crafted": false,
               "profession": null,
@@ -11944,8 +11944,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -12345,7 +12345,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:17.376Z",
+      "scrapedAt": "2026-10-03T09:58:14.664Z",
       "items": [
         {
           "slot": "Helm",
@@ -12353,19 +12353,19 @@
           "align": "left",
           "empty": false,
           "itemId": 271465,
-          "originalItemId": 239050,
-          "wowheadParams": "item=271465&bonus=12854&original-item=239050",
+          "originalItemId": 251126,
+          "wowheadParams": "item=271465&bonus=12854&original-item=251126",
           "name": "Warhelm of the Consecrated Flame",
           "quality": 4,
           "icon": "inv_helm_plate_raidpaladinulatek_d_01",
-          "source": "King's Rest",
+          "source": "Murder Row",
           "catalyst": true,
           "crafted": false,
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -12513,13 +12513,13 @@
           "slotFr": "Pieds",
           "align": "right",
           "empty": false,
-          "itemId": 273777,
+          "itemId": 159412,
           "originalItemId": null,
-          "wowheadParams": "item=273777&bonus=12854",
-          "name": "Poison-Proof Stompers",
+          "wowheadParams": "item=159412&bonus=12854",
+          "name": "Auric Puddle Stompers",
           "quality": 4,
-          "icon": "inv_boot_plate_outdooramaniloa_c_01",
-          "source": "Altar of Fangs",
+          "icon": "inv_boot_plate_zandalardungeon_c_01",
+          "source": "King's Rest",
           "catalyst": false,
           "crafted": false,
           "profession": null,
@@ -13921,7 +13921,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:21.249Z",
+      "scrapedAt": "2026-10-03T09:58:19.046Z",
       "items": [
         {
           "slot": "Helm",
@@ -15488,7 +15488,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:26.137Z",
+      "scrapedAt": "2026-10-03T09:58:23.602Z",
       "items": [
         {
           "slot": "Helm",
@@ -18253,7 +18253,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:31.078Z",
+      "scrapedAt": "2026-10-03T09:58:28.530Z",
       "items": [
         {
           "slot": "Helm",
@@ -19883,7 +19883,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:35.403Z",
+      "scrapedAt": "2026-10-03T09:58:32.690Z",
       "items": [
         {
           "slot": "Helm",
@@ -21523,7 +21523,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:44.582Z",
+      "scrapedAt": "2026-10-03T09:58:42.411Z",
       "items": [
         {
           "slot": "Helm",
@@ -23293,7 +23293,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:49.186Z",
+      "scrapedAt": "2026-10-03T09:58:47.289Z",
       "items": [
         {
           "slot": "Helm",
@@ -24931,7 +24931,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:58.469Z",
+      "scrapedAt": "2026-10-03T09:58:57.128Z",
       "items": [
         {
           "slot": "Helm",
@@ -26607,7 +26607,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:38:02.478Z",
+      "scrapedAt": "2026-10-03T09:59:01.384Z",
       "items": [
         {
           "slot": "Helm",
@@ -28325,7 +28325,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:38:12.151Z",
+      "scrapedAt": "2026-10-03T09:59:11.218Z",
       "items": [
         {
           "slot": "Helm",
@@ -29910,7 +29910,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:12.406Z",
+      "scrapedAt": "2026-10-03T09:58:09.708Z",
       "items": [
         {
           "slot": "Helm",
@@ -31512,7 +31512,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:36:39.591Z",
+      "scrapedAt": "2026-10-03T09:57:37.731Z",
       "items": [
         {
           "slot": "Helm",
@@ -33131,7 +33131,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:36:57.622Z",
+      "scrapedAt": "2026-10-03T09:57:55.440Z",
       "items": [
         {
           "slot": "Helm",
@@ -34796,7 +34796,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:53.660Z",
+      "scrapedAt": "2026-10-03T09:58:52.141Z",
       "items": [
         {
           "slot": "Helm",
@@ -36486,7 +36486,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:36:30.946Z",
+      "scrapedAt": "2026-10-03T09:57:28.387Z",
       "items": [
         {
           "slot": "Helm",
@@ -38176,7 +38176,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:40.032Z",
+      "scrapedAt": "2026-10-03T09:58:37.436Z",
       "items": [
         {
           "slot": "Helm",
@@ -39836,7 +39836,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:38:07.424Z",
+      "scrapedAt": "2026-10-03T09:59:06.301Z",
       "items": [
         {
           "slot": "Helm",
@@ -41445,7 +41445,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:37:02.693Z",
+      "scrapedAt": "2026-10-03T09:57:59.999Z",
       "items": [
         {
           "slot": "Helm",
@@ -41868,8 +41868,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -42254,8 +42254,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -42640,8 +42640,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -43041,7 +43041,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:36:48.936Z",
+      "scrapedAt": "2026-10-03T09:57:46.470Z",
       "items": [
         {
           "slot": "Helm",
@@ -43060,8 +43060,8 @@
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -44783,7 +44783,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-02T10:38:16.802Z",
+      "scrapedAt": "2026-10-03T09:59:16.219Z",
       "items": [
         {
           "slot": "Helm",
@@ -45189,5 +45189,5 @@
       ]
     }
   },
-  "updatedAt": "2026-10-02T10:38:16.811Z"
+  "updatedAt": "2026-10-03T09:59:16.226Z"
 }
