@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:40:54.897Z",
+      "scrapedAt": "2026-10-05T11:41:01.814Z",
       "items": [
         {
           "slot": "Helm",
@@ -2608,7 +2608,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:40:59.553Z",
+      "scrapedAt": "2026-10-05T11:41:06.629Z",
       "items": [
         {
           "slot": "Helm",
@@ -4244,7 +4244,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:04.465Z",
+      "scrapedAt": "2026-10-05T11:41:12.025Z",
       "items": [
         {
           "slot": "Helm",
@@ -5933,7 +5933,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:14.113Z",
+      "scrapedAt": "2026-10-05T11:41:23.437Z",
       "items": [
         {
           "slot": "Helm",
@@ -7510,7 +7510,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:23.715Z",
+      "scrapedAt": "2026-10-05T11:41:33.370Z",
       "items": [
         {
           "slot": "Helm",
@@ -9107,7 +9107,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:33.250Z",
+      "scrapedAt": "2026-10-05T11:41:43.197Z",
       "items": [
         {
           "slot": "Helm",
@@ -10743,7 +10743,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:47.949Z",
+      "scrapedAt": "2026-10-05T11:41:58.967Z",
       "items": [
         {
           "slot": "Helm",
@@ -12345,7 +12345,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:57.625Z",
+      "scrapedAt": "2026-10-05T11:42:09.284Z",
       "items": [
         {
           "slot": "Helm",
@@ -13921,7 +13921,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:01.983Z",
+      "scrapedAt": "2026-10-05T11:42:14.112Z",
       "items": [
         {
           "slot": "Helm",
@@ -15488,7 +15488,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:06.488Z",
+      "scrapedAt": "2026-10-05T11:42:19.633Z",
       "items": [
         {
           "slot": "Helm",
@@ -18253,7 +18253,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:10.934Z",
+      "scrapedAt": "2026-10-05T11:42:24.505Z",
       "items": [
         {
           "slot": "Helm",
@@ -19883,7 +19883,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:15.205Z",
+      "scrapedAt": "2026-10-05T11:42:28.294Z",
       "items": [
         {
           "slot": "Helm",
@@ -21523,7 +21523,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:25.036Z",
+      "scrapedAt": "2026-10-05T11:42:38.065Z",
       "items": [
         {
           "slot": "Helm",
@@ -22062,8 +22062,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -22172,8 +22172,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -22208,8 +22208,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -22462,8 +22462,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -22572,8 +22572,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -22608,8 +22608,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -22758,7 +22758,7 @@
               "name": "Serpent Crown of the Ophidian Oracle",
               "quality": 4,
               "icon": "inv_helm_mail_raidshamanulatek_d_01",
-              "source": "Twin Fangs",
+              "source": "Nek'zali",
               "catalyst": true,
               "crafted": false,
               "profession": null,
@@ -22868,8 +22868,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -22978,8 +22978,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -23014,8 +23014,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -23293,7 +23293,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:30.121Z",
+      "scrapedAt": "2026-10-05T11:42:43.158Z",
       "items": [
         {
           "slot": "Helm",
@@ -23416,8 +23416,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -23526,8 +23526,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -23562,8 +23562,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -24931,7 +24931,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:39.822Z",
+      "scrapedAt": "2026-10-05T11:42:53.685Z",
       "items": [
         {
           "slot": "Helm",
@@ -26607,7 +26607,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:44.264Z",
+      "scrapedAt": "2026-10-05T11:42:58.866Z",
       "items": [
         {
           "slot": "Helm",
@@ -28325,7 +28325,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:55.512Z",
+      "scrapedAt": "2026-10-05T11:43:09.679Z",
       "items": [
         {
           "slot": "Helm",
@@ -29910,7 +29910,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:52.794Z",
+      "scrapedAt": "2026-10-05T11:42:04.472Z",
       "items": [
         {
           "slot": "Helm",
@@ -31512,7 +31512,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:18.922Z",
+      "scrapedAt": "2026-10-05T11:41:27.964Z",
       "items": [
         {
           "slot": "Helm",
@@ -33131,7 +33131,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:38.206Z",
+      "scrapedAt": "2026-10-05T11:41:48.763Z",
       "items": [
         {
           "slot": "Helm",
@@ -34796,7 +34796,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:35.035Z",
+      "scrapedAt": "2026-10-05T11:42:48.372Z",
       "items": [
         {
           "slot": "Helm",
@@ -36486,7 +36486,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:09.510Z",
+      "scrapedAt": "2026-10-05T11:41:18.486Z",
       "items": [
         {
           "slot": "Helm",
@@ -38176,7 +38176,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:19.915Z",
+      "scrapedAt": "2026-10-05T11:42:33.338Z",
       "items": [
         {
           "slot": "Helm",
@@ -39836,7 +39836,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:42:50.624Z",
+      "scrapedAt": "2026-10-05T11:43:04.152Z",
       "items": [
         {
           "slot": "Helm",
@@ -41445,7 +41445,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:42.882Z",
+      "scrapedAt": "2026-10-05T11:41:53.950Z",
       "items": [
         {
           "slot": "Helm",
@@ -43041,7 +43041,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:41:28.207Z",
+      "scrapedAt": "2026-10-05T11:41:38.301Z",
       "items": [
         {
           "slot": "Helm",
@@ -44783,7 +44783,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-04T10:43:01.360Z",
+      "scrapedAt": "2026-10-05T11:43:14.775Z",
       "items": [
         {
           "slot": "Helm",
@@ -45189,5 +45189,5 @@
       ]
     }
   },
-  "updatedAt": "2026-10-04T10:43:01.369Z"
+  "updatedAt": "2026-10-05T11:43:14.783Z"
 }
