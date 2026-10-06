@@ -116,8 +116,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -139,8 +139,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -180,8 +180,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -226,8 +226,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Tenacity",
-                "itemId": 244016,
-                "wowheadParams": "item=244016",
+                "itemId": 244017,
+                "wowheadParams": "item=244017",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -262,8 +262,8 @@
               "profession": "Jewelcrafting",
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -483,8 +483,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -506,8 +506,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -547,8 +547,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -593,8 +593,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -629,8 +629,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -837,8 +837,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -860,8 +860,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -901,8 +901,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -947,8 +947,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -983,8 +983,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -1090,7 +1090,7 @@
       ],
       "trinketAdvice": [],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:01.814Z",
+      "scrapedAt": "2026-10-06T11:23:14.277Z",
       "items": [
         {
           "slot": "Helm",
@@ -1193,8 +1193,8 @@
           "profession": null,
           "enchant": {
             "name": "Akil'zon's Swiftness",
-            "itemId": 243962,
-            "wowheadParams": "item=243962",
+            "itemId": 243963,
+            "wowheadParams": "item=243963",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -1216,8 +1216,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -1257,8 +1257,8 @@
           "profession": null,
           "enchant": {
             "name": "Farstrider's Hunt",
-            "itemId": 244008,
-            "wowheadParams": "item=244008",
+            "itemId": 244009,
+            "wowheadParams": "item=244009",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -1303,8 +1303,8 @@
           "profession": null,
           "enchant": {
             "name": "Silvermoon's Tenacity",
-            "itemId": 244016,
-            "wowheadParams": "item=244016",
+            "itemId": 244017,
+            "wowheadParams": "item=244017",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -1339,8 +1339,8 @@
           "profession": "Jewelcrafting",
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -1571,8 +1571,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -1594,8 +1594,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -1635,8 +1635,8 @@
               "profession": "Blacksmithing",
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -1681,8 +1681,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -1710,8 +1710,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -1935,8 +1935,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -1958,8 +1958,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -2006,8 +2006,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -2052,8 +2052,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -2081,8 +2081,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -2306,8 +2306,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -2329,8 +2329,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -2370,8 +2370,8 @@
               "profession": "Blacksmithing",
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -2416,8 +2416,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -2445,8 +2445,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -2608,7 +2608,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:06.629Z",
+      "scrapedAt": "2026-10-06T11:23:19.823Z",
       "items": [
         {
           "slot": "Helm",
@@ -2711,8 +2711,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -2734,8 +2734,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -2775,8 +2775,8 @@
           "profession": "Blacksmithing",
           "enchant": {
             "name": "Lynx's Dexterity",
-            "itemId": 243952,
-            "wowheadParams": "item=243952",
+            "itemId": 243953,
+            "wowheadParams": "item=243953",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -2821,8 +2821,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -2850,8 +2850,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -3106,8 +3106,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -3129,8 +3129,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -3170,8 +3170,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -3216,8 +3216,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -3252,8 +3252,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -3511,8 +3511,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -3534,8 +3534,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -3575,8 +3575,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -3621,8 +3621,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -3657,8 +3657,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -3922,8 +3922,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -3945,8 +3945,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -3986,8 +3986,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -4032,8 +4032,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -4068,8 +4068,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -4244,7 +4244,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:12.025Z",
+      "scrapedAt": "2026-10-06T11:23:24.920Z",
       "items": [
         {
           "slot": "Helm",
@@ -4367,8 +4367,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -4390,8 +4390,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -4431,8 +4431,8 @@
           "profession": null,
           "enchant": {
             "name": "Lynx's Dexterity",
-            "itemId": 243952,
-            "wowheadParams": "item=243952",
+            "itemId": 243953,
+            "wowheadParams": "item=243953",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -4477,8 +4477,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -4513,8 +4513,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -4685,8 +4685,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -4789,8 +4789,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -4942,8 +4942,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -5098,8 +5098,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -5196,8 +5196,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -5349,8 +5349,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -5505,8 +5505,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -5609,8 +5609,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -5762,8 +5762,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -5933,7 +5933,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:23.437Z",
+      "scrapedAt": "2026-10-06T11:23:36.758Z",
       "items": [
         {
           "slot": "Helm",
@@ -5952,8 +5952,8 @@
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -6056,8 +6056,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -6209,8 +6209,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -6376,8 +6376,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -6576,8 +6576,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -6612,8 +6612,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -6748,8 +6748,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -6942,8 +6942,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -6978,8 +6978,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -7102,8 +7102,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -7316,8 +7316,8 @@
               "profession": "Jewelcrafting",
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -7352,8 +7352,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -7510,7 +7510,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:33.370Z",
+      "scrapedAt": "2026-10-06T11:23:47.793Z",
       "items": [
         {
           "slot": "Helm",
@@ -7529,8 +7529,8 @@
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -7729,8 +7729,8 @@
           "profession": null,
           "enchant": {
             "name": "Silvermoon's Alacrity",
-            "itemId": 244014,
-            "wowheadParams": "item=244014",
+            "itemId": 244015,
+            "wowheadParams": "item=244015",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -7765,8 +7765,8 @@
           "profession": null,
           "enchant": {
             "name": "Silvermoon's Alacrity",
-            "itemId": 244014,
-            "wowheadParams": "item=244014",
+            "itemId": 244015,
+            "wowheadParams": "item=244015",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -8022,8 +8022,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -8045,8 +8045,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -8086,8 +8086,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -8132,8 +8132,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -8168,8 +8168,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -8409,8 +8409,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -8432,8 +8432,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -8473,8 +8473,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -8519,8 +8519,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -8555,8 +8555,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -8802,8 +8802,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -8825,8 +8825,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -8866,8 +8866,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -8912,8 +8912,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -8948,8 +8948,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -9107,7 +9107,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:43.197Z",
+      "scrapedAt": "2026-10-06T11:23:58.122Z",
       "items": [
         {
           "slot": "Helm",
@@ -9236,8 +9236,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -9259,8 +9259,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -9300,8 +9300,8 @@
           "profession": null,
           "enchant": {
             "name": "Lynx's Dexterity",
-            "itemId": 243952,
-            "wowheadParams": "item=243952",
+            "itemId": 243953,
+            "wowheadParams": "item=243953",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -9346,8 +9346,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -9382,8 +9382,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -9634,8 +9634,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -9698,8 +9698,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -9744,8 +9744,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -9780,8 +9780,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -10027,8 +10027,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -10091,8 +10091,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -10137,8 +10137,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -10173,8 +10173,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -10426,8 +10426,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -10490,8 +10490,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -10536,8 +10536,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -10572,8 +10572,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -10743,7 +10743,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:58.967Z",
+      "scrapedAt": "2026-10-06T11:24:15.969Z",
       "items": [
         {
           "slot": "Helm",
@@ -10866,8 +10866,8 @@
           "profession": null,
           "enchant": {
             "name": "Akil'zon's Swiftness",
-            "itemId": 243962,
-            "wowheadParams": "item=243962",
+            "itemId": 243963,
+            "wowheadParams": "item=243963",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -10930,8 +10930,8 @@
           "profession": null,
           "enchant": {
             "name": "Farstrider's Hunt",
-            "itemId": 244008,
-            "wowheadParams": "item=244008",
+            "itemId": 244009,
+            "wowheadParams": "item=244009",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -10976,8 +10976,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -11012,8 +11012,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -12345,7 +12345,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:09.284Z",
+      "scrapedAt": "2026-10-06T11:24:27.365Z",
       "items": [
         {
           "slot": "Helm",
@@ -12874,8 +12874,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -13254,8 +13254,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -13640,8 +13640,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -13921,7 +13921,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:14.112Z",
+      "scrapedAt": "2026-10-06T11:24:32.390Z",
       "items": [
         {
           "slot": "Helm",
@@ -14053,8 +14053,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -14435,8 +14435,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -14458,8 +14458,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -14499,8 +14499,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -14545,8 +14545,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -14581,8 +14581,8 @@
               "profession": "Jewelcrafting",
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -14816,8 +14816,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -14839,8 +14839,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -14880,8 +14880,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -14926,8 +14926,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -14962,8 +14962,8 @@
               "profession": "Jewelcrafting",
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -15197,8 +15197,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -15220,8 +15220,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -15261,8 +15261,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -15307,8 +15307,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -15343,8 +15343,8 @@
               "profession": "Jewelcrafting",
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -15488,7 +15488,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:19.633Z",
+      "scrapedAt": "2026-10-06T11:24:37.905Z",
       "items": [
         {
           "slot": "Helm",
@@ -15605,8 +15605,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -15628,8 +15628,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -15669,8 +15669,8 @@
           "profession": null,
           "enchant": {
             "name": "Lynx's Dexterity",
-            "itemId": 243952,
-            "wowheadParams": "item=243952",
+            "itemId": 243953,
+            "wowheadParams": "item=243953",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -15715,8 +15715,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -15751,8 +15751,8 @@
           "profession": "Jewelcrafting",
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -15899,8 +15899,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -16096,8 +16096,8 @@
               "profession": null,
               "enchant": {
                 "name": "Mark of the Magister",
-                "itemId": 244002,
-                "wowheadParams": "item=244002",
+                "itemId": 244003,
+                "wowheadParams": "item=244003",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -16119,8 +16119,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -16155,8 +16155,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -16304,8 +16304,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -16489,8 +16489,8 @@
               "profession": null,
               "enchant": {
                 "name": "Mark of the Magister",
-                "itemId": 244002,
-                "wowheadParams": "item=244002",
+                "itemId": 244003,
+                "wowheadParams": "item=244003",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -16512,8 +16512,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -16548,8 +16548,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -16679,8 +16679,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -16870,8 +16870,8 @@
               "profession": null,
               "enchant": {
                 "name": "Mark of the Magister",
-                "itemId": 244002,
-                "wowheadParams": "item=244002",
+                "itemId": 244003,
+                "wowheadParams": "item=244003",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -16893,8 +16893,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -16929,8 +16929,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -17072,8 +17072,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -17269,8 +17269,8 @@
               "profession": null,
               "enchant": {
                 "name": "Mark of the Magister",
-                "itemId": 244002,
-                "wowheadParams": "item=244002",
+                "itemId": 244003,
+                "wowheadParams": "item=244003",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -17292,8 +17292,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -17328,8 +17328,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -17477,8 +17477,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -17662,8 +17662,8 @@
               "profession": null,
               "enchant": {
                 "name": "Mark of the Magister",
-                "itemId": 244002,
-                "wowheadParams": "item=244002",
+                "itemId": 244003,
+                "wowheadParams": "item=244003",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -17685,8 +17685,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -17721,8 +17721,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -17852,8 +17852,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -18043,8 +18043,8 @@
               "profession": null,
               "enchant": {
                 "name": "Mark of the Magister",
-                "itemId": 244002,
-                "wowheadParams": "item=244002",
+                "itemId": 244003,
+                "wowheadParams": "item=244003",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -18066,8 +18066,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -18102,8 +18102,8 @@
               "profession": null,
               "enchant": {
                 "name": "Silvermoon's Alacrity",
-                "itemId": 244014,
-                "wowheadParams": "item=244014",
+                "itemId": 244015,
+                "wowheadParams": "item=244015",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -18253,7 +18253,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:24.505Z",
+      "scrapedAt": "2026-10-06T11:24:43.272Z",
       "items": [
         {
           "slot": "Helm",
@@ -18272,8 +18272,8 @@
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -18469,8 +18469,8 @@
           "profession": null,
           "enchant": {
             "name": "Mark of the Magister",
-            "itemId": 244002,
-            "wowheadParams": "item=244002",
+            "itemId": 244003,
+            "wowheadParams": "item=244003",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -18492,8 +18492,8 @@
           "profession": null,
           "enchant": {
             "name": "Silvermoon's Alacrity",
-            "itemId": 244014,
-            "wowheadParams": "item=244014",
+            "itemId": 244015,
+            "wowheadParams": "item=244015",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -18528,8 +18528,8 @@
           "profession": null,
           "enchant": {
             "name": "Silvermoon's Alacrity",
-            "itemId": 244014,
-            "wowheadParams": "item=244014",
+            "itemId": 244015,
+            "wowheadParams": "item=244015",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -18792,8 +18792,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -18856,8 +18856,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -18902,8 +18902,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -18938,8 +18938,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -19185,8 +19185,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -19249,8 +19249,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -19295,8 +19295,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -19331,8 +19331,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -19572,8 +19572,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -19636,8 +19636,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -19682,8 +19682,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -19718,8 +19718,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -19883,7 +19883,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:28.294Z",
+      "scrapedAt": "2026-10-06T11:24:48.087Z",
       "items": [
         {
           "slot": "Helm",
@@ -20006,8 +20006,8 @@
           "profession": null,
           "enchant": {
             "name": "Akil'zon's Swiftness",
-            "itemId": 243962,
-            "wowheadParams": "item=243962",
+            "itemId": 243963,
+            "wowheadParams": "item=243963",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -20070,8 +20070,8 @@
           "profession": null,
           "enchant": {
             "name": "Farstrider's Hunt",
-            "itemId": 244008,
-            "wowheadParams": "item=244008",
+            "itemId": 244009,
+            "wowheadParams": "item=244009",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -20116,8 +20116,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -20152,8 +20152,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -20312,8 +20312,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -20410,8 +20410,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -20433,8 +20433,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -20520,8 +20520,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -20556,8 +20556,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -20717,8 +20717,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -20815,8 +20815,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -20838,8 +20838,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -20925,8 +20925,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -20961,8 +20961,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -21109,8 +21109,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -21207,8 +21207,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -21230,8 +21230,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -21317,8 +21317,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -21353,8 +21353,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -21523,7 +21523,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:38.065Z",
+      "scrapedAt": "2026-10-06T11:24:57.987Z",
       "items": [
         {
           "slot": "Helm",
@@ -21542,8 +21542,8 @@
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -21640,8 +21640,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -21663,8 +21663,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -21750,8 +21750,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -21786,8 +21786,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -23293,7 +23293,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:43.158Z",
+      "scrapedAt": "2026-10-06T11:25:03.441Z",
       "items": [
         {
           "slot": "Helm",
@@ -23729,8 +23729,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -23920,8 +23920,8 @@
               "profession": null,
               "enchant": {
                 "name": "Mark of the Magister",
-                "itemId": 244002,
-                "wowheadParams": "item=244002",
+                "itemId": 244003,
+                "wowheadParams": "item=244003",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -23943,8 +23943,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -23979,8 +23979,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -24122,8 +24122,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -24307,8 +24307,8 @@
               "profession": null,
               "enchant": {
                 "name": "Mark of the Magister",
-                "itemId": 244002,
-                "wowheadParams": "item=244002",
+                "itemId": 244003,
+                "wowheadParams": "item=244003",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -24330,8 +24330,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -24366,8 +24366,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -24509,8 +24509,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -24700,8 +24700,8 @@
               "profession": null,
               "enchant": {
                 "name": "Mark of the Magister",
-                "itemId": 244002,
-                "wowheadParams": "item=244002",
+                "itemId": 244003,
+                "wowheadParams": "item=244003",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -24723,8 +24723,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -24759,8 +24759,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -24931,7 +24931,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:53.685Z",
+      "scrapedAt": "2026-10-06T11:25:14.426Z",
       "items": [
         {
           "slot": "Helm",
@@ -24950,8 +24950,8 @@
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -25141,8 +25141,8 @@
           "profession": null,
           "enchant": {
             "name": "Mark of the Magister",
-            "itemId": 244002,
-            "wowheadParams": "item=244002",
+            "itemId": 244003,
+            "wowheadParams": "item=244003",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -25164,8 +25164,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -25200,8 +25200,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -25354,8 +25354,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -25458,8 +25458,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -25522,8 +25522,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -25568,8 +25568,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -25604,8 +25604,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -25760,8 +25760,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -25858,8 +25858,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -25922,8 +25922,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -25968,8 +25968,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -26004,8 +26004,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -26160,8 +26160,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -26264,8 +26264,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -26328,8 +26328,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -26374,8 +26374,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -26410,8 +26410,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -26607,7 +26607,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:58.866Z",
+      "scrapedAt": "2026-10-06T11:25:19.521Z",
       "items": [
         {
           "slot": "Helm",
@@ -26626,8 +26626,8 @@
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -26730,8 +26730,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -26794,8 +26794,8 @@
           "profession": null,
           "enchant": {
             "name": "Lynx's Dexterity",
-            "itemId": 243952,
-            "wowheadParams": "item=243952",
+            "itemId": 243953,
+            "wowheadParams": "item=243953",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -26840,8 +26840,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -26876,8 +26876,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -27147,8 +27147,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -27170,8 +27170,8 @@
               "profession": null,
               "enchant": {
                 "name": "Blood Knight's",
-                "itemId": 244642,
-                "wowheadParams": "item=244642",
+                "itemId": 244643,
+                "wowheadParams": "item=244643",
                 "icon": "inv_12_profession_leatherworking_thalassian_amor_kit"
               },
               "gems": []
@@ -27259,8 +27259,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -27295,8 +27295,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -27530,8 +27530,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -27553,8 +27553,8 @@
               "profession": null,
               "enchant": {
                 "name": "Blood Knight's",
-                "itemId": 244642,
-                "wowheadParams": "item=244642",
+                "itemId": 244643,
+                "wowheadParams": "item=244643",
                 "icon": "inv_12_profession_leatherworking_thalassian_amor_kit"
               },
               "gems": []
@@ -27594,8 +27594,8 @@
               "profession": "Blacksmithing",
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -27647,8 +27647,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -27683,8 +27683,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -27924,8 +27924,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -27947,8 +27947,8 @@
               "profession": null,
               "enchant": {
                 "name": "Blood Knight's",
-                "itemId": 244642,
-                "wowheadParams": "item=244642",
+                "itemId": 244643,
+                "wowheadParams": "item=244643",
                 "icon": "inv_12_profession_leatherworking_thalassian_amor_kit"
               },
               "gems": []
@@ -28036,8 +28036,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -28072,8 +28072,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -28325,7 +28325,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:43:09.679Z",
+      "scrapedAt": "2026-10-06T11:25:30.654Z",
       "items": [
         {
           "slot": "Helm",
@@ -28448,8 +28448,8 @@
           "profession": null,
           "enchant": {
             "name": "Akil'zon's Swiftness",
-            "itemId": 243962,
-            "wowheadParams": "item=243962",
+            "itemId": 243963,
+            "wowheadParams": "item=243963",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -28471,8 +28471,8 @@
           "profession": null,
           "enchant": {
             "name": "Blood Knight's",
-            "itemId": 244642,
-            "wowheadParams": "item=244642",
+            "itemId": 244643,
+            "wowheadParams": "item=244643",
             "icon": "inv_12_profession_leatherworking_thalassian_amor_kit"
           },
           "gems": []
@@ -28560,8 +28560,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -28596,8 +28596,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -28848,8 +28848,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -28871,8 +28871,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -28958,8 +28958,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -28994,8 +28994,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -29223,8 +29223,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -29246,8 +29246,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -29333,8 +29333,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -29369,8 +29369,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -29604,8 +29604,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -29627,8 +29627,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -29714,8 +29714,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -29750,8 +29750,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -29910,7 +29910,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:04.472Z",
+      "scrapedAt": "2026-10-06T11:24:21.618Z",
       "items": [
         {
           "slot": "Helm",
@@ -30033,8 +30033,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -30056,8 +30056,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -30143,8 +30143,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -30179,8 +30179,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -30425,8 +30425,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -30448,8 +30448,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -30489,8 +30489,8 @@
               "profession": "Leatherworking",
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -30542,8 +30542,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -30578,8 +30578,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -30813,8 +30813,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -30836,8 +30836,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -30877,8 +30877,8 @@
               "profession": "Leatherworking",
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -30930,8 +30930,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -30966,8 +30966,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -31207,8 +31207,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -31230,8 +31230,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -31271,8 +31271,8 @@
               "profession": "Leatherworking",
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -31324,8 +31324,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -31360,8 +31360,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -31512,7 +31512,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:27.964Z",
+      "scrapedAt": "2026-10-06T11:23:42.105Z",
       "items": [
         {
           "slot": "Helm",
@@ -31635,8 +31635,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -31658,8 +31658,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -31699,8 +31699,8 @@
           "profession": "Leatherworking",
           "enchant": {
             "name": "Lynx's Dexterity",
-            "itemId": 243952,
-            "wowheadParams": "item=243952",
+            "itemId": 243953,
+            "wowheadParams": "item=243953",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -31752,8 +31752,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -31788,8 +31788,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -31936,8 +31936,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -32069,8 +32069,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -32156,8 +32156,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -32192,8 +32192,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -32329,8 +32329,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -32456,8 +32456,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -32543,8 +32543,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -32579,8 +32579,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -32716,8 +32716,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -32849,8 +32849,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -32936,8 +32936,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -32972,8 +32972,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -33131,7 +33131,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:48.763Z",
+      "scrapedAt": "2026-10-06T11:24:03.813Z",
       "items": [
         {
           "slot": "Helm",
@@ -33150,8 +33150,8 @@
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -33283,8 +33283,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -33370,8 +33370,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -33406,8 +33406,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -33658,8 +33658,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -33681,8 +33681,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -33722,8 +33722,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -33768,8 +33768,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -33804,8 +33804,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -34063,8 +34063,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -34086,8 +34086,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -34127,8 +34127,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -34173,8 +34173,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -34209,8 +34209,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -34474,8 +34474,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -34497,8 +34497,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -34538,8 +34538,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -34584,8 +34584,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -34620,8 +34620,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -34796,7 +34796,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:48.372Z",
+      "scrapedAt": "2026-10-06T11:25:08.916Z",
       "items": [
         {
           "slot": "Helm",
@@ -34919,8 +34919,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -34942,8 +34942,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -34983,8 +34983,8 @@
           "profession": null,
           "enchant": {
             "name": "Lynx's Dexterity",
-            "itemId": 243952,
-            "wowheadParams": "item=243952",
+            "itemId": 243953,
+            "wowheadParams": "item=243953",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -35029,8 +35029,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -35065,8 +35065,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -35341,8 +35341,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -35405,8 +35405,8 @@
               "profession": "Leatherworking",
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -35458,8 +35458,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -35494,8 +35494,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -35746,8 +35746,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -35810,8 +35810,8 @@
               "profession": "Leatherworking",
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -35863,8 +35863,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -35899,8 +35899,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -36157,8 +36157,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -36221,8 +36221,8 @@
               "profession": "Leatherworking",
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -36274,8 +36274,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -36310,8 +36310,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -36486,7 +36486,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:18.486Z",
+      "scrapedAt": "2026-10-06T11:23:30.839Z",
       "items": [
         {
           "slot": "Helm",
@@ -36609,8 +36609,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -36673,8 +36673,8 @@
           "profession": "Leatherworking",
           "enchant": {
             "name": "Lynx's Dexterity",
-            "itemId": 243952,
-            "wowheadParams": "item=243952",
+            "itemId": 243953,
+            "wowheadParams": "item=243953",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -36726,8 +36726,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -36762,8 +36762,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -37031,8 +37031,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -37054,8 +37054,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -37095,8 +37095,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -37141,8 +37141,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -37177,8 +37177,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -37436,8 +37436,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -37459,8 +37459,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -37500,8 +37500,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -37546,8 +37546,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -37582,8 +37582,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -37847,8 +37847,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -37870,8 +37870,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -37911,8 +37911,8 @@
               "profession": null,
               "enchant": {
                 "name": "Farstrider's Hunt",
-                "itemId": 244008,
-                "wowheadParams": "item=244008",
+                "itemId": 244009,
+                "wowheadParams": "item=244009",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -37957,8 +37957,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -37993,8 +37993,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -38176,7 +38176,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:42:33.338Z",
+      "scrapedAt": "2026-10-06T11:24:53.448Z",
       "items": [
         {
           "slot": "Helm",
@@ -38299,8 +38299,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -38322,8 +38322,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -38363,8 +38363,8 @@
           "profession": null,
           "enchant": {
             "name": "Farstrider's Hunt",
-            "itemId": 244008,
-            "wowheadParams": "item=244008",
+            "itemId": 244009,
+            "wowheadParams": "item=244009",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -38409,8 +38409,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -38445,8 +38445,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -38617,8 +38617,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -38701,8 +38701,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -38765,8 +38765,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -38811,8 +38811,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -38847,8 +38847,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -39003,8 +39003,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -39094,8 +39094,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -39158,8 +39158,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -39204,8 +39204,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -39240,8 +39240,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -39396,8 +39396,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -39487,8 +39487,8 @@
               "profession": null,
               "enchant": {
                 "name": "Amirdrassil's Grace",
-                "itemId": 243990,
-                "wowheadParams": "item=243990",
+                "itemId": 243991,
+                "wowheadParams": "item=243991",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -39551,8 +39551,8 @@
               "profession": null,
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -39597,8 +39597,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -39633,8 +39633,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -39836,7 +39836,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:43:04.152Z",
+      "scrapedAt": "2026-10-06T11:25:25.135Z",
       "items": [
         {
           "slot": "Helm",
@@ -39855,8 +39855,8 @@
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -39939,8 +39939,8 @@
           "profession": null,
           "enchant": {
             "name": "Amirdrassil's Grace",
-            "itemId": 243990,
-            "wowheadParams": "item=243990",
+            "itemId": 243991,
+            "wowheadParams": "item=243991",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -40003,8 +40003,8 @@
           "profession": null,
           "enchant": {
             "name": "Lynx's Dexterity",
-            "itemId": 243952,
-            "wowheadParams": "item=243952",
+            "itemId": 243953,
+            "wowheadParams": "item=243953",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -40049,8 +40049,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -40085,8 +40085,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -40252,8 +40252,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -40385,8 +40385,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -40472,8 +40472,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -40508,8 +40508,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -40645,8 +40645,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -40772,8 +40772,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -40859,8 +40859,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -40895,8 +40895,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -41049,8 +41049,8 @@
               "profession": null,
               "enchant": {
                 "name": "Empowered Hex of Leeching",
-                "itemId": 243950,
-                "wowheadParams": "item=243950",
+                "itemId": 243951,
+                "wowheadParams": "item=243951",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -41182,8 +41182,8 @@
               "profession": null,
               "enchant": {
                 "name": "Forest Hunter's",
-                "itemId": 244640,
-                "wowheadParams": "item=244640",
+                "itemId": 244641,
+                "wowheadParams": "item=244641",
                 "icon": "inv_12_profession_leatherworking_amani_armor_kit"
               },
               "gems": []
@@ -41269,8 +41269,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -41305,8 +41305,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -41445,7 +41445,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:53.950Z",
+      "scrapedAt": "2026-10-06T11:24:09.461Z",
       "items": [
         {
           "slot": "Helm",
@@ -41464,8 +41464,8 @@
           "profession": null,
           "enchant": {
             "name": "Empowered Hex of Leeching",
-            "itemId": 243950,
-            "wowheadParams": "item=243950",
+            "itemId": 243951,
+            "wowheadParams": "item=243951",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -41597,8 +41597,8 @@
           "profession": null,
           "enchant": {
             "name": "Forest Hunter's",
-            "itemId": 244640,
-            "wowheadParams": "item=244640",
+            "itemId": 244641,
+            "wowheadParams": "item=244641",
             "icon": "inv_12_profession_leatherworking_amani_armor_kit"
           },
           "gems": []
@@ -41684,8 +41684,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -41720,8 +41720,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -43041,7 +43041,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:41:38.301Z",
+      "scrapedAt": "2026-10-06T11:23:53.221Z",
       "items": [
         {
           "slot": "Helm",
@@ -43561,8 +43561,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -43584,8 +43584,8 @@
               "profession": null,
               "enchant": {
                 "name": "Blood Knight's",
-                "itemId": 244642,
-                "wowheadParams": "item=244642",
+                "itemId": 244643,
+                "wowheadParams": "item=244643",
                 "icon": "inv_12_profession_leatherworking_thalassian_amor_kit"
               },
               "gems": []
@@ -43673,8 +43673,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -43709,8 +43709,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -43961,8 +43961,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -43984,8 +43984,8 @@
               "profession": null,
               "enchant": {
                 "name": "Blood Knight's",
-                "itemId": 244642,
-                "wowheadParams": "item=244642",
+                "itemId": 244643,
+                "wowheadParams": "item=244643",
                 "icon": "inv_12_profession_leatherworking_thalassian_amor_kit"
               },
               "gems": []
@@ -44025,8 +44025,8 @@
               "profession": "Blacksmithing",
               "enchant": {
                 "name": "Lynx's Dexterity",
-                "itemId": 243952,
-                "wowheadParams": "item=243952",
+                "itemId": 243953,
+                "wowheadParams": "item=243953",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -44078,8 +44078,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -44114,8 +44114,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -44365,8 +44365,8 @@
               "profession": null,
               "enchant": {
                 "name": "Akil'zon's Swiftness",
-                "itemId": 243962,
-                "wowheadParams": "item=243962",
+                "itemId": 243963,
+                "wowheadParams": "item=243963",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": []
@@ -44388,8 +44388,8 @@
               "profession": null,
               "enchant": {
                 "name": "Blood Knight's",
-                "itemId": 244642,
-                "wowheadParams": "item=244642",
+                "itemId": 244643,
+                "wowheadParams": "item=244643",
                 "icon": "inv_12_profession_leatherworking_thalassian_amor_kit"
               },
               "gems": []
@@ -44477,8 +44477,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -44513,8 +44513,8 @@
               "profession": null,
               "enchant": {
                 "name": "Eyes of the Eagle",
-                "itemId": 243956,
-                "wowheadParams": "item=243956",
+                "itemId": 243957,
+                "wowheadParams": "item=243957",
                 "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
               },
               "gems": [
@@ -44783,7 +44783,7 @@
         }
       ],
       "provider": "icy-veins",
-      "scrapedAt": "2026-10-05T11:43:14.775Z",
+      "scrapedAt": "2026-10-06T11:25:36.251Z",
       "items": [
         {
           "slot": "Helm",
@@ -44906,8 +44906,8 @@
           "profession": null,
           "enchant": {
             "name": "Akil'zon's Swiftness",
-            "itemId": 243962,
-            "wowheadParams": "item=243962",
+            "itemId": 243963,
+            "wowheadParams": "item=243963",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": []
@@ -44929,8 +44929,8 @@
           "profession": null,
           "enchant": {
             "name": "Blood Knight's",
-            "itemId": 244642,
-            "wowheadParams": "item=244642",
+            "itemId": 244643,
+            "wowheadParams": "item=244643",
             "icon": "inv_12_profession_leatherworking_thalassian_amor_kit"
           },
           "gems": []
@@ -45018,8 +45018,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -45054,8 +45054,8 @@
           "profession": null,
           "enchant": {
             "name": "Eyes of the Eagle",
-            "itemId": 243956,
-            "wowheadParams": "item=243956",
+            "itemId": 243957,
+            "wowheadParams": "item=243957",
             "icon": "inv_12_profession_enchanting_enchantedvellum_blue"
           },
           "gems": [
@@ -45189,5 +45189,5 @@
       ]
     }
   },
-  "updatedAt": "2026-10-05T11:43:14.783Z"
+  "updatedAt": "2026-10-06T11:25:36.255Z"
 }
